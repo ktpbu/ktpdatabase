@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
 
-import Home from "./pages/Home/Home";
-import Academics from "./pages/Academics/Academics";
-import Professional from "./pages/Professional/Professional";
-import Calendar from "./pages/Calendar/Calendar";
-import Error from "./pages/Error/Error";
+import Home from "./pages/home/Home";
+import Academics from "./pages/academics/Academics";
+import Professional from "./pages/professional/Professional";
+import Calendar from "./pages/calendar/Calendar";
+import Error from "./pages/error/Error";
 
 import "./App.css";
 
