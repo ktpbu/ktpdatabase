@@ -1,7 +1,7 @@
 import "./Academics.css";
 
 const Academics = () => {
-  return <div>Academics</div>;
+  return <div className="page-content">Academics</div>;
 };
 
 export default Academics;
