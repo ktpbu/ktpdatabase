@@ -1,7 +1,7 @@
 import "./Calendar.css";
 
 const Calendar = () => {
-  return <div>Calendar</div>;
+  return <div className="page-content">Calendar</div>;
 };
 
 export default Calendar;
