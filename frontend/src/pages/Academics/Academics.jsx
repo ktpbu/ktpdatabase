@@ -5,11 +5,11 @@ const Academics = () => {
 	return (
 		<div className="page-content">
 			<h2>Academics</h2>
-			<span className="border">
+			<div>
 				<Link to='/academics/courses'>
 					Course Guide
 				</Link>
-			</span>
+			</div>
 			<span>
 				<Link to='/academics/resources'>
 					Resources

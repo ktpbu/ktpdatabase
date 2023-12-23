@@ -20,6 +20,7 @@ import Error from "./pages/error/Error";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+// creates routings of app --> used for sending pages when requested
 const App = () => {
   return (
     <div>
