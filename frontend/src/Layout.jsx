@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 import Header from "../../frontend/src/components/header/Header";
+import Footer from "../../frontend/src/components/footer/Footer";
 
 // Layout element is the template for all other page: each has the header, then the Outlet (actual page rendered)
 function Layout() {
@@ -8,6 +9,7 @@ function Layout() {
     <div>
       <Header />
       <Outlet />
+      <Footer />
     </div>
   );
 }

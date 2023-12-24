@@ -1,14 +1,17 @@
-import React from "react"
+import React from "react";
 
 import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="page-content">
-      <h2>HOME</h2>
-      <p className="page-text">
-        This is the homepage for Kappa Theta Pi's database.
-      </p>
+    <div className="page-content mx-auto w-75">
+
+      <h2 className="text-start p-3">Kappa Theta Pi</h2>
+
+      <div className="text-start p-3">
+        Welcome to Kappa Theta Pi Lambda Chapter's brother website.
+      </div>
+
     </div>
   );
 };

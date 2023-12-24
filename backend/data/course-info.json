@@ -5,6 +5,7 @@
             "name": "Intro to Computer Science 1",
             "prof": ["Sullivan", "Deoliveiraja"],
             "prereqs": [],
+            "reviews": [],
             "content": "The first course for computer science majors and anyone seeking a rigorous introduction. Develops computational problem-solving skills by programming in the Python language, and exposes students to variety of other topics from computer science and its applications. Carries MCS divisional credit in CAS."
         },
     
@@ -12,7 +13,8 @@
             "id": "CS112",
             "name": "Intro to Computer Science 2",
             "prof": ["Papadakis", "De Oliveira"],
-            "prereqs": ["CS111"],
+            "prereqs": [],
+            "reviews": [],
             "content": "Covers advanced programming techniques and data structures. Topics include recursion, algorithm analysis, linked lists, stacks, queues, trees, graphs, tables, searching, and sorting. Carries MCS divisional credit in CAS."
         }
     }

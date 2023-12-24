@@ -1,0 +1,20 @@
+
+.customCard {
+    border-style: solid !important;
+    border-left: 1px solid !important;
+    border-radius: 5px !important; 
+    text-align: left !important;
+}
+
+.customCard:hover{
+    background-color: rgb(207, 229, 255) !important;
+}
+
+.customLink {
+    text-decoration: none !important;
+}
+
+.customCardText {
+    text-decoration: none !important;
+    color: black !important;
+}

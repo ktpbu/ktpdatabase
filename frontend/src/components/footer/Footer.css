@@ -1,0 +1,19 @@
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    margin: auto;
+    color: rgb(91, 91, 91);
+    background-color: rgb(213, 213, 213);
+}
+
+i {
+    font-size: 1.3rem;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+

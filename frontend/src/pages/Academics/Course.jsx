@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios"
 import "./Course.css";
+import { Breadcrumb } from "react-bootstrap";
 
 const Course = () => {
     const { id } = useParams();
@@ -9,7 +10,8 @@ const Course = () => {
     const [courseInfo, setCourseInfo] = useState(" ");
 
     // set backend server URL based on params on frontend URL
-    let url = "http://localhost:3000/academics/courses/" + id;
+    let baseURL = "http://localhost:3000/academics/courses/";
+    let url = baseURL + id;
 
     // load information from backend using axios
     useEffect(() => {
@@ -33,9 +35,17 @@ const Course = () => {
     
     // return HTML to be rendered by page
     return (
-        <div className="page-content">
-            <h3 className="course-title">{id} : {courseInfo.name}</h3> 
-            <p className="course-text"> {courseInfo.content}</p>
+        <div className="page-content mx-auto w-75">
+            <h2 className="text-start p-3">{id} : {courseInfo.name}</h2> 
+
+            <Breadcrumb className="customBreadcrumb p-3">
+                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
+                <Breadcrumb.Item href="/academics/courses/">Courses</Breadcrumb.Item>
+                <Breadcrumb.Item active>{courseInfo.name}</Breadcrumb.Item>
+            </Breadcrumb>
+
+            <p className="p-3 text-start mx-auto"> {courseInfo.content}</p>
         </div>
     );
 };
