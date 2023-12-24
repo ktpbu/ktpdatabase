@@ -4,7 +4,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="page-content mx-auto w-75">
+    <div className="page-content mx-auto w-75 home">
 
       <h2 className="text-start p-3">Kappa Theta Pi</h2>
 

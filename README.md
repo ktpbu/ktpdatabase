@@ -25,10 +25,7 @@ When developing, just save the file you have just changed and the webpage will a
     |_ Home
     |_ Academics
         |_ Courses
-            |_ CS
-            |_ DS
-            |_ ENG
-            |_ Hub
+            |_ ...all courses by ID
         |_ BU Resources
     |_ Calendar
     |_ Professional

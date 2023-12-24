@@ -4,7 +4,7 @@ import "./Academics.css";
 
 const Academics = () => {
 	return (
-		<div className="page-content mx-auto w-75">
+		<div className="page-content mx-auto w-75 academics">
 
 			<h2 className="text-start p-3">Academics</h2>
 
@@ -20,7 +20,7 @@ const Academics = () => {
 							<b>Courses</b>
 						</Card.Header>
 						<Card.Body>
-							<Card.Text className="customCardText">
+							<Card.Text className="customCardText customBodyText">
 								Information, Ratings, and Planning advice on STEM courses at BU
 							</Card.Text>
 						</Card.Body>
@@ -32,7 +32,7 @@ const Academics = () => {
 							<b>Resources</b>
 						</Card.Header>
 						<Card.Body>
-							<Card.Text className="customCardText">
+							<Card.Text className="customCardText customBodyText">
 								Links and Guides on course-planning at BU
 							</Card.Text>
 						</Card.Body>

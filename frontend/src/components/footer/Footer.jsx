@@ -1,20 +1,18 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Container from "react-bootstrap/container";
-
 import "./Footer.css";
 
 const Footer = () => {
     return (
-        <div className="footer-container">
-            <Container className="mx-auto customContainer d-flex flex-column justify-content-center">
-                <div className="m-2"><b>&#169;</b> Kappa Theta Pi BU</div>
-                <div>
-                    <i className="d-inline bi bi-instagram"></i>
-                    <i className="d-inline bi bi-linkedin"></i>
-                    <i className="d-inline bi bi-github"></i>
-                </div>
-            </Container>
-        </div>
+        <footer className="d-flex mx-auto flex-row justify-content-around p-3 footer">
+            <div className="copyright">
+                &#169; 2023, Kappa Theta Pi Lambda Chapter
+            </div>
+            <div> 
+                <i className="bi bi-instagram"></i>
+                <i className="bi bi-github"></i>
+                <i className="bi bi-linkedin"></i>
+            </div>
+        </footer>
     );
 };
 

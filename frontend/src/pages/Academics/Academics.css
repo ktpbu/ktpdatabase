@@ -1,9 +1,14 @@
 
+.academics {
+    min-height: 100vh;
+}
+
 .customCard {
     border-style: solid !important;
     border-left: 1px solid !important;
-    border-radius: 5px !important; 
+    border-radius: 20px !important; 
     text-align: left !important;
+    font-size: 1.1rem;
 }
 
 .customCard:hover{
@@ -17,4 +22,9 @@
 .customCardText {
     text-decoration: none !important;
     color: black !important;
+}
+
+.customBodyText {
+    font-size: 0.9rem;
+    color: gray !important;
 }
