@@ -1,0 +1,40 @@
+{
+    "course_list" : {
+        
+        "CASCS111" : {
+            "id": "CS111",
+            "name": "Intro to Computer Science 1",
+            "prof": ["Sullivan", "Deoliveiraja"],
+            "prereqs": [],
+            "reviews": [],
+            "content": "The first course for computer science majors and anyone seeking a rigorous introduction. Develops computational problem-solving skills by programming in the Python language, and exposes students to variety of other topics from computer science and its applications. Carries MCS divisional credit in CAS."
+        },
+    
+        "CASCS112" : {
+            "id": "CS112",
+            "name": "Intro to Computer Science 2",
+            "prof": ["Papadakis", "De Oliveira"],
+            "prereqs": [],
+            "reviews": [],
+            "content": "Covers advanced programming techniques and data structures. Topics include recursion, algorithm analysis, linked lists, stacks, queues, trees, graphs, tables, searching, and sorting. Carries MCS divisional credit in CAS."
+        },
+
+        "ENGEK131" : {
+            "id": "EK131",
+            "name": "Introduction to Engineering: Hands On",
+            "prof": ["Aamar", "Sebesta"],
+            "prereqs": [],
+            "reviews": [],
+            "content": "This course introduces freshmen to a set of design-oriented engineering skills through a hands-on experience using engineering tools (software and hardware) for design and prototyping. Students will be exposed to a number of mechanical and electrical engineering tools applicable to 3D visualization, building structures, designing and wiring circuits, prototyping and instrumentation. Students will work individually and in teams to build substructures that can be integrated into a functional device (final product)."
+        },
+    
+        "ENGEK103" : {
+            "id": "EK103",
+            "name": "Computational Linear Algebra",
+            "prof": ["Semeter", "Zhang"],
+            "prereqs": ["EK122"],
+            "reviews": [],
+            "content": "Covers advanced programming techniques and data structures. Topics include recursion, algorithm analysis, linked lists, stacks, queues, trees, graphs, tables, searching, and sorting. Carries MCS divisional credit in CAS."
+        }
+    }
+}
