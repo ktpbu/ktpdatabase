@@ -30,7 +30,10 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path="/academics" element={<Academics />} />
             <Route path="/academics/courses" element={<CourseList />} />
-			      <Route path="/academics/resources" element={<AcademicResources />} />
+            <Route
+              path="/academics/resources"
+              element={<AcademicResources />}
+            />
             <Route path="/academics/courses/:id" element={<Course />} />
             <Route path="/professional" element={<Professional />} />
             <Route path="/calendar" element={<Calendar />} />
