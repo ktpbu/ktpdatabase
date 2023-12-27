@@ -1,4 +1,7 @@
+
+// style sheets
 import "./Error.css";
+import "./../page-content.css";
 
 const Error = () => {
 	return (

@@ -1,10 +1,12 @@
 import React from "react";
 
+// style sheets
 import "./Home.css";
+import "./../page-content.css";
 
 const Home = () => {
   return (
-    <div className="page-content mx-auto w-75 home">
+    <div className="page-content">
 
       <h2 className="text-start p-3">Kappa Theta Pi</h2>
 

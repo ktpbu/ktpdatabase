@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import { Card, CardGroup, Breadcrumb} from "react-bootstrap";
+
+// style sheets
 import "./Academics.css";
+import "./../page-content.css";
 
 const Academics = () => {
 	return (
-		<div className="page-content mx-auto w-75 academics">
+		<div className="page-content mx-auto w-75">
 
 			<h2 className="text-start p-3">Academics</h2>
 

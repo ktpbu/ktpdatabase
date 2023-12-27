@@ -1,0 +1,17 @@
+
+/* everything below was added by Rohan, to normalize the body (make sure no padding or margin is added */
+html {
+    min-height: 100vh;
+    position: relative;
+}
+
+body {
+    text-align: center;
+    padding: none !important;
+    margin: none !important; 
+}
+
+#root {
+    margin: none !important;
+    padding: none !important;
+}
