@@ -1,10 +1,13 @@
 
 import { Breadcrumb, ListGroup, ListGroupItem } from "react-bootstrap";
+
+// style sheets
 import "./AcademicResources.css";
+import "./../page-content.css";
 
 const AcademicResources = () => {
 	return (
-		<div className="page-content mx-auto w-75">
+		<div className="page-content">
 
 			<h2 className="p-3 text-start">Resource List</h2>
 

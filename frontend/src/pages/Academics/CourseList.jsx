@@ -1,21 +1,20 @@
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./CourseList.css";
 import { Breadcrumb } from "react-bootstrap";
 
-const CourseIcon = (prop) => {
-  const { id, name, college } = prop;
+// style sheets
+import "./CourseList.css";
+import "./../page-content.css";
 
-  return (
-    <Link
-      className="icon"
-      title={prop.name}
-      to={"/academics/courses/" + college + id}
-    >
-      {id}
-    </Link>
-  );
+const CourseIcon = (prop) => {
+	const { id, name, college } = prop;
+
+	return (
+		<Link className="icon" title={prop.name} to={"/academics/courses/" + college + id}>
+		{id}
+		</Link>
+	);
 };
 
 const CourseList = () => {
@@ -57,7 +56,7 @@ const CourseList = () => {
   }
 
   return (
-    <div className="page-content w-75 mx-auto courselist">
+    <div className="page-content">
       <h2 className="text-start p-3">Courses</h2>
 
       <Breadcrumb className="p-3 customBreadcrumb">

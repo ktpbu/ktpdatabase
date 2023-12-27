@@ -10,6 +10,7 @@ i {
     margin-right: 15px;
 }
 
+/*
 .footer {
     background-color: rgb(241, 241, 241);
     position: relative;
@@ -18,4 +19,15 @@ i {
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-bottom: 5px !important;
+}
+
+*/
+
+.footer {
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    bottom: 0;
+    height: 8%;
+    width: 100vw;
+    left: 0;
 }

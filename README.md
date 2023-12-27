@@ -1,6 +1,37 @@
 # ktpdatabase
 
-### How to Run Project Locally:
+## Table of Contents
+- [For KTP](#for-ktp)
+    - [Guide to Contributing](#guide-to-contributing)
+        - [Important Concepts](#important-concepts)
+        - [Some Guidelines](#some-guidelines)
+        - [How to Run Project Locally](#how-to-run-project-locally)
+    - [Current Roadmap of Website](#current-roadmap-of-website)
+    - [Current Open Questions](#current-open-questions)
+    - [To-Do List](#to-do-list)
+- [For Others](#for-others)
+
+## For KTP
+
+The following sections are written to help KTP brothers add to the project. These may not be 100% correct, and are written with a macOS setup in mind (bash scripts, etc). Please read the Guide to Contributing section before starting.
+
+When developing, just save the file you have just changed and the webpage will automatically reflect that change (if no error occurs). As a rule of thumb, if there is nothing on the webpage, there is some error in your code, which can be diagnosed either in your terminal or by pressing `inspect` on the webpage and checking `console` for output (messages+errors).
+
+### Guide to Contributing
+There are a couple basic rules or guidelines that will make this collaborative project much easier for everyone. In general, make sure all new work is done **in a branch labelled with your name**. This will help us keep track of who is doing what, and seperating the main branch (that is public facing) from any additions that might not be completely functional. In most cases, check with the team before merging into the main branch. Feel free to add to this guide as new rules are made.
+
+#### Important Concepts
+- **App.jsx**: this file defines the template of a page. As can be seen by this file, each page has 3 parts: the Header, the Outlet, and the Footer. The Outlet part will be replaced by a Page when each page is requested. For example, if we go to the Academics page, then the `Academics.jsx` file defines what content is filled in at Outlet
+- **Component**: a piece of reused code (footer, header) that is present on *every* page. 
+- **Page**: actual content that is rendered between the footer and header components
+- **Backend vs Frontend**: for this project, we are running two servers concurrently. The backend server maintains large amounts of data requests (in our case, the course information). The frontend server maintains the actual HTML and CSS (in the form of React.js), and requests information from the backend as needed.
+- **index.html**: this file is always the entryway into a website. When a browser requests content from that website, this file is what is first looked through. You can see in that file that all it does is link to `App.jsx`, which actually creates the map for our website. This is a React.js concept.
+
+#### Some Guidelines
+1. Tabs should be 4 spaces. Makes it easier.
+2. Each new page (React .jsx file in the `pages` subdirectory) needs to return a `div` element that is the main content of that page to be rendered. It is necessary for formatting that each page needs that div to have `className='page-content'`, and that `.jsx` file needs to import the following stylesheet: `import "./../page-content.css`.
+
+#### How to Run Project Locally:
 For testing and development, it will be necessary to run this locally. First, make sure you have `Node.js` and `npm` installed. Then, clone this git repo into your own local directory.
 1. Navigate to the `frontend` folder
 2. Run the following: `npm i`, which installs all packages needed by the frontend
@@ -12,13 +43,7 @@ For testing and development, it will be necessary to run this locally. First, ma
 7. Navigate back to the `frontend` folder, and run `npm run dev` again in this folder, which will start the frontend server at `http://localhost:5173/`
 8. Both servers need to be up and running to get full functionality
 
-When developing, just save the file you have just changed and the webpage will automatically reflect that change (if no error occurs). As a rule of thumb, if there is nothing on the webpage, there is some error in your code, which can be diagnosed either in your terminal or by pressing `inspect` on the webpage and checking `console` for output (messages+errors).
-
-### Notes about Project:
-- backend in Express.js
-    - using routers from each subset of pages (i.e. Academics, Calendar, Error, Home, Professionals)
-- frontend in React.js  --> Vite
-- (current) Structure is as below:
+### Current Roadmap of Website
 
 ```text
     root
@@ -26,15 +51,17 @@ When developing, just save the file you have just changed and the webpage will a
     |_ Academics
         |_ Courses
             |_ ...all courses by ID
-        |_ BU Resources
+        |_ Academic Resources
     |_ Calendar
     |_ Professional
-        |_ Internship Resouces
-        |_ General Advice
 ```
-    
 
-TODO List:
+### CURRENT OPEN QUESTIONS
+- seperate pages for each course, each college, each major??? 
+
+
+## To-Do List
+
 - Big Things:
     - finalize structure
     - set themes
@@ -45,5 +72,6 @@ TODO List:
     - add links to Footer (need to add href attribute to both images)
 
 
-Questions
-- seperate pages for each course, each college, each major??? 
+## For others
+
+Welcome to KTP's database website repository. Written by KTP Lambda chapter.

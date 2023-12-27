@@ -1,8 +1,11 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./Course.css";
 import { Breadcrumb } from "react-bootstrap";
+
+// style sheets
+import "./Course.css";
+import "./../page-content.css";
 
 const Course = () => {
   const { id } = useParams();
@@ -35,7 +38,7 @@ const Course = () => {
 
   // return HTML to be rendered by page
   return (
-    <div className="page-content mx-auto w-75">
+    <div className="page-content">
       <Breadcrumb className="customBreadcrumb p-3">
         <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
         <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
