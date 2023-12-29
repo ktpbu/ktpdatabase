@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
     return (
-        <footer className="d-flex mx-auto flex-row justify-content-around p-3 footer">
+        <footer className="d-flex mx-auto justify-content-around p-3 footer">
             <div className="copyright">
                 &#169; 2023, Kappa Theta Pi Lambda Chapter
             </div>

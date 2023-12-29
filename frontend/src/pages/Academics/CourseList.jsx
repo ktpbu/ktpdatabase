@@ -73,7 +73,6 @@ const CourseList = () => {
     return (
         <div className="page-content">
             <h2 className="text-start p-3">Courses</h2>
-
             <Breadcrumb className="p-3 customBreadcrumb">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
@@ -86,6 +85,8 @@ const CourseList = () => {
                 Science, Data Science, and Engineering. Click on an icon to
                 learn about that particular course.
             </p>
+
+            <p><b>NOTE</b>: if looking for graduate courses, check <Link href="/academics/graduate/">here</Link></p>
 
             <h4 className="text-start p-3">Computer Science</h4>
             <DependencyMap subject="cs" />

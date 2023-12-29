@@ -20,6 +20,7 @@ import Error from "./pages/error/Error";
 // main app
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Graduate from "./pages/academics/Graduate";
 
 // creates routings of app --> used for sending pages when requested
 const App = () => {
@@ -37,6 +38,10 @@ const App = () => {
                         <Route
                             path="/academics/resources"
                             element={<AcademicResources />}
+                        />
+                        <Route
+                            path="/academics/graduate"
+                            element={<Graduate />}
                         />
                         <Route
                             path="/academics/courses/:id"
