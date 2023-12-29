@@ -6,6 +6,7 @@ import axios from "axios";
 
 import "reactflow/dist/style.css";
 import "./Dependencies.css";
+import "./../page-content.css";
 
 const Dependencies = () => {
     const { subject } = useParams();
@@ -51,6 +52,9 @@ const Dependencies = () => {
     }, [subject]);
     return (
         <div className="page-content">
+
+            <h2 className="text-start p-3">Computer Science Dependency Map</h2>
+
             <Breadcrumb className="customBreadcrumb p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
@@ -62,7 +66,6 @@ const Dependencies = () => {
                 </Breadcrumb.Item>
             </Breadcrumb>
 
-            <h2 className="text-start p-3">Computer Science Dependency Map</h2>
             {nodes !== null && edges !== null ? (
                 <ReactFlowProvider>
                     <div className="reactflow-container">

@@ -10,10 +10,14 @@
     border-radius: 20px !important; 
     text-align: left !important;
     font-size: 1.1rem;
+    transition: transform .2s;
+    flex: 1 1 0;
+    width: 0;
 }
 
 .customCard:hover{
-    background-color: rgb(207, 229, 255) !important;
+    background-color: rgb(240, 218, 252) !important;
+    transform: scale(1.05);
 }
 
 .customLink {
@@ -29,3 +33,4 @@
     font-size: 0.9rem;
     color: gray !important;
 }
+

@@ -10,24 +10,30 @@ i {
     margin-right: 15px;
 }
 
-/*
 .footer {
     background-color: rgb(241, 241, 241);
-    position: relative;
-    bottom: 0;
-    width: 80%;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-bottom: 5px !important;
-}
-
-*/
-
-.footer {
-    background-color: rgb(241, 241, 241);
+    flex-wrap: wrap;
     position: absolute;
     bottom: 0;
     height: 8%;
     width: 100vw;
     left: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .copyright {
+        font-size: 0.85rem;
+    }
+
+    .i {
+        font-size: 1.0rem;
+        margin-left: 5px; 
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .footer {
+        height: 10%;
+    }
 }

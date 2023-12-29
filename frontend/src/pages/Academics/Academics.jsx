@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Card, CardGroup, Breadcrumb} from "react-bootstrap";
+import { Card, CardGroup, Breadcrumb, Row, Col} from "react-bootstrap";
 
 // style sheets
 import "./Academics.css";
@@ -16,7 +16,7 @@ const Academics = () => {
 				<Breadcrumb.Item active>Academics</Breadcrumb.Item>
 			</Breadcrumb>
 
-			<CardGroup>
+			<div className="d-flex justify-content-around">
 				<Card className="m-3 border-secondary customCard">
 					<Link to='/academics/courses/' className="customLink">
 						<Card.Header className="customCardText">
@@ -41,8 +41,19 @@ const Academics = () => {
 						</Card.Body>
 					</Link>
 				</Card>
-			</CardGroup>
-
+				<Card className="m-3 border-secondary customCard">
+					<Link to='/academics/graduate/' className="customLink">
+						<Card.Header className="customCardText">
+							<b>Graduate</b>
+						</Card.Header>
+						<Card.Body>
+							<Card.Text className="customCardText customBodyText">
+								Information and Courses at Graduate level.
+							</Card.Text>
+						</Card.Body>
+					</Link>
+				</Card>
+			</div>
 		</div>
 	);
 };
