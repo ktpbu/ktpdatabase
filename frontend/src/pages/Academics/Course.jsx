@@ -7,21 +7,19 @@ import { Breadcrumb } from "react-bootstrap";
 import "./Course.css";
 import "./../page-content.css";
 
+const backend = import.meta.env.VITE_BACKEND_URL;
+
 const Course = () => {
     const { id } = useParams();
     const [loading, setLoading] = useState(false);
     const [courseInfo, setCourseInfo] = useState(" ");
-
-    // set backend server URL based on params on frontend URL
-    let baseURL = "http://localhost:3000/academics/courses/";
-    let url = baseURL + id;
 
     // load information from backend using axios
     useEffect(() => {
         setLoading(true);
         axios
             // use .GET function at that backend location
-            .get(url)
+            .get(`${backend}/academics/courses/${id}`)
 
             // load info from .GET function response
             .then((res) => {
@@ -34,7 +32,7 @@ const Course = () => {
                 console.log(error);
                 setLoading(false);
             });
-    }, [url]);
+    }, [id]);
 
     // return HTML to be rendered by page
     return (

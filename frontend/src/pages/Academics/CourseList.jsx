@@ -7,6 +7,8 @@ import { Breadcrumb } from "react-bootstrap";
 import "./CourseList.css";
 import "./../page-content.css";
 
+const backend = import.meta.env.VITE_BACKEND_URL;
+
 const CourseIcon = (prop) => {
     const { id, name, college } = prop;
 
@@ -39,7 +41,7 @@ const CourseList = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get("http://localhost:3000/academics/courses")
+            .get(`${backend}/academics/courses`)
             .then((res) => {
                 setCList(res.data);
                 setLoading(false);
@@ -86,7 +88,10 @@ const CourseList = () => {
                 learn about that particular course.
             </p>
 
-            <p><b>NOTE</b>: if looking for graduate courses, check <Link href="/academics/graduate/">here</Link></p>
+            <p>
+                <b>NOTE</b>: if looking for graduate courses, check{" "}
+                <Link href="/academics/graduate/">here</Link>
+            </p>
 
             <h4 className="text-start p-3">Computer Science</h4>
             <DependencyMap subject="cs" />
