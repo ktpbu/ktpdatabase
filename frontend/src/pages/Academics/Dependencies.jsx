@@ -8,6 +8,8 @@ import "reactflow/dist/style.css";
 import "./Dependencies.css";
 import "./../page-content.css";
 
+const backend = import.meta.env.VITE_BACKEND_URL;
+
 const Dependencies = () => {
     const { subject } = useParams();
     const [loading, setLoading] = useState(false);
@@ -18,10 +20,7 @@ const Dependencies = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get(
-                "http://localhost:3000/academics/courses/dependencies/nodes/" +
-                    subject
-            )
+            .get(`${backend}/academics/courses/dependencies/nodes/${subject}`)
 
             .then((res) => {
                 console.log(res.data);
@@ -34,10 +33,7 @@ const Dependencies = () => {
                 setLoading(false);
             });
         axios
-            .get(
-                "http://localhost:3000/academics/courses/dependencies/edges/" +
-                    subject
-            )
+            .get(`${backend}/academics/courses/dependencies/edges/${subject}`)
 
             .then((res) => {
                 console.log(res.data);
@@ -52,7 +48,6 @@ const Dependencies = () => {
     }, [subject]);
     return (
         <div className="page-content">
-
             <h2 className="text-start p-3">Computer Science Dependency Map</h2>
 
             <Breadcrumb className="customBreadcrumb p-3">
