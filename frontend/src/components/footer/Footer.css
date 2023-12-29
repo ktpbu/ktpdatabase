@@ -15,7 +15,7 @@ i {
     flex-wrap: wrap;
     position: absolute;
     bottom: 0;
-    height: 8%;
+    height: 60px;
     width: 100vw;
     left: 0;
 }
@@ -34,6 +34,6 @@ i {
 
 @media only screen and (max-width: 450px) {
     .footer {
-        height: 10%;
+        height: 90;
     }
 }
