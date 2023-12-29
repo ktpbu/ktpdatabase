@@ -1,35 +1,37 @@
 {
-  "name": "frontend",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "antd": "^5.12.1",
-    "axios": "^1.6.2",
-    "bootstrap": "^5.3.2",
-    "bootstrap-icons": "^1.11.2",
-    "flowbite-react": "^0.7.2",
-    "notistack": "^3.0.1",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.9.1",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.19.0",
-    "react-ui-card": "^1.0.3"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
-    "@vitejs/plugin-react": "^4.2.0",
-    "eslint": "^8.53.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.4",
-    "vite": "^5.0.0"
-  }
+    "name": "frontend",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite --host",
+        "build": "vite build",
+        "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@dagrejs/dagre": "^1.0.4",
+        "antd": "^5.12.1",
+        "axios": "^1.6.2",
+        "bootstrap": "^5.3.2",
+        "bootstrap-icons": "^1.11.2",
+        "flowbite-react": "^0.7.2",
+        "notistack": "^3.0.1",
+        "react": "^18.2.0",
+        "react-bootstrap": "^2.9.1",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.19.0",
+        "react-ui-card": "^1.0.3",
+        "reactflow": "^11.10.1"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.37",
+        "@types/react-dom": "^18.2.15",
+        "@vitejs/plugin-react": "^4.2.0",
+        "eslint": "^8.53.0",
+        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.4",
+        "vite": "^5.0.0"
+    }
 }

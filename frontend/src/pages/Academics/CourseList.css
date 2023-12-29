@@ -4,6 +4,10 @@
     padding-bottom: 0 !important;
 }
 
+.dependency-map-link {
+    text-align: left;
+}
+
 .icon {
     margin-right: 10px;
     margin-left: 10px;
