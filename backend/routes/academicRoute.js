@@ -1,7 +1,8 @@
-import express from "express"
+import express from "express";
 import COURSES from "./../data/course-info.json" assert { type: "json" };
-const router = express.Router()
-
+import dependencyNodes from "./../data/dependency-nodes.json" assert { type: "json" };
+import dependencyEdges from "./../data/dependency-edges.json" assert { type: "json" };
+const router = express.Router();
 
 router.get("/courses", async (req, res) => {
     return res.json(COURSES.course_list);
@@ -16,5 +17,12 @@ router.get("/resources", async (req, res) => {
     return res.status(234).send("Resouces for Academics at BU backend");
 });
 
+router.get("/courses/dependencies/nodes/:subject", async (req, res) => {
+    return res.json(dependencyNodes[req.params.subject]);
+});
 
-export default router
+router.get("/courses/dependencies/edges/:subject", async (req, res) => {
+    return res.json(dependencyEdges[req.params.subject]);
+});
+
+export default router;
