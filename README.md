@@ -50,6 +50,7 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 2. Make the call to the backend using the imported base URL as a fstring (the string needs to be enclosed by a single backtick symbol)
 
 axios
+
     .get(\`${backend}/academics/courses/dependencies/nodes/${subject}\`)
 
 ### Current Roadmap of Website
