@@ -46,13 +46,13 @@ For testing and development, it will be necessary to run this locally. First, ma
 ### Making a Request to the Backend
 Here is an example of how to implement a request to the backend in a file:
 
-Import the base backend URL from the .env file.
+Import the base backend URL from the .env file:
 
 `const backend = import.meta.env.VITE_BACKEND_URL;`
 
-Make the call to the backend using the imported base URL as a fstring (the string needs to be enclosed by a single backtick symbol).
+Make the call to the backend using the imported base URL as a fstring (the string needs to be enclosed by a single backtick symbol):
 
-`axios.get(\`${backend}/academics/courses/dependencies/nodes/${subject}\`)`
+axios.get(\`${backend}/academics/courses/dependencies/nodes/${subject}\`)
 
 ### Current Roadmap of Website
 
