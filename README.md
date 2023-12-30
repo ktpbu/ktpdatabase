@@ -52,7 +52,7 @@ Import the base backend URL from the .env file.
 
 Make the call to the backend using the imported base URL as a fstring (the string needs to be enclosed by a single backtick symbol).
 
-`axios.get(\``${backend}/academics/courses/dependencies/nodes/${subject}\``)`
+`axios.get(\`${backend}/academics/courses/dependencies/nodes/${subject}\`)`
 
 ### Current Roadmap of Website
 
