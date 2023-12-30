@@ -28,8 +28,11 @@ There are a couple basic rules or guidelines that will make this collaborative p
 - **index.html**: this file is always the entryway into a website. When a browser requests content from that website, this file is what is first looked through. You can see in that file that all it does is link to `App.jsx`, which actually creates the map for our website. This is a React.js concept.
 
 #### Some Guidelines
-1. Tabs should be 4 spaces. Makes it easier.
-2. Each new page (React .jsx file in the `pages` subdirectory) needs to return a `div` element that is the main content of that page to be rendered. It is necessary for formatting that each page needs that div to have `className='page-content'`, and that `.jsx` file needs to import the following stylesheet: `import "./../page-content.css`.
+- For code formatting, use the vs code prettier extension with these settings:
+-     Print Width: 80
+-     Prose Wrap: always
+-     Tab Width: 4
+- Each new page (React .jsx file in the `pages` subdirectory) needs to return a `div` element that is the main content of that page to be rendered. It is necessary for formatting that each page needs that div to have `className='page-content'`, and that `.jsx` file needs to import the following stylesheet: `import "./../page-content.css`.
 
 #### How to Run Project Locally:
 For testing and development, it will be necessary to run this locally. First, make sure you have `Node.js` and `npm` installed. Then, clone this git repo into your own local directory.
