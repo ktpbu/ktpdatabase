@@ -41,7 +41,16 @@ For testing and development, it will be necessary to run this locally. First, ma
 6. Now, the backend server is visible if you go to Chrome and go to `http://localhost:3000/`
 7. Open another terminal.
 7. Navigate back to the `frontend` folder, and run `npm run dev` again in this folder, which will start the frontend server at `http://localhost:5173/`
-8. Both servers need to be up and running to get full functionality
+8. Both servers need to be up and running to get full functionality.
+
+### Making a Request to the Backend
+Here is an example of how to implement a request to the backend in a file:
+1. Import the base backend URL from the .env
+const backend = import.meta.env.VITE_BACKEND_URL;
+2. Make the call to the backend using the imported base URL as a fstring (the string needs to be enclosed by a single backtick symbol)
+
+axios
+    .get(`${backend}/academics/courses/dependencies/nodes/${subject}`)
 
 ### Current Roadmap of Website
 
