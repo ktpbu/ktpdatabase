@@ -29,9 +29,9 @@ There are a couple basic rules or guidelines that will make this collaborative p
 
 #### Some Guidelines
 - For code formatting, use the vs code prettier extension with these settings:
--     Print Width: 80
--     Prose Wrap: always
--     Tab Width: 4
+`Print Width: 80`
+`Prose Wrap: always`
+`Tab Width: 4`
 - Each new page (React .jsx file in the `pages` subdirectory) needs to return a `div` element that is the main content of that page to be rendered. It is necessary for formatting that each page needs that div to have `className='page-content'`, and that `.jsx` file needs to import the following stylesheet: `import "./../page-content.css`.
 
 #### How to Run Project Locally:
