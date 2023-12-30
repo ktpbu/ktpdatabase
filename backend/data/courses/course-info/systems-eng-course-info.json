@@ -1,0 +1,282 @@
+[
+    {
+        "ENGSE501": {
+            "id": "SE501",
+            "name": "Dynamic Systems Theory",
+            "prereqs": "Undergraduate Prerequisites: Familiarity with differential equations and matrices at the level of ENG ME 404 or CAS MA 242, or consent of instructor.",
+            "content": "Introduction to analytical concepts and examples of dynamic systems and control.  Mathematical description and state space formation of dynamic systems; modeling, controllability, and observability.  Eigenvector and transform analysis of linear systems including canonical forms.  Performance specifications.  State feedback:  pole placement and the linear quadratic regulator.  Introduction to MIMO design and system identification using computer tools and laboratory experiments.  Meets with ENGEC501 and ENGME501; students may not receive credit for both. ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE523": {
+            "id": "SE523",
+            "name": "Deep Learning",
+            "prereqs": "",
+            "content": "Mathematical and machine learning background for deep learning. Feed-forward networks., Backpropagation. Training strategies for deep networks. Convolutional networks. Recurrent neural networks. Deep reinforcement learning. Deep unsupervised learning. Exposure to Tensorflow and other modern programming tools. Other recent topics, time permitting. Same as CAS CS 523 and ENG EC 523. Students may not receive credits for both.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE524": {
+            "id": "SE524",
+            "name": "Optimization Theory and Methods",
+            "prereqs": "Undergraduate Prerequisites: ENG EK 102 or CAS MA 142.",
+            "content": "Introduction to optimization problems and algorithms emphasizing problem formulation, basic methodologies, and underlying mathematical structures. Classical optimization theory as well as recent advances in the field. Topics include modeling issues and formulations, simplex method, duality theory, sensitivity analysis, large-scale optimization, integer programming, interior-point methods, non-linear programming optimality conditions, gradient methods, and conjugate direction methods. Applications are considered; case studies included. Extensive paradigms from production planning and scheduling in manufacturing systems.  Other illustrative applications include fleet management, air traffic flow management, optimal routing in communication networks, and optimal portfolio selection. Same as ENG Ec 524, ENG EC 674, ENG SE 674.  Students may not receive credit for both. ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE543": {
+            "id": "SE543",
+            "name": "Sustainable Power Systems",
+            "prereqs": "Undergraduate Prerequisites: Graduate/Senior status and consent of instructor.",
+            "content": "Breakthroughs in clean energy generation technologies and the advantage of exploiting efficiently the available work in fossil fuels will render electricity the dominant energy form in a sustainable environment future. We review the key characteristics of Electric Power Transmission and Distribution (T&D) networks and the associated planning and operation requirements that ensure supply adequacy, system security and stability. Capital asset investment and operation cost minimization is discussed in a systems engineering context where the assets as well as the dynamic behavior of generators, T&D networks, and loads interact. Recent developments in the formation of competitive wholesale markets at the High Voltage Transmission system level, the associated market participation and clearing rules and the market clearing optimization algorithms are presented and analyzed in terms of their effectiveness in fostering cost reflective price signals and competitive conditions that encourage optimal distributed/not-centralized investment and operating decisions. Finally, we present T&D congestion and supply-demand imbalance related barriers to the widespread adoption of environmentally friendly and economically efficient technological breakthroughs, and propose a systems engineering and real-time retail-market based coordination of centralized as well as decentralized generation, storage and load management resources that is able to achieve desirable synergies and mitigate these barriers. Same as ENG EC 543 and ENG ME 543. Students may not receive credits for both. ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE544": {
+            "id": "SE544",
+            "name": "Networking the Physical World",
+            "prereqs": "Undergraduate Prerequisites: ENG EC 312 or ENG EC 450; ENG EC 441 is desirable, C programming experience required.",
+            "content": "Considers the evolution of embedded network sensing systems with the  introduction of wireless network connectivity. Key themes are computing  optimized for resource constrained (cost, energy, memory and storage space)  applications and sensing interfaces to connect to the physical world. Studies  current technology for networked embedded network sensors including protocol  standards. A laboratory component of the course introduces students to the  unique characteristics of distributed sensor motes including programming,  reliable communication, sensing modalities, calibration, and application  development. Same as ENG EC 544 and ENG ME 544. Students may not receive credit for both. ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE545": {
+            "id": "SE545",
+            "name": "Cyber-Physical Systems",
+            "prereqs": "Undergraduate Prerequisites: ENG EC 311 ; ENG EC 327 ; ENG EC 330; Or equivalent knowledge of Boolean algebra and finite state machines.Experience with programming embedded systems (eg EC535) is recommended but not required.",
+            "content": "This course introduces students to the principles underlying the design and analysis of cyber-physical systems - computational systems that interact with the physical world. We will study a wide range of applications of such systems ranging from robotics, through medical devices, to smart manufacturing plants. A strong emphasis will be put on building high-assurance systems with real-time and concurrent behaviors. The student will gain both in-depth knowledge and hands-on experience on the specification, modeling, design, and analysis of representative cyber-physical systems. Meets with ENG EC 545. Students may not receive credit for both.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE674": {
+            "id": "SE674",
+            "name": "Optimization Theory and Methods 2",
+            "prereqs": "",
+            "content": "Introduction to optimization problems and algorithms emphasizing problem   formulation, basic methodologies, and underlying mathematical structures.   Classical optimization theory focusing primarily on linear optimization as well   as recent advances in the field. Topics include modeling issues and   formulations, linear programming and its duality theory, sensitivity analysis,   large-scale optimization, integer programming, introduction to non-linear   optimization, interior-point methods, and network optimization problems   Applications considered include production planning, resource allocation,   network routing, transportation, fleet management, graph problems, and problems   from finance and computational biology. Meets with ENG SE 524 but requires more   advanced problem sets and exams. Same as ENG EC 524, ENG EC 674, ENG SE 524.  Students may not receive credit for both.     BU Hub   Learn More  Teamwork/Collaboration  ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE700": {
+            "id": "SE700",
+            "name": "Advanced Special Topics",
+            "prereqs": "Undergraduate Prerequisites: Graduate standing or consent of instructor.",
+            "content": "Advanced study of a specific research topic in systems engineering.  Intended primarily for advanced graduate students. On Demand. Var cr. ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE701": {
+            "id": "SE701",
+            "name": "Optimal and Robust Control",
+            "prereqs": "Undergraduate Prerequisites: ENG EC 501 or ENG ME 501 or ENG SE 501.",
+            "content": "This course is aimed at an introduction (with rigorous treatment) to the fundamentals of optimal and robust control.  It will be divided roughly into two parts.  The first will cover aspects of robust control including model reduction, H_2 and H_ infinity control, and feedback control of uncertain systems.  The second will delve into optimal control including topics such as the linear quadratic regulator, the calculus of variations, the maximum principle, and the Hamilton-Jacobi-Bellman equation. Same as ENG EC701 and ME 701. Students may not receive credits for both.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE710": {
+            "id": "SE710",
+            "name": "Dynamic Programming and Stochastic Control",
+            "prereqs": "Undergraduate Prerequisites: CAS MA 381 or ENG EK 500 or ENG ME 308; and ENGEC402, ENGEC501 or ENGME510",
+            "content": "Introduction to sequential decision making via dynamic programming. The principle of optimality as a unified approach to optimal control of dynamic systems and Markovian decision problems. Applications from control theory and operations research include linear-quadratic problems, the discrete Kalman Filter, inventory control, network, investment, and resource allocation models. Adaptive control and numerical solutions through successive approximation and policy iteration, suboptimal control, and neural network applications involving functional approximations and learning. Same as ENG EC 710 and ENG ME 710. Students may not receive credits for both.  ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE714": {
+            "id": "SE714",
+            "name": "Advanced Stochastic Modeling and Simulation",
+            "prereqs": "Undergraduate Prerequisites: ENG EK 500; or equivalent, knowledge of stochastic processes, or consent of the instructor.",
+            "content": "Introduction to Markov chains, point processes, diffusion processes as models of stochastic systems of practical interest. The course focuses on numerical and simulation methods for performance evaluation, optimization, and control of such systems.  Same as ENG ME 714.  Students may not receive credits for both.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE724": {
+            "id": "SE724",
+            "name": "Advanced Optimization Theory and Methods",
+            "prereqs": "Undergraduate Prerequisites: ENGEC524 or consent of instructor.",
+            "content": "Complements ENGEC524 by introducing advanced optimization techniques. Emphasis on nonlinear optimization and recent developments in the field. Topics include: unconstrained optimization methods such as gradient and incremental gradient, conjugate direction, Newton and quasi-Newton methods; constrained optimization methods such as projection, feasible directions, barrier and interior point methods; duality; and stochastic approximation algorithms.  Introduction to modern convex optimization including semi-definite programming, conic programming, and robust optimization.  Applications drawn from control, production and capacity planning, resource allocation, communication and sensor networks, and bioinformatics.  Same as ENG EC 724 and ENG ME 724.  Students may not receive credits for both. ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE725": {
+            "id": "SE725",
+            "name": "Queueing Systems",
+            "prereqs": "Undergraduate Prerequisites: ENG EK 500 or ENG EC 505; or consent of instructor.",
+            "content": "Performance modeling using queueing networks, analysis of product form and non-product form networks, numerical methods for performance evaluation, approximate models of queueing systems, optimal design and control of queueing networks. Applications from manufacturing systems, computer systems and communication networks. Same as ENG EC 725 and ENG ME 725.  Students may not receive credits for both. ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE732": {
+            "id": "SE732",
+            "name": "Combinatorial Optimization and Graph Algorithms",
+            "prereqs": "Undergraduate Prerequisites: ENG ME 411 or CAS CS 330; or equivalent course on optimization or algorithms.",
+            "content": "Design data structures and efficient algorithms for priority queues, minimum spanning trees, searching in graphs, strongly connected components, shortest paths, maximum matching, and maximum network flow. Some discussion of intractable problems and distributed network algorithms. Same as ENG EC 732, ENG ME 732.  Students may not receive credits for both.   BU Hub   Learn More  Oral and/or Signed CommunicationCreativity/Innovation  ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE733": {
+            "id": "SE733",
+            "name": "Discrete Event and Hybrid Systems",
+            "prereqs": "Undergraduate Prerequisites: ENG EK 500; or equivalent or consent of instructor.",
+            "content": "Review of system theory fundamentals distinguishing between time-driven and event-driven dynamics.  Modeling of Discrete Event and Hybrid Systems; Automata, Hybrid Automata, Petri Nets, basic queueing models, and stochastic flow models.  Monte Carlo computer simulation:  basic structure and output analysis.  Analysis, control, and optimization techniques based on Markov Decision Process theory with applications to scheduling, resource allocation, and games of chance.  Perturbation Analysis and Rapid Learning methods with applications to communication networks, manufacturing systems, and command-control.  Same as ENG EC 733 and ENG ME 733.  Students may not receive credits for both. ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE734": {
+            "id": "SE734",
+            "name": "Hybrid Systems",
+            "prereqs": "Undergraduate Prerequisites: ENG SE 501 or ENG EC 501 or ENG ME 501; or consent of instructor",
+            "content": "The course offers a detailed introduction to hybrid systems, which are dynamical systems combining continuous dynamics (modeled by differential equations) with discrete dynamics (modeled by automata). The covered topics include modeling, simulation, stability analysis, verification, and control of such systems. The course contains several applications from both natural and manmade environments, ranging from gene networks in biology, to networked embedded systems in avionics and automotive controls, and to motion planning and control in robotics. Same as ENG ME 734 and ENG SE 734. Students may not receive credits for both. 1st sem.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE740": {
+            "id": "SE740",
+            "name": "Vision, Robotics, and Planning ",
+            "prereqs": "Undergraduate Prerequisites: Graduate standing or consent of instructor.",
+            "content": "Methodologies required for constructing and operating intelligent mechanisms. Comprehensive introduction to robot kinematics for motion planning. Dynamics and control of mechanical systems. Formal treatment of differential relationships for understanding the control of forces and torques at the end effector. Discussion of robot vision and sensing and advanced topics in robot mechanics, including elastic effects and kinematic redundancy. Same as ENG ME 740. Students may not receive credits for both. ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE755": {
+            "id": "SE755",
+            "name": "Communication Networks Control",
+            "prereqs": "Undergraduate Prerequisites: ENG ME 714; or consent of instructor.",
+            "content": "Systems and control perspective into communication networks research.  Fundamental systems issues in networking.  Survey of a variety of techniques that have recently been used to address networking issues, including queueing theory, optimization, large deviations, Markov decision theory, stochastic approximation, and game theory.  Topics will vary from year to year, depending on recent developments in the field.  Illustrative topics include: network services and layered architectures, performance analysis in networks, traffic management and congestion control, traffic modeling, admission control, flow control and TCP/IP, routing, network economics and pricing. Same as ENG EC 755. Students may not receive credit for both.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE762": {
+            "id": "SE762",
+            "name": "Nonlinear Systems and Control",
+            "prereqs": "Graduate Prerequisites: ENG ME 501 or ENG EC 501; or consent of instructor",
+            "content": "Introduction to the theory and design methods of non-linear control systems. Application to robotics, vibration and noise control, fluid control, manufacturing processes, and biomedical systems. Mathematical methods based on the theory of differentiable manifolds; non-linear control techniques include feedback linearization, back-stepping, forwarding, and sliding mode control. Additional course topics will include controllability and observability, Lyapunov stability and its applications, limit cycles, input-output stability, zero dynamics, center manifold theory, perturbation theory, and averaging. Same as ENG ME 762. Students may not receive credits for both.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE766": {
+            "id": "SE766",
+            "name": "Advanced Scheduling Models and Methods",
+            "prereqs": "Undergraduate Prerequisites: ENG EK 500 and ENG ME 510.",
+            "content": "Emphasizes basic methodological tools and recent advances for the solution of scheduling problems in both deterministic and stochastic settings. Models considered include classical scheduling models, DEDS, neural nets, queueing models, flow control models, and linear programming models. Methods of control and analysis include optimal control, dynamic programming, fuzzy control, adaptive control, hierarchical control, genetic algorithms, simulated annealing, Lagrangian relaxation, and heavy traffic approximations. Examples and case studies focus on applications from manufacturing systems, computer and communication networks, and transportation systems.  Same as ENG ME 766.  Students may not receive credist for both.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE801": {
+            "id": "SE801",
+            "name": "Teaching Practicum I",
+            "prereqs": "",
+            "content": "This course cannot be used to meet the structured course requirements. Practical   teaching experience for an assigned course, includes some combination of running  discussion sections, managing laboratory sections, providing some lectures,  preparing homework and solution sets, exams, and grading. Attend   lectures/seminars on best teaching practices.  Total time commitment: up to 20  hours/week for one semester.  ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE802": {
+            "id": "SE802",
+            "name": "Teaching Practicum II",
+            "prereqs": "",
+            "content": "This course cannot be used to meet the structured course requirements. Practical  teaching experience for an assigned course, including some combination of  running discussion sections, managing laboratory sections, providing some  lectures, preparing homework and solution sets, exams, and grading. Attend  lectures/seminars on best teaching practices. Total Time commitment: up to 20   hours/week for one semester.  ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE810": {
+            "id": "SE810",
+            "name": "PhD Internship in Systems Engineering",
+            "prereqs": "Graduate Prerequisites: Permission of advisor and an approved internship offer; at least two complete semesters in the SE PhD program.",
+            "content": "This course provides SE PhD students the opportunity to include a paid internship experience as part of their professional training. The internship must be related to the student's area of study. International students require CPT authorization. Written summary required. Graded P/F. Prerequisite: Permission of advisor and an approved internship offer; at least two complete semesters in the SE PhD program. full-time (30-40 hours/week for at least 12 weeks) = 4 credits; part-time (15-20 hours/week for at least 12 weeks) = 2 credits.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE900": {
+            "id": "SE900",
+            "name": "PhD Research",
+            "prereqs": "",
+            "content": "Undergraduate Prerequisites: Graduate standing.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE951": {
+            "id": "SE951",
+            "name": "Independent Study",
+            "prereqs": "Undergraduate Prerequisites: By petition only",
+            "content": "Graduate students may study, under a faculty member's supervision, subjects not covered in a regularly offered course. Final report and/or written examination normally required.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE952": {
+            "id": "SE952",
+            "name": "SE Mentored Project",
+            "prereqs": "Graduate Prerequisites: Permission of instructor",
+            "content": "Students who are pursuing a project to satisfy their practicum requirement for the SE without Thesis and MEng degrees will register for up to 4 credits of this course. The course may be taken more than once up to four credits (ex. two credits in Fall, two credits in Spring). Students will select a suitable project, with a mentor, that can be completed in 4 credits.  The Graduate Committee must approve all proposed projects. Each student must write a project report at the end of the course that will be graded P/F by their project mentor. ",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE954": {
+            "id": "SE954",
+            "name": "MS Thesis",
+            "prereqs": "",
+            "content": "Undergraduate Prerequisites: Graduate standing.",
+            "prof": [],
+            "reviews": []
+        }
+    },
+    {
+        "ENGSE991": {
+            "id": "SE991",
+            "name": "PhD Dissertation",
+            "prereqs": "",
+            "content": "Undergraduate Prerequisites: Graduate standing.",
+            "prof": [],
+            "reviews": []
+        }
+    }
+]
