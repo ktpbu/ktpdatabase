@@ -54,7 +54,7 @@ def get_course_info(subject):
         page_number += 1
 
     if not course_data:
-        raise Exception(f"Unable to scrape the following url: {url}")
+        raise Exception(f"failed to scrape {url}")
 
     # groups course data into undergrad and grad courses
     undergrad_course_data = []
