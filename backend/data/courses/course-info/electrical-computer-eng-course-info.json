@@ -4,7 +4,7 @@
             "id": "EC311",
             "name": "Introduction to Logic Design",
             "prereqs": "Undergraduate Prerequisites: Sophomore standing.",
-            "content": "Introduction to hardware building blocks used in digital computers. Boolean   algebra, combinatorial and sequential circuits: analysis and design. Adders,   multipliers, decoders, encoders, multiplexors. Programmable logic devices:  read- only memory, programmable arrays, Verilog. Counters and registers.  Includes lab. ",
+            "content": "Introduction to hardware building blocks used in digital computers. Boolean   algebra, combinatorial and sequential circuits: analysis and design. Adders,   multipliers, decoders, encoders, multiplexors. Programmable logic devices:  read- only memory, programmable arrays, Verilog. Counters and registers.  Includes lab.",
             "prof": [],
             "reviews": []
         }
@@ -14,7 +14,7 @@
             "id": "EC327",
             "name": "Introduction to Software Engineering",
             "prereqs": "Undergraduate Prerequisites: ENG EK 125.",
-            "content": "This course aims to introduce students to software design, programming  techniques, data structures, and software engineering principles. The course is  structured bottom up, beginning with basic hardware followed by an  understanding of machine language that controls the hardware and the assembly  language that organizes that control. It then proceeds through fundamental  elements of functional programming languages, using C as the case example, and  continues with the principles of object-oriented programming, as principally  embodied in C++ but also its daughter languages Java, C#, and objective C. The  course will conclude with an introduction to elementary data structures and  algorithmic analysis. Throughout, the course develops core competencies in  software engineering, including programming style, optimization, debugging,  compilation, and program management, utilizing a variety of Integrated  Development Environments and operating systems. ",
+            "content": "This course aims to introduce students to software design, programming  techniques, data structures, and software engineering principles. The course is  structured bottom up, beginning with basic hardware followed by an  understanding of machine language that controls the hardware and the assembly  language that organizes that control. It then proceeds through fundamental  elements of functional programming languages, using C as the case example, and  continues with the principles of object-oriented programming, as principally  embodied in C++ but also its daughter languages Java, C#, and objective C. The  course will conclude with an introduction to elementary data structures and  algorithmic analysis. Throughout, the course develops core competencies in  software engineering, including programming style, optimization, debugging,  compilation, and program management, utilizing a variety of Integrated  Development Environments and operating systems.",
             "prof": [],
             "reviews": []
         }
@@ -24,7 +24,7 @@
             "id": "EC330",
             "name": "Applied Algorithms for Engineers",
             "prereqs": "Undergraduate Prerequisites: ENG EC 327; Recommended: CAS MA 193",
-            "content": "Introduction to the general concept of algorithms. Efficiency and run-time of  algorithms. Graph algorithms, priority queues, search trees.  Various approaches  to design of algorithms and data structures, together with their applications to  numerical and non-numerical problems. ",
+            "content": "Introduction to the general concept of algorithms. Efficiency and run-time of  algorithms. Graph algorithms, priority queues, search trees.  Various approaches  to design of algorithms and data structures, together with their applications to  numerical and non-numerical problems.",
             "prof": [],
             "reviews": []
         }
@@ -34,7 +34,7 @@
             "id": "EC400",
             "name": "Undergraduate Special Topics in Electrical & Computer Engineering",
             "prereqs": "",
-            "content": "Coverage of a specific topic in electrical and computer engineering at the  undergraduate level. Subject matter varies from semester to semester; not offered  every semester. ",
+            "content": "Coverage of a specific topic in electrical and computer engineering at the  undergraduate level. Subject matter varies from semester to semester; not offered  every semester.",
             "prof": [],
             "reviews": []
         }
@@ -54,7 +54,7 @@
             "id": "EC402",
             "name": "Control Systems",
             "prereqs": "Undergraduate Prerequisites: CAS MA 226 ; ENG EK 307 ; ENG EC 401.",
-            "content": "Analysis of linear feedback systems, their characteristics, performance, and   stability. The Routh-Hurwitz, root-locus, Bode, and Nyquist techniques. Design   and compensation of feedback control systems. Cannot be taken for credit in  addition to ENG ME 403, ENG ME 404, or ENG BE 404. ",
+            "content": "Analysis of linear feedback systems, their characteristics, performance, and   stability. The Routh-Hurwitz, root-locus, Bode, and Nyquist techniques. Design   and compensation of feedback control systems. Cannot be taken for credit in  addition to ENG ME 403, ENG ME 404, or ENG BE 404.",
             "prof": [],
             "reviews": []
         }
@@ -64,7 +64,7 @@
             "id": "EC410",
             "name": "Introduction to Electronics",
             "prereqs": "Undergraduate Prerequisites: ENG EK 307.",
-            "content": "Principles of diode, BJT, and MOSFET circuits. Graphical and analytical means of  analysis. Piecewise linear modeling; amplifiers; digital inverters and logic  gates. Biasing and small-signal analysis, microelectronic design techniques.  Time-domain and frequency domain analysis and design. Includes lab. ",
+            "content": "Principles of diode, BJT, and MOSFET circuits. Graphical and analytical means of  analysis. Piecewise linear modeling; amplifiers; digital inverters and logic  gates. Biasing and small-signal analysis, microelectronic design techniques.  Time-domain and frequency domain analysis and design. Includes lab.",
             "prof": [],
             "reviews": []
         }
@@ -74,7 +74,7 @@
             "id": "EC412",
             "name": "Analog Electronics",
             "prereqs": "Undergraduate Prerequisites: ENG EC 410.",
-            "content": "Continuation of ENG EC 410.  Topics include detailed analysis of differential   amplifiers, design and principles of operational amplifier including multistage   circuit structure, BJT, MOSFET, CMOS, and BiCMOS design principles, active   filters and oscillators, negative and positive feedback, and power devices.   Includes lab. ",
+            "content": "Continuation of ENG EC 410.  Topics include detailed analysis of differential   amplifiers, design and principles of operational amplifier including multistage   circuit structure, BJT, MOSFET, CMOS, and BiCMOS design principles, active   filters and oscillators, negative and positive feedback, and power devices.   Includes lab.",
             "prof": [],
             "reviews": []
         }
@@ -84,7 +84,7 @@
             "id": "EC413",
             "name": "Computer Organization",
             "prereqs": "Undergraduate Prerequisites: ENG EC 311.",
-            "content": "Introduction to the fundamentals and design of computer systems. Topics covered  include computer instruction sets, assembly language programming, arithmetic  circuits, CPU design (data path and control, pipelining), performance evaluation,  memory devices, memory systems including caching and virtual memory, and I/O.  Project using design automation tools. Includes lab. ",
+            "content": "Introduction to the fundamentals and design of computer systems. Topics covered  include computer instruction sets, assembly language programming, arithmetic  circuits, CPU design (data path and control, pipelining), performance evaluation,  memory devices, memory systems including caching and virtual memory, and I/O.  Project using design automation tools. Includes lab.",
             "prof": [],
             "reviews": []
         }
@@ -134,7 +134,7 @@
             "id": "EC440",
             "name": "Introduction to Operating Systems",
             "prereqs": "Undergraduate Prerequisites: ENG EC 327.",
-            "content": "Operating system concepts and design objectives. Concurrent processes, process  synchronization, and deadlocks. Resource management including virtual memory, CPU  scheduling, and secondary storage. File structures, input/output, and distributed  systems. Case studies of popular operating systems. ",
+            "content": "Operating system concepts and design objectives. Concurrent processes, process  synchronization, and deadlocks. Resource management including virtual memory, CPU  scheduling, and secondary storage. File structures, input/output, and distributed  systems. Case studies of popular operating systems.",
             "prof": [],
             "reviews": []
         }
@@ -144,7 +144,7 @@
             "id": "EC441",
             "name": "Introduction to Computer Networking",
             "prereqs": "Undergraduate Prerequisites: ENG EK 381; ENGEC327 and ENGEC401 recommended",
-            "content": "Computer networks, focusing on the Internet. Application protocols (Web, E- mail), basics of socket programming, major Internet protocols (TCP and IP),  fundamental aspects of routing and reliable data transfer over networks, medium  access protocols, wired and wireless Local Area Networks (LANs) technologies.  Hands-on laboratory modules on client-server programming, Internet experiments,  and protocol implementation. Includes lab. ",
+            "content": "Computer networks, focusing on the Internet. Application protocols (Web, E- mail), basics of socket programming, major Internet protocols (TCP and IP),  fundamental aspects of routing and reliable data transfer over networks, medium  access protocols, wired and wireless Local Area Networks (LANs) technologies.  Hands-on laboratory modules on client-server programming, Internet experiments,  and protocol implementation. Includes lab.",
             "prof": [],
             "reviews": []
         }
@@ -164,7 +164,7 @@
             "id": "EC447",
             "name": "Software Design",
             "prereqs": "Undergraduate Prerequisites: ENGEC327",
-            "content": "Object-oriented software design for desktop applications with a graphical user   interface. C# and Microsoft .NET programming assignments. Provides a solid   foundation in modern programming for engineering and other applications. ",
+            "content": "Object-oriented software design for desktop applications with a graphical user   interface. C# and Microsoft .NET programming assignments. Provides a solid   foundation in modern programming for engineering and other applications.",
             "prof": [],
             "reviews": []
         }
@@ -184,7 +184,7 @@
             "id": "EC455",
             "name": "Electromagnetic Systems I",
             "prereqs": "Undergraduate Prerequisites: CAS PY 212 and CAS MA 226.",
-            "content": "Time varying electric and magnetic fields. Maxwell equations. Electromagnetic   waves. Propagation, reflection, and transmission. Remote sensing applications.   Radio frequency coaxial cables, microwave waveguides, and optical fibers.   Microwave sources and resonators. Antennas and radiation. Radio links, radar,   and wireless communication systems. Electromagnetic effects in high-speed   digital systems. ",
+            "content": "Time varying electric and magnetic fields. Maxwell equations. Electromagnetic   waves. Propagation, reflection, and transmission. Remote sensing applications.   Radio frequency coaxial cables, microwave waveguides, and optical fibers.   Microwave sources and resonators. Antennas and radiation. Radio links, radar,   and wireless communication systems. Electromagnetic effects in high-speed   digital systems.",
             "prof": [],
             "reviews": []
         }
@@ -204,7 +204,7 @@
             "id": "EC463",
             "name": "Senior Design Project I",
             "prereqs": "Undergraduate Prerequisites: ENG EK 210; senior standing; CAS WR 150/1/2/3 required.",
-            "content": "Development of the technical, communication, personal, and team skills   needed    for successful design in electrical and computer engineering.   Specifications    and standards, information collection, design strategies,   modeling, computer-   aided design, optimization, system design, failure and   reliability, human    factors. Oral and written communication of technical   information. Team   dynamics  and ethical issues in design. Design project for   a small-scale   electrical or  computer system. Preparation of detailed   proposals for senior   design projects  in the following semester. Includes   lab.    Effective Fall   2020, this course fulfills a single unit in each of  the following BU Hub areas:   Digital/Multimedia Expression, Writing-Intensive  Course, Research and   Information Literacy.  BU Hub   Learn More  Digital/Multimedia ExpressionResearch and Information LiteracyWriting-Intensive Course  ",
+            "content": "Development of the technical, communication, personal, and team skills   needed    for successful design in electrical and computer engineering.   Specifications    and standards, information collection, design strategies,   modeling, computer-   aided design, optimization, system design, failure and   reliability, human    factors. Oral and written communication of technical   information. Team   dynamics  and ethical issues in design. Design project for   a small-scale   electrical or  computer system. Preparation of detailed   proposals for senior   design projects  in the following semester. Includes   lab.    Effective Fall   2020, this course fulfills a single unit in each of  the following BU Hub areas:   Digital/Multimedia Expression, Writing-Intensive  Course, Research and   Information Literacy.  BU Hub   Learn More  Digital/Multimedia ExpressionResearch and Information LiteracyWriting-Intensive Course",
             "prof": [],
             "reviews": []
         }
@@ -214,7 +214,7 @@
             "id": "EC464",
             "name": "Senior Design Project II",
             "prereqs": "Undergraduate Prerequisites: ENG EC 463; First Year Writing Seminar (e.g., WR 100 or WR 120)",
-            "content": "Continuation of a team project in an area of electrical and computer    engineering, as proposed in EC 463. Application of technical, communication,    personal, and team skills. Oral and written communication of technical    information, including progress reports, technical memos, final report, and   oral  presentations. Includes lab.  Effective Spring 2021, this course fulfills  a single unit in each of the following BU Hub areas: Oral and/or Signed  Communication, Writing-Intensive Course.  BU Hub   Learn More  Oral and/or Signed CommunicationWriting-Intensive Course  ",
+            "content": "Continuation of a team project in an area of electrical and computer    engineering, as proposed in EC 463. Application of technical, communication,    personal, and team skills. Oral and written communication of technical    information, including progress reports, technical memos, final report, and   oral  presentations. Includes lab.  Effective Spring 2021, this course fulfills  a single unit in each of the following BU Hub areas: Oral and/or Signed  Communication, Writing-Intensive Course.  BU Hub   Learn More  Oral and/or Signed CommunicationWriting-Intensive Course",
             "prof": [],
             "reviews": []
         }
@@ -224,7 +224,7 @@
             "id": "EC467",
             "name": "Senior Thesis",
             "prereqs": "Undergraduate Prerequisites: ENG EC 463; First Year Writing Seminar (e.g., WR 100 or WR 120) and senior standing and departmental approval.",
-            "content": "Well-prepared students may choose to do a formal senior thesis under the direct    guidance of a departmental faculty member. Students selecting this option must    obtain petitioned approval before the beginning of the semester of thesis    registration.  Effective Spring 2021, this course fulfills a single unit in each   of the following BU Hub areas: Oral and/or Signed Communication, Writing-  Intensive Course.  BU Hub   Learn More  Oral and/or Signed CommunicationWriting-Intensive Course  ",
+            "content": "Well-prepared students may choose to do a formal senior thesis under the direct    guidance of a departmental faculty member. Students selecting this option must    obtain petitioned approval before the beginning of the semester of thesis    registration.  Effective Spring 2021, this course fulfills a single unit in each   of the following BU Hub areas: Oral and/or Signed Communication, Writing-  Intensive Course.  BU Hub   Learn More  Oral and/or Signed CommunicationWriting-Intensive Course",
             "prof": [],
             "reviews": []
         }
@@ -234,7 +234,7 @@
             "id": "EC471",
             "name": "Physics of Semiconductor Devices",
             "prereqs": "Undergraduate Prerequisites: CAS PY 313 or CAS PY 354.",
-            "content": "This course addresses the theory of semiconductors and semiconductor electronic   devices. The section on the theory of semiconductor includes their crystal   structure, energy bands, and carrier concentration in thermal equilibrium as   well as carrier transport phenomena (drift, diffusion, generation and   recombination, tunneling, high field effects, and thermionic emission). The   section on electronic devices addresses the theory of p-n junctions and   heterojunctions, of Bipolar Junction Transistors (BJT), Thyristors, Metal Oxide   Semiconductor (MOS) Capacitors and MOS Field Effect Transistors (MOSFETs). ",
+            "content": "This course addresses the theory of semiconductors and semiconductor electronic   devices. The section on the theory of semiconductor includes their crystal   structure, energy bands, and carrier concentration in thermal equilibrium as   well as carrier transport phenomena (drift, diffusion, generation and   recombination, tunneling, high field effects, and thermionic emission). The   section on electronic devices addresses the theory of p-n junctions and   heterojunctions, of Bipolar Junction Transistors (BJT), Thyristors, Metal Oxide   Semiconductor (MOS) Capacitors and MOS Field Effect Transistors (MOSFETs).",
             "prof": [],
             "reviews": []
         }
@@ -244,7 +244,7 @@
             "id": "EC500",
             "name": "Special Topics in Electrical and Computer Engineering",
             "prereqs": "Undergraduate Prerequisites: senior standing or consent of instructor.",
-            "content": "Specific prerequisites vary according to topic. Coverage of a specific topic in electrical, computer, or systems engineering. Subject varies from year to year and is generally from an area of current or emerging research. ",
+            "content": "Specific prerequisites vary according to topic. Coverage of a specific topic in electrical, computer, or systems engineering. Subject varies from year to year and is generally from an area of current or emerging research.",
             "prof": [],
             "reviews": []
         }
@@ -254,7 +254,7 @@
             "id": "EC501",
             "name": "Dynamic System Theory",
             "prereqs": "Undergraduate Prerequisites: Familiarity with differential equations and matrices at the level of ENG ME 404 or CAS MA 242, or consent of instructor.",
-            "content": "Introduction to analytical concepts and examples of dynamic systems and control. Mathematical description and state space formation of dynamic systems; modeling, controllability, and observability. Eigenvector and transform analysis of linear systems including canonical forms. Performance specifications. State feedback: pole placement and the linear quadratic regulator. Introduction to MIMO design and system identification using computer tools and laboratory experiments. Same as ENG ME 501 and ENG SE 501. Students may not receive credit for both. ",
+            "content": "Introduction to analytical concepts and examples of dynamic systems and control. Mathematical description and state space formation of dynamic systems; modeling, controllability, and observability. Eigenvector and transform analysis of linear systems including canonical forms. Performance specifications. State feedback: pole placement and the linear quadratic regulator. Introduction to MIMO design and system identification using computer tools and laboratory experiments. Same as ENG ME 501 and ENG SE 501. Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -284,7 +284,7 @@
             "id": "EC505",
             "name": "Stochastic Processes",
             "prereqs": "Undergraduate Prerequisites: ENG EC 401 and CAS MA 142; or equivalent and either ENGEK381 or ENGEK500.",
-            "content": "Introduction to discrete and continuous-time random processes. Correlation and power spectral density functions. Linear systems driven by random processes. Optimum detection and estimation. Bayesian, Weiner, and Kalman filtering. ",
+            "content": "Introduction to discrete and continuous-time random processes. Correlation and power spectral density functions. Linear systems driven by random processes. Optimum detection and estimation. Bayesian, Weiner, and Kalman filtering.",
             "prof": [],
             "reviews": []
         }
@@ -294,7 +294,7 @@
             "id": "EC508",
             "name": "Wireless Communication",
             "prereqs": "Undergraduate Prerequisites: ENG EK 103 ; ENG EK 381 ; ENG EC 401.",
-            "content": "Fundamentals of wireless communication from a physical layer perspective.  Multipath signal propagation and fading channel models. Design of constellations  to exploit time, frequency, and spatial diversity. Reliable communication and  single-user capacity.  Interference management, multiple-access protocols, and  multi-user capacity.  Cellular uplink and downlink.  Multiple-antenna systems  and architectures.  Connections to modern wireless systems and standards. ",
+            "content": "Fundamentals of wireless communication from a physical layer perspective.  Multipath signal propagation and fading channel models. Design of constellations  to exploit time, frequency, and spatial diversity. Reliable communication and  single-user capacity.  Interference management, multiple-access protocols, and  multi-user capacity.  Cellular uplink and downlink.  Multiple-antenna systems  and architectures.  Connections to modern wireless systems and standards.",
             "prof": [],
             "reviews": []
         }
@@ -304,7 +304,7 @@
             "id": "EC511",
             "name": "Software Systems Design",
             "prereqs": "Undergraduate Prerequisites: ENG EC 312.",
-            "content": "Concept of software product life cycle. Various forms of a software product from requirements definition through operation and maintenance. Life cycle models and the activities performed in each phase. Role of rapid prototyping in requirements analysis and design. Design concepts and design strategies. Comparative evaluation of requirements definition and design methods. Analysis and design validation. Small-team projects involving architectural design and software specification. ",
+            "content": "Concept of software product life cycle. Various forms of a software product from requirements definition through operation and maintenance. Life cycle models and the activities performed in each phase. Role of rapid prototyping in requirements analysis and design. Design concepts and design strategies. Comparative evaluation of requirements definition and design methods. Analysis and design validation. Small-team projects involving architectural design and software specification.",
             "prof": [],
             "reviews": []
         }
@@ -312,7 +312,7 @@
     {
         "ENGEC512": {
             "id": "EC512",
-            "name": "Enterprise Client-Server Software Systems Design ",
+            "name": "Enterprise Client-Server Software Systems Design",
             "prereqs": "Undergraduate Prerequisites: Senior standing or consent of instructor. EC447 is recommended.",
             "content": "Examination of past, current, and emerging technologies. Client side technologies    including DHTML, CSS, scripting, and proprietary applications. Legacy server side    technologies including CGI, HTTP protocol, and active server pages. Current server    technologies including ASP.NET, XM, web services, SQL databases, streaming media,    and middleware. Design and implementation of solutions involving database    connectivity, session state, security requirements, SSL, and authentication of    clients. Assignments involving design through implementation.   Students must be fully competent in an object oriented programming language (C++,  C#, or Java preferred). Familiarity with web technologies such as HTML, scripting,  XML, etc. is helpful. Programming experience with a graphical user environment is  also very desirable.",
             "prof": [],
@@ -334,7 +334,7 @@
             "id": "EC514",
             "name": "Simulation",
             "prereqs": "Undergraduate Prerequisites: ENG ME 308 or ENG EC 381; ENG EC 127 or knowledge of a general purpose programming language.",
-            "content": "Modeling of discrete event systems and their analysis through simulation. Systems considered include, but are not limited to, manufacturing systems, computer-communication networks, and computer systems. Simulating random environments and output analysis in such contexts. A simulation language is introduced and is the main tool for simulation experimentation. Same as ENG ME 514; students may not receive credit for both. ",
+            "content": "Modeling of discrete event systems and their analysis through simulation. Systems considered include, but are not limited to, manufacturing systems, computer-communication networks, and computer systems. Simulating random environments and output analysis in such contexts. A simulation language is introduced and is the main tool for simulation experimentation. Same as ENG ME 514; students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -344,7 +344,7 @@
             "id": "EC516",
             "name": "Digital Signal Processing",
             "prereqs": "Undergraduate Prerequisites: ENG EC 401 and ENG EK 381.",
-            "content": "Advanced structures and techniques for digital signal processing and their properties in relation to application requirements such as real-time, low-bandwidth, and low-power operation. Optimal FIR filter design; time-dependent Fourier transform and filterbanks; Hilbert transform relations; cepstral analysis and deconvolution; parametric signal modeling; multidimensional signal processing; multirate signal processing. ",
+            "content": "Advanced structures and techniques for digital signal processing and their properties in relation to application requirements such as real-time, low-bandwidth, and low-power operation. Optimal FIR filter design; time-dependent Fourier transform and filterbanks; Hilbert transform relations; cepstral analysis and deconvolution; parametric signal modeling; multidimensional signal processing; multirate signal processing.",
             "prof": [],
             "reviews": []
         }
@@ -354,7 +354,7 @@
             "id": "EC517",
             "name": "Introduction to Information Theory",
             "prereqs": "Undergraduate Prerequisites: ENG EK 381.",
-            "content": "Discrete memoryless stationary sources and channels; Information measures on discrete and continuous alphabets and their properties: entropy, conditional entropy, relative entropy, mutual information, differential entropy; Elementary constrained convex optimization; Fundamental information inequalities: data-processing, and Fano's; Block source coding with outage: weak law of large numbers, entropically typical sequences and typical sets, asymptotic equipartition property; Block channel coding with and without cost constraints: jointly typical sequences, channel capacity, random coding, Shannon's channel coding theorem, introduction to practical linear block codes; Rate-distortion theory: Shannon's block source coding theorem relative to a fidelity criterion; Source and channel coding for Gaussian sources and channels and parallel Gaussian sources and channels (water-filling and reverse water-filling); Shannon's source-channel separation theorem for point-to-point communication; Lossless data compression: Kraft's inequality, Shannon's lossless source coding theorem, variable-length source codes including Huffman, Shannon-Fano-Elias, and Arithmetic codes; Applications; Mini course-project. ",
+            "content": "Discrete memoryless stationary sources and channels; Information measures on discrete and continuous alphabets and their properties: entropy, conditional entropy, relative entropy, mutual information, differential entropy; Elementary constrained convex optimization; Fundamental information inequalities: data-processing, and Fano's; Block source coding with outage: weak law of large numbers, entropically typical sequences and typical sets, asymptotic equipartition property; Block channel coding with and without cost constraints: jointly typical sequences, channel capacity, random coding, Shannon's channel coding theorem, introduction to practical linear block codes; Rate-distortion theory: Shannon's block source coding theorem relative to a fidelity criterion; Source and channel coding for Gaussian sources and channels and parallel Gaussian sources and channels (water-filling and reverse water-filling); Shannon's source-channel separation theorem for point-to-point communication; Lossless data compression: Kraft's inequality, Shannon's lossless source coding theorem, variable-length source codes including Huffman, Shannon-Fano-Elias, and Arithmetic codes; Applications; Mini course-project.",
             "prof": [],
             "reviews": []
         }
@@ -374,7 +374,7 @@
             "id": "EC520",
             "name": "Digital Image Processing and Communication",
             "prereqs": "Undergraduate Prerequisites: ENGEK381 and ENGEC401 or equivalents",
-            "content": "Review of signals and systems in multiple dimensions. Sampling of still images. Quantization of image intensities. Human visual system. Image color spaces. Image models and transformations. Image enhancement and restoration. Image analysis. Image compression fundamentals. Image compression standards (JPEG, JPEG-2000). Homework will include MATLAB assignments.  ",
+            "content": "Review of signals and systems in multiple dimensions. Sampling of still images. Quantization of image intensities. Human visual system. Image color spaces. Image models and transformations. Image enhancement and restoration. Image analysis. Image compression fundamentals. Image compression standards (JPEG, JPEG-2000). Homework will include MATLAB assignments.",
             "prof": [],
             "reviews": []
         }
@@ -414,7 +414,7 @@
             "id": "EC524",
             "name": "Optimization Theory and Methods",
             "prereqs": "Undergraduate Prerequisites: ENG EK 103 or CAS MA 142.",
-            "content": "Introduction to optimization problems and algorithms emphasizing problem formulation, basic methodologies, and underlying mathematical structures. Classical optimization theory as well as recent advances in the field. Topics include modeling issues and formulations, simplex method, duality theory, sensitivity analysis, large-scale optimization, integer programming, interior-point methods, non-linear programming optimality conditions, gradient methods, and conjugate direction methods. Applications are considered; case studies included. Extensive paradigms from production planning and scheduling in manufacturing systems.  Other illustrative applications include fleet management, air traffic flow management, optimal routing in communication networks, and optimal portfolio selection.  Same as ENG EC 674, ENG SE 524, ENG SE 674.  Students may not receive credit for both.   ",
+            "content": "Introduction to optimization problems and algorithms emphasizing problem formulation, basic methodologies, and underlying mathematical structures. Classical optimization theory as well as recent advances in the field. Topics include modeling issues and formulations, simplex method, duality theory, sensitivity analysis, large-scale optimization, integer programming, interior-point methods, non-linear programming optimality conditions, gradient methods, and conjugate direction methods. Applications are considered; case studies included. Extensive paradigms from production planning and scheduling in manufacturing systems.  Other illustrative applications include fleet management, air traffic flow management, optimal routing in communication networks, and optimal portfolio selection.  Same as ENG EC 674, ENG SE 524, ENG SE 674.  Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -504,7 +504,7 @@
             "id": "EC541",
             "name": "Computer Communication Networks",
             "prereqs": "Undergraduate Prerequisites: ENG EC 441 and ENG EK 381.",
-            "content": "Basic delay and blocking models for computer communications: M/M/1 queue; Jackson networks and loss networks; analysis of MAC protocols; flow control for data traffic; TCP and active queueing mechanisms for congestion control; traffic shaping and network calculus; packet switch architectures and scheduling algorithms; routing algorithms; flow assignment and fairness.  ",
+            "content": "Basic delay and blocking models for computer communications: M/M/1 queue; Jackson networks and loss networks; analysis of MAC protocols; flow control for data traffic; TCP and active queueing mechanisms for congestion control; traffic shaping and network calculus; packet switch architectures and scheduling algorithms; routing algorithms; flow assignment and fairness.",
             "prof": [],
             "reviews": []
         }
@@ -524,7 +524,7 @@
             "id": "EC544",
             "name": "Networking the Physical World",
             "prereqs": "Undergraduate Prerequisites: ENG EC 327; ENG EC 441 recommended, C programming experience required.",
-            "content": "Considers the evolution of embedded network sensing systems with the  introduction of wireless network connectivity. Key themes are computing  optimized for resource constrained (cost, energy, memory and storage space)  applications and sensing interfaces to connect to the physical world.  Studies current technology for networked embedded network sensors including  protocol standards. A laboratory component of the course introduces students  to the unique characteristics of distributed sensor motes including  programming, reliable communication, sensing modalities, calibration, and  application development. Same as ENG ME 544 and ENG SE 544. Students may not receive credits for both. ",
+            "content": "Considers the evolution of embedded network sensing systems with the  introduction of wireless network connectivity. Key themes are computing  optimized for resource constrained (cost, energy, memory and storage space)  applications and sensing interfaces to connect to the physical world.  Studies current technology for networked embedded network sensors including  protocol standards. A laboratory component of the course introduces students  to the unique characteristics of distributed sensor motes including  programming, reliable communication, sensing modalities, calibration, and  application development. Same as ENG ME 544 and ENG SE 544. Students may not receive credits for both.",
             "prof": [],
             "reviews": []
         }
@@ -554,7 +554,7 @@
             "id": "EC552",
             "name": "Computational Synthetic Biology for Engineers",
             "prereqs": "Undergraduate Prerequisites: ENG EK 125 and ENG EC 327.",
-            "content": "This course presents the field of computational synthetic biology through the  lens of four distinct activities: Specification, Design, Assembly, and Test.  Engineering students of all backgrounds are introduced provided an introduction  to synthetic biology and then exposed to core challenges and approaches in each  of the four areas. Homework assignments are provided which allow the students to  use existing computational software to explore each of these themes. In  addition, advanced concepts are presented around data management, design  algorithms, standardization, and simulation challenges in the field. The course  culminates in a group project in which the students apply computational design  methods to an experimentally created system working with graduate students in  the Biological Design Center and the DAMP Lab. Same as ENG BE 552. Students may  not receive credit for both. ",
+            "content": "This course presents the field of computational synthetic biology through the  lens of four distinct activities: Specification, Design, Assembly, and Test.  Engineering students of all backgrounds are introduced provided an introduction  to synthetic biology and then exposed to core challenges and approaches in each  of the four areas. Homework assignments are provided which allow the students to  use existing computational software to explore each of these themes. In  addition, advanced concepts are presented around data management, design  algorithms, standardization, and simulation challenges in the field. The course  culminates in a group project in which the students apply computational design  methods to an experimentally created system working with graduate students in  the Biological Design Center and the DAMP Lab. Same as ENG BE 552. Students may  not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -584,7 +584,7 @@
             "id": "EC560",
             "name": "Introduction to Photonics",
             "prereqs": "Undergraduate Prerequisites: CAS PY 313.",
-            "content": "Introduction to ray optics; matrix optics; wave optics; Fourier optics; electromagnetic optics including absorption and dispersion. Polarization, reflection and refraction, anisotropic media, liquid crystals, and polarization devices. Guided-wave and fiber optics. Nanophotonics. ",
+            "content": "Introduction to ray optics; matrix optics; wave optics; Fourier optics; electromagnetic optics including absorption and dispersion. Polarization, reflection and refraction, anisotropic media, liquid crystals, and polarization devices. Guided-wave and fiber optics. Nanophotonics.",
             "prof": [],
             "reviews": []
         }
@@ -594,7 +594,7 @@
             "id": "EC561",
             "name": "Error-Control Codes",
             "prereqs": "Undergraduate Prerequisites: CAS MA 193.",
-            "content": "Introduction to codes for error detection and correction in communication and computation channels, linear algebra over finite fields, bounds, Shannon?s Theorem, perfect and quasi-perfect codes, probability of error detection, Hamming, BCH, MDS, Reed-Solomon, and non-linear codes. Application of codes to error detection/correction in communication channels, computer memories, processors, and multiprocessor systems. Data compression and data reconciliation by error-detecting or error-correcting codes. ",
+            "content": "Introduction to codes for error detection and correction in communication and computation channels, linear algebra over finite fields, bounds, Shannon?s Theorem, perfect and quasi-perfect codes, probability of error detection, Hamming, BCH, MDS, Reed-Solomon, and non-linear codes. Application of codes to error detection/correction in communication channels, computer memories, processors, and multiprocessor systems. Data compression and data reconciliation by error-detecting or error-correcting codes.",
             "prof": [],
             "reviews": []
         }
@@ -602,7 +602,7 @@
     {
         "ENGEC562": {
             "id": "EC562",
-            "name": "Fourier Optics in Engineering   ",
+            "name": "Fourier Optics in Engineering",
             "prereqs": "Undergraduate Prerequisites: CAS MA 225 ; ENG EK 103 ; CAS PY 313 ; CAS PY 314 ; ENG EK 381 ; ENG EC 401; Proficiency in Matlab programming is expected as well as a backgroundknowledge in electromagnetics. Undergraduate students must talk to the instructor before registering.",
             "content": "The goal of this course is to present a coherent formulation of wave  propagation,  radiation and diffraction phenomena in arbitrary linear systems for  the engineering  design of optical devices in strong partnership with computer  simulations and  engineering-led design projects. The course will introduce  students to the  fundamental techniques that are necessary for the quantitative  analysis of optics- based engineering systems and devices.",
             "prof": [],
@@ -634,7 +634,7 @@
             "id": "EC566",
             "name": "The Atmosphere and Space Environment",
             "prereqs": "Undergraduate Prerequisites: CAS MA 226 ; CAS PY 212 ; ENG EK 125.",
-            "content": "Introduction to the upper atmosphere and ionosphere. The dynamic, electrodynamic, radiative, and chemical processes occurring in the atmosphere from ground level to near-space are developed to establish the conditions found in the upper-atmospheric/ionospheric region. Recent offerings have included numerical simulation of the ionospheric electron density profile. Numerical experiments that change the solar input and neutral atmospheric density, composition, winds, and temperature are then run to study the response of the ionosphere to these factors that control the ionosphere. Recommended for graduate students and advanced undergraduate students in engineering, astronomy, and physics and those with interests in environmental topics. ",
+            "content": "Introduction to the upper atmosphere and ionosphere. The dynamic, electrodynamic, radiative, and chemical processes occurring in the atmosphere from ground level to near-space are developed to establish the conditions found in the upper-atmospheric/ionospheric region. Recent offerings have included numerical simulation of the ionospheric electron density profile. Numerical experiments that change the solar input and neutral atmospheric density, composition, winds, and temperature are then run to study the response of the ionosphere to these factors that control the ionosphere. Recommended for graduate students and advanced undergraduate students in engineering, astronomy, and physics and those with interests in environmental topics.",
             "prof": [],
             "reviews": []
         }
@@ -644,7 +644,7 @@
             "id": "EC568",
             "name": "Optical Fibers and WaveGuides",
             "prereqs": "Undergraduate Prerequisites: ENG EC 455; or consent of instructor",
-            "content": "Whether it be the FIOS? internet connection at our homes, or fiber lasers  powerful enough to cut metals (many automobile chassis are now made using fiber  lasers), or the ability to perform endoscopic surgery and imaging, or doing  frequency metrology with super-continuum sources (the basis of a few recent  Nobel prizes)... the optical fiber has played a central, often dominant, role in  many applications that impact the way we live. The main function of an optical  fiber is to carry an electromagnetic (in the optical frequency) pulse over  distances ranging from meters to greater than ten thousand kilometers without  distortions. Fibers can also become smart light-pipes when they are  intentionally designed to alter, temporally shape or amplify light pulses.  Moreover, new developments in this field such as photonic bandgap fibers, fiber  nanowires and higher-order mode fibers, are opening up new directions in science  and technology.  This course will introduce the optical fiber waveguide and its  theory of operation. Specifically, the design and impact of the two most  important properties in optical fibers -- dispersion and nonlinearity -- that  govern the evolution of light in optical fibers, will be covered in detail. The  latter part of the course will describe new fibers and fiber-structures that are  active research topics today. One lecture of the course will include a tour of  an actual, industrial-scale fiber fabrication facility.  ",
+            "content": "Whether it be the FIOS? internet connection at our homes, or fiber lasers  powerful enough to cut metals (many automobile chassis are now made using fiber  lasers), or the ability to perform endoscopic surgery and imaging, or doing  frequency metrology with super-continuum sources (the basis of a few recent  Nobel prizes)... the optical fiber has played a central, often dominant, role in  many applications that impact the way we live. The main function of an optical  fiber is to carry an electromagnetic (in the optical frequency) pulse over  distances ranging from meters to greater than ten thousand kilometers without  distortions. Fibers can also become smart light-pipes when they are  intentionally designed to alter, temporally shape or amplify light pulses.  Moreover, new developments in this field such as photonic bandgap fibers, fiber  nanowires and higher-order mode fibers, are opening up new directions in science  and technology.  This course will introduce the optical fiber waveguide and its  theory of operation. Specifically, the design and impact of the two most  important properties in optical fibers -- dispersion and nonlinearity -- that  govern the evolution of light in optical fibers, will be covered in detail. The  latter part of the course will describe new fibers and fiber-structures that are  active research topics today. One lecture of the course will include a tour of  an actual, industrial-scale fiber fabrication facility.",
             "prof": [],
             "reviews": []
         }
@@ -654,7 +654,7 @@
             "id": "EC569",
             "name": "Introduction to Subsurface Imaging",
             "prereqs": "Undergraduate Prerequisites: Senior or graduate standing in ENG, PY, CH, MA, or CS.",
-            "content": "Introduction to subsurface imaging using electromagnetic, optical, X-ray, and acoustic waves. Transverse and axial imaging using localized probes (confocal scanning, time of flight, and interferometric techniques). Multiview tomographic imaging: computed axial tomography, diffraction tomography, diffuse optical tomography, electrical impedance tomography, and magnetic resonance imaging. Image reconstruction and inverse problems. Hyperspectral and multisensor imaging. ",
+            "content": "Introduction to subsurface imaging using electromagnetic, optical, X-ray, and acoustic waves. Transverse and axial imaging using localized probes (confocal scanning, time of flight, and interferometric techniques). Multiview tomographic imaging: computed axial tomography, diffraction tomography, diffuse optical tomography, electrical impedance tomography, and magnetic resonance imaging. Image reconstruction and inverse problems. Hyperspectral and multisensor imaging.",
             "prof": [],
             "reviews": []
         }
@@ -664,7 +664,7 @@
             "id": "EC570",
             "name": "Lasers and Applications",
             "prereqs": "Undergraduate Prerequisites: ENG EC 455.",
-            "content": "Review of wave optics. Gaussian, Hermite-Gaussian, Laguerre-Gaussian, and Bessel  optical beams. Planar- and spherical-mirror resonators; microresonators. Photons  and photon streams. Energy levels; absorption, spontaneous emission, and  simulated emission. Thermal and scattered light. Laser amplification and gain  saturation. Laser oscillation. Common lasers and introduction to pulsed lasers.  Photon interactions in semiconductors. LEDs, laser diodes, quantum-confined  lasers, and microcavity lasers. Introductoin to photon detectors. Laboratory  experiments: beam optics; longitudinal laser modes; laser-diode output  characteristics. ",
+            "content": "Review of wave optics. Gaussian, Hermite-Gaussian, Laguerre-Gaussian, and Bessel  optical beams. Planar- and spherical-mirror resonators; microresonators. Photons  and photon streams. Energy levels; absorption, spontaneous emission, and  simulated emission. Thermal and scattered light. Laser amplification and gain  saturation. Laser oscillation. Common lasers and introduction to pulsed lasers.  Photon interactions in semiconductors. LEDs, laser diodes, quantum-confined  lasers, and microcavity lasers. Introductoin to photon detectors. Laboratory  experiments: beam optics; longitudinal laser modes; laser-diode output  characteristics.",
             "prof": [],
             "reviews": []
         }
@@ -694,7 +694,7 @@
             "id": "EC573",
             "name": "Solar Energy Systems",
             "prereqs": "Undergraduate Prerequisites: ENG EK 408; graduate standing or permission of the instructor.  ENG EC 471 is suggested.",
-            "content": "This course is designed for first year graduate and senior undergraduate  students from engineering disciplines.  It is intended to educate students in  the design and applications of solar energy technology.  It will focus on  fundamentals of solar energy conversion, solar cells, optical engineering,  photoelectrochemical cells, thermoelectric generators, and energy storage and  distribution systems.  The course covers solar energy insolation and global  energy needs, current trends in photovoltaic energy engineering, solar cell  materials science, design and installation of solar panels for residential and  industrial applications and connections to the national grid and cost analysis  of the overall system.  In addition, basic manufacturing processes for the  production of solar panels, environmental impacts, and the related system  engineering aspects will be included to provide a comprehensive state-of-the-art  approach to solar energy utilization.  Same as ENG MS 573. Students may not  take credit for both. ",
+            "content": "This course is designed for first year graduate and senior undergraduate  students from engineering disciplines.  It is intended to educate students in  the design and applications of solar energy technology.  It will focus on  fundamentals of solar energy conversion, solar cells, optical engineering,  photoelectrochemical cells, thermoelectric generators, and energy storage and  distribution systems.  The course covers solar energy insolation and global  energy needs, current trends in photovoltaic energy engineering, solar cell  materials science, design and installation of solar panels for residential and  industrial applications and connections to the national grid and cost analysis  of the overall system.  In addition, basic manufacturing processes for the  production of solar panels, environmental impacts, and the related system  engineering aspects will be included to provide a comprehensive state-of-the-art  approach to solar energy utilization.  Same as ENG MS 573. Students may not  take credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -714,7 +714,7 @@
             "id": "EC575",
             "name": "Semiconductor Devices",
             "prereqs": "Undergraduate Prerequisites: ENG EC 410 ; ENG EC 455 ; ENG EC 574 ; CAS PY 313; or equivalent.",
-            "content": "Fundamentals of carrier generation, transport, recombination, and storage in semiconductors. Physical principles of operation of the PN junction, metal-semiconductor contact, bipolar junction transistor, MOS capacitor, MOSFET (Metal Oxide Semiconductor Field Effect Transistor), JFET (Junction Field Effect Transistor), and bipolar junction transistor. Develops physical principles and models that are useful in the analysis and design of integrated circuits. ",
+            "content": "Fundamentals of carrier generation, transport, recombination, and storage in semiconductors. Physical principles of operation of the PN junction, metal-semiconductor contact, bipolar junction transistor, MOS capacitor, MOSFET (Metal Oxide Semiconductor Field Effect Transistor), JFET (Junction Field Effect Transistor), and bipolar junction transistor. Develops physical principles and models that are useful in the analysis and design of integrated circuits.",
             "prof": [],
             "reviews": []
         }
@@ -724,7 +724,7 @@
             "id": "EC577",
             "name": "Electronic Optical and Magnetic Properties of Materials",
             "prereqs": "Undergraduate Prerequisites: CAS PY 313; or equivalent, and CAS MA 225 or CAS MA 226",
-            "content": "This course provides an in-depth analysis of solid-state physics as it pertains  to materials science and electrical engineering applications. Students will  develop an understanding of the theory of crystal structures and their  determination via diffraction, as well as the thermal, electrical, and optical  properties of materials that arise from these structures.  Same as ENG MS 577.  Students may not receive credit for both. ",
+            "content": "This course provides an in-depth analysis of solid-state physics as it pertains  to materials science and electrical engineering applications. Students will  develop an understanding of the theory of crystal structures and their  determination via diffraction, as well as the thermal, electrical, and optical  properties of materials that arise from these structures.  Same as ENG MS 577.  Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -754,7 +754,7 @@
             "id": "EC580",
             "name": "Analog VLSI Circuit Design",
             "prereqs": "Undergraduate Prerequisites: ENG EC 412.",
-            "content": "Anatomy of an operational amplifier using chip design techniques. Applications of  op amps in wave-shaping circuits, active filters including capacitive switching.  Analog multiplexing and data acquisition circuits, A/D, D/A, S/H are examined.  Frequency selective circuits and interface circuits such as optocouplers are  analyzed. ",
+            "content": "Anatomy of an operational amplifier using chip design techniques. Applications of  op amps in wave-shaping circuits, active filters including capacitive switching.  Analog multiplexing and data acquisition circuits, A/D, D/A, S/H are examined.  Frequency selective circuits and interface circuits such as optocouplers are  analyzed.",
             "prof": [],
             "reviews": []
         }
@@ -764,7 +764,7 @@
             "id": "EC582",
             "name": "RF/Analog IC Design Fundamentals",
             "prereqs": "Undergraduate Prerequisites: ENG EC 412 or ENG EC 571; or consent of instructor.",
-            "content": "Fundamentals related to CMOS and SiGe BICMOS analog circuits for RF  applications. Topics include low noise amplifiers, oscillators, mixers,  demodulators, phase-locked loop, switched capacitor circuits, A/D and D/A  converters, low power design, RF design techniques, and mixed-signal circuitry  typical of modern telecommunications technology. VLSI laboratory exercises  involving the design, layout, and simulation of RF/analog integrated circuits  using Cadence SpectreRF CAD software tools. Real-world examples in advanced  mixed-signal integrated circuit applications, such as a single chip radio. ",
+            "content": "Fundamentals related to CMOS and SiGe BICMOS analog circuits for RF  applications. Topics include low noise amplifiers, oscillators, mixers,  demodulators, phase-locked loop, switched capacitor circuits, A/D and D/A  converters, low power design, RF design techniques, and mixed-signal circuitry  typical of modern telecommunications technology. VLSI laboratory exercises  involving the design, layout, and simulation of RF/analog integrated circuits  using Cadence SpectreRF CAD software tools. Real-world examples in advanced  mixed-signal integrated circuit applications, such as a single chip radio.",
             "prof": [],
             "reviews": []
         }
@@ -774,7 +774,7 @@
             "id": "EC583",
             "name": "Power Electronics for Energy systems",
             "prereqs": "Undergraduate Prerequisites: ENG EC 410.",
-            "content": "Introduction to power electronics with emphasis on conversion circuits for energy systems. DC to DC conversion using buck, boost, and buck-boost converters. DC to AC inverters. Connection to power grid.  Properties of MOS transistors used for high power conversion applications. Properties of magnetic elements and interactions with power circuits.  Applications of power electronic circuits to energy systems, including solar cell installations, wave and wind power, and electric vehicles. High frequency inductors and transformers. ",
+            "content": "Introduction to power electronics with emphasis on conversion circuits for energy systems. DC to DC conversion using buck, boost, and buck-boost converters. DC to AC inverters. Connection to power grid.  Properties of MOS transistors used for high power conversion applications. Properties of magnetic elements and interactions with power circuits.  Applications of power electronic circuits to energy systems, including solar cell installations, wave and wind power, and electric vehicles. High frequency inductors and transformers.",
             "prof": [],
             "reviews": []
         }
@@ -804,7 +804,7 @@
             "id": "EC601",
             "name": "Product Design in Electrical and Computer Engineering",
             "prereqs": "Undergraduate Prerequisites: Graduate Standing or permission of instructor.",
-            "content": "Engineers influence their community, society and the world. Engineers build  products and services that can enhance people's lives. The product starts  with an idea and is delivered through research (technical and societal),  design, implementation, testing and support. During this class, students  will experience all of this. The course provides design and practical  insights into building products that involve WEB and mobile app development,  data simulation, analysis and modeling, cloud computing, signal processing  and/or computer vision. In the class, we work on how to take an idea and  concept and translate it into product requirements. Afterwards, we translate  the product requirements into system and engineering requirements. We also  discuss solution selection techniques. We then work on implementing our  ideas into systems and verify that they address the product requirements and  fulfill the concept we started with. During the class, we go over how to  choose solutions to build our products. We also discuss real product  realization, implementations and tradeoffs. The class is taught via an  example product and the class sessions are interactive. Students are divided  into groups where they work in parallel on their projects during class  sessions and hackathons. Teams define their target audience, product  mission, requirements and features. The class adopts agile software  development based on a two-week sprint. Students present their sprint  results to the class. ",
+            "content": "Engineers influence their community, society and the world. Engineers build  products and services that can enhance people's lives. The product starts  with an idea and is delivered through research (technical and societal),  design, implementation, testing and support. During this class, students  will experience all of this. The course provides design and practical  insights into building products that involve WEB and mobile app development,  data simulation, analysis and modeling, cloud computing, signal processing  and/or computer vision. In the class, we work on how to take an idea and  concept and translate it into product requirements. Afterwards, we translate  the product requirements into system and engineering requirements. We also  discuss solution selection techniques. We then work on implementing our  ideas into systems and verify that they address the product requirements and  fulfill the concept we started with. During the class, we go over how to  choose solutions to build our products. We also discuss real product  realization, implementations and tradeoffs. The class is taught via an  example product and the class sessions are interactive. Students are divided  into groups where they work in parallel on their projects during class  sessions and hackathons. Teams define their target audience, product  mission, requirements and features. The class adopts agile software  development based on a two-week sprint. Students present their sprint  results to the class.",
             "prof": [],
             "reviews": []
         }
@@ -834,7 +834,7 @@
             "id": "EC674",
             "name": "Optimization Theory 2",
             "prereqs": "",
-            "content": "This course is an introduction to optimization problems and algorithms emphasizing  problem formulation, basic methodologies and the underlying mathematical structures.  We will cover the classical theory as well as the state of the art. The major topics  we will cover are: 1. Theory and algorithms for linear programming. 2. Introduction  to combinatorial problems and methods for handling intractable problems. 3.  Introduction to nonlinear programming. 4. Introduction to network optimization.  Optimization techniques have many applications in science and engineering. To name a  few: * Optimal routing in communication networks. * Transmission scheduling and  resource allocation in sensor networks. * Production planning and scheduling in  manufacturing systems. * Fleet management. * Air traffic flow management by  airlines. * Optimal resource allocation in manufacturing and communication systems.  * Optimal portfolio selection. * Analysis and optimization of fluxes in metabolic  networks. * Protein docking.  Prerequisites: Working knowledge of Linear Algebra and  some degree of mathematical maturity. Same as ENG EC 674, ENG SE 524, ENG EC 674.  Students may not receive credits for both.  BU Hub   Learn More  Teamwork/Collaboration  ",
+            "content": "This course is an introduction to optimization problems and algorithms emphasizing  problem formulation, basic methodologies and the underlying mathematical structures.  We will cover the classical theory as well as the state of the art. The major topics  we will cover are: 1. Theory and algorithms for linear programming. 2. Introduction  to combinatorial problems and methods for handling intractable problems. 3.  Introduction to nonlinear programming. 4. Introduction to network optimization.  Optimization techniques have many applications in science and engineering. To name a  few: * Optimal routing in communication networks. * Transmission scheduling and  resource allocation in sensor networks. * Production planning and scheduling in  manufacturing systems. * Fleet management. * Air traffic flow management by  airlines. * Optimal resource allocation in manufacturing and communication systems.  * Optimal portfolio selection. * Analysis and optimization of fluxes in metabolic  networks. * Protein docking.  Prerequisites: Working knowledge of Linear Algebra and  some degree of mathematical maturity. Same as ENG EC 674, ENG SE 524, ENG EC 674.  Students may not receive credits for both.  BU Hub   Learn More  Teamwork/Collaboration",
             "prof": [],
             "reviews": []
         }
@@ -844,7 +844,7 @@
             "id": "EC700",
             "name": "Advanced Topics in Electrical and Computer Engineering",
             "prereqs": "Undergraduate Prerequisites: Graduate standing or consent of instructor.",
-            "content": "Advanced topics of current interest in electrical and computer engineering.  ",
+            "content": "Advanced topics of current interest in electrical and computer engineering.",
             "prof": [],
             "reviews": []
         }
@@ -854,7 +854,7 @@
             "id": "EC701",
             "name": "Optimal and Robust Control",
             "prereqs": "Undergraduate Prerequisites: ENG EC 501 or ENG ME 501 or ENG SE 501.",
-            "content": "This course is aimed at an introduction (with rigorous treatment) to the fundamentals of optimal and robust control.  It will be divided roughly into two parts.  The first will cover aspects of robust control including model reduction, H_2 and H_ infinity control, and feedback control of uncertain systems.  The second will delve into optimal control including topics such as the linear quadratic regulator, the calculus of variations, the maximum principle, and the Hamilton-Jacobi-Bellman equation. Same as ENG ME 701 and ENG SE 701. Students may not receive credits for both. ",
+            "content": "This course is aimed at an introduction (with rigorous treatment) to the fundamentals of optimal and robust control.  It will be divided roughly into two parts.  The first will cover aspects of robust control including model reduction, H_2 and H_ infinity control, and feedback control of uncertain systems.  The second will delve into optimal control including topics such as the linear quadratic regulator, the calculus of variations, the maximum principle, and the Hamilton-Jacobi-Bellman equation. Same as ENG ME 701 and ENG SE 701. Students may not receive credits for both.",
             "prof": [],
             "reviews": []
         }
@@ -864,7 +864,7 @@
             "id": "EC702",
             "name": "Recursive Estimation and Optimal Filtering",
             "prereqs": "Undergraduate Prerequisites: ENG EC 505.",
-            "content": "State-space theory of dynamic estimation in discrete and continuous time. Linear state-space models driven by white noise, Kalman filtering and its properties, optimal smoothing, non-linear filtering, extended and second-order Kalman filters, and sequential detection. Applications to radar, sonar, and optimal multitarget tracking, parameter identification. ",
+            "content": "State-space theory of dynamic estimation in discrete and continuous time. Linear state-space models driven by white noise, Kalman filtering and its properties, optimal smoothing, non-linear filtering, extended and second-order Kalman filters, and sequential detection. Applications to radar, sonar, and optimal multitarget tracking, parameter identification.",
             "prof": [],
             "reviews": []
         }
@@ -884,7 +884,7 @@
             "id": "EC707",
             "name": "Radar Remote Sensing",
             "prereqs": "Undergraduate Prerequisites: Experience in electromagnetic waves, analog and discrete signal processing, or consent of the instructor.",
-            "content": "Principles of radar systems and radar signal analysis with emphasis on environmental remote sensing. Topics include antenna fundamentals, wave propagation/scattering in various media, the radar equation, radar cross-section, target characteristics, ambiguity function, radar system components, pulse compression techniques, and aperture synthesis. Highlighted systems include ground-penetrating radars, synthetic aperture radar (SAR), weather radars, and incoherent scatter radars, and LIDAR. ",
+            "content": "Principles of radar systems and radar signal analysis with emphasis on environmental remote sensing. Topics include antenna fundamentals, wave propagation/scattering in various media, the radar equation, radar cross-section, target characteristics, ambiguity function, radar system components, pulse compression techniques, and aperture synthesis. Highlighted systems include ground-penetrating radars, synthetic aperture radar (SAR), weather radars, and incoherent scatter radars, and LIDAR.",
             "prof": [],
             "reviews": []
         }
@@ -924,7 +924,7 @@
             "id": "EC716",
             "name": "Advanced Digital Signal Processing",
             "prereqs": "Undergraduate Prerequisites: ENG EC 516.",
-            "content": "Selected topics from time-frequency distributions, parametric signal modeling, high-resolution spectral estimation, multi-rate signal processing, multidimensional signal processing, adaptive signal processing, alternative algorithms for DFT computation, symbolic and knowledge based signal processing. Application examples chosen from speech, image, communication, and biomedical applications. ",
+            "content": "Selected topics from time-frequency distributions, parametric signal modeling, high-resolution spectral estimation, multi-rate signal processing, multidimensional signal processing, adaptive signal processing, alternative algorithms for DFT computation, symbolic and knowledge based signal processing. Application examples chosen from speech, image, communication, and biomedical applications.",
             "prof": [],
             "reviews": []
         }
@@ -934,7 +934,7 @@
             "id": "EC717",
             "name": "Image Reconstruction and Restoration",
             "prereqs": "Undergraduate Prerequisites: ENG EC 516 and ENG EC 505.",
-            "content": "Principles and methods of reconstructing images and estimating multidimensional fields from indirect and noisy data; general deterministic (variational) and stochastic (Bayesian) techniques of regularizing ill-posed inverse problems; relationship of problem structure (data and models) to computational efficiency; impact of typically large image processing problems on viability of solution methods; problems in imaging and computational vision including tomography and surface reconstruction. Computer assignments. ",
+            "content": "Principles and methods of reconstructing images and estimating multidimensional fields from indirect and noisy data; general deterministic (variational) and stochastic (Bayesian) techniques of regularizing ill-posed inverse problems; relationship of problem structure (data and models) to computational efficiency; impact of typically large image processing problems on viability of solution methods; problems in imaging and computational vision including tomography and surface reconstruction. Computer assignments.",
             "prof": [],
             "reviews": []
         }
@@ -954,7 +954,7 @@
             "id": "EC720",
             "name": "Digital Video Processing",
             "prereqs": "Undergraduate Prerequisites: ENG EC 516 or ENG EC 505 or ENG EC 520; or equivalent",
-            "content": "Review of sampling/filtering in multiple dimensions, human visual system, fundamentals of information theory. Motion analysis: detection, estimation, segmentation, tracking. Image sequence segmentation. Spectral analysis of image sequences. Video enhancement: noise reduction, super-resolution. Video compression: transformation, quantization, entropy coding, error resilience. Video compression standards (H.26X and MPEG families). Future trends in image sequence compression and analysis. Homework and project will require MATLAB programming. ",
+            "content": "Review of sampling/filtering in multiple dimensions, human visual system, fundamentals of information theory. Motion analysis: detection, estimation, segmentation, tracking. Image sequence segmentation. Spectral analysis of image sequences. Video enhancement: noise reduction, super-resolution. Video compression: transformation, quantization, entropy coding, error resilience. Video compression standards (H.26X and MPEG families). Future trends in image sequence compression and analysis. Homework and project will require MATLAB programming.",
             "prof": [],
             "reviews": []
         }
@@ -984,7 +984,7 @@
             "id": "EC730",
             "name": "Information-Theoretical Design of Algorithms",
             "prereqs": "",
-            "content": "Recently developed information-theoretical approach to the analysis and design of computer algorithms. Previous knowledge of information theory or the theory of algorithms is not required, though desirable. Main topics include the complexity of algorithms; P, E, NP, and NP?hard problems; basic concepts of information theory, optimal coding; information-theoretical approach to sorting, order statistics, binary search, decision trees, hashing, minimization of Boolean functions, test, and similar problems; and design of efficient computer algorithms. ",
+            "content": "Recently developed information-theoretical approach to the analysis and design of computer algorithms. Previous knowledge of information theory or the theory of algorithms is not required, though desirable. Main topics include the complexity of algorithms; P, E, NP, and NP?hard problems; basic concepts of information theory, optimal coding; information-theoretical approach to sorting, order statistics, binary search, decision trees, hashing, minimization of Boolean functions, test, and similar problems; and design of efficient computer algorithms.",
             "prof": [],
             "reviews": []
         }
@@ -994,7 +994,7 @@
             "id": "EC732",
             "name": "Combinatorial Optimization and Graph Algorithms",
             "prereqs": "Undergraduate Prerequisites: ENG ME 411 or CAS CS 330; or equivalent course on optimization or algorithms.",
-            "content": "of algorithms for the solution of optimization problems with discrete decision  spaces.   Review of linear programming and duality.  Discussion of advanced  network optimization algorithms and matroid optimization.  Approximate algorithms  for NP-Hard optimization problems.  Submodular optimization.  Same as ENG SE 732.   Students may not receive credits for both. ",
+            "content": "of algorithms for the solution of optimization problems with discrete decision  spaces.   Review of linear programming and duality.  Discussion of advanced  network optimization algorithms and matroid optimization.  Approximate algorithms  for NP-Hard optimization problems.  Submodular optimization.  Same as ENG SE 732.   Students may not receive credits for both.",
             "prof": [],
             "reviews": []
         }
@@ -1004,7 +1004,7 @@
             "id": "EC733",
             "name": "Discrete Event and Hybrid Systems",
             "prereqs": "Undergraduate Prerequisites: ENG EK 500; or equivalent; consent of instructor",
-            "content": "Review of system theory fundamentals distinguishing between time-driven and event-driven dynamics. Modeling of Discrete Event and Hybrid Systems: Automata, Hybrid Automata, Petri Nets, basic queueing models, and stochastic flow models. Monte Carlo computer simulation: basic structure and output analysis. Analysis, control and optimization techniques based on Markov Decision Process theory with applications to scheduling, resource allocation and games of chance. Perturbation Analysis and Rapid Learning methods with applications to communication networks, manufacturing systems, and command-control. Same as ENG ME 733 and ENG SE 733. Students may not receive credits for both. ",
+            "content": "Review of system theory fundamentals distinguishing between time-driven and event-driven dynamics. Modeling of Discrete Event and Hybrid Systems: Automata, Hybrid Automata, Petri Nets, basic queueing models, and stochastic flow models. Monte Carlo computer simulation: basic structure and output analysis. Analysis, control and optimization techniques based on Markov Decision Process theory with applications to scheduling, resource allocation and games of chance. Perturbation Analysis and Rapid Learning methods with applications to communication networks, manufacturing systems, and command-control. Same as ENG ME 733 and ENG SE 733. Students may not receive credits for both.",
             "prof": [],
             "reviews": []
         }
@@ -1014,7 +1014,7 @@
             "id": "EC734",
             "name": "Hybrid Systems",
             "prereqs": "Undergraduate Prerequisites: ENG SE 501 or ENG EC 501 or ENG ME 501; or consent of instructor.",
-            "content": "The course offers a detailed introduction to hybrid systems, which are dynamical systems combining continuous dynamics (modeled by differential equations) with discrete dynamics (modeled by automata). The covered topics include modeling, simulation, stability analysis, verification, and control of such systems. The course contains several applications from both natural and manmade environments, ranging from gene networks in biology, to networked embedded systems in avionics and automotive controls, and to motion planning and control in robotics. Same as ENG ME 734 and ENG SE 734. Students may not receive credits for both. ",
+            "content": "The course offers a detailed introduction to hybrid systems, which are dynamical systems combining continuous dynamics (modeled by differential equations) with discrete dynamics (modeled by automata). The covered topics include modeling, simulation, stability analysis, verification, and control of such systems. The course contains several applications from both natural and manmade environments, ranging from gene networks in biology, to networked embedded systems in avionics and automotive controls, and to motion planning and control in robotics. Same as ENG ME 734 and ENG SE 734. Students may not receive credits for both.",
             "prof": [],
             "reviews": []
         }
@@ -1044,7 +1044,7 @@
             "id": "EC762",
             "name": "Quantum Optics",
             "prereqs": "Undergraduate Prerequisites: ENG EC 560; or equivalent, or consent of instructor.",
-            "content": "Review of the postulates of quantum mechanics. Quantization of the electromagnetic field. Coherent, thermal, squeezed, and entangled states, and their associated photon statistics. Interaction of light with matter. Spontaneous and stimulated transitions. Theory of optical detection. Quantum theory of the laser. Interaction of light with two-level atoms, including photon echo and self-induced transparency. Quantum theory of parametric interactions. ",
+            "content": "Review of the postulates of quantum mechanics. Quantization of the electromagnetic field. Coherent, thermal, squeezed, and entangled states, and their associated photon statistics. Interaction of light with matter. Spontaneous and stimulated transitions. Theory of optical detection. Quantum theory of the laser. Interaction of light with two-level atoms, including photon echo and self-induced transparency. Quantum theory of parametric interactions.",
             "prof": [],
             "reviews": []
         }
@@ -1054,7 +1054,7 @@
             "id": "EC763",
             "name": "Nonlinear and Ultrafast Optics",
             "prereqs": "Undergraduate Prerequisites: ENG EC 560.",
-            "content": "Tensor theory of linear anisotropic optical media. Second- and third-order nonlinear optics. Three-wave mixing and parametric interaction devices, including second-harmonic generation and parametric amplifiers and oscillators. Four-wave mixing and phase conjugation optics. Electro-optics and photo-refractive optics. Generation, compression, and detection of ultra short optical pulses. Femtosecond optics. Pulse propagation in dispersive linear media. Optical solitons.  ",
+            "content": "Tensor theory of linear anisotropic optical media. Second- and third-order nonlinear optics. Three-wave mixing and parametric interaction devices, including second-harmonic generation and parametric amplifiers and oscillators. Four-wave mixing and phase conjugation optics. Electro-optics and photo-refractive optics. Generation, compression, and detection of ultra short optical pulses. Femtosecond optics. Pulse propagation in dispersive linear media. Optical solitons.",
             "prof": [],
             "reviews": []
         }
@@ -1064,7 +1064,7 @@
             "id": "EC765",
             "name": "Biomedical Optics and Biophotonics",
             "prereqs": "",
-            "content": "This course surveys the applications of optical science and engineering to a variety of biomedical problems, with emphasis on optical and photonics technologies that enable real, minimally-invasive clinical applications. The course teaches only those aspects of biology itself that are necessary to understand the purpose of the application. The first weeks introduce the optical properties of tissue, and following lectures cover a range of topics in three general areas: 1) Optical spectroscopy applied to diagnosis of cancer and other tissue diseases; 2) Photon migration and optical imaging of subsurface structures in tissue; and 3) Laser-tissue interactions and other applications of light for therapeutic purposes. In addition to formal lectures, recent publications from the literature will be selected as illustrative of various topical areas, and for each publication one student will be assigned to prepare an informal presentation (with overhead slides or PowerPoint) reviewing for the class the underlying principles of that paper and outlining the research results. Same as ENGBE765; students may not receive credit for both. ",
+            "content": "This course surveys the applications of optical science and engineering to a variety of biomedical problems, with emphasis on optical and photonics technologies that enable real, minimally-invasive clinical applications. The course teaches only those aspects of biology itself that are necessary to understand the purpose of the application. The first weeks introduce the optical properties of tissue, and following lectures cover a range of topics in three general areas: 1) Optical spectroscopy applied to diagnosis of cancer and other tissue diseases; 2) Photon migration and optical imaging of subsurface structures in tissue; and 3) Laser-tissue interactions and other applications of light for therapeutic purposes. In addition to formal lectures, recent publications from the literature will be selected as illustrative of various topical areas, and for each publication one student will be assigned to prepare an informal presentation (with overhead slides or PowerPoint) reviewing for the class the underlying principles of that paper and outlining the research results. Same as ENGBE765; students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -1074,7 +1074,7 @@
             "id": "EC770",
             "name": "Guided-wave Optoelectronics",
             "prereqs": "Undergraduate Prerequisites: ENG EC 560 or ENG EC 568.",
-            "content": "Discussion of physics and engineering aspects of integrated optics and optoelectronic devices. Semiconductor waveguides, lasers, and photodetectors. Layered semiconductor structures, quantum wells, and superlattices. QW detectors, emitters, and modulators. OEICs. Photonic switching. ",
+            "content": "Discussion of physics and engineering aspects of integrated optics and optoelectronic devices. Semiconductor waveguides, lasers, and photodetectors. Layered semiconductor structures, quantum wells, and superlattices. QW detectors, emitters, and modulators. OEICs. Photonic switching.",
             "prof": [],
             "reviews": []
         }
@@ -1084,7 +1084,7 @@
             "id": "EC771",
             "name": "Physics of Compound Semiconductor Devices",
             "prereqs": "Undergraduate Prerequisites: ENG EC 574 or ENG EC 575 or CAS PY 543.",
-            "content": "Physics of present-day compound devices, and emerging devices based on quantum mechanical phenomena. MESFETs, Transferred Electron Devices, avalanche diodes, photodetectors, and light emitters. Quantum mechanical devices based on low dimensionality confinement through the formation of heterojunctions, quantum wells, and superlattices. High electron mobility transistors, resonant tunneling diodes, quantum detectors, and lasers. Materials growth and characterization are integral to the course. ",
+            "content": "Physics of present-day compound devices, and emerging devices based on quantum mechanical phenomena. MESFETs, Transferred Electron Devices, avalanche diodes, photodetectors, and light emitters. Quantum mechanical devices based on low dimensionality confinement through the formation of heterojunctions, quantum wells, and superlattices. High electron mobility transistors, resonant tunneling diodes, quantum detectors, and lasers. Materials growth and characterization are integral to the course.",
             "prof": [],
             "reviews": []
         }
@@ -1094,7 +1094,7 @@
             "id": "EC772",
             "name": "VLSI Graduate Design Project",
             "prereqs": "Undergraduate Prerequisites: ENG EC 571; consent of instructor",
-            "content": "EC772 is a project-oriented course that demonstrates the use of high-level   design techniques.  There are lectures, milestone presentations, and a final   presentation.  The lectures, interleaved with tutorials showing the utilization   of Verilog, the Cadence RTL compiler, and Silicon Encounter, define the general   design flow.  Additional design issues are also elaborated in the form of   classroom lectures, which take up a fraction of the course class time. Student   groups of 2-5 define their own projects, which are scrutinized by the entire   class as to difficulty and possibility of success.   Milestones entail both oral   (presented in class times) and written components.  Typically, by the time of   the final presentation, the milestone documents can be simply, with test results   (not necessarily simple), are combined to demonstrate the veracity of the final   chip design.  Pay special attention to prerequisites.   Verilog is at the heart   of almost everything.  EC311 and EC413 or equivalent courses can provide the   minimal Verilog proficiency for LEAP students.  These courses do not qualify for   grad student credit, so EC551 (Verilog: may be co-req) or equivalent Verilog  skill is  necessary.   EC571 VLSI Design or strong equivalent proficiency in  digital  circuits at the transistor level is also essential.  ",
+            "content": "EC772 is a project-oriented course that demonstrates the use of high-level   design techniques.  There are lectures, milestone presentations, and a final   presentation.  The lectures, interleaved with tutorials showing the utilization   of Verilog, the Cadence RTL compiler, and Silicon Encounter, define the general   design flow.  Additional design issues are also elaborated in the form of   classroom lectures, which take up a fraction of the course class time. Student   groups of 2-5 define their own projects, which are scrutinized by the entire   class as to difficulty and possibility of success.   Milestones entail both oral   (presented in class times) and written components.  Typically, by the time of   the final presentation, the milestone documents can be simply, with test results   (not necessarily simple), are combined to demonstrate the veracity of the final   chip design.  Pay special attention to prerequisites.   Verilog is at the heart   of almost everything.  EC311 and EC413 or equivalent courses can provide the   minimal Verilog proficiency for LEAP students.  These courses do not qualify for   grad student credit, so EC551 (Verilog: may be co-req) or equivalent Verilog  skill is  necessary.   EC571 VLSI Design or strong equivalent proficiency in  digital  circuits at the transistor level is also essential.",
             "prof": [],
             "reviews": []
         }
@@ -1114,7 +1114,7 @@
             "id": "EC774",
             "name": "Semiconductor Quantum Structures and Photonic Devices",
             "prereqs": "Undergraduate Prerequisites: ENG EC 574; or equivalent",
-            "content": "Optical properties of semiconductors: interband optical transitions; excitons.  Low-dimensional structures: quantum wells, superlattices, quantum wires, quantum dots, and their optical properties; intersubband transitions.  Lasers: double-heterojunction, quantum-well, quantum-dot, and quantum-cascade lasers; high-speed laser dynamics.  Electro-optical properties of bulk and low-dimensional semiconductors; electroabsorption modulators.  Detectors: photoconductors and photodiodes; quantum-well infrared photodetectors. Same as ENG MS 774. Students may not receive credit for both. ",
+            "content": "Optical properties of semiconductors: interband optical transitions; excitons.  Low-dimensional structures: quantum wells, superlattices, quantum wires, quantum dots, and their optical properties; intersubband transitions.  Lasers: double-heterojunction, quantum-well, quantum-dot, and quantum-cascade lasers; high-speed laser dynamics.  Electro-optical properties of bulk and low-dimensional semiconductors; electroabsorption modulators.  Detectors: photoconductors and photodiodes; quantum-well infrared photodetectors. Same as ENG MS 774. Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -1164,7 +1164,7 @@
             "id": "EC810",
             "name": "PhD Internship in Electrical and Computer Engineering",
             "prereqs": "Graduate Prerequisites: Permission of advisor and an approved internship offer; at least two complete semesters in the EC PhD program.",
-            "content": "This course is intended for students who want to do an internship in the US as part of their graduate program and would like to have internship credit listed on their transcript. International Students need to use their CPT for this course.   Prerequisites: 2 full semesters in ECE ",
+            "content": "This course is intended for students who want to do an internship in the US as part of their graduate program and would like to have internship credit listed on their transcript. International Students need to use their CPT for this course.   Prerequisites: 2 full semesters in ECE",
             "prof": [],
             "reviews": []
         }
@@ -1174,7 +1174,7 @@
             "id": "EC890",
             "name": "PhD Seminar 1",
             "prereqs": "",
-            "content": "ECE PhD First year requirement students will participate in seminars and skill development workshops on current topics in electrical and computer engineering. Students are expected to participate in discussions and read assigned material.  ",
+            "content": "ECE PhD First year requirement students will participate in seminars and skill development workshops on current topics in electrical and computer engineering. Students are expected to participate in discussions and read assigned material.",
             "prof": [],
             "reviews": []
         }
@@ -1184,7 +1184,7 @@
             "id": "EC891",
             "name": "PhD Seminar 2",
             "prereqs": "",
-            "content": "ECE PhD First year requirement students will participate in  seminars and skill development workshops on current topics in electrical and computer engineering. Students are expected to participate in discussions and read assigned material. ",
+            "content": "ECE PhD First year requirement students will participate in  seminars and skill development workshops on current topics in electrical and computer engineering. Students are expected to participate in discussions and read assigned material.",
             "prof": [],
             "reviews": []
         }
@@ -1194,7 +1194,7 @@
             "id": "EC892",
             "name": "Seminar",
             "prereqs": "",
-            "content": "A weekly two-hour seminar on recent research topics in the area of electro-physics, including solid state materials and devices, photonics, electromagnetics, computers in physics, and other related areas. Speakers include faculty and graduate students in the area. ",
+            "content": "A weekly two-hour seminar on recent research topics in the area of electro-physics, including solid state materials and devices, photonics, electromagnetics, computers in physics, and other related areas. Speakers include faculty and graduate students in the area.",
             "prof": [],
             "reviews": []
         }
@@ -1224,7 +1224,7 @@
             "id": "EC952",
             "name": "Directed Group Project",
             "prereqs": "",
-            "content": "A semester long engineering project with significant graduate-level design and      implementation elements is carried out by a team of 1 to 4 graduate students      under the supervision of an ECE faculty member. Required deliverables include a      written proposal, an end-of-semester project report, and an end-of-semester      oral/poster presentation. The project proposal must be approved by the faculty      supervisor before project team members may register for this course. ",
+            "content": "A semester long engineering project with significant graduate-level design and      implementation elements is carried out by a team of 1 to 4 graduate students      under the supervision of an ECE faculty member. Required deliverables include a      written proposal, an end-of-semester project report, and an end-of-semester      oral/poster presentation. The project proposal must be approved by the faculty      supervisor before project team members may register for this course.",
             "prof": [],
             "reviews": []
         }

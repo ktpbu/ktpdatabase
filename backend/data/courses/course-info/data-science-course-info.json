@@ -4,7 +4,7 @@
             "id": "DS100",
             "name": "Data Speak Louder Than Words",
             "prereqs": "",
-            "content": "This course introduces students to three perspectives that are fundamental to  their ability to reason with data: critical thinking, inferential thinking, and  computational thinking. Through data modeling and visualization, students will  construct and communicate arguments that are rooted in data. The course expects  only basic computer knowledge and teaches concepts and skills in computer  programming (Python), linear regression, and statistical inference. The course  delves into dilemmas surrounding data analysis, such as balancing individual  privacy and social utility, and prepares students for the data driven world all  around us. Students with interests from politics to sports, finance to journalism,  entrepreneurship to smart cities, etc., can use the knowledge of data science they  gain in this class to enhance those interests. Not to mention a grounding for  students who want to pursue the field of data science itself. Effective Fall 2021, this course fulfills a single unit in each of the following BU Hub areas: Social Inquiry 1, Digital/Multimedia Expression, Research and Information Literacy.  BU Hub   Learn More  Social Inquiry IDigital/Multimedia ExpressionResearch and Information Literacy  ",
+            "content": "This course introduces students to three perspectives that are fundamental to  their ability to reason with data: critical thinking, inferential thinking, and  computational thinking. Through data modeling and visualization, students will  construct and communicate arguments that are rooted in data. The course expects  only basic computer knowledge and teaches concepts and skills in computer  programming (Python), linear regression, and statistical inference. The course  delves into dilemmas surrounding data analysis, such as balancing individual  privacy and social utility, and prepares students for the data driven world all  around us. Students with interests from politics to sports, finance to journalism,  entrepreneurship to smart cities, etc., can use the knowledge of data science they  gain in this class to enhance those interests. Not to mention a grounding for  students who want to pursue the field of data science itself. Effective Fall 2021, this course fulfills a single unit in each of the following BU Hub areas: Social Inquiry 1, Digital/Multimedia Expression, Research and Information Literacy.  BU Hub   Learn More  Social Inquiry IDigital/Multimedia ExpressionResearch and Information Literacy",
             "prof": [],
             "reviews": []
         }
@@ -14,7 +14,7 @@
             "id": "DS110",
             "name": "Introduction to Data Science with Python",
             "prereqs": "",
-            "content": "CDS DS 110 is the first in a two-course sequence (leading to CDS DS 210) that   builds students' competence   in computing techniques central to data science.   Students will use Python to explore fundamental CS  concepts and processes used  in  data science with a focus on descriptive data analysis, including data    structures, development of  functions and more advanced recursion, object- oriented  programming, data  processing and data  visualization. Numpy, pandas,  and  matplotlib will be used to analyze real-world data. Prior experience with  Python  is not required.    BU Hub   Learn More  Quantitative Reasoning ITeamwork/Collaboration  ",
+            "content": "CDS DS 110 is the first in a two-course sequence (leading to CDS DS 210) that   builds students' competence   in computing techniques central to data science.   Students will use Python to explore fundamental CS  concepts and processes used  in  data science with a focus on descriptive data analysis, including data    structures, development of  functions and more advanced recursion, object- oriented  programming, data  processing and data  visualization. Numpy, pandas,  and  matplotlib will be used to analyze real-world data. Prior experience with  Python  is not required.    BU Hub   Learn More  Quantitative Reasoning ITeamwork/Collaboration",
             "prof": [],
             "reviews": []
         }
@@ -44,7 +44,7 @@
             "id": "DS122",
             "name": "Foundations of Data Science",
             "prereqs": "Undergraduate Prerequisites: CDSDS120 OR equivalent",
-            "content": "CDS DS 122 is the third in a three-course sequence (with CDS DS 120 and CDS DS      121) that introduces students to theoretical foundations of Data Science. DS 122      covers topics in probability (including common probability distributions,      conditional probability, independence, Bayes Theorem, prior and posterior      distributions, sampling, and the central limit theorem), statistics (including      maximum likelihood), basic numerical optimization (including gradient descent      methods), and topics in calculus (including sequences and series). Knowledge of      a programming language (such as Python) is expected.  Effective Spring 2022,  this course fulfills a single unit in each of the following BU Hub areas:  Quantitative Reasoning II, Critical Thinking.  BU Hub   Learn More  Quantitative Reasoning IICritical Thinking  ",
+            "content": "CDS DS 122 is the third in a three-course sequence (with CDS DS 120 and CDS DS      121) that introduces students to theoretical foundations of Data Science. DS 122      covers topics in probability (including common probability distributions,      conditional probability, independence, Bayes Theorem, prior and posterior      distributions, sampling, and the central limit theorem), statistics (including      maximum likelihood), basic numerical optimization (including gradient descent      methods), and topics in calculus (including sequences and series). Knowledge of      a programming language (such as Python) is expected.  Effective Spring 2022,  this course fulfills a single unit in each of the following BU Hub areas:  Quantitative Reasoning II, Critical Thinking.  BU Hub   Learn More  Quantitative Reasoning IICritical Thinking",
             "prof": [],
             "reviews": []
         }
@@ -74,7 +74,7 @@
             "id": "DS209",
             "name": "Spark! Software Engineering Immersion",
             "prereqs": "",
-            "content": "Students will be introduced to all concepts required to work on a modern web   development project. This course is intentionally taught with very little   prerequisite knowledge to enable students to begin learning these skills earlier   in their college path. Students begin by learning basic skills required to build  a  functioning web application. During the second half of the course, students  will  be allocated to teams and provided a choice of projects to develop over  the course  of the semester. Students will submit their final application as  their final  project on the last day of classes. Effective Fall 2023, this  course fulfills a single unit in each of the following BU Hub areas:  Oral  and/or Signed Communication, Digital/Multimedia Expression,  Teamwork/Collaboration.  BU Hub   Learn More  Oral and/or Signed CommunicationDigital/Multimedia ExpressionTeamwork/Collaboration  ",
+            "content": "Students will be introduced to all concepts required to work on a modern web   development project. This course is intentionally taught with very little   prerequisite knowledge to enable students to begin learning these skills earlier   in their college path. Students begin by learning basic skills required to build  a  functioning web application. During the second half of the course, students  will  be allocated to teams and provided a choice of projects to develop over  the course  of the semester. Students will submit their final application as  their final  project on the last day of classes. Effective Fall 2023, this  course fulfills a single unit in each of the following BU Hub areas:  Oral  and/or Signed Communication, Digital/Multimedia Expression,  Teamwork/Collaboration.  BU Hub   Learn More  Oral and/or Signed CommunicationDigital/Multimedia ExpressionTeamwork/Collaboration",
             "prof": [],
             "reviews": []
         }
@@ -84,7 +84,7 @@
             "id": "DS210",
             "name": "Programming for Data Science",
             "prereqs": "Undergraduate Prerequisites: CDSDS110 OR equivalent",
-            "content": "Second course in the CDS DS-110-210 sequence. The first half of DS 210 continues      the Python programming experience begun in  DS-110, with enhanced focus on      machine learning applications. The second half of the course introduces students      to  compiled programming languages, such as Rust, Go and Java, suitable for  building     large projects. Basic data structures  (stacks, queues, priority  queues, binary     search trees), techniques for representing graphs, and basic  graph algorithms      will be explored. Concepts are developed and reinforced  through consideration of     data-driven inquiries in real-world  settings. Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Quantitative Reasoning II, Digital/Multimedia Expression, Creativity/Innovation.    BU Hub   Learn More  Quantitative Reasoning IIDigital/Multimedia ExpressionCreativity/Innovation  ",
+            "content": "Second course in the CDS DS-110-210 sequence. The first half of DS 210 continues      the Python programming experience begun in  DS-110, with enhanced focus on      machine learning applications. The second half of the course introduces students      to  compiled programming languages, such as Rust, Go and Java, suitable for  building     large projects. Basic data structures  (stacks, queues, priority  queues, binary     search trees), techniques for representing graphs, and basic  graph algorithms      will be explored. Concepts are developed and reinforced  through consideration of     data-driven inquiries in real-world  settings. Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Quantitative Reasoning II, Digital/Multimedia Expression, Creativity/Innovation.    BU Hub   Learn More  Quantitative Reasoning IIDigital/Multimedia ExpressionCreativity/Innovation",
             "prof": [],
             "reviews": []
         }
@@ -104,7 +104,7 @@
             "id": "DS280",
             "name": "Spark! UX/UI Design",
             "prereqs": "",
-            "content": "User experience design (UX) and user interface engineering (UI) is the design of user  interfaces and visualization for computer, information, and data products focusing on  maximizing usability and the user experience. Students complete a series of activities  within the UX Design toolkit developed by BU Spark! in collaboration with the Red Hat UX  Design team. Course covers basic steps of the UX Design process, beginning with user  insights and problem definition, empathy maps around personas, to user stories and lo- fidelity wireframes or story maps, to brand design and high fidelity wireframes. Effective Spring 2022, this course fulfills a single unit in the following BU Hub area: Digital/Multimedia Expression.  BU Hub   Learn More  Digital/Multimedia Expression  ",
+            "content": "User experience design (UX) and user interface engineering (UI) is the design of user  interfaces and visualization for computer, information, and data products focusing on  maximizing usability and the user experience. Students complete a series of activities  within the UX Design toolkit developed by BU Spark! in collaboration with the Red Hat UX  Design team. Course covers basic steps of the UX Design process, beginning with user  insights and problem definition, empathy maps around personas, to user stories and lo- fidelity wireframes or story maps, to brand design and high fidelity wireframes. Effective Spring 2022, this course fulfills a single unit in the following BU Hub area: Digital/Multimedia Expression.  BU Hub   Learn More  Digital/Multimedia Expression",
             "prof": [],
             "reviews": []
         }
@@ -124,7 +124,7 @@
             "id": "DS290",
             "name": "Spark! Civic Tech Research Design Workshop",
             "prereqs": "",
-            "content": "This workshop focuses on how we learn from data. How do we identify and analyze    relationships in our data? What conclusions can we draw from our data, and how   applicable  are our conclusions to broader contexts? How do we communicate   effectively about our data  and analyses? How can we be critical consumers of   data and research, and identify issues  and limitations in how data is used by   data scientists, journalists, academics, and others?  Effective Spring 2023,   this course fulfills a single unit in the following BU Hub area: Research and   Information Literacy.  Students must register for both DS290 and DS292.  BU Hub   Learn More  Research and Information Literacy  ",
+            "content": "This workshop focuses on how we learn from data. How do we identify and analyze    relationships in our data? What conclusions can we draw from our data, and how   applicable  are our conclusions to broader contexts? How do we communicate   effectively about our data  and analyses? How can we be critical consumers of   data and research, and identify issues  and limitations in how data is used by   data scientists, journalists, academics, and others?  Effective Spring 2023,   this course fulfills a single unit in the following BU Hub area: Research and   Information Literacy.  Students must register for both DS290 and DS292.  BU Hub   Learn More  Research and Information Literacy",
             "prof": [],
             "reviews": []
         }
@@ -134,7 +134,7 @@
             "id": "DS291",
             "name": "Spark! Exploring DEI in Tech",
             "prereqs": "",
-            "content": "This workshop will explore topics related to diversity,  equity, inclusion, and   justice (DEIJ) in the technology sector. The course will implement the  theory and  practice of DEIJ across the tech  sector. Students will start by gaining a  foundational  understanding of the concepts of identity, intersectionality, and   inclusive dialogue. They will  then apply this framework to understand issues of  DEIJ in the tech sector in Academia and   business, and the different technology  domains from AI to hardware. The second part of the course  will be focused on     allyship and action and includes a final project where students will use an   intersectional lens to assess a problem  they are passionate about and develop  solutions they  believe can have impact. Through this course, students will learn     how to engage in and  facilitate impactful discussions about diversity, equity,  inclusion and justice. Effective Spring 2022, this course fulfills a single unit in the following BU Hub area: The Individual in Community.  BU Hub   Learn More  The Individual in Community  ",
+            "content": "This workshop will explore topics related to diversity,  equity, inclusion, and   justice (DEIJ) in the technology sector. The course will implement the  theory and  practice of DEIJ across the tech  sector. Students will start by gaining a  foundational  understanding of the concepts of identity, intersectionality, and   inclusive dialogue. They will  then apply this framework to understand issues of  DEIJ in the tech sector in Academia and   business, and the different technology  domains from AI to hardware. The second part of the course  will be focused on     allyship and action and includes a final project where students will use an   intersectional lens to assess a problem  they are passionate about and develop  solutions they  believe can have impact. Through this course, students will learn     how to engage in and  facilitate impactful discussions about diversity, equity,  inclusion and justice. Effective Spring 2022, this course fulfills a single unit in the following BU Hub area: The Individual in Community.  BU Hub   Learn More  The Individual in Community",
             "prof": [],
             "reviews": []
         }
@@ -144,7 +144,7 @@
             "id": "DS292",
             "name": "Spark! Civic Tech Toolkit Workshop",
             "prereqs": "Undergraduate Prerequisites: CDS DS 290.",
-            "content": "This workshop introduces students to a variety of data sources and methodologies  applicable for studying questions around civic life in a variety of settings  e.g. elections, housing, policing, economic development, and more. While we will  primarily focus on data used in the United States (including U.S. Census data,  voter files, and other public records), these skills are applicable to civic  research globally. We will also learn how to conduct analysis from start (a  vague question or assignment) to finish (a rigorous and careful analysis that  acknowledges its limitations). This course is taught using both R and Python;  students must possess the ability to manipulate and analyze data in one of these  languages. This course fulfills a single unit in the following BU Hub area: The  Individual in Community.   BU Hub   Learn More  The Individual in Community  ",
+            "content": "This workshop introduces students to a variety of data sources and methodologies  applicable for studying questions around civic life in a variety of settings  e.g. elections, housing, policing, economic development, and more. While we will  primarily focus on data used in the United States (including U.S. Census data,  voter files, and other public records), these skills are applicable to civic  research globally. We will also learn how to conduct analysis from start (a  vague question or assignment) to finish (a rigorous and careful analysis that  acknowledges its limitations). This course is taught using both R and Python;  students must possess the ability to manipulate and analyze data in one of these  languages. This course fulfills a single unit in the following BU Hub area: The  Individual in Community.   BU Hub   Learn More  The Individual in Community",
             "prof": [],
             "reviews": []
         }
@@ -164,7 +164,7 @@
             "id": "DS310",
             "name": "Data Mechanics",
             "prereqs": "Undergraduate Prerequisites: CDSDS210",
-            "content": "Course focused on developing students' capacity to design and implement data  flows and the  computational workflows meant to inform online/offline decision- making within large  systems. Students explore the data science lifecycle,  including question formulation, data  collection and cleaning (data wrangling),  exploratory data analysis and visualization,  statistical inference and  prediction, and decision-making. Relational (SQL) and MapReduce  (noSQL)  paradigms used to assemble analysis, optimization, and decision-making  algorithms  to track and scale data. Effective Fall 2023, this course fulfills a  single unit in each of the following BU Hub areas Quantitative Reasoning II,  Critical Thinking.  BU Hub   Learn More  Quantitative Reasoning IICritical Thinking  ",
+            "content": "Course focused on developing students' capacity to design and implement data  flows and the  computational workflows meant to inform online/offline decision- making within large  systems. Students explore the data science lifecycle,  including question formulation, data  collection and cleaning (data wrangling),  exploratory data analysis and visualization,  statistical inference and  prediction, and decision-making. Relational (SQL) and MapReduce  (noSQL)  paradigms used to assemble analysis, optimization, and decision-making  algorithms  to track and scale data. Effective Fall 2023, this course fulfills a  single unit in each of the following BU Hub areas Quantitative Reasoning II,  Critical Thinking.  BU Hub   Learn More  Quantitative Reasoning IICritical Thinking",
             "prof": [],
             "reviews": []
         }
@@ -174,7 +174,7 @@
             "id": "DS320",
             "name": "Algorithms for Data Science",
             "prereqs": "Undergraduate Prerequisites: CDSDS121 or equivalent AND CDSDS210 or equivalent",
-            "content": "This course covers the fundamental principles underlying the design and analysis of  algorithms. We will walk through classical design methods, such as greedy algorithms, design  and conquer, and dynamic programming, focusing on applications in data science. We will also  study algorithmic methods more specific to data science and machine learning. The course  places a particular emphasis on algorithmic efficiency, crucial with large and/or streaming  data sets, for which multiple scans of data are infeasible, including the use of  approximation and randomized algorithms. Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Quantitative Reasoning II, Critical Thinking.  BU Hub   Learn More  Quantitative Reasoning IICritical Thinking  ",
+            "content": "This course covers the fundamental principles underlying the design and analysis of  algorithms. We will walk through classical design methods, such as greedy algorithms, design  and conquer, and dynamic programming, focusing on applications in data science. We will also  study algorithmic methods more specific to data science and machine learning. The course  places a particular emphasis on algorithmic efficiency, crucial with large and/or streaming  data sets, for which multiple scans of data are infeasible, including the use of  approximation and randomized algorithms. Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Quantitative Reasoning II, Critical Thinking.  BU Hub   Learn More  Quantitative Reasoning IICritical Thinking",
             "prof": [],
             "reviews": []
         }
@@ -184,7 +184,7 @@
             "id": "DS340",
             "name": "Introduction to Machine Learning and AI",
             "prereqs": "Undergraduate Prerequisites: CDSDS320",
-            "content": "This course instructs students in key algorithms for classic artificial  intelligence (AI) and  modern machine learning (ML). Along the way, we seek to  explore what kinds of problems these  techniques are good and bad at, and build  intuition for what makes a good search or machine  learning problem. The primary assessment tools will be programming problem sets in  Python, using  Jupyter notebooks.  Effective Fall 2022, this course fulfills a  single unit in each of the  following BU Hub areas: Ethical Reasoning,  Quantitative Reasoning II, Critical Thinking.  BU Hub   Learn More  Quantitative Reasoning IIEthical ReasoningCritical Thinking  ",
+            "content": "This course instructs students in key algorithms for classic artificial  intelligence (AI) and  modern machine learning (ML). Along the way, we seek to  explore what kinds of problems these  techniques are good and bad at, and build  intuition for what makes a good search or machine  learning problem. The primary assessment tools will be programming problem sets in  Python, using  Jupyter notebooks.  Effective Fall 2022, this course fulfills a  single unit in each of the  following BU Hub areas: Ethical Reasoning,  Quantitative Reasoning II, Critical Thinking.  BU Hub   Learn More  Quantitative Reasoning IIEthical ReasoningCritical Thinking",
             "prof": [],
             "reviews": []
         }
@@ -192,9 +192,9 @@
     {
         "CDSDS380": {
             "id": "DS380",
-            "name": "Data, Society and Ethics ",
+            "name": "Data, Society and Ethics",
             "prereqs": "Undergraduate Prerequisites: CDSDS110 AND CDSDS320",
-            "content": "This course develops students' ability to critically examine and question the  interplay between data science and computational technologies on the one hand,  and society and public policy on the other. Students will complete exercises to  demonstrate their facility with key ethics tools and techniques, and analyze a  series of real-world case studies presented alongside ethical tools and analyses  that are useful both for staying alert to emerging ethical challenges and  responding to them as they arise in both employment settings and everyday life.   Effective Fall 2022, this course fulfills a single unit in each of the following  BU Hub areas: Ethical Reasoning, Social Inquiry II, Research and Information  Literacy.   BU Hub   Learn More  Ethical ReasoningSocial Inquiry IIResearch and Information Literacy  ",
+            "content": "This course develops students' ability to critically examine and question the  interplay between data science and computational technologies on the one hand,  and society and public policy on the other. Students will complete exercises to  demonstrate their facility with key ethics tools and techniques, and analyze a  series of real-world case studies presented alongside ethical tools and analyses  that are useful both for staying alert to emerging ethical challenges and  responding to them as they arise in both employment settings and everyday life.   Effective Fall 2022, this course fulfills a single unit in each of the following  BU Hub areas: Ethical Reasoning, Social Inquiry II, Research and Information  Literacy.   BU Hub   Learn More  Ethical ReasoningSocial Inquiry IIResearch and Information Literacy",
             "prof": [],
             "reviews": []
         }
@@ -202,7 +202,7 @@
     {
         "CDSDS381": {
             "id": "DS381",
-            "name": "Social Justice for Data Science   ",
+            "name": "Social Justice for Data Science",
             "prereqs": "",
             "content": "Society is becoming increasingly digitized and datafied. Important decisions  impacting criminal justice, housing, finance, labor, healthcare, and education  are frequently determined by or are aided by artificially intelligent  algorithmic technologies that are built and trained on large datasets. The rise  in these technologies presents a challenge for social justice. Though often  presented as neutral decision aids, these technologies often produce harmful  predictions that operate to reinforce old legacies of racial, class, gender, and  heteropatriarchal subordination. Datafication practices, computational  techniques, legal doctrine, and policy play a key role in facilitating these  disparate outcomes. This course will center on the complicated relationship  between social justice and data science. The course will introduce students to  the historical and current role of datafication and computation practices in  social subordination.  Students will leave the course having developed the skill  set needed to identify and critically engage with the social justice challenges  posed by these new technologies.",
             "prof": [],
@@ -222,7 +222,7 @@
     {
         "CDSDS457": {
             "id": "DS457",
-            "name": "Law for Algorithms ",
+            "name": "Law for Algorithms",
             "prereqs": "",
             "content": "Algorithms - those information-processing machines designed by humans - reach  ever more deeply into our lives, creating alternate and sometimes enhanced  manifestations of social and biological processes. In doing so, algorithms yield  powerful levers for good and ill amidst a sea of unforeseen consequences. This  crosscutting and interdisciplinary course investigates several aspects of  algorithms and their impact on society and law. Specifically, the course  connects concepts of proof, verifiability, privacy, security, trust, and  randomness in computer science with legal concepts of autonomy, consent,  governance, and liability, and examines interests at the evolving intersection  of technology and the law. Grades will be based on a combination of short weekly  reflection papers and a final project, to be completed collaboratively in mixed  teams of law and computer and data science students. This course will include  attendees from the computer science faculty, students and scholars based at  Boston University and UC Berkeley.",
             "prof": [],
@@ -244,7 +244,7 @@
             "id": "DS482",
             "name": "Responsible AI, Law, Ethics & Society",
             "prereqs": "Undergraduate Prerequisites: CDSDS100/CDSDS110 (Intro to data science OR equivalent) and CDSDS340 (intro to ML and AI OR equivalent)",
-            "content": "Permission is required to register for this course, please fill out an application form here - https://bit.ly/3sv70c3  Course page:  https://learn.responsibly.ai/. Instructor: shlomi@bu.edu. This course addresses the  deployment  of Artificial Intelligence systems in multiple domains of society, and how this raises  fundamental challenges  and concerns, such  as accountability, liability,  fairness, transparency and  privacy. Tackling these   challenges calls for an interdisciplinary  approach: deconstructing these   issues by discipline and  reconstructing with an integrated mindset, principles and practices between  data science, ethics and  law.  This unique course will bring together students from either computing  and data science disciplines or law and  public   policy disciplines from multiple institution. Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Social Inquiry II, Ethical Reasoning, Teamwork/Collaboration.  BU Hub   Learn More  Ethical ReasoningSocial Inquiry IITeamwork/Collaboration  ",
+            "content": "Permission is required to register for this course, please fill out an application form here - https://bit.ly/3sv70c3  Course page:  https://learn.responsibly.ai/. Instructor: shlomi@bu.edu. This course addresses the  deployment  of Artificial Intelligence systems in multiple domains of society, and how this raises  fundamental challenges  and concerns, such  as accountability, liability,  fairness, transparency and  privacy. Tackling these   challenges calls for an interdisciplinary  approach: deconstructing these   issues by discipline and  reconstructing with an integrated mindset, principles and practices between  data science, ethics and  law.  This unique course will bring together students from either computing  and data science disciplines or law and  public   policy disciplines from multiple institution. Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Social Inquiry II, Ethical Reasoning, Teamwork/Collaboration.  BU Hub   Learn More  Ethical ReasoningSocial Inquiry IITeamwork/Collaboration",
             "prof": [],
             "reviews": []
         }
@@ -262,7 +262,7 @@
     {
         "CDSDS490": {
             "id": "DS490",
-            "name": "Directed Study in Computing & Data Sciences ",
+            "name": "Directed Study in Computing & Data Sciences",
             "prereqs": "",
             "content": "Directed study in Computing & Data Sciences provides students the opportunity to  complete directed research in a selected topic not covered in a regularly  scheduled course under the supervision of a faculty member. Student and  supervising faculty member arrange and document expectations and requirements.  Examples include in-depth study of a special topic or independent research  project.",
             "prof": [],
@@ -282,9 +282,9 @@
     {
         "CDSDS519": {
             "id": "DS519",
-            "name": "Spark! Software Engineering X-Lab Practicum ",
+            "name": "Spark! Software Engineering X-Lab Practicum",
             "prereqs": "Undergraduate Prerequisites: CDSDS310 OR CASCS411 OR equivalent experience in software developmentand consent of instructor. Consent provided upon successful completion of pass/fail diagnostic test to assess student readiness fo",
-            "content": "This course offers students in computing disciplines the opportunity to apply     their programming and  system development skills by working on real-world     projects provided from partnering organizations  within and outside of BU, which     are curated by Spark! The course offers a range of project options  where     students can improve their technical skills, while also gaining the soft skills     necessary to  deliver projects aligned to the partner's goals. These include     teamwork and communications skills  and software development processes. All     students participating in the course are expected to  complete a software     engineering project including a final presentation to the partner organization.    Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Ethical Reasoning, Oral and/or Signed Communication, Teamwork/Collaboration.  BU Hub   Learn More  Ethical ReasoningOral and/or Signed CommunicationTeamwork/Collaboration  ",
+            "content": "This course offers students in computing disciplines the opportunity to apply     their programming and  system development skills by working on real-world     projects provided from partnering organizations  within and outside of BU, which     are curated by Spark! The course offers a range of project options  where     students can improve their technical skills, while also gaining the soft skills     necessary to  deliver projects aligned to the partner's goals. These include     teamwork and communications skills  and software development processes. All     students participating in the course are expected to  complete a software     engineering project including a final presentation to the partner organization.    Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Ethical Reasoning, Oral and/or Signed Communication, Teamwork/Collaboration.  BU Hub   Learn More  Ethical ReasoningOral and/or Signed CommunicationTeamwork/Collaboration",
             "prof": [],
             "reviews": []
         }
@@ -314,7 +314,7 @@
             "id": "DS537",
             "name": "Data Science for Conservation Decisions",
             "prereqs": "Undergraduate Prerequisites: CASGE/EE 270 or equivalent; GE/EE 375 or equivalent; or consent of instructor.",
-            "content": "This course covers the application of quantitative methods to support   conservation decisions. Ecosystem value mapping, systematic conservation   planning, policy instrument design, rigorous impact evaluation, decision  theory,  data visualization. Implementations in state-of-the-art open-source  software.  Real-life case studies from the U.S. and abroad.  Effective Fall  2021, this course fulfills a single unit in each of the following BU Hub  areas: Digital/Multimedia Expression, Quantitative Reasoning II, Research  and Information Literacy.  BU Hub   Learn More  Quantitative Reasoning IIDigital/Multimedia ExpressionResearch and Information Literacy  ",
+            "content": "This course covers the application of quantitative methods to support   conservation decisions. Ecosystem value mapping, systematic conservation   planning, policy instrument design, rigorous impact evaluation, decision  theory,  data visualization. Implementations in state-of-the-art open-source  software.  Real-life case studies from the U.S. and abroad.  Effective Fall  2021, this course fulfills a single unit in each of the following BU Hub  areas: Digital/Multimedia Expression, Quantitative Reasoning II, Research  and Information Literacy.  BU Hub   Learn More  Quantitative Reasoning IIDigital/Multimedia ExpressionResearch and Information Literacy",
             "prof": [],
             "reviews": []
         }
@@ -324,7 +324,7 @@
             "id": "DS539",
             "name": "Spark! Data Science X-Lab Practicum",
             "prereqs": "Undergraduate Prerequisites: CASCS506 or equivalent preferred. CDSDSDS110 OR CASCS111 OR CASCS112 OR equivalent. CDSDS121 OR CASCS132 OR equivalent required. Or instructor consent which may involve pass/fail diagnostic test.",
-            "content": "This course offers students in computing disciplines the opportunity to apply   their data science skills by  working on real-world projects provided from   partnering organizations within and outside of BU, which are  curated by Spark!   The course offers a range of project options where students can improve their   technical  skills, while also gaining the soft skills necessary to deliver   projects aligned to the partner's goals.  These include communications skills,   collaborative work processes and an assessment of the ethical  considerations of   their work. All students participating in the course are expected to complete a   data  science project including a final presentation to the partner organization.   Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Digital/Multimedia Expression, Research and Information Literacy, Teamwork/Collaboration.  BU Hub   Learn More  Digital/Multimedia ExpressionResearch and Information LiteracyTeamwork/Collaboration  ",
+            "content": "This course offers students in computing disciplines the opportunity to apply   their data science skills by  working on real-world projects provided from   partnering organizations within and outside of BU, which are  curated by Spark!   The course offers a range of project options where students can improve their   technical  skills, while also gaining the soft skills necessary to deliver   projects aligned to the partner's goals.  These include communications skills,   collaborative work processes and an assessment of the ethical  considerations of   their work. All students participating in the course are expected to complete a   data  science project including a final presentation to the partner organization.   Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Digital/Multimedia Expression, Research and Information Literacy, Teamwork/Collaboration.  BU Hub   Learn More  Digital/Multimedia ExpressionResearch and Information LiteracyTeamwork/Collaboration",
             "prof": [],
             "reviews": []
         }
@@ -334,7 +334,7 @@
             "id": "DS541",
             "name": "Agent-Based Modeling of People, Health, and the Environment",
             "prereqs": "",
-            "content": "Agent-based models are an ideal tool for analyzing systems (cities, economies,  road networks, forests) in which the outcomes of interest (illness rates,  traffic problems, land use, violence) are shaped strongly by interactions among  individual 'agents' (drivers, consumers, farmers, spouses) with each other and  their environments.  This course builds skills in the use of agent-based  modeling using the NetLogo platform as a tool for analyzing complex human- environment problems.  The course will emphasize the iterative model-building  process -- forming research questions, building conceptual and then operational  models, experimenting, and then refining -- to address current research  problems.  Students should expect to commit time outside of meetings to i)  gaining comfort with NetLogo syntax; ii) reading current research in the areas  of agent-based modeling and human environment and health problems; and iii) a  team based approach to building models.   ",
+            "content": "Agent-based models are an ideal tool for analyzing systems (cities, economies,  road networks, forests) in which the outcomes of interest (illness rates,  traffic problems, land use, violence) are shaped strongly by interactions among  individual 'agents' (drivers, consumers, farmers, spouses) with each other and  their environments.  This course builds skills in the use of agent-based  modeling using the NetLogo platform as a tool for analyzing complex human- environment problems.  The course will emphasize the iterative model-building  process -- forming research questions, building conceptual and then operational  models, experimenting, and then refining -- to address current research  problems.  Students should expect to commit time outside of meetings to i)  gaining comfort with NetLogo syntax; ii) reading current research in the areas  of agent-based modeling and human environment and health problems; and iii) a  team based approach to building models.",
             "prof": [],
             "reviews": []
         }
@@ -342,9 +342,9 @@
     {
         "CDSDS549": {
             "id": "DS549",
-            "name": "Spark! Machine Learning X-Lab Practicum ",
+            "name": "Spark! Machine Learning X-Lab Practicum",
             "prereqs": "Undergraduate Prerequisites: CDSDS340 OR CASCS542 OR CASCS505 OR CASCS585 OR consent of instructor. Consent may include the successful completion of a pass/fail diagnostic test that will assess student readiness to take the cours",
-            "content": "The Spark! Practicum offers students in computing disciplines the opportunity to   apply their knowledge in  algorithms, inferential analytics, and software   development by working on real-world projects provided from  partnering   organizations within BU and from outside. The course offers a range of project   options where  students can improve their technical skills, while also gaining   the soft skills necessary to deliver  projects aligned to the partner's goals.   These include teamwork and communications skills and software  development   processes. All students participating in the course are expected to complete a   project  focused on an application of inferential analytics or machine learning,   including a final presentation to  the partner organization.  Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Ethical Reasoning, Research and Information Literacy, Teamwork/Collaboration.  BU Hub   Learn More  Ethical ReasoningResearch and Information LiteracyTeamwork/Collaboration  ",
+            "content": "The Spark! Practicum offers students in computing disciplines the opportunity to   apply their knowledge in  algorithms, inferential analytics, and software   development by working on real-world projects provided from  partnering   organizations within BU and from outside. The course offers a range of project   options where  students can improve their technical skills, while also gaining   the soft skills necessary to deliver  projects aligned to the partner's goals.   These include teamwork and communications skills and software  development   processes. All students participating in the course are expected to complete a   project  focused on an application of inferential analytics or machine learning,   including a final presentation to  the partner organization.  Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Ethical Reasoning, Research and Information Literacy, Teamwork/Collaboration.  BU Hub   Learn More  Ethical ReasoningResearch and Information LiteracyTeamwork/Collaboration",
             "prof": [],
             "reviews": []
         }
@@ -362,9 +362,9 @@
     {
         "CDSDS563": {
             "id": "DS563",
-            "name": "Algorithmic Techniques for Taming Big Data ",
+            "name": "Algorithmic Techniques for Taming Big Data",
             "prereqs": "Undergraduate Prerequisites: CDSDS110 OR CASCS111 OR ENGEK125 OR equivalent; CDSDS320 OR CASCS330 OR ENGEC330 OR equivalent; CDSDS121 OR CASCS132 OR CASMA242 OR equivalent; CASMA115 OR CASCS327 OR ENGEK381 OR equivalent, OR conse",
-            "content": "Growing amounts of available data lead to significant challenges in processing    them efficiently.  In many cases, it is no longer possible to design feasible    algorithms that can freely access the  entire data set. Instead of that we often    have to resort to techniques that allow for reducing  the amount of data such as    sampling, sketching, dimensionality reduction, and core sets. Apart  from these    approaches, the course will also explore scenarios in which large data sets are     distributed across several machines or even geographical locations and the goal    is to design  efficient communication protocols or MapReduce algorithms. The    course will include a final  project and programming assignments in which we  will   explore the performance of our techniques  when applied to publicly  available   data sets.    BU Hub   Learn More  Quantitative Reasoning IICreativity/Innovation  ",
+            "content": "Growing amounts of available data lead to significant challenges in processing    them efficiently.  In many cases, it is no longer possible to design feasible    algorithms that can freely access the  entire data set. Instead of that we often    have to resort to techniques that allow for reducing  the amount of data such as    sampling, sketching, dimensionality reduction, and core sets. Apart  from these    approaches, the course will also explore scenarios in which large data sets are     distributed across several machines or even geographical locations and the goal    is to design  efficient communication protocols or MapReduce algorithms. The    course will include a final  project and programming assignments in which we  will   explore the performance of our techniques  when applied to publicly  available   data sets.    BU Hub   Learn More  Quantitative Reasoning IICreativity/Innovation",
             "prof": [],
             "reviews": []
         }
@@ -374,7 +374,7 @@
             "id": "DS574",
             "name": "Algorithmic Mechanism Design",
             "prereqs": "Undergraduate Prerequisites: CDSDS122, CDSDS320, and CASMA581 or instructor approval",
-            "content": "This course is an introduction to the interdisciplinary area of Algorithmic Mechanism Design: where computational perspectives are applied to economic problems, and economic techniques are brought to problems from computer science.  We will explore a broad range of topics at the frontier of new research, starting with some of the fundamentals, such as welfare-maximizing auctions and types of Nash Equilibria.  Throughout the semester, the class will also learn about prevalent topics such as (1) Data Science & Incentives, (2) Mechanism Design for Social Good, and (3) optimization and robustness in mechanism design.    ",
+            "content": "This course is an introduction to the interdisciplinary area of Algorithmic Mechanism Design: where computational perspectives are applied to economic problems, and economic techniques are brought to problems from computer science.  We will explore a broad range of topics at the frontier of new research, starting with some of the fundamentals, such as welfare-maximizing auctions and types of Nash Equilibria.  Throughout the semester, the class will also learn about prevalent topics such as (1) Data Science & Incentives, (2) Mechanism Design for Social Good, and (3) optimization and robustness in mechanism design.",
             "prof": [],
             "reviews": []
         }
@@ -382,7 +382,7 @@
     {
         "CDSDS587": {
             "id": "DS587",
-            "name": "Data Science in Human Contexts ",
+            "name": "Data Science in Human Contexts",
             "prereqs": "",
             "content": "Where do statistical and computational insights lose historic social contexts?  What are the impacts of datafication on individuals and communities? How do  social and technical systems reify or challenge social hierarchies? Through a  survey of academic literature, community-produced knowledge and coverage of  technology in the popular press, this course will explore these themes as they  relate to labor and automation, surveillance and the legal system, social media  governance, and digital inclusion.",
             "prof": [],
@@ -404,7 +404,7 @@
             "id": "DS592",
             "name": "Special Topics in Mathematical and Computational Sciences",
             "prereqs": "Undergraduate Prerequisites: CASMA242 or equivalent AND CASMA581 or equivalent AND experience writing scientific code",
-            "content": "Spring 2022: Stochastic Processes for the Design and Analysis of Algorithms.  Introduction  to interplay between stochastic processes and algorithms used in  statistics and machine  learning. Covers core stochastic processes concepts and  use to design and analyze  algorithms for sampling and large-scale stochastic  optimization. Strong emphasis on  practical implications of results.    ",
+            "content": "Spring 2022: Stochastic Processes for the Design and Analysis of Algorithms.  Introduction  to interplay between stochastic processes and algorithms used in  statistics and machine  learning. Covers core stochastic processes concepts and  use to design and analyze  algorithms for sampling and large-scale stochastic  optimization. Strong emphasis on  practical implications of results.",
             "prof": [],
             "reviews": []
         }
@@ -424,7 +424,7 @@
             "id": "DS595",
             "name": "Special Topics in Physical and Engineering Sciences",
             "prereqs": "",
-            "content": "Coverage of a specific topic in relation to physical and engineering sciences  in data science. Topics vary semester to semester. ",
+            "content": "Coverage of a specific topic in relation to physical and engineering sciences  in data science. Topics vary semester to semester.",
             "prof": [],
             "reviews": []
         }
@@ -452,7 +452,7 @@
     {
         "CDSDS598": {
             "id": "DS598",
-            "name": "Special Topics in Machine Learning ",
+            "name": "Special Topics in Machine Learning",
             "prereqs": "",
             "content": "Topics vary semester to semester.",
             "prof": [],
@@ -464,7 +464,7 @@
             "id": "DS599",
             "name": "CDS Research Development Seminar",
             "prereqs": "",
-            "content": " The first--year doctoral seminar is a required two--semester cohort--based  course (4 credits) that must be taken during the first full academic year  that a student enrolls in the PhD program in CDS. It is divided into two  parts, each providing 2 credits. \"CDS Research Initiation Seminar\" is  offered in the fall semester, and \"CDS Research Development Seminar\" is  offered in the spring semester. The seminar serves three key purposes: 1. It  introduces students to the scholarship of (and the rich set of research  projects pursued by) the CDS faculty and their guests through colloquia  pitched to a multidisciplinary audience. 2. It guides students through the  challenging transition into the graduate program in CDS by introducing them  to the variety of skills and capacities that are needed to succeed as a  scholar. 3. It engenders a sense of community amongst the group of students  entering the program as a cohort. 4 cr. Either sem.",
+            "content": "The first--year doctoral seminar is a required two--semester cohort--based  course (4 credits) that must be taken during the first full academic year  that a student enrolls in the PhD program in CDS. It is divided into two  parts, each providing 2 credits. \"CDS Research Initiation Seminar\" is  offered in the fall semester, and \"CDS Research Development Seminar\" is  offered in the spring semester. The seminar serves three key purposes: 1. It  introduces students to the scholarship of (and the rich set of research  projects pursued by) the CDS faculty and their guests through colloquia  pitched to a multidisciplinary audience. 2. It guides students through the  challenging transition into the graduate program in CDS by introducing them  to the variety of skills and capacities that are needed to succeed as a  scholar. 3. It engenders a sense of community amongst the group of students  entering the program as a cohort. 4 cr. Either sem.",
             "prof": [],
             "reviews": []
         }
@@ -482,7 +482,7 @@
     {
         "CDSDS657": {
             "id": "DS657",
-            "name": "Law for Algorithms ",
+            "name": "Law for Algorithms",
             "prereqs": "",
             "content": "Algorithms - those information-processing machines designed by humans -  reach ever more deeply into our lives, creating alternate and sometimes  enhanced manifestations of social and biological processes. In doing so,  algorithms yield powerful levers for good and ill amidst a sea of unforeseen  consequences. This crosscutting and interdisciplinary course investigates  several aspects of algorithms and their impact on society and law.  Specifically, the course connects concepts of proof, verifiability, privacy,  security, trust, and randomness in computer science with legal concepts of  autonomy, consent, governance, and liability, and examines interests at the  evolving intersection of technology and the law. Grades will be based on a  combination of short weekly reflection papers and a final project, to be  completed collaboratively in mixed teams of law and computer and data  science students. This course will include attendees from the computer  science faculty, students and scholars based at Boston University and UC  Berkeley.",
             "prof": [],
@@ -512,7 +512,7 @@
     {
         "CDSDS690": {
             "id": "DS690",
-            "name": "Directed Study in Computing & Data Sciences ",
+            "name": "Directed Study in Computing & Data Sciences",
             "prereqs": "",
             "content": "Directed study in Computing & Data Sciences provides students the opportunity to  complete directed research in a selected topic not covered in a regularly  scheduled course under the supervision of a faculty member. Student and  supervising faculty member arrange and document expectations and requirements.  Examples include in-depth study of a special topic or independent research  project.",
             "prof": [],
@@ -542,7 +542,7 @@
     {
         "CDSDS990": {
             "id": "DS990",
-            "name": "Computing & Data Sciences Lab Rotation  ",
+            "name": "Computing & Data Sciences Lab Rotation",
             "prereqs": "",
             "content": "Experience with translational or applied research pursued in an industrial or  laboratory setting is important for in-the-field graduate training. To provide  this training, graduate students may complete a lab rotation that provides them  with the opportunity to (1) explore lab settings and industrial collaborations  that may be relevant to their thesis work; (2) experience the diversity of  applied and in-the-field research styles in computing and data sciences; and (3)  expand their external network of potential research collaborators. Before  beginning an external lab rotation, students are expected to develop a plan for  the scope and expected outcomes of the work to be pursued under the supervision  of a named lab rotation advisor. This plan must be pre-approved by the student's  academic, research, or thesis advisor in CDS. While desirable, it is neither  required nor expected that the rotation will result in completion of a  substantial body of work. Lab rotation credits will be noted on the student  transcript as a 4-credit pass/fail independent study course numbered as DS-990.",
             "prof": [],

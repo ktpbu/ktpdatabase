@@ -34,7 +34,7 @@
             "id": "BE404",
             "name": "Modern Control in Biomedical Engineering",
             "prereqs": "Undergraduate Prerequisites: ENG BE 403 and Junior standing in BME",
-            "content": "Mathematical analysis of feedback control systems. Frequency domain methods including transfer functions,  stability, root locus, frequency response. State space approaches. Linearization around an equilibrium point.  Controllability, observability. Emphasis on models of biological and biomedical systems. Cannot be taken for  credit in addition to ENG ME 403, ENG ME 404, or ENG EC 402. ",
+            "content": "Mathematical analysis of feedback control systems. Frequency domain methods including transfer functions,  stability, root locus, frequency response. State space approaches. Linearization around an equilibrium point.  Controllability, observability. Emphasis on models of biological and biomedical systems. Cannot be taken for  credit in addition to ENG ME 403, ENG ME 404, or ENG EC 402.",
             "prof": [],
             "reviews": []
         }
@@ -44,7 +44,7 @@
             "id": "BE420",
             "name": "Introduction to Solid Biomechanics",
             "prereqs": "Undergraduate Prerequisites: ENG EK 301 ; CAS MA 226 ; ENG EK 103.",
-            "content": "Many vital physiological functions including locomotion,respiration, circulation,and mechanotransduction are mechanical in nature and are linked to forces and deformation. Mechanics is also critical for development of medical devices and instruments. The main goal of this course is to acquaint students with concepts of stress,strain,constitutive laws and their applications to biomechanics of cells and tissues. The focus will be on theoretical  developments. The first part of the course is focused on problems of mechanics of deformable  solids including extension,bending,buckling and torsion of beams, as well as the concept of cellular tensegrity. The second, and the greater part of the course is focused on the basic concepts of the theory of elasticity. Topics include: vector and tensor algebra and calculus, kinematics of deformation, stress analysis, constitutive equations. In addition to the linear (Hookean)elasticity, non-linear elasticity is also presented to describe mechanical behavior of  biological tissues and cells. The last chapter is devoted to basic concepts of linear viscoelasticity, including stress relaxation, creep and hysteresis. Illustrative examples from tissue and cell biomechanics will be given where appropriate. The course will prepare students  for advanced courses in traditional fields of solid mechanics (e.g., plasticity and poroelasticity),finite element analysis,as well as emerging fields (e.g., mechanobiology and nanotechnology). Design elements will be included in projects. ",
+            "content": "Many vital physiological functions including locomotion,respiration, circulation,and mechanotransduction are mechanical in nature and are linked to forces and deformation. Mechanics is also critical for development of medical devices and instruments. The main goal of this course is to acquaint students with concepts of stress,strain,constitutive laws and their applications to biomechanics of cells and tissues. The focus will be on theoretical  developments. The first part of the course is focused on problems of mechanics of deformable  solids including extension,bending,buckling and torsion of beams, as well as the concept of cellular tensegrity. The second, and the greater part of the course is focused on the basic concepts of the theory of elasticity. Topics include: vector and tensor algebra and calculus, kinematics of deformation, stress analysis, constitutive equations. In addition to the linear (Hookean)elasticity, non-linear elasticity is also presented to describe mechanical behavior of  biological tissues and cells. The last chapter is devoted to basic concepts of linear viscoelasticity, including stress relaxation, creep and hysteresis. Illustrative examples from tissue and cell biomechanics will be given where appropriate. The course will prepare students  for advanced courses in traditional fields of solid mechanics (e.g., plasticity and poroelasticity),finite element analysis,as well as emerging fields (e.g., mechanobiology and nanotechnology). Design elements will be included in projects.",
             "prof": [],
             "reviews": []
         }
@@ -64,7 +64,7 @@
             "id": "BE428",
             "name": "Device Diagnostics and Design",
             "prereqs": "Undergraduate Prerequisites: ENG EK 210; Junior standing",
-            "content": " BE 428 is a project-based course developing fundamentals of the design aspects of biomedical devices and  diagnostics. Students will identify design needs, evaluate possible solutions, build prototypes and analyze  failure modes and their effects. At every stage of the design process, they will present to the rest of the class  to obtain feedback on their designs. The course is designed for undergraduates in their Junior and Senior  years and satisfies a course elective requirement for the Technology Innovation concentration. Case studies  of biomedical device designs and hands-on prototyping sessions are used extensively throughout the course.  These, as well as guest lectures and discussion sections, are designed to encourage students to consider the  broader social contexts of engineering and design. Basic theory, homeworks, and brainstorming sessions will  be applied towards problem identification, materials selection, and failure mode evaluation. Topics include:  needs identification; materials classes; materials selection for medical devices and diagnostics; failure  analysis; biocompatibility; regulatory requirements as they pertain to design, manufacturing and marketing;  technology assessment strategies; and engineering ethics. Several case studies of successful and  unsuccessful biomedical device design are introduced and discussed throughout the course.",
+            "content": "BE 428 is a project-based course developing fundamentals of the design aspects of biomedical devices and  diagnostics. Students will identify design needs, evaluate possible solutions, build prototypes and analyze  failure modes and their effects. At every stage of the design process, they will present to the rest of the class  to obtain feedback on their designs. The course is designed for undergraduates in their Junior and Senior  years and satisfies a course elective requirement for the Technology Innovation concentration. Case studies  of biomedical device designs and hands-on prototyping sessions are used extensively throughout the course.  These, as well as guest lectures and discussion sections, are designed to encourage students to consider the  broader social contexts of engineering and design. Basic theory, homeworks, and brainstorming sessions will  be applied towards problem identification, materials selection, and failure mode evaluation. Topics include:  needs identification; materials classes; materials selection for medical devices and diagnostics; failure  analysis; biocompatibility; regulatory requirements as they pertain to design, manufacturing and marketing;  technology assessment strategies; and engineering ethics. Several case studies of successful and  unsuccessful biomedical device design are introduced and discussed throughout the course.",
             "prof": [],
             "reviews": []
         }
@@ -74,7 +74,7 @@
             "id": "BE435",
             "name": "Transport Phenomena in Living Systems",
             "prereqs": "Undergraduate Prerequisites: CAS MA 226 and CAS PY 211.",
-            "content": "Biological systems operate at multiple length scales and all scales depend  on  internal and external transport of molecules, ions, fluids and heat. This   course is designed to introduce the fundamentals of biological transport and   to apply these fundamentals in understanding physiological processes  involving  fluid, mass and heat transfer. Students will learn the fundamental   conservation principles and constitutive laws that govern heat, mass and   momentum transport processes and systems as well as the constitutive   properties that are encountered in typical biological problems. Transport is   also critical to the development and proper functioning of biological and   medical instruments and devices, which will also be discussed. Biomedical   examples will include applications in development of the heart-lung machine,   estimation of time of death in postmortem cases, burn injuries through hot   water, respiratory flow in smokers lungs, etc. ",
+            "content": "Biological systems operate at multiple length scales and all scales depend  on  internal and external transport of molecules, ions, fluids and heat. This   course is designed to introduce the fundamentals of biological transport and   to apply these fundamentals in understanding physiological processes  involving  fluid, mass and heat transfer. Students will learn the fundamental   conservation principles and constitutive laws that govern heat, mass and   momentum transport processes and systems as well as the constitutive   properties that are encountered in typical biological problems. Transport is   also critical to the development and proper functioning of biological and   medical instruments and devices, which will also be discussed. Biomedical   examples will include applications in development of the heart-lung machine,   estimation of time of death in postmortem cases, burn injuries through hot   water, respiratory flow in smokers lungs, etc.",
             "prof": [],
             "reviews": []
         }
@@ -84,7 +84,7 @@
             "id": "BE436",
             "name": "Fundamentals of Fluid Mechanics",
             "prereqs": "Undergraduate Prerequisites: CAS MA 226 and ENG EK 301.",
-            "content": "Fluid mechanics is a discipline that studies motion of gasses and liquids  and   forces that act on them.  A sub discipline of fluid mechanics is  biofluid   mechanics which is the study of a certain class of biological  problems from a   fluid mechanics point of view.  For example, it helps us to  understand blood   flow within the cardiovascular system, airflow within the  airways of lungs,   removal of waste products via the kidneys and urinary  system and operation of   artificial pumps and microfluidic devices.  In this  course, the focus will be   on the theoretical developments and basic  foundations of fluid mechanics using   the mathematical framework of vectors  and tensors.  Topics include:   conservation of mass, momentum, and energy in  static and moving fluids;   constitutive relations for Newtonian and non- Newtonian fluids; viscous flows,   with application to microfluidics, flow in  porous materials, lubrication, and   other areas of biomedical interest;  scaling analysis; inertial effects,   including boundary layers and unsteady flows. The course will prepare  students  for advanced courses in fluid mechanics (boundary layer theory,  turbulent  flow, non-Newtonian fluids, aerodynamics), as well as emerging  fields  (computational fluid mechanics, microfluidics). Cannot be taken for credit in  addition to ENG ME 303. ",
+            "content": "Fluid mechanics is a discipline that studies motion of gasses and liquids  and   forces that act on them.  A sub discipline of fluid mechanics is  biofluid   mechanics which is the study of a certain class of biological  problems from a   fluid mechanics point of view.  For example, it helps us to  understand blood   flow within the cardiovascular system, airflow within the  airways of lungs,   removal of waste products via the kidneys and urinary  system and operation of   artificial pumps and microfluidic devices.  In this  course, the focus will be   on the theoretical developments and basic  foundations of fluid mechanics using   the mathematical framework of vectors  and tensors.  Topics include:   conservation of mass, momentum, and energy in  static and moving fluids;   constitutive relations for Newtonian and non- Newtonian fluids; viscous flows,   with application to microfluidics, flow in  porous materials, lubrication, and   other areas of biomedical interest;  scaling analysis; inertial effects,   including boundary layers and unsteady flows. The course will prepare  students  for advanced courses in fluid mechanics (boundary layer theory,  turbulent  flow, non-Newtonian fluids, aerodynamics), as well as emerging  fields  (computational fluid mechanics, microfluidics). Cannot be taken for credit in  addition to ENG ME 303.",
             "prof": [],
             "reviews": []
         }
@@ -104,7 +104,7 @@
             "id": "BE451",
             "name": "Directed Study in Biomedical Engineering",
             "prereqs": "",
-            "content": "Individual study of a topic in biomedical engineering not covered in a regularly   scheduled course. A faculty member must agree to supervise the study before   registration. Term paper and/or written examination. ",
+            "content": "Individual study of a topic in biomedical engineering not covered in a regularly   scheduled course. A faculty member must agree to supervise the study before   registration. Term paper and/or written examination.",
             "prof": [],
             "reviews": []
         }
@@ -124,7 +124,7 @@
             "id": "BE465",
             "name": "Biomedical Engineering Senior Project",
             "prereqs": "Undergraduate Prerequisites: ENG BE 403 AND ENG BE 491/493. Limited to biomedical engineering majors with senior standing. CAS WR150/1/2/3 required.",
-            "content": "Selection of project and project supervisor must be approved by course instructor. Project is in an area of  biomedical engineering, such as biomedical instrumentation, biosensors, tissue engineering, biological signal  processing, biological modeling and simulation, clinical imaging or informational systems, etc. Projects will be  conducted by teams of two to five students, and projects must include significant design experience.  Research of background, planning and initial work on senior design project. Guidance in performing and  presenting (in written and oral form) a technical project proposal. Skills in proposal writing, oral presentation  techniques. Formal proposal must be approved by technical advisor. Effective FA20, this course is part of a  Hub sequence with ENG BE 466.   BU Hub   Learn More  Part of a Hub sequence  ",
+            "content": "Selection of project and project supervisor must be approved by course instructor. Project is in an area of  biomedical engineering, such as biomedical instrumentation, biosensors, tissue engineering, biological signal  processing, biological modeling and simulation, clinical imaging or informational systems, etc. Projects will be  conducted by teams of two to five students, and projects must include significant design experience.  Research of background, planning and initial work on senior design project. Guidance in performing and  presenting (in written and oral form) a technical project proposal. Skills in proposal writing, oral presentation  techniques. Formal proposal must be approved by technical advisor. Effective FA20, this course is part of a  Hub sequence with ENG BE 466.   BU Hub   Learn More  Part of a Hub sequence",
             "prof": [],
             "reviews": []
         }
@@ -134,7 +134,7 @@
             "id": "BE466",
             "name": "Biomedical Engineering Senior Project",
             "prereqs": "Undergraduate Prerequisites: ENG BE 465; Limited to biomedical engineering majors with senior standing. CAS WR150/1/2/3 required.",
-            "content": "Completion of project in an area of biomedical engineering. Expanded  training  in  technical project presentation techniques. Includes writing of  progress  reports,  abstracts, final reports. Course culminates with an oral   presentation at annual  Senior Project Conference. Written final report must   be approved by the faculty.  This course is part of a Hub sequence with ENG  BE 465. Effective Fall 2020, this course fulfills a single unit in each of  the following BU Hub areas: Digital/Multimedia Expression, Oral and/or  Signed Communication, Writing-Intensive Course, Research and Information  Literacy.  BU Hub   Learn More  Oral and/or Signed CommunicationDigital/Multimedia ExpressionResearch and Information LiteracyWriting-Intensive Course  ",
+            "content": "Completion of project in an area of biomedical engineering. Expanded  training  in  technical project presentation techniques. Includes writing of  progress  reports,  abstracts, final reports. Course culminates with an oral   presentation at annual  Senior Project Conference. Written final report must   be approved by the faculty.  This course is part of a Hub sequence with ENG  BE 465. Effective Fall 2020, this course fulfills a single unit in each of  the following BU Hub areas: Digital/Multimedia Expression, Oral and/or  Signed Communication, Writing-Intensive Course, Research and Information  Literacy.  BU Hub   Learn More  Oral and/or Signed CommunicationDigital/Multimedia ExpressionResearch and Information LiteracyWriting-Intensive Course",
             "prof": [],
             "reviews": []
         }
@@ -144,7 +144,7 @@
             "id": "BE468",
             "name": "Clinical Applications of Biomedical Design",
             "prereqs": "Undergraduate Prerequisites: ENG EK 210; Junior standing",
-            "content": "This four-credit course provides BME students with an in-depth analysis of the  design history of specific currently available medical devices, instruments,  implants, diagnostics, and drug delivery systems. Students will recreate the  clinical and device requirements, the engineering specifications, the  regulatory pathways, the intellectual property, the risk management strategies,  and the business models that were deployed to bring the product into clinic  use.   ",
+            "content": "This four-credit course provides BME students with an in-depth analysis of the  design history of specific currently available medical devices, instruments,  implants, diagnostics, and drug delivery systems. Students will recreate the  clinical and device requirements, the engineering specifications, the  regulatory pathways, the intellectual property, the risk management strategies,  and the business models that were deployed to bring the product into clinic  use.",
             "prof": [],
             "reviews": []
         }
@@ -184,7 +184,7 @@
             "id": "BE503",
             "name": "Numerical Methods and Modeling in Biomedical Engineering",
             "prereqs": "Undergraduate Prerequisites: ENG EK 125; Junior standing",
-            "content": "This course offers an advanced introduction to numerical methods for solving   linear and nonlinear differential equations including ordinary differential   equations and partial differential equations. Topics include numerical  series,  error analysis, interpolation, numerical integration and  differentiation,  Euler & Runge-Kutta methods, finite difference methods,  finite element  methods, and moving boundary problems. This course requires  knowledge of  multivariable calculus, linear algebra, and differential  equations. Some  knowledge in one computer programming language, such as  MATLAB, is required. ",
+            "content": "This course offers an advanced introduction to numerical methods for solving   linear and nonlinear differential equations including ordinary differential   equations and partial differential equations. Topics include numerical  series,  error analysis, interpolation, numerical integration and  differentiation,  Euler & Runge-Kutta methods, finite difference methods,  finite element  methods, and moving boundary problems. This course requires  knowledge of  multivariable calculus, linear algebra, and differential  equations. Some  knowledge in one computer programming language, such as  MATLAB, is required.",
             "prof": [],
             "reviews": []
         }
@@ -214,7 +214,7 @@
             "id": "BE508",
             "name": "Quantitative Studies of the Respiratory and Cardiovascular Systems",
             "prereqs": "Undergraduate Prerequisites: ENG BE 403; Seniors with consent of instructor.",
-            "content": "The quantitative physiological aspects of the respiratory and cardiovascular    systems are studied. Classical models of these systems are considered   including  lumped element models, branching tree structures, and distributed   parameter  models to predict wave propagation in compliant walled tubes  filled  with  compressible or incompressible fluids. Extensive computer  models are  developed  to simulate the behavior of these systems in the  frequency and time  domains.  Includes lab. ",
+            "content": "The quantitative physiological aspects of the respiratory and cardiovascular    systems are studied. Classical models of these systems are considered   including  lumped element models, branching tree structures, and distributed   parameter  models to predict wave propagation in compliant walled tubes  filled  with  compressible or incompressible fluids. Extensive computer  models are  developed  to simulate the behavior of these systems in the  frequency and time  domains.  Includes lab.",
             "prof": [],
             "reviews": []
         }
@@ -224,7 +224,7 @@
             "id": "BE511",
             "name": "Biomedical Instrumentation",
             "prereqs": "Undergraduate Prerequisites: ENGBE403 and either BE492 or BE493",
-            "content": "Physiological signals, origin of biopotentials (ECG, EMG, EEG), biomedical   transducers and electrodes. Biomedical signal detection, amplifications and   filtering. Analog front-ends of biomedical instruments. Electrical safety in   medical environment. Laboratory experiments supplement lectures. ",
+            "content": "Physiological signals, origin of biopotentials (ECG, EMG, EEG), biomedical   transducers and electrodes. Biomedical signal detection, amplifications and   filtering. Analog front-ends of biomedical instruments. Electrical safety in   medical environment. Laboratory experiments supplement lectures.",
             "prof": [],
             "reviews": []
         }
@@ -234,7 +234,7 @@
             "id": "BE515",
             "name": "Introduction to Medical Imaging",
             "prereqs": "Undergraduate Prerequisites: CAS PY 212 and ENG BE 403.",
-            "content": "Methods for generating images of the interior of a body using X-rays, ultrasound, radiowaves, or radioactivity.  Image formation and display. Projection radiography. Radiation detectors. Conventional and computerized  tomography. Nuclear imaging. Automating diagnosis and non-invasive testing. Radiation safety. ",
+            "content": "Methods for generating images of the interior of a body using X-rays, ultrasound, radiowaves, or radioactivity.  Image formation and display. Projection radiography. Radiation detectors. Conventional and computerized  tomography. Nuclear imaging. Automating diagnosis and non-invasive testing. Radiation safety.",
             "prof": [],
             "reviews": []
         }
@@ -244,7 +244,7 @@
             "id": "BE517",
             "name": "Optical Microscopy of Biological Materials",
             "prereqs": "Undergraduate Prerequisites: CAS PY 212.",
-            "content": "In this course students will learn the practice and the underlying theory of    imaging with a focus on state-of-the-art live cell microscopy.  Students will    have the opportunity to use laser scanning confocal as well as widefield and    near-field imaging to address experimental questions related to ion fluxes in    cells, protein dynamics and association, and will use phase and interference    techniques to enhance the detection of low contrast biological material.     Exploration and discussion of detector technology, signals and signal    processing, spectral separation methods and physical mechanisms used to    determine protein associations and protein diffusion in cells are integrated    throughout the course. Students will be assigned weekly lab reports, a mid-term    and a final project consisting of a paper and an oral presentation on a current    research topic involving optical microscopy.             ",
+            "content": "In this course students will learn the practice and the underlying theory of    imaging with a focus on state-of-the-art live cell microscopy.  Students will    have the opportunity to use laser scanning confocal as well as widefield and    near-field imaging to address experimental questions related to ion fluxes in    cells, protein dynamics and association, and will use phase and interference    techniques to enhance the detection of low contrast biological material.     Exploration and discussion of detector technology, signals and signal    processing, spectral separation methods and physical mechanisms used to    determine protein associations and protein diffusion in cells are integrated    throughout the course. Students will be assigned weekly lab reports, a mid-term    and a final project consisting of a paper and an oral presentation on a current    research topic involving optical microscopy.",
             "prof": [],
             "reviews": []
         }
@@ -264,7 +264,7 @@
             "id": "BE521",
             "name": "Continuum Mechanics",
             "prereqs": "Undergraduate Prerequisites: ENG ME 303 or ENG BE 436; and ENGME304 or ENGEK424; and ENGME305 or ENGBE420",
-            "content": "The main goal of this course is to present a unified, mathematically rigorous    approach to two classical branches of mechanics:  the mechanics of fluids and    the mechanics of solids.  Topics will include kinematics, stress analysis,    balance laws (mass, momentum, and energy), the entropy inequality, and    constitutive equations in the framework of Cartesian vectors and tensors.     Emphasis will be placed on mechanical principles that apply to all materials by    using the unifying mathematical framework of Cartesian vectors and tensors.     Illustrative examples from biology and physiology will be used to describe basic    concepts in continuum mechanics.  The course will end at the point from which    specialized courses devoted to problems in fluid mechanics (e.g. biotransport)    and solid mechanics (e.g. cellular biomechanics) could logically proceed.  Same    as ENG ME 521; students may not receive credit for both.    ",
+            "content": "The main goal of this course is to present a unified, mathematically rigorous    approach to two classical branches of mechanics:  the mechanics of fluids and    the mechanics of solids.  Topics will include kinematics, stress analysis,    balance laws (mass, momentum, and energy), the entropy inequality, and    constitutive equations in the framework of Cartesian vectors and tensors.     Emphasis will be placed on mechanical principles that apply to all materials by    using the unifying mathematical framework of Cartesian vectors and tensors.     Illustrative examples from biology and physiology will be used to describe basic    concepts in continuum mechanics.  The course will end at the point from which    specialized courses devoted to problems in fluid mechanics (e.g. biotransport)    and solid mechanics (e.g. cellular biomechanics) could logically proceed.  Same    as ENG ME 521; students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -274,7 +274,7 @@
             "id": "BE524",
             "name": "Skeletal Tissue Mechanics",
             "prereqs": "Undergraduate Prerequisites: ENG EK 301 ; ENG ME 302 ; ENG ME 305; or ENG BE 420 or ENG ME 308 and CAS MA 242 or equivalent.",
-            "content": "The course is structured around classical topics in mechanics of materials and   their application to study of the mechanical behavior of skeletal tissues, whole   bones, bone-implant systems, and diarthroidal joints.  Topics include:    mechanical behavior of tissues, (anisotropy, viscoelasticity, fracture and   fatigue) with emphasis on the role of the microstructure of these tissues;   structural properties of whole bones and implants (composite and asymmetric bean   theories); and mechanical function of joints (contact mechanics, lubrication,   and wear).  Emphasis is placed on using experimental data to test and to develop   theoretical models, as well as on using the knowledge gained to address common   health related problems related to aging, disease, and injury.  Same as ENG ME 524   and ENG MS 524. Students may not receive credit for both. ",
+            "content": "The course is structured around classical topics in mechanics of materials and   their application to study of the mechanical behavior of skeletal tissues, whole   bones, bone-implant systems, and diarthroidal joints.  Topics include:    mechanical behavior of tissues, (anisotropy, viscoelasticity, fracture and   fatigue) with emphasis on the role of the microstructure of these tissues;   structural properties of whole bones and implants (composite and asymmetric bean   theories); and mechanical function of joints (contact mechanics, lubrication,   and wear).  Emphasis is placed on using experimental data to test and to develop   theoretical models, as well as on using the knowledge gained to address common   health related problems related to aging, disease, and injury.  Same as ENG ME 524   and ENG MS 524. Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -284,7 +284,7 @@
             "id": "BE526",
             "name": "Fundamentals of Biomaterials",
             "prereqs": "Undergraduate Prerequisites: ENG EK 301 ; ENG EK 424 ; CAS CH 101 ; CAS CH 102 ; ENG BE 209.",
-            "content": "Provides the chemistry and engineering skills needed to solve challenges in the   biomaterials and tissue engineering area, concentrating on the fundamental   principles in biomedical engineering, material science, and chemistry.  Covers   the structure and properties of hard materials (ceramics and metals) and soft   materials (polymers, colloids, and hydrogels). Same as ENG BE 726, ENG ME 726, ENG MS 726. Student may not receive credit for both. Meets with ENG BE 726 lectures. Note that the laboratory portion is not offered in BE 526.  ",
+            "content": "Provides the chemistry and engineering skills needed to solve challenges in the   biomaterials and tissue engineering area, concentrating on the fundamental   principles in biomedical engineering, material science, and chemistry.  Covers   the structure and properties of hard materials (ceramics and metals) and soft   materials (polymers, colloids, and hydrogels). Same as ENG BE 726, ENG ME 726, ENG MS 726. Student may not receive credit for both. Meets with ENG BE 726 lectures. Note that the laboratory portion is not offered in BE 526.",
             "prof": [],
             "reviews": []
         }
@@ -304,7 +304,7 @@
             "id": "BE533",
             "name": "Biorheology",
             "prereqs": "Undergraduate Prerequisites: ENG EK 424; One of the following courses: ENG BE 420, ENG BE 436 or ENG BE/ME 521.",
-            "content": "This is an introductory course whose main goal is to acquaint students with  basic concepts of elasticity, viscoelasticity, plasticity, viscoplasticity,  poroelasticity, non-Newtonian flow and related phenomena that often  characterize mechanical behavior of biological materials.  In studying these  phenomena, different approaches have been utilized, including methods of  continuum mechanics, phenomenological approaches, mathematical modeling and  microstructural approaches that relate structural features with the overall  behavior.  Illustrative examples of application of these methods to studies  of various biological materials at the system, organ, tissue, cellular and  molecular levels will be presented.  The course provides good foundations  for further studies in the areas of rheology, mechanics of solids, cellular  and tissue mechanics and mechanobiology. ",
+            "content": "This is an introductory course whose main goal is to acquaint students with  basic concepts of elasticity, viscoelasticity, plasticity, viscoplasticity,  poroelasticity, non-Newtonian flow and related phenomena that often  characterize mechanical behavior of biological materials.  In studying these  phenomena, different approaches have been utilized, including methods of  continuum mechanics, phenomenological approaches, mathematical modeling and  microstructural approaches that relate structural features with the overall  behavior.  Illustrative examples of application of these methods to studies  of various biological materials at the system, organ, tissue, cellular and  molecular levels will be presented.  The course provides good foundations  for further studies in the areas of rheology, mechanics of solids, cellular  and tissue mechanics and mechanobiology.",
             "prof": [],
             "reviews": []
         }
@@ -354,7 +354,7 @@
             "id": "BE560",
             "name": "Biomolecular Architecture",
             "prereqs": "Undergraduate Prerequisites: CAS PY 212 and CAS CH 131; or CASCH102",
-            "content": "Provides an introduction to the molecular building blocks and the structure of   three major components of the living cells: the nucleic acids, the phospho-  lipids membrane, and the proteins. The nucleic acids, DNA and RNA, linear   information storing structure as well as their three-dimensional structure are   covered in relationship to their function. This includes an introduction to   information and coding theory. The analysis tools used in pattern identification   representation and functional association are introduced and used to discuss the   patterns characteristic of DNA and protein structure and biochemical function.   The problems and current approaches to predicting protein structure including   those using homology, energy minimization, and modeling are introduced. The   future implications of our expanding biomolecular knowledge and of rational drug   design are also discussed. ",
+            "content": "Provides an introduction to the molecular building blocks and the structure of   three major components of the living cells: the nucleic acids, the phospho-  lipids membrane, and the proteins. The nucleic acids, DNA and RNA, linear   information storing structure as well as their three-dimensional structure are   covered in relationship to their function. This includes an introduction to   information and coding theory. The analysis tools used in pattern identification   representation and functional association are introduced and used to discuss the   patterns characteristic of DNA and protein structure and biochemical function.   The problems and current approaches to predicting protein structure including   those using homology, energy minimization, and modeling are introduced. The   future implications of our expanding biomolecular knowledge and of rational drug   design are also discussed.",
             "prof": [],
             "reviews": []
         }
@@ -374,7 +374,7 @@
             "id": "BE567",
             "name": "Nonlinear Systems in Biomedical Engineering",
             "prereqs": "Undergraduate Prerequisites: Graduate standing or consent of instructor. Ordinary differential equations required; linear algebra recommended.",
-            "content": "Introduction to nonlinear dynamical systems in biomedical engineering.  Qualitative, analytical and computational techniques. Stability, bifurcations,  oscillations, multistability, hysteresis, multiple time-scales, chaos.  Introduction to experimental data analysis and control techniques. Applications  discussed include population dynamics, biochemical systems, genetic circuits,  neural oscillators, etc. ",
+            "content": "Introduction to nonlinear dynamical systems in biomedical engineering.  Qualitative, analytical and computational techniques. Stability, bifurcations,  oscillations, multistability, hysteresis, multiple time-scales, chaos.  Introduction to experimental data analysis and control techniques. Applications  discussed include population dynamics, biochemical systems, genetic circuits,  neural oscillators, etc.",
             "prof": [],
             "reviews": []
         }
@@ -384,7 +384,7 @@
             "id": "BE568",
             "name": "Systems Biology of Human Disease",
             "prereqs": "",
-            "content": "This course will train students to apply or develop computational network,     modeling, and machine learning concepts to probe into the systems biology of     disease. The aim of this course is to cover general concepts in biological     computing that provide the foundation of thinking computationally about     anomalous behavior in biological systems that cause diseases. The course also     aims to teach students to work in teams and develop the skills to plan and     coordinate a scientific project. The course will cover computational frameworks,     such as biological networks (including metabolic, regulatory, and signal     transduction networks), micro array analysis, proteomic analysis, next     generation sequencing, imaging, machine learning, probabilistic inference,     genetics, pathway analysis, network and graph theory, and other technologies to     medical diseases initially focusing on clinical problems such as cancer,     diabetes, inflammation, and aging. The course is aimed at seniors and graduate     students in biomedical engineering or bioinformatics; however, students from     other disciplines ranging from medicine to physics or computer science can     attend the class with some prerequisites.   ",
+            "content": "This course will train students to apply or develop computational network,     modeling, and machine learning concepts to probe into the systems biology of     disease. The aim of this course is to cover general concepts in biological     computing that provide the foundation of thinking computationally about     anomalous behavior in biological systems that cause diseases. The course also     aims to teach students to work in teams and develop the skills to plan and     coordinate a scientific project. The course will cover computational frameworks,     such as biological networks (including metabolic, regulatory, and signal     transduction networks), micro array analysis, proteomic analysis, next     generation sequencing, imaging, machine learning, probabilistic inference,     genetics, pathway analysis, network and graph theory, and other technologies to     medical diseases initially focusing on clinical problems such as cancer,     diabetes, inflammation, and aging. The course is aimed at seniors and graduate     students in biomedical engineering or bioinformatics; however, students from     other disciplines ranging from medicine to physics or computer science can     attend the class with some prerequisites.",
             "prof": [],
             "reviews": []
         }
@@ -394,7 +394,7 @@
             "id": "BE570",
             "name": "Introduction to Computational Vision",
             "prereqs": "Undergraduate Prerequisites: ENG EK 125 and ENG EK 381; Either ENGBE403 or ENGEC401.",
-            "content": "Introductory course in biological  visual neuroscience and computational    vision. Provides a survey of the psychophysical, neuroanatomical and     neurophysiological substrates of visual mechanisms underlying  perception of    visual motion, depth, objects, and space and of decision making mechanisms.     Discussion of theoretical, explanatory, paradigms for these visual  mechanisms.   Topics addressed include psychophysics, methods from single  cell recording   physiology and low field potentials (LFP),multimodal imaging  and computational   modeling of various visual tasks and their modulation by  attention. We will   briefly address learning mechanisms and their  relationship to brain plasticity.   A term project is required for graduate  credit.  ",
+            "content": "Introductory course in biological  visual neuroscience and computational    vision. Provides a survey of the psychophysical, neuroanatomical and     neurophysiological substrates of visual mechanisms underlying  perception of    visual motion, depth, objects, and space and of decision making mechanisms.     Discussion of theoretical, explanatory, paradigms for these visual  mechanisms.   Topics addressed include psychophysics, methods from single  cell recording   physiology and low field potentials (LFP),multimodal imaging  and computational   modeling of various visual tasks and their modulation by  attention. We will   briefly address learning mechanisms and their  relationship to brain plasticity.   A term project is required for graduate  credit.",
             "prof": [],
             "reviews": []
         }
@@ -424,7 +424,7 @@
             "id": "BE601",
             "name": "Linear Algebra",
             "prereqs": "",
-            "content": " The first of four math modules designed to reinforce basic  mathematical and  computer programming concepts pertinent to graduate  research in biomedical  engineering.  This course will emphasize the five  cornerstones of applied  linear algebra:  Linear combinations,  decompositions, orthogonality, metric,  and linear transformations.  Topics  include LU and QR factorizations, finite  difference methods for solving  partial differential equations (PDEs), least  squares, Fourier series and  wavelets, solid mechanics, Markov chains, principal  component analysis, and  signal processing techniques.  This course will provide  the necessary linear  algebra background needed to solve problems in BE 602, 603  and 604.  ",
+            "content": "The first of four math modules designed to reinforce basic  mathematical and  computer programming concepts pertinent to graduate  research in biomedical  engineering.  This course will emphasize the five  cornerstones of applied  linear algebra:  Linear combinations,  decompositions, orthogonality, metric,  and linear transformations.  Topics  include LU and QR factorizations, finite  difference methods for solving  partial differential equations (PDEs), least  squares, Fourier series and  wavelets, solid mechanics, Markov chains, principal  component analysis, and  signal processing techniques.  This course will provide  the necessary linear  algebra background needed to solve problems in BE 602, 603  and 604.",
             "prof": [],
             "reviews": []
         }
@@ -434,7 +434,7 @@
             "id": "BE602",
             "name": "Ordinary Differential Equations",
             "prereqs": "",
-            "content": " This math module will focus on four key ODE concepts:  Linear  dynamical  systems, nonlinear conservative and excitable systems, discrete- time state  machines, and generalized Fourier series solutions to Sturm- Liouville problems.   Topics include:  Filters, enzymatic networks,  mechanical models for  biomaterials, oscillators and limit cycles, phase- locked loops, nonlinear  Leslie matrices, Legendre polynomials, Bessel  functions, and a prelude to  solving PDE problems associated with heat  transfer, diffusion, and  electrostatics.  Prior exposure to linear algebra  (BE 601 equivalent), and  working knowledge of a programming language  (Matlab, Python, etc.) is helpful.  ",
+            "content": "This math module will focus on four key ODE concepts:  Linear  dynamical  systems, nonlinear conservative and excitable systems, discrete- time state  machines, and generalized Fourier series solutions to Sturm- Liouville problems.   Topics include:  Filters, enzymatic networks,  mechanical models for  biomaterials, oscillators and limit cycles, phase- locked loops, nonlinear  Leslie matrices, Legendre polynomials, Bessel  functions, and a prelude to  solving PDE problems associated with heat  transfer, diffusion, and  electrostatics.  Prior exposure to linear algebra  (BE 601 equivalent), and  working knowledge of a programming language  (Matlab, Python, etc.) is helpful.",
             "prof": [],
             "reviews": []
         }
@@ -444,7 +444,7 @@
             "id": "BE603",
             "name": "Partial Differential Equations",
             "prereqs": "",
-            "content": " This math module will focus on elliptical and parabolic PDEs  associated with  transport phenomenon problems in biomedical engineering.  We  will visit four  PDE concepts:  Separation of variables, integral transform  solutions,  superposition principles, and numerical approximations using  finite-difference  schemes.  Topics include:  2D and 3D anisotropic  Laplace's, Poisson's, and the  heat equations in different coordinate  systems, Fourier and Laplace transform  solutions, 2D ADI methods, Green's  functions, and the method of images.  Prior  exposure to linear algebra (BE  601 equivalent), ODEs (BE 602 or MA 226  equivalent), Fourier series, Fourier  and Laplace transforms (BE 401  equivalent), and working knowledge of a  programming language (Matlab, Python,  etc.) is highly recommended.  ",
+            "content": "This math module will focus on elliptical and parabolic PDEs  associated with  transport phenomenon problems in biomedical engineering.  We  will visit four  PDE concepts:  Separation of variables, integral transform  solutions,  superposition principles, and numerical approximations using  finite-difference  schemes.  Topics include:  2D and 3D anisotropic  Laplace's, Poisson's, and the  heat equations in different coordinate  systems, Fourier and Laplace transform  solutions, 2D ADI methods, Green's  functions, and the method of images.  Prior  exposure to linear algebra (BE  601 equivalent), ODEs (BE 602 or MA 226  equivalent), Fourier series, Fourier  and Laplace transforms (BE 401  equivalent), and working knowledge of a  programming language (Matlab, Python,  etc.) is highly recommended.",
             "prof": [],
             "reviews": []
         }
@@ -454,7 +454,7 @@
             "id": "BE604",
             "name": "Statistics & Numerical Methods",
             "prereqs": "",
-            "content": " In the final math module, we will focus on how linear algebra, ODEs,   statistics, and signals & systems techniques can be used to interrogate data   from biological and engineering experiments.  The lecture topics include:    Jacobi, Gauss-Seidel, and SOR iterative solvers for large linear systems;    Gauss-Newton iterations (nonlinear least-squares);  the ANOVA table, multi-  factor regression, and intro to the general linear model (GLM);  data   deconvolution;  Monte Carlo, bootstrap, and kernel density estimation.   Prior  exposure to linear algebra (BE 601 equivalent), basic probability and   statistics (BE 200 equivalent), and working knowledge of a programming  language  (Matlab, Python, etc.) is highly recommended.  ",
+            "content": "In the final math module, we will focus on how linear algebra, ODEs,   statistics, and signals & systems techniques can be used to interrogate data   from biological and engineering experiments.  The lecture topics include:    Jacobi, Gauss-Seidel, and SOR iterative solvers for large linear systems;    Gauss-Newton iterations (nonlinear least-squares);  the ANOVA table, multi-  factor regression, and intro to the general linear model (GLM);  data   deconvolution;  Monte Carlo, bootstrap, and kernel density estimation.   Prior  exposure to linear algebra (BE 601 equivalent), basic probability and   statistics (BE 200 equivalent), and working knowledge of a programming  language  (Matlab, Python, etc.) is highly recommended.",
             "prof": [],
             "reviews": []
         }
@@ -474,7 +474,7 @@
             "id": "BE606",
             "name": "Quantitative Physiology for Engineers",
             "prereqs": "Undergraduate Prerequisites: Required for biomedical engineering graduate students.",
-            "content": "Course in human physiology for biomedical engineering students. Fundamentals of cellular and systems  physiology, including the nervous, muscular, cardiovascular, respiratory, renal, gastrointestinal, and endocrine  systems. Quantitative and engineering approaches will be applied to understanding physiological concepts. ",
+            "content": "Course in human physiology for biomedical engineering students. Fundamentals of cellular and systems  physiology, including the nervous, muscular, cardiovascular, respiratory, renal, gastrointestinal, and endocrine  systems. Quantitative and engineering approaches will be applied to understanding physiological concepts.",
             "prof": [],
             "reviews": []
         }
@@ -524,7 +524,7 @@
             "id": "BE703",
             "name": "Numerical Methods and Modeling in Biomedical Engineering",
             "prereqs": "Undergraduate Prerequisites: Graduate standing.",
-            "content": "This course offers an advanced introduction to numerical methods for solving   linear and nonlinear differential equations including ordinary differential   equations and partial differential equations. Topics include numerical  series,  error analysis, interpolation, numerical integration and  differentiation, Euler  & Runge-Kutta methods, finite difference methods,  finite element methods, and  moving boundary problems. This course requires  knowledge of multivariable  calculus, linear algebra, and differential  equations. Some knowledge in one  computer programming language, such as  MATLAB, is required. ",
+            "content": "This course offers an advanced introduction to numerical methods for solving   linear and nonlinear differential equations including ordinary differential   equations and partial differential equations. Topics include numerical  series,  error analysis, interpolation, numerical integration and  differentiation, Euler  & Runge-Kutta methods, finite difference methods,  finite element methods, and  moving boundary problems. This course requires  knowledge of multivariable  calculus, linear algebra, and differential  equations. Some knowledge in one  computer programming language, such as  MATLAB, is required.",
             "prof": [],
             "reviews": []
         }
@@ -534,7 +534,7 @@
             "id": "BE704",
             "name": "Cancer Biology and Oncology for Engineers",
             "prereqs": "Graduate Prerequisites: Engineering graduate students will benefit from a basic background inmolecular and cell biology for this class.",
-            "content": "This course is designed to be an introduction to cancer biology and oncology from the perspective of the engineer. The course will cover basic cancer biology including cancer genetics, tumor metabolism, angiogenesis, and the metastastic cascade, and then discuss how new technologies enable better diagnosis, prognosis, and treatment. The class will explore how engineering principles can be applied to the design and fabrication of new technologies for cancer care, with an emphasis on signal processing, image formation (i.e. tomography), and data analysis. There will be a strong imaging component relevant to both cancer biology and clinical treatment, including optical, MRI, mammography, and PET-CT modalities. The course will be a combination of traditional lectures, class discussions, and journal club, and each student will be expected to present several times during the semester. ",
+            "content": "This course is designed to be an introduction to cancer biology and oncology from the perspective of the engineer. The course will cover basic cancer biology including cancer genetics, tumor metabolism, angiogenesis, and the metastastic cascade, and then discuss how new technologies enable better diagnosis, prognosis, and treatment. The class will explore how engineering principles can be applied to the design and fabrication of new technologies for cancer care, with an emphasis on signal processing, image formation (i.e. tomography), and data analysis. There will be a strong imaging component relevant to both cancer biology and clinical treatment, including optical, MRI, mammography, and PET-CT modalities. The course will be a combination of traditional lectures, class discussions, and journal club, and each student will be expected to present several times during the semester.",
             "prof": [],
             "reviews": []
         }
@@ -544,7 +544,7 @@
             "id": "BE707",
             "name": "Quantitative Studies of Excitable Cells",
             "prereqs": "Graduate Prerequisites: ENG BE 401; graduate standing or seniors with consent of instructor.",
-            "content": "Focuses on the properties of the membranes of nerve and muscle cells. Classical   models of resting potentials, action potentials, synaptic transmission, and   sensory receptors are treated. The structure and function of single ionic   channels are characterized in detail from patch-clamp recordings,   neuropharmacological studies, and molecular studies. Mechanisms of muscle   contraction and other forms of cellular motility are also covered. ",
+            "content": "Focuses on the properties of the membranes of nerve and muscle cells. Classical   models of resting potentials, action potentials, synaptic transmission, and   sensory receptors are treated. The structure and function of single ionic   channels are characterized in detail from patch-clamp recordings,   neuropharmacological studies, and molecular studies. Mechanisms of muscle   contraction and other forms of cellular motility are also covered.",
             "prof": [],
             "reviews": []
         }
@@ -554,7 +554,7 @@
             "id": "BE709",
             "name": "From Cells to Tissue",
             "prereqs": "Graduate Prerequisites: ENG BE 605; BE 605 and graduate standing in BME department, or permission of instructor.",
-            "content": "This course is a primary literature-based course that will introduce students to engineering concepts in understanding and manipulating the behavior of biological cells. We will try to understand the interplay between cells, the extracellular environment, and intracellular signaling pathways in regulating cellular and multicellular structure and function. In particular, we will explore the use of modern experimental approaches to characterize and manipulate cells for bioengineering applications, and the concepts in scaling cellular engineering to functional issues. In this context, we will focus on several topics, including signal transduction and the molecular regulation of cell function, cellular microenvironment, cell adhesion and mecghanics, stem cells, multicellularity, and experimental models of tissue development. We will introduce both classic approaches and those that are still in early development. Due to the expansive nature of this area of science, we will only be able to introduce a sampling of the space. ",
+            "content": "This course is a primary literature-based course that will introduce students to engineering concepts in understanding and manipulating the behavior of biological cells. We will try to understand the interplay between cells, the extracellular environment, and intracellular signaling pathways in regulating cellular and multicellular structure and function. In particular, we will explore the use of modern experimental approaches to characterize and manipulate cells for bioengineering applications, and the concepts in scaling cellular engineering to functional issues. In this context, we will focus on several topics, including signal transduction and the molecular regulation of cell function, cellular microenvironment, cell adhesion and mecghanics, stem cells, multicellularity, and experimental models of tissue development. We will introduce both classic approaches and those that are still in early development. Due to the expansive nature of this area of science, we will only be able to introduce a sampling of the space.",
             "prof": [],
             "reviews": []
         }
@@ -564,7 +564,7 @@
             "id": "BE710",
             "name": "Neural Plasticity and Perceptual Learning",
             "prereqs": "Undergraduate Prerequisites: ENG EK 381 (or an introductory course in probability and statistics);GRS BI 755 (or any other introductory course in neuroscience). Recommended: ENG BE 570",
-            "content": "This course explores the capacity of cortical sensory and motor maps in the   adult brain to change as a result of alterations in the effectiveness of the   input, direct damage, or practice. The lectures will describe and discuss (1)   the physiology and anatomy underlying adult dynamics; (2) psychophysical methods   and experimental paradigms that have been used to study cortical plasticity in   the early stages of the sensory and motor pathways; (3) evidence for perceptual   learning; and (4) biologically plausible computational models of learning. We   will discuss applications of functional neuroimaging to study perceptual   learning and restorative plasticity in the human brain. ",
+            "content": "This course explores the capacity of cortical sensory and motor maps in the   adult brain to change as a result of alterations in the effectiveness of the   input, direct damage, or practice. The lectures will describe and discuss (1)   the physiology and anatomy underlying adult dynamics; (2) psychophysical methods   and experimental paradigms that have been used to study cortical plasticity in   the early stages of the sensory and motor pathways; (3) evidence for perceptual   learning; and (4) biologically plausible computational models of learning. We   will discuss applications of functional neuroimaging to study perceptual   learning and restorative plasticity in the human brain.",
             "prof": [],
             "reviews": []
         }
@@ -572,9 +572,9 @@
     {
         "ENGBE726": {
             "id": "BE726",
-            "name": "Fundamentals of Biomaterials ",
+            "name": "Fundamentals of Biomaterials",
             "prereqs": "Undergraduate Prerequisites: Graduate standing.",
-            "content": "Provides the chemistry and engineering skills needed to solve challenges in the  biomaterials and tissue engineering area, concentrating on the fundamental  principles in biomedical engineering, material science, and chemistry.  Covers  the structure and properties of hard materials (ceramics and metals) and soft  materials (polymers and hydrogels). Same as ENG BE 526, ENG ME 726, ENG MS 726. Students may not receive  credit for both.  ",
+            "content": "Provides the chemistry and engineering skills needed to solve challenges in the  biomaterials and tissue engineering area, concentrating on the fundamental  principles in biomedical engineering, material science, and chemistry.  Covers  the structure and properties of hard materials (ceramics and metals) and soft  materials (polymers and hydrogels). Same as ENG BE 526, ENG ME 726, ENG MS 726. Students may not receive  credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -584,7 +584,7 @@
             "id": "BE727",
             "name": "Principles and Applications of Tissue Engineering",
             "prereqs": "Undergraduate Prerequisites: Graduate standing; ENG BE 726.",
-            "content": "Provides the chemistry and engineering skills needed to solve challenges in the   biomaterials and tissue engineering area, concentrating on cell-biomaterial   interactions, soft tissue mechanics and specific research topics.  Students will   write a NIH-style grant proposal on a specific research topic.  Same as ENG BE 527, ENG ME 727, ENG MS 727. Students may not receive credit for both. ",
+            "content": "Provides the chemistry and engineering skills needed to solve challenges in the   biomaterials and tissue engineering area, concentrating on cell-biomaterial   interactions, soft tissue mechanics and specific research topics.  Students will   write a NIH-style grant proposal on a specific research topic.  Same as ENG BE 527, ENG ME 727, ENG MS 727. Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -604,7 +604,7 @@
             "id": "BE747",
             "name": "Advanced Signals and Systems Analysis for Biomedical Engineering",
             "prereqs": "Undergraduate Prerequisites: ENG EK 381 and ENG BE 401(or equivalent); graduate standing in biomedical engineering.",
-            "content": "Introduction to advanced techniques for signals and systems analysis with   applications to problems in biomedical engineering research.  Time-domain and   frequency-domain analysis of multiple input, multiple output systems using the   fundamental matrix approach.  Hilbert transform relations; applications to head-  related transfer functions.  Second-order characterization of stochastic   processes: power density spectra, cross-spectra, auto-and cross-correlation   functions.  Gaussian and Poisson processes.  Models of neural firing patterns.    Effects of linear systems on spectra and correlation functions.  Applications to   models of the peripheral auditory system.  Optimum processing applications.    Applications to psychophysical modeling.  Introduction to wavelets and wavelet   transforms.  Wavelet filter banks and wavelet signal processing. ",
+            "content": "Introduction to advanced techniques for signals and systems analysis with   applications to problems in biomedical engineering research.  Time-domain and   frequency-domain analysis of multiple input, multiple output systems using the   fundamental matrix approach.  Hilbert transform relations; applications to head-  related transfer functions.  Second-order characterization of stochastic   processes: power density spectra, cross-spectra, auto-and cross-correlation   functions.  Gaussian and Poisson processes.  Models of neural firing patterns.    Effects of linear systems on spectra and correlation functions.  Applications to   models of the peripheral auditory system.  Optimum processing applications.    Applications to psychophysical modeling.  Introduction to wavelets and wavelet   transforms.  Wavelet filter banks and wavelet signal processing.",
             "prof": [],
             "reviews": []
         }
@@ -644,7 +644,7 @@
             "id": "BE773",
             "name": "Advanced Optical Microscopy and Biological Imaging",
             "prereqs": "Undergraduate Prerequisites: ENG BE 401 or ENG EC 401; a background in optics or photonics (ENG EC560 or equivalent) is preferable or permission of instructor.",
-            "content": "This course will present a rigorous and detailed overview of the theory of   optical microscopy starting from basic notions in light propagation and covering   advanced concepts in imaging theory such as Fourier optics and partial   coherence. Topics will include basic geometric optics, photometry, diffraction,   optical transfer functions, phase contrast microscopy, 3D imaging theory, basic   scattering and fluorescence theory, imaging in turbid media, confocal   microscopy, optical coherence tomography (OCT), holographic microscopy,   fluorescence correlation spectroscopy (FCS), fluorescence resonant energy   transfer (FRET), and nonlinear-optics based techniques such as two-photon   excited fluorescence (TPEF) and second-harmonic generation (SHG) microscopy.   Biological applications such as calcium and membrane-potential imaging will be   discussed. A background in optics is preferable. A background in signals and   analysis is indispensable. In particular, the student should be comfortable with   Fourier transforms, complex analysis, and transfer functions. Same as ENG EC 773.  Students may not receive credit for both. ",
+            "content": "This course will present a rigorous and detailed overview of the theory of   optical microscopy starting from basic notions in light propagation and covering   advanced concepts in imaging theory such as Fourier optics and partial   coherence. Topics will include basic geometric optics, photometry, diffraction,   optical transfer functions, phase contrast microscopy, 3D imaging theory, basic   scattering and fluorescence theory, imaging in turbid media, confocal   microscopy, optical coherence tomography (OCT), holographic microscopy,   fluorescence correlation spectroscopy (FCS), fluorescence resonant energy   transfer (FRET), and nonlinear-optics based techniques such as two-photon   excited fluorescence (TPEF) and second-harmonic generation (SHG) microscopy.   Biological applications such as calcium and membrane-potential imaging will be   discussed. A background in optics is preferable. A background in signals and   analysis is indispensable. In particular, the student should be comfortable with   Fourier transforms, complex analysis, and transfer functions. Same as ENG EC 773.  Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -654,7 +654,7 @@
             "id": "BE788",
             "name": "Soft Tissue Biomechanics",
             "prereqs": "Undergraduate Prerequisites: ENG BE 420 and ENG BE 521; or ENG ME 521 or equivalent with consent of instructor.",
-            "content": "This course will introduce students to the mechanics of soft biological tissue.    In particular, the response of the heart, vasculature, and tissue scaffolds to   mechanical loads from the perspective of nonlinear solid mechanics will be   studied. Constitutive models for hyperelastic materials will be adapted to   biomaterials to handle mechanical characteristics such as nonlinearity,   viscoelasticity, and orthotropy.  Basic experimental methods, and anatomy and   physiology of particular tissue types will also be introduced. Emphasis is   placed on integrating the basic analytical, experimental, and computational   methods for a  more complete understanding of the underlying mechanobiology.    Meets with ENG ME 788.  Students may not receive credit for both.  ",
+            "content": "This course will introduce students to the mechanics of soft biological tissue.    In particular, the response of the heart, vasculature, and tissue scaffolds to   mechanical loads from the perspective of nonlinear solid mechanics will be   studied. Constitutive models for hyperelastic materials will be adapted to   biomaterials to handle mechanical characteristics such as nonlinearity,   viscoelasticity, and orthotropy.  Basic experimental methods, and anatomy and   physiology of particular tissue types will also be introduced. Emphasis is   placed on integrating the basic analytical, experimental, and computational   methods for a  more complete understanding of the underlying mechanobiology.    Meets with ENG ME 788.  Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -664,7 +664,7 @@
             "id": "BE790",
             "name": "Biomedical Engineering Seminar",
             "prereqs": "Undergraduate Prerequisites: Required for graduate students in biomedical engineering.",
-            "content": "Discussion of current topics in biomedical engineering. Students are expected to read assigned journal articles and to participate actively in weekly discussion meetings. Meetings organized around presentations by invited guests of their research problems, strategy, and technique.  ",
+            "content": "Discussion of current topics in biomedical engineering. Students are expected to read assigned journal articles and to participate actively in weekly discussion meetings. Meetings organized around presentations by invited guests of their research problems, strategy, and technique.",
             "prof": [],
             "reviews": []
         }
@@ -674,7 +674,7 @@
             "id": "BE791",
             "name": "PhD Biomedical Engineering Laboratory Rotation System",
             "prereqs": "Graduate Prerequisites: BE PhD first year standing only",
-            "content": "This course allows PhD students to take part in a laboratory rotation system.  During these rotations, students become familiar with research activity within  departmental laboratories that are of interest to them. These rotations help  students identify the laboratory in which they will perform their dissertation  research. PhD students must complete three rotations: one in their first  semester of matriculation, and two in their second semester. Normally each  rotation will last up to seven weeks. ",
+            "content": "This course allows PhD students to take part in a laboratory rotation system.  During these rotations, students become familiar with research activity within  departmental laboratories that are of interest to them. These rotations help  students identify the laboratory in which they will perform their dissertation  research. PhD students must complete three rotations: one in their first  semester of matriculation, and two in their second semester. Normally each  rotation will last up to seven weeks.",
             "prof": [],
             "reviews": []
         }
@@ -684,7 +684,7 @@
             "id": "BE792",
             "name": "Critical Literature Review",
             "prereqs": "Undergraduate Prerequisites: First year BME PhD graduate students only.",
-            "content": "Peer-reviewed publications in the area of biomedical engineering will be   critically evaluated.  Scientific ethics and the process of review and   publication of manuscripts will be discussed.  The classes will be a mix of   didactic information and group discussion.  Methodological issues covered will   include study design, techniques used, and interpretation of research findings.    Students completing this course will understand the principles underlying   preparation and publication of scientific manuscripts and will be able to apply   these principles as they read the scientific literature. ",
+            "content": "Peer-reviewed publications in the area of biomedical engineering will be   critically evaluated.  Scientific ethics and the process of review and   publication of manuscripts will be discussed.  The classes will be a mix of   didactic information and group discussion.  Methodological issues covered will   include study design, techniques used, and interpretation of research findings.    Students completing this course will understand the principles underlying   preparation and publication of scientific manuscripts and will be able to apply   these principles as they read the scientific literature.",
             "prof": [],
             "reviews": []
         }
@@ -704,7 +704,7 @@
             "id": "BE802",
             "name": "Teaching Practicum II",
             "prereqs": "Graduate Prerequisites: BE PhD program",
-            "content": "Practical teaching experience. ",
+            "content": "Practical teaching experience.",
             "prof": [],
             "reviews": []
         }
@@ -744,7 +744,7 @@
             "id": "BE951",
             "name": "Independent Study",
             "prereqs": "Undergraduate Prerequisites: By petition only.",
-            "content": "A course of reading under the direction of a faculty advisor covering subject   matter not available in a lecture course. Final report or examination normally   required. ",
+            "content": "A course of reading under the direction of a faculty advisor covering subject   matter not available in a lecture course. Final report or examination normally   required.",
             "prof": [],
             "reviews": []
         }
@@ -754,7 +754,7 @@
             "id": "BE952",
             "name": "Mentored Project",
             "prereqs": "Undergraduate Prerequisites: Enrollment in the BME MS program.",
-            "content": "Students who are pursuing a project to satisfy their practicum requirement  for the MS degree will register for up to 4 credits of this course. The  course may be taken more than once for up to four credits (ex. two credits  in Fall, two credits in Spring). Students will select a suitable project  with a mentor that can be completed in 4 credits.  The BME Graduate  Committee must approve all proposed projects. Each student must write a  project report and/or deliver a formal presentation at the end of the course  that will be graded by their project mentor. All reports and presentation  materials must be received by the BME Graduate Committee.   ",
+            "content": "Students who are pursuing a project to satisfy their practicum requirement  for the MS degree will register for up to 4 credits of this course. The  course may be taken more than once for up to four credits (ex. two credits  in Fall, two credits in Spring). Students will select a suitable project  with a mentor that can be completed in 4 credits.  The BME Graduate  Committee must approve all proposed projects. Each student must write a  project report and/or deliver a formal presentation at the end of the course  that will be graded by their project mentor. All reports and presentation  materials must be received by the BME Graduate Committee.",
             "prof": [],
             "reviews": []
         }
