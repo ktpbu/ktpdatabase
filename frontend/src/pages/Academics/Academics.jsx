@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
-import { Card, Breadcrumb } from "react-bootstrap";
+import { Card, Breadcrumb, Image } from "react-bootstrap";
 
 // style sheets
 import "./Academics.css";
 import "./../page-content.css";
+
+import undergrad from "./../../assets/undergrad.png";
+import grad from "./../../assets/grad.png";
+import resources from "./../../assets/resources.png";
 
 const Academics = () => {
     return (
@@ -15,11 +19,11 @@ const Academics = () => {
                 <Breadcrumb.Item active>Academics</Breadcrumb.Item>
             </Breadcrumb>
 
-            <div className="d-flex justify-content-around">
-                <Card className="m-3 border-secondary customCard">
+            <div className="d-flex flex-wrap cardList">
+                <Card className="border-secondary customCard">
                     <Link to="/academics/courses/" className="customLink">
                         <Card.Header className="customCardText">
-                            <b>Courses</b>
+                            <img className="acad-icon" src={undergrad}/><b>Courses</b>
                         </Card.Header>
                         <Card.Body>
                             <Card.Text className="customCardText customBodyText">
@@ -29,10 +33,10 @@ const Academics = () => {
                         </Card.Body>
                     </Link>
                 </Card>
-                <Card className="m-3 border-secondary customCard">
+                <Card className="border-secondary customCard">
                     <Link to="/academics/resources/" className="customLink">
                         <Card.Header className="customCardText">
-                            <b>Resources</b>
+                            <img className="acad-icon" src={resources}/><b>Resources</b>
                         </Card.Header>
                         <Card.Body>
                             <Card.Text className="customCardText customBodyText">
@@ -41,10 +45,10 @@ const Academics = () => {
                         </Card.Body>
                     </Link>
                 </Card>
-                <Card className="m-3 border-secondary customCard">
+                <Card className="border-secondary customCard">
                     <Link to="/academics/graduate/" className="customLink">
                         <Card.Header className="customCardText">
-                            <b>Graduate</b>
+                            <img className="acad-icon" src={grad}/><b>Graduate</b>
                         </Card.Header>
                         <Card.Body>
                             <Card.Text className="customCardText customBodyText">
