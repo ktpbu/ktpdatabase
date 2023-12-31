@@ -33,7 +33,7 @@ There are a couple of basic rules or guidelines that will make this collaborativ
 1. Use the vs code prettier extension with these settings: `Print Width: 80` `Prose Wrap: always` `Tab Width: 4`.
 2. Each new page (React .jsx file in the `pages` subdirectory) needs to return a `div` element that is the main content of that page to be rendered. It is necessary for formatting that each page needs that div to have `className='page-content'`, and that `.jsx` file needs to import the following stylesheet: `import "./../page-content.css`.
 
-#### How to Run the Project Locally:
+#### How to Run the Project Locally
 For testing and development, it will be necessary to run this locally. First, make sure you have `Node.js` and `npm` installed. Then, clone this git repo into your own local directory.
 1. Navigate to the `frontend` folder
 2. Run the following: `npm i`, which installs all packages needed by the frontend
@@ -56,7 +56,7 @@ Make the call to the backend using the imported base URL as a fstring (the strin
 
 axios.get(\`${backend}/academics/courses/dependencies/nodes/${subject}\`)
 
-#### How to Run the Course Scraper:
+#### How to Run the Course Scraper
 The course scraper is located at the path `./backend/data/courses/CourseScraper.py`.
 1. Navigate to the `backend` folder.
 2. Run `pip install -r ./../requirements.txt`.
