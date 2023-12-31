@@ -85,10 +85,10 @@ def get_data(course):
             # creates json formatted object for course
             obj = {
                 entry: {
-                    "id": identifier,
-                    "name": name,
-                    "prereqs": prereqs,
-                    "content": content,
+                    "id": identifier.strip(),
+                    "name": name.strip(),
+                    "prereqs": prereqs.strip(),
+                    "content": content.strip(),
                     "prof": [],
                     "reviews": [],
                 }

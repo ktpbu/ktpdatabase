@@ -22,7 +22,7 @@
     {
         "ENGEK121": {
             "id": "EK121",
-            "name": "Introduction to Programming ",
+            "name": "Introduction to Programming",
             "prereqs": "",
             "content": "Introduction to programming, data science, and software development for  engineers using Python. Data and types. Operators, calculations, selection, looping. Data structures. Organizing  software: functions, classes, modules, and libraries. Debugging and software development tools. Software design examples  for engineering and data science.",
             "prof": [],
@@ -34,7 +34,7 @@
             "id": "EK122",
             "name": "Programming for Engineers",
             "prereqs": "",
-            "content": "Prereq: ENG EK 121. Continuation of ENG EK 121. Reinforces  programming concepts  using a modern computational environment, in order to solve  engineering  problems. Basic procedural programming concepts that are reinforced  include  input/output, selection, looping, functions, data structures (arrays,  strings,  structures). Introduction to object-oriented programming concepts and   terminology and event-driven programming. Applications include image processing,   data science, and machine learning. Emphasis on programming style, debugging,   top-down design and modular code. Effective Fall 2023, this course fulfills a   single unit in the following Creativity/Innovation.  BU Hub   Learn More  Creativity/Innovation  ",
+            "content": "Prereq: ENG EK 121. Continuation of ENG EK 121. Reinforces  programming concepts  using a modern computational environment, in order to solve  engineering  problems. Basic procedural programming concepts that are reinforced  include  input/output, selection, looping, functions, data structures (arrays,  strings,  structures). Introduction to object-oriented programming concepts and   terminology and event-driven programming. Applications include image processing,   data science, and machine learning. Emphasis on programming style, debugging,   top-down design and modular code. Effective Fall 2023, this course fulfills a   single unit in the following Creativity/Innovation.  BU Hub   Learn More  Creativity/Innovation",
             "prof": [],
             "reviews": []
         }
@@ -44,7 +44,7 @@
             "id": "EK131",
             "name": "Introduction to Engineering",
             "prereqs": "Undergraduate Prerequisites: Freshman standing or consent of instructor",
-            "content": "This course introduces freshmen to a set of design-oriented engineering skills  through a hands-on experience using engineering tools (software and hardware)  for design and prototyping. Students will be exposed to a number of mechanical  and electrical engineering tools applicable to 3D visualization, building  structures, designing and wiring circuits, prototyping and instrumentation.  Students will work individually and in teams to build substructures that can be  integrated into a functional device (final product).  ",
+            "content": "This course introduces freshmen to a set of design-oriented engineering skills  through a hands-on experience using engineering tools (software and hardware)  for design and prototyping. Students will be exposed to a number of mechanical  and electrical engineering tools applicable to 3D visualization, building  structures, designing and wiring circuits, prototyping and instrumentation.  Students will work individually and in teams to build substructures that can be  integrated into a functional device (final product).",
             "prof": [],
             "reviews": []
         }
@@ -54,7 +54,7 @@
             "id": "EK210",
             "name": "Introduction to Engineering Design",
             "prereqs": "Undergraduate Prerequisites: ENG EK 131; ENG EK 131 and Sophomore standing or consent of instructor.",
-            "content": "A two-credit introductory course to the principles of engineering design, intended to give second- year undergraduates a basic understanding of the process of taking a product from client explanation to design concept through product deployment. Students will work in teams with time and budget constraints on societally meaningful projects. Web-based lectures will cover topics concurrent with specific phases of the projects. The course will culminate in a \"Design Showcase.\" Restricted to ENG sophomores - others only by consent of  instructor. Effective Fall 2018, this course fulfills a single unit in the  following BU Hub area: Teamwork/Collaboration.  BU Hub   Learn More  Teamwork/Collaboration  ",
+            "content": "A two-credit introductory course to the principles of engineering design, intended to give second- year undergraduates a basic understanding of the process of taking a product from client explanation to design concept through product deployment. Students will work in teams with time and budget constraints on societally meaningful projects. Web-based lectures will cover topics concurrent with specific phases of the projects. The course will culminate in a \"Design Showcase.\" Restricted to ENG sophomores - others only by consent of  instructor. Effective Fall 2018, this course fulfills a single unit in the  following BU Hub area: Teamwork/Collaboration.  BU Hub   Learn More  Teamwork/Collaboration",
             "prof": [],
             "reviews": []
         }
@@ -82,9 +82,9 @@
     {
         "ENGEK307": {
             "id": "EK307",
-            "name": "Electric Circuits ",
+            "name": "Electric Circuits",
             "prereqs": "Undergraduate Corequisites: CAS PY 212",
-            "content": "Introduction to electric circuit analysis and design; voltage, current, and  power, circuit laws and theorems; element I-V curves, linear and nonlinear  circuit concepts; operational amplifier circuits; transient response of capacitor  and inductor circuits, sinusoidal-steady-state response, frequency response,  transfer functions; Includes design-oriented laboratory. ",
+            "content": "Introduction to electric circuit analysis and design; voltage, current, and  power, circuit laws and theorems; element I-V curves, linear and nonlinear  circuit concepts; operational amplifier circuits; transient response of capacitor  and inductor circuits, sinusoidal-steady-state response, frequency response,  transfer functions; Includes design-oriented laboratory.",
             "prof": [],
             "reviews": []
         }
@@ -104,7 +104,7 @@
             "id": "EK341",
             "name": "Advanced MATLAB Applications Programming",
             "prereqs": "",
-            "content": "Programming applications for students who have learned programming constructs  using MATLAB.  Topics include Object Oriented Programming, user-defined classes,  graphics primitives, Graphical User Interfaces, event-driven programming, sound  and image processing, use of API keys to transfer data to and from websites.  ",
+            "content": "Programming applications for students who have learned programming constructs  using MATLAB.  Topics include Object Oriented Programming, user-defined classes,  graphics primitives, Graphical User Interfaces, event-driven programming, sound  and image processing, use of API keys to transfer data to and from websites.",
             "prof": [],
             "reviews": []
         }
@@ -114,7 +114,7 @@
             "id": "EK381",
             "name": "Probability, Statistics, and Data Science for Engineers",
             "prereqs": "Undergraduate Prerequisites: ENG EK 103 and CAS MA 225.",
-            "content": "Provides a strong foundation in probability and an introduction to statistics    and  machine learning. Includes experience with translating engineering    problems into  probabilistic models, and working with these models analytically    and  algorithmically. Prepares students for upper-level electives that use    probabilistic  reasoning. Cannot be taken for credit in addition to ENG ME 366,  CAS MA 381  or CAS MA 581. Effective Fall 2018, this course fulfills a single   unit in each  of the following BU Hub areas:  Quantitative Reasoning II,   Critical Thinking.  BU Hub   Learn More  Quantitative Reasoning IICritical Thinking  ",
+            "content": "Provides a strong foundation in probability and an introduction to statistics    and  machine learning. Includes experience with translating engineering    problems into  probabilistic models, and working with these models analytically    and  algorithmically. Prepares students for upper-level electives that use    probabilistic  reasoning. Cannot be taken for credit in addition to ENG ME 366,  CAS MA 381  or CAS MA 581. Effective Fall 2018, this course fulfills a single   unit in each  of the following BU Hub areas:  Quantitative Reasoning II,   Critical Thinking.  BU Hub   Learn More  Quantitative Reasoning IICritical Thinking",
             "prof": [],
             "reviews": []
         }
@@ -134,7 +134,7 @@
             "id": "EK424",
             "name": "Thermodynamics and Statistical Mechanics",
             "prereqs": "Undergraduate Prerequisites: ENG EK 381 ; CAS MA 226 ; CAS CH 102 ; CAS PY 212.",
-            "content": "Fundamental laws of thermodynamics and their application to mechanical and   chemical processes.  Energy, entropy, and kinetic theory.  Chemical  equilibrium  and thermodynamic potentials.  Phase transitions and colligative  properties.   Introduction to statistical thermodynamics.  Problems of  biomedical interest  will be emphasized.  ",
+            "content": "Fundamental laws of thermodynamics and their application to mechanical and   chemical processes.  Energy, entropy, and kinetic theory.  Chemical  equilibrium  and thermodynamic potentials.  Phase transitions and colligative  properties.   Introduction to statistical thermodynamics.  Problems of  biomedical interest  will be emphasized.",
             "prof": [],
             "reviews": []
         }
@@ -154,7 +154,7 @@
             "id": "EK497",
             "name": "Undergraduate Part-Time Internship",
             "prereqs": "Undergraduate Prerequisites: Approval by your faculty advisor and the Engineering Career Development Office.",
-            "content": "This course helps students integrate classroom theory with actual engineering   experience. Under professional supervision, students gain firsthand knowledge   about the engineering environment by working in a paid, part-time position in   private industry, a governmental agency, or research or medical facility. Part-  time position = 15-20 hours per week for at least 10 weeks, and less than 300   hours total per academic term. To maintain status as a full-time student, must   be registered for 8-11 credits. Registration for 12 or more credits requires   written approval of your faculty advisor. International students must have CPT   authorization to register for this course. 0 cr. Pass/Fail. May be taken fall,   spring, or summer term.  ",
+            "content": "This course helps students integrate classroom theory with actual engineering   experience. Under professional supervision, students gain firsthand knowledge   about the engineering environment by working in a paid, part-time position in   private industry, a governmental agency, or research or medical facility. Part-  time position = 15-20 hours per week for at least 10 weeks, and less than 300   hours total per academic term. To maintain status as a full-time student, must   be registered for 8-11 credits. Registration for 12 or more credits requires   written approval of your faculty advisor. International students must have CPT   authorization to register for this course. 0 cr. Pass/Fail. May be taken fall,   spring, or summer term.",
             "prof": [],
             "reviews": []
         }
@@ -164,7 +164,7 @@
             "id": "EK498",
             "name": "Undergraduate Internship",
             "prereqs": "Undergraduate Prerequisites: Approval by your faculty advisor and the Engineering Career Development Office.",
-            "content": "Students register upon receiving an internship position. This course helps students integrate classroom theory with actual engineering experience. Under professional supervision, students gain firsthand knowledge about the engineering environment by working in a paid, full-time position in private industry, a governmental agency, or research or medical facility. Full-time position = 30-40 hours per week for at least 10 weeks per academic term (minimum 300 hours total per academic term). International students must have CPT authorization to register for this course. 0 cr. Pass/Fail. May be taken fall, spring, or summer term. ",
+            "content": "Students register upon receiving an internship position. This course helps students integrate classroom theory with actual engineering experience. Under professional supervision, students gain firsthand knowledge about the engineering environment by working in a paid, full-time position in private industry, a governmental agency, or research or medical facility. Full-time position = 30-40 hours per week for at least 10 weeks per academic term (minimum 300 hours total per academic term). International students must have CPT authorization to register for this course. 0 cr. Pass/Fail. May be taken fall, spring, or summer term.",
             "prof": [],
             "reviews": []
         }
@@ -174,7 +174,7 @@
             "id": "EK500",
             "name": "Probability with Statistical Applications",
             "prereqs": "Undergraduate Prerequisites: CAS MA 226.",
-            "content": "A first course in probability, random processes, and statistics for students  with a level of mathematical maturity and experience comparable to that normally  found in entering graduate students. Sample spaces, probability measures, random  variables, expectation, applications of transform methods, stochastic  convergence and limit theorems, second order statistics, introduction to random  processes, estimation, filtering, and elementary hypothesis testing. May not be  taken for credit in addition to ENG EC 381 or ENG ME 308. ",
+            "content": "A first course in probability, random processes, and statistics for students  with a level of mathematical maturity and experience comparable to that normally  found in entering graduate students. Sample spaces, probability measures, random  variables, expectation, applications of transform methods, stochastic  convergence and limit theorems, second order statistics, introduction to random  processes, estimation, filtering, and elementary hypothesis testing. May not be  taken for credit in addition to ENG EC 381 or ENG ME 308.",
             "prof": [],
             "reviews": []
         }
@@ -184,7 +184,7 @@
             "id": "EK501",
             "name": "Mathematical Methods I",
             "prereqs": "",
-            "content": "Introduction to basic applied mathematics for science and engineering, emphasizing practical methods and unifying geometrical concepts. Topics include linear algebra for real and complex matrices. Quadratic forms,  Lagrange multipliers and elementary properties of the rotation group. Vector differential and integral calculus. Complex function theory, singularities and multi-valued functions, contour integration and series expansions. Fourier and Laplace transforms. Elementary methods for solving ordinary linear differential and systems of differential equations with applications to electrical circuits and mechanical structures. ",
+            "content": "Introduction to basic applied mathematics for science and engineering, emphasizing practical methods and unifying geometrical concepts. Topics include linear algebra for real and complex matrices. Quadratic forms,  Lagrange multipliers and elementary properties of the rotation group. Vector differential and integral calculus. Complex function theory, singularities and multi-valued functions, contour integration and series expansions. Fourier and Laplace transforms. Elementary methods for solving ordinary linear differential and systems of differential equations with applications to electrical circuits and mechanical structures.",
             "prof": [],
             "reviews": []
         }
@@ -204,7 +204,7 @@
             "id": "EK546",
             "name": "Assessment of Sustainable Energy Technologies",
             "prereqs": "Undergraduate Prerequisites: CAS PY 105 or CAS CH 101 or CAS ES 105; or equivalent, CAS MA 121 or equivalent; graduate or junior/senior standing",
-            "content": "Critical to launching new energy ventures and implementing new energy policies  is developing a broad understanding of how technically feasible the proposed  project/technology in meeting the economic, environmental, and end-use  requirements.  This course will provide students with the background needed to  assess the potential for energy efficiency and effectiveness of different  technologies, the related economics, as well as identify the key technical risks  in emerging technologies.  Examples will be drawn from a variety of emerging  technologies such as solar photovoltaics, fuel cells, advanced transportation  technology, as well as conservation options such as motors, cogeneration,  building automation and HVAC.  This course will also address evaluating the life  cycle implications of emerging technologies, including manufacturing issues,  end-of-life, as well as estimating performance. ",
+            "content": "Critical to launching new energy ventures and implementing new energy policies  is developing a broad understanding of how technically feasible the proposed  project/technology in meeting the economic, environmental, and end-use  requirements.  This course will provide students with the background needed to  assess the potential for energy efficiency and effectiveness of different  technologies, the related economics, as well as identify the key technical risks  in emerging technologies.  Examples will be drawn from a variety of emerging  technologies such as solar photovoltaics, fuel cells, advanced transportation  technology, as well as conservation options such as motors, cogeneration,  building automation and HVAC.  This course will also address evaluating the life  cycle implications of emerging technologies, including manufacturing issues,  end-of-life, as well as estimating performance.",
             "prof": [],
             "reviews": []
         }
@@ -234,7 +234,7 @@
             "id": "EK697",
             "name": "Graduate Part-time Engineering Practice",
             "prereqs": "Graduate Prerequisites: MS and MEng students approved for the Engineering Practice degree option.",
-            "content": "Students register upon receiving an internship position. The Engineering Practice degree option helps students to integrate classroom theory with actual engineering experience. Under professional supervision, students gain firsthand knowledge about the engineering environment by working in a paid, part-time position in private industry, a governmental agency, or research or medical facility. Part-time position = 15-20 hours per week for at least 10 weeks, and less than 300 hours total per academic term. To maintain status as a full-time student, must be registered for 8-11 credits. Registration for 12 or more credits requires written approval of your faculty advisor. International students must have CPT authorization to register for this course. 0 cr. Pass/Fail. May be taken fall, spring, or summer term. ",
+            "content": "Students register upon receiving an internship position. The Engineering Practice degree option helps students to integrate classroom theory with actual engineering experience. Under professional supervision, students gain firsthand knowledge about the engineering environment by working in a paid, part-time position in private industry, a governmental agency, or research or medical facility. Part-time position = 15-20 hours per week for at least 10 weeks, and less than 300 hours total per academic term. To maintain status as a full-time student, must be registered for 8-11 credits. Registration for 12 or more credits requires written approval of your faculty advisor. International students must have CPT authorization to register for this course. 0 cr. Pass/Fail. May be taken fall, spring, or summer term.",
             "prof": [],
             "reviews": []
         }
@@ -244,7 +244,7 @@
             "id": "EK698",
             "name": "Graduate Engineering Practice",
             "prereqs": "Graduate Prerequisites: MS and MEng students approved for the Engineering Practice degree option.",
-            "content": "Students register upon receiving an internship position. The Engineering Practice degree option helps students to integrate classroom theory with actual engineering experience. Under professional supervision, students acquire firsthand knowledge about the engineering environment by working in a paid, full-time position in private industry, a governmental agency, or research or medical facility. Full-time position = 30-40 hours per week for at least 10 weeks per academic term (minimum 300 hours total per academic term). International students must have CPT authorization to register for this course. 0 cr. Pass/Fail. May be taken fall, spring, or summer term. ",
+            "content": "Students register upon receiving an internship position. The Engineering Practice degree option helps students to integrate classroom theory with actual engineering experience. Under professional supervision, students acquire firsthand knowledge about the engineering environment by working in a paid, full-time position in private industry, a governmental agency, or research or medical facility. Full-time position = 30-40 hours per week for at least 10 weeks per academic term (minimum 300 hours total per academic term). International students must have CPT authorization to register for this course. 0 cr. Pass/Fail. May be taken fall, spring, or summer term.",
             "prof": [],
             "reviews": []
         }
@@ -264,7 +264,7 @@
             "id": "EK920",
             "name": "Summer Research Experience",
             "prereqs": "",
-            "content": "By department approval only. Research carried out under the guidance of a faculty  member. ",
+            "content": "By department approval only. Research carried out under the guidance of a faculty  member.",
             "prof": [],
             "reviews": []
         }

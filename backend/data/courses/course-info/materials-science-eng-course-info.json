@@ -4,7 +4,7 @@
             "id": "MS500",
             "name": "Special Topics in Materials Science and Engineering",
             "prereqs": "Undergraduate Prerequisites: Graduate standing or consent of instructor.  Specific prerequisites vary according to topic.",
-            "content": "Coverage of a specific topic in materials science and engineering.  Subject varies from year to year and is generally from an area of current or emerging research. ",
+            "content": "Coverage of a specific topic in materials science and engineering.  Subject varies from year to year and is generally from an area of current or emerging research.",
             "prof": [],
             "reviews": []
         }
@@ -14,7 +14,7 @@
             "id": "MS503",
             "name": "Kinetic Processes in Materials",
             "prereqs": "Undergraduate Prerequisites: Undergraduate course in materials science and engineering.",
-            "content": "Kinetics of mass transport, continuum and atomistic approaches, chemical diffusion; kinetics of chemical reactions, kinetics of adsorption and evaporation; nucleation and growth; solidification; spinodal decomposition; coarsening; martensitic transformations; order-disorder reactions; point defects and their relation to transport kinetics. Meets with ENGME503; students may not receive credit for both. ",
+            "content": "Kinetics of mass transport, continuum and atomistic approaches, chemical diffusion; kinetics of chemical reactions, kinetics of adsorption and evaporation; nucleation and growth; solidification; spinodal decomposition; coarsening; martensitic transformations; order-disorder reactions; point defects and their relation to transport kinetics. Meets with ENGME503; students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -44,7 +44,7 @@
             "id": "MS507",
             "name": "Process Modeling and Control",
             "prereqs": "Undergraduate Prerequisites: ENG EK 307 and CAS MA 226; or equivalent coursework and permission of the instructor. Senior or graduate standing in engineering.",
-            "content": "An introduction to modeling and control as applied to industrial unit processes providing the basis for process development and improvement.  Major themes include an integrated treatment of modeling multi-domain physical systems (electrical, mechanical, fluid, thermal), application of classical control techniques, and system design.  Topics include modeling techniques, analysis of linear dynamics, control fundamentals in the time and frequency domain, and actuator selection and control structure design.  Examples drawn from a variety of manufacturing processes and case studies. Meets with ENGME507.  Students may not receive credit for both. ",
+            "content": "An introduction to modeling and control as applied to industrial unit processes providing the basis for process development and improvement.  Major themes include an integrated treatment of modeling multi-domain physical systems (electrical, mechanical, fluid, thermal), application of classical control techniques, and system design.  Topics include modeling techniques, analysis of linear dynamics, control fundamentals in the time and frequency domain, and actuator selection and control structure design.  Examples drawn from a variety of manufacturing processes and case studies. Meets with ENGME507.  Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -64,7 +64,7 @@
             "id": "MS524",
             "name": "Skeletal Tissue Mechanics",
             "prereqs": "Undergraduate Prerequisites: ENG EK 301 ; ENG ME 302 ; ENG ME 305 ; ENG ME 309 ; CAS MA 242; or equivalent",
-            "content": "The course is structured around classical topics in mechanics of materials and their application to study of the mechanical behavior of skeletal tissues, whole bones, bone-implant systems, and diarthroidal joints.  Topics include:  mechanical behavior of tissues, (anisotropy, viscoelasticity, fracture and fatigue) with emphasis on the role of the microstructure of these tissues; structural properties of whole bones and implants (composite and asymmetric bean theories); and mechanical function of joints (contact mechanics, lubrication, and wear).  Emphasis is placed on using experimental data to test and to develop theoretical models, as well as on using the knowledge gained to address common health related problems related to aging, disease, and injury.  Meets with ENG ME 524 and ENG BE 524. Students may not receive credit for both. ",
+            "content": "The course is structured around classical topics in mechanics of materials and their application to study of the mechanical behavior of skeletal tissues, whole bones, bone-implant systems, and diarthroidal joints.  Topics include:  mechanical behavior of tissues, (anisotropy, viscoelasticity, fracture and fatigue) with emphasis on the role of the microstructure of these tissues; structural properties of whole bones and implants (composite and asymmetric bean theories); and mechanical function of joints (contact mechanics, lubrication, and wear).  Emphasis is placed on using experimental data to test and to develop theoretical models, as well as on using the knowledge gained to address common health related problems related to aging, disease, and injury.  Meets with ENG ME 524 and ENG BE 524. Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -74,7 +74,7 @@
             "id": "MS526",
             "name": "Simulation of Physical Processes",
             "prereqs": "Undergraduate Prerequisites: Senior or graduate standing in the engineering, physics, or the chemistry disciplines, or consent of instructor.",
-            "content": "Modern simulation methods are covered for describing and analyzing the behavior    of realistic nonlinear systems that occur in the engineering and science    disciplines. By developing and applying such methods and tools, much deeper    understanding, insight, and control of novel technologies can be gained, thereby    often greatly aiding technology development, and sometimes providing the    leverage to turn a novel technology into a practical reality. Advanced numerical   methods are covered for attacking nonlinear partial differential equations. Key   aspects of the finite element method. Extensive use is made of the modern   computational tools Maple and Scientific Workplace. Examples including problems   in micro- and nanoelectronics, bioengineering, material science, photonics, and   physics are introduced and related to sensing instrumentation and control.    Meets with ENGME526. Students may not receive credit  for both. ",
+            "content": "Modern simulation methods are covered for describing and analyzing the behavior    of realistic nonlinear systems that occur in the engineering and science    disciplines. By developing and applying such methods and tools, much deeper    understanding, insight, and control of novel technologies can be gained, thereby    often greatly aiding technology development, and sometimes providing the    leverage to turn a novel technology into a practical reality. Advanced numerical   methods are covered for attacking nonlinear partial differential equations. Key   aspects of the finite element method. Extensive use is made of the modern   computational tools Maple and Scientific Workplace. Examples including problems   in micro- and nanoelectronics, bioengineering, material science, photonics, and   physics are introduced and related to sensing instrumentation and control.    Meets with ENGME526. Students may not receive credit  for both.",
             "prof": [],
             "reviews": []
         }
@@ -84,7 +84,7 @@
             "id": "MS527",
             "name": "Transport Phenomena in Materials Processing",
             "prereqs": "Undergraduate Prerequisites: ENG ME 304; or equivalent or consent of instructor",
-            "content": "Introduction to momentum, heat and mass transport phenomena occurring in various processes.  Whereas transport phenomena underlie many processes in engineering, agriculture, meteorology, physiology, biology, analytical chemistry, materials science, pharmacy and other areas, they are key to specific applications in diverse areas such as materials processing, green manufacturing of primary materials, biological membranes, fuel cell engineering, synthesis of clean fuels.  This course covers three closely related transport phenomena: momentum transfer (fluid flow), energy transfer (heat flow) and mass transfer (diffusion).  The mathematical underpinnings of all three transport phenomena are closely related and the differential equations governing them are frequently quite similar.  Since in many situations the three transport phenomena occur together, they are presented and studied together in this course. Meets with ENGME27.  Students may not receive credit for both. ",
+            "content": "Introduction to momentum, heat and mass transport phenomena occurring in various processes.  Whereas transport phenomena underlie many processes in engineering, agriculture, meteorology, physiology, biology, analytical chemistry, materials science, pharmacy and other areas, they are key to specific applications in diverse areas such as materials processing, green manufacturing of primary materials, biological membranes, fuel cell engineering, synthesis of clean fuels.  This course covers three closely related transport phenomena: momentum transfer (fluid flow), energy transfer (heat flow) and mass transfer (diffusion).  The mathematical underpinnings of all three transport phenomena are closely related and the differential equations governing them are frequently quite similar.  Since in many situations the three transport phenomena occur together, they are presented and studied together in this course. Meets with ENGME27.  Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -94,7 +94,7 @@
             "id": "MS535",
             "name": "Green Manufacturing",
             "prereqs": "Undergraduate Prerequisites: Senior/graduate standing; CASCH101 or CASCH131; CASMA226; ENGME304 orENGEK424; ENGME465 or ENGME529; or consent of instructor.",
-            "content": "Provides a systems view of the manufacturing process that aims to efficiently  use energy, water, and raw materials to minimize air and water pollution and  generation of waste per unit of the manufactured product. Specifically, the  course will discuss methods to maximize yield and minimize waste effluents in  processes, ways to devise treatment strategies for handling manufacturing  wastes, innovative ways to decrease energy consumption in manufacturing, by- product use and product recycling, and policies that encourage green  manufacturing. Same as ENG ME 535.  Students may not receive credits for both. ",
+            "content": "Provides a systems view of the manufacturing process that aims to efficiently  use energy, water, and raw materials to minimize air and water pollution and  generation of waste per unit of the manufactured product. Specifically, the  course will discuss methods to maximize yield and minimize waste effluents in  processes, ways to devise treatment strategies for handling manufacturing  wastes, innovative ways to decrease energy consumption in manufacturing, by- product use and product recycling, and policies that encourage green  manufacturing. Same as ENG ME 535.  Students may not receive credits for both.",
             "prof": [],
             "reviews": []
         }
@@ -104,7 +104,7 @@
             "id": "MS539",
             "name": "Introduction to Materials Science and Engineering",
             "prereqs": "",
-            "content": "MS539 is an introductory graduate level course in Materials Science and  Engineering. It is intended for students who wish to be introduced to the basics  of why materials behave the way they do. It covers topics such as atomic  bonding, why and how solids form and their structures, phase transitions, phase  diagrams, electronic/magnetic/optical/thermal properties of materials, materials  processing and how it influences their properties, ceramics, polymers, ferrous  and non-ferrous metals, glasses and societal concern in the use and re-use of  materials.  ",
+            "content": "MS539 is an introductory graduate level course in Materials Science and  Engineering. It is intended for students who wish to be introduced to the basics  of why materials behave the way they do. It covers topics such as atomic  bonding, why and how solids form and their structures, phase transitions, phase  diagrams, electronic/magnetic/optical/thermal properties of materials, materials  processing and how it influences their properties, ceramics, polymers, ferrous  and non-ferrous metals, glasses and societal concern in the use and re-use of  materials.",
             "prof": [],
             "reviews": []
         }
@@ -114,7 +114,7 @@
             "id": "MS545",
             "name": "Electrochemistry of Fuel Cells and Batteries",
             "prereqs": "Undergraduate Prerequisites: ENG MS 505.",
-            "content": "Topics covered include Fundamental Electrochemistry of solid-state materials as well as aqueous and non-aqueous systems including molten salts. Thermodynamics and kinetics of electrode reactions and associated mass transport in electrochemical systems. Measurements techniques (dc polarization, ac impedance spectroscopy, blocking electrodes, etc.) used in characterizing electrochemical systems. Design of devices including fuel cells, batteries, and sensors. Electrochemical processes including membrane separation and electrolysis.  Same as ENG ME 545.  Students may not receive credits for both. ",
+            "content": "Topics covered include Fundamental Electrochemistry of solid-state materials as well as aqueous and non-aqueous systems including molten salts. Thermodynamics and kinetics of electrode reactions and associated mass transport in electrochemical systems. Measurements techniques (dc polarization, ac impedance spectroscopy, blocking electrodes, etc.) used in characterizing electrochemical systems. Design of devices including fuel cells, batteries, and sensors. Electrochemical processes including membrane separation and electrolysis.  Same as ENG ME 545.  Students may not receive credits for both.",
             "prof": [],
             "reviews": []
         }
@@ -124,7 +124,7 @@
             "id": "MS549",
             "name": "Structure and Function of the Extracellular Matrix",
             "prereqs": "",
-            "content": "This is an introductory course dealing with the detailed structure of the basic     units of the extracellular matrix including collagen, elastin, microfibrils and     proteoglycans as well as the functional properties of these molecules. The focus     is mostly on how the structure of these components determine the functional     properties such as elasticity at different scales from molecule to fibrils to     organ level behavior. The biological role of these components and their     interaction with cells is also covered. Interaction ofenzymes and the matrix in     the presence of mechanical forces is discussed. Mathematical modeling is applied     at various length scales of the extracellular matrix that provides quantitative     understanding of the structure and function relationship. Special topics include     how diseases affect extracellular matrix in the lung, cartilage and vasculature.     The relevance of the properties of native extracellular matrix for tissue     engineering is also discussed. Same as ENG BE 549 and ENG ME 549. Students may not receive credit for both. ",
+            "content": "This is an introductory course dealing with the detailed structure of the basic     units of the extracellular matrix including collagen, elastin, microfibrils and     proteoglycans as well as the functional properties of these molecules. The focus     is mostly on how the structure of these components determine the functional     properties such as elasticity at different scales from molecule to fibrils to     organ level behavior. The biological role of these components and their     interaction with cells is also covered. Interaction ofenzymes and the matrix in     the presence of mechanical forces is discussed. Mathematical modeling is applied     at various length scales of the extracellular matrix that provides quantitative     understanding of the structure and function relationship. Special topics include     how diseases affect extracellular matrix in the lung, cartilage and vasculature.     The relevance of the properties of native extracellular matrix for tissue     engineering is also discussed. Same as ENG BE 549 and ENG ME 549. Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -144,7 +144,7 @@
             "id": "MS573",
             "name": "Solar Energy Systems",
             "prereqs": "Undergraduate Prerequisites: ENG EK 408; Graduate standing or permission of the instructor.  ENG EC471 is suggested.",
-            "content": "This course is designed for first-year graduate and senior undergraduate  students from engineering disciplines and is intended to educate students in the  design and application of solar energy technology. It will focus on fundamentals  of solar energy conversion, solar cells, optical engineering,  photoelectrochemical cells, thermoelectric generators, and energy storage and  distribution systems.  The course covers solar energy insolation and global  energy needs, current trends in photovoltaic energy engineering, solar cell  material science, design and installation of solar panels for residential and  industrial applications and connections to the national grid and cost analysis  of the overall system. In addition, basic manufacturing processes for the  production of solar panels, environmental impacts, and the related system  engineering aspects will be included to provide a comprehensive state-of-the art  approach to solar energy utilization. Same as ENG EC 573. Students may not receive credits for both.   ",
+            "content": "This course is designed for first-year graduate and senior undergraduate  students from engineering disciplines and is intended to educate students in the  design and application of solar energy technology. It will focus on fundamentals  of solar energy conversion, solar cells, optical engineering,  photoelectrochemical cells, thermoelectric generators, and energy storage and  distribution systems.  The course covers solar energy insolation and global  energy needs, current trends in photovoltaic energy engineering, solar cell  material science, design and installation of solar panels for residential and  industrial applications and connections to the national grid and cost analysis  of the overall system. In addition, basic manufacturing processes for the  production of solar panels, environmental impacts, and the related system  engineering aspects will be included to provide a comprehensive state-of-the art  approach to solar energy utilization. Same as ENG EC 573. Students may not receive credits for both.",
             "prof": [],
             "reviews": []
         }
@@ -174,7 +174,7 @@
             "id": "MS577",
             "name": "Electronic Optical and Magnetic Properties of Materials",
             "prereqs": "Undergraduate Prerequisites: CAS PY 313; or equivalent, ENG EC 574 suggested.",
-            "content": "This course in intended to develop an in depth knowledge of solid state concepts that are important for students in the areas of material science and  electrical engineering. Specifically,  this course  focuses on the study of different apsect of solid state physics necessary to study technologically relevant crytalline and amorphous systems.  Particular enphasis is placed on the study of the crystal structure, crystal diffraction and the related techniques used as diagnostic tools; the electronic, thermal, optical and magnetic properties of material systems important for electronics and photonics device applications. Furthermore the course will also consider the theory of superconductivity, the chemistry aspcts of solid state materials and will provide an introduction to solid state biophysics. This course complements EC 574 (Physics of semiconductor material) and EC575 (semiconductor devices) with its focus on technologically relevant structural, optical, thermal and magnetic material properties. Meets with ENG EC 577. Students may not receive credit for both. ",
+            "content": "This course in intended to develop an in depth knowledge of solid state concepts that are important for students in the areas of material science and  electrical engineering. Specifically,  this course  focuses on the study of different apsect of solid state physics necessary to study technologically relevant crytalline and amorphous systems.  Particular enphasis is placed on the study of the crystal structure, crystal diffraction and the related techniques used as diagnostic tools; the electronic, thermal, optical and magnetic properties of material systems important for electronics and photonics device applications. Furthermore the course will also consider the theory of superconductivity, the chemistry aspcts of solid state materials and will provide an introduction to solid state biophysics. This course complements EC 574 (Physics of semiconductor material) and EC575 (semiconductor devices) with its focus on technologically relevant structural, optical, thermal and magnetic material properties. Meets with ENG EC 577. Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -184,7 +184,7 @@
             "id": "MS580",
             "name": "Theory of Elasticity",
             "prereqs": "Undergraduate Prerequisites: ENG ME 309; or equivalent",
-            "content": "An introduction to the general theory of solid deformation; small deformation emphasized. Topics include: Cartesian tensors, indicial notation. Introduction to continuum mechanics: deformation of continuous media, deformation gradient, strain definitions. Stress, Cauchy's postulate, Cauchy and Piola-Kirchhoff stress tensors. Balance laws. Constitutive equations, strain energy and Green's postulate. Linear Elasticity: Two dimensional problems, Airy stress function, in plane loading of strips, St. Venant's principle, complex variable methods, Goursat-Muskhelishvili representation, stress concentrations around holes and cracks. Three dimensional problems, Kelvin's solution, the Boussinesq problem, Hertzian contact, Eshelby's energy-momentum tensor. Same as ENG ME 580.  Students may not receive credits for both. ",
+            "content": "An introduction to the general theory of solid deformation; small deformation emphasized. Topics include: Cartesian tensors, indicial notation. Introduction to continuum mechanics: deformation of continuous media, deformation gradient, strain definitions. Stress, Cauchy's postulate, Cauchy and Piola-Kirchhoff stress tensors. Balance laws. Constitutive equations, strain energy and Green's postulate. Linear Elasticity: Two dimensional problems, Airy stress function, in plane loading of strips, St. Venant's principle, complex variable methods, Goursat-Muskhelishvili representation, stress concentrations around holes and cracks. Three dimensional problems, Kelvin's solution, the Boussinesq problem, Hertzian contact, Eshelby's energy-momentum tensor. Same as ENG ME 580.  Students may not receive credits for both.",
             "prof": [],
             "reviews": []
         }
@@ -204,7 +204,7 @@
             "id": "MS700",
             "name": "Advanced Special Topics",
             "prereqs": "Undergraduate Prerequisites: Graduate standing or consent of instructor.",
-            "content": "Advanced study of a specific research topic in materials science and engineering.   Intended primarily for advanced graduate students. ",
+            "content": "Advanced study of a specific research topic in materials science and engineering.   Intended primarily for advanced graduate students.",
             "prof": [],
             "reviews": []
         }
@@ -212,9 +212,9 @@
     {
         "ENGMS726": {
             "id": "MS726",
-            "name": "Fundamentals of Biomaterials ",
+            "name": "Fundamentals of Biomaterials",
             "prereqs": "Undergraduate Prerequisites: ENG EK 301 ; ENG EK 424 ; CAS CH 101 ; CAS CH 102 ; ENG BE 209.",
-            "content": "Provides the chemistry and engineering skills needed to solve challenges in the biomaterials and tissue engineering area, concentrating on the fundamental principles in biomedical engineering, material science, and chemistry.  Covers the structure and properties of hard materials (ceramics and metals) and soft materials (polymers and hydro-gels).    Same as ENG BE 526, ENG BE 726, ME 726. Students may not receive credit for both. ",
+            "content": "Provides the chemistry and engineering skills needed to solve challenges in the biomaterials and tissue engineering area, concentrating on the fundamental principles in biomedical engineering, material science, and chemistry.  Covers the structure and properties of hard materials (ceramics and metals) and soft materials (polymers and hydro-gels).    Same as ENG BE 526, ENG BE 726, ME 726. Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -224,7 +224,7 @@
             "id": "MS727",
             "name": "Principles and Applications of Tissue Engineering",
             "prereqs": "Undergraduate Prerequisites: ENG EK 301 ; ENG EK 424 ; CAS CH 101 ; CAS CH 102 ; ENG BE 209.",
-            "content": "Provides the chemistry and engineering skills needed to solve challenges in the biomaterials and tissue engineering area, concentrating on cell-biomaterial interactions, soft tissue mechanics and specific research topics.  Students will write a NIH-style grant proposal on a specific research topic.  Note that the laboratory portion is not offered in MS 727. Same as ENG BE 527, ENG BE 727,  ENG ME 727. Students may not receive credit for both. ",
+            "content": "Provides the chemistry and engineering skills needed to solve challenges in the biomaterials and tissue engineering area, concentrating on cell-biomaterial interactions, soft tissue mechanics and specific research topics.  Students will write a NIH-style grant proposal on a specific research topic.  Note that the laboratory portion is not offered in MS 727. Same as ENG BE 527, ENG BE 727,  ENG ME 727. Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -234,7 +234,7 @@
             "id": "MS736",
             "name": "Biomedical Transport Phenomena",
             "prereqs": "Undergraduate Prerequisites: ENG BE 436.",
-            "content": "Students are introduced to the analysis and characterization of physiological systems and biomedical devices in which chemical reaction and the transport of mass and momentum play predominant roles. Fundamental scientific issues and analytical techniques are introduced and applied to case studies of specific engineering problems. Some knowledge of a high-level computer programming language is essential. A two-hour computer lab is required.   BU Hub   Learn More  Oral and/or Signed CommunicationCreativity/Innovation  ",
+            "content": "Students are introduced to the analysis and characterization of physiological systems and biomedical devices in which chemical reaction and the transport of mass and momentum play predominant roles. Fundamental scientific issues and analytical techniques are introduced and applied to case studies of specific engineering problems. Some knowledge of a high-level computer programming language is essential. A two-hour computer lab is required.   BU Hub   Learn More  Oral and/or Signed CommunicationCreativity/Innovation",
             "prof": [],
             "reviews": []
         }
@@ -244,7 +244,7 @@
             "id": "MS774",
             "name": "Semiconductor Quantum Structures and Photonic Devices",
             "prereqs": "Undergraduate Prerequisites: ENG EK 500; or equivalent, knowledge of stochastic processes, or consent of the instructor.",
-            "content": "Optical properties of semiconductors: interband optical transitions; excitons.  Low-dimensional structures: quantum wells, superlattices, quantum wires, quantum dots, and their optical properties; intersubband transitions.  Lasers: double-heterojunction, quantum-well, quantum-dot, and quantum-cascade lasers; high-speed laser dynamics.  Electro-optical properties of bulk and low-dimensional semiconductors; electroabsorption modulators.  Detectors: photoconductors and photodiodes; quantum-well infrared photodetectors. Same as ENG EC 774. Students may not receive credit for both. ",
+            "content": "Optical properties of semiconductors: interband optical transitions; excitons.  Low-dimensional structures: quantum wells, superlattices, quantum wires, quantum dots, and their optical properties; intersubband transitions.  Lasers: double-heterojunction, quantum-well, quantum-dot, and quantum-cascade lasers; high-speed laser dynamics.  Electro-optical properties of bulk and low-dimensional semiconductors; electroabsorption modulators.  Detectors: photoconductors and photodiodes; quantum-well infrared photodetectors. Same as ENG EC 774. Students may not receive credit for both.",
             "prof": [],
             "reviews": []
         }
@@ -262,7 +262,7 @@
     {
         "ENGMS782": {
             "id": "MS782",
-            "name": "Advanced Materials Characterization ",
+            "name": "Advanced Materials Characterization",
             "prereqs": "",
             "content": "This course will discuss the characterization of materials' atomic and   electronic structure.  Atomic structure evaluation by x-ray diffraction,   selected area- and convergent-beam electron diffraction; microstructure   evaluation by transmission electron microscopy, principles of bright-field,   dark-field and weak-beam imaging; principles of analytical electron microscopy   using EDS, WDS, AES; study of chemical and bonding states by EELS, Raman   spectroscopy and XPS/ESCA; laser-based non-destructive evaluation of mechanical   properties of materials.  Characterization methods for semiconductors include   the study of point defects by electron paramagnetic resonance, of transport   properties by magnetoresistance and Hall effect, of recombination phenomena by   photoluminescennce and of junction properties by capacitance-voltage methods.",
             "prof": [],
@@ -314,7 +314,7 @@
             "id": "MS952",
             "name": "MS Mentored Project",
             "prereqs": "",
-            "content": "Students who are pursuing a project to satisfy their practicum requirement for the MS without Thesis and MEng degrees will register for up to 4 credits of this course. The course may be taken more than once up to four credits (ex. two credits in Fall, two credits in Spring). Students will select a suitable project, with a mentor, that can be completed in 4 credits.  The Graduate Committee must approve all proposed projects. Each student must write a project report at the end of the course that will be graded P/F by their project mentor. ",
+            "content": "Students who are pursuing a project to satisfy their practicum requirement for the MS without Thesis and MEng degrees will register for up to 4 credits of this course. The course may be taken more than once up to four credits (ex. two credits in Fall, two credits in Spring). Students will select a suitable project, with a mentor, that can be completed in 4 credits.  The Graduate Committee must approve all proposed projects. Each student must write a project report at the end of the course that will be graded P/F by their project mentor.",
             "prof": [],
             "reviews": []
         }
