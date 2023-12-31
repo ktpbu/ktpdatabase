@@ -3,8 +3,10 @@ import os
 import json
 from requests_html import HTMLSession
 
-""" I PURPOSELY DID NOT IMPLEMENT MULTITHREADING OR ASYNCHRONOUS 
-    PROGRAMMING TO PRESERVE THE ORDER OF THE COURSES """
+""" 
+I PURPOSELY DID NOT IMPLEMENT ASYNCHRONOUS PROGRAMMING 
+OR MULTITHREADING TO PRESERVE THE ORDER OF THE COURSES 
+"""
 
 # sets the source urls to scrape for each subject
 course_urls = {
