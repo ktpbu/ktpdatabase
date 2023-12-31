@@ -3,20 +3,22 @@ import os
 import json
 from requests_html import HTMLSession
 
-""" I PURPOSELY DID NOT IMPLEMENT MULTITHREADING OR ASYNCHRONOUS 
-    PROGRAMMING TO PRESERVE THE ORDER OF THE COURSES """
+""" 
+I PURPOSELY DID NOT IMPLEMENT ASYNCHRONOUS PROGRAMMING 
+OR MULTITHREADING TO PRESERVE THE ORDER OF THE COURSES 
+"""
 
-# sets the source urls to scrape for each subject
+# defines the source urls to scrape for each subject
 course_urls = {
     "biomedical-eng": "https://www.bu.edu/academics/eng/courses/biomedical-engineering/",
     "computer-science": "https://www.bu.edu/academics/cas/courses/computer-science/",
     "data-science": "https://www.bu.edu/academics/cds/courses/",
-    "electrical-computer-eng": "https://www.bu.edu/academics/eng/courses/electrical-computer-engineering/",
     "economics": "https://www.bu.edu/academics/cas/courses/economics/",
+    "electrical-computer-eng": "https://www.bu.edu/academics/eng/courses/electrical-computer-engineering/",
     "eng-core": "https://www.bu.edu/academics/eng/courses/engineering-core/",
-    "mathematical-statistics": "https://www.bu.edu/academics/cas/courses/mathematics-statistics/",
-    "mechanical-eng": "https://www.bu.edu/academics/eng/courses/mechanical-engineering/",
     "materials-science-eng": "https://www.bu.edu/academics/eng/courses/materials-science-engineering/",
+    "mathematics-statistics": "https://www.bu.edu/academics/cas/courses/mathematics-statistics/",
+    "mechanical-eng": "https://www.bu.edu/academics/eng/courses/mechanical-engineering/",
     "systems-eng": "https://www.bu.edu/academics/eng/courses/systems-engineering/",
 }
 
@@ -54,8 +56,17 @@ def get_course_info(subject):
     if not course_data:
         raise Exception(f"Unable to scrape the following url: {url}")
 
+    # groups course data into undergrad and grad courses
+    undergrad_course_data = []
+    grad_course_data = []
+    for entry in course_data:
+        if int(next(iter(entry.values()))["id"][-3:]) < 500:
+            undergrad_course_data.append(entry)
+        else:
+            grad_course_data.append(entry)
+
     print(f"finished scraping {subject} course info")
-    return course_data
+    return undergrad_course_data, grad_course_data
 
 
 def get_data(course):
@@ -98,22 +109,26 @@ def get_data(course):
             print(f"error scraping {course}")
 
 
-def create_json(course_data, subject):
-    location = "./backend/data/courses/course-info"
+def create_json(undergrad_course_data, grad_course_data, subject):
+    undergrad_location = "./backend/data/courses/course-info/undergrad"
+    grad_location = "./backend/data/courses/course-info/grad"
 
-    # ensures relevant directory exists to store json output
-    if not os.path.exists(location):
-        os.makedirs(location)
+    # ensures relevant directories exist to store json output
+    if not os.path.exists(undergrad_location):
+        os.makedirs(undergrad_location)
+    if not os.path.exists(grad_location):
+        os.makedirs(grad_location)
 
-    # creates json file containg course info for the subject
-    with open(f"{location}/{subject}-course-info.json", "w") as f:
-        json.dump(course_data, f, indent=4, ensure_ascii=False)
+    # creates json files containing course info for the subject
+    with open(f"{undergrad_location}/{subject}-ug-course-info.json", "w") as f:
+        json.dump(undergrad_course_data, f, indent=4, ensure_ascii=False)
+    with open(f"{grad_location}/{subject}-g-course-info.json", "w") as f:
+        json.dump(grad_course_data, f, indent=4, ensure_ascii=False)
 
 
 def main(subject):
-    course_data = get_course_info(subject)
-    create_json(course_data, subject)
-    return course_data
+    undergrad_course_data, grad_course_data = get_course_info(subject)
+    create_json(undergrad_course_data, grad_course_data, subject)
 
 
 for subject in course_urls.keys():
