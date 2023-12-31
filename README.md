@@ -59,7 +59,7 @@ axios.get(\`${backend}/academics/courses/dependencies/nodes/${subject}\`)
 #### How to Run the Course Scraper
 The course scraper is located at the path `./backend/data/courses/CourseScraper.py`.
 1. Navigate to the `backend` folder.
-2. Run `pip install -r ./../requirements.txt`.
+2. Run `pip install -r ./requirements.txt`.
 3. Update the `course_urls` variable in `CourseScraper.py` with the relevant subject-url pair if you want to scrape additional subjects.
 4. Run `CourseScraper.py` and the course information will be stored in the `./backend/data/courses/course-info/` folder.
 
