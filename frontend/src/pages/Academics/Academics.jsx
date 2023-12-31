@@ -19,11 +19,12 @@ const Academics = () => {
                 <Breadcrumb.Item active>Academics</Breadcrumb.Item>
             </Breadcrumb>
 
-            <div className="d-flex flex-wrap cardList">
+            <div className="d-flex flex-wrap justify-content-center cardList">
                 <Card className="border-secondary customCard">
                     <Link to="/academics/courses/" className="customLink">
                         <Card.Header className="customCardText">
-                            <img className="acad-icon" src={undergrad}/><b>Courses</b>
+                            <img className="acad-icon" src={undergrad} />
+                            <b>Courses</b>
                         </Card.Header>
                         <Card.Body>
                             <Card.Text className="customCardText customBodyText">
@@ -36,7 +37,8 @@ const Academics = () => {
                 <Card className="border-secondary customCard">
                     <Link to="/academics/resources/" className="customLink">
                         <Card.Header className="customCardText">
-                            <img className="acad-icon" src={resources}/><b>Resources</b>
+                            <img className="acad-icon" src={resources} />
+                            <b>Resources</b>
                         </Card.Header>
                         <Card.Body>
                             <Card.Text className="customCardText customBodyText">
@@ -48,7 +50,8 @@ const Academics = () => {
                 <Card className="border-secondary customCard">
                     <Link to="/academics/graduate/" className="customLink">
                         <Card.Header className="customCardText">
-                            <img className="acad-icon" src={grad}/><b>Graduate</b>
+                            <img className="acad-icon" src={grad} />
+                            <b>Graduate</b>
                         </Card.Header>
                         <Card.Body>
                             <Card.Text className="customCardText customBodyText">
