@@ -20,8 +20,8 @@ const Academics = () => {
             </Breadcrumb>
 
             <div className="d-flex flex-wrap justify-content-center cardList">
-                <Card className="border-secondary customCard">
-                    <Link to="/academics/courses/" className="customLink">
+                <Link to="/academics/courses/" className="customLink">
+                    <Card className="border-secondary customCard">
                         <Card.Header className="customCardText">
                             <img className="acad-icon" src={undergrad} />
                             <b>Courses</b>
@@ -32,10 +32,11 @@ const Academics = () => {
                                 STEM courses at BU
                             </Card.Text>
                         </Card.Body>
-                    </Link>
-                </Card>
-                <Card className="border-secondary customCard">
-                    <Link to="/academics/resources/" className="customLink">
+                    </Card>
+                </Link>
+
+                <Link to="/academics/resources/" className="customLink">
+                    <Card className="border-secondary customCard">
                         <Card.Header className="customCardText">
                             <img className="acad-icon" src={resources} />
                             <b>Resources</b>
@@ -45,10 +46,11 @@ const Academics = () => {
                                 Links and Guides on course-planning at BU
                             </Card.Text>
                         </Card.Body>
-                    </Link>
-                </Card>
-                <Card className="border-secondary customCard">
-                    <Link to="/academics/graduate/" className="customLink">
+                    </Card>
+                </Link>
+
+                <Link to="/academics/graduate/" className="customLink">
+                    <Card className="border-secondary customCard">
                         <Card.Header className="customCardText">
                             <img className="acad-icon" src={grad} />
                             <b>Graduate</b>
@@ -58,8 +60,8 @@ const Academics = () => {
                                 Information and Courses at Graduate level.
                             </Card.Text>
                         </Card.Body>
-                    </Link>
-                </Card>
+                    </Card>
+                </Link>
             </div>
         </div>
     );
