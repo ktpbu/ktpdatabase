@@ -16,7 +16,6 @@ course_urls = {
     "economics": "https://www.bu.edu/academics/cas/courses/economics/",
     "electrical-computer-eng": "https://www.bu.edu/academics/eng/courses/electrical-computer-engineering/",
     "eng-core": "https://www.bu.edu/academics/eng/courses/engineering-core/",
-    "materials-science-eng": "https://www.bu.edu/academics/eng/courses/materials-science-engineering/",
     "mathematics-statistics": "https://www.bu.edu/academics/cas/courses/mathematics-statistics/",
     "mechanical-eng": "https://www.bu.edu/academics/eng/courses/mechanical-engineering/",
     "systems-eng": "https://www.bu.edu/academics/eng/courses/systems-engineering/",
