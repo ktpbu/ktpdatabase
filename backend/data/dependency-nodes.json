@@ -1,5 +1,5 @@
 {
-    "cs": [
+    "computer-science": [
         {
             "id": "CS101",
             "data": { "label": "CS101" },
@@ -185,6 +185,188 @@
             "data": { "label": "CS549" },
             "style": { "width": "auto" },
             "position": { "x": 800, "y": 1000 }
+        }
+    ],
+    "data-science": [
+        {
+            "id": "DS100",
+            "data": { "label": "DS100" },
+            "style": { "width": "auto" },
+            "position": { "x": 0, "y": 0 }
+        },
+        {
+            "id": "DS110",
+            "data": { "label": "DS110" },
+            "style": { "width": "auto" },
+            "position": { "x": 100, "y": 0 }
+        },
+        {
+            "id": "DS120",
+            "data": { "label": "DS120" },
+            "style": { "width": "auto" },
+            "position": { "x": 200, "y": 0 }
+        },
+        {
+            "id": "DS199",
+            "data": { "label": "DS199" },
+            "style": { "width": "auto" },
+            "position": { "x": 300, "y": 0 }
+        },
+        {
+            "id": "DS200",
+            "data": { "label": "DS200" },
+            "style": { "width": "auto" },
+            "position": { "x": 400, "y": 0 }
+        },
+        {
+            "id": "DS209",
+            "data": { "label": "DS209" },
+            "style": { "width": "auto" },
+            "position": { "x": 500, "y": 0 }
+        },
+        {
+            "id": "DS219",
+            "data": { "label": "DS219" },
+            "style": { "width": "auto" },
+            "position": { "x": 600, "y": 0 }
+        },
+        {
+            "id": "DS280",
+            "data": { "label": "DS280" },
+            "style": { "width": "auto" },
+            "position": { "x": 700, "y": 0 }
+        },
+        {
+            "id": "DS288",
+            "data": { "label": "DS288" },
+            "style": { "width": "auto" },
+            "position": { "x": 800, "y": 0 }
+        },
+        {
+            "id": "DS290",
+            "data": { "label": "DS290" },
+            "style": { "width": "auto" },
+            "position": { "x": 900, "y": 0 }
+        },
+        {
+            "id": "DS291",
+            "data": { "label": "DS291" },
+            "style": { "width": "auto" },
+            "position": { "x": 1000, "y": 0 }
+        },
+        {
+            "id": "DS299",
+            "data": { "label": "DS299" },
+            "style": { "width": "auto" },
+            "position": { "x": 1100, "y": 0 }
+        },
+        {
+            "id": "DS381",
+            "data": { "label": "DS381" },
+            "style": { "width": "auto" },
+            "position": { "x": 1200, "y": 0 }
+        },
+        {
+            "id": "DS457",
+            "data": { "label": "DS457" },
+            "style": { "width": "auto" },
+            "position": { "x": 1300, "y": 0 }
+        },
+        {
+            "id": "DS481",
+            "data": { "label": "DS481" },
+            "style": { "width": "auto" },
+            "position": { "x": 1400, "y": 0 }
+        },
+        {
+            "id": "DS490",
+            "data": { "label": "DS490" },
+            "style": { "width": "auto" },
+            "position": { "x": 1500, "y": 0 }
+        },
+        {
+            "id": "DS499",
+            "data": { "label": "DS499" },
+            "style": { "width": "auto" },
+            "position": { "x": 1600, "y": 0 }
+        },
+        {
+            "id": "DS121",
+            "data": { "label": "DS121" },
+            "style": { "width": "auto" },
+            "position": { "x": 266.67, "y": 250 }
+        },
+        {
+            "id": "DS122",
+            "data": { "label": "DS122" },
+            "style": { "width": "auto" },
+            "position": { "x": 533.34, "y": 250 }
+        },
+        {
+            "id": "DS210",
+            "data": { "label": "DS210" },
+            "style": { "width": "auto" },
+            "position": { "x": 800.01, "y": 250 }
+        },
+        {
+            "id": "DS292",
+            "data": { "label": "DS292" },
+            "style": { "width": "auto" },
+            "position": { "x": 1066.68, "y": 250 }
+        },
+        {
+            "id": "DS488",
+            "data": { "label": "DS488" },
+            "style": { "width": "auto" },
+            "position": { "x": 1333.35, "y": 250 }
+        },
+        {
+            "id": "DS310",
+            "data": { "label": "DS310" },
+            "style": { "width": "auto" },
+            "position": { "x": 533.33, "y": 500 }
+        },
+        {
+            "id": "DS320",
+            "data": { "label": "DS320" },
+            "style": { "width": "auto" },
+            "position": { "x": 1066.67, "y": 500 }
+        },
+        {
+            "id": "DS340",
+            "data": { "label": "DS340" },
+            "style": { "width": "auto" },
+            "position": { "x": 320, "y": 750 }
+        },
+        {
+            "id": "DS380",
+            "data": { "label": "DS380" },
+            "style": { "width": "auto" },
+            "position": { "x": 640, "y": 750 }
+        },
+        {
+            "id": "DS453",
+            "data": { "label": "DS453" },
+            "style": { "width": "auto" },
+            "position": { "x": 960, "y": 750 }
+        },
+        {
+            "id": "DS519",
+            "data": { "label": "DS519" },
+            "style": { "width": "auto" },
+            "position": { "x": 1280, "y": 750 }
+        },
+        {
+            "id": "DS482",
+            "data": { "label": "DS482" },
+            "style": { "width": "auto" },
+            "position": { "x": 533.33, "y": 1000 }
+        },
+        {
+            "id": "DS549",
+            "data": { "label": "DS549" },
+            "style": { "width": "auto" },
+            "position": { "x": 1066.67, "y": 1000 }
         }
     ]
 }

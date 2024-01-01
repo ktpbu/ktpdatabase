@@ -94,7 +94,7 @@ const CourseList = () => {
             </p>
 
             <h4 className="text-start p-3">Computer Science</h4>
-            <DependencyMap subject="cs" />
+            <DependencyMap subject="computer-science" />
             <div className="d-flex flex-row flex-wrap p-3 courseiconlist">
                 {CS_COURSES.map((course_obj, index) => (
                     <CourseIcon
@@ -118,6 +118,7 @@ const CourseList = () => {
             </p>
 
             <h4 className="text-start p-3">Data Science</h4>
+            <DependencyMap subject="data-science" />
             <div className="d-flex flex-row flex-wrap p-3 courseiconlist">
                 {DS_COURSES.map((course_obj, index) => (
                     <CourseIcon
