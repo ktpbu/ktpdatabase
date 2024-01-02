@@ -93,9 +93,15 @@ const CourseList = () => {
                 <Link to="/academics/graduate/">here</Link>
             </p>
 
+
+            {/* ######################
+            COMPUTER SCIENCE BELOW
+            ######################### */}
+
+            <hr className="p-3"></hr>
+
             <h4 className="text-start p-3">Computer Science</h4>
-            <DependencyMap subject="computer-science" />
-            <div className="d-flex flex-row flex-wrap p-3 courseiconlist">
+            <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
                 {CS_COURSES.map((course_obj, index) => (
                     <CourseIcon
                         key={index}
@@ -105,21 +111,27 @@ const CourseList = () => {
                     />
                 ))}
             </div>
-            <p className="text-start p-3">
-                Click{" "}
-                <a
-                    href="https://www.bu.edu/academics/cas/courses/computer-science/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    here
-                </a>{" "}
-                for a complete list of computer science courses.
-            </p>
+            <div className="bottom-course d-flex flex-row justify-content-between p-3">
+                <DependencyMap subject="computer-science" />
+                <p className="text-start p-3">
+                    {" "}<a
+                        href="https://www.bu.edu/academics/cas/courses/computer-science/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Complete List
+                    </a>{" "}
+                </p>
+            </div>
+            
+            {/* ######################
+            DATA SCIENCE BELOW
+            ######################### */}
+
+            <hr className="p-3"></hr>
 
             <h4 className="text-start p-3">Data Science</h4>
-            <DependencyMap subject="data-science" />
-            <div className="d-flex flex-row flex-wrap p-3 courseiconlist">
+            <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
                 {DS_COURSES.map((course_obj, index) => (
                     <CourseIcon
                         key={index}
@@ -129,20 +141,28 @@ const CourseList = () => {
                     />
                 ))}
             </div>
-            <p className="text-start p-3">
-                Click{" "}
-                <a
-                    href="https://www.bu.edu/academics/cds/courses/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    here
-                </a>{" "}
-                for a complete list of data science courses.
-            </p>
+            <div className="bottom-course d-flex flex-row justify-content-between p-3">
+                <DependencyMap subject="data-science" />
+                <p className="text-start p-3">
+                    {" "}<a
+                        href="https://www.bu.edu/academics/cds/courses/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Complete List
+                    </a>{" "}
+                </p>
+            </div>
+
+
+            {/* ######################
+            ENG BELOW
+            ######################### */}
+
+            <hr className="p-3"></hr>               
 
             <h4 className="text-start p-3">Engineering</h4>
-            <div className="d-flex flex-row flex-wrap p-3 courseiconlist">
+            <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
                 {ENG_COURSES.map((course_obj, index) => (
                     <CourseIcon
                         key={index}
@@ -152,20 +172,27 @@ const CourseList = () => {
                     />
                 ))}
             </div>
-            <p className="text-start p-3">
-                Click{" "}
-                <a
-                    href="https://www.bu.edu/academics/eng/courses/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    here
-                </a>{" "}
-                for a complete list of engineering courses.
-            </p>
+            <div className="bottom-course d-flex flex-row justify-content-between p-3">
+                <p className="text-start p-3">
+                    {" "}<a
+                        href="https://www.bu.edu/academics/eng/courses/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Complete List
+                    </a>{" "}
+                </p>
+            </div>
+
+
+            {/* ######################
+            HUB BELOW
+            ######################### */}
+            
+            <hr className="p-3"></hr>
 
             <h4 className="text-start p-3">Hub - Other Majors and Misc.</h4>
-            <div className="d-flex flex-row flex-wrap p-3 courseiconlist">
+            <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
                 {HUB_COURSES.map((course_obj, index) => (
                     <CourseIcon
                         key={index}

@@ -27,7 +27,7 @@
 }
  
 .navLink:hover {
-   text-decoration: 2px #4EA5D9 underline;
+   text-decoration: 2px #000000 underline !important;
 }
  
 @media only screen and (min-width: 1441px) { 

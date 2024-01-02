@@ -19,15 +19,19 @@
     padding-bottom: 5px;
     border-radius: 15px;
 
-    width: 90px;
+    width: 85px;
     
     text-decoration: none;
     color: black;
 
-    transition: .1s;
+    transition: transform .1s;
+}
+
+.bottom-course {
+    padding-top: 0px !important;
 }
 
 .icon:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: rgb(246, 246, 246);
 }
