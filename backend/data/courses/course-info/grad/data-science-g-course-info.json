@@ -1,282 +1,226 @@
-[
-    {
-        "CDSDS519": {
-            "id": "DS519",
-            "name": "Spark! Software Engineering X-Lab Practicum",
-            "prereqs": "Undergraduate Prerequisites: CDSDS310 OR CASCS411 OR equivalent experience in software developmentand consent of instructor. Consent provided upon successful completion of pass/fail diagnostic test to assess student readiness fo",
-            "content": "This course offers students in computing disciplines the opportunity to apply     their programming and  system development skills by working on real-world     projects provided from partnering organizations  within and outside of BU, which     are curated by Spark! The course offers a range of project options  where     students can improve their technical skills, while also gaining the soft skills     necessary to  deliver projects aligned to the partner's goals. These include     teamwork and communications skills  and software development processes. All     students participating in the course are expected to  complete a software     engineering project including a final presentation to the partner organization.    Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Ethical Reasoning, Oral and/or Signed Communication, Teamwork/Collaboration.  BU Hub   Learn More  Ethical ReasoningOral and/or Signed CommunicationTeamwork/Collaboration",
-            "prof": [],
-            "reviews": []
-        }
+{
+    "CDSDS519": {
+        "id": "DS519",
+        "name": "Spark! Software Engineering X-Lab Practicum",
+        "prereqs": "Undergraduate Prerequisites: CDSDS310 OR CASCS411 OR equivalent experience in software developmentand consent of instructor. Consent provided upon successful completion of pass/fail diagnostic test to assess student readiness fo",
+        "content": "This course offers students in computing disciplines the opportunity to apply     their programming and  system development skills by working on real-world     projects provided from partnering organizations  within and outside of BU, which     are curated by Spark! The course offers a range of project options  where     students can improve their technical skills, while also gaining the soft skills     necessary to  deliver projects aligned to the partner's goals. These include     teamwork and communications skills  and software development processes. All     students participating in the course are expected to  complete a software     engineering project including a final presentation to the partner organization.    Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Ethical Reasoning, Oral and/or Signed Communication, Teamwork/Collaboration.  BU Hub   Learn More  Ethical ReasoningOral and/or Signed CommunicationTeamwork/Collaboration",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS522": {
-            "id": "DS522",
-            "name": "Stochastic Methods for Algorithms",
-            "prereqs": "",
-            "content": "Undergraduate Prerequisites: First-Year Writing Seminar (e.g., WR 120); CAS CS111, CDS DS110, ENG EK125, or equivalent; CAS MA225, CAS CS235, CDS DS122, or equivalent; CAS MA242, CAS CS132, CDS DS121, or equivalent; CAS MA581, CA",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS522": {
+        "id": "DS522",
+        "name": "Stochastic Methods for Algorithms",
+        "prereqs": "",
+        "content": "Undergraduate Prerequisites: First-Year Writing Seminar (e.g., WR 120); CAS CS111, CDS DS110, ENG EK125, or equivalent; CAS MA225, CAS CS235, CDS DS122, or equivalent; CAS MA242, CAS CS132, CDS DS121, or equivalent; CAS MA581, CA",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS526": {
-            "id": "DS526",
-            "name": "Critical Reading in Biological Data Science",
-            "prereqs": "",
-            "content": "The goal of this course is to provide students with a framework, skills, and   knowledge to critically evaluate research in biological data science. Biological   research is rarely unequivocal in its findings; students will learn to   systematically identify the claims advanced in research papers and evaluate   whether each claim is established beyond a reasonable doubt by supporting   evidence. We will examine papers that both meet and fail this test. In today's   biology, to properly examine a paper in this way it is increasingly important to   engage with the data provided as supporting evidence, and to critically examine   the computational approach. Students will work with published data and   computational tools. Further, students will learn to identify the ideology   implicit in each paper, to understand how ideology shapes both the research   questions and approach, and to imagine the same research under an alternative   mindset. Classes will be split into lectures on background material for each   paper and group discussions. Students will work in small groups to write a   report on each paper. Each student will work on a final project to produce a   critical review of a broader topic in the field.  Pre-Reqs: CDSDS 120, 121, and 122 or equivalent; ENGBE 562 or equivalent or  experience with computational biology",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS526": {
+        "id": "DS526",
+        "name": "Critical Reading in Biological Data Science",
+        "prereqs": "",
+        "content": "The goal of this course is to provide students with a framework, skills, and   knowledge to critically evaluate research in biological data science. Biological   research is rarely unequivocal in its findings; students will learn to   systematically identify the claims advanced in research papers and evaluate   whether each claim is established beyond a reasonable doubt by supporting   evidence. We will examine papers that both meet and fail this test. In today's   biology, to properly examine a paper in this way it is increasingly important to   engage with the data provided as supporting evidence, and to critically examine   the computational approach. Students will work with published data and   computational tools. Further, students will learn to identify the ideology   implicit in each paper, to understand how ideology shapes both the research   questions and approach, and to imagine the same research under an alternative   mindset. Classes will be split into lectures on background material for each   paper and group discussions. Students will work in small groups to write a   report on each paper. Each student will work on a final project to produce a   critical review of a broader topic in the field.  Pre-Reqs: CDSDS 120, 121, and 122 or equivalent; ENGBE 562 or equivalent or  experience with computational biology",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS537": {
-            "id": "DS537",
-            "name": "Data Science for Conservation Decisions",
-            "prereqs": "Undergraduate Prerequisites: CASGE/EE 270 or equivalent; GE/EE 375 or equivalent; or consent of instructor.",
-            "content": "This course covers the application of quantitative methods to support   conservation decisions. Ecosystem value mapping, systematic conservation   planning, policy instrument design, rigorous impact evaluation, decision  theory,  data visualization. Implementations in state-of-the-art open-source  software.  Real-life case studies from the U.S. and abroad.  Effective Fall  2021, this course fulfills a single unit in each of the following BU Hub  areas: Digital/Multimedia Expression, Quantitative Reasoning II, Research  and Information Literacy.  BU Hub   Learn More  Quantitative Reasoning IIDigital/Multimedia ExpressionResearch and Information Literacy",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS537": {
+        "id": "DS537",
+        "name": "Data Science for Conservation Decisions",
+        "prereqs": "Undergraduate Prerequisites: CASGE/EE 270 or equivalent; GE/EE 375 or equivalent; or consent of instructor.",
+        "content": "This course covers the application of quantitative methods to support   conservation decisions. Ecosystem value mapping, systematic conservation   planning, policy instrument design, rigorous impact evaluation, decision  theory,  data visualization. Implementations in state-of-the-art open-source  software.  Real-life case studies from the U.S. and abroad.  Effective Fall  2021, this course fulfills a single unit in each of the following BU Hub  areas: Digital/Multimedia Expression, Quantitative Reasoning II, Research  and Information Literacy.  BU Hub   Learn More  Quantitative Reasoning IIDigital/Multimedia ExpressionResearch and Information Literacy",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS539": {
-            "id": "DS539",
-            "name": "Spark! Data Science X-Lab Practicum",
-            "prereqs": "Undergraduate Prerequisites: CASCS506 or equivalent preferred. CDSDSDS110 OR CASCS111 OR CASCS112 OR equivalent. CDSDS121 OR CASCS132 OR equivalent required. Or instructor consent which may involve pass/fail diagnostic test.",
-            "content": "This course offers students in computing disciplines the opportunity to apply   their data science skills by  working on real-world projects provided from   partnering organizations within and outside of BU, which are  curated by Spark!   The course offers a range of project options where students can improve their   technical  skills, while also gaining the soft skills necessary to deliver   projects aligned to the partner's goals.  These include communications skills,   collaborative work processes and an assessment of the ethical  considerations of   their work. All students participating in the course are expected to complete a   data  science project including a final presentation to the partner organization.   Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Digital/Multimedia Expression, Research and Information Literacy, Teamwork/Collaboration.  BU Hub   Learn More  Digital/Multimedia ExpressionResearch and Information LiteracyTeamwork/Collaboration",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS539": {
+        "id": "DS539",
+        "name": "Spark! Data Science X-Lab Practicum",
+        "prereqs": "Undergraduate Prerequisites: CASCS506 or equivalent preferred. CDSDSDS110 OR CASCS111 OR CASCS112 OR equivalent. CDSDS121 OR CASCS132 OR equivalent required. Or instructor consent which may involve pass/fail diagnostic test.",
+        "content": "This course offers students in computing disciplines the opportunity to apply   their data science skills by  working on real-world projects provided from   partnering organizations within and outside of BU, which are  curated by Spark!   The course offers a range of project options where students can improve their   technical  skills, while also gaining the soft skills necessary to deliver   projects aligned to the partner's goals.  These include communications skills,   collaborative work processes and an assessment of the ethical  considerations of   their work. All students participating in the course are expected to complete a   data  science project including a final presentation to the partner organization.   Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Digital/Multimedia Expression, Research and Information Literacy, Teamwork/Collaboration.  BU Hub   Learn More  Digital/Multimedia ExpressionResearch and Information LiteracyTeamwork/Collaboration",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS541": {
-            "id": "DS541",
-            "name": "Agent-Based Modeling of People, Health, and the Environment",
-            "prereqs": "",
-            "content": "Agent-based models are an ideal tool for analyzing systems (cities, economies,  road networks, forests) in which the outcomes of interest (illness rates,  traffic problems, land use, violence) are shaped strongly by interactions among  individual 'agents' (drivers, consumers, farmers, spouses) with each other and  their environments.  This course builds skills in the use of agent-based  modeling using the NetLogo platform as a tool for analyzing complex human- environment problems.  The course will emphasize the iterative model-building  process -- forming research questions, building conceptual and then operational  models, experimenting, and then refining -- to address current research  problems.  Students should expect to commit time outside of meetings to i)  gaining comfort with NetLogo syntax; ii) reading current research in the areas  of agent-based modeling and human environment and health problems; and iii) a  team based approach to building models.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS541": {
+        "id": "DS541",
+        "name": "Agent-Based Modeling of People, Health, and the Environment",
+        "prereqs": "",
+        "content": "Agent-based models are an ideal tool for analyzing systems (cities, economies,  road networks, forests) in which the outcomes of interest (illness rates,  traffic problems, land use, violence) are shaped strongly by interactions among  individual 'agents' (drivers, consumers, farmers, spouses) with each other and  their environments.  This course builds skills in the use of agent-based  modeling using the NetLogo platform as a tool for analyzing complex human- environment problems.  The course will emphasize the iterative model-building  process -- forming research questions, building conceptual and then operational  models, experimenting, and then refining -- to address current research  problems.  Students should expect to commit time outside of meetings to i)  gaining comfort with NetLogo syntax; ii) reading current research in the areas  of agent-based modeling and human environment and health problems; and iii) a  team based approach to building models.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS549": {
-            "id": "DS549",
-            "name": "Spark! Machine Learning X-Lab Practicum",
-            "prereqs": "Undergraduate Prerequisites: CDSDS340 OR CASCS542 OR CASCS505 OR CASCS585 OR consent of instructor. Consent may include the successful completion of a pass/fail diagnostic test that will assess student readiness to take the cours",
-            "content": "The Spark! Practicum offers students in computing disciplines the opportunity to   apply their knowledge in  algorithms, inferential analytics, and software   development by working on real-world projects provided from  partnering   organizations within BU and from outside. The course offers a range of project   options where  students can improve their technical skills, while also gaining   the soft skills necessary to deliver  projects aligned to the partner's goals.   These include teamwork and communications skills and software  development   processes. All students participating in the course are expected to complete a   project  focused on an application of inferential analytics or machine learning,   including a final presentation to  the partner organization.  Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Ethical Reasoning, Research and Information Literacy, Teamwork/Collaboration.  BU Hub   Learn More  Ethical ReasoningResearch and Information LiteracyTeamwork/Collaboration",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS549": {
+        "id": "DS549",
+        "name": "Spark! Machine Learning X-Lab Practicum",
+        "prereqs": "Undergraduate Prerequisites: CDSDS340 OR CASCS542 OR CASCS505 OR CASCS585 OR consent of instructor. Consent may include the successful completion of a pass/fail diagnostic test that will assess student readiness to take the cours",
+        "content": "The Spark! Practicum offers students in computing disciplines the opportunity to   apply their knowledge in  algorithms, inferential analytics, and software   development by working on real-world projects provided from  partnering   organizations within BU and from outside. The course offers a range of project   options where  students can improve their technical skills, while also gaining   the soft skills necessary to deliver  projects aligned to the partner's goals.   These include teamwork and communications skills and software  development   processes. All students participating in the course are expected to complete a   project  focused on an application of inferential analytics or machine learning,   including a final presentation to  the partner organization.  Effective Spring 2022, this course fulfills a single unit in each of the following BU Hub areas: Ethical Reasoning, Research and Information Literacy, Teamwork/Collaboration.  BU Hub   Learn More  Ethical ReasoningResearch and Information LiteracyTeamwork/Collaboration",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS561": {
-            "id": "DS561",
-            "name": "Software Engineering Development on Modern Cloud Environments",
-            "prereqs": "",
-            "content": "Most of today's organizations needing a technology solution look to satisfy  their computing, storage and networking needs through one of the large public  cloud providers.  Unlike traditional environments where a company had to build  its own infrastructure often at large time and monetary expense it can now rent  what it needs at the click of a button.  In this course we will provide hands on  experience with one of the large public cloud platforms.  In particular we will  look into the different flavors of compute, storage and networking available,  how best to use them to solve interesting problems, and how to do everything on  a constrained budget.  Students will get accounts and deliver project work on  the public cloud while also learning some of the fundamental principles on how  those different cloud systems work under the covers.  It is recommended that students taking this class have learned the basic  principles of Computer Systems such as those taught in DS210 and/or CS210.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS561": {
+        "id": "DS561",
+        "name": "Software Engineering Development on Modern Cloud Environments",
+        "prereqs": "",
+        "content": "Most of today's organizations needing a technology solution look to satisfy  their computing, storage and networking needs through one of the large public  cloud providers.  Unlike traditional environments where a company had to build  its own infrastructure often at large time and monetary expense it can now rent  what it needs at the click of a button.  In this course we will provide hands on  experience with one of the large public cloud platforms.  In particular we will  look into the different flavors of compute, storage and networking available,  how best to use them to solve interesting problems, and how to do everything on  a constrained budget.  Students will get accounts and deliver project work on  the public cloud while also learning some of the fundamental principles on how  those different cloud systems work under the covers.  It is recommended that students taking this class have learned the basic  principles of Computer Systems such as those taught in DS210 and/or CS210.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS563": {
-            "id": "DS563",
-            "name": "Algorithmic Techniques for Taming Big Data",
-            "prereqs": "Undergraduate Prerequisites: CDSDS110 OR CASCS111 OR ENGEK125 OR equivalent; CDSDS320 OR CASCS330 OR ENGEC330 OR equivalent; CDSDS121 OR CASCS132 OR CASMA242 OR equivalent; CASMA115 OR CASCS327 OR ENGEK381 OR equivalent, OR conse",
-            "content": "Growing amounts of available data lead to significant challenges in processing    them efficiently.  In many cases, it is no longer possible to design feasible    algorithms that can freely access the  entire data set. Instead of that we often    have to resort to techniques that allow for reducing  the amount of data such as    sampling, sketching, dimensionality reduction, and core sets. Apart  from these    approaches, the course will also explore scenarios in which large data sets are     distributed across several machines or even geographical locations and the goal    is to design  efficient communication protocols or MapReduce algorithms. The    course will include a final  project and programming assignments in which we  will   explore the performance of our techniques  when applied to publicly  available   data sets.    BU Hub   Learn More  Quantitative Reasoning IICreativity/Innovation",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS563": {
+        "id": "DS563",
+        "name": "Algorithmic Techniques for Taming Big Data",
+        "prereqs": "Undergraduate Prerequisites: CDSDS110 OR CASCS111 OR ENGEK125 OR equivalent; CDSDS320 OR CASCS330 OR ENGEC330 OR equivalent; CDSDS121 OR CASCS132 OR CASMA242 OR equivalent; CASMA115 OR CASCS327 OR ENGEK381 OR equivalent, OR conse",
+        "content": "Growing amounts of available data lead to significant challenges in processing    them efficiently.  In many cases, it is no longer possible to design feasible    algorithms that can freely access the  entire data set. Instead of that we often    have to resort to techniques that allow for reducing  the amount of data such as    sampling, sketching, dimensionality reduction, and core sets. Apart  from these    approaches, the course will also explore scenarios in which large data sets are     distributed across several machines or even geographical locations and the goal    is to design  efficient communication protocols or MapReduce algorithms. The    course will include a final  project and programming assignments in which we  will   explore the performance of our techniques  when applied to publicly  available   data sets.    BU Hub   Learn More  Quantitative Reasoning IICreativity/Innovation",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS574": {
-            "id": "DS574",
-            "name": "Algorithmic Mechanism Design",
-            "prereqs": "Undergraduate Prerequisites: CDSDS122, CDSDS320, and CASMA581 or instructor approval",
-            "content": "This course is an introduction to the interdisciplinary area of Algorithmic Mechanism Design: where computational perspectives are applied to economic problems, and economic techniques are brought to problems from computer science.  We will explore a broad range of topics at the frontier of new research, starting with some of the fundamentals, such as welfare-maximizing auctions and types of Nash Equilibria.  Throughout the semester, the class will also learn about prevalent topics such as (1) Data Science & Incentives, (2) Mechanism Design for Social Good, and (3) optimization and robustness in mechanism design.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS574": {
+        "id": "DS574",
+        "name": "Algorithmic Mechanism Design",
+        "prereqs": "Undergraduate Prerequisites: CDSDS122, CDSDS320, and CASMA581 or instructor approval",
+        "content": "This course is an introduction to the interdisciplinary area of Algorithmic Mechanism Design: where computational perspectives are applied to economic problems, and economic techniques are brought to problems from computer science.  We will explore a broad range of topics at the frontier of new research, starting with some of the fundamentals, such as welfare-maximizing auctions and types of Nash Equilibria.  Throughout the semester, the class will also learn about prevalent topics such as (1) Data Science & Incentives, (2) Mechanism Design for Social Good, and (3) optimization and robustness in mechanism design.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS587": {
-            "id": "DS587",
-            "name": "Data Science in Human Contexts",
-            "prereqs": "",
-            "content": "Where do statistical and computational insights lose historic social contexts?  What are the impacts of datafication on individuals and communities? How do  social and technical systems reify or challenge social hierarchies? Through a  survey of academic literature, community-produced knowledge and coverage of  technology in the popular press, this course will explore these themes as they  relate to labor and automation, surveillance and the legal system, social media  governance, and digital inclusion.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS587": {
+        "id": "DS587",
+        "name": "Data Science in Human Contexts",
+        "prereqs": "",
+        "content": "Where do statistical and computational insights lose historic social contexts?  What are the impacts of datafication on individuals and communities? How do  social and technical systems reify or challenge social hierarchies? Through a  survey of academic literature, community-produced knowledge and coverage of  technology in the popular press, this course will explore these themes as they  relate to labor and automation, surveillance and the legal system, social media  governance, and digital inclusion.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS590": {
-            "id": "DS590",
-            "name": "CDS Research Initiation Seminar",
-            "prereqs": "",
-            "content": "The first--year doctoral seminar is a required two--semester cohort--based  course (4 credits) that must be taken during the first full academic year  that a student enrolls in the PhD program in CDS. It is divided into two  parts, each providing 2 credits. \"CDS Research Initiation Seminar\" is  offered in the fall semester, and \"CDS Research Development Seminar\" is  offered in the spring semester. The seminar serves three key purposes: 1. It  introduces students to the scholarship of (and the rich set of research  projects pursued by) the CDS faculty and their guests through colloquia  pitched to a multidisciplinary audience. 2. It guides students through the  challenging transition into the graduate program in CDS by introducing them  to the variety of skills and capacities that are needed to succeed as a  scholar. 3. It engenders a sense of community amongst the group of students  entering the program as a cohort. 4 cr. Either sem.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS590": {
+        "id": "DS590",
+        "name": "CDS Research Initiation Seminar",
+        "prereqs": "",
+        "content": "The first--year doctoral seminar is a required two--semester cohort--based  course (4 credits) that must be taken during the first full academic year  that a student enrolls in the PhD program in CDS. It is divided into two  parts, each providing 2 credits. \"CDS Research Initiation Seminar\" is  offered in the fall semester, and \"CDS Research Development Seminar\" is  offered in the spring semester. The seminar serves three key purposes: 1. It  introduces students to the scholarship of (and the rich set of research  projects pursued by) the CDS faculty and their guests through colloquia  pitched to a multidisciplinary audience. 2. It guides students through the  challenging transition into the graduate program in CDS by introducing them  to the variety of skills and capacities that are needed to succeed as a  scholar. 3. It engenders a sense of community amongst the group of students  entering the program as a cohort. 4 cr. Either sem.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS592": {
-            "id": "DS592",
-            "name": "Special Topics in Mathematical and Computational Sciences",
-            "prereqs": "Undergraduate Prerequisites: CASMA242 or equivalent AND CASMA581 or equivalent AND experience writing scientific code",
-            "content": "Spring 2022: Stochastic Processes for the Design and Analysis of Algorithms.  Introduction  to interplay between stochastic processes and algorithms used in  statistics and machine  learning. Covers core stochastic processes concepts and  use to design and analyze  algorithms for sampling and large-scale stochastic  optimization. Strong emphasis on  practical implications of results.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS592": {
+        "id": "DS592",
+        "name": "Special Topics in Mathematical and Computational Sciences",
+        "prereqs": "Undergraduate Prerequisites: CASMA242 or equivalent AND CASMA581 or equivalent AND experience writing scientific code",
+        "content": "Spring 2022: Stochastic Processes for the Design and Analysis of Algorithms.  Introduction  to interplay between stochastic processes and algorithms used in  statistics and machine  learning. Covers core stochastic processes concepts and  use to design and analyze  algorithms for sampling and large-scale stochastic  optimization. Strong emphasis on  practical implications of results.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS594": {
-            "id": "DS594",
-            "name": "Spark! Data Visualization X-Lab Practicum",
-            "prereqs": "Undergraduate Prerequisites: CDS DS 310 ; CDS DS 122 ; CDS DS 121.",
-            "content": "For 2023-2024. The Data Visualization X-Lab Practicum offers students an opportunity to learn data visualization skills through course and project-based work.  Projects will be completed on a schedule that aligns with topics being covered in class and assignments.  This course provides an accurate experience of solving real-world problems with data visualization, and the various tradeoffs that need to be considered. Whether it's how to efficiently use color and space, effectively understand the profile of a dataset or cautiously avoid bias, this course will provide students with a solid understanding of applicable data visualization practices.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS594": {
+        "id": "DS594",
+        "name": "Spark! Data Visualization X-Lab Practicum",
+        "prereqs": "Undergraduate Prerequisites: CDS DS 310 ; CDS DS 122 ; CDS DS 121.",
+        "content": "For 2023-2024. The Data Visualization X-Lab Practicum offers students an opportunity to learn data visualization skills through course and project-based work.  Projects will be completed on a schedule that aligns with topics being covered in class and assignments.  This course provides an accurate experience of solving real-world problems with data visualization, and the various tradeoffs that need to be considered. Whether it's how to efficiently use color and space, effectively understand the profile of a dataset or cautiously avoid bias, this course will provide students with a solid understanding of applicable data visualization practices.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS595": {
-            "id": "DS595",
-            "name": "Special Topics in Physical and Engineering Sciences",
-            "prereqs": "",
-            "content": "Coverage of a specific topic in relation to physical and engineering sciences  in data science. Topics vary semester to semester.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS595": {
+        "id": "DS595",
+        "name": "Special Topics in Physical and Engineering Sciences",
+        "prereqs": "",
+        "content": "Coverage of a specific topic in relation to physical and engineering sciences  in data science. Topics vary semester to semester.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS596": {
-            "id": "DS596",
-            "name": "Special Topics in Natural, Biological and Medical Sciences",
-            "prereqs": "",
-            "content": "Coverage of a specific topic in relation to natural, biological and medical  sciences in data science. Topics vary semester to semester.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS596": {
+        "id": "DS596",
+        "name": "Special Topics in Natural, Biological and Medical Sciences",
+        "prereqs": "",
+        "content": "Coverage of a specific topic in relation to natural, biological and medical  sciences in data science. Topics vary semester to semester.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS597": {
-            "id": "DS597",
-            "name": "Special Topics in Social and Behavioral Sciences",
-            "prereqs": "",
-            "content": "Coverage of a specific topic in relation to social and behavioral sciences in  data science. Topics vary semester to semester.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS597": {
+        "id": "DS597",
+        "name": "Special Topics in Social and Behavioral Sciences",
+        "prereqs": "",
+        "content": "Coverage of a specific topic in relation to social and behavioral sciences in  data science. Topics vary semester to semester.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS598": {
-            "id": "DS598",
-            "name": "Special Topics in Machine Learning",
-            "prereqs": "",
-            "content": "Topics vary semester to semester.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS598": {
+        "id": "DS598",
+        "name": "Special Topics in Machine Learning",
+        "prereqs": "",
+        "content": "Topics vary semester to semester.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS599": {
-            "id": "DS599",
-            "name": "CDS Research Development Seminar",
-            "prereqs": "",
-            "content": "The first--year doctoral seminar is a required two--semester cohort--based  course (4 credits) that must be taken during the first full academic year  that a student enrolls in the PhD program in CDS. It is divided into two  parts, each providing 2 credits. \"CDS Research Initiation Seminar\" is  offered in the fall semester, and \"CDS Research Development Seminar\" is  offered in the spring semester. The seminar serves three key purposes: 1. It  introduces students to the scholarship of (and the rich set of research  projects pursued by) the CDS faculty and their guests through colloquia  pitched to a multidisciplinary audience. 2. It guides students through the  challenging transition into the graduate program in CDS by introducing them  to the variety of skills and capacities that are needed to succeed as a  scholar. 3. It engenders a sense of community amongst the group of students  entering the program as a cohort. 4 cr. Either sem.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS599": {
+        "id": "DS599",
+        "name": "CDS Research Development Seminar",
+        "prereqs": "",
+        "content": "The first--year doctoral seminar is a required two--semester cohort--based  course (4 credits) that must be taken during the first full academic year  that a student enrolls in the PhD program in CDS. It is divided into two  parts, each providing 2 credits. \"CDS Research Initiation Seminar\" is  offered in the fall semester, and \"CDS Research Development Seminar\" is  offered in the spring semester. The seminar serves three key purposes: 1. It  introduces students to the scholarship of (and the rich set of research  projects pursued by) the CDS faculty and their guests through colloquia  pitched to a multidisciplinary audience. 2. It guides students through the  challenging transition into the graduate program in CDS by introducing them  to the variety of skills and capacities that are needed to succeed as a  scholar. 3. It engenders a sense of community amongst the group of students  entering the program as a cohort. 4 cr. Either sem.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS644": {
-            "id": "DS644",
-            "name": "Machine Learning for Business Analytics",
-            "prereqs": "",
-            "content": "The internet has become a ubiquitous channel for reaching consumers and  gathering massive amounts of business-intelligence data. This course will teach  students how to perform hands-on analytics on such datasets using modern machine  learning techniques through series a lectures and in- class team exercises.  Students will analyze data using the R programming language, derive actionable  insights from the data, and present their ﬁndings. The goal of the course is to  create an understanding of modern analytics methods, and the types of problems  they can be applied to. The course is open to students with or without a  technical background who are interested in analytics. While no prior programming  experience is required, students will learn the fundamentals of the R  programming language to build and evaluate predictive models.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS644": {
+        "id": "DS644",
+        "name": "Machine Learning for Business Analytics",
+        "prereqs": "",
+        "content": "The internet has become a ubiquitous channel for reaching consumers and  gathering massive amounts of business-intelligence data. This course will teach  students how to perform hands-on analytics on such datasets using modern machine  learning techniques through series a lectures and in- class team exercises.  Students will analyze data using the R programming language, derive actionable  insights from the data, and present their ﬁndings. The goal of the course is to  create an understanding of modern analytics methods, and the types of problems  they can be applied to. The course is open to students with or without a  technical background who are interested in analytics. While no prior programming  experience is required, students will learn the fundamentals of the R  programming language to build and evaluate predictive models.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS657": {
-            "id": "DS657",
-            "name": "Law for Algorithms",
-            "prereqs": "",
-            "content": "Algorithms - those information-processing machines designed by humans -  reach ever more deeply into our lives, creating alternate and sometimes  enhanced manifestations of social and biological processes. In doing so,  algorithms yield powerful levers for good and ill amidst a sea of unforeseen  consequences. This crosscutting and interdisciplinary course investigates  several aspects of algorithms and their impact on society and law.  Specifically, the course connects concepts of proof, verifiability, privacy,  security, trust, and randomness in computer science with legal concepts of  autonomy, consent, governance, and liability, and examines interests at the  evolving intersection of technology and the law. Grades will be based on a  combination of short weekly reflection papers and a final project, to be  completed collaboratively in mixed teams of law and computer and data  science students. This course will include attendees from the computer  science faculty, students and scholars based at Boston University and UC  Berkeley.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS657": {
+        "id": "DS657",
+        "name": "Law for Algorithms",
+        "prereqs": "",
+        "content": "Algorithms - those information-processing machines designed by humans -  reach ever more deeply into our lives, creating alternate and sometimes  enhanced manifestations of social and biological processes. In doing so,  algorithms yield powerful levers for good and ill amidst a sea of unforeseen  consequences. This crosscutting and interdisciplinary course investigates  several aspects of algorithms and their impact on society and law.  Specifically, the course connects concepts of proof, verifiability, privacy,  security, trust, and randomness in computer science with legal concepts of  autonomy, consent, governance, and liability, and examines interests at the  evolving intersection of technology and the law. Grades will be based on a  combination of short weekly reflection papers and a final project, to be  completed collaboratively in mixed teams of law and computer and data  science students. This course will include attendees from the computer  science faculty, students and scholars based at Boston University and UC  Berkeley.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS680": {
-            "id": "DS680",
-            "name": "AI Ethics",
-            "prereqs": "",
-            "content": "This course develops students' ability to critically examine and question the   interplay between data science and computational technologies on the one hand,   and society and public policy on the other. Students will complete exercises to   demonstrate their facility with key ethics tools and techniques, and analyze a   series of real-world case studies presented alongside ethical tools and analyses   that are useful both for staying alert to emerging ethical challenges and   responding to them as they arise in both employment settings and everyday life.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS680": {
+        "id": "DS680",
+        "name": "AI Ethics",
+        "prereqs": "",
+        "content": "This course develops students' ability to critically examine and question the   interplay between data science and computational technologies on the one hand,   and society and public policy on the other. Students will complete exercises to   demonstrate their facility with key ethics tools and techniques, and analyze a   series of real-world case studies presented alongside ethical tools and analyses   that are useful both for staying alert to emerging ethical challenges and   responding to them as they arise in both employment settings and everyday life.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS682": {
-            "id": "DS682",
-            "name": "Responsible AI, Law, Ethics & Society",
-            "prereqs": "Undergraduate Prerequisites: CDSDS100/CDSDS110 (Intro to data science OR equivalent) and CDSDS340 (intro to ML and AI OR equivalent)",
-            "content": "The deployment of Artiﬁcial Intelligence systems in multiple domains of society raises fundamental  challenges and concerns, such as accountability, liability, fairness, transparency and privacy. The  dynamic nature of AI systems requires a new set of skills informed by ethics, law, and policy to be  applied throughout the life cycle of such systems: design, development and deployment. It also  involves ongoing collaboration among data scientists, computer scientists, lawyers and ethicists.  Tackling these challenges calls for an interdisciplinary approach: deconstructing these issues by  discipline and reconstructing with an integrated mindset, principles and practices between data  science, ethics and law. This course aims to do so by bringing together students with diverse  disciplinary backgrounds into teams that work together on joint tasks in an intensive series of in- class sessions. These sessions will include lectures, discussions, and group work. This unique  course will bring together students from multiple institutions, each contributing undergraduate  students from either computing and data science disciplines or from law and public policy  disciplines.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS682": {
+        "id": "DS682",
+        "name": "Responsible AI, Law, Ethics & Society",
+        "prereqs": "Undergraduate Prerequisites: CDSDS100/CDSDS110 (Intro to data science OR equivalent) and CDSDS340 (intro to ML and AI OR equivalent)",
+        "content": "The deployment of Artiﬁcial Intelligence systems in multiple domains of society raises fundamental  challenges and concerns, such as accountability, liability, fairness, transparency and privacy. The  dynamic nature of AI systems requires a new set of skills informed by ethics, law, and policy to be  applied throughout the life cycle of such systems: design, development and deployment. It also  involves ongoing collaboration among data scientists, computer scientists, lawyers and ethicists.  Tackling these challenges calls for an interdisciplinary approach: deconstructing these issues by  discipline and reconstructing with an integrated mindset, principles and practices between data  science, ethics and law. This course aims to do so by bringing together students with diverse  disciplinary backgrounds into teams that work together on joint tasks in an intensive series of in- class sessions. These sessions will include lectures, discussions, and group work. This unique  course will bring together students from multiple institutions, each contributing undergraduate  students from either computing and data science disciplines or from law and public policy  disciplines.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS690": {
-            "id": "DS690",
-            "name": "Directed Study in Computing & Data Sciences",
-            "prereqs": "",
-            "content": "Directed study in Computing & Data Sciences provides students the opportunity to  complete directed research in a selected topic not covered in a regularly  scheduled course under the supervision of a faculty member. Student and  supervising faculty member arrange and document expectations and requirements.  Examples include in-depth study of a special topic or independent research  project.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS690": {
+        "id": "DS690",
+        "name": "Directed Study in Computing & Data Sciences",
+        "prereqs": "",
+        "content": "Directed study in Computing & Data Sciences provides students the opportunity to  complete directed research in a selected topic not covered in a regularly  scheduled course under the supervision of a faculty member. Student and  supervising faculty member arrange and document expectations and requirements.  Examples include in-depth study of a special topic or independent research  project.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS699": {
-            "id": "DS699",
-            "name": "Advanced Topics in Data Science",
-            "prereqs": "",
-            "content": "Various advanced topics in data science that vary semester to semester. Please  contact CDS for detailed descriptions.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS699": {
+        "id": "DS699",
+        "name": "Advanced Topics in Data Science",
+        "prereqs": "",
+        "content": "Various advanced topics in data science that vary semester to semester. Please  contact CDS for detailed descriptions.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS701": {
-            "id": "DS701",
-            "name": "Tools for Data Science",
-            "prereqs": "",
-            "content": "This is a new course to be designed specifically for the MS DS program. Students  will take this course in their first semester.  The goal of the course is to  give students exposure to, and practical experience in, formulating data science  questions -- particularly learning how to ask good questions in a specific  domain.  The course will also cover methods of obtaining data and common methods  of processing data from a practical standpoint. It will be organized around a  semester-long group project in which students are organized into teams and  engage with \"clients\" who bring data science questions from a particular domain.    The course will include a formal presentation of results at the end of the  semester.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS701": {
+        "id": "DS701",
+        "name": "Tools for Data Science",
+        "prereqs": "",
+        "content": "This is a new course to be designed specifically for the MS DS program. Students  will take this course in their first semester.  The goal of the course is to  give students exposure to, and practical experience in, formulating data science  questions -- particularly learning how to ask good questions in a specific  domain.  The course will also cover methods of obtaining data and common methods  of processing data from a practical standpoint. It will be organized around a  semester-long group project in which students are organized into teams and  engage with \"clients\" who bring data science questions from a particular domain.    The course will include a formal presentation of results at the end of the  semester.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS990": {
-            "id": "DS990",
-            "name": "Computing & Data Sciences Lab Rotation",
-            "prereqs": "",
-            "content": "Experience with translational or applied research pursued in an industrial or  laboratory setting is important for in-the-field graduate training. To provide  this training, graduate students may complete a lab rotation that provides them  with the opportunity to (1) explore lab settings and industrial collaborations  that may be relevant to their thesis work; (2) experience the diversity of  applied and in-the-field research styles in computing and data sciences; and (3)  expand their external network of potential research collaborators. Before  beginning an external lab rotation, students are expected to develop a plan for  the scope and expected outcomes of the work to be pursued under the supervision  of a named lab rotation advisor. This plan must be pre-approved by the student's  academic, research, or thesis advisor in CDS. While desirable, it is neither  required nor expected that the rotation will result in completion of a  substantial body of work. Lab rotation credits will be noted on the student  transcript as a 4-credit pass/fail independent study course numbered as DS-990.",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS990": {
+        "id": "DS990",
+        "name": "Computing & Data Sciences Lab Rotation",
+        "prereqs": "",
+        "content": "Experience with translational or applied research pursued in an industrial or  laboratory setting is important for in-the-field graduate training. To provide  this training, graduate students may complete a lab rotation that provides them  with the opportunity to (1) explore lab settings and industrial collaborations  that may be relevant to their thesis work; (2) experience the diversity of  applied and in-the-field research styles in computing and data sciences; and (3)  expand their external network of potential research collaborators. Before  beginning an external lab rotation, students are expected to develop a plan for  the scope and expected outcomes of the work to be pursued under the supervision  of a named lab rotation advisor. This plan must be pre-approved by the student's  academic, research, or thesis advisor in CDS. While desirable, it is neither  required nor expected that the rotation will result in completion of a  substantial body of work. Lab rotation credits will be noted on the student  transcript as a 4-credit pass/fail independent study course numbered as DS-990.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "CDSDS992": {
-            "id": "DS992",
-            "name": "Computing & Data Sciences Research Rotation",
-            "prereqs": "",
-            "content": "Experience with diverse research group projects and styles are an essential part   of graduate training. To provide this training, graduate students are expected   to complete a series of research rotations that provide them with the   opportunity to (1) explore research groups where they may pursue future thesis   work; (2) experience the diversity of sub-disciplines and research styles in   computing and data sciences; and (3) expand their network of potential research   collaborators. Before beginning a rotation, students are expected to discuss   their plans with the faculty leadership of the BU research group they would like   to join, leading to a clear definition of the scope and expected outcomes of the   work pursued under the supervision of a named rotation advisor. While desirable,   it is neither required nor expected that the rotation will result in completion   of a substantial body of work. Research rotation credits will be noted on the   student transcript as a 4-credit independent study course numbered as DS-991   (for Fall semester rotations) or DS-992 (for Spring semester rotations).",
-            "prof": [],
-            "reviews": []
-        }
+    "CDSDS992": {
+        "id": "DS992",
+        "name": "Computing & Data Sciences Research Rotation",
+        "prereqs": "",
+        "content": "Experience with diverse research group projects and styles are an essential part   of graduate training. To provide this training, graduate students are expected   to complete a series of research rotations that provide them with the   opportunity to (1) explore research groups where they may pursue future thesis   work; (2) experience the diversity of sub-disciplines and research styles in   computing and data sciences; and (3) expand their network of potential research   collaborators. Before beginning a rotation, students are expected to discuss   their plans with the faculty leadership of the BU research group they would like   to join, leading to a clear definition of the scope and expected outcomes of the   work pursued under the supervision of a named rotation advisor. While desirable,   it is neither required nor expected that the rotation will result in completion   of a substantial body of work. Research rotation credits will be noted on the   student transcript as a 4-credit independent study course numbered as DS-991   (for Fall semester rotations) or DS-992 (for Spring semester rotations).",
+        "prof": [],
+        "reviews": []
     }
-]
+}

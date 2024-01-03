@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import { Breadcrumb } from "react-bootstrap";
 
@@ -16,7 +16,7 @@ const CourseIcon = (prop) => {
         <Link
             className="icon"
             title={prop.name}
-            to={"/academics/courses/" + college + id}
+            to={`/academics/courses/${college}${id}`}
         >
             {id}
         </Link>
@@ -25,52 +25,60 @@ const CourseIcon = (prop) => {
 
 const DependencyMap = (prop) => {
     const { subject } = prop;
+    const subjectMap = {
+        "computer-science": "Computer Science",
+        "data-science": "Data Science",
+        economics: "Economics",
+        "mathematics-statistics": "Mathematics & Statistics",
+    };
     return (
         <div className="text-start p-3">
             <Link to={"/academics/courses/dependencies/" + subject}>
-                Course Dependency Map
+                {subjectMap[subject]} Dependency Map
             </Link>
         </div>
     );
 };
 
 const CourseList = () => {
-    const [COURSELIST, setCList] = useState({});
+    const [bmeCourses, setBmeCourses] = useState([]);
+    const [csCourses, setCsCourses] = useState([]);
+    const [dsCourses, setDsCourses] = useState([]);
+    const [econCourses, setEconCourses] = useState([]);
+    const [eceCourses, setEceCourses] = useState([]);
+    const [engCoreCourses, setEngCoreCourses] = useState([]);
+    const [mathCourses, setMathCourses] = useState([]);
+    const [mecheCourses, setMecheCourses] = useState([]);
     const [loading, setLoading] = useState(false);
+
+    const subjectMap = useMemo(
+        () => ({
+            "biomedical-eng": setBmeCourses,
+            "computer-science": setCsCourses,
+            "data-science": setDsCourses,
+            economics: setEconCourses,
+            "electrical-computer-eng": setEceCourses,
+            "eng-core": setEngCoreCourses,
+            "mathematics-statistics": setMathCourses,
+            "mechanical-eng": setMecheCourses,
+        }),
+        []
+    );
 
     useEffect(() => {
         setLoading(true);
-        axios
-            .get(`${backend}/academics/courses`)
-            .then((res) => {
-                setCList(res.data);
-                setLoading(false);
-            })
-            .catch((error) => {
-                console.log(error);
-                setLoading(false);
-            });
-    }, []);
-
-    // seperate courses by college/dept
-    var ENG_COURSES = [];
-    var CS_COURSES = [];
-    var DS_COURSES = [];
-    var HUB_COURSES = [];
-
-    for (const key in COURSELIST) {
-        if (key.slice(0, 3) == "ENG") {
-            ENG_COURSES.push(COURSELIST[key]);
-        } else if (key.slice(0, 3) == "CDS") {
-            DS_COURSES.push(COURSELIST[key]);
-        } else {
-            if (key.slice(3, 5) == "CS") {
-                CS_COURSES.push(COURSELIST[key]);
-            } else {
-                HUB_COURSES.push(COURSELIST[key]);
-            }
+        for (const subject in subjectMap) {
+            axios
+                .get(`${backend}/academics/courses/undergrad/${subject}`)
+                .then((res) => {
+                    subjectMap[subject](res.data);
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
         }
-    }
+        setLoading(false);
+    }, [subjectMap]);
 
     return (
         <div className="page-content">
@@ -93,20 +101,17 @@ const CourseList = () => {
                 <Link to="/academics/graduate/">here</Link>
             </p>
 
-
-            {/* ######################
-            COMPUTER SCIENCE BELOW
-            ######################### */}
+            {/* computer science */}
 
             <hr className="p-3"></hr>
 
             <h4 className="text-start p-3">Computer Science</h4>
             <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
-                {CS_COURSES.map((course_obj, index) => (
+                {Object.keys(csCourses).map((courseKey, index) => (
                     <CourseIcon
                         key={index}
-                        id={course_obj.id}
-                        name={course_obj.name}
+                        id={csCourses[courseKey].id}
+                        name={csCourses[courseKey].name}
                         college={"CAS"}
                     />
                 ))}
@@ -114,7 +119,8 @@ const CourseList = () => {
             <div className="bottom-course d-flex flex-row justify-content-between p-3">
                 <DependencyMap subject="computer-science" />
                 <p className="text-start p-3">
-                    {" "}<a
+                    {" "}
+                    <a
                         href="https://www.bu.edu/academics/cas/courses/computer-science/"
                         target="_blank"
                         rel="noreferrer"
@@ -123,20 +129,18 @@ const CourseList = () => {
                     </a>{" "}
                 </p>
             </div>
-            
-            {/* ######################
-            DATA SCIENCE BELOW
-            ######################### */}
+
+            {/* data science */}
 
             <hr className="p-3"></hr>
 
             <h4 className="text-start p-3">Data Science</h4>
             <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
-                {DS_COURSES.map((course_obj, index) => (
+                {Object.keys(dsCourses).map((courseKey, index) => (
                     <CourseIcon
                         key={index}
-                        id={course_obj.id}
-                        name={course_obj.name}
+                        id={dsCourses[courseKey].id}
+                        name={dsCourses[courseKey].name}
                         college={"CDS"}
                     />
                 ))}
@@ -144,7 +148,8 @@ const CourseList = () => {
             <div className="bottom-course d-flex flex-row justify-content-between p-3">
                 <DependencyMap subject="data-science" />
                 <p className="text-start p-3">
-                    {" "}<a
+                    {" "}
+                    <a
                         href="https://www.bu.edu/academics/cds/courses/"
                         target="_blank"
                         rel="noreferrer"
@@ -154,28 +159,31 @@ const CourseList = () => {
                 </p>
             </div>
 
+            {/* engineering */}
 
-            {/* ######################
-            ENG BELOW
-            ######################### */}
-
-            <hr className="p-3"></hr>               
+            <hr className="p-3"></hr>
 
             <h4 className="text-start p-3">Engineering</h4>
+
+            {/* biomedical engineering */}
+
+            <h5 className="text-start p-4">Biomedical Engineering</h5>
             <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
-                {ENG_COURSES.map((course_obj, index) => (
+                {Object.keys(bmeCourses).map((courseKey, index) => (
                     <CourseIcon
                         key={index}
-                        id={course_obj.id}
-                        name={course_obj.name}
+                        id={bmeCourses[courseKey].id}
+                        name={bmeCourses[courseKey].name}
                         college={"ENG"}
                     />
                 ))}
             </div>
             <div className="bottom-course d-flex flex-row justify-content-between p-3">
+                <DependencyMap subject="data-science" />
                 <p className="text-start p-3">
-                    {" "}<a
-                        href="https://www.bu.edu/academics/eng/courses/"
+                    {" "}
+                    <a
+                        href="https://www.bu.edu/academics/eng/courses/biomedical-engineering/"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -184,24 +192,152 @@ const CourseList = () => {
                 </p>
             </div>
 
+            {/* electrical & computer engineering */}
+
+            <h5 className="text-start p-4">
+                Electrical & Computer Engineering
+            </h5>
+            <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
+                {Object.keys(eceCourses).map((courseKey, index) => (
+                    <CourseIcon
+                        key={index}
+                        id={eceCourses[courseKey].id}
+                        name={eceCourses[courseKey].name}
+                        college={"ENG"}
+                    />
+                ))}
+            </div>
+            <div className="bottom-course d-flex flex-row justify-content-between p-3">
+                <DependencyMap subject="data-science" />
+                <p className="text-start p-3">
+                    {" "}
+                    <a
+                        href="https://www.bu.edu/academics/eng/courses/electrical-computer-engineering/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Complete List
+                    </a>{" "}
+                </p>
+            </div>
+
+            {/* engineering core */}
+
+            <h5 className="text-start p-4">Engineering Core</h5>
+            <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
+                {Object.keys(engCoreCourses).map((courseKey, index) => (
+                    <CourseIcon
+                        key={index}
+                        id={engCoreCourses[courseKey].id}
+                        name={engCoreCourses[courseKey].name}
+                        college={"ENG"}
+                    />
+                ))}
+            </div>
+            <div className="bottom-course d-flex flex-row justify-content-between p-3">
+                <DependencyMap subject="data-science" />
+                <p className="text-start p-3">
+                    {" "}
+                    <a
+                        href="https://www.bu.edu/academics/eng/courses/engineering-core/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Complete List
+                    </a>{" "}
+                </p>
+            </div>
+
+            {/* mechanical engineering */}
+
+            <h5 className="text-start p-4">Mechanical Engineering</h5>
+            <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
+                {Object.keys(mecheCourses).map((courseKey, index) => (
+                    <CourseIcon
+                        key={index}
+                        id={mecheCourses[courseKey].id}
+                        name={mecheCourses[courseKey].name}
+                        college={"ENG"}
+                    />
+                ))}
+            </div>
+            <div className="bottom-course d-flex flex-row justify-content-between p-3">
+                <DependencyMap subject="data-science" />
+                <p className="text-start p-3">
+                    {" "}
+                    <a
+                        href="https://www.bu.edu/academics/eng/courses/mechanical-engineering/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Complete List
+                    </a>{" "}
+                </p>
+            </div>
+
+            {/* economics */}
+
+            <hr className="p-3"></hr>
+
+            <h4 className="text-start p-3">Economics</h4>
+            <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
+                {Object.keys(econCourses).map((courseKey, index) => (
+                    <CourseIcon
+                        key={index}
+                        id={econCourses[courseKey].id}
+                        name={econCourses[courseKey].name}
+                        college={"CAS"}
+                    />
+                ))}
+            </div>
+            <div className="bottom-course d-flex flex-row justify-content-between p-3">
+                <DependencyMap subject="data-science" />
+                <p className="text-start p-3">
+                    {" "}
+                    <a
+                        href="https://www.bu.edu/academics/cas/courses/economics/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Complete List
+                    </a>{" "}
+                </p>
+            </div>
+
+            {/* mathematics & statistics */}
+
+            <hr className="p-3"></hr>
+
+            <h4 className="text-start p-3">Mathematics & Statistics</h4>
+            <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
+                {Object.keys(mathCourses).map((courseKey, index) => (
+                    <CourseIcon
+                        key={index}
+                        id={mathCourses[courseKey].id}
+                        name={mathCourses[courseKey].name}
+                        college={"CAS"}
+                    />
+                ))}
+            </div>
+            <div className="bottom-course d-flex flex-row justify-content-between p-3">
+                <DependencyMap subject="data-science" />
+                <p className="text-start p-3">
+                    {" "}
+                    <a
+                        href="https://www.bu.edu/academics/cas/courses/mathematics-statistics/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Complete List
+                    </a>{" "}
+                </p>
+            </div>
 
             {/* ######################
             HUB BELOW
             ######################### */}
-            
-            <hr className="p-3"></hr>
 
-            <h4 className="text-start p-3">Hub - Other Majors and Misc.</h4>
-            <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
-                {HUB_COURSES.map((course_obj, index) => (
-                    <CourseIcon
-                        key={index}
-                        id={course_obj.id}
-                        name={course_obj.name}
-                        college={course_obj.college}
-                    />
-                ))}
-            </div>
+            <hr className="p-3"></hr>
         </div>
     );
 };

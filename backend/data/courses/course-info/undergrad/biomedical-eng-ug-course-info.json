@@ -1,172 +1,138 @@
-[
-    {
-        "ENGBE209": {
-            "id": "BE209",
-            "name": "Principles of Molecular Cell Biology and  Biotechnology",
-            "prereqs": "Undergraduate Prerequisites: high school biology and CAS CH 101 or equivalent",
-            "content": "Introduction to the molecular, physical  and computational principles of cell      function in the context of  cutting-edge  applications in bioengineering and      medicine. Biological concepts include:  molecular  building blocks, energetics,      transport, metabolism, nucleic acids, gene  expression and genetics.    Applications    include bioenergy, synthetic biology, the  human-genome project,   and gene circuit     engineering.  The objectives of the labs are to teach basic techniques and instrumentation in bioengineering,  to collect and analyze data and to make sound conclusions. Labs emphasize the experimental, problem  solving, and analytical skills required in biomedical engineering and research.",
-            "prof": [],
-            "reviews": []
-        }
+{
+    "ENGBE209": {
+        "id": "BE209",
+        "name": "Principles of Molecular Cell Biology and  Biotechnology",
+        "prereqs": "Undergraduate Prerequisites: high school biology and CAS CH 101 or equivalent",
+        "content": "Introduction to the molecular, physical  and computational principles of cell      function in the context of  cutting-edge  applications in bioengineering and      medicine. Biological concepts include:  molecular  building blocks, energetics,      transport, metabolism, nucleic acids, gene  expression and genetics.    Applications    include bioenergy, synthetic biology, the  human-genome project,   and gene circuit     engineering.  The objectives of the labs are to teach basic techniques and instrumentation in bioengineering,  to collect and analyze data and to make sound conclusions. Labs emphasize the experimental, problem  solving, and analytical skills required in biomedical engineering and research.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE400": {
-            "id": "BE400",
-            "name": "Undergraduate Special Topics in Biomedical Engineering",
-            "prereqs": "",
-            "content": "Specific prerequisites vary according to topic. Coverage of a specific topic in biomedical engineering at a level appropriate for advanced undergraduates. One topic covered in depth each semester offered. Subject matter varies from year to year.",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE400": {
+        "id": "BE400",
+        "name": "Undergraduate Special Topics in Biomedical Engineering",
+        "prereqs": "",
+        "content": "Specific prerequisites vary according to topic. Coverage of a specific topic in biomedical engineering at a level appropriate for advanced undergraduates. One topic covered in depth each semester offered. Subject matter varies from year to year.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE403": {
-            "id": "BE403",
-            "name": "Biomedical Signals and Controls",
-            "prereqs": "Undergraduate Prerequisites: CAS MA 226 and ENG EK 307; Junior standing in BME",
-            "content": "Signals, systems, and feedback control with an emphasis on biomedical problems,  including linear time invariant systems in continuous and discrete time. Laplace  and Fourier representations, transfer functions, pole-zero analysis, stability,  convolution, sampling. Analytical and computational methods. Cannot be taken for  credit in addition to ENG EC 401.",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE403": {
+        "id": "BE403",
+        "name": "Biomedical Signals and Controls",
+        "prereqs": "Undergraduate Prerequisites: CAS MA 226 and ENG EK 307; Junior standing in BME",
+        "content": "Signals, systems, and feedback control with an emphasis on biomedical problems,  including linear time invariant systems in continuous and discrete time. Laplace  and Fourier representations, transfer functions, pole-zero analysis, stability,  convolution, sampling. Analytical and computational methods. Cannot be taken for  credit in addition to ENG EC 401.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE404": {
-            "id": "BE404",
-            "name": "Modern Control in Biomedical Engineering",
-            "prereqs": "Undergraduate Prerequisites: ENG BE 403 and Junior standing in BME",
-            "content": "Mathematical analysis of feedback control systems. Frequency domain methods including transfer functions,  stability, root locus, frequency response. State space approaches. Linearization around an equilibrium point.  Controllability, observability. Emphasis on models of biological and biomedical systems. Cannot be taken for  credit in addition to ENG ME 403, ENG ME 404, or ENG EC 402.",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE404": {
+        "id": "BE404",
+        "name": "Modern Control in Biomedical Engineering",
+        "prereqs": "Undergraduate Prerequisites: ENG BE 403 and Junior standing in BME",
+        "content": "Mathematical analysis of feedback control systems. Frequency domain methods including transfer functions,  stability, root locus, frequency response. State space approaches. Linearization around an equilibrium point.  Controllability, observability. Emphasis on models of biological and biomedical systems. Cannot be taken for  credit in addition to ENG ME 403, ENG ME 404, or ENG EC 402.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE420": {
-            "id": "BE420",
-            "name": "Introduction to Solid Biomechanics",
-            "prereqs": "Undergraduate Prerequisites: ENG EK 301 ; CAS MA 226 ; ENG EK 103.",
-            "content": "Many vital physiological functions including locomotion,respiration, circulation,and mechanotransduction are mechanical in nature and are linked to forces and deformation. Mechanics is also critical for development of medical devices and instruments. The main goal of this course is to acquaint students with concepts of stress,strain,constitutive laws and their applications to biomechanics of cells and tissues. The focus will be on theoretical  developments. The first part of the course is focused on problems of mechanics of deformable  solids including extension,bending,buckling and torsion of beams, as well as the concept of cellular tensegrity. The second, and the greater part of the course is focused on the basic concepts of the theory of elasticity. Topics include: vector and tensor algebra and calculus, kinematics of deformation, stress analysis, constitutive equations. In addition to the linear (Hookean)elasticity, non-linear elasticity is also presented to describe mechanical behavior of  biological tissues and cells. The last chapter is devoted to basic concepts of linear viscoelasticity, including stress relaxation, creep and hysteresis. Illustrative examples from tissue and cell biomechanics will be given where appropriate. The course will prepare students  for advanced courses in traditional fields of solid mechanics (e.g., plasticity and poroelasticity),finite element analysis,as well as emerging fields (e.g., mechanobiology and nanotechnology). Design elements will be included in projects.",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE420": {
+        "id": "BE420",
+        "name": "Introduction to Solid Biomechanics",
+        "prereqs": "Undergraduate Prerequisites: ENG EK 301 ; CAS MA 226 ; ENG EK 103.",
+        "content": "Many vital physiological functions including locomotion,respiration, circulation,and mechanotransduction are mechanical in nature and are linked to forces and deformation. Mechanics is also critical for development of medical devices and instruments. The main goal of this course is to acquaint students with concepts of stress,strain,constitutive laws and their applications to biomechanics of cells and tissues. The focus will be on theoretical  developments. The first part of the course is focused on problems of mechanics of deformable  solids including extension,bending,buckling and torsion of beams, as well as the concept of cellular tensegrity. The second, and the greater part of the course is focused on the basic concepts of the theory of elasticity. Topics include: vector and tensor algebra and calculus, kinematics of deformation, stress analysis, constitutive equations. In addition to the linear (Hookean)elasticity, non-linear elasticity is also presented to describe mechanical behavior of  biological tissues and cells. The last chapter is devoted to basic concepts of linear viscoelasticity, including stress relaxation, creep and hysteresis. Illustrative examples from tissue and cell biomechanics will be given where appropriate. The course will prepare students  for advanced courses in traditional fields of solid mechanics (e.g., plasticity and poroelasticity),finite element analysis,as well as emerging fields (e.g., mechanobiology and nanotechnology). Design elements will be included in projects.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE425": {
-            "id": "BE425",
-            "name": "Introduction to Biomedical Materials Science",
-            "prereqs": "Undergraduate Prerequisites: CAS CH 102 ; CAS PY 211 ; ENG EK 301.",
-            "content": "Introductory course in materials science principles for biomedical engineers that investigates how molecular  and structural features of materials determine their functional properties as well as important considerations  for design and manufacture of materials for medical and biological applications. Biomedical material science  topics covered in this course include: atomic structure and bonding in materials; bandy theory of solids;  crystal structures and crystalline materials; mechanical properties of materials-static, dynamic and failure  modes; defects in materials; dislocations and strengthening of materials; phase diagrams; kinetics of material  transformations, metals manufacturing; ceramics -- structure, properties and manufacturing; polymers- synthesis, properties, manufacturing and rapid prototyping; and advanced biomedical relevant topics such as  corrosion, tribology, biodegradation and biomaterial standards. Cannot be taken for credit in addition to ENG  ME 306.",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE425": {
+        "id": "BE425",
+        "name": "Introduction to Biomedical Materials Science",
+        "prereqs": "Undergraduate Prerequisites: CAS CH 102 ; CAS PY 211 ; ENG EK 301.",
+        "content": "Introductory course in materials science principles for biomedical engineers that investigates how molecular  and structural features of materials determine their functional properties as well as important considerations  for design and manufacture of materials for medical and biological applications. Biomedical material science  topics covered in this course include: atomic structure and bonding in materials; bandy theory of solids;  crystal structures and crystalline materials; mechanical properties of materials-static, dynamic and failure  modes; defects in materials; dislocations and strengthening of materials; phase diagrams; kinetics of material  transformations, metals manufacturing; ceramics -- structure, properties and manufacturing; polymers- synthesis, properties, manufacturing and rapid prototyping; and advanced biomedical relevant topics such as  corrosion, tribology, biodegradation and biomaterial standards. Cannot be taken for credit in addition to ENG  ME 306.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE428": {
-            "id": "BE428",
-            "name": "Device Diagnostics and Design",
-            "prereqs": "Undergraduate Prerequisites: ENG EK 210; Junior standing",
-            "content": "BE 428 is a project-based course developing fundamentals of the design aspects of biomedical devices and  diagnostics. Students will identify design needs, evaluate possible solutions, build prototypes and analyze  failure modes and their effects. At every stage of the design process, they will present to the rest of the class  to obtain feedback on their designs. The course is designed for undergraduates in their Junior and Senior  years and satisfies a course elective requirement for the Technology Innovation concentration. Case studies  of biomedical device designs and hands-on prototyping sessions are used extensively throughout the course.  These, as well as guest lectures and discussion sections, are designed to encourage students to consider the  broader social contexts of engineering and design. Basic theory, homeworks, and brainstorming sessions will  be applied towards problem identification, materials selection, and failure mode evaluation. Topics include:  needs identification; materials classes; materials selection for medical devices and diagnostics; failure  analysis; biocompatibility; regulatory requirements as they pertain to design, manufacturing and marketing;  technology assessment strategies; and engineering ethics. Several case studies of successful and  unsuccessful biomedical device design are introduced and discussed throughout the course.",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE428": {
+        "id": "BE428",
+        "name": "Device Diagnostics and Design",
+        "prereqs": "Undergraduate Prerequisites: ENG EK 210; Junior standing",
+        "content": "BE 428 is a project-based course developing fundamentals of the design aspects of biomedical devices and  diagnostics. Students will identify design needs, evaluate possible solutions, build prototypes and analyze  failure modes and their effects. At every stage of the design process, they will present to the rest of the class  to obtain feedback on their designs. The course is designed for undergraduates in their Junior and Senior  years and satisfies a course elective requirement for the Technology Innovation concentration. Case studies  of biomedical device designs and hands-on prototyping sessions are used extensively throughout the course.  These, as well as guest lectures and discussion sections, are designed to encourage students to consider the  broader social contexts of engineering and design. Basic theory, homeworks, and brainstorming sessions will  be applied towards problem identification, materials selection, and failure mode evaluation. Topics include:  needs identification; materials classes; materials selection for medical devices and diagnostics; failure  analysis; biocompatibility; regulatory requirements as they pertain to design, manufacturing and marketing;  technology assessment strategies; and engineering ethics. Several case studies of successful and  unsuccessful biomedical device design are introduced and discussed throughout the course.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE435": {
-            "id": "BE435",
-            "name": "Transport Phenomena in Living Systems",
-            "prereqs": "Undergraduate Prerequisites: CAS MA 226 and CAS PY 211.",
-            "content": "Biological systems operate at multiple length scales and all scales depend  on  internal and external transport of molecules, ions, fluids and heat. This   course is designed to introduce the fundamentals of biological transport and   to apply these fundamentals in understanding physiological processes  involving  fluid, mass and heat transfer. Students will learn the fundamental   conservation principles and constitutive laws that govern heat, mass and   momentum transport processes and systems as well as the constitutive   properties that are encountered in typical biological problems. Transport is   also critical to the development and proper functioning of biological and   medical instruments and devices, which will also be discussed. Biomedical   examples will include applications in development of the heart-lung machine,   estimation of time of death in postmortem cases, burn injuries through hot   water, respiratory flow in smokers lungs, etc.",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE435": {
+        "id": "BE435",
+        "name": "Transport Phenomena in Living Systems",
+        "prereqs": "Undergraduate Prerequisites: CAS MA 226 and CAS PY 211.",
+        "content": "Biological systems operate at multiple length scales and all scales depend  on  internal and external transport of molecules, ions, fluids and heat. This   course is designed to introduce the fundamentals of biological transport and   to apply these fundamentals in understanding physiological processes  involving  fluid, mass and heat transfer. Students will learn the fundamental   conservation principles and constitutive laws that govern heat, mass and   momentum transport processes and systems as well as the constitutive   properties that are encountered in typical biological problems. Transport is   also critical to the development and proper functioning of biological and   medical instruments and devices, which will also be discussed. Biomedical   examples will include applications in development of the heart-lung machine,   estimation of time of death in postmortem cases, burn injuries through hot   water, respiratory flow in smokers lungs, etc.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE436": {
-            "id": "BE436",
-            "name": "Fundamentals of Fluid Mechanics",
-            "prereqs": "Undergraduate Prerequisites: CAS MA 226 and ENG EK 301.",
-            "content": "Fluid mechanics is a discipline that studies motion of gasses and liquids  and   forces that act on them.  A sub discipline of fluid mechanics is  biofluid   mechanics which is the study of a certain class of biological  problems from a   fluid mechanics point of view.  For example, it helps us to  understand blood   flow within the cardiovascular system, airflow within the  airways of lungs,   removal of waste products via the kidneys and urinary  system and operation of   artificial pumps and microfluidic devices.  In this  course, the focus will be   on the theoretical developments and basic  foundations of fluid mechanics using   the mathematical framework of vectors  and tensors.  Topics include:   conservation of mass, momentum, and energy in  static and moving fluids;   constitutive relations for Newtonian and non- Newtonian fluids; viscous flows,   with application to microfluidics, flow in  porous materials, lubrication, and   other areas of biomedical interest;  scaling analysis; inertial effects,   including boundary layers and unsteady flows. The course will prepare  students  for advanced courses in fluid mechanics (boundary layer theory,  turbulent  flow, non-Newtonian fluids, aerodynamics), as well as emerging  fields  (computational fluid mechanics, microfluidics). Cannot be taken for credit in  addition to ENG ME 303.",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE436": {
+        "id": "BE436",
+        "name": "Fundamentals of Fluid Mechanics",
+        "prereqs": "Undergraduate Prerequisites: CAS MA 226 and ENG EK 301.",
+        "content": "Fluid mechanics is a discipline that studies motion of gasses and liquids  and   forces that act on them.  A sub discipline of fluid mechanics is  biofluid   mechanics which is the study of a certain class of biological  problems from a   fluid mechanics point of view.  For example, it helps us to  understand blood   flow within the cardiovascular system, airflow within the  airways of lungs,   removal of waste products via the kidneys and urinary  system and operation of   artificial pumps and microfluidic devices.  In this  course, the focus will be   on the theoretical developments and basic  foundations of fluid mechanics using   the mathematical framework of vectors  and tensors.  Topics include:   conservation of mass, momentum, and energy in  static and moving fluids;   constitutive relations for Newtonian and non- Newtonian fluids; viscous flows,   with application to microfluidics, flow in  porous materials, lubrication, and   other areas of biomedical interest;  scaling analysis; inertial effects,   including boundary layers and unsteady flows. The course will prepare  students  for advanced courses in fluid mechanics (boundary layer theory,  turbulent  flow, non-Newtonian fluids, aerodynamics), as well as emerging  fields  (computational fluid mechanics, microfluidics). Cannot be taken for credit in  addition to ENG ME 303.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE437": {
-            "id": "BE437",
-            "name": "Nanometer Scale Processes in Living Systems",
-            "prereqs": "Undergraduate Prerequisites: CAS MA 226 ; CAS PY 211 ; ENG EK 381; and CAS CH101 or CAS CH131",
-            "content": "The world at the nanometer-scale is full of dynamic phenomena that are   vastly   different than those encountered at the macro scale. Biological   processes   that are of particular contemporary interest, such as cell   differentiation,   are stimulated by the activity and interaction of   biomolecules at the   nanoscale. Thus, an understanding of the physics and   engineering in such   systems is a vital component toward overcoming an   immense array of   challenging problems in the biological and medical   sciences. This course   focuses on a conceptual and mechanistic understanding   of technologies that   permit the study of events at the nanometer scale,   including scanning probe   microscopes (including AFM) and optical methods   such as fluorescence   microscopy and related techniques (including single   particle tracking, and   microrheology).",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE437": {
+        "id": "BE437",
+        "name": "Nanometer Scale Processes in Living Systems",
+        "prereqs": "Undergraduate Prerequisites: CAS MA 226 ; CAS PY 211 ; ENG EK 381; and CAS CH101 or CAS CH131",
+        "content": "The world at the nanometer-scale is full of dynamic phenomena that are   vastly   different than those encountered at the macro scale. Biological   processes   that are of particular contemporary interest, such as cell   differentiation,   are stimulated by the activity and interaction of   biomolecules at the   nanoscale. Thus, an understanding of the physics and   engineering in such   systems is a vital component toward overcoming an   immense array of   challenging problems in the biological and medical   sciences. This course   focuses on a conceptual and mechanistic understanding   of technologies that   permit the study of events at the nanometer scale,   including scanning probe   microscopes (including AFM) and optical methods   such as fluorescence   microscopy and related techniques (including single   particle tracking, and   microrheology).",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE451": {
-            "id": "BE451",
-            "name": "Directed Study in Biomedical Engineering",
-            "prereqs": "",
-            "content": "Individual study of a topic in biomedical engineering not covered in a regularly   scheduled course. A faculty member must agree to supervise the study before   registration. Term paper and/or written examination.",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE451": {
+        "id": "BE451",
+        "name": "Directed Study in Biomedical Engineering",
+        "prereqs": "",
+        "content": "Individual study of a topic in biomedical engineering not covered in a regularly   scheduled course. A faculty member must agree to supervise the study before   registration. Term paper and/or written examination.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE452": {
-            "id": "BE452",
-            "name": "Undergraduate Research in BME",
-            "prereqs": "Undergraduate Prerequisites: None",
-            "content": "Independent research investigation of a biomedical topic. A faculty member in the BME department must agree to supervise the research topic prior to registration, and the supervisor must agree to the level of student commitment for the determination of the credits to be awarded. A term paper must be written at the end of the semester that summarizes the completed research. Variable credits. Pass/Fail",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE452": {
+        "id": "BE452",
+        "name": "Undergraduate Research in BME",
+        "prereqs": "Undergraduate Prerequisites: None",
+        "content": "Independent research investigation of a biomedical topic. A faculty member in the BME department must agree to supervise the research topic prior to registration, and the supervisor must agree to the level of student commitment for the determination of the credits to be awarded. A term paper must be written at the end of the semester that summarizes the completed research. Variable credits. Pass/Fail",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE465": {
-            "id": "BE465",
-            "name": "Biomedical Engineering Senior Project",
-            "prereqs": "Undergraduate Prerequisites: ENG BE 403 AND ENG BE 491/493. Limited to biomedical engineering majors with senior standing. CAS WR150/1/2/3 required.",
-            "content": "Selection of project and project supervisor must be approved by course instructor. Project is in an area of  biomedical engineering, such as biomedical instrumentation, biosensors, tissue engineering, biological signal  processing, biological modeling and simulation, clinical imaging or informational systems, etc. Projects will be  conducted by teams of two to five students, and projects must include significant design experience.  Research of background, planning and initial work on senior design project. Guidance in performing and  presenting (in written and oral form) a technical project proposal. Skills in proposal writing, oral presentation  techniques. Formal proposal must be approved by technical advisor. Effective FA20, this course is part of a  Hub sequence with ENG BE 466.   BU Hub   Learn More  Part of a Hub sequence",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE465": {
+        "id": "BE465",
+        "name": "Biomedical Engineering Senior Project",
+        "prereqs": "Undergraduate Prerequisites: ENG BE 403 AND ENG BE 491/493. Limited to biomedical engineering majors with senior standing. CAS WR150/1/2/3 required.",
+        "content": "Selection of project and project supervisor must be approved by course instructor. Project is in an area of  biomedical engineering, such as biomedical instrumentation, biosensors, tissue engineering, biological signal  processing, biological modeling and simulation, clinical imaging or informational systems, etc. Projects will be  conducted by teams of two to five students, and projects must include significant design experience.  Research of background, planning and initial work on senior design project. Guidance in performing and  presenting (in written and oral form) a technical project proposal. Skills in proposal writing, oral presentation  techniques. Formal proposal must be approved by technical advisor. Effective FA20, this course is part of a  Hub sequence with ENG BE 466.   BU Hub   Learn More  Part of a Hub sequence",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE466": {
-            "id": "BE466",
-            "name": "Biomedical Engineering Senior Project",
-            "prereqs": "Undergraduate Prerequisites: ENG BE 465; Limited to biomedical engineering majors with senior standing. CAS WR150/1/2/3 required.",
-            "content": "Completion of project in an area of biomedical engineering. Expanded  training  in  technical project presentation techniques. Includes writing of  progress  reports,  abstracts, final reports. Course culminates with an oral   presentation at annual  Senior Project Conference. Written final report must   be approved by the faculty.  This course is part of a Hub sequence with ENG  BE 465. Effective Fall 2020, this course fulfills a single unit in each of  the following BU Hub areas: Digital/Multimedia Expression, Oral and/or  Signed Communication, Writing-Intensive Course, Research and Information  Literacy.  BU Hub   Learn More  Oral and/or Signed CommunicationDigital/Multimedia ExpressionResearch and Information LiteracyWriting-Intensive Course",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE466": {
+        "id": "BE466",
+        "name": "Biomedical Engineering Senior Project",
+        "prereqs": "Undergraduate Prerequisites: ENG BE 465; Limited to biomedical engineering majors with senior standing. CAS WR150/1/2/3 required.",
+        "content": "Completion of project in an area of biomedical engineering. Expanded  training  in  technical project presentation techniques. Includes writing of  progress  reports,  abstracts, final reports. Course culminates with an oral   presentation at annual  Senior Project Conference. Written final report must   be approved by the faculty.  This course is part of a Hub sequence with ENG  BE 465. Effective Fall 2020, this course fulfills a single unit in each of  the following BU Hub areas: Digital/Multimedia Expression, Oral and/or  Signed Communication, Writing-Intensive Course, Research and Information  Literacy.  BU Hub   Learn More  Oral and/or Signed CommunicationDigital/Multimedia ExpressionResearch and Information LiteracyWriting-Intensive Course",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE468": {
-            "id": "BE468",
-            "name": "Clinical Applications of Biomedical Design",
-            "prereqs": "Undergraduate Prerequisites: ENG EK 210; Junior standing",
-            "content": "This four-credit course provides BME students with an in-depth analysis of the  design history of specific currently available medical devices, instruments,  implants, diagnostics, and drug delivery systems. Students will recreate the  clinical and device requirements, the engineering specifications, the  regulatory pathways, the intellectual property, the risk management strategies,  and the business models that were deployed to bring the product into clinic  use.",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE468": {
+        "id": "BE468",
+        "name": "Clinical Applications of Biomedical Design",
+        "prereqs": "Undergraduate Prerequisites: ENG EK 210; Junior standing",
+        "content": "This four-credit course provides BME students with an in-depth analysis of the  design history of specific currently available medical devices, instruments,  implants, diagnostics, and drug delivery systems. Students will recreate the  clinical and device requirements, the engineering specifications, the  regulatory pathways, the intellectual property, the risk management strategies,  and the business models that were deployed to bring the product into clinic  use.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE471": {
-            "id": "BE471",
-            "name": "Quantitative Neuroscience",
-            "prereqs": "Undergraduate Prerequisites: ENG EK 307 and CAS BI 315.",
-            "content": "Introductory cellular and systems-level neuroscience for biomedical engineering students with emphasis on  control mechanisms and engineering principles. This course will introduce the mechanisms that underlie  signal and information propagation in biological cellular neural networks, and the computational potential of  such networks in the brain, as well as neuroengineering applications such as neural prosthesis and  technologies for interfacing with the nervous system.",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE471": {
+        "id": "BE471",
+        "name": "Quantitative Neuroscience",
+        "prereqs": "Undergraduate Prerequisites: ENG EK 307 and CAS BI 315.",
+        "content": "Introductory cellular and systems-level neuroscience for biomedical engineering students with emphasis on  control mechanisms and engineering principles. This course will introduce the mechanisms that underlie  signal and information propagation in biological cellular neural networks, and the computational potential of  such networks in the brain, as well as neuroengineering applications such as neural prosthesis and  technologies for interfacing with the nervous system.",
+        "prof": [],
+        "reviews": []
     },
-    {
-        "ENGBE493": {
-            "id": "BE493",
-            "name": "Biomedical Measurements & Analysis",
-            "prereqs": "",
-            "content": "Undergraduate Prerequisites: EK307",
-            "prof": [],
-            "reviews": []
-        }
+    "ENGBE493": {
+        "id": "BE493",
+        "name": "Biomedical Measurements & Analysis",
+        "prereqs": "",
+        "content": "Undergraduate Prerequisites: EK307",
+        "prof": [],
+        "reviews": []
     }
-]
+}
