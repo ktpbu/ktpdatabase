@@ -18,7 +18,6 @@ course_urls = {
     "eng-core": "https://www.bu.edu/academics/eng/courses/engineering-core/",
     "mathematics-statistics": "https://www.bu.edu/academics/cas/courses/mathematics-statistics/",
     "mechanical-eng": "https://www.bu.edu/academics/eng/courses/mechanical-engineering/",
-    "systems-eng": "https://www.bu.edu/academics/eng/courses/systems-engineering/",
 }
 
 
@@ -56,13 +55,15 @@ def get_course_info(subject):
         raise Exception(f"failed to scrape {url}")
 
     # groups course data into undergrad and grad courses
-    undergrad_course_data = []
-    grad_course_data = []
+    undergrad_course_data = {}
+    grad_course_data = {}
+
     for entry in course_data:
-        if int(next(iter(entry.values()))["id"][-3:]) < 500:
-            undergrad_course_data.append(entry)
+        course_id = next(iter(entry.values()))["id"]
+        if int(course_id[-3:]) < 500:
+            undergrad_course_data[next(iter(entry.keys()))] = next(iter(entry.values()))
         else:
-            grad_course_data.append(entry)
+            grad_course_data[next(iter(entry.keys()))] = next(iter(entry.values()))
 
     print(f"finished scraping {subject} course info")
     return undergrad_course_data, grad_course_data
