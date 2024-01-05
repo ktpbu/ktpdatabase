@@ -15,13 +15,13 @@ const Dependencies = () => {
     const [loading, setLoading] = useState(false);
     const [nodes, setNodes] = useState(null);
     const [edges, setEdges] = useState(null);
-    const abvMap = {
-        "computer-science": "Computer Science",
-        "data-science": "Data Science",
-    };
-    const heightMap = {
-        "computer-science": "800px",
-        "data-science": "640px",
+    const subjectMap = {
+        "computer-science": { title: "Computer Science", height: "800px" },
+        "data-science": { title: "Data Science", height: "640px" },
+        "mathematics-statistics": {
+            title: "Mathematics & Statistics",
+            height: "800px",
+        },
     };
 
     useEffect(() => {
@@ -55,7 +55,9 @@ const Dependencies = () => {
     }, [subject]);
     return (
         <div className="page-content">
-            <h2 className="text-start p-3">{abvMap[subject]} Dependency Map</h2>
+            <h2 className="text-start p-3">
+                {subjectMap[subject]["title"]} Dependency Map
+            </h2>
 
             <Breadcrumb className="customBreadcrumb p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
@@ -64,7 +66,7 @@ const Dependencies = () => {
                     Courses
                 </Breadcrumb.Item>
                 <Breadcrumb.Item active>
-                    {abvMap[subject]} Dependencies
+                    {subjectMap[subject]["title"]} Dependencies
                 </Breadcrumb.Item>
             </Breadcrumb>
 
@@ -72,7 +74,7 @@ const Dependencies = () => {
                 <ReactFlowProvider>
                     <div
                         className="reactflow-container"
-                        style={{ height: heightMap[subject] }}
+                        style={{ height: subject[subject]["height"] }}
                     >
                         <ReactFlow
                             nodes={nodes}
