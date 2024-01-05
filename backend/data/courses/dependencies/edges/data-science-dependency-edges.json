@@ -1,0 +1,128 @@
+[
+    {
+        "id": "100-120",
+        "source": "DS100",
+        "target": "DS120",
+        "animated": true
+    },
+    {
+        "id": "110-120",
+        "source": "DS110",
+        "target": "DS120",
+        "animated": true
+    },
+    {
+        "id": "110-121",
+        "source": "DS110",
+        "target": "DS121",
+        "animated": true
+    },
+    {
+        "id": "120-121",
+        "source": "DS120",
+        "target": "DS121",
+        "animated": true
+    },
+    {
+        "id": "120-122",
+        "source": "DS120",
+        "target": "DS122",
+        "animated": true
+    },
+    {
+        "id": "110-210",
+        "source": "DS110",
+        "target": "DS210",
+        "animated": true
+    },
+    {
+        "id": "290-292",
+        "source": "DS290",
+        "target": "DS292",
+        "animated": true
+    },
+    {
+        "id": "210-310",
+        "source": "DS210",
+        "target": "DS310",
+        "animated": true
+    },
+    {
+        "id": "121-320",
+        "source": "DS121",
+        "target": "DS320",
+        "animated": true
+    },
+    {
+        "id": "210-320",
+        "source": "DS210",
+        "target": "DS320",
+        "animated": true
+    },
+    {
+        "id": "320-340",
+        "source": "DS320",
+        "target": "DS340",
+        "animated": true
+    },
+    {
+        "id": "110-380",
+        "source": "DS110",
+        "target": "DS380",
+        "animated": true
+    },
+    {
+        "id": "320-380",
+        "source": "DS320",
+        "target": "DS380",
+        "animated": true
+    },
+    {
+        "id": "122-453",
+        "source": "DS122",
+        "target": "DS453",
+        "animated": true
+    },
+    {
+        "id": "320-453",
+        "source": "DS320",
+        "target": "DS453",
+        "animated": true
+    },
+    {
+        "id": "100-482",
+        "source": "DS100",
+        "target": "DS482",
+        "animated": true
+    },
+    {
+        "id": "110-482",
+        "source": "DS110",
+        "target": "DS482",
+        "animated": true
+    },
+    {
+        "id": "340-482",
+        "source": "DS340",
+        "target": "DS482",
+        "animated": true
+    },
+    {
+        "id": "280-488",
+        "source": "DS280",
+        "target": "DS488",
+        "animated": true
+    },
+    {
+        "id": "310-519",
+        "source": "DS310",
+        "target": "DS519",
+        "animated": true
+    },
+    {
+        "id": "340-549",
+        "source": "DS340",
+        "target": "DS549",
+        "animated": true
+    }
+]
