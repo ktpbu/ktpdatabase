@@ -2,6 +2,10 @@ import express from "express";
 import "./config.js";
 import cors from "cors";
 
+import academicRoutes from "./routes/academicRoutes.js";
+import calendarRoutes from "./routes/calendarRoutes.js";
+import professionalRoutes from "./routes/professionalRoutes.js";
+
 const app = express();
 
 app.use(cors());
@@ -20,10 +24,6 @@ app.get("/home", (req, res) => {
     res.status(234).send("Home for KTP Database");
 });
 
-import academicRoute from "./routes/academicRoute.js";
-import calendarRoute from "./routes/calendarRoute.js";
-import professionalRoute from "./routes/professionalRoute.js";
-
-app.use("/academics", academicRoute);
-app.use("/calendar", calendarRoute);
-app.use("/professional", professionalRoute);
+app.use("/academics", academicRoutes);
+app.use("/calendar", calendarRoutes);
+app.use("/professional", professionalRoutes);

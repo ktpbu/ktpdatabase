@@ -1,0 +1,224 @@
+[
+    {
+        "id": "107-108",
+        "source": "MA107",
+        "target": "MA108",
+        "animated": true
+    },
+    {
+        "id": "115-116",
+        "source": "MA115",
+        "target": "MA116",
+        "animated": true
+    },
+    {
+        "id": "121-122",
+        "source": "MA121",
+        "target": "MA122",
+        "animated": true
+    },
+    {
+        "id": "123-122",
+        "source": "MA123",
+        "target": "MA122",
+        "animated": true
+    },
+    {
+        "id": "121-124",
+        "source": "MA121",
+        "target": "MA124",
+        "animated": true
+    },
+    {
+        "id": "123-124",
+        "source": "MA123",
+        "target": "MA124",
+        "animated": true
+    },
+    {
+        "id": "213-214",
+        "source": "MA213",
+        "target": "MA214",
+        "animated": true
+    },
+    {
+        "id": "124-225",
+        "source": "MA124",
+        "target": "MA225",
+        "animated": true
+    },
+    {
+        "id": "129-225",
+        "source": "MA129",
+        "target": "MA225",
+        "animated": true
+    },
+    {
+        "id": "225-226",
+        "source": "MA225",
+        "target": "MA226",
+        "animated": true
+    },
+    {
+        "id": "230-226",
+        "source": "MA230",
+        "target": "MA226",
+        "animated": true
+    },
+    {
+        "id": "124-230",
+        "source": "MA124",
+        "target": "MA230",
+        "animated": true
+    },
+    {
+        "id": "129-230",
+        "source": "MA129",
+        "target": "MA230",
+        "animated": true
+    },
+    {
+        "id": "225-231",
+        "source": "MA225",
+        "target": "MA231",
+        "animated": true
+    },
+    {
+        "id": "230-231",
+        "source": "MA230",
+        "target": "MA231",
+        "animated": true
+    },
+    {
+        "id": "122-242",
+        "source": "MA122",
+        "target": "MA242",
+        "animated": true
+    },
+    {
+        "id": "124-242",
+        "source": "MA124",
+        "target": "MA242",
+        "animated": true
+    },
+    {
+        "id": "129-242",
+        "source": "MA129",
+        "target": "MA242",
+        "animated": true
+    },
+    {
+        "id": "293-294",
+        "source": "MA293",
+        "target": "MA294",
+        "animated": true
+    },
+    {
+        "id": "242-341",
+        "source": "MA242",
+        "target": "MA341",
+        "animated": true
+    },
+    {
+        "id": "225-411",
+        "source": "MA225",
+        "target": "MA411",
+        "animated": true
+    },
+    {
+        "id": "230-411",
+        "source": "MA230",
+        "target": "MA411",
+        "animated": true
+    },
+    {
+        "id": "242-411",
+        "source": "MA242",
+        "target": "MA411",
+        "animated": true
+    },
+    {
+        "id": "442-411",
+        "source": "MA442",
+        "target": "MA411",
+        "animated": true
+    },
+    {
+        "id": "225-412",
+        "source": "MA225",
+        "target": "MA412",
+        "animated": true
+    },
+    {
+        "id": "230-412",
+        "source": "MA230",
+        "target": "MA412",
+        "animated": true
+    },
+    {
+        "id": "113-415",
+        "source": "MA113",
+        "target": "MA415",
+        "animated": true
+    },
+    {
+        "id": "115-415",
+        "source": "MA115",
+        "target": "MA415",
+        "animated": true
+    },
+    {
+        "id": "116-415",
+        "source": "MA116",
+        "target": "MA415",
+        "animated": true
+    },
+    {
+        "id": "213-415",
+        "source": "MA213",
+        "target": "MA415",
+        "animated": true
+    },
+    {
+        "id": "214-415",
+        "source": "MA214",
+        "target": "MA415",
+        "animated": true
+    },
+    {
+        "id": "116-416",
+        "source": "MA116",
+        "target": "MA416",
+        "animated": true
+    },
+    {
+        "id": "214-416",
+        "source": "MA214",
+        "target": "MA416",
+        "animated": true
+    },
+    {
+        "id": "242-433",
+        "source": "MA242",
+        "target": "MA433",
+        "animated": true
+    },
+    {
+        "id": "293-433",
+        "source": "MA293",
+        "target": "MA433",
+        "animated": true
+    },
+    {
+        "id": "225-442",
+        "source": "MA225",
+        "target": "MA442",
+        "animated": true
+    },
+    {
+        "id": "230-442",
+        "source": "MA230",
+        "target": "MA442",
+        "animated": true
+    }
+]
