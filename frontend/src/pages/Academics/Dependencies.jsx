@@ -74,7 +74,7 @@ const Dependencies = () => {
                 <ReactFlowProvider>
                     <div
                         className="reactflow-container"
-                        style={{ height: subject[subject]["height"] }}
+                        style={{ height: subjectMap[subject]["height"] }}
                     >
                         <ReactFlow
                             nodes={nodes}
