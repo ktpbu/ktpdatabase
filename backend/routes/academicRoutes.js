@@ -10,7 +10,7 @@ import engCoreCourses from "../data/courses/course-info/undergrad/eng-core-ug-co
 import mathCourses from "../data/courses/course-info/undergrad/mathematics-statistics-ug-course-info.json" assert { type: "json" };
 import mecheCourses from "../data/courses/course-info/undergrad/mechanical-eng-ug-course-info.json" assert { type: "json" };
 
-// course dependency map imports
+// course dependency imports
 import csEdges from "../data/courses/dependencies/edges/computer-science-edges.json" assert { type: "json" };
 import csNodes from "../data/courses/dependencies/nodes/computer-science-nodes.json" assert { type: "json" };
 import dsEdges from "../data/courses/dependencies/edges/data-science-edges.json" assert { type: "json" };
