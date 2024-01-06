@@ -11,12 +11,12 @@ import mathCourses from "../data/courses/course-info/undergrad/mathematics-stati
 import mecheCourses from "../data/courses/course-info/undergrad/mechanical-eng-ug-course-info.json" assert { type: "json" };
 
 // course dependency map imports
-import csEdges from "../data/courses/dependencies/edges/computer-science-dependency-edges.json" assert { type: "json" };
-import csNodes from "../data/courses/dependencies/nodes/computer-science-dependency-nodes.json" assert { type: "json" };
-import dsEdges from "../data/courses/dependencies/edges/data-science-dependency-edges.json" assert { type: "json" };
-import dsNodes from "../data/courses/dependencies/nodes/data-science-dependency-nodes.json" assert { type: "json" };
-import mathEdges from "../data/courses/dependencies/edges/mathematics-statistics-dependency-edges.json" assert { type: "json" };
-import mathNodes from "../data/courses/dependencies/nodes/mathematics-statistics-dependency-nodes.json" assert { type: "json" };
+import csEdges from "../data/courses/dependencies/edges/computer-science-edges.json" assert { type: "json" };
+import csNodes from "../data/courses/dependencies/nodes/computer-science-nodes.json" assert { type: "json" };
+import dsEdges from "../data/courses/dependencies/edges/data-science-edges.json" assert { type: "json" };
+import dsNodes from "../data/courses/dependencies/nodes/data-science-nodes.json" assert { type: "json" };
+import mathEdges from "../data/courses/dependencies/edges/mathematics-statistics-edges.json" assert { type: "json" };
+import mathNodes from "../data/courses/dependencies/nodes/mathematics-statistics-nodes.json" assert { type: "json" };
 
 const subjectMap = {
     "biomedical-eng": { "course-info": bmeCourses, edges: "", nodes: "" },
