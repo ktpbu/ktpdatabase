@@ -10,16 +10,18 @@ import engCoreCourses from "../data/courses/course-info/undergrad/eng-core-ug-co
 import mathCourses from "../data/courses/course-info/undergrad/mathematics-statistics-ug-course-info.json" assert { type: "json" };
 import mecheCourses from "../data/courses/course-info/undergrad/mechanical-eng-ug-course-info.json" assert { type: "json" };
 
-// course dependency map imports
-import csEdges from "../data/courses/dependencies/edges/computer-science-dependency-edges.json" assert { type: "json" };
-import csNodes from "../data/courses/dependencies/nodes/computer-science-dependency-nodes.json" assert { type: "json" };
-import dsEdges from "../data/courses/dependencies/edges/data-science-dependency-edges.json" assert { type: "json" };
-import dsNodes from "../data/courses/dependencies/nodes/data-science-dependency-nodes.json" assert { type: "json" };
-import mathEdges from "../data/courses/dependencies/edges/mathematics-statistics-dependency-edges.json" assert { type: "json" };
-import mathNodes from "../data/courses/dependencies/nodes/mathematics-statistics-dependency-nodes.json" assert { type: "json" };
+// course dependency imports
+import csEdges from "../data/courses/dependencies/edges/computer-science-edges.json" assert { type: "json" };
+import csNodes from "../data/courses/dependencies/nodes/computer-science-nodes.json" assert { type: "json" };
+import dsEdges from "../data/courses/dependencies/edges/data-science-edges.json" assert { type: "json" };
+import dsNodes from "../data/courses/dependencies/nodes/data-science-nodes.json" assert { type: "json" };
+import econEdges from "../data/courses/dependencies/edges/economics-edges.json" assert { type: "json" };
+import econNodes from "../data/courses/dependencies/nodes/economics-nodes.json" assert { type: "json" };
+import mathEdges from "../data/courses/dependencies/edges/mathematics-statistics-edges.json" assert { type: "json" };
+import mathNodes from "../data/courses/dependencies/nodes/mathematics-statistics-nodes.json" assert { type: "json" };
 
 const subjectMap = {
-    "biomedical-eng": { "course-info": bmeCourses, edges: "", nodes: "" },
+    "biomedical-eng": { "course-info": bmeCourses },
     "computer-science": {
         "course-info": csCourses,
         edges: csEdges,
@@ -30,19 +32,19 @@ const subjectMap = {
         edges: dsEdges,
         nodes: dsNodes,
     },
-    economics: { "course-info": econCourses, edges: "", nodes: "" },
-    "electrical-computer-eng": {
-        "course-info": eceCourses,
-        edges: "",
-        nodes: "",
+    economics: {
+        "course-info": econCourses,
+        edges: econEdges,
+        nodes: econNodes,
     },
+    "electrical-computer-eng": { "course-info": eceCourses },
     "eng-core": { "course-info": engCoreCourses, edges: "", nodes: "" },
     "mathematics-statistics": {
         "course-info": mathCourses,
         edges: mathEdges,
         nodes: mathNodes,
     },
-    "mechanical-eng": { "course-info": mecheCourses, edges: "", nodes: "" },
+    "mechanical-eng": { "course-info": mecheCourses },
 };
 
 const router = express.Router();

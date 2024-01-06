@@ -18,6 +18,7 @@ const Dependencies = () => {
     const subjectMap = {
         "computer-science": { title: "Computer Science", height: "800px" },
         "data-science": { title: "Data Science", height: "640px" },
+        economics: { title: "Economics", height: "1200px" },
         "mathematics-statistics": {
             title: "Mathematics & Statistics",
             height: "800px",
