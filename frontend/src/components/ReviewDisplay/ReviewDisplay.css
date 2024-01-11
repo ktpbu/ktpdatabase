@@ -1,0 +1,25 @@
+.review-display-container {
+    width: 30rem;
+    height: 20rem;
+    overflow-y: scroll;
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.review-display-item-container {
+    margin: 1rem;
+    padding-top: 2%;
+    background-color: rgb(240, 218, 252, 0.2)
+}
+
+.review-display-review {
+    margin: auto;
+}
+
+.review-display-metrics {
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 33%);
+}

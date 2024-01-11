@@ -3,7 +3,8 @@ import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import { Breadcrumb } from "react-bootstrap";
 
-// style sheets
+import ReviewDisplay from "../../components/ReviewDisplay/ReviewDisplay";
+
 import "./Course.css";
 import "./../page-content.css";
 
@@ -13,6 +14,7 @@ const Course = () => {
     const { id } = useParams();
     const [loading, setLoading] = useState(false);
     const [courseInfo, setCourseInfo] = useState("");
+    const [courseReviews, setCourseReviews] = useState([]);
 
     const subjectMap = useMemo(
         () => ({
@@ -33,23 +35,30 @@ const Course = () => {
         setLoading(true);
         const subject = subjectMap[id.slice(0, 5)];
         axios
-            // use .GET function at that backend location
             .get(`${backend}/academics/courses/undergrad/${subject}/${id}`)
-
-            // load info from .GET function response
             .then((res) => {
+                console.log(res);
                 setCourseInfo(res.data);
                 setLoading(false);
             })
-
-            // error handling
             .catch((error) => {
                 console.log(error);
                 setLoading(false);
             });
-    }, [id, subjectMap]);
+        setLoading(true);
+        axios
+            .get(`${backend}/academics/courses/reviews/${id}`)
+            .then((res) => {
+                console.log(res.data);
+                setCourseReviews(res.data);
+                setLoading(false);
+            })
+            .catch((error) => {
+                console.log(error);
+                setLoading(false);
+            });
+    }, [subjectMap, id]);
 
-    // return HTML to be rendered by page
     return (
         <div className="page-content">
             <Breadcrumb className="customBreadcrumb p-3">
@@ -72,6 +81,8 @@ const Course = () => {
             )}
 
             <p className="p-3 text-start mx-auto"> {courseInfo.content}</p>
+
+            <ReviewDisplay reviews={courseReviews} />
         </div>
     );
 };
