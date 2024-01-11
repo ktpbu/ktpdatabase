@@ -29,6 +29,10 @@ const reviewSchema = mongoose.Schema({
         type: String,
         required: false,
     },
+    date: {
+        type: Date,
+        required: true,
+    },
 });
 
 export const Review = mongoose.model(
