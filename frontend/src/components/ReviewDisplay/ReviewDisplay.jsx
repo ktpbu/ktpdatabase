@@ -13,8 +13,8 @@ const ReviewDisplay = ({ reviews }) => {
     return (
         <>
             {reviews && reviews.length > 0 ? (
-                <>
-                    <h2>Reviews</h2>
+                <div className="review-display">
+                    <h2 className="review-display-title">Reviews</h2>
                     <div className="review-display-container">
                         {reviews.map((review) => (
                             <div
@@ -38,7 +38,10 @@ const ReviewDisplay = ({ reviews }) => {
                             </div>
                         ))}
                     </div>
-                </>
+                    <button className="review-display-add-review-button">
+                        Add Review
+                    </button>
+                </div>
             ) : null}
         </>
     );

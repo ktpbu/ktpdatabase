@@ -70,7 +70,7 @@ const Course = () => {
                 <Breadcrumb.Item active>{courseInfo.name}</Breadcrumb.Item>
             </Breadcrumb>
 
-            <h2 className="text-start p-3">
+            <h2 className="text-start p-3 my-auto">
                 {id}: {courseInfo.name}
             </h2>
 
