@@ -35,14 +35,15 @@ There are a couple of basic rules or guidelines that will make this collaborativ
 
 #### How to Run the Project Locally
 For testing and development, it will be necessary to run this locally. First, make sure you have `Node.js` and `npm` installed. Then, clone this git repo into your own local directory.
-1. Navigate to the `frontend` folder
-2. Run the following: `npm i`, which installs all packages needed by the frontend
-3. Navigate to the `backend` folder
-4. Run `npm i` again, to install all backend packages
-5. Still in the `backend` folder, run `npm run dev` which starts up the backend server on localhost:3000 (this is what we have it set to rn)
-6. Now, the backend server is visible if you go to Chrome and go to `http://localhost:3000/`
-7. Open another terminal.
-7. Navigate back to the `frontend` folder, and run `npm run dev` again in this folder, which will start the frontend server at `http://localhost:5173/`
+1. Navigate to the `frontend` folder.
+2. Run the following: `npm i`, which installs all packages needed by the frontend.
+3. Navigate to the `backend` folder.
+4. Run `npm i` again, to install all backend packages.
+5. Set up the `.env` files in both the frontend and the backend. In the shared Google Drive folder called `App Committee`, navigate to the folder called `KTP Database` and look at the document called `.env files` to set them up.
+6. Still in the `backend` folder, run `npm run dev` which starts up the backend server on localhost:3000 (this is what we have it set to rn).
+7. Now, the backend server is visible if you go to Chrome and go to `http://localhost:3000/`.
+8. Open another terminal.
+7. Navigate back to the `frontend` folder, and run `npm run dev` again in this folder, which will start the frontend server at `http://localhost:5173/`.
 8. Both servers need to be up and running to get full functionality.
 
 #### Making a Request to the Backend
