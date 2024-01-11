@@ -20,6 +20,9 @@ import econNodes from "../data/courses/dependencies/nodes/economics-nodes.json" 
 import mathEdges from "../data/courses/dependencies/edges/mathematics-statistics-edges.json" assert { type: "json" };
 import mathNodes from "../data/courses/dependencies/nodes/mathematics-statistics-nodes.json" assert { type: "json" };
 
+// database imports
+import { Review } from "../models/reviewModel.js";
+
 const subjectMap = {
     "biomedical-eng": { "course-info": bmeCourses },
     "computer-science": {
@@ -66,6 +69,22 @@ router.get("/courses/undergrad/:subject/:id", async (req, res) => {
     return res.json(
         subjectMap[req.params.subject]["course-info"][req.params.id]
     );
+});
+
+// get individual course reviews
+router.get("/courses/reviews/:id", async (req, res) => {
+    console.log(req);
+    try {
+        const courseId = req.params.id;
+        const courseReview = await Review.find({ class: courseId });
+        if (!courseReview) {
+            return res;
+        }
+        return res.status(200).json(courseReview);
+    } catch (error) {
+        console.error(error.message);
+        return res.status(500).send({ message: error.message });
+    }
 });
 
 // get dependency map nodes
