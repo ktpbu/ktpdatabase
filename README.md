@@ -34,11 +34,11 @@ There are a couple of basic rules or guidelines that will make this collaborativ
 2. Each new page (React .jsx file in the `pages` subdirectory) needs to return a `div` element that is the main content of that page to be rendered. It is necessary for formatting that each page needs that div to have `className='page-content'`, and that `.jsx` file needs to import the following stylesheet: `import "./../page-content.css`.
 
 #### How to Run the Project Locally
-For testing and development, it will be necessary to run this locally. First, make sure you have `Node.js` and `npm` installed. Then, clone this git repo into your own local directory.
+For testing and development, it will be necessary to run this locally. First, make sure you have `Node.js` and `npm` installed. Then, follow the steps in the document called `Git Workflow`, located in the shared `App Committee` folder in Google Drive. Once you've done this, open the project locally in the code editor and do as follows:
 1. Navigate to the `frontend` folder.
-2. Run the following: `npm i`, which installs all packages needed by the frontend.
+2. Run `npm i`, which installs all packages needed by the frontend.
 3. Navigate to the `backend` folder.
-4. Run `npm i` again, to install all backend packages.
+4. Run `npm i` again to install all backend packages.
 5. Set up the `.env` files in both the frontend and the backend. In the shared Google Drive folder called `App Committee`, navigate to the folder called `KTP Database` and look at the document called `.env files` to set them up.
 6. Still in the `backend` folder, run `npm run dev` which starts up the backend server on localhost:3000 (this is what we have it set to rn).
 7. Now, the backend server is visible if you go to Chrome and go to `http://localhost:3000/`.
