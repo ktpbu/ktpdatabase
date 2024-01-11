@@ -76,7 +76,9 @@ router.get("/courses/reviews/:id", async (req, res) => {
     console.log(req);
     try {
         const courseId = req.params.id;
-        const courseReview = await Review.find({ class: courseId });
+        const courseReview = await Review.find({ class: courseId }).sort({
+            date: -1,
+        });
         if (!courseReview) {
             return res;
         }
