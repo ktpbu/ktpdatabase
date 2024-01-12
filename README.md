@@ -7,7 +7,8 @@
         - [Some Guidelines](#some-guidelines)
         - [How to Run the Project Locally](#how-to-run-project-locally)
         - [Making a Request to the Backend](#making-a-request-to-the-backend)
-        - [How to Run the Course Scraper](#how-to-run-the-course-scraper) 
+        - [How to Run the Course Scraper](#how-to-run-the-course-scraper)
+        - [How to Run the Professor Scraper](#how-to-run-the-professor-scraper) 
     - [Current Roadmap of Website](#current-roadmap-of-website)
     - [Current Open Questions](#current-open-questions)
     - [To-Do List](#to-do-list)
@@ -64,6 +65,13 @@ The course scraper is located at the path `./backend/data/courses/CourseScraper.
 3. Update the `course_urls` variable in `CourseScraper.py` with the relevant subject-url pair if you want to scrape additional subjects.
 4. Run `CourseScraper.py` and the course information will be stored in the `./backend/data/courses/course-info/` folder.
 
+#### How to Run the Professor Scraper
+The professor scraper is located at the path `./backend/data/courses/ProfScraper.py`.
+1. Navigate to the `backend` folder.
+2. Run `pip install -r ./requirements.txt`.
+3. Update the `prof_urls` variable in `ProfScraper.py` with the relevant prof-url pair if you want to scrape professors from additional subjects.
+4. Run `ProfScraper.py` and the professor lists will be stored in the `./backend/data/courses/professors/` folder.
+
 ### Current Roadmap of Website
 
 ```text
@@ -72,7 +80,9 @@ The course scraper is located at the path `./backend/data/courses/CourseScraper.
     |_ Academics
         |_ Courses
             |_ ...all courses by ID
-        |_ Academic Resources
+                |_ ...add course review pages
+        |_ Resources
+        |_ Graduate
     |_ Calendar
     |_ Professional
 ```
