@@ -27,11 +27,11 @@
     height: 2rem;
 }
 
+.add-review-required-field-warning {
+    margin-top: 1.5rem;
+}
+
 .add-review-select {
     width: 5rem;
     height: 2rem;
 }
-
-.add-review-save-button {
-    font-size: 1.5rem;
- }
