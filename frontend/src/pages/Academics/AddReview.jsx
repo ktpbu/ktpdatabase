@@ -1,24 +1,90 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Breadcrumb } from "react-bootstrap";
 import { useState, useMemo } from "react";
+import { useSnackbar } from "notistack";
+import axios from "axios";
 
 import "./AddReview.css";
 import "./../page-content.css";
 
+const backend = import.meta.env.VITE_BACKEND_URL;
+
 const AddReview = () => {
+    const [loading, setLoading] = useState(false);
+    const { enqueueSnackbar } = useSnackbar();
+    const navigate = useNavigate();
     const user = "test";
     const { id } = useParams();
-    const [professor, setProfessor] = useState("");
-    const [usefulness, setUsefulness] = useState(null);
-    const [difficulty, setDifficulty] = useState(null);
-    const [rating, setRating] = useState(null);
+    const [professor, setProfessor] = useState("Choose");
+    const [usefulness, setUsefulness] = useState("Choose");
+    const [difficulty, setDifficulty] = useState("Choose");
+    const [rating, setRating] = useState("Choose");
     const [review, setReview] = useState("");
     const values = ["1", "2", "3", "4", "5"];
 
     const professors = useMemo(
         () => ({
             ENGBE: [],
-            CASCS: [],
+            CASCS: [
+                "JONATHAN APPAVOO",
+                "MANOS ATHANASSOULIS",
+                "GARY BENSON",
+                "AZER BESTAVROS",
+                "MARGRIT BETKE",
+                "MARK BUN",
+                "JOHN BYERS",
+                "RAN CANETTI",
+                "ED CHIEN",
+                "SANG (“PETER”) CHIN",
+                "MARK CROVELLA",
+                "RONALD CZIK",
+                "ANKUSH DAS",
+                "TAYMAZ DAVOODI",
+                "PERRY DONHAM",
+                "IDDO DRORI",
+                "SHEREIF EL-SHEIKH",
+                "ALINA ENE",
+                "DORA ERDOS",
+                "MARCO GABOARDI",
+                "PETER GACS",
+                "LANCE GALLETTI",
+                "PETER B. GOLBUS",
+                "SHARON GOLDBERG",
+                "STEVE HOMER",
+                "TIAGO JANUARIO",
+                "VASILIKI KALAVRI",
+                "GABE KAPTCHUK",
+                "ASSAF KFOURY",
+                "GEORGE KOLLIOS",
+                "LEONID LEVIN",
+                "JOHN LIAGOURIS",
+                "ANDREA LINCOLN",
+                "RENATO MANCUSO",
+                "ABRAHAM MATTA",
+                "NATHAN MULL",
+                "PREETHI NARAYANAN",
+                "SABRINA NEUMAN",
+                "CHRISTINE PAPADAKIS-KANARIS",
+                "BRYAN PLUMMER",
+                "SOFYA RASKHODNIKOVA",
+                "LEONID REYZIN",
+                "KATE SAENKO",
+                "STAN SCLAROFF",
+                "ADAM SMITH",
+                "WAYNE SNYDER",
+                "AARON STEVENS",
+                "ALLEY STOUGHTON",
+                "DAVE SULLIVAN",
+                "EVIMARIA TERZI",
+                "ERAN TROMER",
+                "CHARALAMPOS TSOURAKAKIS",
+                "RICH WEST",
+                "EMILY WHITING",
+                "DERRY WIJAYA",
+                "ANDREW WOOD",
+                "HONGWEI XI",
+                "FAN YANG",
+            ],
             CDSDS: [],
             CASEC: [],
             ENGEC: [],
@@ -28,6 +94,51 @@ const AddReview = () => {
         }),
         []
     );
+
+    const handleAddReview = () => {
+        if (
+            professor === "Choose" ||
+            usefulness === "Choose" ||
+            difficulty === "Choose" ||
+            rating === "Choose"
+        ) {
+            enqueueSnackbar(
+                "Must select professor, usefulness, difficulty, and rating",
+                { variant: "error" }
+            );
+            return;
+        }
+        const reviewObj = {
+            user,
+            id,
+            professor,
+            usefulness: parseInt(usefulness),
+            difficulty: parseInt(difficulty),
+            rating: parseInt(rating),
+            review,
+            date: new Date().toISOString().replace("Z", "+00:00"),
+        };
+        console.log(reviewObj);
+        setLoading(true);
+        axios
+            .post(`${backend}/academics/courses/add-review`, reviewObj, {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            })
+            .then(() => {
+                setLoading(false);
+                enqueueSnackbar("Added review successfully", {
+                    variant: "success",
+                });
+                navigate(`/academics/courses/${id}`);
+            })
+            .catch((error) => {
+                setLoading(false);
+                enqueueSnackbar("Error", { variant: "error" });
+                console.log(error);
+            });
+    };
 
     return (
         <div className="page-content">
@@ -57,7 +168,7 @@ const AddReview = () => {
                             onChange={(e) => setProfessor(e.target.value)}
                         >
                             <option value={null}>Choose</option>
-                            {values.map((value) => (
+                            {professors[id.slice(0, 5)].map((value) => (
                                 <option key={value} value={value}>
                                     {value}
                                 </option>
@@ -135,6 +246,12 @@ const AddReview = () => {
                         />
                     </div>
                 </div>
+                <button
+                    className="add-review-add-button"
+                    onClick={handleAddReview}
+                >
+                    Add
+                </button>
             </div>
         </div>
     );
