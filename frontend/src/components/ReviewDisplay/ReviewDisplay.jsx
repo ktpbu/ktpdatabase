@@ -23,7 +23,7 @@ const ReviewDisplay = ({ reviews }) => {
                             >
                                 <h6>{formatDate(review.date)}</h6>
                                 <p className="review-display-professor">
-                                    Professor {review.professor}
+                                    {review.professor}
                                 </p>
                                 <div className="review-display-metrics">
                                     <p>Usefulness: {review.usefulness}</p>

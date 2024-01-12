@@ -9,7 +9,8 @@
 }
 
 .review-display-container {
-    height: 20rem;
+    height: fit-content;
+    max-height: 20rem;
     overflow-y: scroll;
     border: 1px solid black;
 }
