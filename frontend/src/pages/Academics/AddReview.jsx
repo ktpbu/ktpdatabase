@@ -104,10 +104,9 @@ const AddReview = () => {
             difficulty === "Choose" ||
             rating === "Choose"
         ) {
-            enqueueSnackbar(
-                "Must select professor, usefulness, difficulty, and rating",
-                { variant: "error" }
-            );
+            enqueueSnackbar("Must complete all required fields", {
+                variant: "error",
+            });
             return;
         }
         const reviewObj = {
@@ -123,11 +122,7 @@ const AddReview = () => {
         console.log(reviewObj);
         setLoading(true);
         axios
-            .post(`${backend}/academics/courses/add-review`, reviewObj, {
-                headers: {
-                    "Content-Type": "application/json",
-                },
-            })
+            .post(`${backend}/academics/courses/add-review`, reviewObj)
             .then(() => {
                 setLoading(false);
                 enqueueSnackbar("Added review successfully", {
