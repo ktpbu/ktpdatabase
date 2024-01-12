@@ -89,6 +89,29 @@ router.get("/courses/reviews/:id", async (req, res) => {
     }
 });
 
+// add indvidual course reviews
+router.post("/courses/add-review", async (req, res) => {
+    console.log(req.body);
+    try {
+        const newReview = new Review({
+            user: req.body.user,
+            class: req.body.id,
+            professor: req.body.professor,
+            usefulness: req.body.usefulness,
+            difficulty: req.body.difficulty,
+            rating: req.body.rating,
+            review: req.body.review,
+            date: req.body.date,
+        });
+        console.log(newReview);
+        await newReview.save();
+        return res.status(200).send({ message: "Added review successfully" });
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).send({ message: error.message });
+    }
+});
+
 // get dependency map nodes
 router.get("/courses/dependencies/nodes/:subject", async (req, res) => {
     console.log(req);

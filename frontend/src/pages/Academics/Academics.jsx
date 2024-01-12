@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Card, Breadcrumb, Image } from "react-bootstrap";
+import { Card, Breadcrumb } from "react-bootstrap";
 
 // style sheets
 import "./Academics.css";

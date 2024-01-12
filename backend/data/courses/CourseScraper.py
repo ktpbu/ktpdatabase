@@ -92,6 +92,7 @@ def get_data(course):
             else:
                 prereqs = ""
                 content = info[1]
+            content = content.split("  BU Hub   Learn More ")[0]
 
             # creates json formatted object for course
             obj = {

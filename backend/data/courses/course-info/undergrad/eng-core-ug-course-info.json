@@ -27,7 +27,7 @@
         "id": "EK122",
         "name": "Programming for Engineers",
         "prereqs": "",
-        "content": "Prereq: ENG EK 121. Continuation of ENG EK 121. Reinforces  programming concepts  using a modern computational environment, in order to solve  engineering  problems. Basic procedural programming concepts that are reinforced  include  input/output, selection, looping, functions, data structures (arrays,  strings,  structures). Introduction to object-oriented programming concepts and   terminology and event-driven programming. Applications include image processing,   data science, and machine learning. Emphasis on programming style, debugging,   top-down design and modular code. Effective Fall 2023, this course fulfills a   single unit in the following Creativity/Innovation.  BU Hub   Learn More  Creativity/Innovation",
+        "content": "Prereq: ENG EK 121. Continuation of ENG EK 121. Reinforces  programming concepts  using a modern computational environment, in order to solve  engineering  problems. Basic procedural programming concepts that are reinforced  include  input/output, selection, looping, functions, data structures (arrays,  strings,  structures). Introduction to object-oriented programming concepts and   terminology and event-driven programming. Applications include image processing,   data science, and machine learning. Emphasis on programming style, debugging,   top-down design and modular code. Effective Fall 2023, this course fulfills a   single unit in the following Creativity/Innovation.",
         "prof": [],
         "reviews": []
     },
@@ -43,7 +43,7 @@
         "id": "EK210",
         "name": "Introduction to Engineering Design",
         "prereqs": "Undergraduate Prerequisites: ENG EK 131; ENG EK 131 and Sophomore standing or consent of instructor.",
-        "content": "A two-credit introductory course to the principles of engineering design, intended to give second- year undergraduates a basic understanding of the process of taking a product from client explanation to design concept through product deployment. Students will work in teams with time and budget constraints on societally meaningful projects. Web-based lectures will cover topics concurrent with specific phases of the projects. The course will culminate in a \"Design Showcase.\" Restricted to ENG sophomores - others only by consent of  instructor. Effective Fall 2018, this course fulfills a single unit in the  following BU Hub area: Teamwork/Collaboration.  BU Hub   Learn More  Teamwork/Collaboration",
+        "content": "A two-credit introductory course to the principles of engineering design, intended to give second- year undergraduates a basic understanding of the process of taking a product from client explanation to design concept through product deployment. Students will work in teams with time and budget constraints on societally meaningful projects. Web-based lectures will cover topics concurrent with specific phases of the projects. The course will culminate in a \"Design Showcase.\" Restricted to ENG sophomores - others only by consent of  instructor. Effective Fall 2018, this course fulfills a single unit in the  following BU Hub area: Teamwork/Collaboration.",
         "prof": [],
         "reviews": []
     },
@@ -91,7 +91,7 @@
         "id": "EK381",
         "name": "Probability, Statistics, and Data Science for Engineers",
         "prereqs": "Undergraduate Prerequisites: ENG EK 103 and CAS MA 225.",
-        "content": "Provides a strong foundation in probability and an introduction to statistics    and  machine learning. Includes experience with translating engineering    problems into  probabilistic models, and working with these models analytically    and  algorithmically. Prepares students for upper-level electives that use    probabilistic  reasoning. Cannot be taken for credit in addition to ENG ME 366,  CAS MA 381  or CAS MA 581. Effective Fall 2018, this course fulfills a single   unit in each  of the following BU Hub areas:  Quantitative Reasoning II,   Critical Thinking.  BU Hub   Learn More  Quantitative Reasoning IICritical Thinking",
+        "content": "Provides a strong foundation in probability and an introduction to statistics    and  machine learning. Includes experience with translating engineering    problems into  probabilistic models, and working with these models analytically    and  algorithmically. Prepares students for upper-level electives that use    probabilistic  reasoning. Cannot be taken for credit in addition to ENG ME 366,  CAS MA 381  or CAS MA 581. Effective Fall 2018, this course fulfills a single   unit in each  of the following BU Hub areas:  Quantitative Reasoning II,   Critical Thinking.",
         "prof": [],
         "reviews": []
     },

@@ -4,19 +4,13 @@
     margin: auto;
 }
 
-.review-display-add-review-button {
-    margin: 1rem;
-    font-size: 1.25rem;
-    border: 1px solid black;
-    border-radius: 1rem;
-}
-
 .review-display-add-review-button:hover {
     border: 1px solid rgb(240, 218, 252);
 }
 
 .review-display-container {
-    height: 20rem;
+    height: fit-content;
+    max-height: 20rem;
     overflow-y: scroll;
     border: 1px solid black;
 }
