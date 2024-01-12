@@ -10,6 +10,13 @@ import engCoreCourses from "../data/courses/course-info/undergrad/eng-core-ug-co
 import mathCourses from "../data/courses/course-info/undergrad/mathematics-statistics-ug-course-info.json" assert { type: "json" };
 import mecheCourses from "../data/courses/course-info/undergrad/mechanical-eng-ug-course-info.json" assert { type: "json" };
 
+// subject professor imports
+import csProfessors from "../data/courses/professors/computer-science-professors.json" assert { type: "json" };
+import dsProfessors from "../data/courses/professors/data-science-professors.json" assert { type: "json" };
+import econProfessors from "../data/courses/professors/economics-professors.json" assert { type: "json" };
+import engProfessors from "../data/courses/professors/engineering-professors.json" assert { type: "json" };
+import mathProfessors from "../data/courses/professors/mathematics-statistics-professors.json" assert { type: "json" };
+
 // course dependency imports
 import csEdges from "../data/courses/dependencies/edges/computer-science-edges.json" assert { type: "json" };
 import csNodes from "../data/courses/dependencies/nodes/computer-science-nodes.json" assert { type: "json" };
@@ -24,30 +31,49 @@ import mathNodes from "../data/courses/dependencies/nodes/mathematics-statistics
 import { Review } from "../models/reviewModel.js";
 
 const subjectMap = {
-    "biomedical-eng": { "course-info": bmeCourses },
+    "biomedical-eng": { "course-info": bmeCourses, professors: engProfessors },
     "computer-science": {
         "course-info": csCourses,
         edges: csEdges,
         nodes: csNodes,
+        professors: csProfessors,
     },
     "data-science": {
         "course-info": dsCourses,
         edges: dsEdges,
         nodes: dsNodes,
+        professors: dsProfessors,
     },
     economics: {
         "course-info": econCourses,
         edges: econEdges,
         nodes: econNodes,
+        professors: econProfessors,
     },
-    "electrical-computer-eng": { "course-info": eceCourses },
-    "eng-core": { "course-info": engCoreCourses, edges: "", nodes: "" },
+    "electrical-computer-eng": {
+        "course-info": eceCourses,
+        edges: "",
+        nodes: "",
+        professors: engProfessors,
+    },
+    "eng-core": {
+        "course-info": engCoreCourses,
+        edges: "",
+        nodes: "",
+        professors: engProfessors,
+    },
     "mathematics-statistics": {
         "course-info": mathCourses,
         edges: mathEdges,
         nodes: mathNodes,
+        professors: mathProfessors,
     },
-    "mechanical-eng": { "course-info": mecheCourses },
+    "mechanical-eng": {
+        "course-info": mecheCourses,
+        edges: "",
+        nodes: "",
+        professors: engProfessors,
+    },
 };
 
 const router = express.Router();
@@ -61,6 +87,12 @@ router.get("/resources", async (req, res) => {
 router.get("/courses/undergrad/:subject", async (req, res) => {
     console.log(req);
     return res.json(subjectMap[req.params.subject]["course-info"]);
+});
+
+// get subject professor list
+router.get("/courses/:subject/professors", async (req, res) => {
+    console.log(req.params.subject);
+    return res.json(subjectMap[req.params.subject]["professors"]);
 });
 
 // get individual course info

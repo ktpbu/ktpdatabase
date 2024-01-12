@@ -36,7 +36,6 @@ const Course = () => {
         axios
             .get(`${backend}/academics/courses/undergrad/${subject}/${id}`)
             .then((res) => {
-                console.log(res);
                 setCourseInfo(res.data);
                 setLoading(false);
             })
@@ -48,7 +47,6 @@ const Course = () => {
         axios
             .get(`${backend}/academics/courses/reviews/${id}`)
             .then((res) => {
-                console.log(res.data);
                 setCourseReviews(res.data);
                 setLoading(false);
             })

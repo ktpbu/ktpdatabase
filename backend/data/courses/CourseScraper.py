@@ -127,10 +127,10 @@ def create_json(undergrad_course_data, grad_course_data, subject):
         json.dump(grad_course_data, f, indent=4, ensure_ascii=False)
 
 
-def main(subject):
+def scrape(subject):
     undergrad_course_data, grad_course_data = get_course_info(subject)
     create_json(undergrad_course_data, grad_course_data, subject)
 
-
-for subject in course_urls.keys():
-    main(subject)
+if __name__ == "__main__":
+    for subject in course_urls.keys():
+        scrape(subject)
