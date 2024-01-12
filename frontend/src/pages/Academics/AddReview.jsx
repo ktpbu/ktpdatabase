@@ -1,10 +1,8 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { Breadcrumb } from "react-bootstrap";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useSnackbar } from "notistack";
 import axios from "axios";
-
-import AddIcon from "@mui/icons-material/Add";
 
 import "./AddReview.css";
 import "./../page-content.css";
@@ -23,79 +21,36 @@ const AddReview = () => {
     const [rating, setRating] = useState("Choose");
     const [review, setReview] = useState("");
     const values = ["1", "2", "3", "4", "5"];
+    const [professors, setProfessors] = useState([]);
 
-    const professors = useMemo(
+    const subjectMap = useMemo(
         () => ({
-            ENGBE: [],
-            CASCS: [
-                "JONATHAN APPAVOO",
-                "MANOS ATHANASSOULIS",
-                "GARY BENSON",
-                "AZER BESTAVROS",
-                "MARGRIT BETKE",
-                "MARK BUN",
-                "JOHN BYERS",
-                "RAN CANETTI",
-                "ED CHIEN",
-                "SANG (“PETER”) CHIN",
-                "MARK CROVELLA",
-                "RONALD CZIK",
-                "ANKUSH DAS",
-                "TAYMAZ DAVOODI",
-                "PERRY DONHAM",
-                "IDDO DRORI",
-                "SHEREIF EL-SHEIKH",
-                "ALINA ENE",
-                "DORA ERDOS",
-                "MARCO GABOARDI",
-                "PETER GACS",
-                "LANCE GALLETTI",
-                "PETER B. GOLBUS",
-                "SHARON GOLDBERG",
-                "STEVE HOMER",
-                "TIAGO JANUARIO",
-                "VASILIKI KALAVRI",
-                "GABE KAPTCHUK",
-                "ASSAF KFOURY",
-                "GEORGE KOLLIOS",
-                "LEONID LEVIN",
-                "JOHN LIAGOURIS",
-                "ANDREA LINCOLN",
-                "RENATO MANCUSO",
-                "ABRAHAM MATTA",
-                "NATHAN MULL",
-                "PREETHI NARAYANAN",
-                "SABRINA NEUMAN",
-                "CHRISTINE PAPADAKIS-KANARIS",
-                "BRYAN PLUMMER",
-                "SOFYA RASKHODNIKOVA",
-                "LEONID REYZIN",
-                "KATE SAENKO",
-                "STAN SCLAROFF",
-                "ADAM SMITH",
-                "WAYNE SNYDER",
-                "AARON STEVENS",
-                "ALLEY STOUGHTON",
-                "DAVE SULLIVAN",
-                "EVIMARIA TERZI",
-                "ERAN TROMER",
-                "CHARALAMPOS TSOURAKAKIS",
-                "RICH WEST",
-                "EMILY WHITING",
-                "DERRY WIJAYA",
-                "ANDREW WOOD",
-                "HONGWEI XI",
-                "FAN YANG",
-            ],
-            CDSDS: [],
-            CASEC: [],
-            ENGEC: [],
-            ENGEK: [],
-            CASMA: [],
-            ENGME: [],
+            ENGBE: "biomedical-eng",
+            CASCS: "computer-science",
+            CDSDS: "data-science",
+            CASEC: "economics",
+            ENGEC: "electrical-computer-eng",
+            ENGEK: "eng-core",
+            CASMA: "mathematics-statistics",
+            ENGME: "mechanical-eng",
         }),
         []
     );
+    const subject = subjectMap[id.slice(0, 5)];
+
+    useEffect(() => {
+        setLoading(true);
+        axios
+            .get(`${backend}/academics/courses/${subject}/professors`)
+            .then((res) => {
+                setProfessors(res.data);
+                setLoading(false);
+            })
+            .catch((error) => {
+                console.log(error);
+                setLoading(false);
+            });
+    }, [subject]);
 
     const handleAddReview = () => {
         if (
@@ -119,7 +74,6 @@ const AddReview = () => {
             review,
             date: new Date().toISOString().replace("Z", "+00:00"),
         };
-        console.log(reviewObj);
         setLoading(true);
         axios
             .post(`${backend}/academics/courses/add-review`, reviewObj)
@@ -165,7 +119,7 @@ const AddReview = () => {
                             onChange={(e) => setProfessor(e.target.value)}
                         >
                             <option value={null}>Choose</option>
-                            {professors[id.slice(0, 5)].map((value) => (
+                            {professors.map((value) => (
                                 <option key={value} value={value}>
                                     {value}
                                 </option>
