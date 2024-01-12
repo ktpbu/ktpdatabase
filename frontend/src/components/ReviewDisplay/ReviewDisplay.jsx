@@ -38,9 +38,6 @@ const ReviewDisplay = ({ reviews }) => {
                             </div>
                         ))}
                     </div>
-                    <button className="review-display-add-review-button">
-                        Add Review
-                    </button>
                 </div>
             ) : null}
         </>

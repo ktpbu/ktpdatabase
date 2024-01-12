@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import { Breadcrumb } from "react-bootstrap";
@@ -30,7 +30,6 @@ const Course = () => {
         []
     );
 
-    // load information from backend using axios
     useEffect(() => {
         setLoading(true);
         const subject = subjectMap[id.slice(0, 5)];
@@ -59,6 +58,11 @@ const Course = () => {
             });
     }, [subjectMap, id]);
 
+    const navigate = useNavigate();
+    const handleAddReviewButton = () => {
+        navigate(`/academics/courses/${id}/add-review`);
+    };
+
     return (
         <div className="page-content">
             <Breadcrumb className="customBreadcrumb p-3">
@@ -83,6 +87,13 @@ const Course = () => {
             <p className="p-3 text-start mx-auto"> {courseInfo.content}</p>
 
             <ReviewDisplay reviews={courseReviews} />
+
+            <button
+                onClick={handleAddReviewButton}
+                className="course-add-review-button"
+            >
+                Add Review
+            </button>
         </div>
     );
 };

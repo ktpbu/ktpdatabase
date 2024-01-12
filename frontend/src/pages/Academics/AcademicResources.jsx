@@ -1,4 +1,4 @@
-import { Breadcrumb, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Breadcrumb } from "react-bootstrap";
 
 // style sheets
 import "./AcademicResources.css";

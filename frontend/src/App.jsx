@@ -3,14 +3,16 @@ import { SnackbarProvider } from "notistack";
 
 // layout and home
 import Layout from "./Layout";
-import Home from "./pages/home/Home";
+import Home from "./pages/Home/Home";
 
 // academic imports
-import Academics from "./pages/academics/Academics";
-import CourseList from "./pages/academics/CourseList";
+import AcademicResources from "./pages/Academics/AcademicResources";
+import Academics from "./pages/Academics/Academics";
+import AddReview from "./pages/Academics/AddReview";
 import Course from "./pages/academics/Course";
-import AcademicResources from "./pages/academics/AcademicResources";
-import Dependencies from "./pages/academics/Dependencies";
+import CourseList from "./pages/Academics/CourseList";
+import Dependencies from "./pages/Academics/Dependencies";
+import Graduate from "./pages/Academics/Graduate";
 
 // professional/calendar/error
 import Professional from "./pages/professional/Professional";
@@ -20,7 +22,6 @@ import Error from "./pages/error/Error";
 // main app
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Graduate from "./pages/academics/Graduate";
 
 // creates routings of app --> used for sending pages when requested
 const App = () => {
@@ -36,20 +37,24 @@ const App = () => {
                             element={<CourseList />}
                         />
                         <Route
+                            path="/academics/courses/:id"
+                            element={<Course />}
+                        />
+                        <Route
+                            path="/academics/courses/:id/add-review"
+                            element={<AddReview />}
+                        />
+                        <Route
+                            path="/academics/courses/dependencies/:subject"
+                            element={<Dependencies />}
+                        />
+                        <Route
                             path="/academics/resources"
                             element={<AcademicResources />}
                         />
                         <Route
                             path="/academics/graduate"
                             element={<Graduate />}
-                        />
-                        <Route
-                            path="/academics/courses/:id"
-                            element={<Course />}
-                        />
-                        <Route
-                            path="/academics/courses/dependencies/:subject"
-                            element={<Dependencies />}
                         />
                         <Route
                             path="/professional"
