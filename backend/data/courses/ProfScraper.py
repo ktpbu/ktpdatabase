@@ -39,7 +39,7 @@ def get_profs(subject):
         pages = [num for num in soup.find_all("a", {"class": "page-numbers button"})]
         last_page = int(pages[-1].text.strip())
 
-        # scrapes the courses on an individual page
+        # scrapes the professors on an individual page
         def fetch_prof_page(page_number):
             with session.get(f"{url[:-1]}{page_number}") as page:
                 soup = BeautifulSoup(page.html.raw_html, "html.parser")
