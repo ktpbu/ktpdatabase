@@ -148,7 +148,7 @@ const AddReview = () => {
                 <Breadcrumb.Item href="/academics/courses/">
                     Courses
                 </Breadcrumb.Item>
-                <Breadcrumb.Item href="/academics/courses/">
+                <Breadcrumb.Item href={`/academics/courses/${id}`}>
                     {id}
                 </Breadcrumb.Item>
                 <Breadcrumb.Item active>Add Review</Breadcrumb.Item>
