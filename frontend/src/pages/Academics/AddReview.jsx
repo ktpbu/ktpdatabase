@@ -4,6 +4,8 @@ import { useState, useMemo } from "react";
 import { useSnackbar } from "notistack";
 import axios from "axios";
 
+import AddIcon from "@mui/icons-material/Add";
+
 import "./AddReview.css";
 import "./../page-content.css";
 
@@ -159,7 +161,7 @@ const AddReview = () => {
             <div className="add-review-field-container">
                 <div className="add-review-individual-field-container">
                     <div className="add-review-field-label">
-                        <label>Professor</label>
+                        <label>Professor*</label>
                     </div>
                     <div className="add-review-field">
                         <select
@@ -178,7 +180,7 @@ const AddReview = () => {
                 </div>
                 <div className="add-review-individual-field-container">
                     <div className="add-review-field-label">
-                        <label>Usefulness</label>
+                        <label>Usefulness*</label>
                     </div>
                     <div className="add-review-field">
                         <select
@@ -197,7 +199,7 @@ const AddReview = () => {
                 </div>
                 <div className="add-review-individual-field-container">
                     <div className="add-review-field-label">
-                        <label>Difficulty</label>
+                        <label>Difficulty*</label>
                     </div>
                     <div className="add-review-field">
                         <select
@@ -216,7 +218,7 @@ const AddReview = () => {
                 </div>
                 <div className="add-review-individual-field-container">
                     <div className="add-review-field-label">
-                        <label>Rating</label>
+                        <label>Rating*</label>
                     </div>
                     <div className="add-review-field">
                         <select
@@ -246,12 +248,10 @@ const AddReview = () => {
                         />
                     </div>
                 </div>
-                <button
-                    className="add-review-add-button"
-                    onClick={handleAddReview}
-                >
-                    Add
-                </button>
+                <button onClick={handleAddReview}>Add</button>
+                <p className="add-review-required-field-warning">
+                    Fields marked with * are required
+                </p>
             </div>
         </div>
     );
