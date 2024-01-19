@@ -3,7 +3,8 @@ import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import { Breadcrumb } from "react-bootstrap";
 
-// style sheets
+import DependencyMap from "../../components/DependencyMap/DependencyMap";
+
 import "./CourseList.css";
 import "./../page-content.css";
 
@@ -20,23 +21,6 @@ const CourseIcon = (prop) => {
         >
             {id}
         </Link>
-    );
-};
-
-const DependencyMap = (prop) => {
-    const { subject } = prop;
-    const subjectMap = {
-        "computer-science": "Computer Science",
-        "data-science": "Data Science",
-        economics: "Economics",
-        "mathematics-statistics": "Mathematics & Statistics",
-    };
-    return (
-        <div className="text-start p-3">
-            <Link to={"/academics/courses/dependencies/" + subject}>
-                {subjectMap[subject]} Dependency Map
-            </Link>
-        </div>
     );
 };
 
