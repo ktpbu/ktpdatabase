@@ -23,6 +23,8 @@ When developing, just save the file you have just changed and the webpage will a
 ### Guide to Contributing
 There are a couple of basic rules or guidelines that will make this collaborative project much easier for everyone. Generally, ensure all new work is done **in a branch labeled with your name**. This will help us keep track of who is doing what, and separating the main branch (that is public facing) from any additions that might not be completely functional. In most cases, check with the team before merging into the main branch. Feel free to add to this guide as new rules are made.
 
+Ideally, try to create one commit per feature or bug fix. Additionally, create and resolve a pull request for each commit created to maintain a clean and efficient timeline. 
+
 #### Important Concepts
 - **App.jsx**: this file defines the template of a page. As can be seen by this file, each page has 3 parts: the Header, the Outlet, and the Footer. The Outlet part will be replaced by a Page when each page is requested. For example, if we go to the Academics page, then the `Academics.jsx` file defines what content is filled in at Outlet
 - **Component**: a piece of reused code (footer, header) that can be reused across pages. 
