@@ -270,8 +270,7 @@ const CourseList = () => {
                     />
                 ))}
             </div>
-            <div className="bottom-course d-flex flex-row justify-content-between p-3">
-                <DependencyMap subject="economics" />
+            <div className="bottom-course d-flex flex-row justify-content-end p-3">
                 <p className="text-start p-3">
                     {" "}
                     <a
