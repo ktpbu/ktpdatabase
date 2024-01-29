@@ -35,17 +35,21 @@ The steps to set up your workflow are detailed in the file named `Git Workflow` 
 2. Each new page (React .jsx file in the `pages` subdirectory) needs to return a `div` element that is the main content of that page to be rendered. It is necessary for formatting that each page needs that div to have `className='page-content'`, and that `.jsx` file needs to import the following stylesheet: `import "./../page-content.css`.
 
 #### How to Run the Project Locally
-For testing and development, it will be necessary to run this locally. First, make sure you have `Node.js` and `npm` installed. Then, follow the steps in the document called `Git Workflow`, located in the shared `App Committee` folder in Google Drive. Once you've done this, open the project locally in the code editor and do as follows:
-1. Navigate to the `frontend` folder.
-2. Run `npm i`, which installs all packages needed by the frontend.
-3. Navigate to the `backend` folder.
-4. Run `npm i` again to install all backend packages.
-5. Set up the `.env` files in both the frontend and the backend. In the shared Google Drive folder called `App Committee`, navigate to the folder called `KTP Database` and look at the document called `.env files` to set them up.
-6. Still in the `backend` folder, run `npm run dev` which starts up the backend server on localhost:3000 (this is what we have it set to rn).
-7. Now, the backend server is visible if you go to Chrome and go to `http://localhost:3000/`.
-8. Open another terminal.
-7. Navigate back to the `frontend` folder, and run `npm run dev` again in this folder, which will start the frontend server at `http://localhost:5173/`.
-8. Both servers need to be up and running to get full functionality.
+1. Make sure that you have `Git`, the `GitHub SSH key`, `Node.js`, and `npm` installed on your local machine.
+2. `Fork` this repository to your personal GitHub account.
+4. On your forked repository, click `Code` and copy the `SSH URL`.
+5. Navigate to the directory on your local machine where you want to have the project code.
+6. Run `git clone <SSH URL>`, where `<SSH URL>` is the URL you copied in step 4.
+7. Navigate to the `frontend` folder.
+8. Run `npm i`, which installs all packages needed by the frontend.
+9. Navigate to the `backend` folder.
+10. Run `npm i` again to install all backend packages.
+11. Set up the `.env` files in both the frontend and the backend. In the shared Google Drive folder called `App Committee`, navigate to the folder called `KTP Database` and look at the document called `.env files` to set them up.
+12. Still in the `backend` folder, run `npm run dev` which starts up the backend server on localhost:3000 (this is what we have it set to rn).
+13. Now, the backend server is visible if you go to Chrome and go to `http://localhost:3000/`.
+14. Open another terminal window.
+7. Navigate to the `frontend` folder and run `npm run dev` again in this folder, which will start the frontend server at `http://localhost:5173/`.
+8. Both servers need to be up and running to get full functionality. Once both are up, go to your desired web browser and visit `http://localhost:5173/` to interact with the website.
 
 #### Making a Request to the Backend
 Here is an example of how to implement a request to the backend in a file:
