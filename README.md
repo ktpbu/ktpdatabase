@@ -39,16 +39,14 @@ The steps to set up your workflow are detailed in the file named `Git Workflow` 
 2. `Fork` this repository to your personal GitHub account.
 4. On your forked repository, click `Code` and copy the `SSH URL`.
 5. Navigate to the directory on your local machine where you want to have the project code.
-6. Run `git clone <SSH URL>`, where `<SSH URL>` is the URL you copied in step 4.
+6. Run `git clone <SSH URL>`, where `<SSH URL>` is the URL you copied in step 3.
 7. Navigate to the `frontend` folder.
 8. Run `npm i`, which installs all packages needed by the frontend.
 9. Navigate to the `backend` folder.
 10. Run `npm i` again to install all backend packages.
-11. Set up the `.env` files in both the frontend and the backend. In the shared Google Drive folder called `App Committee`, navigate to the folder called `KTP Database` and look at the document called `.env files` to set them up.
-12. Still in the `backend` folder, run `npm run dev` which starts up the backend server on localhost:3000 (this is what we have it set to rn).
-13. Now, the backend server is visible if you go to Chrome and go to `http://localhost:3000/`.
-14. Open another terminal window.
-7. Navigate to the `frontend` folder and run `npm run dev` again in this folder, which will start the frontend server at `http://localhost:5173/`.
+11. Set up the `.env` files in both the frontend and the backend. In the shared Google Drive folder ([App Committee](https://drive.google.com/drive/u/1/folders/1bkA2QZQkNpFGQj8MW2tyx1N7N_cq5KCB)), navigate to the folder called `ktpdatabase` and look at the document called `.env files` to set them up. If you need access to the folder, contact Victor or Carol.
+12. Still in the `backend` folder, run `npm run dev` which starts up the backend server on `http://localhost:3000` (the configured default).
+14. Open another terminal window, navigate to the `frontend` folder, and run `npm run dev` again, which starts the frontend server at `http://localhost:5173/`.
 8. Both servers need to be up and running to get full functionality. Once both are up, go to your desired web browser and visit `http://localhost:5173/` to interact with the website.
 
 #### Making a Request to the Backend
