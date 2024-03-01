@@ -1,14 +1,24 @@
 import express from "express";
 
-// course information imports
-import bmeCourses from "../data/courses/course-info/undergrad/biomedical-eng-ug-course-info.json" assert { type: "json" };
-import csCourses from "../data/courses/course-info/undergrad/computer-science-ug-course-info.json" assert { type: "json" };
-import dsCourses from "../data/courses/course-info/undergrad/data-science-ug-course-info.json" assert { type: "json" };
-import econCourses from "../data/courses/course-info/undergrad/economics-ug-course-info.json" assert { type: "json" };
-import eceCourses from "../data/courses/course-info/undergrad/electrical-computer-eng-ug-course-info.json" assert { type: "json" };
-import engCoreCourses from "../data/courses/course-info/undergrad/eng-core-ug-course-info.json" assert { type: "json" };
-import mathCourses from "../data/courses/course-info/undergrad/mathematics-statistics-ug-course-info.json" assert { type: "json" };
-import mecheCourses from "../data/courses/course-info/undergrad/mechanical-eng-ug-course-info.json" assert { type: "json" };
+// undergraduate course information imports
+import bmeCoursesUG from "../data/courses/course-info/undergrad/biomedical-eng-ug-course-info.json" assert { type: "json" };
+import csCoursesUG from "../data/courses/course-info/undergrad/computer-science-ug-course-info.json" assert { type: "json" };
+import dsCoursesUG from "../data/courses/course-info/undergrad/data-science-ug-course-info.json" assert { type: "json" };
+import econCoursesUG from "../data/courses/course-info/undergrad/economics-ug-course-info.json" assert { type: "json" };
+import eceCoursesUG from "../data/courses/course-info/undergrad/electrical-computer-eng-ug-course-info.json" assert { type: "json" };
+import engCoreCoursesUG from "../data/courses/course-info/undergrad/eng-core-ug-course-info.json" assert { type: "json" };
+import mathCoursesUG from "../data/courses/course-info/undergrad/mathematics-statistics-ug-course-info.json" assert { type: "json" };
+import mecheCoursesUG from "../data/courses/course-info/undergrad/mechanical-eng-ug-course-info.json" assert { type: "json" };
+
+// graduate course information imports
+import bmeCoursesG from "../data/courses/course-info/grad/biomedical-eng-g-course-info.json" assert { type: "json" };
+import csCoursesG from "../data/courses/course-info/grad/computer-science-g-course-info.json" assert { type: "json" };
+import dsCoursesG from "../data/courses/course-info/grad/data-science-g-course-info.json" assert { type: "json" };
+import econCoursesG from "../data/courses/course-info/grad/economics-g-course-info.json" assert { type: "json" };
+import eceCoursesG from "../data/courses/course-info/grad/electrical-computer-eng-g-course-info.json" assert { type: "json" };
+import engCoreCoursesG from "../data/courses/course-info/grad/eng-core-g-course-info.json" assert { type: "json" };
+import mathCoursesG from "../data/courses/course-info/grad/mathematics-statistics-g-course-info.json" assert { type: "json" };
+import mecheCoursesG from "../data/courses/course-info/grad/mechanical-eng-g-course-info.json" assert { type: "json" };
 
 // subject professor imports
 import csProfessors from "../data/courses/professors/computer-science-professors.json" assert { type: "json" };
@@ -31,45 +41,58 @@ import mathNodes from "../data/courses/dependencies/nodes/mathematics-statistics
 import { Review } from "../models/reviewModel.js";
 
 const subjectMap = {
-    "biomedical-eng": { "course-info": bmeCourses, professors: engProfessors },
+    "biomedical-eng": {
+        "course-info-ug": bmeCoursesUG,
+        "course-info-g": bmeCoursesG,
+        edges: "",
+        nodes: "",
+        professors: engProfessors,
+    },
     "computer-science": {
-        "course-info": csCourses,
+        "course-info-ug": csCoursesUG,
+        "course-info-g": csCoursesG,
         edges: csEdges,
         nodes: csNodes,
         professors: csProfessors,
     },
     "data-science": {
-        "course-info": dsCourses,
+        "course-info-ug": dsCoursesUG,
+        "course-info-g": dsCoursesG,
         edges: dsEdges,
         nodes: dsNodes,
         professors: dsProfessors,
     },
     economics: {
-        "course-info": econCourses,
+        "course-info-ug": econCoursesUG,
+        "course-info-g": econCoursesG,
         edges: econEdges,
         nodes: econNodes,
         professors: econProfessors,
     },
     "electrical-computer-eng": {
-        "course-info": eceCourses,
+        "course-info-ug": eceCoursesUG,
+        "course-info-g": eceCoursesG,
         edges: "",
         nodes: "",
         professors: engProfessors,
     },
     "eng-core": {
-        "course-info": engCoreCourses,
+        "course-info-ug": engCoreCoursesUG,
+        "course-info-g": engCoreCoursesG,
         edges: "",
         nodes: "",
         professors: engProfessors,
     },
     "mathematics-statistics": {
-        "course-info": mathCourses,
+        "course-info-ug": mathCoursesUG,
+        "course-info-g": mathCoursesG,
         edges: mathEdges,
         nodes: mathNodes,
         professors: mathProfessors,
     },
     "mechanical-eng": {
-        "course-info": mecheCourses,
+        "course-info-ug": mecheCoursesUG,
+        "course-info-g": mecheCoursesG,
         edges: "",
         nodes: "",
         professors: engProfessors,
@@ -84,23 +107,33 @@ router.get("/resources", async (req, res) => {
 });
 
 // get subject course list
-router.get("/courses/undergrad/:subject", async (req, res) => {
+router.get("/courses/:type/:subject", async (req, res) => {
     console.log(req);
-    return res.json(subjectMap[req.params.subject]["course-info"]);
+    if (req.params.type === "undergrad") {
+        return res.json(subjectMap[req.params.subject]["course-info-ug"]);
+    } else if (req.params.type === "grad") {
+        return res.json(subjectMap[req.params.subject]["course-info-g"]);
+    }
 });
 
 // get subject professor list
 router.get("/courses/:subject/professors", async (req, res) => {
-    console.log(req.params.subject);
+    console.log(req);
     return res.json(subjectMap[req.params.subject]["professors"]);
 });
 
 // get individual course info
-router.get("/courses/undergrad/:subject/:id", async (req, res) => {
+router.get("/courses/:type/:subject/:id", async (req, res) => {
     console.log(req);
-    return res.json(
-        subjectMap[req.params.subject]["course-info"][req.params.id]
-    );
+    if (req.params.type === "undergrad") {
+        return res.json(
+            subjectMap[req.params.subject]["course-info-ug"][req.params.id]
+        );
+    } else if (req.params.type === "grad") {
+        return res.json(
+            subjectMap[req.params.subject]["course-info-g"][req.params.id]
+        );
+    }
 });
 
 // get individual course reviews
