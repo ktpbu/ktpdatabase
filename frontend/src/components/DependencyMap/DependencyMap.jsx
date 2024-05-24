@@ -1,6 +1,8 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const DependencyMap = ({ subject }) => {
+    console.log(subject);
     const subjectMap = {
         "computer-science": "Computer Science",
         "data-science": "Data Science",
@@ -17,7 +19,7 @@ const DependencyMap = ({ subject }) => {
 };
 
 DependencyMap.propTypes = {
-    subject: String,
+    subject: PropTypes.string.isRequired,
 };
 
 export default DependencyMap;

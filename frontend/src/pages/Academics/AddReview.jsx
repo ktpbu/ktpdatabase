@@ -10,7 +10,6 @@ import "./../page-content.css";
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const AddReview = () => {
-    const [loading, setLoading] = useState(false);
     const { enqueueSnackbar } = useSnackbar();
     const navigate = useNavigate();
     const user = "test";
@@ -39,16 +38,15 @@ const AddReview = () => {
     const subject = subjectMap[id.slice(0, 5)];
 
     useEffect(() => {
-        setLoading(true);
         axios
-            .get(`${backend}/academics/courses/${subject}/professors`)
+            .post(`${backend}/academics/courses/professors`, {
+                subject: subject,
+            })
             .then((res) => {
                 setProfessors(res.data);
-                setLoading(false);
             })
             .catch((error) => {
                 console.log(error);
-                setLoading(false);
             });
     }, [subject]);
 
@@ -74,18 +72,16 @@ const AddReview = () => {
             review,
             date: new Date().toISOString().replace("Z", "+00:00"),
         };
-        setLoading(true);
+
         axios
             .post(`${backend}/academics/courses/add-review`, reviewObj)
             .then(() => {
-                setLoading(false);
                 enqueueSnackbar("Added review successfully", {
                     variant: "success",
                 });
                 navigate(`/academics/courses/${id}`);
             })
             .catch((error) => {
-                setLoading(false);
                 enqueueSnackbar("Error", { variant: "error" });
                 console.log(error);
             });

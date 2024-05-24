@@ -28,27 +28,15 @@ const Dependencies = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get(`${backend}/academics/courses/dependencies/nodes/${subject}`)
-
+            .post(`${backend}/academics/courses/dependencies`, {
+                subject: subject,
+            })
             .then((res) => {
                 console.log(res.data);
-                setNodes(Array.from(res.data));
+                setNodes(res.data.nodes);
+                setEdges(res.data.edges);
                 setLoading(false);
             })
-
-            .catch((error) => {
-                console.log(error);
-                setLoading(false);
-            });
-        axios
-            .get(`${backend}/academics/courses/dependencies/edges/${subject}`)
-
-            .then((res) => {
-                console.log(res.data);
-                setEdges(Array.from(res.data));
-                setLoading(false);
-            })
-
             .catch((error) => {
                 console.log(error);
                 setLoading(false);
@@ -71,7 +59,7 @@ const Dependencies = () => {
                 </Breadcrumb.Item>
             </Breadcrumb>
 
-            {nodes !== null && edges !== null ? (
+            {!loading && nodes !== null && edges !== null ? (
                 <ReactFlowProvider>
                     <div
                         className="reactflow-container"

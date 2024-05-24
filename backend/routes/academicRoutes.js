@@ -106,7 +106,7 @@ router.get("/resources", async (req, res) => {
     return res.status(234).send("Resources for Academics at BU backend");
 });
 
-// get subject course list
+// gets subject course list
 router.get("/courses/:type/:subject", async (req, res) => {
     console.log(req);
     if (req.params.type === "undergrad") {
@@ -116,13 +116,13 @@ router.get("/courses/:type/:subject", async (req, res) => {
     }
 });
 
-// get subject professor list
-router.get("/courses/:subject/professors", async (req, res) => {
-    console.log(req);
-    return res.json(subjectMap[req.params.subject]["professors"]);
+// gets subject professor list
+router.post("/courses/professors", async (req, res) => {
+    console.log(req.body);
+    return res.json(subjectMap[req.body.subject]["professors"]);
 });
 
-// get individual course info
+// gets individual course info
 router.get("/courses/:type/:subject/:id", async (req, res) => {
     console.log(req);
     if (req.params.type === "undergrad") {
@@ -136,7 +136,7 @@ router.get("/courses/:type/:subject/:id", async (req, res) => {
     }
 });
 
-// get individual course reviews
+// gets individual course reviews
 router.get("/courses/reviews/:id", async (req, res) => {
     console.log(req);
     try {
@@ -154,7 +154,7 @@ router.get("/courses/reviews/:id", async (req, res) => {
     }
 });
 
-// add indvidual course reviews
+// adds individual course reviews
 router.post("/courses/add-review", async (req, res) => {
     console.log(req.body);
     try {
@@ -177,16 +177,14 @@ router.post("/courses/add-review", async (req, res) => {
     }
 });
 
-// get dependency map nodes
-router.get("/courses/dependencies/nodes/:subject", async (req, res) => {
-    console.log(req);
-    return res.json(subjectMap[req.params.subject]["nodes"]);
-});
-
-// get dependency map edges
-router.get("/courses/dependencies/edges/:subject", async (req, res) => {
-    console.log(req);
-    return res.json(subjectMap[req.params.subject]["edges"]);
+// gets dependency map edges and nodes
+router.post("/courses/dependencies", async (req, res) => {
+    console.log(req.body);
+    const subject = req.body.subject;
+    return res.json({
+        nodes: subjectMap[subject]["nodes"],
+        edges: subjectMap[subject]["edges"],
+    });
 });
 
 export default router;

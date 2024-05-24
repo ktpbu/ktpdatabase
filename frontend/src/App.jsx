@@ -9,15 +9,15 @@ import Home from "./pages/Home/Home";
 import AcademicResources from "./pages/Academics/AcademicResources";
 import Academics from "./pages/Academics/Academics";
 import AddReview from "./pages/Academics/AddReview";
-import Course from "./pages/academics/Course";
+import Course from "./pages/Academics/Course";
 import CourseList from "./pages/Academics/CourseList";
 import Dependencies from "./pages/Academics/Dependencies";
 import Graduate from "./pages/Academics/Graduate";
 
 // professional/calendar/error
-import Professional from "./pages/professional/Professional";
-import Calendar from "./pages/calendar/Calendar";
-import Error from "./pages/error/Error";
+import Professional from "./pages/Professional/Professional";
+import Calendar from "./pages/Calendar/Calendar";
+import Error from "./pages/Error/Error";
 
 // main app
 import "./App.css";
