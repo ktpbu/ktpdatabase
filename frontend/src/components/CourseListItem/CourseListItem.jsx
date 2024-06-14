@@ -10,7 +10,7 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 const CourseIcon = ({ id, name, college }) => {
     return (
         <Link
-            className="icon"
+            className="w-20 mb-2.5 mx-2.5 py-1.5 text-black border-solid border-2 rounded-2xl hover:border-black duration-100 hover:scale-110 "
             title={name}
             to={`/academics/courses/${college}${id}`}
         >
@@ -45,8 +45,8 @@ const CourseListItem = ({ info }) => {
 
     return (
         <div>
-            <h4 className="text-start p-3">{info.name}</h4>
-            <div className="d-flex flex-row flex-wrap courseiconlist justify-content-evenly p-3">
+            <h4 className="p-3 text-start">{info.name}</h4>
+            <div className="p-3 flex flex-row flex-wrap justify-content-evenly">
                 {Object.keys(courses).map((courseKey, index) => (
                     <CourseIcon
                         key={index}
@@ -56,35 +56,20 @@ const CourseListItem = ({ info }) => {
                     />
                 ))}
             </div>
-            {info.map ? (
-                <div className="bottom-course d-flex flex-row justify-content-between p-3">
-                    <DependencyMap subject={info.subject} />
+            <div className="bottom-course d-flex flex-row justify-content-between p-3">
+                {info.map && <DependencyMap subject={info.subject} />}
 
-                    <p className="text-start p-3">
-                        {" "}
-                        <a
-                            href="https://www.bu.edu/academics/cas/courses/computer-science/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Complete List
-                        </a>{" "}
-                    </p>
-                </div>
-            ) : (
-                <div className="bottom-course d-flex flex-row justify-content-end p-3">
-                    <p className="text-start p-3">
-                        {" "}
-                        <a
-                            href="https://www.bu.edu/academics/cas/courses/computer-science/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Complete List
-                        </a>{" "}
-                    </p>
-                </div>
-            )}
+                <p className="text-start p-3">
+                    {" "}
+                    <a
+                        href="https://www.bu.edu/academics/cas/courses/computer-science/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Complete List
+                    </a>{" "}
+                </p>
+            </div>
             <hr className="p-3"></hr>
         </div>
     );
