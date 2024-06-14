@@ -5,7 +5,6 @@ import { useSnackbar } from "notistack";
 import axios from "axios";
 
 import "./AddReview.css";
-import "./../page-content.css";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
@@ -88,7 +87,7 @@ const AddReview = () => {
     };
 
     return (
-        <div className="page-content">
+        <div className="w-3/4 mx-auto py-20">
             <Breadcrumb className="customBreadcrumb p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>

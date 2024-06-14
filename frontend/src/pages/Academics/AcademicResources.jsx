@@ -2,11 +2,10 @@ import { Breadcrumb } from "react-bootstrap";
 
 // style sheets
 import "./AcademicResources.css";
-import "./../page-content.css";
 
 const AcademicResources = () => {
     return (
-        <div className="page-content">
+        <div className="w-3/4 mx-auto py-20">
             <h2 className="p-3 text-start">Resource List</h2>
 
             <Breadcrumb className="p-3">

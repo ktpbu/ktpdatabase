@@ -5,9 +5,6 @@ import { Breadcrumb } from "react-bootstrap";
 
 import ReviewDisplay from "../../components/ReviewDisplay/ReviewDisplay";
 
-import "./Course.css";
-import "./../page-content.css";
-
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Course = () => {
@@ -62,7 +59,7 @@ const Course = () => {
     };
 
     return (
-        <div className="page-content">
+        <div className="w-3/4 mx-auto py-20">
             <Breadcrumb className="customBreadcrumb p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
@@ -88,7 +85,7 @@ const Course = () => {
 
             <button
                 onClick={handleAddReviewButton}
-                className="course-add-review-button"
+                className="m-4 p-2 text-xl border-2 border-solid border-black rounded-3xl"
             >
                 Add Review
             </button>
