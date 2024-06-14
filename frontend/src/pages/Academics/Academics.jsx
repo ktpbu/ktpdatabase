@@ -1,17 +1,34 @@
 import { Link } from "react-router-dom";
 import { Card, Breadcrumb } from "react-bootstrap";
 
-// style sheets
-import "./Academics.css";
-import "./../page-content.css";
-
 import undergrad from "./../../assets/undergrad.png";
 import grad from "./../../assets/grad.png";
 import resources from "./../../assets/resources.png";
 
+const academicOptions = [
+    {
+        link: "/academics/courses/",
+        image: undergrad,
+        header: "Courses",
+        text: "Information, Ratings, and Planning advice on STEM courses at BU",
+    },
+    {
+        link: "/academics/resources/",
+        image: resources,
+        header: "Resources",
+        text: "Links and Guides on course-planning at BU",
+    },
+    {
+        link: "/academics/graduate/",
+        image: grad,
+        header: "Graduate",
+        text: "Information and Courses at Graduate level",
+    },
+];
+
 const Academics = () => {
     return (
-        <div className="page-content mx-auto w-75">
+        <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Academics</h2>
 
             <Breadcrumb className="p-3">
@@ -19,49 +36,29 @@ const Academics = () => {
                 <Breadcrumb.Item active>Academics</Breadcrumb.Item>
             </Breadcrumb>
 
-            <div className="d-flex flex-wrap justify-content-center cardList">
-                <Link to="/academics/courses/" className="customLink">
-                    <Card className="border-secondary customCard">
-                        <Card.Header className="customCardText">
-                            <img className="acad-icon" src={undergrad} />
-                            <b>Courses</b>
-                        </Card.Header>
-                        <Card.Body>
-                            <Card.Text className="customCardText customBodyText">
-                                Information, Ratings, and Planning advice on
-                                STEM courses at BU
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Link>
-
-                <Link to="/academics/resources/" className="customLink">
-                    <Card className="border-secondary customCard">
-                        <Card.Header className="customCardText">
-                            <img className="acad-icon" src={resources} />
-                            <b>Resources</b>
-                        </Card.Header>
-                        <Card.Body>
-                            <Card.Text className="customCardText customBodyText">
-                                Links and Guides on course-planning at BU
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Link>
-
-                <Link to="/academics/graduate/" className="customLink">
-                    <Card className="border-secondary customCard">
-                        <Card.Header className="customCardText">
-                            <img className="acad-icon" src={grad} />
-                            <b>Graduate</b>
-                        </Card.Header>
-                        <Card.Body>
-                            <Card.Text className="customCardText customBodyText">
-                                Information and Courses at Graduate level.
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Link>
+            <div className="mx-auto mb-20 flex flex-wrap justify-center">
+                {academicOptions.map((option) => (
+                    <Link
+                        key={option.header}
+                        to={option.link}
+                        className="m-4 no-underline"
+                    >
+                        <Card className="w-96 flex flex-col text-start text-lg duration-200 hover:bg-purple-200 hover:scale-105">
+                            <Card.Header>
+                                <img
+                                    className="w-auto h-8 mr-2.5"
+                                    src={option.image}
+                                />
+                                <b>{option.header}</b>
+                            </Card.Header>
+                            <Card.Body className="h-32">
+                                <Card.Text className="text-sm text-gray-500">
+                                    {option.text}
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Link>
+                ))}
             </div>
         </div>
     );

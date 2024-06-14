@@ -3,9 +3,6 @@ import { Breadcrumb } from "react-bootstrap";
 
 import CourseListItem from "../../components/CourseListItem/CourseListItem";
 
-import "./CourseList.css";
-import "./../page-content.css";
-
 const subjectInfo = {
     "biomedical-eng-ug": {
         college: "ENG",
@@ -147,9 +144,9 @@ const subjectInfo = {
 
 const CourseList = () => {
     return (
-        <div className="page-content">
+        <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Courses</h2>
-            <Breadcrumb className="p-3 customBreadcrumb">
+            <Breadcrumb className="p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
                 <Breadcrumb.Item active>Courses</Breadcrumb.Item>

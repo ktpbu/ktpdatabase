@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 import "reactflow/dist/style.css";
-import "./Dependencies.css";
-import "./../page-content.css";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
@@ -43,7 +41,7 @@ const Dependencies = () => {
             });
     }, [subject]);
     return (
-        <div className="page-content">
+        <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">
                 {subjectMap[subject]["title"]} Dependency Map
             </h2>
@@ -62,7 +60,7 @@ const Dependencies = () => {
             {!loading && nodes !== null && edges !== null ? (
                 <ReactFlowProvider>
                     <div
-                        className="reactflow-container"
+                        className="border-2 border-solid border-black"
                         style={{ height: subjectMap[subject]["height"] }}
                     >
                         <ReactFlow

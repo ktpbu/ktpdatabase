@@ -2,7 +2,7 @@ import { Breadcrumb } from "react-bootstrap";
 
 const Graduate = () => {
     return (
-        <div className="page-content">
+        <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Graduate</h2>
 
             <Breadcrumb className="p-3">
