@@ -5,27 +5,28 @@ import undergrad from "./../../assets/undergrad.png";
 import grad from "./../../assets/grad.png";
 import resources from "./../../assets/resources.png";
 
+const academicOptions = [
+    {
+        link: "/academics/courses/",
+        image: undergrad,
+        header: "Courses",
+        text: "Information, Ratings, and Planning advice on STEM courses at BU",
+    },
+    {
+        link: "/academics/resources/",
+        image: resources,
+        header: "Resources",
+        text: "Links and Guides on course-planning at BU",
+    },
+    {
+        link: "/academics/graduate/",
+        image: grad,
+        header: "Graduate",
+        text: "Information and Courses at Graduate level",
+    },
+];
+
 const Academics = () => {
-    const academicOptions = [
-        {
-            link: "/academics/courses/",
-            image: undergrad,
-            header: "Courses",
-            text: "Information, Ratings, and Planning advice on STEM courses at BU",
-        },
-        {
-            link: "/academics/resources/",
-            image: resources,
-            header: "Resources",
-            text: "Links and Guides on course-planning at BU",
-        },
-        {
-            link: "/academics/graduate/",
-            image: grad,
-            header: "Graduate",
-            text: "Information and Courses at Graduate level",
-        },
-    ];
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Academics</h2>
