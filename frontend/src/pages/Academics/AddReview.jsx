@@ -34,24 +34,28 @@ const AddReview = () => {
             options: professors,
             value: professor,
             update: setProfessor,
+            searchable: true,
         },
         {
             label: "Usefulness*",
             options: values,
             value: usefulness,
             update: setUsefulness,
+            searchable: false,
         },
         {
             label: "Difficulty*",
             options: values,
             value: difficulty,
             update: setDifficulty,
+            searchable: false,
         },
         {
             label: "Rating*",
             options: values,
             value: rating,
             update: setRating,
+            searchable: false,
         },
     ];
 
@@ -121,25 +125,21 @@ const AddReview = () => {
                 review,
                 date: new Date().toISOString().replace("Z", "+00:00"),
             };
-            console.log(reviewObj);
-            enqueueSnackbar("Added review successfully", {
-                variant: "success",
-            });
-            resetReview();
-            navigate(`/academics/courses/${level}/${id}`);
+            axios
+                .post(`${backend}/academics/courses/add-review`, reviewObj)
+                .then(() => {
+                    console.log(reviewObj);
+                    enqueueSnackbar("Added review successfully", {
+                        variant: "success",
+                    });
+                    resetReview();
+                    navigate(`/academics/courses/${level}/${id}`);
+                })
+                .catch((error) => {
+                    enqueueSnackbar("Error", { variant: "error" });
+                    console.log(error);
+                });
         }
-        // axios
-        //     .post(`${backend}/academics/courses/add-review`, reviewObj)
-        //     .then(() => {
-        //         enqueueSnackbar("Added review successfully", {
-        //             variant: "success",
-        //         });
-        //         navigate(`/academics/courses/${level}${id}`);
-        //     })
-        //     .catch((error) => {
-        //         enqueueSnackbar("Error", { variant: "error" });
-        //         console.log(error);
-        //     });
     };
 
     return (
@@ -177,7 +177,7 @@ const AddReview = () => {
                         onChange={(selectedOption) =>
                             selectedOption && item.update(selectedOption)
                         }
-                        isSearchable={false}
+                        isSearchable={item.searchable}
                     />
                 </div>
             ))}

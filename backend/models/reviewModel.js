@@ -6,7 +6,11 @@ const reviewSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        class: {
+        anon: {
+            type: Boolean,
+            required: true,
+        },
+        courseID: {
             type: String,
             required: true,
         },
@@ -37,6 +41,8 @@ const reviewSchema = mongoose.Schema(
     },
     { versionKey: false }
 );
+
+reviewSchema.index({ id: 1 });
 
 export const Review = mongoose.model(
     "review entry",
