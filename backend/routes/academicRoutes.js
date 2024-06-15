@@ -107,11 +107,11 @@ router.get("/resources", async (req, res) => {
 });
 
 // gets subject course list
-router.get("/courses/:type/:subject", async (req, res) => {
+router.get("/courses/:level/:subject", async (req, res) => {
     console.log(req);
-    if (req.params.type === "undergrad") {
+    if (req.params.level === "undergrad") {
         return res.json(subjectMap[req.params.subject]["course-info-ug"]);
-    } else if (req.params.type === "grad") {
+    } else if (req.params.level === "grad") {
         return res.json(subjectMap[req.params.subject]["course-info-g"]);
     }
 });
@@ -123,13 +123,13 @@ router.post("/courses/professors", async (req, res) => {
 });
 
 // gets individual course info
-router.get("/courses/:type/:subject/:id", async (req, res) => {
+router.get("/courses/:level/:subject/:id", async (req, res) => {
     console.log(req);
-    if (req.params.type === "undergrad") {
+    if (req.params.level === "undergrad") {
         return res.json(
             subjectMap[req.params.subject]["course-info-ug"][req.params.id]
         );
-    } else if (req.params.type === "grad") {
+    } else if (req.params.level === "grad") {
         return res.json(
             subjectMap[req.params.subject]["course-info-g"][req.params.id]
         );

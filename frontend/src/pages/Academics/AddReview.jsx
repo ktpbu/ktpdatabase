@@ -12,7 +12,7 @@ const AddReview = () => {
     const { enqueueSnackbar } = useSnackbar();
     const navigate = useNavigate();
     const user = "test";
-    const { id } = useParams();
+    const { level, id } = useParams();
     const [professor, setProfessor] = useState("Choose");
     const [usefulness, setUsefulness] = useState("Choose");
     const [difficulty, setDifficulty] = useState("Choose");
@@ -91,10 +91,16 @@ const AddReview = () => {
             <Breadcrumb className="customBreadcrumb p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
-                <Breadcrumb.Item href="/academics/courses/">
-                    Courses
-                </Breadcrumb.Item>
-                <Breadcrumb.Item href={`/academics/courses/${id}`}>
+                {level === "undergrad" ? (
+                    <Breadcrumb.Item href="/academics/courses/">
+                        Courses
+                    </Breadcrumb.Item>
+                ) : (
+                    <Breadcrumb.Item href="/academics/graduate/">
+                        Graduate
+                    </Breadcrumb.Item>
+                )}
+                <Breadcrumb.Item href={`/academics/courses/${level}/${id}`}>
                     {id}
                 </Breadcrumb.Item>
                 <Breadcrumb.Item active>Add Review</Breadcrumb.Item>
