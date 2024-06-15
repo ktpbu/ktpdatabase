@@ -3,264 +3,198 @@
         "id": "CS101",
         "name": "Introduction to Computing",
         "prereqs": "",
-        "content": "The computer is presented as a tool that can assist in solving a broad  spectrum   of problems. This course provides a general introduction designed to  dispel the   mystery surrounding computers and introduces the fundamental ideas  of programs   and algorithms. Carries MCS divisional credit in CAS. Effective  Fall 2018, this  course fulfills a  single unit in each of the following BU Hub  areas:  Quantitative Reasoning II,  Digital/Multimedia Expression. Effective Fall 2022,  this course fulfills a single unit in each of the following BU Hub areas:  Digital/Multimedia Expression, Quantitative Reasoning II, Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "The computer is presented as a tool that can assist in solving a broad  spectrum   of problems. This course provides a general introduction designed to  dispel the   mystery surrounding computers and introduces the fundamental ideas  of programs   and algorithms. Carries MCS divisional credit in CAS. Effective  Fall 2018, this  course fulfills a  single unit in each of the following BU Hub  areas:  Quantitative Reasoning II,  Digital/Multimedia Expression. Effective Fall 2022,  this course fulfills a single unit in each of the following BU Hub areas:  Digital/Multimedia Expression, Quantitative Reasoning II, Critical Thinking."
     },
     "CASCS103": {
         "id": "CS103",
         "name": "Introduction to Internet Technologies and Web Programming",
         "prereqs": "",
-        "content": "Introduction to the basic architecture and protocols underlying the operation   of  the Internet with an emphasis on Web design, Web application programming,   and  algorithmic thinking. General familiarity with the Internet is assumed. Effective Fall 2018, this course   fulfills a single unit in each of the  following BU Hub areas: Quantitative   Reasoning II, Digital/Multimedia Expression. Effective Fall 2022, this course  fulfills a single unit in each of the following BU Hub areas: Digital/Multimedia  Expression, Quantitative Reasoning II, Creativity/Innovation.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to the basic architecture and protocols underlying the operation   of  the Internet with an emphasis on Web design, Web application programming,   and  algorithmic thinking. General familiarity with the Internet is assumed. Effective Fall 2018, this course   fulfills a single unit in each of the  following BU Hub areas: Quantitative   Reasoning II, Digital/Multimedia Expression. Effective Fall 2022, this course  fulfills a single unit in each of the following BU Hub areas: Digital/Multimedia  Expression, Quantitative Reasoning II, Creativity/Innovation."
     },
     "CASCS105": {
         "id": "CS105",
         "name": "Introduction to Databases and Data Mining",
         "prereqs": "",
-        "content": "General introduction to computational methods for processing collection of    data. Topics include databases and data modeling; writing simple programs to    process data; data mining and data visualization. Applications are drawn from    business, the arts, the life sciences, and social sciences. Carries MCS    divisional credit in CAS. Effective Fall 2018, this course fulfills a single   unit in the following  BU Hub area: Quantitative Reasoning II. Effective Fall  2022, this course fulfills a single unit in each of the following BU Hub areas:  Quantitative Reasoning II, Creativity/Innovation, Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "General introduction to computational methods for processing collection of    data. Topics include databases and data modeling; writing simple programs to    process data; data mining and data visualization. Applications are drawn from    business, the arts, the life sciences, and social sciences. Carries MCS    divisional credit in CAS. Effective Fall 2018, this course fulfills a single   unit in the following  BU Hub area: Quantitative Reasoning II. Effective Fall  2022, this course fulfills a single unit in each of the following BU Hub areas:  Quantitative Reasoning II, Creativity/Innovation, Critical Thinking."
     },
     "CASCS108": {
         "id": "CS108",
         "name": "Programming for Non-CS Majors",
         "prereqs": "",
-        "content": "A rigorous introduction to programming for students not majoring in computer science. Covers a broad set of topics about application development, including basic programming concepts, testing and debugging, abstraction and design, and an introduction to data analytics. Effective  Fall 2018, this course  fulfills a single unit in the following BU Hub area:  Quantitative Reasoning I.",
-        "prof": [],
-        "reviews": []
+        "content": "A rigorous introduction to programming for students not majoring in computer science. Covers a broad set of topics about application development, including basic programming concepts, testing and debugging, abstraction and design, and an introduction to data analytics. Effective  Fall 2018, this course  fulfills a single unit in the following BU Hub area:  Quantitative Reasoning I."
     },
     "CASCS111": {
         "id": "CS111",
         "name": "Introduction to Computer Science 1",
         "prereqs": "",
-        "content": "The first course for computer science majors and anyone seeking a rigorous    introduction. Develops computational problem-solving skills by programming in  the    Python language, and exposes students to variety of other topics from  computer   science and its applications. Carries MCS divisional credit in CAS.  Effective Fall 2018, this course   fulfills a single unit in each of the  following BU Hub areas: Quantitative Reasoning  II,  Creativity/Innovation,  Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "The first course for computer science majors and anyone seeking a rigorous    introduction. Develops computational problem-solving skills by programming in  the    Python language, and exposes students to variety of other topics from  computer   science and its applications. Carries MCS divisional credit in CAS.  Effective Fall 2018, this course   fulfills a single unit in each of the  following BU Hub areas: Quantitative Reasoning  II,  Creativity/Innovation,  Critical Thinking."
     },
     "CASCS112": {
         "id": "CS112",
         "name": "Introduction to Computer Science 2",
         "prereqs": "Undergraduate Prerequisites: CAS CS 111; or equivalent.",
-        "content": "Covers advanced programming techniques and data structures. Topics include    recursion, algorithm analysis, linked lists, stacks, queues, trees, graphs,    tables, searching, and sorting. Carries MCS divisional credit in CAS.  Effective  Fall 2018, this course  fulfills a single unit in the following  BU Hub areas:  Quantitative Reasoning II, Creativity/Innovation, Critical  Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Covers advanced programming techniques and data structures. Topics include    recursion, algorithm analysis, linked lists, stacks, queues, trees, graphs,    tables, searching, and sorting. Carries MCS divisional credit in CAS.  Effective  Fall 2018, this course  fulfills a single unit in the following  BU Hub areas:  Quantitative Reasoning II, Creativity/Innovation, Critical  Thinking."
     },
     "CASCS115": {
         "id": "CS115",
         "name": "Academic Writing in Computer Science",
         "prereqs": "Undergraduate Prerequisites: CAS WR 120 or equivalent; CAS CS 111.",
-        "content": "Pre-req: WR 120 or equivalent, CS 111. This 2-credit course offers a Writing  Intensive unit through the topic of  computer science. Students engage with  readings and discussions in current  computer science issues. The course focuses  on teaching critical reading,  creating a strong argument, and engaging with a  variety of sources. Effective Spring 2023, this course fulfills a single unit in  the following BU Hub area: Writing-Intensive Course.",
-        "prof": [],
-        "reviews": []
+        "content": "Pre-req: WR 120 or equivalent, CS 111. This 2-credit course offers a Writing  Intensive unit through the topic of  computer science. Students engage with  readings and discussions in current  computer science issues. The course focuses  on teaching critical reading,  creating a strong argument, and engaging with a  variety of sources. Effective Spring 2023, this course fulfills a single unit in  the following BU Hub area: Writing-Intensive Course."
     },
     "CASCS131": {
         "id": "CS131",
         "name": "Combinatoric Structures",
         "prereqs": "",
-        "content": "Representation, analysis, techniques, and principles for manipulation of  basic  combinatoric  structures used in computer science. Rigorous reasoning  is  emphasized. Effective Fall 2018, this course fulfills a single unit in  the following BU Hub area: Quantitative Reasoning II. Effective Fall 2019,   this course fulfills a single unit in each of  the following BU Hub areas:  Quantitative Reasoning  II, Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Representation, analysis, techniques, and principles for manipulation of  basic  combinatoric  structures used in computer science. Rigorous reasoning  is  emphasized. Effective Fall 2018, this course fulfills a single unit in  the following BU Hub area: Quantitative Reasoning II. Effective Fall 2019,   this course fulfills a single unit in each of  the following BU Hub areas:  Quantitative Reasoning  II, Critical Thinking."
     },
     "CASCS132": {
         "id": "CS132",
         "name": "Geometric Algorithms",
         "prereqs": "Undergraduate Prerequisites: CAS CS 111 and CAS MA 123.",
-        "content": "Basic concepts, data structures, and algorithms for geometric objects.   Examples of topics:  Cartesian geometry, transformations and their   representation, queries and sampling,  triangulations. Emphasis on rigorous   reasoning and analysis, advancing algorithmic maturity  and expertise in its   application. Effective Fall 2019, this course fulfills a single unit in the  following BU Hub   areas: Quantitative Reasoning II, Digital/Multimedia Expression.",
-        "prof": [],
-        "reviews": []
+        "content": "Basic concepts, data structures, and algorithms for geometric objects.   Examples of topics:  Cartesian geometry, transformations and their   representation, queries and sampling,  triangulations. Emphasis on rigorous   reasoning and analysis, advancing algorithmic maturity  and expertise in its   application. Effective Fall 2019, this course fulfills a single unit in the  following BU Hub   areas: Quantitative Reasoning II, Digital/Multimedia Expression."
     },
     "CASCS200": {
         "id": "CS200",
         "name": "Computer Science Workshops",
         "prereqs": "",
-        "content": "Computer Science Workshops enable students early in the Computer Science Major to explore  different fields within the discipline alongside a group of peers and a faculty member engaged  in the area.",
-        "prof": [],
-        "reviews": []
+        "content": "Computer Science Workshops enable students early in the Computer Science Major to explore  different fields within the discipline alongside a group of peers and a faculty member engaged  in the area."
     },
     "CASCS210": {
         "id": "CS210",
         "name": "Computer Systems",
         "prereqs": "Undergraduate Prerequisites: CAS CS 112.",
-        "content": "Fundamental concepts of computer systems and systems programming. Hardware   fundamentals including digital logic, memory systems, processor design, buses,  I/O  subsystems, data representations, computer arithmetic, and instruction- set  architecture. Software concepts including assembly language programming,  operating  systems, assemblers, linkers, and systems programming in C.  Effective Fall 2018, this course fulfills a  single unit in the following BU  Hub area: Quantitative Reasoning II.",
-        "prof": [],
-        "reviews": []
+        "content": "Fundamental concepts of computer systems and systems programming. Hardware   fundamentals including digital logic, memory systems, processor design, buses,  I/O  subsystems, data representations, computer arithmetic, and instruction- set  architecture. Software concepts including assembly language programming,  operating  systems, assemblers, linkers, and systems programming in C.  Effective Fall 2018, this course fulfills a  single unit in the following BU  Hub area: Quantitative Reasoning II."
     },
     "CASCS235": {
         "id": "CS235",
         "name": "Algebraic Algorithms",
         "prereqs": "Undergraduate Corequisites: CASCS132 recommended.",
-        "content": "Basic concepts and algorithms for manipulation of algebraic objects, such as  residues, matrices, polynomials; and applications to various CS areas, such as  cryptography and fault-tolerance. Emphasis on rigorous reasoning and analysis.  Effective Fall 2018, this course fulfills a single unit in the following BU Hub  area: Quantitative Reasoning II.",
-        "prof": [],
-        "reviews": []
+        "content": "Basic concepts and algorithms for manipulation of algebraic objects, such as  residues, matrices, polynomials; and applications to various CS areas, such as  cryptography and fault-tolerance. Emphasis on rigorous reasoning and analysis.  Effective Fall 2018, this course fulfills a single unit in the following BU Hub  area: Quantitative Reasoning II."
     },
     "CASCS237": {
         "id": "CS237",
         "name": "Probability in Computing",
         "prereqs": "Undergraduate Prerequisites: CAS CS 131.",
-        "content": "Introduction to basic probabilistic concepts and methods used in computer  science. Develops an understanding of the crucial role played by randomness in  computing, both as a powerful tool and as a challenge to confront and analyze.  Emphasis on rigorous reasoning, analysis, and algorithmic thinking. Effective  Fall 2018, this course fulfills a single unit in each of the following BU Hub  areas: Quantitative Reasoning II, Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to basic probabilistic concepts and methods used in computer  science. Develops an understanding of the crucial role played by randomness in  computing, both as a powerful tool and as a challenge to confront and analyze.  Emphasis on rigorous reasoning, analysis, and algorithmic thinking. Effective  Fall 2018, this course fulfills a single unit in each of the following BU Hub  areas: Quantitative Reasoning II, Critical Thinking."
     },
     "CASCS320": {
         "id": "CS320",
         "name": "Concepts of Programming Languages",
         "prereqs": "Undergraduate Prerequisites: CAS CS 131 and CAS CS 210.",
-        "content": "Concepts involved in the design of programming languages. Bindings, argument  transmission, and control structures. Environments: compile-time, load-time, and  run-time. Interpreters.  Effective Fall 2019, this course fulfills a single unit  in the following BU Hub area: Creativity/Innovation.",
-        "prof": [],
-        "reviews": []
+        "content": "Concepts involved in the design of programming languages. Bindings, argument  transmission, and control structures. Environments: compile-time, load-time, and  run-time. Interpreters.  Effective Fall 2019, this course fulfills a single unit  in the following BU Hub area: Creativity/Innovation."
     },
     "CASCS330": {
         "id": "CS330",
         "name": "Introduction to Analysis of Algorithms",
         "prereqs": "Undergraduate Prerequisites: CASCS112, CASCS131, and CASCS132; or CASCS235 or CASCS237",
-        "content": "Examines the basic principles of algorithm design and analysis; graph   algorithms; greedy algorithms; dynamic programming; network flows; polynomial-  time reductions; NP-hard and NP-complete problems; approximation algorithms;   randomized algorithms. Effective Fall 2018, this course fulfills a single unit  in each of the  following BU Hub areas: Quantitative Reasoning II, Critical  Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Examines the basic principles of algorithm design and analysis; graph   algorithms; greedy algorithms; dynamic programming; network flows; polynomial-  time reductions; NP-hard and NP-complete problems; approximation algorithms;   randomized algorithms. Effective Fall 2018, this course fulfills a single unit  in each of the  following BU Hub areas: Quantitative Reasoning II, Critical  Thinking."
     },
     "CASCS332": {
         "id": "CS332",
         "name": "Elements of the Theory of Computation",
         "prereqs": "Undergraduate Prerequisites: CAS CS 330.",
-        "content": "The basic concepts of the theory of computation are studied. Topics include models of computation, polynomial time, Church's thesis; universal algorithms, undecidability and intractability; time and space complexity, nondeterminism, probabilistic computation and reductions of computational problems.",
-        "prof": [],
-        "reviews": []
+        "content": "The basic concepts of the theory of computation are studied. Topics include models of computation, polynomial time, Church's thesis; universal algorithms, undecidability and intractability; time and space complexity, nondeterminism, probabilistic computation and reductions of computational problems."
     },
     "CASCS350": {
         "id": "CS350",
         "name": "Fundamentals of Computing Systems",
         "prereqs": "Undergraduate Prerequisites: CAS CS 210.",
-        "content": "Programming-centric introduction to computer systems. The course discusses system design principles, performance analysis, communication and synchronization primitives, concurrency control, database transactions, data consistency, task and data parallelism, replication, fault tolerance, and distributed consensus. Part of the discussion includes case studies of real systems from industry. All programming assignments will be in Go.",
-        "prof": [],
-        "reviews": []
+        "content": "Programming-centric introduction to computer systems. The course discusses system design principles, performance analysis, communication and synchronization primitives, concurrency control, database transactions, data consistency, task and data parallelism, replication, fault tolerance, and distributed consensus. Part of the discussion includes case studies of real systems from industry. All programming assignments will be in Go."
     },
     "CASCS357": {
         "id": "CS357",
         "name": "Introduction to Information Security",
         "prereqs": "Undergraduate Prerequisites: CAS CS 210; or consent of instructor.",
-        "content": "Provides basic concepts needed for understanding information security. Discusses  vulnerabilities, design principles, basic algorithms, security definitions, and  analytical methods. Covers system security, network security, web security,  cryptography, and data privacy. Also addresses social, ethical, and policy  aspects of security.",
-        "prof": [],
-        "reviews": []
+        "content": "Provides basic concepts needed for understanding information security. Discusses  vulnerabilities, design principles, basic algorithms, security definitions, and  analytical methods. Covers system security, network security, web security,  cryptography, and data privacy. Also addresses social, ethical, and policy  aspects of security."
     },
     "CASCS365": {
         "id": "CS365",
         "name": "Foundations of Data Science",
         "prereqs": "Undergraduate Prerequisites: CAS CS112 and CAS CS131 and CAS CS132 and CAS CS237 (or equivalent). Or consent of instructor. Recommended: CAS CS330.",
-        "content": "Lays the foundation towards more advanced data-intensive classes, such as Data  Science, Machine Learning, Data Mining. The course provides an understanding of  the fundamentals and the practical implications of concepts. It covers both  theoretical skills as well as working/practical knowledge.",
-        "prof": [],
-        "reviews": []
+        "content": "Lays the foundation towards more advanced data-intensive classes, such as Data  Science, Machine Learning, Data Mining. The course provides an understanding of  the fundamentals and the practical implications of concepts. It covers both  theoretical skills as well as working/practical knowledge."
     },
     "CASCS400": {
         "id": "CS400",
         "name": "Topics in Computer Science",
         "prereqs": "",
-        "content": "Topics vary.",
-        "prof": [],
-        "reviews": []
+        "content": "Topics vary."
     },
     "CASCS401": {
         "id": "CS401",
         "name": "Senior Independent Work",
         "prereqs": "Undergraduate Prerequisites: approval of the Honors Committee.",
-        "content": "Effective Fall 2022, this course fulfills a single unit in the following BU Hub  area: Research and Information Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "Effective Fall 2022, this course fulfills a single unit in the following BU Hub  area: Research and Information Literacy."
     },
     "CASCS402": {
         "id": "CS402",
         "name": "Senior Independent Work",
         "prereqs": "Undergraduate Prerequisites: approval of the Honors Committee.",
-        "content": "Effective Spring 2023, this course fulfills a single unit in the following BU Hub  area: Oral and/or Signed Communication.",
-        "prof": [],
-        "reviews": []
+        "content": "Effective Spring 2023, this course fulfills a single unit in the following BU Hub  area: Oral and/or Signed Communication."
     },
     "CASCS410": {
         "id": "CS410",
         "name": "Advanced Software Systems",
         "prereqs": "Undergraduate Prerequisites: CAS CS 210.",
-        "content": "Systems programming including such topics as project management, tools, I/O networking, multiprocessing, exception handling, and system services. Other topics are explored using C and Perl under the UNIX operating system. Requires a working knowledge of the C programming language and experience with UNIX as a user, or equivalent.",
-        "prof": [],
-        "reviews": []
+        "content": "Systems programming including such topics as project management, tools, I/O networking, multiprocessing, exception handling, and system services. Other topics are explored using C and Perl under the UNIX operating system. Requires a working knowledge of the C programming language and experience with UNIX as a user, or equivalent."
     },
     "CASCS411": {
         "id": "CS411",
         "name": "Software Engineering",
         "prereqs": "Undergraduate Prerequisites: CAS CS 112.",
-        "content": "Introduction to the construction of reliable software. Topics may include   software tools,  software testing methodologies, retrofitting, regression   testing, structured design and  structured programming, software   characteristics and quality, complexity, entropy, deadlock,  fault tolerance,   formal proofs of program correctness, chief program teams, and structured    walk-throughs. Effective Fall 2019, this course fulfills a single unit in each  of the following  BU  Hub area: Teamwork/Collaboration.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to the construction of reliable software. Topics may include   software tools,  software testing methodologies, retrofitting, regression   testing, structured design and  structured programming, software   characteristics and quality, complexity, entropy, deadlock,  fault tolerance,   formal proofs of program correctness, chief program teams, and structured    walk-throughs. Effective Fall 2019, this course fulfills a single unit in each  of the following  BU  Hub area: Teamwork/Collaboration."
     },
     "CASCS412": {
         "id": "CS412",
         "name": "Full-Stack Application Design and Development",
         "prereqs": "Undergraduate Prerequisites: CAS CS 111 ; CAS CS 112 ; CAS CS 411; or consent of instructor.",
-        "content": "Introduction to design and development of full-stack web applications. Topics include asynchronous programming; non-relational data stores; use of APIs; serverless (cloudbased) applications; decoupled client/server architectures; performance; testing; packaging; and deployment. Examines current and proposed technology stacks.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to design and development of full-stack web applications. Topics include asynchronous programming; non-relational data stores; use of APIs; serverless (cloudbased) applications; decoupled client/server architectures; performance; testing; packaging; and deployment. Examines current and proposed technology stacks."
     },
     "CASCS440": {
         "id": "CS440",
         "name": "Introduction to Artificial Intelligence",
         "prereqs": "Undergraduate Prerequisites: CAS CS 112 and CAS CS 132.",
-        "content": "Introduction to computer systems that exhibit intelligent behavior, in particular, perceptual and robotic  systems. Topics include human computer interfaces, computer vision, robotics, game playing, pattern  recognition, knowledge representation, planning.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to computer systems that exhibit intelligent behavior, in particular, perceptual and robotic  systems. Topics include human computer interfaces, computer vision, robotics, game playing, pattern  recognition, knowledge representation, planning."
     },
     "CASCS451": {
         "id": "CS451",
         "name": "Distributed Systems",
         "prereqs": "Undergraduate Prerequisites: CAS CS 210.",
-        "content": "Programming-centric introduction to how networks of computers are structured to operate as coherent single systems. Introducing principles of architecture, processes, communications, naming, synchronization, consistency and replication, fault tolerance and security, and paradigms such as web-based, object-based, file system, and consistency-based.",
-        "prof": [],
-        "reviews": []
+        "content": "Programming-centric introduction to how networks of computers are structured to operate as coherent single systems. Introducing principles of architecture, processes, communications, naming, synchronization, consistency and replication, fault tolerance and security, and paradigms such as web-based, object-based, file system, and consistency-based."
     },
     "CASCS454": {
         "id": "CS454",
         "name": "Embedded Systems Development",
         "prereqs": "Undergraduate Prerequisites: CAS CS 210.",
-        "content": "Lab-based course exploring concepts, techniques, best practices, and tools for the  development of connected embedded systems, including: signal processing; sensing, control  and actuation; programming and debugging on microprocessors; 1/0 interfacing and  development of device drivers; and time-critical data handling.",
-        "prof": [],
-        "reviews": []
+        "content": "Lab-based course exploring concepts, techniques, best practices, and tools for the  development of connected embedded systems, including: signal processing; sensing, control  and actuation; programming and debugging on microprocessors; 1/0 interfacing and  development of device drivers; and time-critical data handling."
     },
     "CASCS455": {
         "id": "CS455",
         "name": "Computer Networks",
         "prereqs": "Undergraduate Prerequisites: CAS CS 210.",
-        "content": "Concepts underlying the design of high-performance computer networks and scalable   protocols. Topics include Internet design principles and methodology, TCP/IP   implementation, packet switching and routing algorithms, multicast, quality of service considerations, error detection and correction, and performance evaluation.",
-        "prof": [],
-        "reviews": []
+        "content": "Concepts underlying the design of high-performance computer networks and scalable   protocols. Topics include Internet design principles and methodology, TCP/IP   implementation, packet switching and routing algorithms, multicast, quality of service considerations, error detection and correction, and performance evaluation."
     },
     "CASCS460": {
         "id": "CS460",
         "name": "Introduction to Database Systems",
         "prereqs": "Undergraduate Prerequisites: CAS CS 112.",
-        "content": "Introduction to database management systems. Examines entity-relationship, relational, and object-oriented data models; commercial query languages: SQL, relational algebra, relational calculus, and QBE; file organization, indexing and hashing, query optimization, transaction processing, concurrency control and recovery,integrity, and security.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to database management systems. Examines entity-relationship, relational, and object-oriented data models; commercial query languages: SQL, relational algebra, relational calculus, and QBE; file organization, indexing and hashing, query optimization, transaction processing, concurrency control and recovery,integrity, and security."
     },
     "CASCS480": {
         "id": "CS480",
         "name": "Introduction to Computer Graphics",
         "prereqs": "Undergraduate Prerequisites: CAS CS 112 and CAS CS 132.",
-        "content": "Introduction to computer graphics algorithms, programming methods, and  applications. Focus on fundamentals of two- and three-dimensional raster  graphics: scan-conversion, clipping, geometric transformations, and camera  modeling. Introduces concepts in computational geometry, computer-human  interfaces, animation, and visual realism. Effective Fall 2019, this course  fulfills a single unit in the following BU Hub area: Digital/Multimedia  Expression.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to computer graphics algorithms, programming methods, and  applications. Focus on fundamentals of two- and three-dimensional raster  graphics: scan-conversion, clipping, geometric transformations, and camera  modeling. Introduces concepts in computational geometry, computer-human  interfaces, animation, and visual realism. Effective Fall 2019, this course  fulfills a single unit in the following BU Hub area: Digital/Multimedia  Expression."
     },
     "CASCS491": {
         "id": "CS491",
         "name": "Directed Study",
         "prereqs": "Undergraduate Prerequisites: sophomore or higher standing, consent of instructor, and a completed Directed Study Application form.",
-        "content": "Independent study in Computer Science under the guidance of a faculty member. Student and   supervising faculty member arrange and document expectations and requirements. Examples   include internship opportunities for academic credit, in-depth study of a special topic, or   independent research project.",
-        "prof": [],
-        "reviews": []
+        "content": "Independent study in Computer Science under the guidance of a faculty member. Student and   supervising faculty member arrange and document expectations and requirements. Examples   include internship opportunities for academic credit, in-depth study of a special topic, or   independent research project."
     },
     "CASCS492": {
         "id": "CS492",
         "name": "Directed Study",
         "prereqs": "Undergraduate Prerequisites: sophomore or higher standing, consent of instructor, and a completed Directed Study Application form.",
-        "content": "Independent study in Computer Science under the guidance of a faculty member. Student and   supervising faculty member arrange and document expectations and requirements. Examples   include internship opportunities for academic credit, in-depth study of a special topic, or   independent research project.",
-        "prof": [],
-        "reviews": []
+        "content": "Independent study in Computer Science under the guidance of a faculty member. Student and   supervising faculty member arrange and document expectations and requirements. Examples   include internship opportunities for academic credit, in-depth study of a special topic, or   independent research project."
     }
 }

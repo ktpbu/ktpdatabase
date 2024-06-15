@@ -3,136 +3,102 @@
         "id": "EK100",
         "name": "Freshman Advising Seminar",
         "prereqs": "",
-        "content": "This first-year experience course introduces students to Boston University,the College of Engineering, and the field of engineering. Students meet with faculty and student advisors and attend lectures to broaden their knowledge of the inner workings of the College and to gain a better understanding of engineering as a discipline and the ethical responsibilities of an engineer. Includes academic policies and special programs along with support services.",
-        "prof": [],
-        "reviews": []
+        "content": "This first-year experience course introduces students to Boston University,the College of Engineering, and the field of engineering. Students meet with faculty and student advisors and attend lectures to broaden their knowledge of the inner workings of the College and to gain a better understanding of engineering as a discipline and the ethical responsibilities of an engineer. Includes academic policies and special programs along with support services."
     },
     "ENGEK103": {
         "id": "EK103",
         "name": "Computational Linear Algebra",
         "prereqs": "Undergraduate Prerequisites: ENG EK 122.",
-        "content": "This is a course on understanding, manipulating, and applying linear systems of   equations and, more broadly, linear relationships between variables. The ideas   and tools you will learn are immensely useful in a wide variety of application   domains, including physics, engineering, big data, data visualization, and   more. You will become familiar with vectors and matrices, linear systems of   equations, vector spaces, inner products, eigenvectors and eigenvalues and the   more general singular values. You will also learn to interpret matrices as   linear transformations and to understand the geometrical interpretation for   operations such as solving linear systems of equations and least-squares   fitting of data to models. Throughout the course, the tools will be related to   specific applications to show how linear algebra is used to solve real-world   problems. Examples include Google's PageRank algorithm, cryptography, coding   theory, genetics, bioinformatics, image compression, linear programming   (optimization), networks, and Markov chains. Cannot be taken for credit in   addition to CAS MA 142.",
-        "prof": [],
-        "reviews": []
+        "content": "This is a course on understanding, manipulating, and applying linear systems of   equations and, more broadly, linear relationships between variables. The ideas   and tools you will learn are immensely useful in a wide variety of application   domains, including physics, engineering, big data, data visualization, and   more. You will become familiar with vectors and matrices, linear systems of   equations, vector spaces, inner products, eigenvectors and eigenvalues and the   more general singular values. You will also learn to interpret matrices as   linear transformations and to understand the geometrical interpretation for   operations such as solving linear systems of equations and least-squares   fitting of data to models. Throughout the course, the tools will be related to   specific applications to show how linear algebra is used to solve real-world   problems. Examples include Google's PageRank algorithm, cryptography, coding   theory, genetics, bioinformatics, image compression, linear programming   (optimization), networks, and Markov chains. Cannot be taken for credit in   addition to CAS MA 142."
     },
     "ENGEK121": {
         "id": "EK121",
         "name": "Introduction to Programming",
         "prereqs": "",
-        "content": "Introduction to programming, data science, and software development for  engineers using Python. Data and types. Operators, calculations, selection, looping. Data structures. Organizing  software: functions, classes, modules, and libraries. Debugging and software development tools. Software design examples  for engineering and data science.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to programming, data science, and software development for  engineers using Python. Data and types. Operators, calculations, selection, looping. Data structures. Organizing  software: functions, classes, modules, and libraries. Debugging and software development tools. Software design examples  for engineering and data science."
     },
     "ENGEK122": {
         "id": "EK122",
         "name": "Programming for Engineers",
         "prereqs": "",
-        "content": "Prereq: ENG EK 121. Continuation of ENG EK 121. Reinforces  programming concepts  using a modern computational environment, in order to solve  engineering  problems. Basic procedural programming concepts that are reinforced  include  input/output, selection, looping, functions, data structures (arrays,  strings,  structures). Introduction to object-oriented programming concepts and   terminology and event-driven programming. Applications include image processing,   data science, and machine learning. Emphasis on programming style, debugging,   top-down design and modular code. Effective Fall 2023, this course fulfills a   single unit in the following Creativity/Innovation.",
-        "prof": [],
-        "reviews": []
+        "content": "Prereq: ENG EK 121. Continuation of ENG EK 121. Reinforces  programming concepts  using a modern computational environment, in order to solve  engineering  problems. Basic procedural programming concepts that are reinforced  include  input/output, selection, looping, functions, data structures (arrays,  strings,  structures). Introduction to object-oriented programming concepts and   terminology and event-driven programming. Applications include image processing,   data science, and machine learning. Emphasis on programming style, debugging,   top-down design and modular code. Effective Fall 2023, this course fulfills a   single unit in the following Creativity/Innovation."
     },
     "ENGEK131": {
         "id": "EK131",
         "name": "Introduction to Engineering",
         "prereqs": "Undergraduate Prerequisites: Freshman standing or consent of instructor",
-        "content": "This course introduces freshmen to a set of design-oriented engineering skills  through a hands-on experience using engineering tools (software and hardware)  for design and prototyping. Students will be exposed to a number of mechanical  and electrical engineering tools applicable to 3D visualization, building  structures, designing and wiring circuits, prototyping and instrumentation.  Students will work individually and in teams to build substructures that can be  integrated into a functional device (final product).",
-        "prof": [],
-        "reviews": []
+        "content": "This course introduces freshmen to a set of design-oriented engineering skills  through a hands-on experience using engineering tools (software and hardware)  for design and prototyping. Students will be exposed to a number of mechanical  and electrical engineering tools applicable to 3D visualization, building  structures, designing and wiring circuits, prototyping and instrumentation.  Students will work individually and in teams to build substructures that can be  integrated into a functional device (final product)."
     },
     "ENGEK210": {
         "id": "EK210",
         "name": "Introduction to Engineering Design",
         "prereqs": "Undergraduate Prerequisites: ENG EK 131; ENG EK 131 and Sophomore standing or consent of instructor.",
-        "content": "A two-credit introductory course to the principles of engineering design, intended to give second- year undergraduates a basic understanding of the process of taking a product from client explanation to design concept through product deployment. Students will work in teams with time and budget constraints on societally meaningful projects. Web-based lectures will cover topics concurrent with specific phases of the projects. The course will culminate in a \"Design Showcase.\" Restricted to ENG sophomores - others only by consent of  instructor. Effective Fall 2018, this course fulfills a single unit in the  following BU Hub area: Teamwork/Collaboration.",
-        "prof": [],
-        "reviews": []
+        "content": "A two-credit introductory course to the principles of engineering design, intended to give second- year undergraduates a basic understanding of the process of taking a product from client explanation to design concept through product deployment. Students will work in teams with time and budget constraints on societally meaningful projects. Web-based lectures will cover topics concurrent with specific phases of the projects. The course will culminate in a \"Design Showcase.\" Restricted to ENG sophomores - others only by consent of  instructor. Effective Fall 2018, this course fulfills a single unit in the  following BU Hub area: Teamwork/Collaboration."
     },
     "ENGEK225": {
         "id": "EK225",
         "name": "Introduction to Energy Conversion and Environmental Engineering",
         "prereqs": "",
-        "content": "This class examines the existing state of the world's energy use and its impact   on society and the planet. A quantitative framework is provided in order to   evaluate current and potential technologies. Individual energy generation,   conversion, and end use options are evaluated within this framework. Both   renewable energy generation technologies: wind, solar, biomass, and hydro, and   conventional sources such as nuclear and fossil fuels will be compared. Energy   conversion is discussed with regards to batteries and fuel cells, liquid bio-  fuels, and grid level storage systems. These technologies are then put into a   social context and their use around the world is discussed. Evaluations are   based on homework and class discussions, midterms, and a final. Cannot be used  for credit towards an engineering degree.",
-        "prof": [],
-        "reviews": []
+        "content": "This class examines the existing state of the world's energy use and its impact   on society and the planet. A quantitative framework is provided in order to   evaluate current and potential technologies. Individual energy generation,   conversion, and end use options are evaluated within this framework. Both   renewable energy generation technologies: wind, solar, biomass, and hydro, and   conventional sources such as nuclear and fossil fuels will be compared. Energy   conversion is discussed with regards to batteries and fuel cells, liquid bio-  fuels, and grid level storage systems. These technologies are then put into a   social context and their use around the world is discussed. Evaluations are   based on homework and class discussions, midterms, and a final. Cannot be used  for credit towards an engineering degree."
     },
     "ENGEK301": {
         "id": "EK301",
         "name": "Engineering Mechanics I",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS PY 211.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS PY 211."
     },
     "ENGEK307": {
         "id": "EK307",
         "name": "Electric Circuits",
         "prereqs": "Undergraduate Corequisites: CAS PY 212",
-        "content": "Introduction to electric circuit analysis and design; voltage, current, and  power, circuit laws and theorems; element I-V curves, linear and nonlinear  circuit concepts; operational amplifier circuits; transient response of capacitor  and inductor circuits, sinusoidal-steady-state response, frequency response,  transfer functions; Includes design-oriented laboratory.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to electric circuit analysis and design; voltage, current, and  power, circuit laws and theorems; element I-V curves, linear and nonlinear  circuit concepts; operational amplifier circuits; transient response of capacitor  and inductor circuits, sinusoidal-steady-state response, frequency response,  transfer functions; Includes design-oriented laboratory."
     },
     "ENGEK335": {
         "id": "EK335",
         "name": "Introduction to Environmental Engineering",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS CH 131 and CAS MA 124; or equivalent. Sophomore standing.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS CH 131 and CAS MA 124; or equivalent. Sophomore standing."
     },
     "ENGEK341": {
         "id": "EK341",
         "name": "Advanced MATLAB Applications Programming",
         "prereqs": "",
-        "content": "Programming applications for students who have learned programming constructs  using MATLAB.  Topics include Object Oriented Programming, user-defined classes,  graphics primitives, Graphical User Interfaces, event-driven programming, sound  and image processing, use of API keys to transfer data to and from websites.",
-        "prof": [],
-        "reviews": []
+        "content": "Programming applications for students who have learned programming constructs  using MATLAB.  Topics include Object Oriented Programming, user-defined classes,  graphics primitives, Graphical User Interfaces, event-driven programming, sound  and image processing, use of API keys to transfer data to and from websites."
     },
     "ENGEK381": {
         "id": "EK381",
         "name": "Probability, Statistics, and Data Science for Engineers",
         "prereqs": "Undergraduate Prerequisites: ENG EK 103 and CAS MA 225.",
-        "content": "Provides a strong foundation in probability and an introduction to statistics    and  machine learning. Includes experience with translating engineering    problems into  probabilistic models, and working with these models analytically    and  algorithmically. Prepares students for upper-level electives that use    probabilistic  reasoning. Cannot be taken for credit in addition to ENG ME 366,  CAS MA 381  or CAS MA 581. Effective Fall 2018, this course fulfills a single   unit in each  of the following BU Hub areas:  Quantitative Reasoning II,   Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Provides a strong foundation in probability and an introduction to statistics    and  machine learning. Includes experience with translating engineering    problems into  probabilistic models, and working with these models analytically    and  algorithmically. Prepares students for upper-level electives that use    probabilistic  reasoning. Cannot be taken for credit in addition to ENG ME 366,  CAS MA 381  or CAS MA 581. Effective Fall 2018, this course fulfills a single   unit in each  of the following BU Hub areas:  Quantitative Reasoning II,   Critical Thinking."
     },
     "ENGEK408": {
         "id": "EK408",
         "name": "Introduction to Clean energy Generation and Storage Technologies",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 226 and CAS CH 131; CAS PY313 preferred",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 226 and CAS CH 131; CAS PY313 preferred"
     },
     "ENGEK424": {
         "id": "EK424",
         "name": "Thermodynamics and Statistical Mechanics",
         "prereqs": "Undergraduate Prerequisites: ENG EK 381 ; CAS MA 226 ; CAS CH 102 ; CAS PY 212.",
-        "content": "Fundamental laws of thermodynamics and their application to mechanical and   chemical processes.  Energy, entropy, and kinetic theory.  Chemical  equilibrium  and thermodynamic potentials.  Phase transitions and colligative  properties.   Introduction to statistical thermodynamics.  Problems of  biomedical interest  will be emphasized.",
-        "prof": [],
-        "reviews": []
+        "content": "Fundamental laws of thermodynamics and their application to mechanical and   chemical processes.  Energy, entropy, and kinetic theory.  Chemical  equilibrium  and thermodynamic potentials.  Phase transitions and colligative  properties.   Introduction to statistical thermodynamics.  Problems of  biomedical interest  will be emphasized."
     },
     "ENGEK481": {
         "id": "EK481",
         "name": "Introduction to Nanotechnology",
         "prereqs": "Undergraduate Prerequisites: Junior or Senior standing (or permission of instructor)",
-        "content": "Nanotechnology encompasses the understanding and manipulation of matter with  at least one characteristic dimension measured in nanometers with novel,  size-dependent physical properties as a result. This course  explores the  electronic, mechanical  and optical properties of material at the nanoscale  and their applications in nano-scale devices. Wave-mechanics and wave optics  are  reviewed and used to understand confinement and energy quantization.  The parallels of confined  light,  mechanical  and electron waves are  emphasized in terms of resonator physics, and normal modes, resonances and  quality factors are disussed both qualitatively and quantitatively. The  different energy dispersion of light and electrons are introduced to relate  energy and wavelength.  Nano-devices, such as nano-resonators and nano- biosensors, and their applications are discussed.  Fabrication using top- down and bottom-up methods are discussed, as well as characterization using  scanning probe methods, electron microscopy, and spectroscopic techniques.  In the labs, students will build digital microfluidics chips, and synthesize  plasmonic nanoparticles and quantum dots. The students will use scattering  and spectroscopy to characterize the novel optical properties emerging at  the nanoscale.",
-        "prof": [],
-        "reviews": []
+        "content": "Nanotechnology encompasses the understanding and manipulation of matter with  at least one characteristic dimension measured in nanometers with novel,  size-dependent physical properties as a result. This course  explores the  electronic, mechanical  and optical properties of material at the nanoscale  and their applications in nano-scale devices. Wave-mechanics and wave optics  are  reviewed and used to understand confinement and energy quantization.  The parallels of confined  light,  mechanical  and electron waves are  emphasized in terms of resonator physics, and normal modes, resonances and  quality factors are disussed both qualitatively and quantitatively. The  different energy dispersion of light and electrons are introduced to relate  energy and wavelength.  Nano-devices, such as nano-resonators and nano- biosensors, and their applications are discussed.  Fabrication using top- down and bottom-up methods are discussed, as well as characterization using  scanning probe methods, electron microscopy, and spectroscopic techniques.  In the labs, students will build digital microfluidics chips, and synthesize  plasmonic nanoparticles and quantum dots. The students will use scattering  and spectroscopy to characterize the novel optical properties emerging at  the nanoscale."
     },
     "ENGEK497": {
         "id": "EK497",
         "name": "Undergraduate Part-Time Internship",
         "prereqs": "Undergraduate Prerequisites: Approval by your faculty advisor and the Engineering Career Development Office.",
-        "content": "This course helps students integrate classroom theory with actual engineering   experience. Under professional supervision, students gain firsthand knowledge   about the engineering environment by working in a paid, part-time position in   private industry, a governmental agency, or research or medical facility. Part-  time position = 15-20 hours per week for at least 10 weeks, and less than 300   hours total per academic term. To maintain status as a full-time student, must   be registered for 8-11 credits. Registration for 12 or more credits requires   written approval of your faculty advisor. International students must have CPT   authorization to register for this course. 0 cr. Pass/Fail. May be taken fall,   spring, or summer term.",
-        "prof": [],
-        "reviews": []
+        "content": "This course helps students integrate classroom theory with actual engineering   experience. Under professional supervision, students gain firsthand knowledge   about the engineering environment by working in a paid, part-time position in   private industry, a governmental agency, or research or medical facility. Part-  time position = 15-20 hours per week for at least 10 weeks, and less than 300   hours total per academic term. To maintain status as a full-time student, must   be registered for 8-11 credits. Registration for 12 or more credits requires   written approval of your faculty advisor. International students must have CPT   authorization to register for this course. 0 cr. Pass/Fail. May be taken fall,   spring, or summer term."
     },
     "ENGEK498": {
         "id": "EK498",
         "name": "Undergraduate Internship",
         "prereqs": "Undergraduate Prerequisites: Approval by your faculty advisor and the Engineering Career Development Office.",
-        "content": "Students register upon receiving an internship position. This course helps students integrate classroom theory with actual engineering experience. Under professional supervision, students gain firsthand knowledge about the engineering environment by working in a paid, full-time position in private industry, a governmental agency, or research or medical facility. Full-time position = 30-40 hours per week for at least 10 weeks per academic term (minimum 300 hours total per academic term). International students must have CPT authorization to register for this course. 0 cr. Pass/Fail. May be taken fall, spring, or summer term.",
-        "prof": [],
-        "reviews": []
+        "content": "Students register upon receiving an internship position. This course helps students integrate classroom theory with actual engineering experience. Under professional supervision, students gain firsthand knowledge about the engineering environment by working in a paid, full-time position in private industry, a governmental agency, or research or medical facility. Full-time position = 30-40 hours per week for at least 10 weeks per academic term (minimum 300 hours total per academic term). International students must have CPT authorization to register for this course. 0 cr. Pass/Fail. May be taken fall, spring, or summer term."
     }
 }

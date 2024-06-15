@@ -3,224 +3,168 @@
         "id": "ME302",
         "name": "Engineering Mechanics II",
         "prereqs": "Undergraduate Prerequisites: ENG EK 301 and CAS MA 226.",
-        "content": "Fundamentals of engineering dynamics. Linear and angular momentum principles.  Kinematics and kinetics of particles. Kinematics and kinetics of rigid bodies in  two dimensions. Energy methods. Introduction to mechanical vibrations.",
-        "prof": [],
-        "reviews": []
+        "content": "Fundamentals of engineering dynamics. Linear and angular momentum principles.  Kinematics and kinetics of particles. Kinematics and kinetics of rigid bodies in  two dimensions. Energy methods. Introduction to mechanical vibrations."
     },
     "ENGME303": {
         "id": "ME303",
         "name": "Fluid Mechanics",
         "prereqs": "Undergraduate Prerequisites: ENG EK 301 and CAS MA 226.",
-        "content": "Properties of fluids. Fluid statics. Dimensional analysis. Control volume approach to conservation of mass, momentum, and energy, leading to the Bernoulli equation. Differential analysis approach to conservation of mass and momentum, leading to potential flow and the Navier-Stokes equations. Applications to pipe flow, boundary layers analysis, and methods for estimating drag, and lift forces. Includes labs.",
-        "prof": [],
-        "reviews": []
+        "content": "Properties of fluids. Fluid statics. Dimensional analysis. Control volume approach to conservation of mass, momentum, and energy, leading to the Bernoulli equation. Differential analysis approach to conservation of mass and momentum, leading to potential flow and the Navier-Stokes equations. Applications to pipe flow, boundary layers analysis, and methods for estimating drag, and lift forces. Includes labs."
     },
     "ENGME304": {
         "id": "ME304",
         "name": "Energy and Thermodynamics",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS PY 211.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS PY 211."
     },
     "ENGME305": {
         "id": "ME305",
         "name": "Mechanics of Materials",
         "prereqs": "Undergraduate Prerequisites: ENG EK 301 ; ENG EK 103 ; CAS MA 226.",
-        "content": "Introduction to stress and strain. Axial and shear loading.  Torsion of shafts   and thin-walled tubes. Stress within and deflection of bending beams.    Combined loadings.  Stress and strain transformations.  Generalized Hooke's   law.  Material failure theories.  Column buckling.  Includes lab and project.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to stress and strain. Axial and shear loading.  Torsion of shafts   and thin-walled tubes. Stress within and deflection of bending beams.    Combined loadings.  Stress and strain transformations.  Generalized Hooke's   law.  Material failure theories.  Column buckling.  Includes lab and project."
     },
     "ENGME306": {
         "id": "ME306",
         "name": "Introduction to Materials Science",
         "prereqs": "Undergraduate Prerequisites: CAS PY 212 and CAS CH 131.",
-        "content": "Structure and properties of solids; crystalline structure; defect structures;      atom movement and diffusion; nucleation and growth; deformation; phase      diagrams; strengthening mechanisms; heat treatment; ferrous/nonferrous alloys;      ceramics; polymers; composites. Includes lab. Cannot be taken for credit in addition to ENG   BE 425.",
-        "prof": [],
-        "reviews": []
+        "content": "Structure and properties of solids; crystalline structure; defect structures;      atom movement and diffusion; nucleation and growth; deformation; phase      diagrams; strengthening mechanisms; heat treatment; ferrous/nonferrous alloys;      ceramics; polymers; composites. Includes lab. Cannot be taken for credit in addition to ENG   BE 425."
     },
     "ENGME309": {
         "id": "ME309",
         "name": "Structural Mechanics",
         "prereqs": "Undergraduate Prerequisites: ENG ME 305 and CAS MA 226.",
-        "content": "Application of solid mechanics to structures and machine elements. Elementary  elasticity. Energy principles. Matrix and finite element methods. Stability  phenomena. Modes of structural failure. Introduction to finite element method.   Includes design project.",
-        "prof": [],
-        "reviews": []
+        "content": "Application of solid mechanics to structures and machine elements. Elementary  elasticity. Energy principles. Matrix and finite element methods. Stability  phenomena. Modes of structural failure. Introduction to finite element method.   Includes design project."
     },
     "ENGME310": {
         "id": "ME310",
         "name": "Instrumentation",
         "prereqs": "Undergraduate Prerequisites: ENG ME 303 ; ENG EK 307 ; ENG EK 381 ; CAS WR 120.",
-        "content": "Designing, assembling, and operating experiments involving mechanical  measurements; analyzing experimental data. Safety considerations in the  laboratory. Mechanical and electrical transducers for flow, pressure, temperature, velocity, strain, and force. Electric circuits for static and dynamic analog signal conditioning. Computer use for digital data acquisition and analysis; instrument control. Introduction to frequency domain analysis. Professional standards for documenting experiments and  preparing reports, including formal uncertainty analysis involving  elementary stat Effective Fall 2019, this course fulfills a single unit in the following BU Hub area: Writing-Intensive Course.",
-        "prof": [],
-        "reviews": []
+        "content": "Designing, assembling, and operating experiments involving mechanical  measurements; analyzing experimental data. Safety considerations in the  laboratory. Mechanical and electrical transducers for flow, pressure, temperature, velocity, strain, and force. Electric circuits for static and dynamic analog signal conditioning. Computer use for digital data acquisition and analysis; instrument control. Introduction to frequency domain analysis. Professional standards for documenting experiments and  preparing reports, including formal uncertainty analysis involving  elementary stat Effective Fall 2019, this course fulfills a single unit in the following BU Hub area: Writing-Intensive Course."
     },
     "ENGME345": {
         "id": "ME345",
         "name": "Automation and Manufacturing Methods",
         "prereqs": "Undergraduate Prerequisites: ENG ME 357 and ENG EK 210; ENGEK122/EK125",
-        "content": "An introduction to the major concepts and practices of modern manufacturing,    including production system dynamics, process development, and computer-aided    design and manufacturing techniques. Topics include numerically controlled    machines, robotic control, real-time process control, computer vision,    statistical process control, programmable logic control, production system    design, discrete event system models, and computer simulation. Strong emphasis    is given on hands-on laboratory experience, with a lecture component covering    fundamental concepts and supporting the laboratory exercises and projects.    Includes lab.",
-        "prof": [],
-        "reviews": []
+        "content": "An introduction to the major concepts and practices of modern manufacturing,    including production system dynamics, process development, and computer-aided    design and manufacturing techniques. Topics include numerically controlled    machines, robotic control, real-time process control, computer vision,    statistical process control, programmable logic control, production system    design, discrete event system models, and computer simulation. Strong emphasis    is given on hands-on laboratory experience, with a lecture component covering    fundamental concepts and supporting the laboratory exercises and projects.    Includes lab."
     },
     "ENGME357": {
         "id": "ME357",
         "name": "Introduction to CAD and Machine Components",
         "prereqs": "",
-        "content": "Focuses on design and engineering concepts to support the creation of 3D mechanical models and 2D engineering drawings using advanced CAD applications. Hands on course work enables students to develop proper modeling techniques to define complex geometry and create production engineering drawings to ANSI standards. Course will cover core CAD competencies including assembly design, mechanism design, motion analysis, bill of materials and detailed assembly drawings.",
-        "prof": [],
-        "reviews": []
+        "content": "Focuses on design and engineering concepts to support the creation of 3D mechanical models and 2D engineering drawings using advanced CAD applications. Hands on course work enables students to develop proper modeling techniques to define complex geometry and create production engineering drawings to ANSI standards. Course will cover core CAD competencies including assembly design, mechanism design, motion analysis, bill of materials and detailed assembly drawings."
     },
     "ENGME358": {
         "id": "ME358",
         "name": "Manufacturing Processes",
         "prereqs": "Undergraduate Prerequisites: ENG EK 210 and ENG ME 357.",
-        "content": "This courses introduces you to modern manufacturing and materials processing    methods. The course includes a wide range of manufacturing processes    including machining, injection molding, and 3D printing; and explains the    fundamental principles and practices of manufacturing at scale. We will    understand the underlying physical principles and how material properties    impact and are impacted by various methods. Labs and projects will enable    students to experiment with various processes and understand how the theory    applies to the physical world.",
-        "prof": [],
-        "reviews": []
+        "content": "This courses introduces you to modern manufacturing and materials processing    methods. The course includes a wide range of manufacturing processes    including machining, injection molding, and 3D printing; and explains the    fundamental principles and practices of manufacturing at scale. We will    understand the underlying physical principles and how material properties    impact and are impacted by various methods. Labs and projects will enable    students to experiment with various processes and understand how the theory    applies to the physical world."
     },
     "ENGME360": {
         "id": "ME360",
         "name": "Electromechanical Design",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: ENG ME 357.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: ENG ME 357."
     },
     "ENGME400": {
         "id": "ME400",
         "name": "Undergraduate Special Topics in Mechanical Engineering",
         "prereqs": "Undergraduate Prerequisites: CAS MA 226.",
-        "content": "Coverage of a specific topic in mechanical engineering at the undergraduate  level. Subject matter varies from semester to semester; not offered every  semester.",
-        "prof": [],
-        "reviews": []
+        "content": "Coverage of a specific topic in mechanical engineering at the undergraduate  level. Subject matter varies from semester to semester; not offered every  semester."
     },
     "ENGME403": {
         "id": "ME403",
         "name": "Atmospheric Flight Mechanics and Control",
         "prereqs": "Undergraduate Prerequisites: ENG ME 302 and ENG ME 421; or consent of instructor",
-        "content": "Introduction to stability and control of atmospheric flight vehicles. Forces and  moments on aircraft. Static and dynamic stability. Equations of motion. Feedback  design using root locus. Flying quality standards. Longitudinal and lateral  autopilots. Includes design project and lab. Cannot be taken for credit in  addition to ENG ME 404, ENG EC 402, or ENG BE 404.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to stability and control of atmospheric flight vehicles. Forces and  moments on aircraft. Static and dynamic stability. Equations of motion. Feedback  design using root locus. Flying quality standards. Longitudinal and lateral  autopilots. Includes design project and lab. Cannot be taken for credit in  addition to ENG ME 404, ENG EC 402, or ENG BE 404."
     },
     "ENGME404": {
         "id": "ME404",
         "name": "Dynamics and Control of Mechanical Systems",
         "prereqs": "Undergraduate Prerequisites: ENG ME 302; or consent of instructor.",
-        "content": "Modeling of mechanical systems. Introduction to theory of feedback and control.  Performance and stability of linear systems. Design of feedback control systems.  Practical applications. Includes lab. Cannot be taken for credit in addition to  ENG ME 403, ENG EC 402, or ENG BE 404.",
-        "prof": [],
-        "reviews": []
+        "content": "Modeling of mechanical systems. Introduction to theory of feedback and control.  Performance and stability of linear systems. Design of feedback control systems.  Practical applications. Includes lab. Cannot be taken for credit in addition to  ENG ME 403, ENG EC 402, or ENG BE 404."
     },
     "ENGME406": {
         "id": "ME406",
         "name": "Dynamics of Space Vehicles",
         "prereqs": "Undergraduate Prerequisites: ENG ME 302.",
-        "content": "Orbital mechanics of particles, earth satellite trajectories. Rocket propulsion and atmospheric reentry dynamics. Gravitational and electromagnetic fields of the earth. Effects of the space environment on vehicle performance. Rigid body dynamics and vehicle attitude control. Interplanetary trajectories and mission planning.",
-        "prof": [],
-        "reviews": []
+        "content": "Orbital mechanics of particles, earth satellite trajectories. Rocket propulsion and atmospheric reentry dynamics. Gravitational and electromagnetic fields of the earth. Effects of the space environment on vehicle performance. Rigid body dynamics and vehicle attitude control. Interplanetary trajectories and mission planning."
     },
     "ENGME408": {
         "id": "ME408",
         "name": "Aircraft Performance and Design",
         "prereqs": "Undergraduate Prerequisites: ENG ME 302 ; ENG ME 303 ; ENG ME 305.",
-        "content": "This course covers the fundamental elements of designing and analyzing fixed  wing aircraft, including general aviation aircraft, commercial transports  and selected military products.  Student teams get to design an airplane  from start to finish during the semester as well as compete with other teams  for Best-in-Class design.  Topics covered include Initial Sizing, Wing,  Fuselage and Empennage Design, Propulsion Selection, Takeoff & Landing  Performance, Structural Design, Stability & Control and Cost Assessment.   Emphasis is put on modeling existing competitor aircraft in tandem with the  students' design, which helps substantiate design choices.  The use of  spreadsheets is a key learning tool for this course.",
-        "prof": [],
-        "reviews": []
+        "content": "This course covers the fundamental elements of designing and analyzing fixed  wing aircraft, including general aviation aircraft, commercial transports  and selected military products.  Student teams get to design an airplane  from start to finish during the semester as well as compete with other teams  for Best-in-Class design.  Topics covered include Initial Sizing, Wing,  Fuselage and Empennage Design, Propulsion Selection, Takeoff & Landing  Performance, Structural Design, Stability & Control and Cost Assessment.   Emphasis is put on modeling existing competitor aircraft in tandem with the  students' design, which helps substantiate design choices.  The use of  spreadsheets is a key learning tool for this course."
     },
     "ENGME411": {
         "id": "ME411",
         "name": "Operations Research",
         "prereqs": "Undergraduate Prerequisites: (ENGME366 OR CASMA381) & (ENGEK102 OR CASMA142))",
-        "content": "No longer offered",
-        "prof": [],
-        "reviews": []
+        "content": "No longer offered"
     },
     "ENGME415": {
         "id": "ME415",
         "name": "Product Design",
         "prereqs": "Undergraduate Prerequisites: ENG ME 345 ; ENG ME 407 ; ENG EK 409.",
-        "content": "No longer offered",
-        "prof": [],
-        "reviews": []
+        "content": "No longer offered"
     },
     "ENGME416": {
         "id": "ME416",
         "name": "Introduction to Robotics",
         "prereqs": "Undergraduate Prerequisites: CAS MA 225 ; ENG EK 125 ; ENG EK 301.",
-        "content": "The term robot was first used by a Czech playwriter in 1920, but the fascination of humans with machines that can sense, process and act in their physical environment was there since ancient civilization. Today the convergence of relatively cheap but powerful hardware with many years of research makes possible to (almost) build robots in different shapes and for a variety of applications: industrial robots, vacuum cleaners, delivery drones, self-driving cars, etc. While this is an active field of research, the basic building blocks for a robot (modeling, control, perception, mapping and planning) are well understood. Through both theory and practice, in this class you will learn these basics, and build a simple but complete system that will compete with the creations of your peers.",
-        "prof": [],
-        "reviews": []
+        "content": "The term robot was first used by a Czech playwriter in 1920, but the fascination of humans with machines that can sense, process and act in their physical environment was there since ancient civilization. Today the convergence of relatively cheap but powerful hardware with many years of research makes possible to (almost) build robots in different shapes and for a variety of applications: industrial robots, vacuum cleaners, delivery drones, self-driving cars, etc. While this is an active field of research, the basic building blocks for a robot (modeling, control, perception, mapping and planning) are well understood. Through both theory and practice, in this class you will learn these basics, and build a simple but complete system that will compete with the creations of your peers."
     },
     "ENGME419": {
         "id": "ME419",
         "name": "Heat Transfer",
         "prereqs": "Undergraduate Prerequisites: ENG ME 303 and ENG ME 304.",
-        "content": "Fundamentals of heat exchange processes and applications to heat exchanger  design. Principles of steady and unsteady conduction. Introduction to  numerical analysis. Natural and forced convection heat transfer in internal  and external flows. Radiant heat exchange. Introduction to boiling and  condensation heat transfer. Includes lab and design project.",
-        "prof": [],
-        "reviews": []
+        "content": "Fundamentals of heat exchange processes and applications to heat exchanger  design. Principles of steady and unsteady conduction. Introduction to  numerical analysis. Natural and forced convection heat transfer in internal  and external flows. Radiant heat exchange. Introduction to boiling and  condensation heat transfer. Includes lab and design project."
     },
     "ENGME420": {
         "id": "ME420",
         "name": "Supply Chain Engineering",
         "prereqs": "Undergraduate Prerequisites: ENG EK 381.",
-        "content": "Emphasizes the integration of product design with the process of delivering  products to customers.  Review of manufacturing processes for process  automation.  Supply chain configuration and flow balancing.  Seamless  introduction of new products.  Process reengineering and lean manufacturing  techniques in established supply chains. Design of decision support systems.",
-        "prof": [],
-        "reviews": []
+        "content": "Emphasizes the integration of product design with the process of delivering  products to customers.  Review of manufacturing processes for process  automation.  Supply chain configuration and flow balancing.  Seamless  introduction of new products.  Process reengineering and lean manufacturing  techniques in established supply chains. Design of decision support systems."
     },
     "ENGME421": {
         "id": "ME421",
         "name": "Aerodynamics",
         "prereqs": "Undergraduate Prerequisites: ENG ME 303.",
-        "content": "Flow kinematics. Aerodynamic forces. Potential flow theory. Streamfunction and  velocity potential in two-dimensional flows. 2D and 3D wing theory: thin airfoil  theory and lifting line theory. Computational methods for potential flow.  Linearized compressible flow. Laminar and turbulent boundary layers. Includes  labs and computer projects.",
-        "prof": [],
-        "reviews": []
+        "content": "Flow kinematics. Aerodynamic forces. Potential flow theory. Streamfunction and  velocity potential in two-dimensional flows. 2D and 3D wing theory: thin airfoil  theory and lifting line theory. Computational methods for potential flow.  Linearized compressible flow. Laminar and turbulent boundary layers. Includes  labs and computer projects."
     },
     "ENGME425": {
         "id": "ME425",
         "name": "Compressible Flow and Propulsion",
         "prereqs": "Undergraduate Prerequisites: ENG ME 303 and ENG ME 304.",
-        "content": "Fluid mechanics and thermodynamics of compressible fluid flow with application to external and internal flows as found in propulsion systems. Fluid/thermal related topics include: normal and oblique shocks, Prandtl-Meyer expansion waves, variable area duct flow, and wave drag. Propulsion applications include rocket nozzles, supersonic inlets, and exhaust nozzles for airbreathing propulsion systems. Parametric cycle analysis for ramjet, turbojet, and turbofan engines.",
-        "prof": [],
-        "reviews": []
+        "content": "Fluid mechanics and thermodynamics of compressible fluid flow with application to external and internal flows as found in propulsion systems. Fluid/thermal related topics include: normal and oblique shocks, Prandtl-Meyer expansion waves, variable area duct flow, and wave drag. Propulsion applications include rocket nozzles, supersonic inlets, and exhaust nozzles for airbreathing propulsion systems. Parametric cycle analysis for ramjet, turbojet, and turbofan engines."
     },
     "ENGME441": {
         "id": "ME441",
         "name": "Mechanical Vibration",
         "prereqs": "Undergraduate Prerequisites: ENG ME 302.",
-        "content": "One- and multi-degree-of-freedom systems. Natural frequencies and modes of vibrations, resonance, beat phenomenon. Stability analysis.  Energy methods.  Applications to rotating machinery.  Methods for vibration reduction.",
-        "prof": [],
-        "reviews": []
+        "content": "One- and multi-degree-of-freedom systems. Natural frequencies and modes of vibrations, resonance, beat phenomenon. Stability analysis.  Energy methods.  Applications to rotating machinery.  Methods for vibration reduction."
     },
     "ENGME452": {
         "id": "ME452",
         "name": "Directed Study in Mechanical Engineering",
         "prereqs": "Undergraduate Prerequisites: (By petition only.)",
-        "content": "Under faculty supervision, students may study a subject that is relevant to mechanical engineering and is not covered in a regularly offered course. Term paper and/or written examination required at end of semester.",
-        "prof": [],
-        "reviews": []
+        "content": "Under faculty supervision, students may study a subject that is relevant to mechanical engineering and is not covered in a regularly offered course. Term paper and/or written examination required at end of semester."
     },
     "ENGME457": {
         "id": "ME457",
         "name": "Engineering Projects in Mechanical Engineering",
         "prereqs": "Undergraduate Prerequisites: (By petition only.)",
-        "content": "Project for seniors in mechanical engineering. Students select, develop, and complete a project and prepare a report.",
-        "prof": [],
-        "reviews": []
+        "content": "Project for seniors in mechanical engineering. Students select, develop, and complete a project and prepare a report."
     },
     "ENGME460": {
         "id": "ME460",
         "name": "Senior Design I",
         "prereqs": "Undergraduate Prerequisites: ENG ME 302 ; ENG ME 305 ; ENG ME 360; CAS WR 150/1/2/3 required.",
-        "content": "The course develops skills that are crucial to the successful completion of    the  Senior Capstone Design project.   The core technical framework is    electro- mechanical systems. Through lectures, workshops, and online    materials, students  gain practical experience in component and system   design,  project planning, and engineering communications.  The course   guides students  through execution and  documentation of the conceptual   design stage of their  Capstone projects. Cannot  be taken for credit in   addition to ENG ME 560.   When taken with ENG ME 461, this course fulfills a   single unit in the  following BU Hub areas: Digital/Multimedia Expression,   Oral and/or Signed  Communication, Writing-Intensive Course, Research and  Information Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "The course develops skills that are crucial to the successful completion of    the  Senior Capstone Design project.   The core technical framework is    electro- mechanical systems. Through lectures, workshops, and online    materials, students  gain practical experience in component and system   design,  project planning, and engineering communications.  The course   guides students  through execution and  documentation of the conceptual   design stage of their  Capstone projects. Cannot  be taken for credit in   addition to ENG ME 560.   When taken with ENG ME 461, this course fulfills a   single unit in the  following BU Hub areas: Digital/Multimedia Expression,   Oral and/or Signed  Communication, Writing-Intensive Course, Research and  Information Literacy."
     },
     "ENGME461": {
         "id": "ME461",
         "name": "Senior Design II",
         "prereqs": "Undergraduate Prerequisites: ENG ME 460; Senior standing; First Year Writing Seminar (e.g., WR 100 or WR 120).",
-        "content": "The main activity in this course is the planning, and execution of a   capstone project that represents a culmination of the Mechanical Engineering   program. Students work in teams on either a research or design problem in   some area of Mechanical Engineering that builds upon previous coursework.   Class time will be focused on weekly project meetings with faculty.  The   course includes lectures on ethics, entrepreneurship, project management and   other professional topics. Oral and written communications will be   emphasized.   When taken with ENG ME 460, this course fulfills a single unit  in the following BU Hub areas: Digital/Multimedia Expression, Oral and/or  Signed Communication, Writing-Intensive Course, Research and Information  Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "The main activity in this course is the planning, and execution of a   capstone project that represents a culmination of the Mechanical Engineering   program. Students work in teams on either a research or design problem in   some area of Mechanical Engineering that builds upon previous coursework.   Class time will be focused on weekly project meetings with faculty.  The   course includes lectures on ethics, entrepreneurship, project management and   other professional topics. Oral and written communications will be   emphasized.   When taken with ENG ME 460, this course fulfills a single unit  in the following BU Hub areas: Digital/Multimedia Expression, Oral and/or  Signed Communication, Writing-Intensive Course, Research and Information  Literacy."
     }
 }
