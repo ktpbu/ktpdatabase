@@ -73,11 +73,11 @@ const Course = () => {
                 {id}: {courseInfo.name}
             </h2>
 
-            {courseInfo.prereqs !== "" ? (
-                <h5 className="text-start p-3">{courseInfo.prereqs}</h5>
-            ) : (
-                <h5 className="text-start p-3">No Prerequisites</h5>
-            )}
+            <h5 className="text-start p-3">
+                {courseInfo.prereqs !== ""
+                    ? courseInfo.prereqs
+                    : "No Prerequisites"}
+            </h5>
 
             <p className="p-3 text-start mx-auto"> {courseInfo.content}</p>
 

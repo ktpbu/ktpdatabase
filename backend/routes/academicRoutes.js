@@ -145,11 +145,6 @@ router.post("/courses/reviews/:id", async (req, res) => {
         const courseReviews = await Review.find({ courseID: courseID }).sort({
             date: -1,
         });
-        if (!courseReviews || courseReviews.length === 0) {
-            return res
-                .status(404)
-                .send({ message: "No reviews found for this course" });
-        }
         return res.status(200).json(courseReviews);
     } catch (error) {
         console.error(error.message);
