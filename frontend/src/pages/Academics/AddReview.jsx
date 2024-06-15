@@ -5,6 +5,8 @@ import { useSnackbar } from "notistack";
 import axios from "axios";
 import Select from "react-select";
 
+import CustomCheckbox from "../../components/CustomCheckbox/CustomCheckbox";
+
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const AddReview = () => {
@@ -24,6 +26,7 @@ const AddReview = () => {
     const [usefulness, setUsefulness] = useState({ value: "", label: "" });
     const [difficulty, setDifficulty] = useState({ value: "", label: "" });
     const [rating, setRating] = useState({ value: "", label: "" });
+    const [anon, setAnon] = useState(false);
 
     const selectDropdowns = [
         {
@@ -87,6 +90,15 @@ const AddReview = () => {
             });
     }, [subject]);
 
+    const resetReview = () => {
+        setAnon(false);
+        setProfessor({ value: "", label: "" });
+        setUsefulness({ value: "", label: "" });
+        setDifficulty({ value: "", label: "" });
+        setRating({ value: "", label: "" });
+        setReview("");
+    };
+
     const handleAddReview = () => {
         if (
             professor.value === "" ||
@@ -100,6 +112,7 @@ const AddReview = () => {
         } else {
             const reviewObj = {
                 user,
+                anon,
                 id,
                 professor: professor.value,
                 usefulness: usefulness.value,
@@ -112,11 +125,7 @@ const AddReview = () => {
             enqueueSnackbar("Added review successfully", {
                 variant: "success",
             });
-            setProfessor({ value: "", label: "" });
-            setUsefulness({ value: "", label: "" });
-            setDifficulty({ value: "", label: "" });
-            setRating({ value: "", label: "" });
-            setReview("");
+            resetReview();
             navigate(`/academics/courses/${level}/${id}`);
         }
         // axios
@@ -183,6 +192,14 @@ const AddReview = () => {
                     }}
                 />
             </div>
+
+            <CustomCheckbox
+                label="Keep review anonymous"
+                labelPlacement="start"
+                checked={anon}
+                setChecked={setAnon}
+            />
+
             <p className="my-4">* indicates required field</p>
 
             <button
