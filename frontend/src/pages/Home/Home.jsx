@@ -1,8 +1,6 @@
-import "./../page-content.css";
-
 const Home = () => {
     return (
-        <div className="page-content">
+        <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Kappa Theta Pi</h2>
 
             <div className="text-start p-3">

@@ -1,16 +1,17 @@
-import "bootstrap-icons/font/bootstrap-icons.css";
-import "./Footer.css";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
     return (
-        <footer className="d-flex mx-auto justify-content-around p-3 footer">
-            <div className="copyright">
+        <footer className="mx-auto p-3 flex flex-wrap justify-around bg-gray-100">
+            <div className="text-gray-500">
                 &#169; 2023, Kappa Theta Pi Lambda Chapter
             </div>
-            <div> 
-                <i className="bi bi-instagram"></i>
-                <i className="bi bi-github"></i>
-                <i className="bi bi-linkedin"></i>
+            <div>
+                <InstagramIcon className="mx-2" />
+                <LinkedInIcon className="mx-2" />
+                <GitHubIcon className="mx-2" />
             </div>
         </footer>
     );

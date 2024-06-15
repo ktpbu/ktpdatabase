@@ -10,7 +10,7 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 const CourseIcon = ({ id, name, college }) => {
     return (
         <Link
-            className="w-20 mb-2.5 mx-2.5 py-1.5 text-black border-solid border-2 rounded-2xl hover:border-black duration-100 hover:scale-110 "
+            className="w-20 mb-2.5 mx-2.5 py-1.5 text-black no-underline border-solid border-2 rounded-2xl hover:border-black duration-100 hover:scale-110 "
             title={name}
             to={`/academics/courses/${college}${id}`}
         >
