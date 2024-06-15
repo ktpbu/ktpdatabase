@@ -3,8 +3,7 @@ import { Breadcrumb } from "react-bootstrap";
 import { useState, useMemo, useEffect } from "react";
 import { useSnackbar } from "notistack";
 import axios from "axios";
-
-import "./AddReview.css";
+import Select from "react-select";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
@@ -13,13 +12,47 @@ const AddReview = () => {
     const navigate = useNavigate();
     const user = "test";
     const { level, id } = useParams();
-    const [professor, setProfessor] = useState("Choose");
-    const [usefulness, setUsefulness] = useState("Choose");
-    const [difficulty, setDifficulty] = useState("Choose");
-    const [rating, setRating] = useState("Choose");
-    const [review, setReview] = useState("");
-    const values = ["1", "2", "3", "4", "5"];
     const [professors, setProfessors] = useState([]);
+    const [professor, setProfessor] = useState({ value: "", label: "" });
+    const values = [
+        { value: 5, label: "5" },
+        { value: 4, label: "4" },
+        { value: 3, label: "3" },
+        { value: 2, label: "2" },
+        { value: 1, label: "1" },
+    ];
+    const [usefulness, setUsefulness] = useState({ value: "", label: "" });
+    const [difficulty, setDifficulty] = useState({ value: "", label: "" });
+    const [rating, setRating] = useState({ value: "", label: "" });
+
+    const selectDropdowns = [
+        {
+            label: "Professor*",
+            options: professors,
+            value: professor,
+            update: setProfessor,
+        },
+        {
+            label: "Usefulness*",
+            options: values,
+            value: usefulness,
+            update: setUsefulness,
+        },
+        {
+            label: "Difficulty*",
+            options: values,
+            value: difficulty,
+            update: setDifficulty,
+        },
+        {
+            label: "Rating*",
+            options: values,
+            value: rating,
+            update: setRating,
+        },
+    ];
+
+    const [review, setReview] = useState("");
 
     const subjectMap = useMemo(
         () => ({
@@ -42,7 +75,12 @@ const AddReview = () => {
                 subject: subject,
             })
             .then((res) => {
-                setProfessors(res.data);
+                setProfessors(
+                    res.data.map((professor) => ({
+                        value: professor,
+                        label: professor,
+                    }))
+                );
             })
             .catch((error) => {
                 console.log(error);
@@ -51,39 +89,48 @@ const AddReview = () => {
 
     const handleAddReview = () => {
         if (
-            professor === "Choose" ||
-            usefulness === "Choose" ||
-            difficulty === "Choose" ||
-            rating === "Choose"
+            professor.value === "" ||
+            usefulness.value === "" ||
+            difficulty.value === "" ||
+            rating.value === ""
         ) {
-            enqueueSnackbar("Must complete all required fields", {
+            enqueueSnackbar("Fill in all required fields", {
                 variant: "error",
             });
-            return;
-        }
-        const reviewObj = {
-            user,
-            id,
-            professor,
-            usefulness: parseInt(usefulness),
-            difficulty: parseInt(difficulty),
-            rating: parseInt(rating),
-            review,
-            date: new Date().toISOString().replace("Z", "+00:00"),
-        };
-
-        axios
-            .post(`${backend}/academics/courses/add-review`, reviewObj)
-            .then(() => {
-                enqueueSnackbar("Added review successfully", {
-                    variant: "success",
-                });
-                navigate(`/academics/courses/${id}`);
-            })
-            .catch((error) => {
-                enqueueSnackbar("Error", { variant: "error" });
-                console.log(error);
+        } else {
+            const reviewObj = {
+                user,
+                id,
+                professor: professor.value,
+                usefulness: usefulness.value,
+                difficulty: difficulty.value,
+                rating: rating.value,
+                review,
+                date: new Date().toISOString().replace("Z", "+00:00"),
+            };
+            console.log(reviewObj);
+            enqueueSnackbar("Added review successfully", {
+                variant: "success",
             });
+            setProfessor({ value: "", label: "" });
+            setUsefulness({ value: "", label: "" });
+            setDifficulty({ value: "", label: "" });
+            setRating({ value: "", label: "" });
+            setReview("");
+            navigate(`/academics/courses/${level}/${id}`);
+        }
+        // axios
+        //     .post(`${backend}/academics/courses/add-review`, reviewObj)
+        //     .then(() => {
+        //         enqueueSnackbar("Added review successfully", {
+        //             variant: "success",
+        //         });
+        //         navigate(`/academics/courses/${level}${id}`);
+        //     })
+        //     .catch((error) => {
+        //         enqueueSnackbar("Error", { variant: "error" });
+        //         console.log(error);
+        //     });
     };
 
     return (
@@ -108,101 +155,42 @@ const AddReview = () => {
 
             <h2 className="text-start p-3 my-auto">Add Review for {id}</h2>
 
-            <div className="add-review-field-container">
-                <div className="add-review-individual-field-container">
-                    <div className="add-review-field-label">
-                        <label>Professor*</label>
-                    </div>
-                    <div className="add-review-field">
-                        <select
-                            className="add-review-select"
-                            value={professor}
-                            onChange={(e) => setProfessor(e.target.value)}
-                        >
-                            <option value={null}>Choose</option>
-                            {professors.map((value) => (
-                                <option key={value} value={value}>
-                                    {value}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
+            {selectDropdowns.map((item) => (
+                <div
+                    key={item.label}
+                    className="w-96 mx-auto my-2 flex flex-wrap justify-between"
+                >
+                    <label className="my-auto text-2xl">{item.label}</label>
+                    <Select
+                        className="w-48"
+                        options={item.options}
+                        value={item.value}
+                        onChange={(selectedOption) =>
+                            selectedOption && item.update(selectedOption)
+                        }
+                        isSearchable={false}
+                    />
                 </div>
-                <div className="add-review-individual-field-container">
-                    <div className="add-review-field-label">
-                        <label>Usefulness*</label>
-                    </div>
-                    <div className="add-review-field">
-                        <select
-                            className="add-review-select"
-                            value={usefulness}
-                            onChange={(e) => setUsefulness(e.target.value)}
-                        >
-                            <option value={null}>Choose</option>
-                            {values.map((value) => (
-                                <option key={value} value={value}>
-                                    {value}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
-                </div>
-                <div className="add-review-individual-field-container">
-                    <div className="add-review-field-label">
-                        <label>Difficulty*</label>
-                    </div>
-                    <div className="add-review-field">
-                        <select
-                            className="add-review-select"
-                            value={difficulty}
-                            onChange={(e) => setDifficulty(e.target.value)}
-                        >
-                            <option value={null}>Choose</option>
-                            {values.map((value) => (
-                                <option key={value} value={value}>
-                                    {value}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
-                </div>
-                <div className="add-review-individual-field-container">
-                    <div className="add-review-field-label">
-                        <label>Rating*</label>
-                    </div>
-                    <div className="add-review-field">
-                        <select
-                            className="add-review-select"
-                            value={rating}
-                            onChange={(e) => setRating(e.target.value)}
-                        >
-                            <option value={null}>Choose</option>
-                            {values.map((value) => (
-                                <option key={value} value={value}>
-                                    {value}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
-                </div>
-                <div className="add-review-individual-field-container">
-                    <div className="add-review-field-label">
-                        <label>Review</label>
-                    </div>
-                    <div className="add-review-field">
-                        <input
-                            className="add-review-input"
-                            type="text"
-                            value={review}
-                            onChange={(e) => setReview(e.target.value)}
-                        />
-                    </div>
-                </div>
-                <button onClick={handleAddReview}>Add</button>
-                <p className="add-review-required-field-warning">
-                    Fields marked with * are required
-                </p>
+            ))}
+            <div className="w-96 mx-auto my-2 flex flex-wrap justify-between">
+                <label className="my-auto text-2xl">Review</label>
+                <input
+                    name="review"
+                    value={review}
+                    className="w-48 h-8 p-2 border-1 border-gray-300 rounded-md"
+                    onChange={(e) => {
+                        setReview(e.target.value);
+                    }}
+                />
             </div>
+            <p className="my-4">* indicates required field</p>
+
+            <button
+                onClick={handleAddReview}
+                className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+            >
+                Add Review
+            </button>
         </div>
     );
 };
