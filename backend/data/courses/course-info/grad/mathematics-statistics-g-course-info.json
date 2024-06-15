@@ -3,280 +3,210 @@
         "id": "MA505",
         "name": "History of Mathematics",
         "prereqs": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230; and (CASMA242 or CASMA442); or consent of instructor.",
-        "content": "The development of mathematics from Antiquity through the 18th Century.   Assuming background in modern mathematics, its roots are systematically   pursued in terms of modern techniques, structures, and results. Providing  the  emergence of mathematical concepts and procedures, a coherent, unifying  view  of number, geometry, algebra, calculus, and mathematical analysis is   presented. Effective Fall 2018, this course fulfills a single unit in the  following BU Hub area:  Historical Consciousness.",
-        "prof": [],
-        "reviews": []
+        "content": "The development of mathematics from Antiquity through the 18th Century.   Assuming background in modern mathematics, its roots are systematically   pursued in terms of modern techniques, structures, and results. Providing  the  emergence of mathematical concepts and procedures, a coherent, unifying  view  of number, geometry, algebra, calculus, and mathematical analysis is   presented. Effective Fall 2018, this course fulfills a single unit in the  following BU Hub area:  Historical Consciousness."
     },
     "CASMA511": {
         "id": "MA511",
         "name": "Introduction to Analysis I",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230."
     },
     "CASMA512": {
         "id": "MA512",
         "name": "Introduction to Analysis II",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 511.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 511."
     },
     "CASMA528": {
         "id": "MA528",
         "name": "Introduction to Modern Geometry",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230; or consent of instructor.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230; or consent of instructor."
     },
     "CASMA531": {
         "id": "MA531",
         "name": "Mathematical Logic",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 293; or consent of instructor.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 293; or consent of instructor."
     },
     "CASMA532": {
         "id": "MA532",
         "name": "Foundations of Mathematics",
         "prereqs": "Undergraduate Prerequisites: CAS MA 531.",
-        "content": "Axiomatic set theory as a foundation for mathematics and as a field of mathematics: Axiom of Choice, the  Continuum Hypothesis, and consistency results. Also offered as CAS PH 461.",
-        "prof": [],
-        "reviews": []
+        "content": "Axiomatic set theory as a foundation for mathematics and as a field of mathematics: Axiom of Choice, the  Continuum Hypothesis, and consistency results. Also offered as CAS PH 461."
     },
     "CASMA539": {
         "id": "MA539",
         "name": "Methods of Scientific Computing",
         "prereqs": "Undergraduate Prerequisites:  CAS MA 225 or CAS MA 230 ; CAS MA 226 or CAS MA 231 ; CAS MA 242 orCAS MA 442 ; CAS CS 330; or consent of instructor.",
-        "content": "(Meets with CAS CS 539.) An introduction to topics including computational linear algebra, solutions of linear equations, numerical integration and solution of differential equations, finite element methods, and methods of stochastic simulation (i.e., Monte Carlo methods).",
-        "prof": [],
-        "reviews": []
+        "content": "(Meets with CAS CS 539.) An introduction to topics including computational linear algebra, solutions of linear equations, numerical integration and solution of differential equations, finite element methods, and methods of stochastic simulation (i.e., Monte Carlo methods)."
     },
     "CASMA541": {
         "id": "MA541",
         "name": "Modern Algebra 1",
         "prereqs": "Undergraduate Prerequisites: CAS MA 242 or CAS MA 442.",
-        "content": "Basic properties of groups, Sylow theorems, basic properties of rings and ideals, Euclidean rings, polynomial rings.",
-        "prof": [],
-        "reviews": []
+        "content": "Basic properties of groups, Sylow theorems, basic properties of rings and ideals, Euclidean rings, polynomial rings."
     },
     "CASMA542": {
         "id": "MA542",
         "name": "Modern Algebra II",
         "prereqs": "Undergraduate Prerequisites: CAS MA 541; or consent of instructor.",
-        "content": "Vector spaces and modules, Galois theory, linear transformations and matrices, canonical forms, bilinear and quadratic forms.",
-        "prof": [],
-        "reviews": []
+        "content": "Vector spaces and modules, Galois theory, linear transformations and matrices, canonical forms, bilinear and quadratic forms."
     },
     "CASMA547": {
         "id": "MA547",
         "name": "Topics in Number Theory",
         "prereqs": "",
-        "content": "Graduate Prerequisites: CAS MA 242; and consent of instructor.",
-        "prof": [],
-        "reviews": []
+        "content": "Graduate Prerequisites: CAS MA 242; and consent of instructor."
     },
     "CASMA548": {
         "id": "MA548",
         "name": "Problem Solving in Number Theory",
         "prereqs": "Graduate Corequisites: CAS MA 547.",
-        "content": "Mathematical heuristics, including good use of language and symbolism, and techniques of exploration  and discovery. Through intensive work on a large assortment of unusually challenging problems in number  theory students practice the art of mathematical discovery--numerical exploration, formulation and  critique of conjectures, and techniques of proof and generalization. This course is offered only during  Summer Term.",
-        "prof": [],
-        "reviews": []
+        "content": "Mathematical heuristics, including good use of language and symbolism, and techniques of exploration  and discovery. Through intensive work on a large assortment of unusually challenging problems in number  theory students practice the art of mathematical discovery--numerical exploration, formulation and  critique of conjectures, and techniques of proof and generalization. This course is offered only during  Summer Term."
     },
     "CASMA555": {
         "id": "MA555",
         "name": "Numerical Analysis I",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230."
     },
     "CASMA556": {
         "id": "MA556",
         "name": "Numerical Analysis II",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 555 and CAS MA 242 or CAS MA 442; or consent of instructor.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 555 and CAS MA 242 or CAS MA 442; or consent of instructor."
     },
     "CASMA561": {
         "id": "MA561",
         "name": "Methods of Applied Mathematics I",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 226 or CAS MA 231.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 226 or CAS MA 231."
     },
     "CASMA562": {
         "id": "MA562",
         "name": "Methods of Applied Mathematics II",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 561.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 561."
     },
     "CASMA563": {
         "id": "MA563",
         "name": "Introduction to Differential Geometry",
         "prereqs": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230; and (CASMA226 OR CASMA231) and (CASMA242 or CASMA442); or consent of instructor.",
-        "content": "Study of local properties of curves and surfaces in the three-dimensional Euclidean space; curvature, torsion, Frenet equations, tangent and normal planes; first and second fundamental form; developable surfaces, principal, mean and Gaussian curvature; vector fields, covariant differentiation, geodesics, surfaces of constant curvature.",
-        "prof": [],
-        "reviews": []
+        "content": "Study of local properties of curves and surfaces in the three-dimensional Euclidean space; curvature, torsion, Frenet equations, tangent and normal planes; first and second fundamental form; developable surfaces, principal, mean and Gaussian curvature; vector fields, covariant differentiation, geodesics, surfaces of constant curvature."
     },
     "CASMA564": {
         "id": "MA564",
         "name": "Introduction to Topology",
         "prereqs": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230;  and (CASMA411 or CASMA511); or consent of instructor.",
-        "content": "Introduction to point set and algebraic topology. Topological spaces and continuity. Compactness and connectedness. Metrizable topological spaces. Product topology and Tychonoff's theorem. The fundamental group and van Kampen's theorem. Covering spaces and the universal cover.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to point set and algebraic topology. Topological spaces and continuity. Compactness and connectedness. Metrizable topological spaces. Product topology and Tychonoff's theorem. The fundamental group and van Kampen's theorem. Covering spaces and the universal cover."
     },
     "CASMA565": {
         "id": "MA565",
         "name": "Mathematical Models in the Life Sciences",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 226 or CAS MA 231.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 226 or CAS MA 231."
     },
     "CASMA568": {
         "id": "MA568",
         "name": "Statistical Analysis of Point Process Data",
         "prereqs": "Undergraduate Prerequisites: CAS MA 213 and CAS MA 214; or consent of instructor.",
-        "content": "Introduces the theory of point processes and develops practical problem-solving skills to construct models, assess goodness-of-fit, and perform estimation from point process data. Applications to neural data, earthquake analysis, financial modeling, and queuing theory.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduces the theory of point processes and develops practical problem-solving skills to construct models, assess goodness-of-fit, and perform estimation from point process data. Applications to neural data, earthquake analysis, financial modeling, and queuing theory."
     },
     "CASMA569": {
         "id": "MA569",
         "name": "Optimization Methods of Operations Research",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230; , CASMA242 OR CASMA442",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230; , CASMA242 OR CASMA442"
     },
     "CASMA570": {
         "id": "MA570",
         "name": "Stochastic Methods of Operations Research",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites:  CAS MA 225 or CAS MA 230 and CAS MA 242 or CAS MA 442.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites:  CAS MA 225 or CAS MA 230 and CAS MA 242 or CAS MA 442."
     },
     "CASMA573": {
         "id": "MA573",
         "name": "Qualitative Theory of Ordinary Differential Equations",
         "prereqs": "Undergraduate Prerequisites: (CASMA226 OR CASMA231) & (CASMA242 OR CASMA442)",
-        "content": "Eigenvalues, eigenvectors, Jordan normal forms. Linear systems of differential equations, Phase portrait, Hamiltonian systems, stability theory. Applications to systems arising in mechanics, economics, ecology, electrical circuit theory, etc.",
-        "prof": [],
-        "reviews": []
+        "content": "Eigenvalues, eigenvectors, Jordan normal forms. Linear systems of differential equations, Phase portrait, Hamiltonian systems, stability theory. Applications to systems arising in mechanics, economics, ecology, electrical circuit theory, etc."
     },
     "CASMA575": {
         "id": "MA575",
         "name": "Linear Models",
         "prereqs": "Undergraduate Prerequisites: CAS MA 214 ; CAS MA 242 ; CAS MA 581; or consent of instructor.",
-        "content": "Post-introductory course on linear models. Topics to be covered include  simple and multiple  linear regression, regression with polynomials or  factors, analysis of variance, weighted and  generalized least squares,  transformations, regression diagnostics, variable selection, and  extensions  of linear models. Effective Fall 2019, this course fulfills a single unit in the following  BU Hub  area: Quantitative Reasoning II, Teamwork/Collaboration.",
-        "prof": [],
-        "reviews": []
+        "content": "Post-introductory course on linear models. Topics to be covered include  simple and multiple  linear regression, regression with polynomials or  factors, analysis of variance, weighted and  generalized least squares,  transformations, regression diagnostics, variable selection, and  extensions  of linear models. Effective Fall 2019, this course fulfills a single unit in the following  BU Hub  area: Quantitative Reasoning II, Teamwork/Collaboration."
     },
     "CASMA576": {
         "id": "MA576",
         "name": "Generalized Linear Models",
         "prereqs": "Undergraduate Prerequisites: CAS MA 575; or consent of instructor.",
-        "content": "Covers topics in linear models beyond MA 575: generalized linear models, analysis of binary and polytomous data, log-linear models, multivariate response models, non-linear models, graphical models, and relevant model selection techniques.  Additional topics in modern regression as time allows.",
-        "prof": [],
-        "reviews": []
+        "content": "Covers topics in linear models beyond MA 575: generalized linear models, analysis of binary and polytomous data, log-linear models, multivariate response models, non-linear models, graphical models, and relevant model selection techniques.  Additional topics in modern regression as time allows."
     },
     "CASMA577": {
         "id": "MA577",
         "name": "Mathematics of Financial Derivatives",
         "prereqs": "Undergraduate Prerequisites: CAS MA 581; or consent of instructor.",
-        "content": "Develops the probabilistic tools used in finance and presents the methodologies that are used in the pricing of financial derivatives. No previous knowledge of finance is required.",
-        "prof": [],
-        "reviews": []
+        "content": "Develops the probabilistic tools used in finance and presents the methodologies that are used in the pricing of financial derivatives. No previous knowledge of finance is required."
     },
     "CASMA578": {
         "id": "MA578",
         "name": "Bayesian Statistics",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 581 and CAS MA 582.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 581 and CAS MA 582."
     },
     "CASMA579": {
         "id": "MA579",
         "name": "Numerical Methods for Biological Sciences",
         "prereqs": "Undergraduate Prerequisites: CAS MA 226 or CAS MA 231; or equivalent, and elementary knowledge of linear algebra.",
-        "content": "Introduction to the use of numerical methods for studying mathematical models of biological systems. Emphasis on the development of these methods; understanding their accuracy, performance, and stability; and their application to the study of biological systems.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to the use of numerical methods for studying mathematical models of biological systems. Emphasis on the development of these methods; understanding their accuracy, performance, and stability; and their application to the study of biological systems."
     },
     "CASMA581": {
         "id": "MA581",
         "name": "Probability",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230; or consent of instructor.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 225 or CAS MA 230; or consent of instructor."
     },
     "CASMA582": {
         "id": "MA582",
         "name": "Mathematical Statistics",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 581.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 581."
     },
     "CASMA583": {
         "id": "MA583",
         "name": "Introduction to Stochastic Processes",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 581; or consent of instructor.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 581; or consent of instructor."
     },
     "CASMA585": {
         "id": "MA585",
         "name": "Time Series and Forecasting",
         "prereqs": "Undergraduate Prerequisites: CAS MA 581; or consent of instructor.",
-        "content": "Autocorrelation and partial autocorrelation functions; stationary and nonstationary processes; ARIMA and Seasonal ARIMA model identification, estimation, diagnostics, and forecasting. Modeling financial data via ARCH and GARCH models. Volatility estimation; additional topics, including long-range dependence and state-space models.",
-        "prof": [],
-        "reviews": []
+        "content": "Autocorrelation and partial autocorrelation functions; stationary and nonstationary processes; ARIMA and Seasonal ARIMA model identification, estimation, diagnostics, and forecasting. Modeling financial data via ARCH and GARCH models. Volatility estimation; additional topics, including long-range dependence and state-space models."
     },
     "CASMA586": {
         "id": "MA586",
         "name": "Stochastic Methods for Algorithms",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: First-Year Writing Seminar (e.g., WR 120); CAS CS111, CDS DS110, ENG EK125, or equivalent; CAS MA225, CAS CS235, CDS DS122, or equivalent; CAS MA242, CAS CS132, CDS DS121, or equivalent; CAS MA581, CA",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: First-Year Writing Seminar (e.g., WR 120); CAS CS111, CDS DS110, ENG EK125, or equivalent; CAS MA225, CAS CS235, CDS DS122, or equivalent; CAS MA242, CAS CS132, CDS DS121, or equivalent; CAS MA581, CA"
     },
     "CASMA588": {
         "id": "MA588",
         "name": "Nonparametric Statistics",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 582; or equivalent, consent of instructor.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 582; or equivalent, consent of instructor."
     },
     "CASMA589": {
         "id": "MA589",
         "name": "Computational Statistics",
         "prereqs": "Undergraduate Prerequisites: CAS MA 213;  AND CASMA242 (OR CAS MA 442), AND CASMA581; or equivalent with consent of instructor.",
-        "content": "Topics from computational statistics that are relevant to modern statistical applications: random number  generation, sampling, Monte Carlo methods, computational inference, MCMC methods, graphical models,  data partitioning, and bootstrapping. Emphasis on developing solid conceptual understanding of the  methods through applications.",
-        "prof": [],
-        "reviews": []
+        "content": "Topics from computational statistics that are relevant to modern statistical applications: random number  generation, sampling, Monte Carlo methods, computational inference, MCMC methods, graphical models,  data partitioning, and bootstrapping. Emphasis on developing solid conceptual understanding of the  methods through applications."
     },
     "CASMA592": {
         "id": "MA592",
         "name": "Introduction to Causal Inference",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS MA 575; or consent of instructor.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS MA 575; or consent of instructor."
     }
 }

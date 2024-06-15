@@ -49,11 +49,14 @@ ReviewDisplay.propTypes = {
         PropTypes.shape({
             _id: PropTypes.string.isRequired,
             user: PropTypes.string.isRequired,
-            class: PropTypes.string.isRequired,
+            anon: PropTypes.bool.isRequired,
+            courseID: PropTypes.string.isRequired,
             professor: PropTypes.string.isRequired,
             usefulness: PropTypes.number.isRequired,
             difficulty: PropTypes.number.isRequired,
             rating: PropTypes.number.isRequired,
+            review: PropTypes.string,
+            date: PropTypes.string.isRequired,
         })
     ),
 };

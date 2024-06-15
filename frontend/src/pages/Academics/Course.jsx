@@ -28,31 +28,24 @@ const Course = () => {
     );
 
     useEffect(() => {
-        setLoading(true);
-        const subject = subjectMap[id.slice(0, 5)];
-        axios
-            .get(`${backend}/academics/courses/${level}/${subject}/${id}`)
-            .then((res) => {
-                setCourseInfo(res.data);
-                setLoading(false);
-            })
-            .catch((error) => {
-                console.log(error);
-                setLoading(false);
-            });
-        setLoading(true);
-        axios
-            .get(`${backend}/academics/courses/reviews/${id}`)
-            .then((res) => {
-                setCourseReviews(res.data);
-                setLoading(false);
-            })
-            .catch((error) => {
-                console.log(error);
-                setLoading(false);
-            });
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [id]);
+        const fetchCourseData = async () => {
+            const subject = subjectMap[id.slice(0, 5)];
+            try {
+                const [courseRes, reviewsRes] = await Promise.all([
+                    axios.get(
+                        `${backend}/academics/courses/${level}/${subject}/${id}`
+                    ),
+                    // not sure why the review request only works with post and not get
+                    axios.post(`${backend}/academics/courses/reviews/${id}`),
+                ]);
+                setCourseInfo(courseRes.data);
+                setCourseReviews(reviewsRes.data);
+            } catch (error) {
+                console.error("Error fetching course data:", error);
+            }
+        };
+        fetchCourseData();
+    }, [id, level, subjectMap]);
 
     const navigate = useNavigate();
     const handleAddReviewButton = () => {
@@ -80,11 +73,11 @@ const Course = () => {
                 {id}: {courseInfo.name}
             </h2>
 
-            {courseInfo.prereqs !== "" ? (
-                <h5 className="text-start p-3">{courseInfo.prereqs}</h5>
-            ) : (
-                <h5 className="text-start p-3">No Prerequisites</h5>
-            )}
+            <h5 className="text-start p-3">
+                {courseInfo.prereqs !== ""
+                    ? courseInfo.prereqs
+                    : "No Prerequisites"}
+            </h5>
 
             <p className="p-3 text-start mx-auto"> {courseInfo.content}</p>
 

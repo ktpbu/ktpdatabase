@@ -3,192 +3,144 @@
         "id": "EC311",
         "name": "Introduction to Logic Design",
         "prereqs": "Undergraduate Prerequisites: Sophomore standing.",
-        "content": "Introduction to hardware building blocks used in digital computers. Boolean   algebra, combinatorial and sequential circuits: analysis and design. Adders,   multipliers, decoders, encoders, multiplexors. Programmable logic devices:  read- only memory, programmable arrays, Verilog. Counters and registers.  Includes lab.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to hardware building blocks used in digital computers. Boolean   algebra, combinatorial and sequential circuits: analysis and design. Adders,   multipliers, decoders, encoders, multiplexors. Programmable logic devices:  read- only memory, programmable arrays, Verilog. Counters and registers.  Includes lab."
     },
     "ENGEC327": {
         "id": "EC327",
         "name": "Introduction to Software Engineering",
         "prereqs": "Undergraduate Prerequisites: ENG EK 125.",
-        "content": "This course aims to introduce students to software design, programming  techniques, data structures, and software engineering principles. The course is  structured bottom up, beginning with basic hardware followed by an  understanding of machine language that controls the hardware and the assembly  language that organizes that control. It then proceeds through fundamental  elements of functional programming languages, using C as the case example, and  continues with the principles of object-oriented programming, as principally  embodied in C++ but also its daughter languages Java, C#, and objective C. The  course will conclude with an introduction to elementary data structures and  algorithmic analysis. Throughout, the course develops core competencies in  software engineering, including programming style, optimization, debugging,  compilation, and program management, utilizing a variety of Integrated  Development Environments and operating systems.",
-        "prof": [],
-        "reviews": []
+        "content": "This course aims to introduce students to software design, programming  techniques, data structures, and software engineering principles. The course is  structured bottom up, beginning with basic hardware followed by an  understanding of machine language that controls the hardware and the assembly  language that organizes that control. It then proceeds through fundamental  elements of functional programming languages, using C as the case example, and  continues with the principles of object-oriented programming, as principally  embodied in C++ but also its daughter languages Java, C#, and objective C. The  course will conclude with an introduction to elementary data structures and  algorithmic analysis. Throughout, the course develops core competencies in  software engineering, including programming style, optimization, debugging,  compilation, and program management, utilizing a variety of Integrated  Development Environments and operating systems."
     },
     "ENGEC330": {
         "id": "EC330",
         "name": "Applied Algorithms for Engineers",
         "prereqs": "Undergraduate Prerequisites: ENG EC 327; Recommended: CAS MA 193",
-        "content": "Introduction to the general concept of algorithms. Efficiency and run-time of  algorithms. Graph algorithms, priority queues, search trees.  Various approaches  to design of algorithms and data structures, together with their applications to  numerical and non-numerical problems.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to the general concept of algorithms. Efficiency and run-time of  algorithms. Graph algorithms, priority queues, search trees.  Various approaches  to design of algorithms and data structures, together with their applications to  numerical and non-numerical problems."
     },
     "ENGEC400": {
         "id": "EC400",
         "name": "Undergraduate Special Topics in Electrical & Computer Engineering",
         "prereqs": "",
-        "content": "Coverage of a specific topic in electrical and computer engineering at the  undergraduate level. Subject matter varies from semester to semester; not offered  every semester.",
-        "prof": [],
-        "reviews": []
+        "content": "Coverage of a specific topic in electrical and computer engineering at the  undergraduate level. Subject matter varies from semester to semester; not offered  every semester."
     },
     "ENGEC401": {
         "id": "EC401",
         "name": "Signals and Systems",
         "prereqs": "Undergraduate Prerequisites: CAS MA 226 and ENG EK 307.",
-        "content": "Cannot be taken for credit in addition to ENG BE 401. Continuous-time and   discrete-time signals and systems. Convolution sum, convolution integral.   Linearity, time-invariance, causality, and stability of systems. Frequency   domain analysis of signals and systems. Filtering, sampling, and modulation.   Laplace transform, z-transform, pole-zero plots. Linear feedback systems.   Includes lab. Cannot be taken for credit in addition to ENG BE 403.",
-        "prof": [],
-        "reviews": []
+        "content": "Cannot be taken for credit in addition to ENG BE 401. Continuous-time and   discrete-time signals and systems. Convolution sum, convolution integral.   Linearity, time-invariance, causality, and stability of systems. Frequency   domain analysis of signals and systems. Filtering, sampling, and modulation.   Laplace transform, z-transform, pole-zero plots. Linear feedback systems.   Includes lab. Cannot be taken for credit in addition to ENG BE 403."
     },
     "ENGEC402": {
         "id": "EC402",
         "name": "Control Systems",
         "prereqs": "Undergraduate Prerequisites: CAS MA 226 ; ENG EK 307 ; ENG EC 401.",
-        "content": "Analysis of linear feedback systems, their characteristics, performance, and   stability. The Routh-Hurwitz, root-locus, Bode, and Nyquist techniques. Design   and compensation of feedback control systems. Cannot be taken for credit in  addition to ENG ME 403, ENG ME 404, or ENG BE 404.",
-        "prof": [],
-        "reviews": []
+        "content": "Analysis of linear feedback systems, their characteristics, performance, and   stability. The Routh-Hurwitz, root-locus, Bode, and Nyquist techniques. Design   and compensation of feedback control systems. Cannot be taken for credit in  addition to ENG ME 403, ENG ME 404, or ENG BE 404."
     },
     "ENGEC410": {
         "id": "EC410",
         "name": "Introduction to Electronics",
         "prereqs": "Undergraduate Prerequisites: ENG EK 307.",
-        "content": "Principles of diode, BJT, and MOSFET circuits. Graphical and analytical means of  analysis. Piecewise linear modeling; amplifiers; digital inverters and logic  gates. Biasing and small-signal analysis, microelectronic design techniques.  Time-domain and frequency domain analysis and design. Includes lab.",
-        "prof": [],
-        "reviews": []
+        "content": "Principles of diode, BJT, and MOSFET circuits. Graphical and analytical means of  analysis. Piecewise linear modeling; amplifiers; digital inverters and logic  gates. Biasing and small-signal analysis, microelectronic design techniques.  Time-domain and frequency domain analysis and design. Includes lab."
     },
     "ENGEC412": {
         "id": "EC412",
         "name": "Analog Electronics",
         "prereqs": "Undergraduate Prerequisites: ENG EC 410.",
-        "content": "Continuation of ENG EC 410.  Topics include detailed analysis of differential   amplifiers, design and principles of operational amplifier including multistage   circuit structure, BJT, MOSFET, CMOS, and BiCMOS design principles, active   filters and oscillators, negative and positive feedback, and power devices.   Includes lab.",
-        "prof": [],
-        "reviews": []
+        "content": "Continuation of ENG EC 410.  Topics include detailed analysis of differential   amplifiers, design and principles of operational amplifier including multistage   circuit structure, BJT, MOSFET, CMOS, and BiCMOS design principles, active   filters and oscillators, negative and positive feedback, and power devices.   Includes lab."
     },
     "ENGEC413": {
         "id": "EC413",
         "name": "Computer Organization",
         "prereqs": "Undergraduate Prerequisites: ENG EC 311.",
-        "content": "Introduction to the fundamentals and design of computer systems. Topics covered  include computer instruction sets, assembly language programming, arithmetic  circuits, CPU design (data path and control, pipelining), performance evaluation,  memory devices, memory systems including caching and virtual memory, and I/O.  Project using design automation tools. Includes lab.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to the fundamentals and design of computer systems. Topics covered  include computer instruction sets, assembly language programming, arithmetic  circuits, CPU design (data path and control, pipelining), performance evaluation,  memory devices, memory systems including caching and virtual memory, and I/O.  Project using design automation tools. Includes lab."
     },
     "ENGEC414": {
         "id": "EC414",
         "name": "Introduction to Machine Learning",
         "prereqs": "Undergraduate Prerequisites: ENG EK 103 ; ENG EK 125 ; ENG EK 381.",
-        "content": "Linear regression.  Maximum likelihood and maximum a posteriori estimation.  Classification techniques, including na?ve Bayes, k-nearest neighbors, logistic regression, and support vector machines.  Data visualization and feature extraction, including principal components analysis and linear projections.   Clustering.  Introduction to neural networks and deep learning.  Discussion of other modern analysis methods.",
-        "prof": [],
-        "reviews": []
+        "content": "Linear regression.  Maximum likelihood and maximum a posteriori estimation.  Classification techniques, including na?ve Bayes, k-nearest neighbors, logistic regression, and support vector machines.  Data visualization and feature extraction, including principal components analysis and linear projections.   Clustering.  Introduction to neural networks and deep learning.  Discussion of other modern analysis methods."
     },
     "ENGEC415": {
         "id": "EC415",
         "name": "Software Radios",
         "prereqs": "Undergraduate Prerequisites: ENG EC 401; equivalent",
-        "content": "Signal analysis and transmission: amplitude modulation, angle modulation, pulse- amplitude and pulse-code modulation; amplitude shift-keying, frequency shift- keying, phase-shift keying. Case studies of practical communication systems.  Includes lab.",
-        "prof": [],
-        "reviews": []
+        "content": "Signal analysis and transmission: amplitude modulation, angle modulation, pulse- amplitude and pulse-code modulation; amplitude shift-keying, frequency shift- keying, phase-shift keying. Case studies of practical communication systems.  Includes lab."
     },
     "ENGEC417": {
         "id": "EC417",
         "name": "Electric Energy Systems",
         "prereqs": "Undergraduate Prerequisites: ENG EK 307.",
-        "content": "This course will present a detailed perspective of electric power systems from generation, transmission, storage, to distribution to end users.  Significant emphasis will be placed on methodologies for reliable and efficient transmission and distribution of power over the grid including challenges for adapting to  renewable resources such as photovoltaics and wind.  Conventional approaches will be presented with emphasis to future technology such as the \"smart grid\".  Analysis of 3-phase power will be presented using numerous examples.  Items such as power system stability, security, reliability will be covered.  Optimization methods, models, simulation techniques, monitoring and control, grid storage technologies, and micro-grids will also be discussed.  Power electronics will be introduced specifically in reference to high voltage circuits. Finally, planning for large numbers of electric vehicles will present new challenges to the effective distribution of power which will be discussed from both centralized and decentralized approaches.",
-        "prof": [],
-        "reviews": []
+        "content": "This course will present a detailed perspective of electric power systems from generation, transmission, storage, to distribution to end users.  Significant emphasis will be placed on methodologies for reliable and efficient transmission and distribution of power over the grid including challenges for adapting to  renewable resources such as photovoltaics and wind.  Conventional approaches will be presented with emphasis to future technology such as the \"smart grid\".  Analysis of 3-phase power will be presented using numerous examples.  Items such as power system stability, security, reliability will be covered.  Optimization methods, models, simulation techniques, monitoring and control, grid storage technologies, and micro-grids will also be discussed.  Power electronics will be introduced specifically in reference to high voltage circuits. Finally, planning for large numbers of electric vehicles will present new challenges to the effective distribution of power which will be discussed from both centralized and decentralized approaches."
     },
     "ENGEC418": {
         "id": "EC418",
         "name": "Introduction to Reinforcement Learning",
         "prereqs": "Undergraduate Prerequisites: Students must either take all three of MA225, EK103, and EK 381 (Multi-variable Calculus, Linear Algebra, Probability, or their equivalents) or all three of DS 120, 121, 122 (Foundations of Data Scien",
-        "content": "Reinforcement learning is a subfield of artificial intelligence which deals with  learning from repeated interactions with an environment. Reinforcement learning  is the basis for algorithms for playing strategy games such as Chess, Go,  Backgammon, and Starcraft, as well as a number of algorithms throughout  robotics, operations research, and other fields of engineering. This course will  cover the fundamental algorithms of reinforcement learning, focusing on the core  principles underlying these methods. Topics covered will include Dynamic  Programming, Markov Decision Processes, Value Iteration, Policy Iteration,  Temporal Difference Methods and Monte Carlo, Function Approximation in  Reinforcement Learning and Neural Networks",
-        "prof": [],
-        "reviews": []
+        "content": "Reinforcement learning is a subfield of artificial intelligence which deals with  learning from repeated interactions with an environment. Reinforcement learning  is the basis for algorithms for playing strategy games such as Chess, Go,  Backgammon, and Starcraft, as well as a number of algorithms throughout  robotics, operations research, and other fields of engineering. This course will  cover the fundamental algorithms of reinforcement learning, focusing on the core  principles underlying these methods. Topics covered will include Dynamic  Programming, Markov Decision Processes, Value Iteration, Policy Iteration,  Temporal Difference Methods and Monte Carlo, Function Approximation in  Reinforcement Learning and Neural Networks"
     },
     "ENGEC440": {
         "id": "EC440",
         "name": "Introduction to Operating Systems",
         "prereqs": "Undergraduate Prerequisites: ENG EC 327.",
-        "content": "Operating system concepts and design objectives. Concurrent processes, process  synchronization, and deadlocks. Resource management including virtual memory, CPU  scheduling, and secondary storage. File structures, input/output, and distributed  systems. Case studies of popular operating systems.",
-        "prof": [],
-        "reviews": []
+        "content": "Operating system concepts and design objectives. Concurrent processes, process  synchronization, and deadlocks. Resource management including virtual memory, CPU  scheduling, and secondary storage. File structures, input/output, and distributed  systems. Case studies of popular operating systems."
     },
     "ENGEC441": {
         "id": "EC441",
         "name": "Introduction to Computer Networking",
         "prereqs": "Undergraduate Prerequisites: ENG EK 381; ENGEC327 and ENGEC401 recommended",
-        "content": "Computer networks, focusing on the Internet. Application protocols (Web, E- mail), basics of socket programming, major Internet protocols (TCP and IP),  fundamental aspects of routing and reliable data transfer over networks, medium  access protocols, wired and wireless Local Area Networks (LANs) technologies.  Hands-on laboratory modules on client-server programming, Internet experiments,  and protocol implementation. Includes lab.",
-        "prof": [],
-        "reviews": []
+        "content": "Computer networks, focusing on the Internet. Application protocols (Web, E- mail), basics of socket programming, major Internet protocols (TCP and IP),  fundamental aspects of routing and reliable data transfer over networks, medium  access protocols, wired and wireless Local Area Networks (LANs) technologies.  Hands-on laboratory modules on client-server programming, Internet experiments,  and protocol implementation. Includes lab."
     },
     "ENGEC444": {
         "id": "EC444",
         "name": "Smart and Connected Systems",
         "prereqs": "Undergraduate Prerequisites: ENG EC 311 and ENG EC 327.",
-        "content": "Hands-on introductory course to cyber-physical and IoT systems. Microcontrollers: integrated development environments (ISEs), architecture, and I/O interfaces. Hardware interfacing of systems: formal design and specifications, real-time OS, programming, and control. IoT systems: smart phones, wireless personal area networks (WPANs), IP gateways, mobile cloud computing, reliability, security, and privacy. Course culminates with a team project.",
-        "prof": [],
-        "reviews": []
+        "content": "Hands-on introductory course to cyber-physical and IoT systems. Microcontrollers: integrated development environments (ISEs), architecture, and I/O interfaces. Hardware interfacing of systems: formal design and specifications, real-time OS, programming, and control. IoT systems: smart phones, wireless personal area networks (WPANs), IP gateways, mobile cloud computing, reliability, security, and privacy. Course culminates with a team project."
     },
     "ENGEC447": {
         "id": "EC447",
         "name": "Software Design",
         "prereqs": "Undergraduate Prerequisites: ENGEC327",
-        "content": "Object-oriented software design for desktop applications with a graphical user   interface. C# and Microsoft .NET programming assignments. Provides a solid   foundation in modern programming for engineering and other applications.",
-        "prof": [],
-        "reviews": []
+        "content": "Object-oriented software design for desktop applications with a graphical user   interface. C# and Microsoft .NET programming assignments. Provides a solid   foundation in modern programming for engineering and other applications."
     },
     "ENGEC451": {
         "id": "EC451",
         "name": "Directed Study",
         "prereqs": "",
-        "content": "Student may, under the supervision of a faculty member, undertake individual  study of a subject relevant to electrical, computer, and systems engineering, if  the subject is not covered in a regularly scheduled course. Tangible evidence of  achievement must be submitted at the end of the semester.",
-        "prof": [],
-        "reviews": []
+        "content": "Student may, under the supervision of a faculty member, undertake individual  study of a subject relevant to electrical, computer, and systems engineering, if  the subject is not covered in a regularly scheduled course. Tangible evidence of  achievement must be submitted at the end of the semester."
     },
     "ENGEC455": {
         "id": "EC455",
         "name": "Electromagnetic Systems I",
         "prereqs": "Undergraduate Prerequisites: CAS PY 212 and CAS MA 226.",
-        "content": "Time varying electric and magnetic fields. Maxwell equations. Electromagnetic   waves. Propagation, reflection, and transmission. Remote sensing applications.   Radio frequency coaxial cables, microwave waveguides, and optical fibers.   Microwave sources and resonators. Antennas and radiation. Radio links, radar,   and wireless communication systems. Electromagnetic effects in high-speed   digital systems.",
-        "prof": [],
-        "reviews": []
+        "content": "Time varying electric and magnetic fields. Maxwell equations. Electromagnetic   waves. Propagation, reflection, and transmission. Remote sensing applications.   Radio frequency coaxial cables, microwave waveguides, and optical fibers.   Microwave sources and resonators. Antennas and radiation. Radio links, radar,   and wireless communication systems. Electromagnetic effects in high-speed   digital systems."
     },
     "ENGEC456": {
         "id": "EC456",
         "name": "Electromagnetic Systems II",
         "prereqs": "Undergraduate Prerequisites: ENG EC 455.",
-        "content": "Electric field, energy, and force. Lorenz force. Dielectric materials. Steady   electric currents. Magnetic field, energy, and force. Magnetic materials.   Applications of electrostatics, magnetostatics, and electrodynamics.   Electromagnetic waves in dielectric and conducting materials. Solution techniques   for electromagnetic fields and waves.",
-        "prof": [],
-        "reviews": []
+        "content": "Electric field, energy, and force. Lorenz force. Dielectric materials. Steady   electric currents. Magnetic field, energy, and force. Magnetic materials.   Applications of electrostatics, magnetostatics, and electrodynamics.   Electromagnetic waves in dielectric and conducting materials. Solution techniques   for electromagnetic fields and waves."
     },
     "ENGEC463": {
         "id": "EC463",
         "name": "Senior Design Project I",
         "prereqs": "Undergraduate Prerequisites: ENG EK 210; senior standing; CAS WR 150/1/2/3 required.",
-        "content": "Development of the technical, communication, personal, and team skills   needed    for successful design in electrical and computer engineering.   Specifications    and standards, information collection, design strategies,   modeling, computer-   aided design, optimization, system design, failure and   reliability, human    factors. Oral and written communication of technical   information. Team   dynamics  and ethical issues in design. Design project for   a small-scale   electrical or  computer system. Preparation of detailed   proposals for senior   design projects  in the following semester. Includes   lab.    Effective Fall   2020, this course fulfills a single unit in each of  the following BU Hub areas:   Digital/Multimedia Expression, Writing-Intensive  Course, Research and   Information Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "Development of the technical, communication, personal, and team skills   needed    for successful design in electrical and computer engineering.   Specifications    and standards, information collection, design strategies,   modeling, computer-   aided design, optimization, system design, failure and   reliability, human    factors. Oral and written communication of technical   information. Team   dynamics  and ethical issues in design. Design project for   a small-scale   electrical or  computer system. Preparation of detailed   proposals for senior   design projects  in the following semester. Includes   lab.    Effective Fall   2020, this course fulfills a single unit in each of  the following BU Hub areas:   Digital/Multimedia Expression, Writing-Intensive  Course, Research and   Information Literacy."
     },
     "ENGEC464": {
         "id": "EC464",
         "name": "Senior Design Project II",
         "prereqs": "Undergraduate Prerequisites: ENG EC 463; First Year Writing Seminar (e.g., WR 100 or WR 120)",
-        "content": "Continuation of a team project in an area of electrical and computer    engineering, as proposed in EC 463. Application of technical, communication,    personal, and team skills. Oral and written communication of technical    information, including progress reports, technical memos, final report, and   oral  presentations. Includes lab.  Effective Spring 2021, this course fulfills  a single unit in each of the following BU Hub areas: Oral and/or Signed  Communication, Writing-Intensive Course.",
-        "prof": [],
-        "reviews": []
+        "content": "Continuation of a team project in an area of electrical and computer    engineering, as proposed in EC 463. Application of technical, communication,    personal, and team skills. Oral and written communication of technical    information, including progress reports, technical memos, final report, and   oral  presentations. Includes lab.  Effective Spring 2021, this course fulfills  a single unit in each of the following BU Hub areas: Oral and/or Signed  Communication, Writing-Intensive Course."
     },
     "ENGEC467": {
         "id": "EC467",
         "name": "Senior Thesis",
         "prereqs": "Undergraduate Prerequisites: ENG EC 463; First Year Writing Seminar (e.g., WR 100 or WR 120) and senior standing and departmental approval.",
-        "content": "Well-prepared students may choose to do a formal senior thesis under the direct    guidance of a departmental faculty member. Students selecting this option must    obtain petitioned approval before the beginning of the semester of thesis    registration.  Effective Spring 2021, this course fulfills a single unit in each   of the following BU Hub areas: Oral and/or Signed Communication, Writing-  Intensive Course.",
-        "prof": [],
-        "reviews": []
+        "content": "Well-prepared students may choose to do a formal senior thesis under the direct    guidance of a departmental faculty member. Students selecting this option must    obtain petitioned approval before the beginning of the semester of thesis    registration.  Effective Spring 2021, this course fulfills a single unit in each   of the following BU Hub areas: Oral and/or Signed Communication, Writing-  Intensive Course."
     },
     "ENGEC471": {
         "id": "EC471",
         "name": "Physics of Semiconductor Devices",
         "prereqs": "Undergraduate Prerequisites: CAS PY 313 or CAS PY 354.",
-        "content": "This course addresses the theory of semiconductors and semiconductor electronic   devices. The section on the theory of semiconductor includes their crystal   structure, energy bands, and carrier concentration in thermal equilibrium as   well as carrier transport phenomena (drift, diffusion, generation and   recombination, tunneling, high field effects, and thermionic emission). The   section on electronic devices addresses the theory of p-n junctions and   heterojunctions, of Bipolar Junction Transistors (BJT), Thyristors, Metal Oxide   Semiconductor (MOS) Capacitors and MOS Field Effect Transistors (MOSFETs).",
-        "prof": [],
-        "reviews": []
+        "content": "This course addresses the theory of semiconductors and semiconductor electronic   devices. The section on the theory of semiconductor includes their crystal   structure, energy bands, and carrier concentration in thermal equilibrium as   well as carrier transport phenomena (drift, diffusion, generation and   recombination, tunneling, high field effects, and thermionic emission). The   section on electronic devices addresses the theory of p-n junctions and   heterojunctions, of Bipolar Junction Transistors (BJT), Thyristors, Metal Oxide   Semiconductor (MOS) Capacitors and MOS Field Effect Transistors (MOSFETs)."
     }
 }

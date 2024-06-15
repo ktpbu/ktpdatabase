@@ -27,9 +27,9 @@ app.use("/calendar", calendarRoutes);
 app.use("/professional", professionalRoutes);
 
 mongoose
-    .connect(process.env.mongoDBURI)
+    .connect(process.env.MONGODBURI)
     .then(() => {
-        console.log("App connected to database");
+        console.log("App connected to MongoDB");
         app.listen(process.env.PORT, () => {
             console.log(`App is listening to port: ${process.env.PORT}`);
         });

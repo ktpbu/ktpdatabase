@@ -137,17 +137,15 @@ router.get("/courses/:level/:subject/:id", async (req, res) => {
 });
 
 // gets individual course reviews
-router.get("/courses/reviews/:id", async (req, res) => {
+// not sure why the review request only works with post and not get
+router.post("/courses/reviews/:id", async (req, res) => {
     console.log(req);
     try {
-        const courseId = req.params.id;
-        const courseReview = await Review.find({ class: courseId }).sort({
+        const courseID = req.params.id;
+        const courseReviews = await Review.find({ courseID: courseID }).sort({
             date: -1,
         });
-        if (!courseReview) {
-            return res;
-        }
-        return res.status(200).json(courseReview);
+        return res.status(200).json(courseReviews);
     } catch (error) {
         console.error(error.message);
         return res.status(500).send({ message: error.message });
@@ -160,7 +158,8 @@ router.post("/courses/add-review", async (req, res) => {
     try {
         const newReview = new Review({
             user: req.body.user,
-            class: req.body.id,
+            anon: req.body.anon,
+            courseID: req.body.id,
             professor: req.body.professor,
             usefulness: req.body.usefulness,
             difficulty: req.body.difficulty,
