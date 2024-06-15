@@ -3,408 +3,306 @@
         "id": "EC101",
         "name": "Introductory Microeconomic Analysis",
         "prereqs": "",
-        "content": "The first semester of a standard two-semester sequence for those considering   further work in  management or economics. Coverage includes economics of   households, business firms, and  markets; consumer behavior and the demand   for commodities; production, costs, and the supply  of commodities; price   determination; competition and monopoly; efficiency of resource  allocation;   governmental regulation; income distribution; and poverty. Effective Fall 2018,  this   course fulfills a single unit in each of the following BU Hub areas: Social  Inquiry I,   Critical Thinking. In 2019-20 this course fulfills a single unit  in each of the following BU  Hub areas: Social Inquiry I, Ethical Reasoning,  Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "The first semester of a standard two-semester sequence for those considering   further work in  management or economics. Coverage includes economics of   households, business firms, and  markets; consumer behavior and the demand   for commodities; production, costs, and the supply  of commodities; price   determination; competition and monopoly; efficiency of resource  allocation;   governmental regulation; income distribution; and poverty. Effective Fall 2018,  this   course fulfills a single unit in each of the following BU Hub areas: Social  Inquiry I,   Critical Thinking. In 2019-20 this course fulfills a single unit  in each of the following BU  Hub areas: Social Inquiry I, Ethical Reasoning,  Critical Thinking."
     },
     "CASEC102": {
         "id": "EC102",
         "name": "Introductory Macroeconomic Analysis",
         "prereqs": "",
-        "content": "The second semester of a standard two-semester sequence for those  considering  further work  in management or economics. National economic  performance; the  problems of recession,  unemployment, and inflation; money  creation, government  spending, and taxation; economic  policies for full  employment and price  stability; and international trade and payments.   Carries social science  divisional credit in CAS. Effective Fall 2018, this course fulfills a  single unit in the following  BU Hub area:  Social Inquiry I. Effective Fall 2019, this course  fulfills a single unit in  each of the following BU Hub areas: Social Inquiry I, Global  Citizenship and  Intercultural Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "The second semester of a standard two-semester sequence for those  considering  further work  in management or economics. National economic  performance; the  problems of recession,  unemployment, and inflation; money  creation, government  spending, and taxation; economic  policies for full  employment and price  stability; and international trade and payments.   Carries social science  divisional credit in CAS. Effective Fall 2018, this course fulfills a  single unit in the following  BU Hub area:  Social Inquiry I. Effective Fall 2019, this course  fulfills a single unit in  each of the following BU Hub areas: Social Inquiry I, Global  Citizenship and  Intercultural Literacy."
     },
     "CASEC201": {
         "id": "EC201",
         "name": "Intermediate Microeconomic Analysis",
         "prereqs": "Undergraduate Prerequisites: CAS EC 101;  and CAS MA 121 or CAS MA 123 (or equivalent).",
-        "content": "Determination of commodity prices and factor prices under the differing market  conditions of competition  and monopoly. Effective Fall 2019, this course  fulfills a single unit in the following BU Hub areas: Social Inquiry II,  Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Determination of commodity prices and factor prices under the differing market  conditions of competition  and monopoly. Effective Fall 2019, this course  fulfills a single unit in the following BU Hub areas: Social Inquiry II,  Critical Thinking."
     },
     "CASEC202": {
         "id": "EC202",
         "name": "Intermediate Macroeconomic Analysis",
         "prereqs": "Undergraduate Prerequisites: CAS EC 102.",
-        "content": "Determination of aggregate income and employment. Analysis of fiscal and monetary  policy. Inflation and income policy. Problems of the open economy. Effective Fall  2019, this course fulfills a single unit in the following BU Hub areas: Social  Inquiry II, Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Determination of aggregate income and employment. Analysis of fiscal and monetary  policy. Inflation and income policy. Problems of the open economy. Effective Fall  2019, this course fulfills a single unit in the following BU Hub areas: Social  Inquiry II, Critical Thinking."
     },
     "CASEC203": {
         "id": "EC203",
         "name": "Empirical Economics 1",
         "prereqs": "Undergraduate Prerequisites: CAS EC 101 and CAS EC 102.",
-        "content": "First semester of a two-semester sequence of empirical techniques used in   economic analysis. Statistical concepts are presented and applied to a variety  of  economics problems. Extensive use of the statistical software package STATA  will  be made. Effective Fall 2018, this course fulfills a single unit in the  following BU Hub area:  Quantitative Reasoning I.",
-        "prof": [],
-        "reviews": []
+        "content": "First semester of a two-semester sequence of empirical techniques used in   economic analysis. Statistical concepts are presented and applied to a variety  of  economics problems. Extensive use of the statistical software package STATA  will  be made. Effective Fall 2018, this course fulfills a single unit in the  following BU Hub area:  Quantitative Reasoning I."
     },
     "CASEC204": {
         "id": "EC204",
         "name": "Empirical Economics 2",
         "prereqs": "Undergraduate Prerequisites: CAS EC 101 and CAS EC 102; and CAS EC203 (or equivalent).",
-        "content": "Second semester of a two-semester sequence of empirical techniques used in  economic analysis. Statistical concepts are presented and applied to a variety  of economics problems. Extensive use of the statistical software package STATA  will be made. Builds on the material in EC203, developing more complex  statistical techniques and applications.  Effective Fall 2019, this  course fulfills a single unit  in the following BU Hub area: Quantitative  Reasoning II. Effective Fall 2022, this course  fulfills a single unit in each of the following BU Hub areas: Quantitative  Reasoning II, Research and Information Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "Second semester of a two-semester sequence of empirical techniques used in  economic analysis. Statistical concepts are presented and applied to a variety  of economics problems. Extensive use of the statistical software package STATA  will be made. Builds on the material in EC203, developing more complex  statistical techniques and applications.  Effective Fall 2019, this  course fulfills a single unit  in the following BU Hub area: Quantitative  Reasoning II. Effective Fall 2022, this course  fulfills a single unit in each of the following BU Hub areas: Quantitative  Reasoning II, Research and Information Literacy."
     },
     "CASEC303": {
         "id": "EC303",
         "name": "Empirical Economic Analysis 1",
         "prereqs": "Undergraduate Prerequisites: CAS EC 101 and CAS EC 102.",
-        "content": "First semester of a two-semester sequence of empirical techniques used in   economic analysis (EC303/EC304). Statistical techniques are presented and   applied to a variety of economics problems. Extensive use of the statistical   software package STATA. This is a more theoretically advanced version of  EC203.  Note that students may not get credit for both EC203 and EC303.  Effective Fall 2018, this course  fulfills a single unit in the following BU  Hub area: Quantitative Reasoning I.",
-        "prof": [],
-        "reviews": []
+        "content": "First semester of a two-semester sequence of empirical techniques used in   economic analysis (EC303/EC304). Statistical techniques are presented and   applied to a variety of economics problems. Extensive use of the statistical   software package STATA. This is a more theoretically advanced version of  EC203.  Note that students may not get credit for both EC203 and EC303.  Effective Fall 2018, this course  fulfills a single unit in the following BU  Hub area: Quantitative Reasoning I."
     },
     "CASEC304": {
         "id": "EC304",
         "name": "Empirical Economic Analysis 2",
         "prereqs": "Undergraduate Prerequisites: CAS EC 303; or equivalent.",
-        "content": "Second semester of a two-semester sequence of empirical techniques used in   economic analysis. Statistical concepts are presented and applied to a variety   of economics problems. Builds on the material in CAS EC 303, developing more   complex statistical techniques and applications. This is a more theoretically   advanced version of EC204. Effective Fall 2018, this course fulfills a single  unit in the following  BU Hub area: Quantitative Reasoning II.",
-        "prof": [],
-        "reviews": []
+        "content": "Second semester of a two-semester sequence of empirical techniques used in   economic analysis. Statistical concepts are presented and applied to a variety   of economics problems. Builds on the material in CAS EC 303, developing more   complex statistical techniques and applications. This is a more theoretically   advanced version of EC204. Effective Fall 2018, this course fulfills a single  unit in the following  BU Hub area: Quantitative Reasoning II."
     },
     "CASEC320": {
         "id": "EC320",
         "name": "Economics of Less-Developed Regions",
         "prereqs": "Undergraduate Prerequisites: CAS EC 101 and CAS EC 102.",
-        "content": "Theoretical and empirical examination of the structural changes associated  with the process of economic development; special reference to poor regions  and countries; rigorous analysis of criteria for policy judgments in  developing planning and programming.  Effective Fall 2020, this course  fulfills a single unit in each of the following BU Hub areas: Ethical  Reasoning, Social Inquiry II.",
-        "prof": [],
-        "reviews": []
+        "content": "Theoretical and empirical examination of the structural changes associated  with the process of economic development; special reference to poor regions  and countries; rigorous analysis of criteria for policy judgments in  developing planning and programming.  Effective Fall 2020, this course  fulfills a single unit in each of the following BU Hub areas: Ethical  Reasoning, Social Inquiry II."
     },
     "CASEC322": {
         "id": "EC322",
         "name": "Political Economy of the Middle East and North Africa",
         "prereqs": "Undergraduate Prerequisites: CAS EC 101 and CAS EC 102; , and enrollment in the London Internship Program.",
-        "content": "Examines the economic structure, institutional evolution, and political  configuration in the countries of the  Middle East and North Africa. Issues  addressed include legacies of the colonial era, the impact of oil, and  the  problem of industrialization in resource-based economies. Effective Fall  2020, this course fulfills a single unit in each of the following BU Hub  areas: Social Inquiry II, Historical Consciousness.",
-        "prof": [],
-        "reviews": []
+        "content": "Examines the economic structure, institutional evolution, and political  configuration in the countries of the  Middle East and North Africa. Issues  addressed include legacies of the colonial era, the impact of oil, and  the  problem of industrialization in resource-based economies. Effective Fall  2020, this course fulfills a single unit in each of the following BU Hub  areas: Social Inquiry II, Historical Consciousness."
     },
     "CASEC323": {
         "id": "EC323",
         "name": "Behavioral Economics",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201 and CAS EC 203.",
-        "content": "Introduction to a new field in economics that challenges the traditional  model of rational decision-making and uses research in psychology to  construct alternative models. Covers the theory of choice under certainty,  uncertainty, and temptation; biases in judgment; social preferences.   Effective Fall 2020, this course fulfills a single unit in each of the  following BU Hub areas: Social Inquiry II, Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to a new field in economics that challenges the traditional  model of rational decision-making and uses research in psychology to  construct alternative models. Covers the theory of choice under certainty,  uncertainty, and temptation; biases in judgment; social preferences.   Effective Fall 2020, this course fulfills a single unit in each of the  following BU Hub areas: Social Inquiry II, Critical Thinking."
     },
     "CASEC325": {
         "id": "EC325",
         "name": "The Economics of Poverty and Discrimination in the United States",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201 and CAS EC 305;  (or CASEC203 or CASEC303).",
-        "content": "Examines who is poor in the United States and how the evidence of poverty  has changed over time. Various economic theories for the causes of poverty  and discrimination are presented for examination and discussion.  Effective  Fall 2020, this course fulfills a single unit in each of the following BU  Hub areas: The Individual in Community, Quantitative Reasoning II, Critical  Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Examines who is poor in the United States and how the evidence of poverty  has changed over time. Various economic theories for the causes of poverty  and discrimination are presented for examination and discussion.  Effective  Fall 2020, this course fulfills a single unit in each of the following BU  Hub areas: The Individual in Community, Quantitative Reasoning II, Critical  Thinking."
     },
     "CASEC328": {
         "id": "EC328",
         "name": "Urban and Regional Economics",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201 and CAS EC 203.",
-        "content": "Provides a broad introduction to modern regional and urban economics. In the  first part of the course, we attempt to understand how and why cities grow and  develop. In the second part of the course, we try to analyze why cities adopt  different policies. In the third part of the course, we overview the issues of  neighborhood inequality and segregation. If time remains, we will overview  several other recent topics about urban and regional economics.  Effective Fall  2021, this course fulfills a single unit in each of the following BU Hub areas:  Quantitative Reasoning II, Social Inquiry II.",
-        "prof": [],
-        "reviews": []
+        "content": "Provides a broad introduction to modern regional and urban economics. In the  first part of the course, we attempt to understand how and why cities grow and  develop. In the second part of the course, we try to analyze why cities adopt  different policies. In the third part of the course, we overview the issues of  neighborhood inequality and segregation. If time remains, we will overview  several other recent topics about urban and regional economics.  Effective Fall  2021, this course fulfills a single unit in each of the following BU Hub areas:  Quantitative Reasoning II, Social Inquiry II."
     },
     "CASEC330": {
         "id": "EC330",
         "name": "European Business Environment",
         "prereqs": "Undergraduate Prerequisites: enrollment in the London Internship Program.",
-        "content": "Provides learning and skills at the interface between international  business, international  relations, and other disciplines, through studying  the system of EU \"Competences\" that  provides comprehensive rules of conduct  for firms. Includes Briefings by officials from EU  Institutions, designed to  build/test research/teamwork skills. Effective Fall 2019, this course  fulfills a single unit in  each of the following BU Hub areas: Social Inquiry II, Global Citizenship   and Intercultural Literacy, Teamwork/Collaboration.",
-        "prof": [],
-        "reviews": []
+        "content": "Provides learning and skills at the interface between international  business, international  relations, and other disciplines, through studying  the system of EU \"Competences\" that  provides comprehensive rules of conduct  for firms. Includes Briefings by officials from EU  Institutions, designed to  build/test research/teamwork skills. Effective Fall 2019, this course  fulfills a single unit in  each of the following BU Hub areas: Social Inquiry II, Global Citizenship   and Intercultural Literacy, Teamwork/Collaboration."
     },
     "CASEC332": {
         "id": "EC332",
         "name": "Market Structure and Economic Performance",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201.",
-        "content": "Structure of the American economy. The theory of imperfect competition.  Topics include firm concentration and conglomeration, consumer ignorance and  market failure, and advertising and technological change as part of market  performance.  Effective Fall 2020, this course fulfills a single unit in  each of the following BU Hub areas: Quantitative Reasoning II, Social  Inquiry II, Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Structure of the American economy. The theory of imperfect competition.  Topics include firm concentration and conglomeration, consumer ignorance and  market failure, and advertising and technological change as part of market  performance.  Effective Fall 2020, this course fulfills a single unit in  each of the following BU Hub areas: Quantitative Reasoning II, Social  Inquiry II, Critical Thinking."
     },
     "CASEC333": {
         "id": "EC333",
         "name": "Market Organization and Public Policy",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201 or CAS EC 332.",
-        "content": "Introduction to antitrust and regulatory policy. Studies sources of market  inefficiency and historical and current policy towards topics such as collusion,  merger, monopolization, and regulatory treatment of competition issues. Effective  Fall 2020, this course fulfills a single unit in each of the following BU Hub  areas: Ethical Reasoning, Historical Consciousness, Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to antitrust and regulatory policy. Studies sources of market  inefficiency and historical and current policy towards topics such as collusion,  merger, monopolization, and regulatory treatment of competition issues. Effective  Fall 2020, this course fulfills a single unit in each of the following BU Hub  areas: Ethical Reasoning, Historical Consciousness, Critical Thinking."
     },
     "CASEC337": {
         "id": "EC337",
         "name": "Economic Analysis of Legal Issues",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201; First Year Writing Seminar (e.g., WR 100 or WR 120)",
-        "content": "Economic analysis of current important legal issues. Contributions of  economics to analysis of contracts, torts property, and crime. Effects of  property rights on allocation of resources and distribution of income.  Market and nonmarket schemes of regulating the environment.  Effective Fall  2020, this course fulfills a single unit in each of the following BU Hub  areas: Writing-Intensive Course, Ethical Reasoning, Research and Information  Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "Economic analysis of current important legal issues. Contributions of  economics to analysis of contracts, torts property, and crime. Effects of  property rights on allocation of resources and distribution of income.  Market and nonmarket schemes of regulating the environment.  Effective Fall  2020, this course fulfills a single unit in each of the following BU Hub  areas: Writing-Intensive Course, Ethical Reasoning, Research and Information  Literacy."
     },
     "CASEC341": {
         "id": "EC341",
         "name": "Monetary and Banking Institutions",
         "prereqs": "Undergraduate Prerequisites: CAS EC 202.",
-        "content": "Survey of commercial and central banking institutions. Examination of macro  relations between financial organizations and principal objectives of  stabilization policy.   Effective Fall 2020, this course fulfills a single  unit in each of the following BU Hub areas: Social Inquiry I, Critical  Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Survey of commercial and central banking institutions. Examination of macro  relations between financial organizations and principal objectives of  stabilization policy.   Effective Fall 2020, this course fulfills a single  unit in each of the following BU Hub areas: Social Inquiry I, Critical  Thinking."
     },
     "CASEC342": {
         "id": "EC342",
         "name": "Monetary and Banking Theory",
         "prereqs": "Undergraduate Prerequisites: CAS EC 341; or consent of instructor.",
-        "content": "After a brief survey of the development of modern monetary theory,  concentration on selected theoretical aspects of monetary economics and  financial organization covered in CAS EC 341. Additional emphasis on capital  theory and macroeconomic models. Research paper required.  Effective Fall 2020,  this course fulfills a single unit in each of the following BU Hub areas:  Social Inquiry II, Research and Information Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "After a brief survey of the development of modern monetary theory,  concentration on selected theoretical aspects of monetary economics and  financial organization covered in CAS EC 341. Additional emphasis on capital  theory and macroeconomic models. Research paper required.  Effective Fall 2020,  this course fulfills a single unit in each of the following BU Hub areas:  Social Inquiry II, Research and Information Literacy."
     },
     "CASEC346": {
         "id": "EC346",
         "name": "European Capital Markets",
         "prereqs": "",
-        "content": "Familiarizes students with the structure of the European financial system,  covering the principal financial markets and institutions, and the  analytical concepts and tools that help to explain the processes of price  formation and the behavior of participants in these markets. Major financial  markets covered are spot and foreign exchange dealings, the Eurocurrency and  Eurobond markets, futures and options, and swaps and options. Essential  background theory is combined with an emphasis on actual events and  activities of the major players.  Effective Fall 2019, this course fulfills  a single unit in the following BU Hub area: Quantitative Reasoning I.",
-        "prof": [],
-        "reviews": []
+        "content": "Familiarizes students with the structure of the European financial system,  covering the principal financial markets and institutions, and the  analytical concepts and tools that help to explain the processes of price  formation and the behavior of participants in these markets. Major financial  markets covered are spot and foreign exchange dealings, the Eurocurrency and  Eurobond markets, futures and options, and swaps and options. Essential  background theory is combined with an emphasis on actual events and  activities of the major players.  Effective Fall 2019, this course fulfills  a single unit in the following BU Hub area: Quantitative Reasoning I."
     },
     "CASEC348": {
         "id": "EC348",
         "name": "Dynamic Macroeconomics",
         "prereqs": "Undergraduate Prerequisites: CAS EC 202.",
-        "content": "Studies macroeconomics as a process evolving over time with applications to the  dynamics of growth, recessions, fiscal policy, inflation, international trade and  banking.",
-        "prof": [],
-        "reviews": []
+        "content": "Studies macroeconomics as a process evolving over time with applications to the  dynamics of growth, recessions, fiscal policy, inflation, international trade and  banking."
     },
     "CASEC356": {
         "id": "EC356",
         "name": "Economics of the Labor Market",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201.",
-        "content": "Application of current theories of labor supply and demand, wages, education  and experience, immigration, labor efficiency, discrimination, and  unemployment. Appraisal of the effects of government policies on labor  markets.   Effective Fall 2020, this course fulfills a single unit in each of  the following BU Hub areas: Quantitative Reasoning II, Social Inquiry II.",
-        "prof": [],
-        "reviews": []
+        "content": "Application of current theories of labor supply and demand, wages, education  and experience, immigration, labor efficiency, discrimination, and  unemployment. Appraisal of the effects of government policies on labor  markets.   Effective Fall 2020, this course fulfills a single unit in each of  the following BU Hub areas: Quantitative Reasoning II, Social Inquiry II."
     },
     "CASEC358": {
         "id": "EC358",
         "name": "Economics of Education",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201 and CAS EC 204; or equivalent, or consent of the instructor.",
-        "content": "Uses economic models to understand individuals' decision to invest in education,  analyzes the effect of education, and examines policies impacting K-12 and higher  education in the US. A variety of econometric methods are utilized throughout the  course. Effective Fall 2020, this course fulfills a single unit in each of the   following BU Hub areas: Quantitative Reasoning II, Social Inquiry II.",
-        "prof": [],
-        "reviews": []
+        "content": "Uses economic models to understand individuals' decision to invest in education,  analyzes the effect of education, and examines policies impacting K-12 and higher  education in the US. A variety of econometric methods are utilized throughout the  course. Effective Fall 2020, this course fulfills a single unit in each of the   following BU Hub areas: Quantitative Reasoning II, Social Inquiry II."
     },
     "CASEC360": {
         "id": "EC360",
         "name": "British Macroeconomic Policy",
         "prereqs": "Undergraduate Prerequisites: acceptance into the London Internship Program.",
-        "content": "This course covers central theoretical concepts and models aimed at  understanding key topics in macroeconomics. At the end of this course you will  be able to master fundamental macroeconomic concepts as well as understand key  macroeconomic processes in Europe. Effective Fall 2020, this course fulfills a  single unit in the following BU Hub area: Social Inquiry II.",
-        "prof": [],
-        "reviews": []
+        "content": "This course covers central theoretical concepts and models aimed at  understanding key topics in macroeconomics. At the end of this course you will  be able to master fundamental macroeconomic concepts as well as understand key  macroeconomic processes in Europe. Effective Fall 2020, this course fulfills a  single unit in the following BU Hub area: Social Inquiry II."
     },
     "CASEC361": {
         "id": "EC361",
         "name": "Economic Development of Europe",
         "prereqs": "",
-        "content": "This course examines the economic foundations of the European Union, along with   their structures and mechanisms, in order to better understand the current   crises and the future challenges in a changing global economy. Includes visits   to significant sites or events. Cross-listed with CAS IR 344. Effective Fall  2019, this course fulfills a  single unit in each of the following BU Hub  areas: Historical Consciousness,  Social Inquiry I, Research and Information  Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "This course examines the economic foundations of the European Union, along with   their structures and mechanisms, in order to better understand the current   crises and the future challenges in a changing global economy. Includes visits   to significant sites or events. Cross-listed with CAS IR 344. Effective Fall  2019, this course fulfills a  single unit in each of the following BU Hub  areas: Historical Consciousness,  Social Inquiry I, Research and Information  Literacy."
     },
     "CASEC363": {
         "id": "EC363",
         "name": "Race and the Development of the American Economy",
         "prereqs": "Undergraduate Prerequisites: CAS EC 101;  or consent of instructor.",
-        "content": "(Meets with CAS AA 363.) Surveys the economic history of African Americans  within the context of the long run development of the American and global  economies. Topics include basic features of American economic growth in the  long run; the economics of slavery; the Civil War and the aftermath of  slavery; the evolution of racial inequality from the end of the Civil War to  the present.  Effective Fall 2020, this course fulfills a single unit in  each of the following BU Hub areas: Historical Consciousness, Social Inquiry  II.",
-        "prof": [],
-        "reviews": []
+        "content": "(Meets with CAS AA 363.) Surveys the economic history of African Americans  within the context of the long run development of the American and global  economies. Topics include basic features of American economic growth in the  long run; the economics of slavery; the Civil War and the aftermath of  slavery; the evolution of racial inequality from the end of the Civil War to  the present.  Effective Fall 2020, this course fulfills a single unit in  each of the following BU Hub areas: Historical Consciousness, Social Inquiry  II."
     },
     "CASEC364": {
         "id": "EC364",
         "name": "Economic Policy",
         "prereqs": "Undergraduate Prerequisites: enrollment in BU's London Internship Programme.",
-        "content": "An economic analysis of UK government policy relating to economic performance.  It explores in particular market-oriented economic reform since the 1980s  designed to reverse long-term  economic decline in the United Kingdom relative  to the EU and USA. These reforms include privatization, deregulation, labour  market reform, trade, UK economic relations with the EU, and Brexit. Effective  Fall 2019, this course fulfills a single unit in each of the following  BU Hub   areas: Social Inquiry II, Global Citizenship and Intercultural Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "An economic analysis of UK government policy relating to economic performance.  It explores in particular market-oriented economic reform since the 1980s  designed to reverse long-term  economic decline in the United Kingdom relative  to the EU and USA. These reforms include privatization, deregulation, labour  market reform, trade, UK economic relations with the EU, and Brexit. Effective  Fall 2019, this course fulfills a single unit in each of the following  BU Hub   areas: Social Inquiry II, Global Citizenship and Intercultural Literacy."
     },
     "CASEC365": {
         "id": "EC365",
         "name": "Economic Institutions in Historical Perspective",
         "prereqs": "Undergraduate Prerequisites: CAS EC 101 and CAS EC 102.",
-        "content": "Historical development and role of institutions underlying market economies.  Topics include contract enforcement and trading institutions, financial  institutions, property rights in land, environmental resources such as water  management and fisheries, economic infrastructure, regulation of labor, and  capital markets.   Effective Fall 2020, this course fulfills a single unit  in each of the following BU Hub areas: Historical Consciousness ,  Quantitative Reasoning I.",
-        "prof": [],
-        "reviews": []
+        "content": "Historical development and role of institutions underlying market economies.  Topics include contract enforcement and trading institutions, financial  institutions, property rights in land, environmental resources such as water  management and fisheries, economic infrastructure, regulation of labor, and  capital markets.   Effective Fall 2020, this course fulfills a single unit  in each of the following BU Hub areas: Historical Consciousness ,  Quantitative Reasoning I."
     },
     "CASEC367": {
         "id": "EC367",
         "name": "Economics of the Public Sector",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201.",
-        "content": "Basic principles of public finance; consideration of classical and modern  attitudes toward government revenues and expenditures. Survey of problems  related to public debt and budget making. Evaluation of fiscal policy as an  instrument of control.  Effective Fall 2020, this course fulfills a single  unit in each of the following BU Hub areas: Quantitative Reasoning II,  Social Inquiry II.",
-        "prof": [],
-        "reviews": []
+        "content": "Basic principles of public finance; consideration of classical and modern  attitudes toward government revenues and expenditures. Survey of problems  related to public debt and budget making. Evaluation of fiscal policy as an  instrument of control.  Effective Fall 2020, this course fulfills a single  unit in each of the following BU Hub areas: Quantitative Reasoning II,  Social Inquiry II."
     },
     "CASEC368": {
         "id": "EC368",
         "name": "Contemporary East Asian Economics",
         "prereqs": "Undergraduate Prerequisites: CAS EC 101 and CAS EC 102.",
-        "content": "Meets with CAS IR 368. An introduction to the economic history and   institutions  of Japan, Korea, Taiwan,  and China. Topics include structural   change, trade,  labor markets, corporate organization, financial  systems,  and  macroeconomic  and industrial policy. Effective Fall 2018, this course   fulfills a single unit in each of the  following BU Hub areas: Social  Inquiry  I, Global Citizenship and Intercultural  Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "Meets with CAS IR 368. An introduction to the economic history and   institutions  of Japan, Korea, Taiwan,  and China. Topics include structural   change, trade,  labor markets, corporate organization, financial  systems,  and  macroeconomic  and industrial policy. Effective Fall 2018, this course   fulfills a single unit in each of the  following BU Hub areas: Social  Inquiry  I, Global Citizenship and Intercultural  Literacy."
     },
     "CASEC369": {
         "id": "EC369",
         "name": "Economic Development of Latin America",
         "prereqs": "Undergraduate Prerequisites: CAS EC 101 and CAS EC 102.",
-        "content": "Contemporary issues of economic and social policy. Macroeconomic issues:  inflation, stabilization, and the debt crisis. Foreign trade and economic  restructuring. Poverty and income distribution. Role of the state.   Effective Fall 2020, this course fulfills a single unit in each of the  following BU Hub areas: Global Citizenship and Intercultural Literacy,  Historical Consciousness, Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Contemporary issues of economic and social policy. Macroeconomic issues:  inflation, stabilization, and the debt crisis. Foreign trade and economic  restructuring. Poverty and income distribution. Role of the state.   Effective Fall 2020, this course fulfills a single unit in each of the  following BU Hub areas: Global Citizenship and Intercultural Literacy,  Historical Consciousness, Critical Thinking."
     },
     "CASEC370": {
         "id": "EC370",
         "name": "The Chinese Economy",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201 ; CAS EC 202 ; CAS EC 203.",
-        "content": "Introduces the working of the Chinese economy. Combines historical-institutional and theoretical- quantitative approaches to study the transformation of China's economy into a market economy with  special characteristics.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduces the working of the Chinese economy. Combines historical-institutional and theoretical- quantitative approaches to study the transformation of China's economy into a market economy with  special characteristics."
     },
     "CASEC371": {
         "id": "EC371",
         "name": "Environmental Economics",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201.",
-        "content": "Role of economics in environmental planning. Economic analysis of the causes  of pollution and its control through taxes, the use of property rights, and  standards. Application of cost-benefit models as an aid in policy decisions  affecting the environment. Effective Fall 2020, this course fulfills a  single unit in each of the following BU Hub areas: Ethical Reasoning, Global  Citizenship and Intercultural Literacy, Teamwork/Collaboration.",
-        "prof": [],
-        "reviews": []
+        "content": "Role of economics in environmental planning. Economic analysis of the causes  of pollution and its control through taxes, the use of property rights, and  standards. Application of cost-benefit models as an aid in policy decisions  affecting the environment. Effective Fall 2020, this course fulfills a  single unit in each of the following BU Hub areas: Ethical Reasoning, Global  Citizenship and Intercultural Literacy, Teamwork/Collaboration."
     },
     "CASEC372": {
         "id": "EC372",
         "name": "The Irish Economy",
         "prereqs": "Undergraduate Prerequisites:  enrollment in the Dublin Internship Program; and CAS EC 101 or CAS EC 102, or consent of instructor.",
-        "content": "The Irish economic experience has been historically characterized by turbulence,   excitement, optimism and despair. While world-leading in some aspects of our   economic development, we are also severely lacking in other vital areas. We   examine the history of Irish economic development from a rural farming-based   economy to a leading export-led services economy. We analyze the key drivers of   economic success, while critically evaluating the role of government policy and   regulation, taxation, spending, and welfare. We also focus on social justice in   Ireland from an economic perspective.  Effective Fall 2021, this course fulfills   a single unit in each of the following BU Hub areas: Historical Consciousness,   Social Inquiry I, Research and Information Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "The Irish economic experience has been historically characterized by turbulence,   excitement, optimism and despair. While world-leading in some aspects of our   economic development, we are also severely lacking in other vital areas. We   examine the history of Irish economic development from a rural farming-based   economy to a leading export-led services economy. We analyze the key drivers of   economic success, while critically evaluating the role of government policy and   regulation, taxation, spending, and welfare. We also focus on social justice in   Ireland from an economic perspective.  Effective Fall 2021, this course fulfills   a single unit in each of the following BU Hub areas: Historical Consciousness,   Social Inquiry I, Research and Information Literacy."
     },
     "CASEC377": {
         "id": "EC377",
         "name": "Government, Business, and Labor",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201.",
-        "content": "Examines economic growth from the perspective of the structure, conduct, and performance of business. Combines economic theories of conduct and strategy with industry case studies and evaluates the effect of government policy toward business and labor on the performance of the economy.",
-        "prof": [],
-        "reviews": []
+        "content": "Examines economic growth from the perspective of the structure, conduct, and performance of business. Combines economic theories of conduct and strategy with industry case studies and evaluates the effect of government policy toward business and labor on the performance of the economy."
     },
     "CASEC379": {
         "id": "EC379",
         "name": "Firms, Markets, and Economic Development",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201 and CAS EC 203;  or consent of instructor.",
-        "content": "Examines the interlinked roles of business and politics in the process of economic development, with the  objective of providing a framework for understanding how the private and public sectors work together to  help (or impede) economic growth.",
-        "prof": [],
-        "reviews": []
+        "content": "Examines the interlinked roles of business and politics in the process of economic development, with the  objective of providing a framework for understanding how the private and public sectors work together to  help (or impede) economic growth."
     },
     "CASEC385": {
         "id": "EC385",
         "name": "Economics of Sports",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201 and CAS EC 203.",
-        "content": "Applies the tools of microeconomic theory and empirical methods to study  such questions as the optimal design of sports leagues, the impact of new  stadiums on a local economy, fan (customer) discrimination, and salary  differentials between players.  Effective Fall 2020, this course fulfills a  single unit in each of the following BU Hub areas: Social Inquiry II,  Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Applies the tools of microeconomic theory and empirical methods to study  such questions as the optimal design of sports leagues, the impact of new  stadiums on a local economy, fan (customer) discrimination, and salary  differentials between players.  Effective Fall 2020, this course fulfills a  single unit in each of the following BU Hub areas: Social Inquiry II,  Critical Thinking."
     },
     "CASEC387": {
         "id": "EC387",
         "name": "Introduction to Health Economics",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201.",
-        "content": "Concepts of health economics for US and international settings. Topics include  models and empirical analyses of moral hazard, adverse selection, health care  systems, health insurance, hospital and physician behavior, pharmaceutical  markets, consumer demand, alternative payment systems, risk, fairness, imperfect  information, and topics in experimental and behavioral economics. Effective Fall  2020, this course fulfills a single unit in  each of the following BU Hub areas:  Quantitative Reasoning I, Social Inquiry  II.",
-        "prof": [],
-        "reviews": []
+        "content": "Concepts of health economics for US and international settings. Topics include  models and empirical analyses of moral hazard, adverse selection, health care  systems, health insurance, hospital and physician behavior, pharmaceutical  markets, consumer demand, alternative payment systems, risk, fairness, imperfect  information, and topics in experimental and behavioral economics. Effective Fall  2020, this course fulfills a single unit in  each of the following BU Hub areas:  Quantitative Reasoning I, Social Inquiry  II."
     },
     "CASEC390": {
         "id": "EC390",
         "name": "Special Topics in Economics",
         "prereqs": "",
-        "content": "Topics and pre-requisites vary. May be repeated for credit if topic is different. One topic is offered in Fall 2023. Section AA: Political Economy. Studies models of political competition to understand how societies decide on public policies. Discusses the idea of rational choice for a society when the members of that society differ in how they rank different alternatives. Models are applied to public policy issues such as income redistribution and political corruption.",
-        "prof": [],
-        "reviews": []
+        "content": "Topics and pre-requisites vary. May be repeated for credit if topic is different. One topic is offered in Fall 2023. Section AA: Political Economy. Studies models of political competition to understand how societies decide on public policies. Discusses the idea of rational choice for a society when the members of that society differ in how they rank different alternatives. Models are applied to public policy issues such as income redistribution and political corruption."
     },
     "CASEC391": {
         "id": "EC391",
         "name": "International Trade",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201.",
-        "content": "Why do countries trade with each other? Who gains and who loses from  international trade? What effect does trade have on consumer prices, wages,  profits, income inequality, economic growth, and the environment? What are  the costs and benefits of tariffs and other trade barriers? How have NAFTA  and the European Union affected trade patterns, income distribution, and  economic development? What effects do capital flows and migration have on  sending and receiving countries? This course will use economic analysis to  discuss these and other current international economic polies.  Effective  Fall 2020, this course fulfills a single unit in the following BU Hub area:  Social Inquiry II.",
-        "prof": [],
-        "reviews": []
+        "content": "Why do countries trade with each other? Who gains and who loses from  international trade? What effect does trade have on consumer prices, wages,  profits, income inequality, economic growth, and the environment? What are  the costs and benefits of tariffs and other trade barriers? How have NAFTA  and the European Union affected trade patterns, income distribution, and  economic development? What effects do capital flows and migration have on  sending and receiving countries? This course will use economic analysis to  discuss these and other current international economic polies.  Effective  Fall 2020, this course fulfills a single unit in the following BU Hub area:  Social Inquiry II."
     },
     "CASEC392": {
         "id": "EC392",
         "name": "International Macroeconomics",
         "prereqs": "",
-        "content": "Undergraduate Prerequisites: CAS EC 202 and CAS EC 203; or equivalent.",
-        "prof": [],
-        "reviews": []
+        "content": "Undergraduate Prerequisites: CAS EC 202 and CAS EC 203; or equivalent."
     },
     "CASEC403": {
         "id": "EC403",
         "name": "Game Theory",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201 and (CASMA121 or  CASMA123 or CASMA127); or consent of instructor.",
-        "content": "Models of decision-making in which the choices of different individuals   interact:  basic equilibrium notions in normal-form and extensive-form games,  including signaling  games and repeated games.  Applications may include  oligopolies, auctions, foreign policy, takeover bids, entry deterrence,  cooperation and conflict, financial markets, and public goods. Effective Fall  2020, this course fulfills a single unit in  each of the following BU Hub areas:  Quantitative Reasoning II, Social Inquiry  II, Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Models of decision-making in which the choices of different individuals   interact:  basic equilibrium notions in normal-form and extensive-form games,  including signaling  games and repeated games.  Applications may include  oligopolies, auctions, foreign policy, takeover bids, entry deterrence,  cooperation and conflict, financial markets, and public goods. Effective Fall  2020, this course fulfills a single unit in  each of the following BU Hub areas:  Quantitative Reasoning II, Social Inquiry  II, Critical Thinking."
     },
     "CASEC404": {
         "id": "EC404",
         "name": "Economics of Information",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201; and one of CAS MA 121, 122, 123, 124, 127 or 129, or consent of instructor.  Recommended: CAS EC 403.",
-        "content": "Introduction to the field of information economics and its applications.  Covers a wide range of situations in which players have access to different  private information and this private information differently affects their  incentives and strategic behavior. Effective Fall 2020, this course fulfills  a single unit in each of the following BU Hub areas: Quantitative Reasoning  II, Social Inquiry II, Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Introduction to the field of information economics and its applications.  Covers a wide range of situations in which players have access to different  private information and this private information differently affects their  incentives and strategic behavior. Effective Fall 2020, this course fulfills  a single unit in each of the following BU Hub areas: Quantitative Reasoning  II, Social Inquiry II, Critical Thinking."
     },
     "CASEC405": {
         "id": "EC405",
         "name": "Applied Econometrics",
         "prereqs": "Undergraduate Prerequisites: CAS EC 203 (or EC 303) and CAS EC 204 (or EC 304).",
-        "content": "Studies time series modeling and its applications. Covers estimation, inference   and forecasting in univariate and multivariate models for times series data. The   emphasis is on real data applications to finance markets, economic growth, and   detecting recessions using Stata.  Effective Fall 2023, this course fulfills a  single unit in each of the following BU Hub areas: Writing-Intensive Course,  Quantitative Reasoning II, Research and Information Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "Studies time series modeling and its applications. Covers estimation, inference   and forecasting in univariate and multivariate models for times series data. The   emphasis is on real data applications to finance markets, economic growth, and   detecting recessions using Stata.  Effective Fall 2023, this course fulfills a  single unit in each of the following BU Hub areas: Writing-Intensive Course,  Quantitative Reasoning II, Research and Information Literacy."
     },
     "CASEC406": {
         "id": "EC406",
         "name": "Applied Econometrics",
         "prereqs": "",
-        "content": "Studies cross-sectional modeling and its applications. Covers estimation,   inference and forecasting in univariate and multivariate models for cross-  sectional data. The emphasis is on  data analysis using Stata. Effective Fall  2023, this course fulfills a single unit in each of the following BU Hub areas:   Writing-Intensive, Quantitative Reasoning II, Research and Information Literacy.",
-        "prof": [],
-        "reviews": []
+        "content": "Studies cross-sectional modeling and its applications. Covers estimation,   inference and forecasting in univariate and multivariate models for cross-  sectional data. The emphasis is on  data analysis using Stata. Effective Fall  2023, this course fulfills a single unit in each of the following BU Hub areas:   Writing-Intensive, Quantitative Reasoning II, Research and Information Literacy."
     },
     "CASEC411": {
         "id": "EC411",
         "name": "Economics Practicum 1",
         "prereqs": "Undergraduate Prerequisites: students required to find internships independently and then locate an Economics advisor to instruct the practicum. Consent of faculty required.",
-        "content": "For students who wish to receive credit towards graduation for internships related to  economics. Studies the interaction of academic studies and work experience.",
-        "prof": [],
-        "reviews": []
+        "content": "For students who wish to receive credit towards graduation for internships related to  economics. Studies the interaction of academic studies and work experience."
     },
     "CASEC412": {
         "id": "EC412",
         "name": "Economics Practicum 2",
         "prereqs": "Undergraduate Prerequisites: students required to find internships independently and then locate an Economics advisor to instruct the practicum. Consent of faculty required.",
-        "content": "For students who wish to receive credit towards graduation for internships related to  economics.  Studies the interaction of academic studies and work experience.",
-        "prof": [],
-        "reviews": []
+        "content": "For students who wish to receive credit towards graduation for internships related to  economics.  Studies the interaction of academic studies and work experience."
     },
     "CASEC436": {
         "id": "EC436",
         "name": "Economics of Corporate Organization",
         "prereqs": "Undergraduate Prerequisites: CASEC201; and CASMA121 or CASMA123 or CASMA127; and CASEC305 or CASMA213; and CASMA214, or SMGSM221.",
-        "content": "Economic analysis of the architecture of firms and other organizations. Topics include firm boundaries, the allocation of ownership and control, integration and outsourcing, corporate governance, performance evaluation, and compensation.",
-        "prof": [],
-        "reviews": []
+        "content": "Economic analysis of the architecture of firms and other organizations. Topics include firm boundaries, the allocation of ownership and control, integration and outsourcing, corporate governance, performance evaluation, and compensation."
     },
     "CASEC445": {
         "id": "EC445",
         "name": "Economics of Risk and Uncertainty",
         "prereqs": "Undergraduate Prerequisites: CAS EC 201 ; CAS EC 202 ; CAS EC 203 ; CAS EC 204; and CAS MA 121 or CAS MA 123 (or equivalent).",
-        "content": "For advanced undergraduates. Economics of risk, with a focus on financial  markets. Topics  include expected utility, portfolio choice and the capital  asset pricing model, interest rates and  monetary policy, the relation  between the real economy and the stock market.  Effective Fall 2020, this  course fulfills a single unit in each of the following BU Hub areas:  Quantitative Reasoning I, Social Inquiry II.",
-        "prof": [],
-        "reviews": []
+        "content": "For advanced undergraduates. Economics of risk, with a focus on financial  markets. Topics  include expected utility, portfolio choice and the capital  asset pricing model, interest rates and  monetary policy, the relation  between the real economy and the stock market.  Effective Fall 2020, this  course fulfills a single unit in each of the following BU Hub areas:  Quantitative Reasoning I, Social Inquiry II."
     },
     "CASEC464": {
         "id": "EC464",
         "name": "The Pacific Rim",
         "prereqs": "",
-        "content": "Examines the major economies of the Asian Pacific Rim, focusing in particular on      industrialization, international trade, and financial markets. Initially, these      issues are considered from a comparative perspective. The experience of      individual countries is then examined more closely. Effective Fall 2020, this      course fulfills a single unit in the following BU Hub area: Critical Thinking.",
-        "prof": [],
-        "reviews": []
+        "content": "Examines the major economies of the Asian Pacific Rim, focusing in particular on      industrialization, international trade, and financial markets. Initially, these      issues are considered from a comparative perspective. The experience of      individual countries is then examined more closely. Effective Fall 2020, this      course fulfills a single unit in the following BU Hub area: Critical Thinking."
     },
     "CASEC490": {
         "id": "EC490",
         "name": "Special Topics in Economics",
         "prereqs": "",
-        "content": "May be repeated for credit as topic varies. Topic for Fall 2021, Section A1:   Applied Econometrics: Time Series. Studies time series modeling and its  applications. Covers estimation, inference and forecasting in univariate and  multivariate models for times series data. The emphasis is on real data  applications to finance markets, economic growth, and detecting recessions using  Stata.",
-        "prof": [],
-        "reviews": []
+        "content": "May be repeated for credit as topic varies. Topic for Fall 2021, Section A1:   Applied Econometrics: Time Series. Studies time series modeling and its  applications. Covers estimation, inference and forecasting in univariate and  multivariate models for times series data. The emphasis is on real data  applications to finance markets, economic growth, and detecting recessions using  Stata."
     }
 }
