@@ -27,7 +27,7 @@ const CustomCheckbox = ({ label, labelPlacement, checked, setChecked }) => {
 
 CustomCheckbox.propTypes = {
     label: PropTypes.string.isRequired,
-    labelPlacement: PropTypes.oneOf(["start" | "top" | "end" | "bottom"]),
+    labelPlacement: PropTypes.string.isRequired,
     checked: PropTypes.bool.isRequired,
     setChecked: PropTypes.func.isRequired,
 };

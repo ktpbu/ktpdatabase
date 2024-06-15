@@ -28,31 +28,23 @@ const Course = () => {
     );
 
     useEffect(() => {
-        setLoading(true);
-        const subject = subjectMap[id.slice(0, 5)];
-        axios
-            .get(`${backend}/academics/courses/${level}/${subject}/${id}`)
-            .then((res) => {
-                setCourseInfo(res.data);
-                setLoading(false);
-            })
-            .catch((error) => {
-                console.log(error);
-                setLoading(false);
-            });
-        setLoading(true);
-        axios
-            .get(`${backend}/academics/courses/reviews/${id}`)
-            .then((res) => {
-                setCourseReviews(res.data);
-                setLoading(false);
-            })
-            .catch((error) => {
-                console.log(error);
-                setLoading(false);
-            });
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [id]);
+        const fetchCourseData = async () => {
+            const subject = subjectMap[id.slice(0, 5)];
+            try {
+                const [courseRes, reviewsRes] = await Promise.all([
+                    axios.get(
+                        `${backend}/academics/courses/${level}/${subject}/${id}`
+                    ),
+                    axios.post(`${backend}/academics/courses/reviews/${id}`),
+                ]);
+                setCourseInfo(courseRes.data);
+                setCourseReviews(reviewsRes.data);
+            } catch (error) {
+                console.error("Error fetching course data:", error);
+            }
+        };
+        fetchCourseData();
+    }, [id, level, subjectMap]);
 
     const navigate = useNavigate();
     const handleAddReviewButton = () => {
