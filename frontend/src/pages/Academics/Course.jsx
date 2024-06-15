@@ -8,7 +8,7 @@ import ReviewDisplay from "../../components/ReviewDisplay/ReviewDisplay";
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Course = () => {
-    const { id } = useParams();
+    const { level, id } = useParams();
     const [loading, setLoading] = useState(false);
     const [courseInfo, setCourseInfo] = useState("");
     const [courseReviews, setCourseReviews] = useState([]);
@@ -31,7 +31,7 @@ const Course = () => {
         setLoading(true);
         const subject = subjectMap[id.slice(0, 5)];
         axios
-            .get(`${backend}/academics/courses/undergrad/${subject}/${id}`)
+            .get(`${backend}/academics/courses/${level}/${subject}/${id}`)
             .then((res) => {
                 setCourseInfo(res.data);
                 setLoading(false);
@@ -55,7 +55,7 @@ const Course = () => {
 
     const navigate = useNavigate();
     const handleAddReviewButton = () => {
-        navigate(`/academics/courses/${id}/add-review`);
+        navigate(`/academics/courses/${level}/${id}/add-review`);
     };
 
     return (
@@ -63,9 +63,15 @@ const Course = () => {
             <Breadcrumb className="customBreadcrumb p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
-                <Breadcrumb.Item href="/academics/courses/">
-                    Courses
-                </Breadcrumb.Item>
+                {level === "undergrad" ? (
+                    <Breadcrumb.Item href="/academics/courses/">
+                        Courses
+                    </Breadcrumb.Item>
+                ) : (
+                    <Breadcrumb.Item href="/academics/graduate/">
+                        Graduate
+                    </Breadcrumb.Item>
+                )}
                 <Breadcrumb.Item active>{courseInfo.name}</Breadcrumb.Item>
             </Breadcrumb>
 

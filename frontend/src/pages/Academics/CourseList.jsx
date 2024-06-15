@@ -3,7 +3,7 @@ import { Breadcrumb } from "react-bootstrap";
 
 import CourseListItem from "../../components/CourseListItem/CourseListItem";
 
-const subjectInfo = {
+const undergradSubjectInfo = {
     "biomedical-eng-ug": {
         college: "ENG",
         map: false,
@@ -11,7 +11,7 @@ const subjectInfo = {
         subject: "biomedical-eng",
         website:
             "https://www.bu.edu/academics/eng/courses/biomedical-engineering/",
-        year: "undergrad",
+        level: "undergrad",
     },
     "computer-science-ug": {
         college: "CAS",
@@ -19,7 +19,7 @@ const subjectInfo = {
         name: "Computer Science",
         subject: "computer-science",
         website: "https://www.bu.edu/academics/cas/courses/computer-science/",
-        year: "undergrad",
+        level: "undergrad",
     },
     "data-science-ug": {
         college: "CDS",
@@ -27,7 +27,7 @@ const subjectInfo = {
         name: "Data Science",
         subject: "data-science",
         website: "https://www.bu.edu/academics/cds/courses/",
-        year: "undergrad",
+        level: "undergrad",
     },
     "economics-ug": {
         college: "CAS",
@@ -35,7 +35,7 @@ const subjectInfo = {
         name: "Economics",
         subject: "economics",
         website: "https://www.bu.edu/academics/cas/courses/economics/",
-        year: "undergrad",
+        level: "undergrad",
     },
     "electrical-computer-eng-ug": {
         college: "ENG",
@@ -44,7 +44,7 @@ const subjectInfo = {
         subject: "electrical-computer-eng",
         website:
             "https://www.bu.edu/academics/eng/courses/electrical-computer-engineering/",
-        year: "undergrad",
+        level: "undergrad",
     },
     "eng-core-ug": {
         college: "ENG",
@@ -52,7 +52,7 @@ const subjectInfo = {
         name: "Engineering Core",
         subject: "eng-core",
         website: "https://www.bu.edu/academics/eng/courses/engineering-core/",
-        year: "undergrad",
+        level: "undergrad",
     },
     "mathematics-statistics-ug": {
         college: "CAS",
@@ -61,7 +61,7 @@ const subjectInfo = {
         subject: "mathematics-statistics",
         website:
             "https://www.bu.edu/academics/cas/courses/mathematics-statistics/",
-        year: "undergrad",
+        level: "undergrad",
     },
     "mechanical-eng-ug": {
         college: "ENG",
@@ -70,75 +70,7 @@ const subjectInfo = {
         subject: "mechanical-eng",
         website:
             "https://www.bu.edu/academics/eng/courses/mechanical-engineering/",
-        year: "undergrad",
-    },
-    "biomedical-eng-g": {
-        college: "ENG",
-        map: false,
-        name: "Biomedical Engineering",
-        subject: "biomedical-eng",
-        website:
-            "https://www.bu.edu/academics/eng/courses/biomedical-engineering/",
-        year: "grad",
-    },
-    "computer-science-g": {
-        college: "CAS",
-        map: false,
-        name: "Computer Science",
-        subject: "computer-science",
-        website: "https://www.bu.edu/academics/cas/courses/computer-science/",
-        year: "grad",
-    },
-    "data-science-g": {
-        college: "CDS",
-        map: false,
-        name: "Data Science",
-        subject: "data-science",
-        website: "https://www.bu.edu/academics/cds/courses/",
-        year: "grad",
-    },
-    "economics-g": {
-        college: "CAS",
-        map: false,
-        name: "Economics",
-        subject: "economics",
-        website: "https://www.bu.edu/academics/cas/courses/economics/",
-        year: "grad",
-    },
-    "electrical-computer-eng-g": {
-        college: "ENG",
-        map: false,
-        name: "Electrical & Computer Engineering",
-        subject: "electrical-computer-eng",
-        website:
-            "https://www.bu.edu/academics/eng/courses/electrical-computer-engineering/",
-        year: "grad",
-    },
-    "eng-core-g": {
-        college: "ENG",
-        map: false,
-        name: "Engineering Core",
-        subject: "eng-core",
-        website: "https://www.bu.edu/academics/eng/courses/engineering-core/",
-        year: "grad",
-    },
-    "mathematics-statistics-g": {
-        college: "CAS",
-        map: false,
-        name: "Mathematics & Statistics",
-        subject: "mathematics-statistics",
-        website:
-            "https://www.bu.edu/academics/cas/courses/mathematics-statistics/",
-        year: "grad",
-    },
-    "mechanical-eng-g": {
-        college: "ENG",
-        map: false,
-        name: "Mechanical Engineering",
-        subject: "mechanical-eng",
-        website:
-            "https://www.bu.edu/academics/eng/courses/mechanical-engineering/",
-        year: "grad",
+        level: "undergrad",
     },
 };
 
@@ -164,17 +96,23 @@ const CourseList = () => {
                 <Link to="/academics/graduate/">here</Link>
             </p>
 
-            <CourseListItem info={subjectInfo["computer-science-ug"]} />
-            <CourseListItem info={subjectInfo["data-science-ug"]} />
+            <CourseListItem
+                info={undergradSubjectInfo["computer-science-ug"]}
+            />
+            <CourseListItem info={undergradSubjectInfo["data-science-ug"]} />
 
             <h4 className="text-start p-3">Engineering</h4>
-            <CourseListItem info={subjectInfo["biomedical-eng-ug"]} />
-            <CourseListItem info={subjectInfo["electrical-computer-eng-ug"]} />
-            <CourseListItem info={subjectInfo["eng-core-ug"]} />
-            <CourseListItem info={subjectInfo["mechanical-eng-ug"]} />
+            <CourseListItem info={undergradSubjectInfo["biomedical-eng-ug"]} />
+            <CourseListItem
+                info={undergradSubjectInfo["electrical-computer-eng-ug"]}
+            />
+            <CourseListItem info={undergradSubjectInfo["eng-core-ug"]} />
+            <CourseListItem info={undergradSubjectInfo["mechanical-eng-ug"]} />
 
-            <CourseListItem info={subjectInfo["economics-ug"]} />
-            <CourseListItem info={subjectInfo["mathematics-statistics-ug"]} />
+            <CourseListItem info={undergradSubjectInfo["economics-ug"]} />
+            <CourseListItem
+                info={undergradSubjectInfo["mathematics-statistics-ug"]}
+            />
         </div>
     );
 };

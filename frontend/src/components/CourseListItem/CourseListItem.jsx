@@ -7,12 +7,12 @@ import DependencyMap from "../../components/DependencyMap/DependencyMap";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
-const CourseIcon = ({ id, name, college }) => {
+const CourseIcon = ({ id, name, level, college }) => {
     return (
         <Link
             className="w-20 mb-2.5 mx-2.5 py-1.5 text-black no-underline border-solid border-2 rounded-2xl hover:border-black duration-100 hover:scale-110 "
             title={name}
-            to={`/academics/courses/${college}${id}`}
+            to={`/academics/courses/${level}/${college}${id}`}
         >
             {id}
         </Link>
@@ -25,11 +25,13 @@ const CourseListItem = ({ info }) => {
 
     useEffect(() => {
         setLoading(true);
-        (info.year === "undergrad"
+        (info.level === "undergrad"
             ? axios.get(
-                  `${backend}/academics/courses/undergrad/${info.subject}`
+                  `${backend}/academics/courses/${info.level}/${info.subject}`
               )
-            : axios.get(`${backend}/academics/courses/grad/${info.subject}`)
+            : axios.get(
+                  `${backend}/academics/courses/${info.level}/${info.subject}`
+              )
         )
             .then((res) => {
                 setCourses(res.data);
@@ -52,13 +54,12 @@ const CourseListItem = ({ info }) => {
                         key={index}
                         id={courses[courseKey].id}
                         name={courses[courseKey].name}
+                        level={info.level}
                         college={info.college}
                     />
                 ))}
             </div>
-            <div className="bottom-course d-flex flex-row justify-content-between p-3">
-                {info.map && <DependencyMap subject={info.subject} />}
-
+            <div className="flex flex-row-reverse justify-content-between p-3">
                 <p className="text-start p-3">
                     {" "}
                     <a
@@ -69,6 +70,7 @@ const CourseListItem = ({ info }) => {
                         Complete List
                     </a>{" "}
                 </p>
+                {info.map && <DependencyMap subject={info.subject} />}
             </div>
             <hr className="p-3"></hr>
         </div>
@@ -88,7 +90,7 @@ CourseListItem.propTypes = {
         name: PropTypes.string.isRequired,
         subject: PropTypes.string.isRequired,
         website: PropTypes.string.isRequired,
-        year: PropTypes.string.isRequired,
+        level: PropTypes.string.isRequired,
     }),
 };
 
