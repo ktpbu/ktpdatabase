@@ -80,6 +80,7 @@ const CourseListItem = ({ info }) => {
 CourseIcon.propTypes = {
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
+    level: PropTypes.string.isRequired,
     college: PropTypes.string.isRequired,
 };
 

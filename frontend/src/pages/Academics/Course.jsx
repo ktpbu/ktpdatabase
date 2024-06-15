@@ -51,7 +51,8 @@ const Course = () => {
                 console.log(error);
                 setLoading(false);
             });
-    }, [subjectMap, id]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [id]);
 
     const navigate = useNavigate();
     const handleAddReviewButton = () => {
@@ -91,7 +92,7 @@ const Course = () => {
 
             <button
                 onClick={handleAddReviewButton}
-                className="m-4 p-2 text-xl border-2 border-solid border-black rounded-3xl"
+                className="m-4 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
             >
                 Add Review
             </button>
