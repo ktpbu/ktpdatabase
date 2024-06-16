@@ -10,19 +10,19 @@ const academicOptions = [
         link: "/academics/courses/",
         image: undergrad,
         header: "Courses",
-        text: "Information, Ratings, and Planning advice on STEM courses at BU",
+        text: "Insightful information, ratings, reviews, and planning advice for STEM courses at BU",
     },
     {
         link: "/academics/resources/",
         image: resources,
         header: "Resources",
-        text: "Links and Guides on course-planning at BU",
+        text: "Valuable academic resources for students at BU",
     },
     {
         link: "/academics/graduate/",
         image: grad,
         header: "Graduate",
-        text: "Information and Courses at Graduate level",
+        text: "Information for graduate courses at BU",
     },
 ];
 
