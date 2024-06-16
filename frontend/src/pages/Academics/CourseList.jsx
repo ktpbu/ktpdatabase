@@ -101,6 +101,8 @@ const CourseList = () => {
             />
             <CourseListItem info={undergradSubjectInfo["data-science-ug"]} />
 
+            <CourseListItem info={undergradSubjectInfo["economics-ug"]} />
+
             <h4 className="text-start p-3">Engineering</h4>
             <CourseListItem info={undergradSubjectInfo["biomedical-eng-ug"]} />
             <CourseListItem
@@ -109,7 +111,6 @@ const CourseList = () => {
             <CourseListItem info={undergradSubjectInfo["eng-core-ug"]} />
             <CourseListItem info={undergradSubjectInfo["mechanical-eng-ug"]} />
 
-            <CourseListItem info={undergradSubjectInfo["economics-ug"]} />
             <CourseListItem
                 info={undergradSubjectInfo["mathematics-statistics-ug"]}
             />
