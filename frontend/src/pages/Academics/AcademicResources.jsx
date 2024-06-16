@@ -43,7 +43,7 @@ const AcademicResources = () => {
                         {resource.items.map((item) => (
                             <a
                                 key={item.link}
-                                className="no-underline hover:underline"
+                                className="mt-2 no-underline hover:underline"
                                 href={item.link}
                                 target="_blank"
                                 rel="noreferrer"
