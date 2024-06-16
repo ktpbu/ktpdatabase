@@ -92,8 +92,8 @@ const CourseList = () => {
             </p>
 
             <p>
-                <b>NOTE</b>: if looking for graduate courses, check{" "}
-                <Link to="/academics/graduate/">here</Link>
+                <b>NOTE</b>: click <Link to="/academics/graduate/">here</Link>{" "}
+                for graduate courses
             </p>
 
             <CourseListItem
