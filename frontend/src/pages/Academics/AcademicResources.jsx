@@ -5,20 +5,20 @@ const resourceLists = [
         name: "General",
         items: [
             {
-                link: "https://degree-advice.bu.edu/Dashboard/",
-                text: "Degree Advice",
-            },
-            {
-                link: "https://www.bu.edu/academics/policies/dual-degree-program/",
-                text: "Dual Degree Info",
-            },
-            {
                 link: "http://www.bu.edu/link/bin/uiscgi_studentlink.pl/1664932150?ModuleName=gpa_calc.pl",
                 text: "Check GPA",
             },
             {
                 link: "https://www.bu.edu/link/bin/uiscgi_studentlink.pl/1540496146?ModuleName=transcript_preview.pl",
                 text: "Check Transcript",
+            },
+            {
+                link: "https://degree-advice.bu.edu/Dashboard/",
+                text: "Degree Advice",
+            },
+            {
+                link: "https://www.bu.edu/academics/policies/dual-degree-program/",
+                text: "Dual Degree Info",
             },
         ],
     },
