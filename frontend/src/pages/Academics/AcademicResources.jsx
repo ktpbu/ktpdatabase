@@ -1,61 +1,24 @@
+import { useEffect, useState } from "react";
 import { Breadcrumb } from "react-bootstrap";
+import axios from "axios";
 
-const resourceLists = [
-    {
-        name: "General",
-        items: [
-            {
-                link: "http://www.bu.edu/link/bin/uiscgi_studentlink.pl/1664932150?ModuleName=gpa_calc.pl",
-                text: "Check GPA",
-            },
-            {
-                link: "https://www.bu.edu/link/bin/uiscgi_studentlink.pl/1540496146?ModuleName=transcript_preview.pl",
-                text: "Check Transcript",
-            },
-            {
-                link: "https://degree-advice.bu.edu/Dashboard/",
-                text: "Degree Advice",
-            },
-            {
-                link: "https://www.bu.edu/academics/policies/dual-degree-program/",
-                text: "Dual Degree Info",
-            },
-        ],
-    },
-    {
-        name: "Computer Science",
-        items: [
-            {
-                link: "https://www.bu.edu/cs/undergraduate/academic-programs/",
-                text: "Program List",
-            },
-        ],
-    },
-    {
-        name: "Data Science",
-        items: [
-            {
-                link: "https://www.bu.edu/cds-faculty/files/2023/01/CDS-DS_01.17.23.pdf",
-                text: "Planning Sheet (2023)",
-            },
-        ],
-    },
-    {
-        name: "Engineering",
-        items: [
-            {
-                link: "https://www.bu.edu/dbin/eng/ugrad/cst/final.php",
-                text: "Course Sequencing Tool",
-            },
-            {
-                link: "https://www.bu.edu/eng/academics/resources/undergraduate-student-resources/eng-undergraduate-degree-requirements/program-planning-sheets/",
-                text: "Planning Sheets",
-            },
-        ],
-    },
-];
+const backend = import.meta.env.VITE_BACKEND_URL;
 
 const AcademicResources = () => {
+    const [resourceLists, setResourceLists] = useState([]);
+
+    useEffect(() => {
+        axios
+            .get(`${backend}/academics/resources/useful-links`)
+            .then((res) => {
+                console.log(res.data.usefulLinks);
+                setResourceLists(res.data.usefulLinks);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }, []);
+
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="p-3 text-start">Resources</h2>
@@ -68,17 +31,19 @@ const AcademicResources = () => {
                 <Breadcrumb.Item active>Resources</Breadcrumb.Item>
             </Breadcrumb>
 
-            <div className="mt-8 p-3 flex flex-wrap justify-between">
+            <h3>Useful Links</h3>
+
+            <div className="p-3 flex flex-wrap justify-around">
                 {resourceLists.map((resource) => (
                     <div
                         key={resource.name}
-                        className="flex flex-col text-start"
+                        className="w-48 m-4 p-2 flex flex-col text-start border-1 hover:border-black rounded-md duration-200"
                     >
                         <h5>{resource.name}</h5>
                         {resource.items.map((item) => (
                             <a
                                 key={item.link}
-                                className="no-underline"
+                                className="no-underline hover:underline"
                                 href={item.link}
                                 target="_blank"
                                 rel="noreferrer"

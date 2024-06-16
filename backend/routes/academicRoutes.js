@@ -1,41 +1,44 @@
 import express from "express";
 
 // undergraduate course information imports
-import bmeCoursesUG from "../data/courses/course-info/undergrad/biomedical-eng-ug-course-info.json" assert { type: "json" };
-import csCoursesUG from "../data/courses/course-info/undergrad/computer-science-ug-course-info.json" assert { type: "json" };
-import dsCoursesUG from "../data/courses/course-info/undergrad/data-science-ug-course-info.json" assert { type: "json" };
-import econCoursesUG from "../data/courses/course-info/undergrad/economics-ug-course-info.json" assert { type: "json" };
-import eceCoursesUG from "../data/courses/course-info/undergrad/electrical-computer-eng-ug-course-info.json" assert { type: "json" };
-import engCoreCoursesUG from "../data/courses/course-info/undergrad/eng-core-ug-course-info.json" assert { type: "json" };
-import mathCoursesUG from "../data/courses/course-info/undergrad/mathematics-statistics-ug-course-info.json" assert { type: "json" };
-import mecheCoursesUG from "../data/courses/course-info/undergrad/mechanical-eng-ug-course-info.json" assert { type: "json" };
+import bmeCoursesUG from "../data/academics/course-info/undergrad/biomedical-eng-ug-course-info.json" assert { type: "json" };
+import csCoursesUG from "../data/academics/course-info/undergrad/computer-science-ug-course-info.json" assert { type: "json" };
+import dsCoursesUG from "../data/academics/course-info/undergrad/data-science-ug-course-info.json" assert { type: "json" };
+import econCoursesUG from "../data/academics/course-info/undergrad/economics-ug-course-info.json" assert { type: "json" };
+import eceCoursesUG from "../data/academics/course-info/undergrad/electrical-computer-eng-ug-course-info.json" assert { type: "json" };
+import engCoreCoursesUG from "../data/academics/course-info/undergrad/eng-core-ug-course-info.json" assert { type: "json" };
+import mathCoursesUG from "../data/academics/course-info/undergrad/mathematics-statistics-ug-course-info.json" assert { type: "json" };
+import mecheCoursesUG from "../data/academics/course-info/undergrad/mechanical-eng-ug-course-info.json" assert { type: "json" };
 
 // graduate course information imports
-import bmeCoursesG from "../data/courses/course-info/grad/biomedical-eng-g-course-info.json" assert { type: "json" };
-import csCoursesG from "../data/courses/course-info/grad/computer-science-g-course-info.json" assert { type: "json" };
-import dsCoursesG from "../data/courses/course-info/grad/data-science-g-course-info.json" assert { type: "json" };
-import econCoursesG from "../data/courses/course-info/grad/economics-g-course-info.json" assert { type: "json" };
-import eceCoursesG from "../data/courses/course-info/grad/electrical-computer-eng-g-course-info.json" assert { type: "json" };
-import engCoreCoursesG from "../data/courses/course-info/grad/eng-core-g-course-info.json" assert { type: "json" };
-import mathCoursesG from "../data/courses/course-info/grad/mathematics-statistics-g-course-info.json" assert { type: "json" };
-import mecheCoursesG from "../data/courses/course-info/grad/mechanical-eng-g-course-info.json" assert { type: "json" };
+import bmeCoursesG from "../data/academics/course-info/grad/biomedical-eng-g-course-info.json" assert { type: "json" };
+import csCoursesG from "../data/academics/course-info/grad/computer-science-g-course-info.json" assert { type: "json" };
+import dsCoursesG from "../data/academics/course-info/grad/data-science-g-course-info.json" assert { type: "json" };
+import econCoursesG from "../data/academics/course-info/grad/economics-g-course-info.json" assert { type: "json" };
+import eceCoursesG from "../data/academics/course-info/grad/electrical-computer-eng-g-course-info.json" assert { type: "json" };
+import engCoreCoursesG from "../data/academics/course-info/grad/eng-core-g-course-info.json" assert { type: "json" };
+import mathCoursesG from "../data/academics/course-info/grad/mathematics-statistics-g-course-info.json" assert { type: "json" };
+import mecheCoursesG from "../data/academics/course-info/grad/mechanical-eng-g-course-info.json" assert { type: "json" };
 
 // subject professor imports
-import csProfessors from "../data/courses/professors/computer-science-professors.json" assert { type: "json" };
-import dsProfessors from "../data/courses/professors/data-science-professors.json" assert { type: "json" };
-import econProfessors from "../data/courses/professors/economics-professors.json" assert { type: "json" };
-import engProfessors from "../data/courses/professors/engineering-professors.json" assert { type: "json" };
-import mathProfessors from "../data/courses/professors/mathematics-statistics-professors.json" assert { type: "json" };
+import csProfessors from "../data/academics/professors/computer-science-professors.json" assert { type: "json" };
+import dsProfessors from "../data/academics/professors/data-science-professors.json" assert { type: "json" };
+import econProfessors from "../data/academics/professors/economics-professors.json" assert { type: "json" };
+import engProfessors from "../data/academics/professors/engineering-professors.json" assert { type: "json" };
+import mathProfessors from "../data/academics/professors/mathematics-statistics-professors.json" assert { type: "json" };
 
 // course dependency imports
-import csEdges from "../data/courses/dependencies/edges/computer-science-edges.json" assert { type: "json" };
-import csNodes from "../data/courses/dependencies/nodes/computer-science-nodes.json" assert { type: "json" };
-import dsEdges from "../data/courses/dependencies/edges/data-science-edges.json" assert { type: "json" };
-import dsNodes from "../data/courses/dependencies/nodes/data-science-nodes.json" assert { type: "json" };
-import econEdges from "../data/courses/dependencies/edges/economics-edges.json" assert { type: "json" };
-import econNodes from "../data/courses/dependencies/nodes/economics-nodes.json" assert { type: "json" };
-import mathEdges from "../data/courses/dependencies/edges/mathematics-statistics-edges.json" assert { type: "json" };
-import mathNodes from "../data/courses/dependencies/nodes/mathematics-statistics-nodes.json" assert { type: "json" };
+import csEdges from "../data/academics/dependencies/edges/computer-science-edges.json" assert { type: "json" };
+import csNodes from "../data/academics/dependencies/nodes/computer-science-nodes.json" assert { type: "json" };
+import dsEdges from "../data/academics/dependencies/edges/data-science-edges.json" assert { type: "json" };
+import dsNodes from "../data/academics/dependencies/nodes/data-science-nodes.json" assert { type: "json" };
+import econEdges from "../data/academics/dependencies/edges/economics-edges.json" assert { type: "json" };
+import econNodes from "../data/academics/dependencies/nodes/economics-nodes.json" assert { type: "json" };
+import mathEdges from "../data/academics/dependencies/edges/mathematics-statistics-edges.json" assert { type: "json" };
+import mathNodes from "../data/academics/dependencies/nodes/mathematics-statistics-nodes.json" assert { type: "json" };
+
+// academic resources imports
+import usefulLinks from "../data/academics/useful-links.json" assert { type: "json" };
 
 // database imports
 import { Review } from "../models/reviewModel.js";
@@ -183,6 +186,14 @@ router.post("/courses/dependencies", async (req, res) => {
     return res.json({
         nodes: subjectMap[subject]["nodes"],
         edges: subjectMap[subject]["edges"],
+    });
+});
+
+// gets useful resource links
+router.get("/resources/useful-links", async (req, res) => {
+    console.log(req.body);
+    return res.json({
+        usefulLinks,
     });
 });
 
