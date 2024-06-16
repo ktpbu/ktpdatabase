@@ -26,20 +26,37 @@
     },
     {
         "name": "Business",
-        "items": []
+        "items": [
+            {
+                "link": "https://www.bu.edu/academics/questrom/courses/",
+                "text": "Course List"
+            }
+        ]
     },
     {
         "name": "Computer Science",
         "items": [
             {
-                "link": "https://www.bu.edu/cs/undergraduate/academic-programs/",
-                "text": "Program List"
+                "link": "https://www.bu.edu/academics/cas/courses/computer-science/",
+                "text": "Course List"
+            },
+            {
+                "link": "https://learngitbranching.js.org/",
+                "text": "Learn Git Branching"
+            },
+            {
+                "link": "https://www.bu.edu/cs/undergraduate/academic-programs/ba-ms-programs/",
+                "text": "Integrated Masters Program"
             }
         ]
     },
     {
         "name": "Data Science",
         "items": [
+            {
+                "link": "https://www.bu.edu/academics/cds/courses/",
+                "text": "Course List"
+            },
             {
                 "link": "https://www.bu.edu/cds-faculty/files/2023/01/CDS-DS_01.17.23.pdf",
                 "text": "Planning Sheet (2023)"
@@ -48,11 +65,24 @@
     },
     {
         "name": "Economics",
-        "items": []
+        "items": [
+            {
+                "link": "https://www.bu.edu/academics/cas/courses/economics/",
+                "text": "Course List"
+            },
+            {
+                "link": "https://www.bu.edu/academics/cas/programs/economics/ba-ma/",
+                "text": "Integrated Masters Program"
+            }
+        ]
     },
     {
         "name": "Engineering",
         "items": [
+            {
+                "link": "https://www.bu.edu/academics/eng/courses/",
+                "text": "Course List"
+            },
             {
                 "link": "https://www.bu.edu/dbin/eng/ugrad/cst/final.php",
                 "text": "Course Sequencing Tool"
@@ -65,6 +95,11 @@
     },
     {
         "name": "Mathematics & Statistics",
-        "items": []
+        "items": [
+            {
+                "link": "https://www.bu.edu/academics/cas/courses/mathematics-statistics/",
+                "text": "Course List"
+            }
+        ]
     }
 ]

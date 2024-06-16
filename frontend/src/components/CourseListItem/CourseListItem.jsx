@@ -19,20 +19,48 @@ const CourseIcon = ({ id, name, level, college }) => {
     );
 };
 
+const subjectMap = {
+    "biomedical-eng": {
+        "course-list":
+            "https://www.bu.edu/academics/eng/courses/biomedical-engineering/",
+    },
+    "computer-science": {
+        "course-list":
+            "https://www.bu.edu/academics/cas/courses/computer-science/",
+    },
+    "data-science": {
+        "course-list": "https://www.bu.edu/academics/cds/courses/",
+    },
+    economics: {
+        "course-list": "https://www.bu.edu/academics/cas/courses/economics/",
+    },
+    "electrical-computer-eng": {
+        "course-list":
+            "https://www.bu.edu/academics/eng/courses/electrical-computer-engineering/",
+    },
+    "eng-core": {
+        "course-list":
+            "https://www.bu.edu/academics/eng/courses/engineering-core/",
+    },
+    "mathematics-statistics": {
+        "course-list":
+            "https://www.bu.edu/academics/cas/courses/mathematics-statistics/",
+    },
+    "mechanical-eng": {
+        "course-list":
+            "https://www.bu.edu/academics/eng/courses/mechanical-engineering/",
+    },
+};
+
 const CourseListItem = ({ info }) => {
     const [loading, setLoading] = useState(false);
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
         setLoading(true);
-        (info.level === "undergrad"
-            ? axios.get(
-                  `${backend}/academics/courses/${info.level}/${info.subject}`
-              )
-            : axios.get(
-                  `${backend}/academics/courses/${info.level}/${info.subject}`
-              )
-        )
+        axios
+            .get(`${backend}/academics/courses/${info.level}/${info.subject}`)
+
             .then((res) => {
                 setCourses(res.data);
                 setLoading(false);
@@ -63,7 +91,7 @@ const CourseListItem = ({ info }) => {
                 <p className="text-start p-3">
                     {" "}
                     <a
-                        href="https://www.bu.edu/academics/cas/courses/computer-science/"
+                        href={subjectMap[info.subject]["course-list"]}
                         target="_blank"
                         rel="noreferrer"
                     >
