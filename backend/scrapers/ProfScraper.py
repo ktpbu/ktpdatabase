@@ -84,23 +84,35 @@ def get_profs(subject):
 def scrape(subject):
     subject_profs = get_profs(subject)
     return subject_profs
-    # create_json(profs, subject)
 
 
-def upsert_professors_in_database(profs):
+def delete_professors_in_database():
     try:
-        supabase.table("professors").upsert(profs).execute()
-        print("successfully upserted professors in database")
+        supabase.table("professors").delete().gt("id", -1).execute()
+        print("successfully deleted professors in database")
     except Exception as e:
-        print("failed to upsert professors in database: ", e)
+        print("failed to delete professors in database", e)
+
+
+def insert_professors_in_database(profs):
+    try:
+        supabase.table("professors").insert(profs).execute()
+        print("successfully inserted professors in database")
+    except Exception as e:
+        print("failed to insert professors in database: ", e)
 
 
 def main():
     profs = []
-    for subject in prof_urls.keys():
-        subject_profs = scrape(subject)
-        profs.extend(subject_profs)
-    upsert_professors_in_database(profs)
+    try:
+        for subject in prof_urls.keys():
+            subject_profs = scrape(subject)
+            profs.extend(subject_profs)
+    except Exception as e:
+        raise Exception("issue scraping professors", e)
+    profs = [{**prof, "id": index} for index, prof in enumerate(profs)]
+    delete_professors_in_database()
+    insert_professors_in_database(profs)
 
 
 if __name__ == "__main__":
