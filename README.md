@@ -7,6 +7,7 @@
         - [Some Guidelines](#some-guidelines)
         - [How to Run the Project Locally](#how-to-run-project-locally)
         - [Making a Request to the Backend](#making-a-request-to-the-backend)
+        - [Connecting to the Supabase Client](#connecting-to-the-supabase-client)
         - [How to Run the Course Scraper](#how-to-run-the-course-scraper)
         - [How to Run the Professor Scraper](#how-to-run-the-professor-scraper) 
     - [Current Roadmap of Website](#current-roadmap-of-website)
@@ -59,6 +60,15 @@ Import the base backend URL from the .env file:
 Make the call to the backend using the imported base URL as a fstring (the string needs to be enclosed by a single backtick symbol):
 
 axios.get(\`${backend}/academics/courses/dependencies/nodes/${subject}\`)
+
+#### Connecting to the Supabase Client
+Supabase is an open-source cloud-hosted PostgreSQL database. 
+
+To connect to the Supabase client in a Node.js API call, add the following import statement at the top of the file if it is not already present:
+
+`import supabase from "./supabaseClient.js";`
+
+Follow the relevant [JavaScript documentation](https://supabase.com/docs/reference/javascript/installing) or [Python documentation](https://supabase.com/docs/reference/python/installing) to implement any Supabase API calls.
 
 #### How to Run the Course Scraper
 The course scraper is located at the path `./backend/data/courses/CourseScraper.py`.
