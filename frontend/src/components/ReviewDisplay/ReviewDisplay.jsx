@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { useSnackbar } from "notistack";
+import { Card } from "react-bootstrap";
 
 import ReviewFilter from "../ReviewFilter/ReviewFilter";
 
@@ -138,66 +139,61 @@ const ReviewDisplay = ({ reviews }) => {
             />
             <div className="w-144 max-w-full h-96 overflow-y-scroll mx-auto mt-4 flex flex-col justify-around border-2 border-black">
                 {filteredReviews.map((review, index) => (
-                    <div
-                        key={review._id}
+                    <Card
+                        key={index}
                         className={`w-112 h-fit mx-auto mt-4 ${
                             index === reviews.length - 1 && "mb-4"
                         } flex flex-col flex-around border-1 border-gray-200 rounded-md bg-purple-100`}
                     >
-                        <div className="w-96 mt-4 mx-auto flex justify-between">
-                            <p className="my-auto text-xl font-semibold text-left">
-                                Author
-                            </p>
-                            <p className="my-auto text-xl text-right">
-                                {review.anon ? "Anonymous" : review.user}
-                            </p>
-                        </div>
-                        <div className="w-96 mt-4 mx-auto flex justify-between">
-                            <p className="my-auto text-xl font-semibold text-left">
-                                Date
-                            </p>
-                            <p className="my-auto text-xl text-right">
-                                {formatDate(review.date)}
-                            </p>
-                        </div>
-                        <div className="w-96 mt-4 mx-auto flex justify-between">
-                            <p className="my-auto text-xl font-semibold text-left">
-                                Professor
-                            </p>
-                            <p className="my-auto text-xl text-right">
-                                {review.professor}
-                            </p>
-                        </div>
-
-                        <div
-                            className={`w-96 mx-auto ${
-                                review.review ? "mt-4" : "my-4"
-                            } flex flex-wrap justify-between text-xl`}
-                        >
-                            <p className="my-auto">
-                                <span className="font-semibold">
-                                    Usefulness:
-                                </span>{" "}
-                                {review.usefulness}
-                            </p>
-                            <p className="my-auto">
-                                <span className="font-semibold">
-                                    Difficulty:
-                                </span>{" "}
-                                {review.difficulty}
-                            </p>
-                            <p className="my-auto">
-                                <span className="font-semibold">Rating:</span>{" "}
-                                {review.rating}
-                            </p>
-                        </div>
-
-                        {review.review && (
-                            <div className="my-4 mx-4 text-xl">
-                                <p className="my-auto">{review.review}</p>
+                        <Card.Header>
+                            <div className="w-96 mx-2 flex justify-between">
+                                <p className="my-auto text-xl font-semibold text-right">
+                                    {review.anon ? "Anonymous" : review.user}
+                                </p>
+                                <p className="my-auto text-xl font-semibold text-right">
+                                    {formatDate(review.date)}
+                                </p>
                             </div>
-                        )}
-                    </div>
+                        </Card.Header>
+                        <Card.Body className="my-auto bg-purple-100">
+                            <Card.Text className="mx-2 text-xl text-left">
+                                Professor{" "}
+                                <span className="font-semibold">
+                                    {review.professor}
+                                </span>
+                            </Card.Text>
+
+                            <div className="w-96 mx-2 flex flex-wrap justify-between text-xl">
+                                <Card.Text>
+                                    Usefulness:{" "}
+                                    <span className="text-2xl font-semibold">
+                                        {review.usefulness}
+                                    </span>
+                                    /5
+                                </Card.Text>
+                                <Card.Text>
+                                    Difficulty:{" "}
+                                    <span className="text-2xl font-semibold">
+                                        {review.difficulty}
+                                    </span>
+                                    /5
+                                </Card.Text>
+                                <Card.Text>
+                                    Rating:{" "}
+                                    <span className="text-2xl font-semibold">
+                                        {review.rating}
+                                    </span>
+                                    /5
+                                </Card.Text>
+                            </div>
+
+                            {review.review && (
+                                <Card.Text className="mx-2 text-xl text-start">
+                                    {review.review}
+                                </Card.Text>
+                            )}
+                        </Card.Body>
+                    </Card>
                 ))}
             </div>
         </div>
