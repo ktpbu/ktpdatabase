@@ -2,6 +2,8 @@ import express from "express";
 import fs from "fs";
 import path from "path";
 
+import supabase from "../supabaseClient.js";
+
 const loadJSON = (filePath) => {
     const data = fs.readFileSync(path.resolve(filePath));
     return JSON.parse(data);
@@ -188,7 +190,11 @@ router.get("/courses/:level/:subject", async (req, res) => {
 // gets subject professor list
 router.post("/courses/professors", async (req, res) => {
     console.log(req.body);
-    return res.json(subjectMap[req.body.subject]["professors"]);
+    const { data, error } = await supabase
+        .from("professors")
+        .select("name")
+        .eq("subject", req.body.subject);
+    return res.json(data);
 });
 
 // gets individual course info
