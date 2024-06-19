@@ -3,17 +3,17 @@ import PropTypes, { number, string } from "prop-types";
 
 const ReviewFilter = ({
     minUsefulness,
-    setMinUsefulness,
+    setMinUsefulnessHelper,
     maxUsefulness,
-    setMaxUsefulness,
+    setMaxUsefulnessHelper,
     minDifficulty,
-    setMinDifficulty,
+    setMinDifficultyHelper,
     maxDifficulty,
-    setMaxDifficulty,
+    setMaxDifficultyHelper,
     minRating,
-    setMinRating,
+    setMinRatingHelper,
     maxRating,
-    setMaxRating,
+    setMaxRatingHelper,
 }) => {
     const valueOptions = [
         { value: 1, label: "1" },
@@ -22,111 +22,114 @@ const ReviewFilter = ({
         { value: 4, label: "4" },
         { value: 5, label: "5" },
     ];
+
     const resetFilters = () => {
-        setMinUsefulness({ value: 1, label: "1" });
-        setMaxUsefulness({ value: 5, label: "5" });
-        setMinDifficulty({ value: 1, label: "1" });
-        setMaxDifficulty({ value: 5, label: "5" });
-        setMinRating({ value: 1, label: "1" });
-        setMaxRating({ value: 5, label: "5" });
+        setMinUsefulnessHelper({ value: 1, label: "1" });
+        setMaxUsefulnessHelper({ value: 5, label: "5" });
+        setMinDifficultyHelper({ value: 1, label: "1" });
+        setMaxDifficultyHelper({ value: 5, label: "5" });
+        setMinRatingHelper({ value: 1, label: "1" });
+        setMaxRatingHelper({ value: 5, label: "5" });
     };
+
+    const filters = [
+        {
+            pair: "usefulness",
+            minimum: {
+                header: "Minimum Usefulness",
+                options: valueOptions,
+                value: minUsefulness,
+                update: setMinUsefulnessHelper,
+                searchable: false,
+            },
+            maximum: {
+                header: "Maximum Usefulness",
+                options: valueOptions,
+                value: maxUsefulness,
+                update: setMaxUsefulnessHelper,
+                searchable: false,
+            },
+        },
+        {
+            pair: "difficulty",
+            minimum: {
+                header: "Minimum Difficulty",
+                options: valueOptions,
+                value: minDifficulty,
+                update: setMinDifficultyHelper,
+                searchable: false,
+            },
+            maximum: {
+                header: "Maximum Difficulty",
+                options: valueOptions,
+                value: maxDifficulty,
+                update: setMaxDifficultyHelper,
+                searchable: false,
+            },
+        },
+        {
+            pair: "rating",
+            minimum: {
+                header: "Minimum Rating",
+                options: valueOptions,
+                value: minRating,
+                update: setMinRatingHelper,
+                searchable: false,
+            },
+            maximum: {
+                header: "Maximum Rating",
+                options: valueOptions,
+                value: maxRating,
+                update: setMaxRatingHelper,
+                searchable: false,
+            },
+        },
+    ];
+
     return (
         <div>
             <div className="w-144 max-w-full mx-auto mt-4 flex flex-wrap">
-                <div className="w-64 mx-auto my-auto flex justify-between">
-                    <h6 className="my-auto">Minimum Usefulness</h6>
-                    <Select
-                        options={valueOptions}
-                        value={minUsefulness}
-                        onChange={(selectedOption) =>
-                            selectedOption &&
-                            setMinUsefulness({
-                                value: selectedOption.value,
-                                label: selectedOption.label,
-                            })
-                        }
-                        isSearchable={false}
-                    />
-                </div>
-                <div className="w-64 mx-auto my-auto flex justify-between">
-                    <h6 className="my-auto">Maximum Usefulness</h6>
-                    <Select
-                        options={valueOptions}
-                        value={maxUsefulness}
-                        onChange={(selectedOption) =>
-                            selectedOption &&
-                            setMaxUsefulness({
-                                value: selectedOption.value,
-                                label: selectedOption.label,
-                            })
-                        }
-                        isSearchable={false}
-                    />
-                </div>
-            </div>
-            <div className="w-144 max-w-full mx-auto mt-4 flex flex-wrap">
-                <div className="w-64 mx-auto my-auto flex justify-between">
-                    <h6 className="my-auto">Minimum Difficulty</h6>
-                    <Select
-                        options={valueOptions}
-                        value={minDifficulty}
-                        onChange={(selectedOption) =>
-                            selectedOption &&
-                            setMinDifficulty({
-                                value: selectedOption.value,
-                                label: selectedOption.label,
-                            })
-                        }
-                        isSearchable={false}
-                    />
-                </div>
-                <div className="w-64 mx-auto my-auto flex justify-between">
-                    <h6 className="my-auto">Maximum Difficulty</h6>
-                    <Select
-                        options={valueOptions}
-                        value={maxDifficulty}
-                        onChange={(selectedOption) =>
-                            selectedOption &&
-                            setMaxDifficulty({
-                                value: selectedOption.value,
-                                label: selectedOption.label,
-                            })
-                        }
-                        isSearchable={false}
-                    />
-                </div>
-            </div>
-            <div className="w-144 max-w-full mx-auto mt-4 flex flex-wrap">
-                <div className="w-64 mx-auto my-auto flex justify-between">
-                    <h6 className="my-auto">Minimum Rating</h6>
-                    <Select
-                        options={valueOptions}
-                        value={minRating}
-                        onChange={(selectedOption) =>
-                            selectedOption &&
-                            setMinRating({
-                                value: selectedOption.value,
-                                label: selectedOption.label,
-                            })
-                        }
-                        isSearchable={false}
-                    />
-                </div>
-                <div className="w-64 mx-auto my-auto flex justify-between">
-                    <h6 className="my-auto">Maximum Rating</h6>
-                    <Select
-                        options={valueOptions}
-                        value={maxRating}
-                        onChange={(selectedOption) =>
-                            selectedOption &&
-                            setMaxRating({
-                                value: selectedOption.value,
-                                label: selectedOption.label,
-                            })
-                        }
-                        isSearchable={false}
-                    />
-                </div>
+                {filters.map((filterPair) => (
+                    <div
+                        key={filterPair.pair}
+                        className="w-144 max-w-full mx-auto mt-4 flex flex-wrap"
+                    >
+                        <div className="w-64 mx-auto my-auto flex justify-between">
+                            <h6 className="my-auto">
+                                {filterPair.minimum.header}
+                            </h6>
+                            <Select
+                                options={filterPair.minimum.options}
+                                value={filterPair.minimum.value}
+                                onChange={(selectedOption) =>
+                                    selectedOption &&
+                                    filterPair.minimum.update({
+                                        value: selectedOption.value,
+                                        label: selectedOption.label,
+                                    })
+                                }
+                                isSearchable={filterPair.minimum.searchable}
+                            />
+                        </div>
+                        <div className="w-64 mx-auto my-auto flex justify-between">
+                            <h6 className="my-auto">
+                                {filterPair.maximum.header}
+                            </h6>
+                            <Select
+                                options={filterPair.maximum.options}
+                                value={filterPair.maximum.value}
+                                onChange={(selectedOption) =>
+                                    selectedOption &&
+                                    filterPair.maximum.update({
+                                        value: selectedOption.value,
+                                        label: selectedOption.label,
+                                    })
+                                }
+                                isSearchable={filterPair.maximum.searchable}
+                            />
+                        </div>
+                    </div>
+                ))}
             </div>
             <button
                 onClick={resetFilters}
@@ -140,17 +143,17 @@ const ReviewFilter = ({
 
 ReviewFilter.propTypes = {
     minUsefulness: PropTypes.shape({ value: number, label: string }).isRequired,
-    setMinUsefulness: PropTypes.func.isRequired,
+    setMinUsefulnessHelper: PropTypes.func.isRequired,
     maxUsefulness: PropTypes.shape({ value: number, label: string }).isRequired,
-    setMaxUsefulness: PropTypes.func.isRequired,
+    setMaxUsefulnessHelper: PropTypes.func.isRequired,
     minDifficulty: PropTypes.shape({ value: number, label: string }).isRequired,
-    setMinDifficulty: PropTypes.func.isRequired,
+    setMinDifficultyHelper: PropTypes.func.isRequired,
     maxDifficulty: PropTypes.shape({ value: number, label: string }).isRequired,
-    setMaxDifficulty: PropTypes.func.isRequired,
+    setMaxDifficultyHelper: PropTypes.func.isRequired,
     minRating: PropTypes.shape({ value: number, label: string }).isRequired,
-    setMinRating: PropTypes.func.isRequired,
+    setMinRatingHelper: PropTypes.func.isRequired,
     maxRating: PropTypes.shape({ value: number, label: string }).isRequired,
-    setMaxRating: PropTypes.func.isRequired,
+    setMaxRatingHelper: PropTypes.func.isRequired,
 };
 
 export default ReviewFilter;
