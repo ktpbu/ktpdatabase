@@ -80,7 +80,9 @@ const Course = () => {
 
             <p className="p-3 text-start mx-auto"> {courseInfo.content}</p>
 
-            <ReviewDisplay reviews={courseReviews} />
+            {courseReviews && courseReviews.length > 0 && (
+                <ReviewDisplay reviews={courseReviews} />
+            )}
 
             <button
                 onClick={handleAddReviewButton}
