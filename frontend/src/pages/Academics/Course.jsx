@@ -9,7 +9,6 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Course = () => {
     const { level, id } = useParams();
-    const [loading, setLoading] = useState(false);
     const [courseInfo, setCourseInfo] = useState("");
     const [courseReviews, setCourseReviews] = useState([]);
 

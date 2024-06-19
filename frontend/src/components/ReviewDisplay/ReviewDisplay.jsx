@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+
+import ReviewFilter from "../ReviewFilter/ReviewFilter";
 
 const ReviewDisplay = ({ reviews }) => {
     const formatDate = (input) => {
@@ -8,11 +11,72 @@ const ReviewDisplay = ({ reviews }) => {
         const year = date.getFullYear();
         return `${month}/${day}/${year}`;
     };
+    const [filteredReviews, setFilteredReviews] = useState([]);
+    const [minUsefulness, setMinUsefulness] = useState({
+        value: 1,
+        label: "1",
+    });
+    const [maxUsefulness, setMaxUsefulness] = useState({
+        value: 5,
+        label: "5",
+    });
+    const [minDifficulty, setMinDifficulty] = useState({
+        value: 1,
+        label: "1",
+    });
+    const [maxDifficulty, setMaxDifficulty] = useState({
+        value: 5,
+        label: "5",
+    });
+    const [minRating, setMinRating] = useState({ value: 1, label: "1" });
+    const [maxRating, setMaxRating] = useState({ value: 5, label: "5" });
+    console.log(minRating, maxRating);
+
+    useEffect(() => {
+        if (minRating.value > maxRating.value) {
+            console.log("min rating cannot be greater than max rating");
+        } else {
+            setFilteredReviews(
+                reviews.filter(
+                    (review) =>
+                        review.usefulness >= minUsefulness.value &&
+                        review.usefulness <= maxUsefulness.value &&
+                        review.difficulty >= minDifficulty.value &&
+                        review.difficulty <= maxDifficulty.value &&
+                        review.rating >= minRating.value &&
+                        review.rating <= maxRating.value
+                )
+            );
+        }
+    }, [
+        reviews,
+        minUsefulness,
+        maxUsefulness,
+        minRating,
+        maxRating,
+        minDifficulty,
+        maxDifficulty,
+    ]);
+
     return (
         <div>
             <h2 className="">Reviews</h2>
-            <div className="w-144 max-w-full h-96 overflow-y-scroll mx-auto flex flex-col justify-around border-2 border-black">
-                {reviews.map((review, index) => (
+            <ReviewFilter
+                minUsefulness={minUsefulness}
+                setMinUsefulness={setMinUsefulness}
+                maxUsefulness={maxUsefulness}
+                setMaxUsefulness={setMaxUsefulness}
+                minDifficulty={minDifficulty}
+                setMinDifficulty={setMinDifficulty}
+                maxDifficulty={maxDifficulty}
+                setMaxDifficulty={setMaxDifficulty}
+                minRating={minRating}
+                setMinRating={setMinRating}
+                maxRating={maxRating}
+                setMaxRating={setMaxRating}
+            />
+            <div className="w-144 max-w-full h-96 overflow-y-scroll mx-auto mt-4 flex flex-col justify-around border-2 border-black">
+                {filteredReviews.map((review, index) => (
                     <div
                         key={review._id}
                         className={`w-112 h-fit mx-auto mt-4 ${
