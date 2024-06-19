@@ -16,6 +16,11 @@ export default {
             height: {
                 128: "512px",
             },
+            width: {
+                112: "448px",
+                128: "512px",
+                144: "576px",
+            },
         },
     },
 
