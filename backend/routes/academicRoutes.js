@@ -61,23 +61,6 @@ const mecheCoursesG = loadJSON(
     "data/academics/courses/course-info/grad/mechanical-eng-g-course-info.json"
 );
 
-// subject professor imports
-const csProfessors = loadJSON(
-    "data/academics/courses/professors/computer-science-professors.json"
-);
-const dsProfessors = loadJSON(
-    "data/academics/courses/professors/data-science-professors.json"
-);
-const econProfessors = loadJSON(
-    "data/academics/courses/professors/economics-professors.json"
-);
-const engProfessors = loadJSON(
-    "data/academics/courses/professors/engineering-professors.json"
-);
-const mathProfessors = loadJSON(
-    "data/academics/courses/professors/mathematics-statistics-professors.json"
-);
-
 // course dependency imports
 const csEdges = loadJSON(
     "data/academics/courses/dependencies/edges/computer-science-edges.json"
@@ -117,56 +100,48 @@ const subjectMap = {
         "course-info-g": bmeCoursesG,
         edges: "",
         nodes: "",
-        professors: engProfessors,
     },
     "computer-science": {
         "course-info-ug": csCoursesUG,
         "course-info-g": csCoursesG,
         edges: csEdges,
         nodes: csNodes,
-        professors: csProfessors,
     },
     "data-science": {
         "course-info-ug": dsCoursesUG,
         "course-info-g": dsCoursesG,
         edges: dsEdges,
         nodes: dsNodes,
-        professors: dsProfessors,
     },
     economics: {
         "course-info-ug": econCoursesUG,
         "course-info-g": econCoursesG,
         edges: econEdges,
         nodes: econNodes,
-        professors: econProfessors,
     },
     "electrical-computer-eng": {
         "course-info-ug": eceCoursesUG,
         "course-info-g": eceCoursesG,
         edges: "",
         nodes: "",
-        professors: engProfessors,
     },
     "eng-core": {
         "course-info-ug": engCoreCoursesUG,
         "course-info-g": engCoreCoursesG,
         edges: "",
         nodes: "",
-        professors: engProfessors,
     },
     "mathematics-statistics": {
         "course-info-ug": mathCoursesUG,
         "course-info-g": mathCoursesG,
         edges: mathEdges,
         nodes: mathNodes,
-        professors: mathProfessors,
     },
     "mechanical-eng": {
         "course-info-ug": mecheCoursesUG,
         "course-info-g": mecheCoursesG,
         edges: "",
         nodes: "",
-        professors: engProfessors,
     },
 };
 
