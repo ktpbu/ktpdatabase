@@ -109,7 +109,7 @@ def main():
             subject_profs = scrape(subject)
             profs.extend(subject_profs)
     except Exception as e:
-        raise Exception("issue scraping professors", e)
+        raise Exception("error scraping professors", e)
     profs = [{**prof, "id": index} for index, prof in enumerate(profs)]
     delete_professors_in_database()
     insert_professors_in_database(profs)

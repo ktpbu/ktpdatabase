@@ -1,7 +1,19 @@
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 import os
-import json
+from pathlib import Path
 from requests_html import HTMLSession
+
+from supabase import create_client
+
+load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")
+
+try:
+    supabase_url = os.environ.get("SUPABASE_URL")
+    supabase_key = os.environ.get("SUPABASE_KEY")
+    supabase = create_client(supabase_url, supabase_key)
+except:
+    print("failed to connect to Supabase")
 
 """ 
 I PURPOSELY DID NOT IMPLEMENT ASYNCHRONOUS PROGRAMMING 
@@ -38,38 +50,27 @@ def get_course_info(subject):
             soup = BeautifulSoup(page.html.raw_html, "html.parser")
             course_feed = soup.find("ul", {"class": "course-feed"})
             courses = course_feed.find_all("li")
-            data = [get_data(course) for course in courses]
+            data = [get_data(course, subject) for course in courses]
             data = [item for item in data if item]
             return data
 
-    course_data = []
+    subject_course_info = []
     page_number = 1
 
     # scrapes all relevant pages
     while page_number <= last_page:
         page_data = fetch_course_page(page_number)
-        course_data.extend(page_data)
+        subject_course_info.extend(page_data)
         page_number += 1
 
-    if not course_data:
+    if not subject_course_info:
         raise Exception(f"failed to scrape {url}")
 
-    # groups course data into undergrad and grad courses
-    undergrad_course_data = {}
-    grad_course_data = {}
-
-    for entry in course_data:
-        course_id = next(iter(entry.values()))["id"]
-        if int(course_id[-3:]) < 500:
-            undergrad_course_data[next(iter(entry.keys()))] = next(iter(entry.values()))
-        else:
-            grad_course_data[next(iter(entry.keys()))] = next(iter(entry.values()))
-
     print(f"finished scraping {subject} course info")
-    return undergrad_course_data, grad_course_data
+    return subject_course_info
 
 
-def get_data(course):
+def get_data(course, subject):
     # gets the text of the course
     info = course.text.replace("\t", "").split("\n")
     info = [i for i in info if i != ""]
@@ -95,42 +96,53 @@ def get_data(course):
             content = content.split("  BU Hub   Learn More ")[0]
 
             # creates json formatted object for course
-            obj = {
-                entry: {
-                    "id": identifier.strip(),
-                    "name": name.strip(),
-                    "prereqs": prereqs.strip(),
-                    "content": content.strip(),
-                    "prof": [],
-                    "reviews": [],
-                }
+            course_info = {
+                "code": identifier.strip(),
+                "subject": subject,
+                "name": name.strip(),
+                "prereqs": prereqs.strip(),
+                "content": content.strip(),
+                "level": "undergrad" if int(identifier.strip()[-3:]) < 500 else "grad",
             }
-            return obj
+
+            return course_info
         except:
             print(f"error scraping {course}")
 
 
-def create_json(undergrad_course_data, grad_course_data, subject):
-    undergrad_location = "./backend/data/courses/course-info/undergrad"
-    grad_location = "./backend/data/courses/course-info/grad"
+def delete_course_info_in_database():
+    try:
+        supabase.table("course-info").delete().gt("id", -1).execute()
+        print("successfully deleted course info in database")
+    except Exception as e:
+        print("failed to delete course info in database", e)
 
-    # ensures relevant directories exist to store json output
-    if not os.path.exists(undergrad_location):
-        os.makedirs(undergrad_location)
-    if not os.path.exists(grad_location):
-        os.makedirs(grad_location)
 
-    # creates json files containing course info for the subject
-    with open(f"{undergrad_location}/{subject}-ug-course-info.json", "w") as f:
-        json.dump(undergrad_course_data, f, indent=4, ensure_ascii=False)
-    with open(f"{grad_location}/{subject}-g-course-info.json", "w") as f:
-        json.dump(grad_course_data, f, indent=4, ensure_ascii=False)
+def insert_course_info_in_database(course_info):
+    try:
+        supabase.table("course-info").insert(course_info).execute()
+        print("successfully inserted course info in database")
+    except Exception as e:
+        print("failed to insert course info in database: ", e)
 
 
 def scrape(subject):
-    undergrad_course_data, grad_course_data = get_course_info(subject)
-    create_json(undergrad_course_data, grad_course_data, subject)
+    subject_course_info = get_course_info(subject)
+    return subject_course_info
+
+
+def main():
+    course_info = []
+    try:
+        for subject in course_urls.keys():
+            subject_course_info = scrape(subject)
+            course_info.extend(subject_course_info)
+    except Exception as e:
+        print("error scraping course info", e)
+    course_info = [{**course, "id": index} for index, course in enumerate(course_info)]
+    delete_course_info_in_database()
+    insert_course_info_in_database(course_info)
+
 
 if __name__ == "__main__":
-    for subject in course_urls.keys():
-        scrape(subject)
+    main()
