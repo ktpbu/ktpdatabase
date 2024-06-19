@@ -33,7 +33,6 @@ The steps to set up your workflow are detailed in the file named `Git Workflow` 
 
 #### Some Guidelines
 1. Use the vs code prettier extension with these settings: `Print Width: 80` `Prose Wrap: always` `Tab Width: 4`.
-2. Each new page (React .jsx file in the `pages` subdirectory) needs to return a `div` element that is the main content of that page to be rendered. It is necessary for formatting that each page needs that div to have `className='page-content'`, and that `.jsx` file needs to import the following stylesheet: `import "./../page-content.css`.
 
 #### How to Run the Project Locally
 1. Make sure that you have `Git`, the `GitHub SSH key`, `Node.js`, and `npm` installed on your local machine.
@@ -64,9 +63,31 @@ axios.get(\`${backend}/academics/courses/dependencies/nodes/${subject}\`)
 #### Connecting to the Supabase Client
 Supabase is an open-source cloud-hosted PostgreSQL database. 
 
-To connect to the Supabase client in a Node.js API call, add the following import statement at the top of the file if it is not already present:
+To connect to the Supabase client API using JavaScript, add the following import statement at the top of the file if it is not already present:
 
 `import supabase from "./supabaseClient.js";`
+
+To connect to the Supabase client API using Python, first add the following import statements at the top of the file if it is not already present:
+
+```
+from dotenv import load_dotenv
+import os
+from pathlib import Path
+```
+
+Next, paste the following code at the top of the file:
+
+```
+load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")
+try:
+    supabase_url = os.environ.get("SUPABASE_URL")
+    supabase_key = os.environ.get("SUPABASE_KEY")
+    supabase = create_client(supabase_url, supabase_key)
+except:
+    print("failed to connect to Supabase")
+```
+
+You must update the `dotenv_path` parameter to match the path from your file to the .env. The example file is at `backend/scrapers/ProfScraper.py`, while the .env file is at `backend/.env". Using that information, you can probably deduce what your `dotenv_path` parameter needs to be.
 
 Follow the relevant [JavaScript documentation](https://supabase.com/docs/reference/javascript/installing) or [Python documentation](https://supabase.com/docs/reference/python/installing) to implement any Supabase API calls.
 
@@ -78,11 +99,11 @@ The course scraper is located at the path `./backend/data/courses/CourseScraper.
 4. Run `CourseScraper.py` and the course information will be stored in the `./backend/data/courses/course-info/` folder.
 
 #### How to Run the Professor Scraper
-The professor scraper is located at the path `./backend/data/courses/ProfScraper.py`.
+The professor scraper is located at the path `./backend/scrapers/ProfScraper.py`.
 1. Navigate to the `backend` folder.
 2. Run `pip install -r ./requirements.txt`.
 3. Update the `prof_urls` variable in `ProfScraper.py` with the relevant prof-url pair if you want to scrape professors from additional subjects.
-4. Run `ProfScraper.py` and the professor lists will be stored in the `./backend/data/courses/professors/` folder.
+4. Run `ProfScraper.py` and the professor lists will be stored in Supabase in the `professors` table.
 
 ### Current Roadmap of Website
 
