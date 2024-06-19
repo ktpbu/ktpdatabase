@@ -1,7 +1,10 @@
 import express from "express";
-import "./config.js";
 import cors from "cors";
 import mongoose from "mongoose";
+
+import "./config.js";
+
+import supabase from "./supabaseClient.js";
 
 import academicRoutes from "./routes/academicRoutes.js";
 import calendarRoutes from "./routes/calendarRoutes.js";
@@ -29,7 +32,7 @@ app.use("/professional", professionalRoutes);
 mongoose
     .connect(process.env.MONGODBURI)
     .then(() => {
-        console.log("App connected to MongoDB");
+        console.log("App is connected to MongoDB");
         app.listen(process.env.PORT, () => {
             console.log(`App is listening to port: ${process.env.PORT}`);
         });
