@@ -35,6 +35,7 @@ const Course = () => {
                     axios.get(
                         `${backend}/academics/courses/${level}/${subject}/${id}`
                     ),
+                    // not sure why the review request only works with post and not get
                     axios.post(`${backend}/academics/courses/reviews/${id}`),
                 ]);
                 setCourseInfo(courseRes.data);
