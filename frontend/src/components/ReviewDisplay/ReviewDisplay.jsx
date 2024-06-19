@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { useSnackbar } from "notistack";
 
 import ReviewFilter from "../ReviewFilter/ReviewFilter";
 
 const ReviewDisplay = ({ reviews }) => {
+    const { enqueueSnackbar } = useSnackbar();
     const formatDate = (input) => {
         const date = new Date(input);
         const month = (date.getMonth() + 1).toString().padStart(2, "0");
@@ -30,7 +32,66 @@ const ReviewDisplay = ({ reviews }) => {
     });
     const [minRating, setMinRating] = useState({ value: 1, label: "1" });
     const [maxRating, setMaxRating] = useState({ value: 5, label: "5" });
-    console.log(minRating, maxRating);
+
+    const setMinUsefulnessHelper = (usefulness) => {
+        if (usefulness.value <= maxUsefulness.value) {
+            setMinUsefulness(usefulness);
+        } else
+            enqueueSnackbar(
+                "Cannot set minimum usefulness greater than maximum usefulness",
+                { variant: "error" }
+            );
+    };
+
+    const setMaxUsefulnessHelper = (usefulness) => {
+        if (usefulness.value >= minUsefulness.value) {
+            setMaxUsefulness(usefulness);
+        } else
+            enqueueSnackbar(
+                "Cannot set maximum usefulness less than minimum usefulness",
+                { variant: "error" }
+            );
+    };
+
+    const setMinDifficultyHelper = (difficulty) => {
+        if (difficulty.value <= maxDifficulty.value) {
+            setMinDifficulty(difficulty);
+        } else
+            enqueueSnackbar(
+                "Cannot set minimum difficulty greater than maximum difficulty",
+                { variant: "error" }
+            );
+    };
+
+    const setMaxDifficultyHelper = (difficulty) => {
+        if (difficulty.value >= minDifficulty.value) {
+            setMaxDifficulty(difficulty);
+        } else
+            enqueueSnackbar(
+                "Cannot set maximum difficulty less than minimum difficulty",
+                { variant: "error" }
+            );
+    };
+
+    const setMinRatingHelper = (rating) => {
+        if (rating.value <= maxRating.value) {
+            setMinRating(rating);
+        } else
+            enqueueSnackbar(
+                "Cannot set minimum rating greater than maximum rating",
+                { variant: "error" }
+            );
+    };
+
+    const setMaxRatingHelper = (rating) => {
+        if (rating.value >= minRating.value) {
+            setMaxRating(rating);
+        } else
+            enqueueSnackbar(
+                "Cannot set maximum rating less than minimum rating",
+                { variant: "error" }
+            );
+    };
 
     useEffect(() => {
         if (minRating.value > maxRating.value) {
@@ -63,17 +124,17 @@ const ReviewDisplay = ({ reviews }) => {
             <h2 className="">Reviews</h2>
             <ReviewFilter
                 minUsefulness={minUsefulness}
-                setMinUsefulness={setMinUsefulness}
+                setMinUsefulnessHelper={setMinUsefulnessHelper}
                 maxUsefulness={maxUsefulness}
-                setMaxUsefulness={setMaxUsefulness}
+                setMaxUsefulnessHelper={setMaxUsefulnessHelper}
                 minDifficulty={minDifficulty}
-                setMinDifficulty={setMinDifficulty}
+                setMinDifficultyHelper={setMinDifficultyHelper}
                 maxDifficulty={maxDifficulty}
-                setMaxDifficulty={setMaxDifficulty}
+                setMaxDifficultyHelper={setMaxDifficultyHelper}
                 minRating={minRating}
-                setMinRating={setMinRating}
+                setMinRatingHelper={setMinRatingHelper}
                 maxRating={maxRating}
-                setMaxRating={setMaxRating}
+                setMaxRatingHelper={setMaxRatingHelper}
             />
             <div className="w-144 max-w-full h-96 overflow-y-scroll mx-auto mt-4 flex flex-col justify-around border-2 border-black">
                 {filteredReviews.map((review, index) => (
