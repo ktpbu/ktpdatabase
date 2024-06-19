@@ -84,8 +84,8 @@ const AddReview = () => {
             .then((res) => {
                 setProfessors(
                     res.data.map((professor) => ({
-                        value: professor,
-                        label: professor,
+                        value: professor.name,
+                        label: professor.name,
                     }))
                 );
             })

@@ -1,7 +1,18 @@
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 import os
-import json
+from pathlib import Path
 from requests_html import HTMLSession
+from supabase import create_client
+
+load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")
+
+try:
+    supabase_url = os.environ.get("SUPABASE_URL")
+    supabase_key = os.environ.get("SUPABASE_KEY")
+    supabase = create_client(supabase_url, supabase_key)
+except:
+    print("failed to connect to Supabase")
 
 # defines the source urls to scrape for each subject
 prof_urls = {
@@ -21,14 +32,14 @@ def get_profs(subject):
 
     # scrapes professors based on the subject
     if subject == "computer-science" or subject == "data-science":
-        profs = [
+        subject_profs = [
             prof.text
             for prof in soup.find_all(
                 "h6", {"class": "profile-name profile-name-advanced"}
             )
         ]
     elif subject == "economics" or subject == "mathematics-statistics":
-        profs = [
+        subject_profs = [
             prof.text
             for prof in soup.find_all(
                 "h6", {"class": "profile-name profile-name-basic"}
@@ -52,37 +63,45 @@ def get_profs(subject):
                 page_profs = [prof.split(",")[0] for prof in page_profs]
                 return page_profs
 
-        profs = []
+        subject_profs = []
         page_number = 1
 
         # scrapes all relevant pages
         while page_number <= last_page:
-            profs.extend(fetch_prof_page(page_number))
+            subject_profs.extend(fetch_prof_page(page_number))
             page_number += 1
 
     # sorts professors alphabetically by last name
-    profs = sorted(profs, key=lambda x: x.split()[-1])
+    subject_profs = sorted(subject_profs, key=lambda x: x.split()[-1])
+
+    # creates professor - subject objects
+    subject_profs = [{"name": prof, "subject": subject} for prof in subject_profs]
+
     print(f"finished scraping {subject} professors")
-    return profs
-
-
-def create_json(profs, subject):
-    location = "./backend/data/courses/professors"
-
-    # ensures relevant directories exist to store json output
-    if not os.path.exists(location):
-        os.makedirs(location)
-
-    # creates json files containing professors for the subject
-    with open(f"{location}/{subject}-professors.json", "w") as f:
-        json.dump(profs, f, indent=4, ensure_ascii=False)
+    return subject_profs
 
 
 def scrape(subject):
-    profs = get_profs(subject)
-    create_json(profs, subject)
+    subject_profs = get_profs(subject)
+    return subject_profs
+    # create_json(profs, subject)
+
+
+def upsert_professors_in_database(profs):
+    try:
+        supabase.table("professors").upsert(profs).execute()
+        print("successfully upserted professors in database")
+    except Exception as e:
+        print("failed to upsert professors in database: ", e)
+
+
+def main():
+    profs = []
+    for subject in prof_urls.keys():
+        subject_profs = scrape(subject)
+        profs.extend(subject_profs)
+    upsert_professors_in_database(profs)
 
 
 if __name__ == "__main__":
-    for subject in prof_urls.keys():
-        scrape(subject)
+    main()
