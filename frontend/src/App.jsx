@@ -16,6 +16,7 @@ import Graduate from "./pages/Academics/Graduate";
 
 // professional/calendar/error
 import Professional from "./pages/Professional/Professional";
+import OtherKTPChapters from "./pages/Professional/OtherKTPChapters"; // Import the new component
 import Calendar from "./pages/Calendar/Calendar";
 import Error from "./pages/Error/Error";
 
@@ -32,34 +33,14 @@ const App = () => {
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Home />} />
                         <Route path="/academics" element={<Academics />} />
-                        <Route
-                            path="/academics/courses"
-                            element={<CourseList />}
-                        />
-                        <Route
-                            path="/academics/courses/:level/:id"
-                            element={<Course />}
-                        />
-                        <Route
-                            path="/academics/courses/:level/:id/add-review"
-                            element={<AddReview />}
-                        />
-                        <Route
-                            path="/academics/courses/dependencies/:subject"
-                            element={<Dependencies />}
-                        />
-                        <Route
-                            path="/academics/resources"
-                            element={<AcademicResources />}
-                        />
-                        <Route
-                            path="/academics/graduate"
-                            element={<Graduate />}
-                        />
-                        <Route
-                            path="/professional"
-                            element={<Professional />}
-                        />
+                        <Route path="/academics/courses" element={<CourseList />} />
+                        <Route path="/academics/courses/:level/:id" element={<Course />} />
+                        <Route path="/academics/courses/:level/:id/add-review" element={<AddReview />} />
+                        <Route path="/academics/courses/dependencies/:subject" element={<Dependencies />} />
+                        <Route path="/academics/resources" element={<AcademicResources />} />
+                        <Route path="/academics/graduate" element={<Graduate />} />
+                        <Route path="/professional" element={<Professional />} />
+                        <Route path="/professional/other-ktp-chapters" element={<OtherKTPChapters />} />
                         <Route path="/calendar" element={<Calendar />} />
                         <Route path="*" element={<Error />} />
                     </Route>

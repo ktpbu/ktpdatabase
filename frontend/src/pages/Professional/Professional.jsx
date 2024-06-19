@@ -1,4 +1,15 @@
-import { Breadcrumb } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Card, Breadcrumb } from "react-bootstrap";
+import ktplogo from "./../../assets/ktplogo.png";
+
+const professionalOptions = [
+    {
+        link: "/professional/other-ktp-chapters",
+        image: ktplogo,
+        header: "KTP Chapters",
+        text: "Links to websites of other KTP chapters",
+    },
+];
 
 const Professional = () => {
     return (
@@ -9,6 +20,32 @@ const Professional = () => {
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item active>Professional</Breadcrumb.Item>
             </Breadcrumb>
+
+            <div className="mx-auto mb-20 flex flex-wrap justify-center">
+                {professionalOptions.map((option) => (
+                    <Link
+                        key={option.header}
+                        to={option.link}
+                        className="m-4 no-underline"
+                    >
+                        <Card className="w-96 flex flex-col text-start text-lg duration-200 hover:bg-purple-200 hover:scale-105">
+                            <Card.Header>
+                                <img
+                                    className="w-auto h-8 mr-2.5"
+                                    src={option.image}
+                                    alt={option.header}
+                                />
+                                <b>{option.header}</b>
+                            </Card.Header>
+                            <Card.Body className="h-32">
+                                <Card.Text className="text-sm text-gray-500">
+                                    {option.text}
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Link>
+                ))}
+            </div>
         </div>
     );
 };
