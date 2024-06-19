@@ -1,5 +1,5 @@
+import { Breadcrumb, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Card, Breadcrumb } from "react-bootstrap";
 import ktplogo from "./../../assets/ktplogo.png";
 
 const professionalOptions = [
