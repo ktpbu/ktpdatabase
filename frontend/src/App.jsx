@@ -16,6 +16,7 @@ import Graduate from "./pages/Academics/Graduate";
 
 // professional/calendar/error
 import Professional from "./pages/Professional/Professional";
+import OtherKTPChapters from "./pages/Professional/OtherKTPChapters";
 import Calendar from "./pages/Calendar/Calendar";
 import Error from "./pages/Error/Error";
 
@@ -31,7 +32,9 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Home />} />
-                        <Route path="/academics" element={<Academics />} />
+                        <Route 
+                            path="/academics"
+                            element={<Academics />} />
                         <Route
                             path="/academics/courses"
                             element={<CourseList />}
@@ -60,13 +63,19 @@ const App = () => {
                             path="/professional"
                             element={<Professional />}
                         />
-                        <Route path="/calendar" element={<Calendar />} />
-                        <Route path="*" element={<Error />} />
+                        <Route 
+                            path="/professional/other-ktp-chapters"
+                            element={<OtherKTPChapters />} />
+                        <Route 
+                        path="/calendar" 
+                        element={<Calendar />} />
+                        <Route 
+                            path="*" 
+                            element={<Error />} />
                     </Route>
                 </Routes>
             </SnackbarProvider>
         </div>
     );
 };
-
 export default App;
