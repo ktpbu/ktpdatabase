@@ -43,7 +43,7 @@ const Academics = () => {
                         to={option.link}
                         className="m-4 no-underline"
                     >
-                        <Card className="w-96 flex flex-col text-start text-lg duration-200 hover:bg-purple-200 hover:scale-105">
+                        <Card className="w-96 flex flex-col text-start text-lg duration-200 hover:bg-purple-100 hover:scale-105">
                             <Card.Header>
                                 <img
                                     className="w-auto h-8 mr-2.5"

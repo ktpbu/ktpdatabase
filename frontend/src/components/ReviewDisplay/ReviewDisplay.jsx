@@ -1,7 +1,5 @@
 import PropTypes from "prop-types";
 
-import "./ReviewDisplay.css";
-
 const ReviewDisplay = ({ reviews }) => {
     const formatDate = (input) => {
         const date = new Date(input);
@@ -11,36 +9,73 @@ const ReviewDisplay = ({ reviews }) => {
         return `${month}/${day}/${year}`;
     };
     return (
-        <>
-            {reviews && reviews.length > 0 ? (
-                <div className="review-display">
-                    <h2 className="review-display-title">Reviews</h2>
-                    <div className="review-display-container">
-                        {reviews.map((review) => (
-                            <div
-                                key={review._id}
-                                className="review-display-item-container"
-                            >
-                                <h6>{formatDate(review.date)}</h6>
-                                <p className="review-display-professor">
-                                    {review.professor}
-                                </p>
-                                <div className="review-display-metrics">
-                                    <p>Usefulness: {review.usefulness}</p>
-                                    <p>Difficulty: {review.difficulty}</p>
-                                    <p>Rating: {review.rating}</p>
-                                </div>
-                                {review.review ? (
-                                    <p className="review-display-review">
-                                        {review.review}
-                                    </p>
-                                ) : null}
+        <div>
+            <h2 className="">Reviews</h2>
+            <div className="w-144 max-w-full h-96 overflow-y-scroll mx-auto flex flex-col justify-around border-2 border-black">
+                {reviews.map((review, index) => (
+                    <div
+                        key={review._id}
+                        className={`w-112 h-fit mx-auto mt-4 ${
+                            index === reviews.length - 1 && "mb-4"
+                        } flex flex-col flex-around border-1 border-gray-200 rounded-md bg-purple-100`}
+                    >
+                        <div className="w-96 mt-4 mx-auto flex justify-between">
+                            <p className="my-auto text-xl font-semibold text-left">
+                                Author
+                            </p>
+                            <p className="my-auto text-xl text-right">
+                                {review.anon ? "Anonymous" : review.user}
+                            </p>
+                        </div>
+                        <div className="w-96 mt-4 mx-auto flex justify-between">
+                            <p className="my-auto text-xl font-semibold text-left">
+                                Date
+                            </p>
+                            <p className="my-auto text-xl text-right">
+                                {formatDate(review.date)}
+                            </p>
+                        </div>
+                        <div className="w-96 mt-4 mx-auto flex justify-between">
+                            <p className="my-auto text-xl font-semibold text-left">
+                                Professor
+                            </p>
+                            <p className="my-auto text-xl text-right">
+                                {review.professor}
+                            </p>
+                        </div>
+
+                        <div
+                            className={`w-96 mx-auto ${
+                                review.review ? "mt-4" : "my-4"
+                            } flex flex-wrap justify-between text-xl`}
+                        >
+                            <p className="my-auto">
+                                <span className="font-semibold">
+                                    Usefulness:
+                                </span>{" "}
+                                {review.usefulness}
+                            </p>
+                            <p className="my-auto">
+                                <span className="font-semibold">
+                                    Difficulty:
+                                </span>{" "}
+                                {review.difficulty}
+                            </p>
+                            <p className="my-auto">
+                                <span className="font-semibold">Rating:</span>{" "}
+                                {review.rating}
+                            </p>
+                        </div>
+
+                        {review.review && (
+                            <div className="my-4 mx-4 text-xl">
+                                <p className="my-auto">{review.review}</p>
                             </div>
-                        ))}
+                        )}
                     </div>
-                </div>
-            ) : null}
-        </>
+                ))}
+            </div>
+        </div>
     );
 };
 
