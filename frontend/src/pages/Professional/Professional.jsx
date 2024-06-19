@@ -1,11 +1,11 @@
 import { Breadcrumb, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import ktplogo from "./../../assets/ktplogo.png";
+import ktplogolandscape from "./../../assets/ktplogolandscape.png";
 
 const professionalOptions = [
     {
         link: "/professional/other-ktp-chapters",
-        image: ktplogo,
+        image: ktplogolandscape,
         header: "KTP Chapters",
         text: "Links to websites of other KTP chapters",
     },
