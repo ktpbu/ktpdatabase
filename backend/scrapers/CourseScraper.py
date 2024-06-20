@@ -110,6 +110,11 @@ def get_data(course, subject):
             print(f"error scraping {course}")
 
 
+def scrape(subject):
+    subject_course_info = get_course_info(subject)
+    return subject_course_info
+
+
 def delete_course_info_in_database():
     try:
         supabase.table("course-info").delete().gt("id", -1).execute()
@@ -124,11 +129,6 @@ def insert_course_info_in_database(course_info):
         print("successfully inserted course info in database")
     except Exception as e:
         print("failed to insert course info in database: ", e)
-
-
-def scrape(subject):
-    subject_course_info = get_course_info(subject)
-    return subject_course_info
 
 
 def main():
