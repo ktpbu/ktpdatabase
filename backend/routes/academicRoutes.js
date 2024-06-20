@@ -175,15 +175,13 @@ router.post("/courses/professors", async (req, res) => {
 // gets individual course info
 router.get("/courses/:level/:subject/:id", async (req, res) => {
     console.log(req);
-    if (req.params.level === "undergrad") {
-        return res.json(
-            subjectMap[req.params.subject]["course-info-ug"][req.params.id]
-        );
-    } else if (req.params.level === "grad") {
-        return res.json(
-            subjectMap[req.params.subject]["course-info-g"][req.params.id]
-        );
-    }
+    const { data, error } = await supabase
+        .from("course-info")
+        .select("*")
+        .eq("code", req.params.id.slice(3))
+        .eq("subject", req.params.subject)
+        .eq("level", req.params.level);
+    return res.json(data);
 });
 
 // gets individual course reviews

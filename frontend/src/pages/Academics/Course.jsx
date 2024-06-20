@@ -37,7 +37,7 @@ const Course = () => {
                     // not sure why the review request only works with post and not get
                     axios.post(`${backend}/academics/courses/reviews/${id}`),
                 ]);
-                setCourseInfo(courseRes.data);
+                setCourseInfo(courseRes.data[0]);
                 setCourseReviews(reviewsRes.data);
             } catch (error) {
                 console.error("Error fetching course data:", error);
@@ -69,7 +69,7 @@ const Course = () => {
             </Breadcrumb>
 
             <h2 className="text-start p-3 my-auto">
-                {id}: {courseInfo.name}
+                {courseInfo.code}: {courseInfo.name}
             </h2>
 
             <h5 className="text-start p-3">
