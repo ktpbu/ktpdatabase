@@ -1,5 +1,6 @@
-import express from "express"
-const router = express.Router()
+import express from "express";
+
+const router = express.Router();
 
 router.get("/", (res, req) => {
     console.log(req);
@@ -11,4 +12,4 @@ router.get("/resources", (res, req) => {
     res.status(234).send("Professional resources backend here");
 });
 
-export default router
+export default router;
