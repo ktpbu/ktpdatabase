@@ -5,7 +5,7 @@ import { SnackbarProvider } from "notistack";
 import Layout from "./Layout";
 import Home from "./pages/Home/Home";
 
-// academic imports
+// academic
 import AcademicResources from "./pages/Academics/AcademicResources";
 import Academics from "./pages/Academics/Academics";
 import AddReview from "./pages/Academics/AddReview";
@@ -14,10 +14,17 @@ import CourseList from "./pages/Academics/CourseList";
 import Dependencies from "./pages/Academics/Dependencies";
 import Graduate from "./pages/Academics/Graduate";
 
-// professional/calendar/error
+// professional
 import Professional from "./pages/Professional/Professional";
 import OtherKTPChapters from "./pages/Professional/OtherKTPChapters";
+
+// calendar
 import Calendar from "./pages/Calendar/Calendar";
+
+// login
+import Login from "./pages/Login/Login";
+
+// error
 import Error from "./pages/Error/Error";
 
 // main app
@@ -32,9 +39,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Home />} />
-                        <Route 
-                            path="/academics"
-                            element={<Academics />} />
+                        <Route path="/academics" element={<Academics />} />
                         <Route
                             path="/academics/courses"
                             element={<CourseList />}
@@ -63,15 +68,13 @@ const App = () => {
                             path="/professional"
                             element={<Professional />}
                         />
-                        <Route 
+                        <Route
                             path="/professional/other-ktp-chapters"
-                            element={<OtherKTPChapters />} />
-                        <Route 
-                        path="/calendar" 
-                        element={<Calendar />} />
-                        <Route 
-                            path="*" 
-                            element={<Error />} />
+                            element={<OtherKTPChapters />}
+                        />
+                        <Route path="/calendar" element={<Calendar />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="*" element={<Error />} />
                     </Route>
                 </Routes>
             </SnackbarProvider>

@@ -7,6 +7,7 @@ import "./config.js";
 import supabase from "./supabaseClient.js";
 
 import academicRoutes from "./routes/academicRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
 import calendarRoutes from "./routes/calendarRoutes.js";
 import professionalRoutes from "./routes/professionalRoutes.js";
 
@@ -26,6 +27,7 @@ app.get("/home", (req, res) => {
 });
 
 app.use("/academics", academicRoutes);
+app.use("/auth", authRoutes);
 app.use("/calendar", calendarRoutes);
 app.use("/professional", professionalRoutes);
 
