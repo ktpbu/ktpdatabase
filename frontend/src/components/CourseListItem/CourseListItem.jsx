@@ -7,81 +7,40 @@ import DependencyMap from "../../components/DependencyMap/DependencyMap";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
-const CourseIcon = ({ id, name, level, college }) => {
+const CourseIcon = ({ code, level, college }) => {
     return (
         <Link
             className="w-20 mb-2.5 mx-2.5 py-1.5 text-black no-underline border-solid border-2 rounded-2xl hover:border-black duration-100 hover:scale-110 "
-            title={name}
-            to={`/academics/courses/${level}/${college}${id}`}
+            title={code}
+            to={`/academics/courses/${level}/${college}${code}`}
         >
-            {id}
+            {code}
         </Link>
     );
 };
 
-const subjectMap = {
-    "biomedical-eng": {
-        "course-list":
-            "https://www.bu.edu/academics/eng/courses/biomedical-engineering/",
-    },
-    "computer-science": {
-        "course-list":
-            "https://www.bu.edu/academics/cas/courses/computer-science/",
-    },
-    "data-science": {
-        "course-list": "https://www.bu.edu/academics/cds/courses/",
-    },
-    economics: {
-        "course-list": "https://www.bu.edu/academics/cas/courses/economics/",
-    },
-    "electrical-computer-eng": {
-        "course-list":
-            "https://www.bu.edu/academics/eng/courses/electrical-computer-engineering/",
-    },
-    "eng-core": {
-        "course-list":
-            "https://www.bu.edu/academics/eng/courses/engineering-core/",
-    },
-    "mathematics-statistics": {
-        "course-list":
-            "https://www.bu.edu/academics/cas/courses/mathematics-statistics/",
-    },
-    "mechanical-eng": {
-        "course-list":
-            "https://www.bu.edu/academics/eng/courses/mechanical-engineering/",
-    },
-};
-
 const CourseListItem = ({ info }) => {
-    const [loading, setLoading] = useState(false);
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
-        setLoading(true);
         axios
             .get(`${backend}/academics/courses/${info.level}/${info.subject}`)
-
             .then((res) => {
                 setCourses(res.data);
-                setLoading(false);
-                // console.log(courses);
             })
             .catch((error) => {
                 console.log(error);
-                setLoading(false);
             });
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [info.level, info.subject]);
 
     return (
         <div>
             <h4 className="p-3 text-start">{info.name}</h4>
             <div className="p-3 flex flex-row flex-wrap justify-content-evenly">
-                {Object.keys(courses).map((courseKey, index) => (
+                {courses.map((course, index) => (
                     <CourseIcon
                         key={index}
-                        id={courses[courseKey].id}
-                        name={courses[courseKey].name}
+                        code={course.code}
                         level={info.level}
                         college={info.college}
                     />
@@ -90,11 +49,7 @@ const CourseListItem = ({ info }) => {
             <div className="flex flex-row-reverse justify-content-between p-3">
                 <p className="text-start p-3">
                     {" "}
-                    <a
-                        href={subjectMap[info.subject]["course-list"]}
-                        target="_blank"
-                        rel="noreferrer"
-                    >
+                    <a href={info.website} target="_blank" rel="noreferrer">
                         Complete List
                     </a>{" "}
                 </p>
@@ -106,8 +61,7 @@ const CourseListItem = ({ info }) => {
 };
 
 CourseIcon.propTypes = {
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    code: PropTypes.string.isRequired,
     level: PropTypes.string.isRequired,
     college: PropTypes.string.isRequired,
 };

@@ -155,11 +155,12 @@ router.get("/resources", async (req, res) => {
 // gets subject course list
 router.get("/courses/:level/:subject", async (req, res) => {
     console.log(req);
-    if (req.params.level === "undergrad") {
-        return res.json(subjectMap[req.params.subject]["course-info-ug"]);
-    } else if (req.params.level === "grad") {
-        return res.json(subjectMap[req.params.subject]["course-info-g"]);
-    }
+    const { data, error } = await supabase
+        .from("course-info")
+        .select("*")
+        .eq("level", req.params.level)
+        .eq("subject", req.params.subject);
+    return res.json(data);
 });
 
 // gets subject professor list
