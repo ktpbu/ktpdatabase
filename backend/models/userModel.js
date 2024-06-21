@@ -22,6 +22,6 @@ const userSchema = mongoose.Schema(
     { versionKey: false }
 );
 
-reviewSchema.index({ id: 1 });
+userSchema.index({ id: 1 });
 
 export const User = mongoose.model("user entry", userSchema, "user-collection");
