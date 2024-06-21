@@ -9,58 +9,6 @@ const loadJSON = (filePath) => {
     return JSON.parse(data);
 };
 
-// undergraduate course information imports
-const bmeCoursesUG = loadJSON(
-    "data/academics/courses/course-info/undergrad/biomedical-eng-ug-course-info.json"
-);
-const csCoursesUG = loadJSON(
-    "data/academics/courses/course-info/undergrad/computer-science-ug-course-info.json"
-);
-const dsCoursesUG = loadJSON(
-    "data/academics/courses/course-info/undergrad/data-science-ug-course-info.json"
-);
-const econCoursesUG = loadJSON(
-    "data/academics/courses/course-info/undergrad/economics-ug-course-info.json"
-);
-const eceCoursesUG = loadJSON(
-    "data/academics/courses/course-info/undergrad/electrical-computer-eng-ug-course-info.json"
-);
-const engCoreCoursesUG = loadJSON(
-    "data/academics/courses/course-info/undergrad/eng-core-ug-course-info.json"
-);
-const mathCoursesUG = loadJSON(
-    "data/academics/courses/course-info/undergrad/mathematics-statistics-ug-course-info.json"
-);
-const mecheCoursesUG = loadJSON(
-    "data/academics/courses/course-info/undergrad/mechanical-eng-ug-course-info.json"
-);
-
-// graduate course information imports
-const bmeCoursesG = loadJSON(
-    "data/academics/courses/course-info/grad/biomedical-eng-g-course-info.json"
-);
-const csCoursesG = loadJSON(
-    "data/academics/courses/course-info/grad/computer-science-g-course-info.json"
-);
-const dsCoursesG = loadJSON(
-    "data/academics/courses/course-info/grad/data-science-g-course-info.json"
-);
-const econCoursesG = loadJSON(
-    "data/academics/courses/course-info/grad/economics-g-course-info.json"
-);
-const eceCoursesG = loadJSON(
-    "data/academics/courses/course-info/grad/electrical-computer-eng-g-course-info.json"
-);
-const engCoreCoursesG = loadJSON(
-    "data/academics/courses/course-info/grad/eng-core-g-course-info.json"
-);
-const mathCoursesG = loadJSON(
-    "data/academics/courses/course-info/grad/mathematics-statistics-g-course-info.json"
-);
-const mecheCoursesG = loadJSON(
-    "data/academics/courses/course-info/grad/mechanical-eng-g-course-info.json"
-);
-
 // course dependency imports
 const csEdges = loadJSON(
     "data/academics/courses/dependencies/edges/computer-science-edges.json"
@@ -96,50 +44,34 @@ import { Review } from "../models/reviewModel.js";
 
 const subjectMap = {
     "biomedical-eng": {
-        "course-info-ug": bmeCoursesUG,
-        "course-info-g": bmeCoursesG,
         edges: "",
         nodes: "",
     },
     "computer-science": {
-        "course-info-ug": csCoursesUG,
-        "course-info-g": csCoursesG,
         edges: csEdges,
         nodes: csNodes,
     },
     "data-science": {
-        "course-info-ug": dsCoursesUG,
-        "course-info-g": dsCoursesG,
         edges: dsEdges,
         nodes: dsNodes,
     },
     economics: {
-        "course-info-ug": econCoursesUG,
-        "course-info-g": econCoursesG,
         edges: econEdges,
         nodes: econNodes,
     },
     "electrical-computer-eng": {
-        "course-info-ug": eceCoursesUG,
-        "course-info-g": eceCoursesG,
         edges: "",
         nodes: "",
     },
     "eng-core": {
-        "course-info-ug": engCoreCoursesUG,
-        "course-info-g": engCoreCoursesG,
         edges: "",
         nodes: "",
     },
     "mathematics-statistics": {
-        "course-info-ug": mathCoursesUG,
-        "course-info-g": mathCoursesG,
         edges: mathEdges,
         nodes: mathNodes,
     },
     "mechanical-eng": {
-        "course-info-ug": mecheCoursesUG,
-        "course-info-g": mecheCoursesG,
         edges: "",
         nodes: "",
     },
@@ -155,11 +87,12 @@ router.get("/resources", async (req, res) => {
 // gets subject course list
 router.get("/courses/:level/:subject", async (req, res) => {
     console.log(req);
-    if (req.params.level === "undergrad") {
-        return res.json(subjectMap[req.params.subject]["course-info-ug"]);
-    } else if (req.params.level === "grad") {
-        return res.json(subjectMap[req.params.subject]["course-info-g"]);
-    }
+    const { data, error } = await supabase
+        .from("course-info")
+        .select("*")
+        .eq("level", req.params.level)
+        .eq("subject", req.params.subject);
+    return res.json(data);
 });
 
 // gets subject professor list
