@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Card, Breadcrumb } from "react-bootstrap";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 import undergrad from "./../../assets/undergrad.png";
 import grad from "./../../assets/grad.png";
 import resources from "./../../assets/resources.png";
+
+const backend = import.meta.env.VITE_BACKEND_URL;
 
 const academicOptions = [
     {
@@ -27,6 +32,22 @@ const academicOptions = [
 ];
 
 const Academics = () => {
+    const navigate = useNavigate();
+
+    const getUser = async () => {
+        try {
+            await axios.get(`${backend}/auth/google/login/success`, {
+                withCredentials: true,
+            });
+        } catch (error) {
+            navigate("/login-error");
+        }
+    };
+
+    useEffect(() => {
+        getUser();
+    });
+
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Academics</h2>

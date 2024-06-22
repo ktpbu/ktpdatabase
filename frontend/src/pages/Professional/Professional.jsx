@@ -1,6 +1,10 @@
 import { Breadcrumb, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ktplogolandscape from "./../../assets/ktplogolandscape.png";
+import { useEffect } from "react";
+import axios from "axios";
+
+const backend = import.meta.env.VITE_BACKEND_URL;
 
 const professionalOptions = [
     {
@@ -12,6 +16,21 @@ const professionalOptions = [
 ];
 
 const Professional = () => {
+    const navigate = useNavigate();
+
+    const getUser = async () => {
+        try {
+            await axios.get(`${backend}/auth/login/success`, {
+                withCredentials: true,
+            });
+        } catch (error) {
+            navigate("/login-error");
+        }
+    };
+
+    useEffect(() => {
+        getUser();
+    });
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Professional</h2>
