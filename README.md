@@ -87,7 +87,7 @@ except:
     print("failed to connect to Supabase")
 ```
 
-You must update the `dotenv_path` parameter to match the path from your file to the .env. The example file is at `backend/scrapers/ProfScraper.py`, while the .env file is at `backend/.env". Using that information, you can probably deduce what your `dotenv_path` parameter needs to be.
+You must update the `dotenv_path` parameter to match the path from your file to the .env. The example file is at `backend/scrapers/ProfScraper.py`, while the .env file is at `backend/.env`. Using that information, you can probably deduce what your `dotenv_path` parameter needs to be.
 
 Follow the relevant [JavaScript documentation](https://supabase.com/docs/reference/javascript/installing) or [Python documentation](https://supabase.com/docs/reference/python/installing) to implement any Supabase API calls.
 
@@ -115,18 +115,18 @@ useEffect(() => {
 
 
 ### How to Run the Course Scraper
-The course scraper is located at the path `./backend/data/courses/CourseScraper.py`.
+The course scraper is located at the path `./backend/scrapers/CourseScraper.py`.
 1. Navigate to the `backend` folder.
 2. Run `pip install -r ./requirements.txt`.
 3. Update the `course_urls` variable in `CourseScraper.py` with the relevant subject-url pair if you want to scrape additional subjects.
-4. Run `CourseScraper.py` and the course information will be stored in the `./backend/data/courses/course-info/` folder.
+4. Run `CourseScraper.py` and the course information will be stored in Supabase in the `course-info` table.
 
 ### How to Run the Professor Scraper
 The professor scraper is located at the path `./backend/scrapers/ProfScraper.py`.
 1. Navigate to the `backend` folder.
 2. Run `pip install -r ./requirements.txt`.
 3. Update the `prof_urls` variable in `ProfScraper.py` with the relevant prof-url pair if you want to scrape professors from additional subjects.
-4. Run `ProfScraper.py` and the professor lists will be stored in Supabase in the `professors` table.
+4. Run `ProfScraper.py` and the list of professors will be stored in Supabase in the `professors` table.
 
 ## Current Roadmap of Website
 
@@ -136,10 +136,11 @@ The professor scraper is located at the path `./backend/scrapers/ProfScraper.py`
     |_ Academics
         |_ Courses
             |_ ...all undergraduate courses by course code
-                |_ ...add course review pages
+                |_ Add Course Review
         |_ Resources
         |_ Graduate
             |_ ...all graduate courses by course code
+                |_ Add Course Review
     |_ Professional
         |_ Other KTP Chapters
     |_ Calendar
