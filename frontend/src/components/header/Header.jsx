@@ -14,6 +14,7 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Header = () => {
     const [userData, setUserData] = useState({});
+    console.log(userData);
 
     const getUser = async () => {
         try {
@@ -35,6 +36,18 @@ const Header = () => {
 
     console.log(userData);
 
+    const handleAdmin = () => {
+        console.log("admin");
+    };
+
+    const handleProfile = () => {
+        console.log("profile");
+    };
+
+    const handleReviews = () => {
+        console.log("reviews");
+    };
+
     const handleLogout = () => {
         window.open(`${backend}/auth/google/logout`, "_self");
     };
@@ -54,6 +67,7 @@ const Header = () => {
         left: "50%",
         transform: "translate(-50%, -50%)",
         width: 400,
+        height: userData.is_admin ? 350 : 300,
         bgcolor: "background.paper",
         border: "2px solid #000",
         boxShadow: 24,
@@ -119,13 +133,45 @@ const Header = () => {
                             >
                                 <Fade in={modalOpen}>
                                     <Box sx={style}>
-                                        <h2>{`${userData?.first} ${userData?.last}`}</h2>
-                                        <button
-                                            type="button"
-                                            onClick={handleLogout}
+                                        <h2 className="text-center">{`${userData?.first} ${userData?.last}`}</h2>
+                                        <div
+                                            className={`${
+                                                userData.is_admin
+                                                    ? "h-56"
+                                                    : "h-40"
+                                            } mt-4 flex flex-col justify-between`}
                                         >
-                                            Log Out
-                                        </button>
+                                            {userData.is_admin && (
+                                                <button
+                                                    className="w-24 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                    type="button"
+                                                    onClick={handleAdmin}
+                                                >
+                                                    Admin
+                                                </button>
+                                            )}
+                                            <button
+                                                className="w-24 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                type="button"
+                                                onClick={handleProfile}
+                                            >
+                                                Profile
+                                            </button>
+                                            <button
+                                                className="w-24 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                type="button"
+                                                onClick={handleReviews}
+                                            >
+                                                Reviews
+                                            </button>
+                                            <button
+                                                className="w-24 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                type="button"
+                                                onClick={handleLogout}
+                                            >
+                                                Log Out
+                                            </button>
+                                        </div>
                                     </Box>
                                 </Fade>
                             </Modal>
