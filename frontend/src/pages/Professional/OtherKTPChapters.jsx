@@ -10,7 +10,7 @@ const OtherKTPChapters = () => {
 
     const getUser = async () => {
         try {
-            await axios.get(`${backend}/auth/login/success`, {
+            await axios.get(`${backend}/auth/google/login/success`, {
                 withCredentials: true,
             });
         } catch (error) {
