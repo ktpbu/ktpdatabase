@@ -97,22 +97,20 @@ All pages on the website excluding the home and error pages should only be acces
 ```
 const navigate = useNavigate();
 
-const getUser = async () => {
-    try {
-        await axios.get(`${backend}/auth/google/login/success`, {
-        withCredentials: true,
-        });
-    } catch (error) {
-        navigate("/login-error");
-    }
-};
+const getUser = useCallback(async () => {
+  try {
+    await axios.get(`${backend}/auth/google/login/success`, {
+      withCredentials: true,
+    });
+  } catch (error) {
+    navigate("/error/login");
+  }
+}, [navigate]);
 
 useEffect(() => {
-    getUser();
-});
+  getUser();
+}, [getUser]);
 ```
-
-
 
 ### How to Run the Course Scraper
 The course scraper is located at the path `./backend/scrapers/CourseScraper.py`.
