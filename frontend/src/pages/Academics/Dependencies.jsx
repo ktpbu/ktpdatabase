@@ -17,7 +17,7 @@ const Dependencies = () => {
                 withCredentials: true,
             });
         } catch (error) {
-            navigate("/login-error");
+            navigate("/error/login");
         }
     };
 

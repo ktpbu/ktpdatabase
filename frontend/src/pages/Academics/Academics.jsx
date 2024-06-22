@@ -40,7 +40,7 @@ const Academics = () => {
                 withCredentials: true,
             });
         } catch (error) {
-            navigate("/login-error");
+            navigate("/error/login");
         }
     };
 

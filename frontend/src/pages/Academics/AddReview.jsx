@@ -25,7 +25,7 @@ const AddReview = () => {
             );
             setUserData(response.data.user);
         } catch (error) {
-            navigate("/login-error");
+            navigate("/error/login");
         }
     };
 
