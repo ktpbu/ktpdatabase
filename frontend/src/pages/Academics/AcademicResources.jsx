@@ -3,10 +3,27 @@ import { Breadcrumb } from "react-bootstrap";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const AcademicResources = () => {
+    const navigate = useNavigate();
+
+    const getUser = async () => {
+        try {
+            await axios.get(`${backend}/auth/google/login/success`, {
+                withCredentials: true,
+            });
+        } catch (error) {
+            navigate("/login-error");
+        }
+    };
+
+    useEffect(() => {
+        getUser();
+    });
+
     const [usefulLinks, setUsefulLinks] = useState([]);
     const [jointMajors, setJointMajors] = useState([]);
 

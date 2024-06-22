@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Breadcrumb } from "react-bootstrap";
 import ReactFlow, { ReactFlowProvider } from "reactflow";
 import { useEffect, useState } from "react";
@@ -9,6 +9,22 @@ import "reactflow/dist/style.css";
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Dependencies = () => {
+    const navigate = useNavigate();
+
+    const getUser = async () => {
+        try {
+            await axios.get(`${backend}/auth/google/login/success`, {
+                withCredentials: true,
+            });
+        } catch (error) {
+            navigate("/login-error");
+        }
+    };
+
+    useEffect(() => {
+        getUser();
+    });
+
     const { subject } = useParams();
     const [loading, setLoading] = useState(false);
     const [nodes, setNodes] = useState(null);

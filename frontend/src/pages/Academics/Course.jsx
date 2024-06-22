@@ -8,6 +8,22 @@ import ReviewDisplay from "../../components/ReviewDisplay/ReviewDisplay";
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Course = () => {
+    const navigate = useNavigate();
+
+    const getUser = async () => {
+        try {
+            await axios.get(`${backend}/auth/google/login/success`, {
+                withCredentials: true,
+            });
+        } catch (error) {
+            navigate("/login-error");
+        }
+    };
+
+    useEffect(() => {
+        getUser();
+    });
+
     const { level, id } = useParams();
     const [courseInfo, setCourseInfo] = useState("");
     const [courseReviews, setCourseReviews] = useState([]);
@@ -46,7 +62,6 @@ const Course = () => {
         fetchCourseData();
     }, [id, level, subjectMap]);
 
-    const navigate = useNavigate();
     const handleAddReviewButton = () => {
         navigate(`/academics/courses/${level}/${id}/add-review`);
     };

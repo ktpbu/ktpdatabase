@@ -1,6 +1,11 @@
 import { Breadcrumb } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import axios from "axios";
 
 import CourseListItem from "../../components/CourseListItem/CourseListItem";
+
+const backend = import.meta.env.VITE_BACKEND_URL;
 
 const gradSubjectInfo = {
     "biomedical-eng-g": {
@@ -74,6 +79,21 @@ const gradSubjectInfo = {
 };
 
 const Graduate = () => {
+    const navigate = useNavigate();
+
+    const getUser = async () => {
+        try {
+            await axios.get(`${backend}/auth/google/login/success`, {
+                withCredentials: true,
+            });
+        } catch (error) {
+            navigate("/login-error");
+        }
+    };
+
+    useEffect(() => {
+        getUser();
+    });
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Graduate</h2>

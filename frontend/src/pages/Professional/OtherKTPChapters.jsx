@@ -1,23 +1,108 @@
+import { useEffect } from "react";
 import { Breadcrumb } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
+const backend = import.meta.env.VITE_BACKEND_URL;
 
 const OtherKTPChapters = () => {
+    const navigate = useNavigate();
+
+    const getUser = async () => {
+        try {
+            await axios.get(`${backend}/auth/login/success`, {
+                withCredentials: true,
+            });
+        } catch (error) {
+            navigate("/login-error");
+        }
+    };
+
+    useEffect(() => {
+        getUser();
+    });
+
     const ktpChapters = [
-        { name: "Alpha", institution: "University of Michigan", url: "https://ktpmichigan.com/" },
-        { name: "Beta", institution: "University of Pittsburgh", url: "https://www.instagram.com/ktp_pitt/" },
-        { name: "Gamma", institution: "Rose–Hulman Institute of Technology", url: "https://www.facebook.com/profile.php?id=100079908335826" },
-        { name: "Delta", institution: "Syracuse University", url: "https://www.ktpcuse.com/" },
-        { name: "Epsilon", institution: "University of Maryland", url: "https://ktpumd.com/" },
-        { name: "Zeta", institution: "The College of New Jersey", url: "https://tcnjktp.com/" },
-        { name: "Eta", institution: "University of North Carolina at Chapel Hill", url: "https://ktp.cs.unc.edu/" },
-        { name: "Theta", institution: "University of Chicago", url: "https://uchicagoktp.com/" },
-        { name: "Iota", institution: "University of Texas at Austin", url: "https://www.instagram.com/texasktp/" },
-        { name: "Kappa", institution: "Northwestern University", url: "https://www.ktpnu.com/" },
-        { name: "Lambda", institution: "Boston University", url: "https://ktpbostonu.com/" },
-        { name: "Mu", institution: "University of Texas at Dallas", url: "https://www.instagram.com/utdktp/" },
-        { name: "Nu", institution: "University of Colorado Boulder", url: "https://www.ktpboulder.com/" },
-        { name: "Rho", institution: "Vanderbilt University", url: "https://www.linkedin.com/company/kappa-theta-pi-rho/" },
-        { name: "Sigma", institution: "University of Miami", url: "https://www.ktpmiami.com/" },
-        { name: "Tau", institution: "University of Southern California", url: "https://www.instagram.com/ktp.usc/" },
+        {
+            name: "Alpha",
+            institution: "University of Michigan",
+            url: "https://ktpmichigan.com/",
+        },
+        {
+            name: "Beta",
+            institution: "University of Pittsburgh",
+            url: "https://www.instagram.com/ktp_pitt/",
+        },
+        {
+            name: "Gamma",
+            institution: "Rose–Hulman Institute of Technology",
+            url: "https://www.facebook.com/profile.php?id=100079908335826",
+        },
+        {
+            name: "Delta",
+            institution: "Syracuse University",
+            url: "https://www.ktpcuse.com/",
+        },
+        {
+            name: "Epsilon",
+            institution: "University of Maryland",
+            url: "https://ktpumd.com/",
+        },
+        {
+            name: "Zeta",
+            institution: "The College of New Jersey",
+            url: "https://tcnjktp.com/",
+        },
+        {
+            name: "Eta",
+            institution: "University of North Carolina at Chapel Hill",
+            url: "https://ktp.cs.unc.edu/",
+        },
+        {
+            name: "Theta",
+            institution: "University of Chicago",
+            url: "https://uchicagoktp.com/",
+        },
+        {
+            name: "Iota",
+            institution: "University of Texas at Austin",
+            url: "https://www.instagram.com/texasktp/",
+        },
+        {
+            name: "Kappa",
+            institution: "Northwestern University",
+            url: "https://www.ktpnu.com/",
+        },
+        {
+            name: "Lambda",
+            institution: "Boston University",
+            url: "https://ktpbostonu.com/",
+        },
+        {
+            name: "Mu",
+            institution: "University of Texas at Dallas",
+            url: "https://www.instagram.com/utdktp/",
+        },
+        {
+            name: "Nu",
+            institution: "University of Colorado Boulder",
+            url: "https://www.ktpboulder.com/",
+        },
+        {
+            name: "Rho",
+            institution: "Vanderbilt University",
+            url: "https://www.linkedin.com/company/kappa-theta-pi-rho/",
+        },
+        {
+            name: "Sigma",
+            institution: "University of Miami",
+            url: "https://www.ktpmiami.com/",
+        },
+        {
+            name: "Tau",
+            institution: "University of Southern California",
+            url: "https://www.instagram.com/ktp.usc/",
+        },
     ];
 
     return (
@@ -26,7 +111,9 @@ const OtherKTPChapters = () => {
 
             <Breadcrumb className="p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/professional">Professional</Breadcrumb.Item>
+                <Breadcrumb.Item href="/professional">
+                    Professional
+                </Breadcrumb.Item>
                 <Breadcrumb.Item active>KTP Chapters</Breadcrumb.Item>
             </Breadcrumb>
 
@@ -35,7 +122,9 @@ const OtherKTPChapters = () => {
                     <thead>
                         <tr>
                             <th className="border p-2 text-left">Chapter</th>
-                            <th className="border p-2 text-left">Institution</th>
+                            <th className="border p-2 text-left">
+                                Institution
+                            </th>
                             <th className="border p-2 text-left">Website</th>
                         </tr>
                     </thead>
@@ -43,7 +132,9 @@ const OtherKTPChapters = () => {
                         {ktpChapters.map((chapter, index) => (
                             <tr key={index}>
                                 <td className="border p-2">{chapter.name}</td>
-                                <td className="border p-2">{chapter.institution}</td>
+                                <td className="border p-2">
+                                    {chapter.institution}
+                                </td>
                                 <td className="border p-2">
                                     <a
                                         href={chapter.url}

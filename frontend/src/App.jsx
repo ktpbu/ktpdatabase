@@ -21,11 +21,9 @@ import OtherKTPChapters from "./pages/Professional/OtherKTPChapters";
 // calendar
 import Calendar from "./pages/Calendar/Calendar";
 
-// login
-import Login from "./pages/Login/Login";
-
 // error
 import Error from "./pages/Error/Error";
+import LoginError from "./pages/Error/LoginError";
 
 // main app
 import "./App.css";
@@ -73,7 +71,7 @@ const App = () => {
                             element={<OtherKTPChapters />}
                         />
                         <Route path="/calendar" element={<Calendar />} />
-                        <Route path="/login" element={<Login />} />
+                        <Route path="/login-error" element={<LoginError />} />
                         <Route path="*" element={<Error />} />
                     </Route>
                 </Routes>

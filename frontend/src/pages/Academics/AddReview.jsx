@@ -12,6 +12,21 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 const AddReview = () => {
     const { enqueueSnackbar } = useSnackbar();
     const navigate = useNavigate();
+
+    const getUser = async () => {
+        try {
+            await axios.get(`${backend}/auth/google/login/success`, {
+                withCredentials: true,
+            });
+        } catch (error) {
+            navigate("/login-error");
+        }
+    };
+
+    useEffect(() => {
+        getUser();
+    });
+
     const user = "test";
     const { level, id } = useParams();
     const [professors, setProfessors] = useState([]);

@@ -1,9 +1,65 @@
+import { useEffect, useState } from "react";
 import Container from "react-bootstrap/container";
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/nav";
 import Navbar from "react-bootstrap/navbar";
+import axios from "axios";
+
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { Box } from "@mui/material";
+import Modal from "@mui/material/Modal";
+import Fade from "@mui/material/Fade";
+
+const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Header = () => {
+    const [userData, setUserData] = useState({});
+
+    const getUser = async () => {
+        try {
+            const response = await axios.get(
+                `${backend}/auth/google/login/success`,
+                {
+                    withCredentials: true,
+                }
+            );
+            setUserData(response.data.user);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    useEffect(() => {
+        getUser();
+    }, []);
+
+    console.log(userData);
+
+    const handleLogout = () => {
+        window.open(`${backend}/auth/google/logout`, "_self");
+    };
+
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const handleModalOpen = () => {
+        setModalOpen(true);
+    };
+    const handleModalClose = () => {
+        setModalOpen(false);
+    };
+
+    const style = {
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        width: 400,
+        bgcolor: "background.paper",
+        border: "2px solid #000",
+        boxShadow: 24,
+        p: 4,
+    };
+
     return (
         <div className="w-full mx-auto">
             <Navbar collapseOnSelect bg="light" expand="lg" fixed="top">
@@ -46,6 +102,33 @@ const Header = () => {
                                     Calendar
                                 </Link>
                             </Nav.Link>
+
+                            {Object.keys(userData).length > 0 && (
+                                <button onClick={handleModalOpen}>
+                                    <AccountCircleIcon
+                                        className="m-auto"
+                                        fontSize="large"
+                                    />
+                                </button>
+                            )}
+                            <Modal
+                                open={modalOpen}
+                                onClose={handleModalClose}
+                                aria-labelledby="modal-modal-title"
+                                aria-describedby="modal-modal-description"
+                            >
+                                <Fade in={modalOpen}>
+                                    <Box sx={style}>
+                                        <h2>{`${userData?.first} ${userData?.last}`}</h2>
+                                        <button
+                                            type="button"
+                                            onClick={handleLogout}
+                                        >
+                                            Log Out
+                                        </button>
+                                    </Box>
+                                </Fade>
+                            </Modal>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
