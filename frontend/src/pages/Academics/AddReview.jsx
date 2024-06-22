@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { Breadcrumb } from "react-bootstrap";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
 import { useSnackbar } from "notistack";
 import axios from "axios";
 import Select from "react-select";
@@ -15,7 +15,7 @@ const AddReview = () => {
 
     const [userData, setUserData] = useState({});
 
-    const getUser = async () => {
+    const getUser = useCallback(async () => {
         try {
             const response = await axios.get(
                 `${backend}/auth/google/login/success`,
@@ -27,11 +27,11 @@ const AddReview = () => {
         } catch (error) {
             navigate("/error/login");
         }
-    };
+    }, [navigate]);
 
     useEffect(() => {
         getUser();
-    });
+    }, [getUser]);
 
     const user = `${userData.first} ${userData.last}`;
     const { level, id } = useParams();
@@ -137,6 +137,7 @@ const AddReview = () => {
         } else {
             const reviewObj = {
                 user,
+                bu_email: userData.bu_email,
                 anon,
                 id,
                 professor: professor.value,

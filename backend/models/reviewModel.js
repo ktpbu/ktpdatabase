@@ -10,7 +10,11 @@ const reviewSchema = mongoose.Schema(
             type: Boolean,
             required: true,
         },
-        courseID: {
+        bu_email: {
+            type: String,
+            required: true,
+        },
+        course_id: {
             type: String,
             required: true,
         },

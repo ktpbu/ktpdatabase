@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { Breadcrumb } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -10,7 +10,7 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 const AdminUsers = () => {
     const navigate = useNavigate();
 
-    const getUser = async () => {
+    const getUser = useCallback(async () => {
         try {
             const response = await axios.get(
                 `${backend}/auth/google/login/success`,
@@ -24,11 +24,11 @@ const AdminUsers = () => {
         } catch (error) {
             navigate("/error/login");
         }
-    };
+    }, [navigate]);
 
     useEffect(() => {
         getUser();
-    });
+    }, [getUser]);
 
     const [users, setUsers] = useState([]);
 

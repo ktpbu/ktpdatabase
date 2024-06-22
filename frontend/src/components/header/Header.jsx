@@ -53,7 +53,8 @@ const Header = () => {
     };
 
     const handleReviews = () => {
-        console.log("reviews");
+        navigate("/account/reviews");
+        setModalOpen(false);
     };
 
     const handleLogout = () => {

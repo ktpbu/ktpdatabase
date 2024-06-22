@@ -123,7 +123,7 @@ router.post("/courses/reviews/:id", async (req, res) => {
     console.log(req);
     try {
         const courseID = req.params.id;
-        const courseReviews = await Review.find({ courseID: courseID }).sort({
+        const courseReviews = await Review.find({ course_id: courseID }).sort({
             date: -1,
         });
         return res.status(200).json(courseReviews);
@@ -139,8 +139,9 @@ router.post("/courses/add-review", async (req, res) => {
     try {
         const newReview = new Review({
             user: req.body.user,
+            bu_email: req.body.bu_email,
             anon: req.body.anon,
-            courseID: req.body.id,
+            course_id: req.body.id,
             professor: req.body.professor,
             usefulness: req.body.usefulness,
             difficulty: req.body.difficulty,

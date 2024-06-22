@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { Card, Breadcrumb } from "react-bootstrap";
 import axios from "axios";
@@ -34,7 +34,7 @@ const academicOptions = [
 const Academics = () => {
     const navigate = useNavigate();
 
-    const getUser = async () => {
+    const getUser = useCallback(async () => {
         try {
             await axios.get(`${backend}/auth/google/login/success`, {
                 withCredentials: true,
@@ -42,11 +42,11 @@ const Academics = () => {
         } catch (error) {
             navigate("/error/login");
         }
-    };
+    }, [navigate]);
 
     useEffect(() => {
         getUser();
-    });
+    }, [getUser]);
 
     return (
         <div className="w-3/4 mx-auto py-20">
