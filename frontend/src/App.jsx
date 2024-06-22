@@ -23,6 +23,8 @@ import Calendar from "./pages/Calendar/Calendar";
 
 // account
 import Admin from "./pages/Account/Admin.jsx";
+import AdminReviews from "./pages/Account/AdminReviews.jsx";
+import AdminUsers from "./pages/Account/AdminUsers.jsx";
 
 // error
 import InvalidAdmin from "./pages/Error/InvalidAdmin.jsx";
@@ -42,6 +44,8 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Home />} />
+
+                        {/* academic routes */}
                         <Route path="/academics" element={<Academics />} />
                         <Route
                             path="/academics/courses"
@@ -67,6 +71,8 @@ const App = () => {
                             path="/academics/graduate"
                             element={<Graduate />}
                         />
+
+                        {/* professional routes */}
                         <Route
                             path="/professional"
                             element={<Professional />}
@@ -75,8 +81,22 @@ const App = () => {
                             path="/professional/other-ktp-chapters"
                             element={<OtherKTPChapters />}
                         />
+
+                        {/* calendar routes */}
                         <Route path="/calendar" element={<Calendar />} />
+
+                        {/* account routes */}
                         <Route path="/account/admin" element={<Admin />} />
+                        <Route
+                            path="/account/admin/reviews"
+                            element={<AdminReviews />}
+                        />
+                        <Route
+                            path="/account/admin/users"
+                            element={<AdminUsers />}
+                        />
+
+                        {/* error routes */}
                         <Route path="/error/admin" element={<InvalidAdmin />} />
                         <Route
                             path="/error/authentication"

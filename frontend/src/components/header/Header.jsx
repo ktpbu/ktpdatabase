@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Container from "react-bootstrap/container";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Nav from "react-bootstrap/nav";
 import Navbar from "react-bootstrap/navbar";
 import axios from "axios";
@@ -13,8 +13,8 @@ import Fade from "@mui/material/Fade";
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Header = () => {
+    const navigate = useNavigate();
     const [userData, setUserData] = useState({});
-    console.log(userData);
 
     const getUser = async () => {
         try {
@@ -34,10 +34,18 @@ const Header = () => {
         getUser();
     }, []);
 
-    console.log(userData);
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const handleModalOpen = () => {
+        setModalOpen(true);
+    };
+    const handleModalClose = () => {
+        setModalOpen(false);
+    };
 
     const handleAdmin = () => {
-        console.log("admin");
+        navigate("/account/admin");
+        setModalOpen(false);
     };
 
     const handleProfile = () => {
@@ -50,15 +58,6 @@ const Header = () => {
 
     const handleLogout = () => {
         window.open(`${backend}/auth/google/logout`, "_self");
-    };
-
-    const [modalOpen, setModalOpen] = useState(false);
-
-    const handleModalOpen = () => {
-        setModalOpen(true);
-    };
-    const handleModalClose = () => {
-        setModalOpen(false);
     };
 
     const style = {
