@@ -22,6 +22,7 @@ import OtherKTPChapters from "./pages/Professional/OtherKTPChapters";
 import Calendar from "./pages/Calendar/Calendar";
 
 // account
+import AddUser from "./pages/Account/AddUser.jsx";
 import Admin from "./pages/Account/Admin.jsx";
 import AdminReviews from "./pages/Account/AdminReviews.jsx";
 import AdminUsers from "./pages/Account/AdminUsers.jsx";
@@ -94,6 +95,10 @@ const App = () => {
                         <Route
                             path="/account/admin/users"
                             element={<AdminUsers />}
+                        />
+                        <Route
+                            path="/account/admin/users/add"
+                            element={<AddUser />}
                         />
 
                         {/* error routes */}
