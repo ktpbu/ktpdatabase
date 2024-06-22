@@ -9,6 +9,7 @@ const LoginError = () => {
             </h1>
             <button
                 className="my-16 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                type="button"
                 onClick={() => navigate("/")}
             >
                 Back to Home

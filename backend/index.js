@@ -11,6 +11,7 @@ import supabase from "./supabaseClient.js";
 import { User } from "./models/userModel.js";
 
 import academicRoutes from "./routes/academicRoutes.js";
+import accountRoutes from "./routes/accountRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import calendarRoutes from "./routes/calendarRoutes.js";
 import professionalRoutes from "./routes/professionalRoutes.js";
@@ -33,6 +34,10 @@ app.use(
         secret: process.env.SESSION_SECRET,
         resave: false,
         saveUninitialized: true,
+        cookie: {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === "production",
+        },
     })
 );
 
@@ -85,6 +90,7 @@ app.get("/home", (req, res) => {
 });
 
 app.use("/academics", academicRoutes);
+app.use("/account", accountRoutes);
 app.use("/auth", authRoutes);
 app.use("/calendar", calendarRoutes);
 app.use("/professional", professionalRoutes);

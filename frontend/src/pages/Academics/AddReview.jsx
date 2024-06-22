@@ -224,8 +224,9 @@ const AddReview = () => {
             <p className="my-4">* indicates required field</p>
 
             <button
-                onClick={handleAddReview}
                 className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                type="button"
+                onClick={handleAddReview}
             >
                 Add Review
             </button>
