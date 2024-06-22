@@ -9,7 +9,12 @@ const InvalidAuthentication = () => {
                     "Only members of Kappa Theta Pi's Lambda Chapter (Boston University) can access this website. If you are a member of this chapter, ensure that you are signing in with you BU Google account. If you believe there is an error, contact the head of the app committee."
                 }
             </h1>
-            <button onClick={() => navigate("/")}>Back to Home</button>
+            <button
+                className="my-16 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                onClick={() => navigate("/")}
+            >
+                Back to Home
+            </button>
         </div>
     );
 };

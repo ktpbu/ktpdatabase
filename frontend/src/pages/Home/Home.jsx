@@ -41,7 +41,11 @@ const Home = () => {
             </div>
 
             {Object.keys(userData).length === 0 && (
-                <button type="button" onClick={handleGoogleAuth}>
+                <button
+                    className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                    type="button"
+                    onClick={handleGoogleAuth}
+                >
                     Sign in with Google
                 </button>
             )}

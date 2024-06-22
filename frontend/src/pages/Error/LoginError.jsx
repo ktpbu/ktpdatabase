@@ -7,7 +7,12 @@ const LoginError = () => {
             <h1 className="mt-16 text-3xl">
                 User must be authenticated to access the KTP Database
             </h1>
-            <button onClick={() => navigate("/")}>Back to Home</button>
+            <button
+                className="my-16 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                onClick={() => navigate("/")}
+            >
+                Back to Home
+            </button>
         </div>
     );
 };
