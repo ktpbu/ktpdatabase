@@ -11,8 +11,8 @@ router.get(
 router.get(
     "/google/callback",
     passport.authenticate("google", {
-        successRedirect: "http://localhost:5173",
-        failureRedirect: "http://localhost:5173/authentication-error",
+        successRedirect: `${process.env.CLIENT_URL}`,
+        failureRedirect: `${process.env.CLIENT_URL}/authentication-error`,
     })
 );
 
