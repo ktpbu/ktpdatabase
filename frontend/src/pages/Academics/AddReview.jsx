@@ -157,7 +157,9 @@ const AddReview = () => {
                     navigate(`/academics/courses/${level}/${id}`);
                 })
                 .catch((error) => {
-                    enqueueSnackbar("Error", { variant: "error" });
+                    enqueueSnackbar("Failed to add review", {
+                        variant: "error",
+                    });
                     console.log(error);
                 });
         }
