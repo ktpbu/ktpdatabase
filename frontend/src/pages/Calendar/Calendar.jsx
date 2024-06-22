@@ -1,6 +1,6 @@
 import { Breadcrumb } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
 import axios from "axios";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
@@ -8,7 +8,7 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 const Calendar = () => {
     const navigate = useNavigate();
 
-    const getUser = async () => {
+    const getUser = useCallback(async () => {
         try {
             await axios.get(`${backend}/auth/google/login/success`, {
                 withCredentials: true,
@@ -16,11 +16,11 @@ const Calendar = () => {
         } catch (error) {
             navigate("/error/login");
         }
-    };
+    }, [navigate]);
 
     useEffect(() => {
         getUser();
-    });
+    }, [getUser]);
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Calendar</h2>

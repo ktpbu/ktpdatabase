@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Breadcrumb } from "react-bootstrap";
@@ -11,7 +11,7 @@ const AddUser = () => {
     const navigate = useNavigate();
     const { enqueueSnackbar } = useSnackbar();
 
-    const getUser = async () => {
+    const getUser = useCallback(async () => {
         try {
             const response = await axios.get(
                 `${backend}/auth/google/login/success`,
@@ -25,11 +25,11 @@ const AddUser = () => {
         } catch (error) {
             navigate("/error/login");
         }
-    };
+    }, [navigate]);
 
     useEffect(() => {
         getUser();
-    });
+    }, [getUser]);
 
     const addUserForm = useForm({
         defaultValues: {

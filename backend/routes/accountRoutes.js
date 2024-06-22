@@ -1,5 +1,6 @@
 import express from "express";
 import { User } from "../models/userModel.js";
+import { Review } from "../models/reviewModel.js";
 
 const router = express.Router();
 
@@ -24,7 +25,7 @@ router.get("/admin/get-users", async (req, res) => {
 
 // adds a new user
 router.post("/admin/add-user", async (req, res) => {
-    console.log(req.body);
+    console.log(req);
     try {
         const existingUser = await User.find({ bu_email: req.body.bu_email });
         if (existingUser.length > 0) {
@@ -43,6 +44,20 @@ router.post("/admin/add-user", async (req, res) => {
     } catch (error) {
         console.log(error.message);
         res.status(500).send({ message: error.message });
+    }
+});
+
+// gets all reviews by a user
+router.post("/reviews/get-user-reviews", async (req, res) => {
+    console.log(req);
+    try {
+        const users = await Review.find({ bu_email: req.body.bu_email }).sort({
+            date: -1,
+        });
+        return res.status(200).json(users);
+    } catch (error) {
+        console.error(error.message);
+        return res.status(500).send({ message: error.message });
     }
 });
 

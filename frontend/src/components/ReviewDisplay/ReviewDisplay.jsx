@@ -6,6 +6,7 @@ import { Card } from "react-bootstrap";
 import ReviewFilter from "../ReviewFilter/ReviewFilter";
 
 const ReviewDisplay = ({ reviews }) => {
+    console.log(reviews);
     const { enqueueSnackbar } = useSnackbar();
     const formatDate = (input) => {
         const date = new Date(input);
@@ -206,7 +207,8 @@ ReviewDisplay.propTypes = {
             _id: PropTypes.string.isRequired,
             user: PropTypes.string.isRequired,
             anon: PropTypes.bool.isRequired,
-            courseID: PropTypes.string.isRequired,
+            bu_email: PropTypes.string.isRequired,
+            course_id: PropTypes.string.isRequired,
             professor: PropTypes.string.isRequired,
             usefulness: PropTypes.number.isRequired,
             difficulty: PropTypes.number.isRequired,
