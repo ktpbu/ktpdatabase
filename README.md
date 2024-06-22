@@ -22,7 +22,7 @@ The following sections are written to help KTP brothers add to the project. Thes
 When developing, just save the file you have just changed and the webpage will automatically reflect that change (if no error occurs). As a rule of thumb, if there is nothing on the webpage, there is some error in your code, which can be diagnosed either in your terminal or by pressing `inspect` on the webpage and checking `console` for output (messages+errors).
 
 ## Guide to Contributing
-The steps to set up your workflow are detailed in the file named `Git Workflow` in the shared `App Committee` folder on Google Drive. Please follow these steps, and reach out if you need help or have any questions.
+The steps to set up your workflow are detailed in the file named `Git Workflow` in the shared `App Committee` folder on Google Drive. Please follow these steps, and reach out to the head of the app committee if you need help, have any questions, or wish to join the app committee.
 
 ### Important Concepts
 - **App.jsx**: this file defines the template of a page. As can be seen by this file, each page has 3 parts: the Header, the Outlet, and the Footer. The Outlet part will be replaced by a Page when each page is requested. For example, if we go to the Academics page, then the `Academics.jsx` file defines what content is filled in at Outlet
@@ -135,10 +135,11 @@ The professor scraper is located at the path `./backend/scrapers/ProfScraper.py`
     |_ Home
     |_ Academics
         |_ Courses
-            |_ ...all courses by ID
+            |_ ...all undergraduate courses by course code
                 |_ ...add course review pages
         |_ Resources
         |_ Graduate
+            |_ ...all graduate courses by course code
     |_ Professional
         |_ Other KTP Chapters
     |_ Calendar
@@ -148,17 +149,6 @@ The professor scraper is located at the path `./backend/scrapers/ProfScraper.py`
         |_ Reviews
 ```
 
-## CURRENT OPEN QUESTIONS
-- Look at the GitHub issues tab (at the top of the screen). 
-
 
 ## To-Do List
-
-- Big Things:
-    - finalize structure
-    - set themes
-- Little Things:
-    - create header/footer
-    - fill out courses
-    - refactor CardGroup on Academics page to support more Cards --> need to switch to Row-Col Bootstrap elements
-    - add links to Footer (need to add href attribute to both images)
+Look at this repository's `Issues` tab for the next steps. Feel free to open a new issue if you feel anything should be added or changed.
