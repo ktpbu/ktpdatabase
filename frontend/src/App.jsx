@@ -22,6 +22,7 @@ import OtherKTPChapters from "./pages/Professional/OtherKTPChapters";
 import Calendar from "./pages/Calendar/Calendar";
 
 // error
+import InvalidAuthentication from "./pages/Error/InvalidAuthentication.jsx";
 import Error from "./pages/Error/Error";
 import LoginError from "./pages/Error/LoginError";
 
@@ -71,6 +72,10 @@ const App = () => {
                             element={<OtherKTPChapters />}
                         />
                         <Route path="/calendar" element={<Calendar />} />
+                        <Route
+                            path="authentication-error"
+                            element={<InvalidAuthentication />}
+                        />
                         <Route path="/login-error" element={<LoginError />} />
                         <Route path="*" element={<Error />} />
                     </Route>
