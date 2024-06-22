@@ -87,7 +87,7 @@ const CourseList = () => {
                 withCredentials: true,
             });
         } catch (error) {
-            navigate("/login-error");
+            navigate("/error/login");
         }
     };
 
