@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import Container from "react-bootstrap/container";
 import { Link, useNavigate } from "react-router-dom";
 import Nav from "react-bootstrap/nav";
@@ -16,7 +16,7 @@ const Header = () => {
     const navigate = useNavigate();
     const [userData, setUserData] = useState({});
 
-    const getUser = async () => {
+    const getUser = useCallback(async () => {
         try {
             const response = await axios.get(
                 `${backend}/auth/google/login/success`,
@@ -26,13 +26,13 @@ const Header = () => {
             );
             setUserData(response.data.user);
         } catch (error) {
-            console.log(error);
+            navigate("/error/login");
         }
-    };
+    }, [navigate]);
 
     useEffect(() => {
         getUser();
-    }, []);
+    }, [getUser]);
 
     const [modalOpen, setModalOpen] = useState(false);
 
