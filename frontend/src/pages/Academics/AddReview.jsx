@@ -13,11 +13,17 @@ const AddReview = () => {
     const { enqueueSnackbar } = useSnackbar();
     const navigate = useNavigate();
 
+    const [userData, setUserData] = useState({});
+
     const getUser = async () => {
         try {
-            await axios.get(`${backend}/auth/google/login/success`, {
-                withCredentials: true,
-            });
+            const response = await axios.get(
+                `${backend}/auth/google/login/success`,
+                {
+                    withCredentials: true,
+                }
+            );
+            setUserData(response.data.user);
         } catch (error) {
             navigate("/login-error");
         }
@@ -27,7 +33,7 @@ const AddReview = () => {
         getUser();
     });
 
-    const user = "test";
+    const user = `${userData.first} ${userData.last}`;
     const { level, id } = useParams();
     const [professors, setProfessors] = useState([]);
     const [professor, setProfessor] = useState({ value: "", label: "" });
