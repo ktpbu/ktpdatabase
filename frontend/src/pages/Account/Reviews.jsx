@@ -35,6 +35,9 @@ const Reviews = () => {
 
     useEffect(() => {
         const getUserReviews = async () => {
+            if (!userData.bu_email) {
+                return;
+            }
             try {
                 setLoading(true);
                 const response = await axios.post(
