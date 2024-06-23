@@ -1,20 +1,20 @@
-import { useNavigate, useParams } from "react-router-dom";
-import { Breadcrumb } from "react-bootstrap";
-import { useState, useMemo, useEffect, useCallback } from "react";
-import { useSnackbar } from "notistack";
+import { useParams } from "react-router-dom";
+import { useEffect, useCallback, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Breadcrumb } from "react-bootstrap";
 import Select from "react-select";
+import { useSnackbar } from "notistack";
 
 import CustomCheckbox from "../../components/CustomCheckbox/CustomCheckbox";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
-const AddReview = () => {
-    const { enqueueSnackbar } = useSnackbar();
+const EditReview = () => {
     const navigate = useNavigate();
+    const { enqueueSnackbar } = useSnackbar();
 
     const [userData, setUserData] = useState({});
-
     const getUser = useCallback(async () => {
         try {
             const response = await axios.get(
@@ -33,10 +33,55 @@ const AddReview = () => {
         getUser();
     }, [getUser]);
 
-    const user = `${userData.first} ${userData.last}`;
-    const { level, id } = useParams();
+    const { id } = useParams();
+
+    const [reviewResponse, setReviewResponse] = useState({});
+
+    useEffect(() => {
+        const getReview = async () => {
+            try {
+                const response = await axios.get(
+                    `${backend}/account/reviews/get-review/${id}`
+                );
+                setReviewResponse(response.data);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        getReview();
+    }, [id]);
+
     const [professors, setProfessors] = useState([]);
-    const [professor, setProfessor] = useState({ value: "", label: "" });
+
+    const user = `${userData.first} ${userData.last}`;
+    const [professor, setProfessor] = useState({});
+    const [usefulness, setUsefulness] = useState({ value: "", label: "" });
+    const [difficulty, setDifficulty] = useState({ value: "", label: "" });
+    const [rating, setRating] = useState({ value: "", label: "" });
+    const [anon, setAnon] = useState(false);
+    const [review, setReview] = useState(reviewResponse.review);
+
+    useEffect(() => {
+        setProfessor({
+            value: reviewResponse.professor,
+            label: reviewResponse.professor,
+        });
+        setUsefulness({
+            value: reviewResponse.usefulness,
+            label: reviewResponse.usefulness,
+        });
+        setDifficulty({
+            value: reviewResponse.difficulty,
+            label: reviewResponse.difficulty,
+        });
+        setRating({
+            value: reviewResponse.rating,
+            label: reviewResponse.rating,
+        });
+        setAnon(reviewResponse.anon);
+        setReview(reviewResponse.review);
+    }, [reviewResponse]);
+
     const values = [
         { value: 5, label: "5" },
         { value: 4, label: "4" },
@@ -44,10 +89,6 @@ const AddReview = () => {
         { value: 2, label: "2" },
         { value: 1, label: "1" },
     ];
-    const [usefulness, setUsefulness] = useState({ value: "", label: "" });
-    const [difficulty, setDifficulty] = useState({ value: "", label: "" });
-    const [rating, setRating] = useState({ value: "", label: "" });
-    const [anon, setAnon] = useState(false);
 
     const selectDropdowns = [
         {
@@ -80,27 +121,10 @@ const AddReview = () => {
         },
     ];
 
-    const [review, setReview] = useState("");
-
-    const subjectMap = useMemo(
-        () => ({
-            ENGBE: "biomedical-eng",
-            CASCS: "computer-science",
-            CDSDS: "data-science",
-            CASEC: "economics",
-            ENGEC: "electrical-computer-eng",
-            ENGEK: "eng-core",
-            CASMA: "mathematics-statistics",
-            ENGME: "mechanical-eng",
-        }),
-        []
-    );
-    const subject = subjectMap[id.slice(0, 5)];
-
     useEffect(() => {
         axios
             .post(`${backend}/academics/courses/professors`, {
-                subject: subject,
+                subject: reviewResponse.subject,
             })
             .then((res) => {
                 setProfessors(
@@ -113,18 +137,9 @@ const AddReview = () => {
             .catch((error) => {
                 console.log(error);
             });
-    }, [subject]);
+    }, [reviewResponse.subject]);
 
-    const resetReview = () => {
-        setAnon(false);
-        setProfessor({ value: "", label: "" });
-        setUsefulness({ value: "", label: "" });
-        setDifficulty({ value: "", label: "" });
-        setRating({ value: "", label: "" });
-        setReview("");
-    };
-
-    const handleAddReview = () => {
+    const handleSaveReview = () => {
         if (
             professor.value === "" ||
             usefulness.value === "" ||
@@ -141,53 +156,42 @@ const AddReview = () => {
                 anon,
                 id,
                 professor: professor.value,
-                subject,
+                subject: reviewResponse.subject,
                 usefulness: usefulness.value,
                 difficulty: difficulty.value,
                 rating: rating.value,
-                review,
+                review: reviewResponse.review,
                 date: new Date().toISOString().replace("Z", "+00:00"),
             };
-            axios
-                .post(`${backend}/academics/courses/add-review`, reviewObj)
-                .then(() => {
-                    console.log(reviewObj);
-                    enqueueSnackbar("Added review successfully", {
-                        variant: "success",
-                    });
-                    resetReview();
-                    navigate(`/academics/courses/${level}/${id}`);
-                })
-                .catch((error) => {
-                    enqueueSnackbar("Failed to add review", {
-                        variant: "error",
-                    });
-                    console.log(error);
+            try {
+                console.log(reviewObj);
+                axios.put(
+                    `${backend}/account/reviews/edit-review/${id}`,
+                    reviewObj
+                );
+                enqueueSnackbar("Successfully edited review", {
+                    variant: "success",
                 });
+                navigate("/account/reviews");
+            } catch (error) {
+                enqueueSnackbar("Failed to edit review", { variant: "error" });
+            }
         }
     };
 
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h2 className="text-start p-3 my-auto">Add Review for {id}</h2>
-
-            <Breadcrumb className="customBreadcrumb p-3">
+            <Breadcrumb className="p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
-                {level === "undergrad" ? (
-                    <Breadcrumb.Item href="/academics/courses/">
-                        Courses
-                    </Breadcrumb.Item>
-                ) : (
-                    <Breadcrumb.Item href="/academics/graduate/">
-                        Graduate
-                    </Breadcrumb.Item>
-                )}
-                <Breadcrumb.Item href={`/academics/courses/${level}/${id}`}>
-                    {id}
+                <Breadcrumb.Item href="/account/reviews">
+                    Reviews
                 </Breadcrumb.Item>
-                <Breadcrumb.Item active>Add Review</Breadcrumb.Item>
+                <Breadcrumb.Item active>Edit Review</Breadcrumb.Item>
             </Breadcrumb>
+
+            <h2 className="text-start p-3 my-auto">
+                Edit Review for {reviewResponse.course_id}
+            </h2>
 
             {selectDropdowns.map((item) => (
                 <div
@@ -230,12 +234,12 @@ const AddReview = () => {
             <button
                 className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
                 type="button"
-                onClick={handleAddReview}
+                onClick={handleSaveReview}
             >
-                Add Review
+                Save Review
             </button>
         </div>
     );
 };
 
-export default AddReview;
+export default EditReview;

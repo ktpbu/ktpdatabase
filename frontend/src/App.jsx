@@ -26,6 +26,7 @@ import AddUser from "./pages/Account/AddUser.jsx";
 import Admin from "./pages/Account/Admin.jsx";
 import AdminReviews from "./pages/Account/AdminReviews.jsx";
 import AdminUsers from "./pages/Account/AdminUsers.jsx";
+import EditReview from "./pages/Account/EditReview.jsx";
 import Reviews from "./pages/Account/Reviews.jsx";
 
 // error
@@ -102,6 +103,10 @@ const App = () => {
                             element={<AddUser />}
                         />
                         <Route path="/account/reviews" element={<Reviews />} />
+                        <Route
+                            path="/account/reviews/edit-review/:id"
+                            element={<EditReview />}
+                        />
 
                         {/* error routes */}
                         <Route path="/error/admin" element={<InvalidAdmin />} />

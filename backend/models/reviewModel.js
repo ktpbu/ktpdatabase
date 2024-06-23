@@ -22,6 +22,10 @@ const reviewSchema = mongoose.Schema(
             type: String,
             required: true,
         },
+        subject: {
+            type: String,
+            required: true,
+        },
         usefulness: {
             type: Number,
             required: true,
@@ -45,8 +49,6 @@ const reviewSchema = mongoose.Schema(
     },
     { versionKey: false }
 );
-
-reviewSchema.index({ id: 1 });
 
 export const Review = mongoose.model(
     "review entry",

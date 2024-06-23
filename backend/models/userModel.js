@@ -26,6 +26,4 @@ const userSchema = mongoose.Schema(
     { versionKey: false }
 );
 
-userSchema.index({ id: 1 });
-
 export const User = mongoose.model("user entry", userSchema, "user-collection");
