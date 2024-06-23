@@ -8,7 +8,7 @@ import mongoose from "mongoose";
 import "./config.js";
 
 import supabase from "./supabaseClient.js";
-import { User } from "./models/userModel.js";
+import { Users } from "./models/userModel.js";
 
 import academicRoutes from "./routes/academicRoutes.js";
 import accountRoutes from "./routes/accountRoutes.js";
@@ -54,7 +54,7 @@ passport.use(
         },
         async (accessToken, refreshToken, profile, done) => {
             try {
-                let user = await User.findOne({
+                let user = await Users.findOne({
                     bu_email: profile.emails[0].value,
                 });
                 if (!user) {

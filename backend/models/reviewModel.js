@@ -50,7 +50,7 @@ const reviewSchema = mongoose.Schema(
     { versionKey: false }
 );
 
-export const Review = mongoose.model(
+export const Reviews = mongoose.model(
     "review entry",
     reviewSchema,
     "review-collection"
