@@ -61,11 +61,10 @@ const Reviews = () => {
 
             {loading ? (
                 <Spinner className="mt-16" />
+            ) : userReviews && userReviews.length > 0 ? (
+                <ReviewDisplay reviews={userReviews} view="account" />
             ) : (
-                userReviews &&
-                userReviews.length > 0 && (
-                    <ReviewDisplay reviews={userReviews} view="account" />
-                )
+                <p className="text-2xl">User has not submitted any reviews.</p>
             )}
         </div>
     );
