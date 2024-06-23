@@ -9,7 +9,7 @@ router.get("/", (res, req) => {
     res.status(234).send("Account backend here");
 });
 
-// gets all users
+// get all users
 router.get("/admin/get-users", async (req, res) => {
     console.log(req);
     try {
@@ -23,7 +23,7 @@ router.get("/admin/get-users", async (req, res) => {
     }
 });
 
-// adds a new user
+// add a new user
 router.post("/admin/add-user", async (req, res) => {
     console.log(req);
     try {
@@ -47,7 +47,7 @@ router.post("/admin/add-user", async (req, res) => {
     }
 });
 
-// gets all reviews by a user
+// get all reviews by a user
 router.post("/reviews/get-user-reviews", async (req, res) => {
     console.log(req);
     try {
@@ -61,7 +61,7 @@ router.post("/reviews/get-user-reviews", async (req, res) => {
     }
 });
 
-// gets a review by id
+// get a review by id
 router.get("/reviews/get-review/:id", async (req, res) => {
     console.log(req);
     const id = req.params.id;
@@ -75,18 +75,32 @@ router.get("/reviews/get-review/:id", async (req, res) => {
     }
 });
 
-// updates a review by id
-// update a project
+// update a review by id
 router.put("/reviews/edit-review/:id", async (request, response) => {
     try {
-        const { id } = request.params;
-        const result = await Review.findByIdAndUpdate(id, request.body);
+        const result = await Review.findByIdAndUpdate(
+            request.params.id,
+            request.body
+        );
         if (!result) {
             return response.status(404).json({ message: "Review not found" });
         }
         return response
             .status(200)
             .send({ message: "Review updated successfully" });
+    } catch (error) {
+        console.log(error.message);
+        response.status(500).send({ message: error.message });
+    }
+});
+
+// delete a review by id
+router.delete("/reviews/delete-review/:id", async (request, response) => {
+    try {
+        await Review.findByIdAndDelete(request.params.id);
+        return response
+            .status(200)
+            .send({ message: "Review deleted successfully" });
     } catch (error) {
         console.log(error.message);
         response.status(500).send({ message: error.message });

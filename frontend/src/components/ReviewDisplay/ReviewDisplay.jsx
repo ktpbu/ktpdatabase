@@ -5,6 +5,7 @@ import { Card } from "react-bootstrap";
 import EditIcon from "@mui/icons-material/Edit";
 import { Link } from "react-router-dom";
 
+import DeleteReviewModal from "../DeleteReviewModal/DeleteReviewModal";
 import ReviewFilter from "../ReviewFilter/ReviewFilter";
 
 const ReviewDisplay = ({ reviews, view }) => {
@@ -158,12 +159,19 @@ const ReviewDisplay = ({ reviews, view }) => {
                             </div>
                         </Card.Header>
                         <Card.Body className="my-auto bg-purple-100">
-                            <Card.Text className="mx-2 text-xl text-left">
-                                Professor{" "}
-                                <span className="font-semibold">
-                                    {review.professor}
-                                </span>
-                            </Card.Text>
+                            <div className="w-96 mx-2 flex flex-wrap justify-between text-xl">
+                                <Card.Text className="text-xl text-left">
+                                    Professor{" "}
+                                    <span className="font-semibold">
+                                        {review.professor}
+                                    </span>
+                                </Card.Text>
+                                <Card.Text>
+                                    <span className="font-semibold">
+                                        {review.course_id}
+                                    </span>
+                                </Card.Text>
+                            </div>
 
                             <div className="w-96 mx-2 flex flex-wrap justify-between text-xl">
                                 <Card.Text>
@@ -190,18 +198,26 @@ const ReviewDisplay = ({ reviews, view }) => {
                             </div>
 
                             {review.review && (
-                                <Card.Text className="mx-2 text-xl text-start">
+                                <Card.Text className="w-96 mx-2 text-xl text-start">
                                     {review.review}
                                 </Card.Text>
                             )}
 
                             {view === "account" && (
-                                <Link
-                                    className="text-black"
-                                    to={`/account/reviews/edit-review/${review._id}`}
-                                >
-                                    <EditIcon />
-                                </Link>
+                                <div className="w-24 mx-auto flex justify-between">
+                                    <Link
+                                        className="text-black"
+                                        to={`/account/reviews/edit-review/${review._id}`}
+                                    >
+                                        <EditIcon />
+                                    </Link>
+                                    <DeleteReviewModal
+                                        courseId={review.course_id}
+                                        professor={review.professor}
+                                        id={review._id}
+                                        deleteItem="Review"
+                                    />
+                                </div>
                             )}
                         </Card.Body>
                     </Card>
