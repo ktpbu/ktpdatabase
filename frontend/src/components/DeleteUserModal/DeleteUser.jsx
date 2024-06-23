@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
-const DeleteReviewModal = ({ courseId, professor, id }) => {
+const DeleteUserModal = ({ first, last, id }) => {
     const { enqueueSnackbar } = useSnackbar();
     const [open, setOpen] = useState(false);
     const [enteredText, setEnteredText] = useState("");
@@ -23,12 +23,12 @@ const DeleteReviewModal = ({ courseId, professor, id }) => {
     };
 
     const handleDelete = () => {
-        if (enteredText === `${courseId} ${professor}`) {
+        if (enteredText === `${first} ${last}`) {
             axios
-                .delete(`${backend}/account/reviews/delete-review/${id}`)
+                .delete(`${backend}/account/admin/delete-user/${id}`)
                 .then(() => {
                     setOpen(false);
-                    enqueueSnackbar("Successfully deleted review", {
+                    enqueueSnackbar("Successfully deleted user", {
                         variant: "success",
                     });
                     window.location.reload();
@@ -37,6 +37,7 @@ const DeleteReviewModal = ({ courseId, professor, id }) => {
                     enqueueSnackbar("Error", { variant: "error" });
                     console.log(error);
                 });
+            console.log("Successfully deleted user");
         } else {
             enqueueSnackbar("Confirmation text entered incorrectly", {
                 variant: "error",
@@ -58,7 +59,7 @@ const DeleteReviewModal = ({ courseId, professor, id }) => {
             >
                 <div className="w-fit m-auto p-4 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-column justify-center shadow border-2 border-solid border-black bg-white">
                     <p className="w-60 mx-auto">
-                        Type {`"${courseId} ${professor}"`} in the box below
+                        Type {`"${first} ${last}"`} in the box below
                     </p>
                     <div className="w-fit m-auto">
                         <input
@@ -72,7 +73,7 @@ const DeleteReviewModal = ({ courseId, professor, id }) => {
                         className="w-fit mx-auto my-4 p-2 border-2 border-solid ${ hover:border-red-500 rounded-3xl"
                         onClick={handleDelete}
                     >
-                        Confirm Review Deletion
+                        Confirm User Deletion
                     </button>
                 </div>
             </Modal>
@@ -80,10 +81,10 @@ const DeleteReviewModal = ({ courseId, professor, id }) => {
     );
 };
 
-DeleteReviewModal.propTypes = {
-    courseId: PropTypes.string.isRequired,
-    professor: PropTypes.string.isRequired,
+DeleteUserModal.propTypes = {
+    first: PropTypes.string.isRequired,
+    last: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
 };
 
-export default DeleteReviewModal;
+export default DeleteUserModal;

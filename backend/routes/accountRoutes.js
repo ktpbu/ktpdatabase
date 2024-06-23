@@ -23,7 +23,7 @@ router.get("/admin/get-users", async (req, res) => {
     }
 });
 
-// add a new user
+// add a user
 router.post("/admin/add-user", async (req, res) => {
     console.log(req);
     try {
@@ -44,6 +44,19 @@ router.post("/admin/add-user", async (req, res) => {
     } catch (error) {
         console.log(error.message);
         res.status(500).send({ message: error.message });
+    }
+});
+
+// delete a user by id
+router.delete("/admin/delete-user/:id", async (request, response) => {
+    try {
+        await User.findByIdAndDelete(request.params.id);
+        return response
+            .status(200)
+            .send({ message: "User deleted successfully" });
+    } catch (error) {
+        console.log(error.message);
+        response.status(500).send({ message: error.message });
     }
 });
 

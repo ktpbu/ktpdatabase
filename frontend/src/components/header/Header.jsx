@@ -48,7 +48,7 @@ const Header = () => {
         setModalOpen(false);
     };
 
-    const handleProfile = () => {
+    const handleMembers = () => {
         console.log("profile");
     };
 
@@ -153,7 +153,7 @@ const Header = () => {
                                             <button
                                                 className="w-24 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
                                                 type="button"
-                                                onClick={handleProfile}
+                                                onClick={handleMembers}
                                             >
                                                 Profile
                                             </button>
