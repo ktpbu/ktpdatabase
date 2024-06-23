@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { Card } from "react-bootstrap";
 
+import DeleteUserModal from "../DeleteUserModal/DeleteUser";
+
 const UserDisplay = ({ users }) => {
     console.log(users);
     return (
@@ -35,6 +37,11 @@ const UserDisplay = ({ users }) => {
                                     </span>
                                 </Card.Text>
                             </div>
+                            <DeleteUserModal
+                                first={user.first}
+                                last={user.last}
+                                id={user._id}
+                            />
                         </Card.Body>
                     </Card>
                 ))}

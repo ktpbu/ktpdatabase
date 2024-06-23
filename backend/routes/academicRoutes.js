@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 
 import supabase from "../supabaseClient.js";
+import { Reviews } from "../models/reviewModel.js";
 
 const loadJSON = (filePath) => {
     const data = fs.readFileSync(path.resolve(filePath));
@@ -38,9 +39,6 @@ const mathNodes = loadJSON(
 // academic resources imports
 const jointMajors = loadJSON("data/academics/resources/joint-majors.json");
 const usefulLinks = loadJSON("data/academics/resources/useful-links.json");
-
-// database imports
-import { Review } from "../models/reviewModel.js";
 
 const subjectMap = {
     "biomedical-eng": {
@@ -123,7 +121,7 @@ router.post("/courses/reviews/:code", async (req, res) => {
     console.log(req);
     try {
         const courseID = req.params.code;
-        const courseReviews = await Review.find({ course_id: courseID }).sort({
+        const courseReviews = await Reviews.find({ course_id: courseID }).sort({
             date: -1,
         });
         return res.status(200).json(courseReviews);
@@ -137,7 +135,7 @@ router.post("/courses/reviews/:code", async (req, res) => {
 router.post("/courses/add-review", async (req, res) => {
     console.log(req.body);
     try {
-        const newReview = new Review({
+        const newReview = new Reviews({
             user: req.body.user,
             bu_email: req.body.bu_email,
             anon: req.body.anon,
