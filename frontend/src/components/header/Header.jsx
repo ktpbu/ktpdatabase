@@ -26,9 +26,9 @@ const Header = () => {
             );
             setUserData(response.data.user);
         } catch (error) {
-            navigate("/error/login");
+            console.log(error);
         }
-    }, [navigate]);
+    }, []);
 
     useEffect(() => {
         getUser();

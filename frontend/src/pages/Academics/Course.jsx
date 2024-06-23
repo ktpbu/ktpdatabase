@@ -68,6 +68,10 @@ const Course = () => {
 
     return (
         <div className="w-3/4 mx-auto py-20">
+            <h2 className="text-start p-3 my-auto">
+                {courseInfo.code}: {courseInfo.name}
+            </h2>
+
             <Breadcrumb className="customBreadcrumb p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
@@ -82,10 +86,6 @@ const Course = () => {
                 )}
                 <Breadcrumb.Item active>{courseInfo.name}</Breadcrumb.Item>
             </Breadcrumb>
-
-            <h2 className="text-start p-3 my-auto">
-                {courseInfo.code}: {courseInfo.name}
-            </h2>
 
             <h5 className="text-start p-3">
                 {courseInfo.prereqs !== ""

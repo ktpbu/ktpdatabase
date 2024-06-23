@@ -61,4 +61,36 @@ router.post("/reviews/get-user-reviews", async (req, res) => {
     }
 });
 
+// gets a review by id
+router.get("/reviews/get-review/:id", async (req, res) => {
+    console.log(req);
+    const id = req.params.id;
+    try {
+        const review = await Review.findById(id);
+        console.log(review);
+        return res.status(200).json(review);
+    } catch (error) {
+        console.error(error.message);
+        return res.status(500).send({ message: error.message });
+    }
+});
+
+// updates a review by id
+// update a project
+router.put("/reviews/edit-review/:id", async (request, response) => {
+    try {
+        const { id } = request.params;
+        const result = await Review.findByIdAndUpdate(id, request.body);
+        if (!result) {
+            return response.status(404).json({ message: "Review not found" });
+        }
+        return response
+            .status(200)
+            .send({ message: "Review updated successfully" });
+    } catch (error) {
+        console.log(error.message);
+        response.status(500).send({ message: error.message });
+    }
+});
+
 export default router;

@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { useSnackbar } from "notistack";
 import { Card } from "react-bootstrap";
+import EditIcon from "@mui/icons-material/Edit";
+import { Link } from "react-router-dom";
 
 import ReviewFilter from "../ReviewFilter/ReviewFilter";
 
-const ReviewDisplay = ({ reviews }) => {
-    console.log(reviews);
+const ReviewDisplay = ({ reviews, view }) => {
     const { enqueueSnackbar } = useSnackbar();
     const formatDate = (input) => {
         const date = new Date(input);
@@ -123,7 +124,7 @@ const ReviewDisplay = ({ reviews }) => {
 
     return (
         <div>
-            <h2 className="">Reviews</h2>
+            {view !== "account" && <h2 className="">Reviews</h2>}
             <ReviewFilter
                 minUsefulness={minUsefulness}
                 setMinUsefulnessHelper={setMinUsefulnessHelper}
@@ -193,6 +194,15 @@ const ReviewDisplay = ({ reviews }) => {
                                     {review.review}
                                 </Card.Text>
                             )}
+
+                            {view === "account" && (
+                                <Link
+                                    className="text-black"
+                                    to={`/account/reviews/edit-review/${review._id}`}
+                                >
+                                    <EditIcon />
+                                </Link>
+                            )}
                         </Card.Body>
                     </Card>
                 ))}
@@ -217,6 +227,7 @@ ReviewDisplay.propTypes = {
             date: PropTypes.string.isRequired,
         })
     ),
+    view: PropTypes.string,
 };
 
 export default ReviewDisplay;
