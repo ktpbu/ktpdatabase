@@ -95,16 +95,38 @@ app.use("/auth", authRoutes);
 app.use("/calendar", calendarRoutes);
 app.use("/professional", professionalRoutes);
 
-mongoose
-    .connect(process.env.MONGODBURI)
-    .then(() => {
-        console.log("App is connected to MongoDB");
-        app.listen(port, () => {
-            console.log(`App is listening to port: ${port}`);
+async function connectDatabasesAndStartServer() {
+    try {
+        const db1 = await mongoose.createConnection(process.env.MONGODBURI);
+
+        const db2 = await mongoose.createConnection(
+            process.env.MONGODBURI_MEMBERS
+        );
+
+        db1.on("connected", () => {
+            console.log("Connected to database 1");
         });
-    })
-    .catch((error) => {
-        console.log(error);
-    });
+
+        db1.on("error", (error) => {
+            console.log("Error connecting to database 1:", error);
+        });
+
+        db2.on("connected", () => {
+            console.log("Connected to database 2");
+        });
+
+        db2.on("error", (error) => {
+            console.log("Error connecting to database 2:", error);
+        });
+
+        app.listen(port, () => {
+            console.log(`App is listening on port: ${port}`);
+        });
+    } catch (error) {
+        console.log("Error connecting to databases:", error);
+    }
+}
+
+connectDatabasesAndStartServer();
 
 export default app;

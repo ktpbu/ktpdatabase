@@ -50,7 +50,9 @@ const reviewSchema = mongoose.Schema(
     { versionKey: false }
 );
 
-export const Reviews = mongoose.model(
+const db1 = mongoose.createConnection(process.env.MONGODBURI);
+
+export const Reviews = db1.model(
     "review entry",
     reviewSchema,
     "review-collection"
