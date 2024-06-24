@@ -4,7 +4,6 @@ import { Card } from "react-bootstrap";
 import DeleteUserModal from "../DeleteUserModal/DeleteUser";
 
 const UserDisplay = ({ users }) => {
-    console.log(users);
     return (
         <div>
             <div className="w-144 max-w-full h-96 overflow-y-scroll mx-auto mt-4 flex flex-col justify-around border-2 border-black">
