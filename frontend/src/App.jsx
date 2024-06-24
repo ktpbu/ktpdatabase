@@ -26,6 +26,7 @@ import AddUser from "./pages/Account/AddUser.jsx";
 import Admin from "./pages/Account/Admin.jsx";
 import AdminReviews from "./pages/Account/AdminReviews.jsx";
 import AdminUsers from "./pages/Account/AdminUsers.jsx";
+import Directory from "./pages/Account/Directory.jsx";
 import EditReview from "./pages/Account/EditReview.jsx";
 import Reviews from "./pages/Account/Reviews.jsx";
 
@@ -101,6 +102,10 @@ const App = () => {
                         <Route
                             path="/account/admin/users/add"
                             element={<AddUser />}
+                        />
+                        <Route
+                            path="/account/directory"
+                            element={<Directory />}
                         />
                         <Route path="/account/reviews" element={<Reviews />} />
                         <Route

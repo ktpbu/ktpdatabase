@@ -181,6 +181,10 @@ const EditReview = () => {
 
     return (
         <div className="w-3/4 mx-auto py-20">
+            <h2 className="text-start p-3 my-auto">
+                Edit Review for {reviewResponse.course_id}
+            </h2>
+
             <Breadcrumb className="p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="/account/reviews">
@@ -188,10 +192,6 @@ const EditReview = () => {
                 </Breadcrumb.Item>
                 <Breadcrumb.Item active>Edit Review</Breadcrumb.Item>
             </Breadcrumb>
-
-            <h2 className="text-start p-3 my-auto">
-                Edit Review for {reviewResponse.course_id}
-            </h2>
 
             {selectDropdowns.map((item) => (
                 <div
