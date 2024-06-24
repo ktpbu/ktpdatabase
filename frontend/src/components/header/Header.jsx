@@ -48,8 +48,9 @@ const Header = () => {
         setModalOpen(false);
     };
 
-    const handleMembers = () => {
-        console.log("profile");
+    const handleDirectory = () => {
+        navigate("/account/directory");
+        setModalOpen(false);
     };
 
     const handleReviews = () => {
@@ -143,7 +144,7 @@ const Header = () => {
                                         >
                                             {userData.is_admin && (
                                                 <button
-                                                    className="w-24 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                    className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
                                                     type="button"
                                                     onClick={handleAdmin}
                                                 >
@@ -151,21 +152,21 @@ const Header = () => {
                                                 </button>
                                             )}
                                             <button
-                                                className="w-24 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
                                                 type="button"
-                                                onClick={handleMembers}
+                                                onClick={handleDirectory}
                                             >
-                                                Profile
+                                                Directory
                                             </button>
                                             <button
-                                                className="w-24 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
                                                 type="button"
                                                 onClick={handleReviews}
                                             >
                                                 Reviews
                                             </button>
                                             <button
-                                                className="w-24 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
                                                 type="button"
                                                 onClick={handleLogout}
                                             >
