@@ -69,7 +69,7 @@ const Directory = () => {
             </Breadcrumb>
 
             {members.length > 0 && (
-                <table className="max-w-full mx-auto">
+                <table className="max-w- mx-auto">
                     <tr>
                         {tableColumnHeaders.map((header, index) => (
                             <th
