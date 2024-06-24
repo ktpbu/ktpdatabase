@@ -1,6 +1,7 @@
 import express from "express";
 import { Users } from "../models/userModel.js";
 import { Reviews } from "../models/reviewModel.js";
+import { Members } from "../models/MemberModel.js";
 
 const router = express.Router();
 
@@ -57,6 +58,20 @@ router.delete("/admin/delete-user/:id", async (request, response) => {
     } catch (error) {
         console.log(error.message);
         response.status(500).send({ message: error.message });
+    }
+});
+
+// get all members
+router.get("/directory/get-members", async (req, res) => {
+    console.log(req);
+    try {
+        const members = await Members.find({}).sort({
+            FirstName: 1,
+        });
+        return res.status(200).json(members);
+    } catch (error) {
+        console.error(error.message);
+        return res.status(500).send({ message: error.message });
     }
 });
 
