@@ -17,6 +17,7 @@ import Graduate from "./pages/Academics/Graduate";
 // professional
 import Professional from "./pages/Professional/Professional";
 import OtherKTPChapters from "./pages/Professional/OtherKTPChapters";
+import Internships from "./pages/Professional/Internships.jsx";
 
 // calendar
 import Calendar from "./pages/Calendar/Calendar";
@@ -84,6 +85,10 @@ const App = () => {
                         <Route
                             path="/professional/other-ktp-chapters"
                             element={<OtherKTPChapters />}
+                        />
+                        <Route
+                            path="/professional/internships"
+                            element={<Internships />}
                         />
 
                         {/* calendar routes */}
