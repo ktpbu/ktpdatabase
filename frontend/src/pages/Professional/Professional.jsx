@@ -1,6 +1,7 @@
 import { Breadcrumb, Card } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import ktplogolandscape from "./../../assets/ktplogolandscape.png";
+import internship from "./../../assets/intern.png";
 import { useEffect, useCallback } from "react";
 import axios from "axios";
 
@@ -12,6 +13,12 @@ const professionalOptions = [
         image: ktplogolandscape,
         header: "KTP Chapters",
         text: "Links to websites of other KTP chapters",
+    },
+    {
+    link: "/professional/Internships",
+    image: internship, 
+    header: "Internships",
+    text: "Useful resources for getting internships",
     },
 ];
 
