@@ -113,6 +113,8 @@ useEffect(() => {
 ```
 
 ### How to Run the Course Scraper
+IMPORTANT: PLEASE DO NOT RUN THIS FILE WITHOUT CONSULTING WITH VICTOR
+
 The course scraper is located at the path `./backend/scrapers/CourseScraper.py`.
 1. Navigate to the `backend` folder.
 2. Run `pip install -r ./requirements.txt`.
@@ -120,6 +122,8 @@ The course scraper is located at the path `./backend/scrapers/CourseScraper.py`.
 4. Run `CourseScraper.py` and the course information will be stored in Supabase in the `course-info` table.
 
 ### How to Run the Professor Scraper
+IMPORTANT: PLEASE DO NOT RUN THIS FILE WITHOUT CONSULTING WITH VICTOR
+
 The professor scraper is located at the path `./backend/scrapers/ProfScraper.py`.
 1. Navigate to the `backend` folder.
 2. Run `pip install -r ./requirements.txt`.
@@ -143,7 +147,9 @@ The professor scraper is located at the path `./backend/scrapers/ProfScraper.py`
         |_ Other KTP Chapters
     |_ Calendar
     |_ Account
-        |_ Admin (if applicable)
+        |_ Admin (requires admin privileges)
+          |_ Manage Users
+          |_ Manage Reviews
         |_ Profile
         |_ Reviews
 ```
