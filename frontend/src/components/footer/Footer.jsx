@@ -6,7 +6,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
     return (
-        <footer className="mx-auto p-3 flex flex-wrap justify-around bg-gray-100">
+        <footer className="w-full mx-auto p-3 flex flex-wrap justify-around bg-gray-100">
             <div className="text-gray-500">
                 &#169; 2023, Kappa Theta Pi Lambda Chapter
             </div>
