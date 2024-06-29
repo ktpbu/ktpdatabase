@@ -1,50 +1,63 @@
 import PropTypes from "prop-types";
-import { Card } from "react-bootstrap";
 
 import DeleteUserModal from "../DeleteUserModal/DeleteUser";
 
 const UserDisplay = ({ users }) => {
+    const tableColumnHeaders = [
+        "Index",
+        "First",
+        "Last",
+        "BU Email",
+        "Class",
+        "Admin",
+    ];
+    const tableColumnData = ["first", "last", "bu_email", "class", "is_admin"];
     return (
         <div>
-            <div className="w-144 max-w-full h-96 overflow-y-scroll mx-auto mt-4 flex flex-col justify-around border-2 border-black">
-                {users.map((user, index) => (
-                    <Card
-                        key={index}
-                        className={`w-112 h-fit mx-auto mt-4 ${
-                            index === users.length - 1 && "mb-4"
-                        } flex flex-col flex-around border-1 border-gray-200 rounded-md bg-purple-100`}
-                    >
-                        <Card.Header>
-                            <div className="w-96 mx-2 flex justify-between">
-                                <p className="my-auto text-xl font-semibold text-right">
-                                    {`${user.first} ${user.last}`}
-                                </p>
-                            </div>
-                        </Card.Header>
-                        <Card.Body className="my-auto bg-purple-100">
-                            <div className="w-96 mx-2 flex flex-wrap justify-between text-xl">
-                                <Card.Text>
-                                    Email:{" "}
-                                    <span className="text-2xl font-semibold">
-                                        {user.bu_email}
-                                    </span>
-                                </Card.Text>
-                                <Card.Text>
-                                    Class:{" "}
-                                    <span className="text-2xl font-semibold">
-                                        {user.class}
-                                    </span>
-                                </Card.Text>
-                            </div>
-                            <DeleteUserModal
-                                first={user.first}
-                                last={user.last}
-                                id={user._id}
-                            />
-                        </Card.Body>
-                    </Card>
-                ))}
-            </div>
+            {users.length > 0 && (
+                <table className="max-w- mx-auto">
+                    <tr>
+                        {tableColumnHeaders.map((header, index) => (
+                            <th
+                                key={index}
+                                className="w-fit p-2 text-start border-2 border-gray-200"
+                            >
+                                {header}
+                            </th>
+                        ))}
+                    </tr>
+                    {users.map((user, index) => (
+                        <tr key={index}>
+                            <td className="w-fit p-2 text-center border-2 border-gray-200">
+                                {index + 1}
+                            </td>
+                            {tableColumnData.map((key, index) => (
+                                <td
+                                    key={index}
+                                    className={`w-fit p-2 ${
+                                        key === "is_admin"
+                                            ? "text-center"
+                                            : "text-start"
+                                    } border-2 border-gray-200`}
+                                >
+                                    {key === "is_admin"
+                                        ? user[key]
+                                            ? "Yes"
+                                            : "No"
+                                        : user[key]}
+                                </td>
+                            ))}
+                            <td>
+                                <DeleteUserModal
+                                    first={user.first}
+                                    last={user.last}
+                                    id={user._id}
+                                />
+                            </td>
+                        </tr>
+                    ))}
+                </table>
+            )}
         </div>
     );
 };

@@ -37,12 +37,18 @@ const AddUser = () => {
             last: "",
             bu_email: "",
             class: "",
-            is_admin: null,
+            is_admin: "false",
         },
     });
 
     const handleUserReset = () => {
-        reset({ first: "", last: "", bu_email: "", class: "", is_admin: null });
+        reset({
+            first: "",
+            last: "",
+            bu_email: "",
+            class: "",
+            is_admin: "false",
+        });
     };
 
     const { register, handleSubmit, reset, formState } = addUserForm;
@@ -52,6 +58,7 @@ const AddUser = () => {
     const onSubmit = (data) => {
         const userObj = {
             ...data,
+            bu_email: data.bu_email.toLowerCase(),
             is_admin: data.is_admin === "true",
         };
         console.log("Form submitted", userObj);
@@ -176,6 +183,7 @@ const AddUser = () => {
                         <option value={"Founder"}>Founder</option>
                         <option value={"Alpha"}>Alpha</option>
                         <option value={"Beta"}>Beta</option>
+                        <option value={"Gamma"}>Gamma</option>
                     </select>
                     <p className="error text-red-500">
                         {errors.class?.message}
