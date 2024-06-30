@@ -140,16 +140,16 @@ const ReviewDisplay = ({ reviews, view }) => {
                 maxRating={maxRating}
                 setMaxRatingHelper={setMaxRatingHelper}
             />
-            <div className="w-144 max-w-full h-96 overflow-y-scroll mx-auto mt-4 flex flex-col justify-around border-2 border-black">
+            <div className="w-144 max-w-full h-96 overflow-x-hidden overflow-y-scroll mx-auto mt-4 flex flex-col justify-around border-2 border-black">
                 {filteredReviews.map((review, index) => (
                     <Card
                         key={index}
-                        className={`w-112 h-fit mx-auto mt-4 ${
+                        className={`w-112 max-w-full h-fit mx-2 mt-4 ${
                             index === reviews.length - 1 && "mb-4"
-                        } flex flex-col flex-around border-1 border-gray-200 rounded-md bg-purple-100`}
+                        } flex flex-col self-center flex-around border-1 border-gray-200 rounded-md bg-purple-100`}
                     >
                         <Card.Header>
-                            <div className="w-96 mx-2 flex justify-between">
+                            <div className="w-96 max-w-full mx-2 flex justify-between">
                                 <p className="my-auto text-xl font-semibold text-right">
                                     {review.anon ? "Anonymous" : review.user}
                                 </p>
@@ -159,7 +159,7 @@ const ReviewDisplay = ({ reviews, view }) => {
                             </div>
                         </Card.Header>
                         <Card.Body className="my-auto bg-purple-100">
-                            <div className="w-96 mx-2 flex flex-wrap justify-between text-xl">
+                            <div className="w-96 max-w-full mx-2 flex flex-wrap justify-between text-xl">
                                 <Card.Text className="text-xl text-left">
                                     Professor{" "}
                                     <span className="font-semibold">
@@ -173,7 +173,7 @@ const ReviewDisplay = ({ reviews, view }) => {
                                 </Card.Text>
                             </div>
 
-                            <div className="w-96 mx-2 flex flex-wrap justify-between text-xl">
+                            <div className="w-96 max-w-full mx-2 flex flex-wrap justify-between text-xl">
                                 <Card.Text>
                                     Usefulness:{" "}
                                     <span className="text-2xl font-semibold">
@@ -198,13 +198,13 @@ const ReviewDisplay = ({ reviews, view }) => {
                             </div>
 
                             {review.review && (
-                                <Card.Text className="w-96 mx-2 text-xl text-start">
+                                <Card.Text className="w-96 max-w-full mx-2 text-xl text-start">
                                     {review.review}
                                 </Card.Text>
                             )}
 
                             {view === "account" && (
-                                <div className="w-24 mx-auto flex justify-between">
+                                <div className="w-24 max-w-full mx-auto flex justify-between">
                                     <Link
                                         className="text-black"
                                         to={`/account/reviews/edit-review/${review._id}`}
