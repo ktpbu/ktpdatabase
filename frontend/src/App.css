@@ -3,4 +3,13 @@
     text-align: center;
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: #f3f4f6;
+}
 
+::-webkit-scrollbar-thumb {
+    width: 4px;
+    background-color: #d1d5db;
+    border-radius: 10px;
+}
