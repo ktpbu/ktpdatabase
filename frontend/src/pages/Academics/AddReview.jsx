@@ -16,14 +16,11 @@ const AddReview = () => {
     const navigate = useNavigate();
 
     const [user, setUser] = useState(null);
-    const first = localStorage.getItem("first");
-    const last = localStorage.getItem("last");
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, async (user) => {
             if (user) {
                 setUser(user);
-
                 return;
             }
             setUser(null);
@@ -31,7 +28,6 @@ const AddReview = () => {
         return () => unsubscribe();
     }, []);
 
-    const name = `${first} ${last}`;
     const { level, id } = useParams();
     const [professors, setProfessors] = useState([]);
     const [professor, setProfessor] = useState({ value: "", label: "" });
@@ -134,7 +130,7 @@ const AddReview = () => {
             });
         } else {
             const reviewObj = {
-                user: name,
+                user: user.displayName,
                 bu_email: user.email,
                 anon,
                 id,

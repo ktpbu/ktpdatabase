@@ -28,7 +28,6 @@ const Home = () => {
 
                 localStorage.setItem("is_admin", response.data.is_admin);
                 localStorage.setItem("first", response.data.first);
-                localStorage.setItem("last", response.data.last);
 
                 window.location.reload();
             } catch (error) {

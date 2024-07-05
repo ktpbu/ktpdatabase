@@ -19,8 +19,6 @@ const EditReview = () => {
     const { id } = useParams();
 
     const [user, setUser] = useState(null);
-    const first = localStorage.getItem("first");
-    const last = localStorage.getItem("last");
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, async (user) => {
@@ -52,7 +50,6 @@ const EditReview = () => {
 
     const [professors, setProfessors] = useState([]);
 
-    const name = `${first} ${last}`;
     const [professor, setProfessor] = useState({});
     const [usefulness, setUsefulness] = useState({ value: "", label: "" });
     const [difficulty, setDifficulty] = useState({ value: "", label: "" });
@@ -150,7 +147,7 @@ const EditReview = () => {
             });
         } else {
             const reviewObj = {
-                user: name,
+                user: user.displayName,
                 bu_email: user.email,
                 anon,
                 id,

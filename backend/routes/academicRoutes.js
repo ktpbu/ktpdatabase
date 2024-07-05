@@ -7,18 +7,18 @@ import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 
 // course dependency imports
-const csEdges = require("data/academics/courses/dependencies/edges/computer-science-edges.json");
-const csNodes = require("data/academics/courses/dependencies/nodes/computer-science-nodes.json");
-const dsEdges = require("data/academics/courses/dependencies/edges/data-science-edges.json");
-const dsNodes = require("data/academics/courses/dependencies/nodes/data-science-nodes.json");
-const econEdges = require("data/academics/courses/dependencies/edges/economics-edges.json");
-const econNodes = require("data/academics/courses/dependencies/nodes/economics-nodes.json");
-const mathEdges = require("data/academics/courses/dependencies/edges/mathematics-statistics-edges.json");
-const mathNodes = require("data/academics/courses/dependencies/nodes/mathematics-statistics-nodes.json");
+const csEdges = require("../data/academics/courses/dependencies/edges/computer-science-edges.json");
+const csNodes = require("../data/academics/courses/dependencies/nodes/computer-science-nodes.json");
+const dsEdges = require("../data/academics/courses/dependencies/edges/data-science-edges.json");
+const dsNodes = require("../data/academics/courses/dependencies/nodes/data-science-nodes.json");
+const econEdges = require("../data/academics/courses/dependencies/edges/economics-edges.json");
+const econNodes = require("../data/academics/courses/dependencies/nodes/economics-nodes.json");
+const mathEdges = require("../data/academics/courses/dependencies/edges/mathematics-statistics-edges.json");
+const mathNodes = require("../data/academics/courses/dependencies/nodes/mathematics-statistics-nodes.json");
 
 // academic resources imports
-const jointMajors = require("data/academics/resources/joint-majors.json");
-const usefulLinks = require("data/academics/resources/useful-links.json");
+const jointMajors = require("../data/academics/resources/joint-majors.json");
+const usefulLinks = require("../data/academics/resources/useful-links.json");
 
 const subjectMap = {
     "biomedical-eng": {
