@@ -1,28 +1,14 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useState, useEffect, useMemo, useCallback } from "react";
+import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import { Breadcrumb } from "react-bootstrap";
 
-import ReviewDisplay from "../../components/ReviewDisplay/ReviewDisplay";
+import ReviewDisplay from "../../components/ReviewDisplay";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Course = () => {
     const navigate = useNavigate();
-
-    const getUser = useCallback(async () => {
-        try {
-            await axios.get(`${backend}/auth/google/login/success`, {
-                withCredentials: true,
-            });
-        } catch (error) {
-            navigate("/error/login");
-        }
-    }, [navigate]);
-
-    useEffect(() => {
-        getUser();
-    }, [getUser]);
 
     const { level, id } = useParams();
     const [courseInfo, setCourseInfo] = useState("");

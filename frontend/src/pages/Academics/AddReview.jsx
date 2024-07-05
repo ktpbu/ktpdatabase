@@ -1,11 +1,13 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { Breadcrumb } from "react-bootstrap";
-import { useState, useMemo, useEffect, useCallback } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useSnackbar } from "notistack";
 import axios from "axios";
 import Select from "react-select";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../../firebase";
 
-import CustomCheckbox from "../../components/CustomCheckbox/CustomCheckbox";
+import CustomCheckbox from "../../components/CustomCheckbox";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
@@ -13,27 +15,23 @@ const AddReview = () => {
     const { enqueueSnackbar } = useSnackbar();
     const navigate = useNavigate();
 
-    const [userData, setUserData] = useState({});
-
-    const getUser = useCallback(async () => {
-        try {
-            const response = await axios.get(
-                `${backend}/auth/google/login/success`,
-                {
-                    withCredentials: true,
-                }
-            );
-            setUserData(response.data.user);
-        } catch (error) {
-            navigate("/error/login");
-        }
-    }, [navigate]);
+    const [user, setUser] = useState(null);
+    const first = localStorage.getItem("first");
+    const last = localStorage.getItem("last");
 
     useEffect(() => {
-        getUser();
-    }, [getUser]);
+        const unsubscribe = onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                setUser(user);
 
-    const user = `${userData.first} ${userData.last}`;
+                return;
+            }
+            setUser(null);
+        });
+        return () => unsubscribe();
+    }, []);
+
+    const name = `${first} ${last}`;
     const { level, id } = useParams();
     const [professors, setProfessors] = useState([]);
     const [professor, setProfessor] = useState({ value: "", label: "" });
@@ -136,8 +134,8 @@ const AddReview = () => {
             });
         } else {
             const reviewObj = {
-                user,
-                bu_email: userData.bu_email,
+                user: name,
+                bu_email: user.email,
                 anon,
                 id,
                 professor: professor.value,

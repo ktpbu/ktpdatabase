@@ -1,5 +1,5 @@
 import Select from "react-select";
-import PropTypes, { number, string } from "prop-types";
+import PropTypes from "prop-types";
 
 const ReviewFilter = ({
     minUsefulness,
@@ -142,17 +142,35 @@ const ReviewFilter = ({
 };
 
 ReviewFilter.propTypes = {
-    minUsefulness: PropTypes.shape({ value: number, label: string }).isRequired,
+    minUsefulness: PropTypes.shape({
+        value: PropTypes.number,
+        label: PropTypes.string,
+    }).isRequired,
     setMinUsefulnessHelper: PropTypes.func.isRequired,
-    maxUsefulness: PropTypes.shape({ value: number, label: string }).isRequired,
+    maxUsefulness: PropTypes.shape({
+        value: PropTypes.number,
+        label: PropTypes.string,
+    }).isRequired,
     setMaxUsefulnessHelper: PropTypes.func.isRequired,
-    minDifficulty: PropTypes.shape({ value: number, label: string }).isRequired,
+    minDifficulty: PropTypes.shape({
+        value: PropTypes.number,
+        label: PropTypes.string,
+    }).isRequired,
     setMinDifficultyHelper: PropTypes.func.isRequired,
-    maxDifficulty: PropTypes.shape({ value: number, label: string }).isRequired,
+    maxDifficulty: PropTypes.shape({
+        value: PropTypes.number,
+        label: PropTypes.string,
+    }).isRequired,
     setMaxDifficultyHelper: PropTypes.func.isRequired,
-    minRating: PropTypes.shape({ value: number, label: string }).isRequired,
+    minRating: PropTypes.shape({
+        value: PropTypes.number,
+        label: PropTypes.string,
+    }).isRequired,
     setMinRatingHelper: PropTypes.func.isRequired,
-    maxRating: PropTypes.shape({ value: number, label: string }).isRequired,
+    maxRating: PropTypes.shape({
+        value: PropTypes.number,
+        label: PropTypes.string,
+    }).isRequired,
     setMaxRatingHelper: PropTypes.func.isRequired,
 };
 

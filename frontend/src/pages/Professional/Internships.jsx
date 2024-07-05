@@ -1,13 +1,7 @@
-import { useEffect, useCallback, useState } from "react";
+import { useState } from "react";
 import { Breadcrumb, Card } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
-
-const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Internships = () => {
-    const navigate = useNavigate();
-
     const [internshipResources] = useState([
         {
             header: "Job Websites",
@@ -62,20 +56,6 @@ const Internships = () => {
             ],
         },
     ]);
-
-    const getUser = useCallback(async () => {
-        try {
-            await axios.get(`${backend}/auth/google/login/success`, {
-                withCredentials: true,
-            });
-        } catch (error) {
-            navigate("/error/login");
-        }
-    }, [navigate]);
-
-    useEffect(() => {
-        getUser();
-    }, [getUser]);
 
     return (
         <div className="w-3/4 mx-auto py-20">

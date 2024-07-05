@@ -1,36 +1,33 @@
+import admin from "../firebase.js";
 import express from "express";
-import passport from "passport";
+import { Users } from "../models/userModel.js";
 
 const router = express.Router();
 
-router.get(
-    "/google",
-    passport.authenticate("google", { scope: ["profile", "email"] })
-);
+async function verifyToken(req, res, next) {
+    const idToken = req.headers.authorization;
 
-router.get(
-    "/google/callback",
-    passport.authenticate("google", {
-        successRedirect: `${process.env.CLIENT_URL}`,
-        failureRedirect: `${process.env.CLIENT_URL}/error/authentication`,
-    })
-);
-
-router.get("/google/login/success", async (req, res) => {
-    if (req.user) {
-        res.status(200).json({ message: "user login", user: req.user });
-    } else {
-        res.status(400).json({ message: "user not authorized" });
+    if (!idToken) {
+        return res.status(401).send("token is required");
     }
-});
 
-router.get("/google/logout", (req, res, next) => {
-    req.logout(function (err) {
-        if (err) {
-            return next(err);
-        }
-        res.redirect("http://localhost:5173");
-    });
+    try {
+        const decodedToken = await admin.auth().verifyIdToken(idToken);
+        req.user = decodedToken;
+        next();
+    } catch (error) {
+        console.log(error);
+        return res.status(401).send("token verification failed");
+    }
+}
+
+router.post("/protected", verifyToken, async (req, res) => {
+    const email = req.user.email;
+    let user = await Users.findOne({ bu_email: email });
+    if (!user) {
+        return res.status(401).send("user not authorized");
+    }
+    res.status(200).send(user);
 });
 
 export default router;

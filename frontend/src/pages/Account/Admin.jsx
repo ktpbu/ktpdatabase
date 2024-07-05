@@ -1,32 +1,8 @@
-import { useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import { Breadcrumb } from "react-bootstrap";
-
-const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Admin = () => {
     const navigate = useNavigate();
-
-    const getUser = useCallback(async () => {
-        try {
-            const response = await axios.get(
-                `${backend}/auth/google/login/success`,
-                {
-                    withCredentials: true,
-                }
-            );
-            if (!response.data.user.is_admin) {
-                navigate("/error/admin");
-            }
-        } catch (error) {
-            navigate("/error/login");
-        }
-    }, [navigate]);
-
-    useEffect(() => {
-        getUser();
-    }, [getUser]);
 
     return (
         <div className="w-3/4 mx-auto py-20">

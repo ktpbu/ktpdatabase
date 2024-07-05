@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import PropTypes from "prop-types";
 
-import DependencyMap from "../../components/DependencyMap/DependencyMap";
+import DependencyMap from "./DependencyMap";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 

@@ -1,38 +1,37 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import Container from "react-bootstrap/container";
 import { Link, useNavigate } from "react-router-dom";
 import Nav from "react-bootstrap/nav";
 import Navbar from "react-bootstrap/navbar";
-import axios from "axios";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../firebase";
 
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Box } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 
-const backend = import.meta.env.VITE_BACKEND_URL;
-
 const Header = () => {
     const navigate = useNavigate();
-    const [userData, setUserData] = useState({});
 
-    const getUser = useCallback(async () => {
-        try {
-            const response = await axios.get(
-                `${backend}/auth/google/login/success`,
-                {
-                    withCredentials: true,
-                }
-            );
-            setUserData(response.data.user);
-        } catch (error) {
-            console.log(error);
-        }
-    }, []);
+    const [user, setUser] = useState(null);
+    const [isAdmin, setIsAdmin] = useState(null);
+    const [first, setFirst] = useState("");
+    const [last, setLast] = useState("");
 
     useEffect(() => {
-        getUser();
-    }, [getUser]);
+        const unsubscribe = onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                setUser(user);
+                setIsAdmin(localStorage.getItem("is_admin"));
+                setFirst(localStorage.getItem("first"));
+                setLast(localStorage.getItem("last"));
+                return;
+            }
+            setUser(null);
+        });
+        return () => unsubscribe();
+    }, []);
 
     const [modalOpen, setModalOpen] = useState(false);
 
@@ -59,7 +58,10 @@ const Header = () => {
     };
 
     const handleLogout = () => {
-        window.open(`${backend}/auth/google/logout`, "_self");
+        setModalOpen(false);
+        navigate("/");
+        auth.signOut();
+        localStorage.clear();
     };
 
     const style = {
@@ -68,7 +70,7 @@ const Header = () => {
         left: "50%",
         transform: "translate(-50%, -50%)",
         width: 400,
-        height: userData.is_admin ? 350 : 300,
+        height: isAdmin ? 350 : 300,
         bgcolor: "background.paper",
         border: "2px solid #000",
         boxShadow: 24,
@@ -118,7 +120,7 @@ const Header = () => {
                                 </Link>
                             </Nav.Link>
 
-                            {Object.keys(userData).length > 0 && (
+                            {user && (
                                 <button onClick={handleModalOpen}>
                                     <AccountCircleIcon
                                         className="m-auto"
@@ -134,15 +136,13 @@ const Header = () => {
                             >
                                 <Fade in={modalOpen}>
                                     <Box sx={style}>
-                                        <h2 className="text-center">{`${userData?.first} ${userData?.last}`}</h2>
+                                        <h2 className="text-center">{`${first} ${last}`}</h2>
                                         <div
                                             className={`${
-                                                userData.is_admin
-                                                    ? "h-56"
-                                                    : "h-40"
+                                                isAdmin ? "h-56" : "h-40"
                                             } mt-4 flex flex-col justify-between`}
                                         >
-                                            {userData.is_admin && (
+                                            {isAdmin && (
                                                 <button
                                                     className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
                                                     type="button"

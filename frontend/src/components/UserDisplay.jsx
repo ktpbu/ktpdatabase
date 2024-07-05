@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import DeleteUserModal from "../DeleteUserModal/DeleteUser";
+import DeleteUserModal from "./DeleteUserModal";
 
 const UserDisplay = ({ users }) => {
     const tableColumnHeaders = [

@@ -1,5 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "./firebase.js";
+
+import ProtectedRoute from "./components/ProtectedRoute";
 
 // layout and home
 import Layout from "./Layout";
@@ -40,9 +44,29 @@ import LoginError from "./pages/Error/LoginError";
 // main app
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useEffect, useState } from "react";
 
 // creates routings of app --> used for sending pages when requested
 const App = () => {
+    const [user, setUser] = useState(null);
+    const [isFetching, setIsFetching] = useState(true);
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUser(user);
+                setIsFetching(false);
+                return;
+            }
+            setUser(null);
+            setIsFetching(false);
+        });
+        return () => unsubscribe();
+    }, []);
+
+    if (isFetching) {
+        return <h2>Loading...</h2>;
+    }
+
     return (
         <div>
             <SnackbarProvider>
@@ -51,71 +75,155 @@ const App = () => {
                         <Route index element={<Home />} />
 
                         {/* academic routes */}
-                        <Route path="/academics" element={<Academics />} />
+                        <Route
+                            path="/academics"
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <Academics />
+                                </ProtectedRoute>
+                            }
+                        />
                         <Route
                             path="/academics/courses"
-                            element={<CourseList />}
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <CourseList />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/academics/courses/:level/:id"
-                            element={<Course />}
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <Course />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/academics/courses/:level/:id/add-review"
-                            element={<AddReview />}
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <AddReview />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/academics/courses/dependencies/:subject"
-                            element={<Dependencies />}
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <Dependencies />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/academics/resources"
-                            element={<AcademicResources />}
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <AcademicResources />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/academics/graduate"
-                            element={<Graduate />}
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <Graduate />
+                                </ProtectedRoute>
+                            }
                         />
 
                         {/* professional routes */}
                         <Route
                             path="/professional"
-                            element={<Professional />}
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <Professional />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/professional/other-ktp-chapters"
-                            element={<OtherKTPChapters />}
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <OtherKTPChapters />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/professional/internships"
-                            element={<Internships />}
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <Internships />
+                                </ProtectedRoute>
+                            }
                         />
 
                         {/* calendar routes */}
-                        <Route path="/calendar" element={<Calendar />} />
+                        <Route
+                            path="/calendar"
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <Calendar />
+                                </ProtectedRoute>
+                            }
+                        />
 
                         {/* account routes */}
-                        <Route path="/account/admin" element={<Admin />} />
+                        <Route
+                            path="/account/admin"
+                            element={
+                                <ProtectedRoute user={user} admin={true}>
+                                    <Admin />
+                                </ProtectedRoute>
+                            }
+                        />
                         <Route
                             path="/account/admin/reviews"
-                            element={<AdminReviews />}
+                            element={
+                                <ProtectedRoute user={user} admin={true}>
+                                    <AdminReviews />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/account/admin/users"
-                            element={<AdminUsers />}
+                            element={
+                                <ProtectedRoute user={user} admin={true}>
+                                    <AdminUsers />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/account/admin/users/add"
-                            element={<AddUser />}
+                            element={
+                                <ProtectedRoute user={user} admin={true}>
+                                    <AddUser />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/account/directory"
-                            element={<Directory />}
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <Directory />
+                                </ProtectedRoute>
+                            }
                         />
-                        <Route path="/account/reviews" element={<Reviews />} />
+                        <Route
+                            path="/account/reviews"
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <Reviews />
+                                </ProtectedRoute>
+                            }
+                        />
                         <Route
                             path="/account/reviews/edit-review/:id"
-                            element={<EditReview />}
+                            element={
+                                <ProtectedRoute user={user} admin={false}>
+                                    <EditReview />
+                                </ProtectedRoute>
+                            }
                         />
 
                         {/* error routes */}
