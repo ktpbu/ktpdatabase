@@ -44,7 +44,7 @@ The steps to set up your workflow are detailed in the file named `Git Workflow` 
 8. Run `npm i`, which installs all packages needed by the frontend.
 9. Navigate to the `backend` folder.
 10. Run `npm i` again to install all backend packages.
-11. Set up the `.env` files in both the frontend and the backend. In the shared Google Drive folder (<a href="https://drive.google.com/drive/u/1/folders/1bkA2QZQkNpFGQj8MW2tyx1N7N_cq5KCB" target="_blank">App Committee</a>), navigate to the folder called `ktpdatabase` and look at the document called `.env files` to set them up. If you need access to the folder, contact Victor or Carol.
+11. Set up the required private local files in both the frontend and the backend. In the shared Google Drive folder (<a href="https://drive.google.com/drive/u/1/folders/1bkA2QZQkNpFGQj8MW2tyx1N7N_cq5KCB" target="_blank">App Committee</a>), navigate to the folder called `ktpdatabase` and look at the document called `local files` to set them up. If you need access to the folder, contact Victor or Carol.
 12. Still in the `backend` folder, run `npm run dev` which starts up the backend server on `http://localhost:3000` (the configured default).
 14. Open another terminal window, navigate to the `frontend` folder, and run `npm run dev` again, which starts the frontend server at `http://localhost:5173/`.
 8. Both servers need to be up and running to get full functionality. Once both are up, go to your desired web browser and visit `http://localhost:5173/` to interact with the website.
@@ -92,25 +92,39 @@ You must update the `dotenv_path` parameter to match the path from your file to 
 Follow the relevant [JavaScript documentation](https://supabase.com/docs/reference/javascript/installing) or [Python documentation](https://supabase.com/docs/reference/python/installing) to implement any Supabase API calls.
 
 ### Limiting Page Access to Authenticated Users
-All pages on the website excluding the home and error pages should only be accessed by authenticated users. To do so, the following code snippet must be included on each page at the top of the function that defines that page:
+All pages on the website excluding the home and error pages should only be accessed by authenticated users. This can be done by wrapping each new route in `App.jsx` with the `<ProtectedRoute />` component, as shown in the example:
 
 ```
-const navigate = useNavigate();
-
-const getUser = useCallback(async () => {
-  try {
-    await axios.get(`${backend}/auth/google/login/success`, {
-      withCredentials: true,
-    });
-  } catch (error) {
-    navigate("/error/login");
+<Route
+  path="/academics"
+  element={
+    <ProtectedRoute user={user} admin={false}>
+      <Academics />
+    </ProtectedRoute>
   }
-}, [navigate]);
+/>
+```
+
+The `<ProtectedRoute />` component takes in two props and the child node. The `user` prop should always be set equal to the variable `user`. The `admin` prop should be set to either `true` or `false` depending on whether the page is restricted to admin access only. 
+
+It may sometimes be necessary to access user data on a page. To do so, include the following lines at the top of the page component:
+
+```
+const [user, setUser] = useState(null);
 
 useEffect(() => {
-  getUser();
-}, [getUser]);
+  const unsubscribe = onAuthStateChanged(auth, async (user) => {
+  if (user) {
+    setUser(user);
+    return;
+  }
+  setUser(null);
+  });
+  return () => unsubscribe();
+}, []);
 ```
+
+From the `user` state variable, it is possible to access Google account fields such `user.email` and `user.displayName`.
 
 ### How to Run the Course Scraper
 IMPORTANT: PLEASE DO NOT RUN THIS FILE WITHOUT CONSULTING WITH VICTOR
