@@ -5,7 +5,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../firebase";
 
 import ReviewDisplay from "../../components/ReviewDisplay";
-import Spinner from "../../components/Spinner/Spinner";
+import Spinner from "../../components/Spinner";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 

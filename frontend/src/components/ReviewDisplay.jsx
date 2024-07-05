@@ -6,7 +6,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import { Link } from "react-router-dom";
 
 import DeleteReviewModal from "./DeleteReviewModal";
-import ReviewFilter from "./ReviewFilter/ReviewFilter";
+import ReviewFilter from "./ReviewFilter";
 
 const ReviewDisplay = ({ reviews, view }) => {
     const { enqueueSnackbar } = useSnackbar();
