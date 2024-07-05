@@ -1,10 +1,12 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useCallback, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Breadcrumb } from "react-bootstrap";
 import Select from "react-select";
 import { useSnackbar } from "notistack";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../../firebase";
 
 import CustomCheckbox from "../../components/CustomCheckbox/CustomCheckbox";
 
@@ -14,26 +16,23 @@ const EditReview = () => {
     const navigate = useNavigate();
     const { enqueueSnackbar } = useSnackbar();
 
-    const [userData, setUserData] = useState({});
-    const getUser = useCallback(async () => {
-        try {
-            const response = await axios.get(
-                `${backend}/auth/google/login/success`,
-                {
-                    withCredentials: true,
-                }
-            );
-            setUserData(response.data.user);
-        } catch (error) {
-            navigate("/error/login");
-        }
-    }, [navigate]);
+    const { id } = useParams();
+
+    const [user, setUser] = useState(null);
+    const first = localStorage.getItem("first");
+    const last = localStorage.getItem("last");
 
     useEffect(() => {
-        getUser();
-    }, [getUser]);
+        const unsubscribe = onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                setUser(user);
 
-    const { id } = useParams();
+                return;
+            }
+            setUser(null);
+        });
+        return () => unsubscribe();
+    }, []);
 
     const [reviewResponse, setReviewResponse] = useState({});
 
@@ -53,7 +52,7 @@ const EditReview = () => {
 
     const [professors, setProfessors] = useState([]);
 
-    const user = `${userData.first} ${userData.last}`;
+    const name = `${first} ${last}`;
     const [professor, setProfessor] = useState({});
     const [usefulness, setUsefulness] = useState({ value: "", label: "" });
     const [difficulty, setDifficulty] = useState({ value: "", label: "" });
@@ -151,8 +150,8 @@ const EditReview = () => {
             });
         } else {
             const reviewObj = {
-                user,
-                bu_email: userData.bu_email,
+                user: name,
+                bu_email: user.email,
                 anon,
                 id,
                 professor: professor.value,

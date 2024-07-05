@@ -1,7 +1,8 @@
-import { useState, useEffect, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { Breadcrumb } from "react-bootstrap";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../../firebase";
 
 import ReviewDisplay from "../../components/ReviewDisplay/ReviewDisplay";
 import Spinner from "../../components/Spinner/Spinner";
@@ -9,40 +10,34 @@ import Spinner from "../../components/Spinner/Spinner";
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Reviews = () => {
-    const navigate = useNavigate();
-    const [userData, setUserData] = useState({});
-
-    const getUser = useCallback(async () => {
-        try {
-            const response = await axios.get(
-                `${backend}/auth/google/login/success`,
-                {
-                    withCredentials: true,
-                }
-            );
-            setUserData(response.data.user);
-        } catch (error) {
-            navigate("/error/login");
-        }
-    }, [navigate]);
+    const [user, setUser] = useState(null);
+    const first = localStorage.getItem("first");
 
     useEffect(() => {
-        getUser();
-    }, [getUser]);
+        const unsubscribe = onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                setUser(user);
+
+                return;
+            }
+            setUser(null);
+        });
+        return () => unsubscribe();
+    }, []);
 
     const [userReviews, setUserReviews] = useState([]);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const getUserReviews = async () => {
-            if (!userData.bu_email) {
+            if (!user.email) {
                 return;
             }
             try {
                 setLoading(true);
                 const response = await axios.post(
                     `${backend}/account/reviews/get-user-reviews`,
-                    { bu_email: userData.bu_email }
+                    { bu_email: user.email }
                 );
                 setUserReviews(response.data);
             } catch (error) {
@@ -51,11 +46,11 @@ const Reviews = () => {
             setLoading(false);
         };
         getUserReviews();
-    }, [userData.bu_email]);
+    }, [user]);
 
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h2 className="text-start p-3">{`${userData.first}'s`} Reviews</h2>
+            <h2 className="text-start p-3">{`${first}'s`} Reviews</h2>
 
             <Breadcrumb className="p-3">
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>

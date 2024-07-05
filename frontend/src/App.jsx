@@ -184,12 +184,27 @@ const App = () => {
                         />
                         <Route
                             path="/account/directory"
-                            element={<Directory />}
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <Directory />
+                                </ProtectedRoute>
+                            }
                         />
-                        <Route path="/account/reviews" element={<Reviews />} />
+                        <Route
+                            path="/account/reviews"
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <Reviews />
+                                </ProtectedRoute>
+                            }
+                        />
                         <Route
                             path="/account/reviews/edit-review/:id"
-                            element={<EditReview />}
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <EditReview />
+                                </ProtectedRoute>
+                            }
                         />
 
                         {/* error routes */}
