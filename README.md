@@ -44,7 +44,7 @@ The steps to set up your workflow are detailed in the file named `Git Workflow` 
 8. Run `npm i`, which installs all packages needed by the frontend.
 9. Navigate to the `backend` folder.
 10. Run `npm i` again to install all backend packages.
-11. Set up the required private local files in both the frontend and the backend. In the shared Google Drive folder (<a href="https://drive.google.com/drive/u/1/folders/1bkA2QZQkNpFGQj8MW2tyx1N7N_cq5KCB" target="_blank">App Committee</a>), navigate to the folder called `ktpdatabase` and look at the document called `local files` to set them up. If you need access to the folder, contact Victor or Carol.
+11. Set up the required private local files in both the frontend and the backend. In the shared Google Drive folder (<a href="https://drive.google.com/drive/u/1/folders/1bkA2QZQkNpFGQj8MW2tyx1N7N_cq5KCB" target="_blank">App Committee</a>), navigate to the folder called `ktpdatabase` and look at the document called `Local Files` to set them up. If you need access to the folder, contact Victor or Carol.
 12. Still in the `backend` folder, run `npm run dev` which starts up the backend server on `http://localhost:3000` (the configured default).
 14. Open another terminal window, navigate to the `frontend` folder, and run `npm run dev` again, which starts the frontend server at `http://localhost:5173/`.
 8. Both servers need to be up and running to get full functionality. Once both are up, go to your desired web browser and visit `http://localhost:5173/` to interact with the website.
