@@ -135,7 +135,14 @@ const App = () => {
                         />
 
                         {/* calendar routes */}
-                        <Route path="/calendar" element={<Calendar />} />
+                        <Route
+                            path="/calendar"
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <Calendar />
+                                </ProtectedRoute>
+                            }
+                        />
 
                         {/* account routes */}
                         <Route path="/account/admin" element={<Admin />} />
