@@ -1,6 +1,6 @@
 import { Breadcrumb } from "react-bootstrap";
 
-import CourseListItem from "../../components/CourseListItem/CourseListItem";
+import CourseListItem from "../../components/CourseListItem";
 
 const gradSubjectInfo = {
     "biomedical-eng-g": {

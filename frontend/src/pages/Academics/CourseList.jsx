@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Breadcrumb } from "react-bootstrap";
 
-import CourseListItem from "../../components/CourseListItem/CourseListItem";
+import CourseListItem from "../../components/CourseListItem";
 
 const undergradSubjectInfo = {
     "biomedical-eng-ug": {

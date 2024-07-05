@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import { Breadcrumb } from "react-bootstrap";
 
-import ReviewDisplay from "../../components/ReviewDisplay/ReviewDisplay";
+import ReviewDisplay from "../../components/ReviewDisplay";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 

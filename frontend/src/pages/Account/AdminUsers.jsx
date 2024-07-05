@@ -3,7 +3,7 @@ import { Breadcrumb } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-import UserDisplay from "../../components/UserDisplay/UserDisplay";
+import UserDisplay from "../../components/UserDisplay";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 

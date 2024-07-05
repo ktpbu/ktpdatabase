@@ -19,6 +19,7 @@ const ProtectedRoute = ({ children, user, admin }) => {
 };
 
 ProtectedRoute.propTypes = {
+    children: PropTypes.node.isRequired,
     user: PropTypes.object.isRequired,
     admin: PropTypes.bool.isRequired,
 };

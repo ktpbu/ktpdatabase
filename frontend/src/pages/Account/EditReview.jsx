@@ -8,7 +8,7 @@ import { useSnackbar } from "notistack";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../firebase";
 
-import CustomCheckbox from "../../components/CustomCheckbox/CustomCheckbox";
+import CustomCheckbox from "../../components/CustomCheckbox";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 

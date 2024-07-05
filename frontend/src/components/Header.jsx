@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Nav from "react-bootstrap/nav";
 import Navbar from "react-bootstrap/navbar";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth } from "../firebase";
 
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Box } from "@mui/material";
