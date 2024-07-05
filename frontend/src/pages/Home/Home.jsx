@@ -1,32 +1,47 @@
-import { useState, useEffect } from "react";
 import axios from "axios";
+import { auth, googleProvider } from "../../firebase";
+import { getAuth, signInWithPopup, onAuthStateChanged } from "firebase/auth";
+import { useState } from "react";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Home = () => {
-    const handleGoogleAuth = () => {
-        window.open("http://localhost:3000/auth/google/callback", "_self");
-    };
-
-    const [userData, setUserData] = useState({});
-
-    const getUser = async () => {
+    const [user, setUser] = useState(null);
+    const handleGoogleAuth = async () => {
         try {
-            const response = await axios.get(
-                `${backend}/auth/google/login/success`,
+            const result = await signInWithPopup(auth, googleProvider);
+
+            const token = await result.user.getIdToken();
+            const response = await axios.post(
+                `${backend}/auth/protected`,
+                {},
                 {
-                    withCredentials: true,
+                    headers: {
+                        "Content-Type": "application/json",
+                        authorization: token,
+                    },
                 }
             );
-            setUserData(response.data.user);
+
+            localStorage.setItem("is_admin", response.data.is_admin);
+            localStorage.setItem("first", response.data.first);
+            localStorage.setItem("last", response.data.last);
+
+            window.location.reload();
         } catch (error) {
             console.log(error);
         }
     };
 
-    useEffect(() => {
-        getUser();
-    }, []);
+    const handleGoogleSignOut = () => {
+        auth.signOut();
+        localStorage.clear();
+    };
+
+    const authorization = getAuth();
+    onAuthStateChanged(authorization, (user) => {
+        setUser(user);
+    });
 
     return (
         <div className="w-3/4 mx-auto py-20">
@@ -40,13 +55,22 @@ const Home = () => {
                 </p>
             </div>
 
-            {Object.keys(userData).length === 0 && (
+            {!user && (
                 <button
                     className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
                     type="button"
                     onClick={handleGoogleAuth}
                 >
                     Sign in with Google
+                </button>
+            )}
+            {user && (
+                <button
+                    className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                    type="button"
+                    onClick={handleGoogleSignOut}
+                >
+                    Sign out
                 </button>
             )}
         </div>
