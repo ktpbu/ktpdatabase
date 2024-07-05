@@ -1,44 +1,24 @@
 import express from "express";
-import fs from "fs";
-import path from "path";
 
 import supabase from "../supabaseClient.js";
 import { Reviews } from "../models/reviewModel.js";
 
-const loadJSON = (filePath) => {
-    const data = fs.readFileSync(path.resolve(filePath));
-    return JSON.parse(data);
-};
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 
 // course dependency imports
-const csEdges = loadJSON(
-    "data/academics/courses/dependencies/edges/computer-science-edges.json"
-);
-const csNodes = loadJSON(
-    "data/academics/courses/dependencies/nodes/computer-science-nodes.json"
-);
-const dsEdges = loadJSON(
-    "data/academics/courses/dependencies/edges/data-science-edges.json"
-);
-const dsNodes = loadJSON(
-    "data/academics/courses/dependencies/nodes/data-science-nodes.json"
-);
-const econEdges = loadJSON(
-    "data/academics/courses/dependencies/edges/economics-edges.json"
-);
-const econNodes = loadJSON(
-    "data/academics/courses/dependencies/nodes/economics-nodes.json"
-);
-const mathEdges = loadJSON(
-    "data/academics/courses/dependencies/edges/mathematics-statistics-edges.json"
-);
-const mathNodes = loadJSON(
-    "data/academics/courses/dependencies/nodes/mathematics-statistics-nodes.json"
-);
+const csEdges = require("data/academics/courses/dependencies/edges/computer-science-edges.json");
+const csNodes = require("data/academics/courses/dependencies/nodes/computer-science-nodes.json");
+const dsEdges = require("data/academics/courses/dependencies/edges/data-science-edges.json");
+const dsNodes = require("data/academics/courses/dependencies/nodes/data-science-nodes.json");
+const econEdges = require("data/academics/courses/dependencies/edges/economics-edges.json");
+const econNodes = require("data/academics/courses/dependencies/nodes/economics-nodes.json");
+const mathEdges = require("data/academics/courses/dependencies/edges/mathematics-statistics-edges.json");
+const mathNodes = require("data/academics/courses/dependencies/nodes/mathematics-statistics-nodes.json");
 
 // academic resources imports
-const jointMajors = loadJSON("data/academics/resources/joint-majors.json");
-const usefulLinks = loadJSON("data/academics/resources/useful-links.json");
+const jointMajors = require("data/academics/resources/joint-majors.json");
+const usefulLinks = require("data/academics/resources/useful-links.json");
 
 const subjectMap = {
     "biomedical-eng": {
