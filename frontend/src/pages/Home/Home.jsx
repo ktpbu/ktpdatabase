@@ -43,7 +43,6 @@ const Home = () => {
     const authorization = getAuth();
     onAuthStateChanged(authorization, (user) => {
         setUser(user);
-        console.log(user);
     });
 
     return (
