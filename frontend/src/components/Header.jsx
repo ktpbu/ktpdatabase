@@ -59,6 +59,7 @@ const Header = () => {
 
     const handleLogout = () => {
         setModalOpen(false);
+        navigate("/");
         auth.signOut();
         localStorage.clear();
     };
