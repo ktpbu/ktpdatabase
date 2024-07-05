@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_FB_APIKEY || "placeholder",
@@ -11,17 +10,6 @@ const firebaseConfig = {
     appId: import.meta.env.VITE_FB_APPID,
     measurementId: import.meta.env.VITE_FB_MEASUREMENTID,
 };
-
-export function useAuth() {
-    const [currentUser, setCurrentUser] = useState();
-    useEffect(() => {
-        const unSubscribe = onAuthStateChanged(auth, (user) =>
-            setCurrentUser(user)
-        );
-        return unSubscribe;
-    }, []);
-    return currentUser;
-}
 
 const app = initializeApp(firebaseConfig);
 

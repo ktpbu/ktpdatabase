@@ -25,10 +25,9 @@ router.post("/protected", verifyToken, async (req, res) => {
     const email = req.user.email;
     let user = await Users.findOne({ bu_email: email });
     if (!user) {
-        console.log("no user");
         return res.status(401).send("user not authorized");
     }
-    res.send(user);
+    res.status(200).send(user);
 });
 
 export default router;
