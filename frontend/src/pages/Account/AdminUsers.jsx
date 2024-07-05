@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import { Breadcrumb } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -9,26 +9,6 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 
 const AdminUsers = () => {
     const navigate = useNavigate();
-
-    const getUser = useCallback(async () => {
-        try {
-            const response = await axios.get(
-                `${backend}/auth/google/login/success`,
-                {
-                    withCredentials: true,
-                }
-            );
-            if (!response.data.user.is_admin) {
-                navigate("/error/admin");
-            }
-        } catch (error) {
-            navigate("/error/login");
-        }
-    }, [navigate]);
-
-    useEffect(() => {
-        getUser();
-    }, [getUser]);
 
     const [users, setUsers] = useState([]);
 

@@ -3,7 +3,7 @@ import { SnackbarProvider } from "notistack";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase.js";
 
-import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute.jsx";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 // layout and home
 import Layout from "./Layout";
@@ -78,7 +78,7 @@ const App = () => {
                         <Route
                             path="/academics"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <Academics />
                                 </ProtectedRoute>
                             }
@@ -86,7 +86,7 @@ const App = () => {
                         <Route
                             path="/academics/courses"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <CourseList />
                                 </ProtectedRoute>
                             }
@@ -94,7 +94,7 @@ const App = () => {
                         <Route
                             path="/academics/courses/:level/:id"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <Course />
                                 </ProtectedRoute>
                             }
@@ -102,7 +102,7 @@ const App = () => {
                         <Route
                             path="/academics/courses/:level/:id/add-review"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <AddReview />
                                 </ProtectedRoute>
                             }
@@ -110,7 +110,7 @@ const App = () => {
                         <Route
                             path="/academics/courses/dependencies/:subject"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <Dependencies />
                                 </ProtectedRoute>
                             }
@@ -118,7 +118,7 @@ const App = () => {
                         <Route
                             path="/academics/resources"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <AcademicResources />
                                 </ProtectedRoute>
                             }
@@ -126,7 +126,7 @@ const App = () => {
                         <Route
                             path="/academics/graduate"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <Graduate />
                                 </ProtectedRoute>
                             }
@@ -136,7 +136,7 @@ const App = () => {
                         <Route
                             path="/professional"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <Professional />
                                 </ProtectedRoute>
                             }
@@ -144,7 +144,7 @@ const App = () => {
                         <Route
                             path="/professional/other-ktp-chapters"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <OtherKTPChapters />
                                 </ProtectedRoute>
                             }
@@ -152,7 +152,7 @@ const App = () => {
                         <Route
                             path="/professional/internships"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <Internships />
                                 </ProtectedRoute>
                             }
@@ -162,14 +162,21 @@ const App = () => {
                         <Route
                             path="/calendar"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <Calendar />
                                 </ProtectedRoute>
                             }
                         />
 
                         {/* account routes */}
-                        <Route path="/account/admin" element={<Admin />} />
+                        <Route
+                            path="/account/admin"
+                            element={
+                                <ProtectedRoute user={user} admin={true}>
+                                    <Admin />
+                                </ProtectedRoute>
+                            }
+                        />
                         <Route
                             path="/account/admin/reviews"
                             element={<AdminReviews />}
@@ -185,7 +192,7 @@ const App = () => {
                         <Route
                             path="/account/directory"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <Directory />
                                 </ProtectedRoute>
                             }
@@ -193,7 +200,7 @@ const App = () => {
                         <Route
                             path="/account/reviews"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <Reviews />
                                 </ProtectedRoute>
                             }
@@ -201,7 +208,7 @@ const App = () => {
                         <Route
                             path="/account/reviews/edit-review/:id"
                             element={
-                                <ProtectedRoute user={user}>
+                                <ProtectedRoute user={user} admin={false}>
                                     <EditReview />
                                 </ProtectedRoute>
                             }
