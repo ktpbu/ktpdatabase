@@ -83,7 +83,6 @@ const App = () => {
                                 </ProtectedRoute>
                             }
                         />
-
                         <Route
                             path="/academics/courses"
                             element={<CourseList />}
@@ -112,15 +111,27 @@ const App = () => {
                         {/* professional routes */}
                         <Route
                             path="/professional"
-                            element={<Professional />}
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <Professional />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/professional/other-ktp-chapters"
-                            element={<OtherKTPChapters />}
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <OtherKTPChapters />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/professional/internships"
-                            element={<Internships />}
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <Internships />
+                                </ProtectedRoute>
+                            }
                         />
 
                         {/* calendar routes */}
