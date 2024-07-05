@@ -11,8 +11,6 @@ import { Box } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 
-const backend = import.meta.env.VITE_BACKEND_URL;
-
 const Header = () => {
     const navigate = useNavigate();
 
@@ -60,7 +58,9 @@ const Header = () => {
     };
 
     const handleLogout = () => {
-        window.open(`${backend}/auth/google/logout`, "_self");
+        setModalOpen(false);
+        auth.signOut();
+        localStorage.clear();
     };
 
     const style = {

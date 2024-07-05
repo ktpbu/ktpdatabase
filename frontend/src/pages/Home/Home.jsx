@@ -41,11 +41,6 @@ const Home = () => {
         }
     };
 
-    const handleGoogleSignOut = () => {
-        auth.signOut();
-        localStorage.clear();
-    };
-
     const authorization = getAuth();
     onAuthStateChanged(authorization, (user) => {
         setUser(user);
@@ -70,15 +65,6 @@ const Home = () => {
                     onClick={handleGoogleAuth}
                 >
                     Sign in with Google
-                </button>
-            )}
-            {user && (
-                <button
-                    className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
-                    type="button"
-                    onClick={handleGoogleSignOut}
-                >
-                    Sign out
                 </button>
             )}
         </div>
