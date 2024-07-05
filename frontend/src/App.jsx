@@ -179,15 +179,27 @@ const App = () => {
                         />
                         <Route
                             path="/account/admin/reviews"
-                            element={<AdminReviews />}
+                            element={
+                                <ProtectedRoute user={user} admin={true}>
+                                    <AdminReviews />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/account/admin/users"
-                            element={<AdminUsers />}
+                            element={
+                                <ProtectedRoute user={user} admin={true}>
+                                    <AdminUsers />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/account/admin/users/add"
-                            element={<AddUser />}
+                            element={
+                                <ProtectedRoute user={user} admin={true}>
+                                    <AddUser />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/account/directory"
