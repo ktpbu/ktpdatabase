@@ -1,11 +1,7 @@
-import { useEffect, useCallback } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Breadcrumb } from "react-bootstrap";
-import axios from "axios";
 
 import CourseListItem from "../../components/CourseListItem/CourseListItem";
-
-const backend = import.meta.env.VITE_BACKEND_URL;
 
 const undergradSubjectInfo = {
     "biomedical-eng-ug": {
@@ -79,22 +75,6 @@ const undergradSubjectInfo = {
 };
 
 const CourseList = () => {
-    const navigate = useNavigate();
-
-    const getUser = useCallback(async () => {
-        try {
-            await axios.get(`${backend}/auth/google/login/success`, {
-                withCredentials: true,
-            });
-        } catch (error) {
-            navigate("/error/login");
-        }
-    }, [navigate]);
-
-    useEffect(() => {
-        getUser();
-    }, [getUser]);
-
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Courses</h2>

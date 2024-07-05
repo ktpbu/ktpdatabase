@@ -85,27 +85,51 @@ const App = () => {
                         />
                         <Route
                             path="/academics/courses"
-                            element={<CourseList />}
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <CourseList />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/academics/courses/:level/:id"
-                            element={<Course />}
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <Course />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/academics/courses/:level/:id/add-review"
-                            element={<AddReview />}
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <AddReview />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/academics/courses/dependencies/:subject"
-                            element={<Dependencies />}
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <Dependencies />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/academics/resources"
-                            element={<AcademicResources />}
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <AcademicResources />
+                                </ProtectedRoute>
+                            }
                         />
                         <Route
                             path="/academics/graduate"
-                            element={<Graduate />}
+                            element={
+                                <ProtectedRoute user={user}>
+                                    <Graduate />
+                                </ProtectedRoute>
+                            }
                         />
 
                         {/* professional routes */}
