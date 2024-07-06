@@ -144,12 +144,12 @@ const ReviewDisplay = ({ reviews, view }) => {
                 {filteredReviews.map((review, index) => (
                     <Card
                         key={index}
-                        className={`w-112 max-w-full h-fit mx-2 mt-4 ${
+                        className={`w-72 sm:w-112 max-w-full h-fit mx-2 mt-4 ${
                             index === reviews.length - 1 && "mb-4"
                         } flex flex-col self-center flex-around border-1 border-gray-200 rounded-md bg-purple-100`}
                     >
                         <Card.Header>
-                            <div className="w-96 max-w-full mx-2 flex justify-between">
+                            <div className="w-full mx-auto flex justify-between">
                                 <p className="my-auto text-xl font-semibold text-right">
                                     {review.anon ? "Anonymous" : review.user}
                                 </p>
@@ -159,44 +159,44 @@ const ReviewDisplay = ({ reviews, view }) => {
                             </div>
                         </Card.Header>
                         <Card.Body className="my-auto bg-purple-100">
-                            <div className="w-96 max-w-full mx-2 flex flex-wrap justify-between text-xl">
-                                <Card.Text className="text-xl text-left">
+                            <div className="w-full mx-auto sm:flex sm:justify-between">
+                                <p className="text-xl text-left">
                                     Professor{" "}
                                     <span className="font-semibold">
                                         {review.professor}
                                     </span>
-                                </Card.Text>
-                                <Card.Text>
+                                </p>
+                                <p className="text-xl text-left">
                                     <span className="font-semibold">
                                         {review.course_id}
                                     </span>
-                                </Card.Text>
+                                </p>
                             </div>
-                            <div className="w-96 max-w-full mx-2 flex flex-wrap justify-between text-xl">
-                                <Card.Text>
+                            <div className="w-full mx-auto sm:flex sm:justify-between">
+                                <p className="text-xl text-left">
                                     Usefulness:{" "}
                                     <span className="text-2xl font-semibold">
                                         {review.usefulness}
                                     </span>
                                     /5
-                                </Card.Text>
-                                <Card.Text>
+                                </p>
+                                <p className="text-xl text-left">
                                     Difficulty:{" "}
                                     <span className="text-2xl font-semibold">
                                         {review.difficulty}
                                     </span>
                                     /5
-                                </Card.Text>
-                                <Card.Text>
+                                </p>
+                                <p className="text-xl text-left">
                                     Rating:{" "}
                                     <span className="text-2xl font-semibold">
                                         {review.rating}
                                     </span>
                                     /5
-                                </Card.Text>
+                                </p>
                             </div>
                             {review.review && (
-                                <Card.Text className="w-96 max-w-full mx-2 text-xl text-start">
+                                <Card.Text className="w-full mx-auto text-xl text-start">
                                     {review.review}
                                 </Card.Text>
                             )}
