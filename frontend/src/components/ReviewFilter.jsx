@@ -133,7 +133,7 @@ const ReviewFilter = ({
             </div>
             <button
                 onClick={resetFilters}
-                className="mt-2 p-2 border-2 border-solid hover:border-black rounded-3xl"
+                className="mt-4 p-2 border-2 border-solid hover:border-black rounded-3xl"
             >
                 Reset Filters
             </button>

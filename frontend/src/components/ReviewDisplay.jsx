@@ -123,6 +123,32 @@ const ReviewDisplay = ({ reviews, view }) => {
         maxDifficulty,
     ]);
 
+    const [search, setSearch] = useState("");
+
+    const handleReviewSearch = ({ searchText }) => {
+        const searchLower = searchText.trim().toLowerCase();
+        setSearch(searchLower);
+
+        if (searchLower === "") {
+            setFilteredReviews(reviews);
+        } else {
+            const searchFilteredReviews = reviews.filter((review) => {
+                return (
+                    (review.anon && "anonymous".includes(searchLower)) ||
+                    (!review.anon &&
+                        review.user.toLowerCase().includes(searchLower)) ||
+                    review.professor.toLowerCase().includes(searchLower) ||
+                    review.course_id.toLowerCase().includes(searchLower) ||
+                    review.usefulness.toString().includes(searchLower) ||
+                    review.difficulty.toString().includes(searchLower) ||
+                    review.rating.toString().includes(searchLower) ||
+                    review.review.toLowerCase().includes(searchLower)
+                );
+            });
+            setFilteredReviews(searchFilteredReviews);
+        }
+    };
+
     return (
         <div>
             {view !== "account" && <h2 className="">Reviews</h2>}
@@ -140,12 +166,25 @@ const ReviewDisplay = ({ reviews, view }) => {
                 maxRating={maxRating}
                 setMaxRatingHelper={setMaxRatingHelper}
             />
-            <div className="w-144 max-w-full h-96 overflow-x-hidden overflow-y-scroll mx-auto mt-4 flex flex-col justify-around border-2 border-black">
+            <div className="my-4">
+                <input
+                    placeholder="Search for review..."
+                    name="review"
+                    value={search}
+                    className="w-48 h-8 p-2 border-1 border-gray-300 rounded-md"
+                    onChange={(e) => {
+                        handleReviewSearch({
+                            searchText: e.target.value,
+                        });
+                    }}
+                ></input>
+            </div>
+            <div className="w-144 max-w-full h-96 overflow-x-hidden overflow-y-scroll mx-auto flex flex-col justify-around border-2 border-black">
                 {filteredReviews.map((review, index) => (
                     <Card
                         key={index}
                         className={`w-72 sm:w-112 max-w-full h-fit mx-2 mt-4 ${
-                            index === reviews.length - 1 && "mb-4"
+                            index === filteredReviews.length - 1 && "mb-4"
                         } flex flex-col self-center flex-around border-1 border-gray-200 rounded-md bg-purple-100`}
                     >
                         <Card.Header>
