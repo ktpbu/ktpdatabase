@@ -15,48 +15,50 @@ const UserDisplay = ({ users }) => {
     return (
         <div>
             {users.length > 0 && (
-                <table className="max-w- mx-auto">
-                    <tr>
-                        {tableColumnHeaders.map((header, index) => (
-                            <th
-                                key={index}
-                                className="w-fit p-2 text-start border-2 border-gray-200"
-                            >
-                                {header}
-                            </th>
-                        ))}
-                    </tr>
-                    {users.map((user, index) => (
-                        <tr key={index}>
-                            <td className="w-fit p-2 text-center border-2 border-gray-200">
-                                {index + 1}
-                            </td>
-                            {tableColumnData.map((key, index) => (
-                                <td
+                <div className="w-full overflow-x-scroll mx-auto">
+                    <table className="w-full mx-auto">
+                        <tr>
+                            {tableColumnHeaders.map((header, index) => (
+                                <th
                                     key={index}
-                                    className={`w-fit p-2 ${
-                                        key === "is_admin"
-                                            ? "text-center"
-                                            : "text-start"
-                                    } border-2 border-gray-200`}
+                                    className="w-fit p-2 text-start border-2 border-gray-200"
                                 >
-                                    {key === "is_admin"
-                                        ? user[key]
-                                            ? "Yes"
-                                            : "No"
-                                        : user[key]}
-                                </td>
+                                    {header}
+                                </th>
                             ))}
-                            <td>
-                                <DeleteUserModal
-                                    first={user.first}
-                                    last={user.last}
-                                    id={user._id}
-                                />
-                            </td>
                         </tr>
-                    ))}
-                </table>
+                        {users.map((user, index) => (
+                            <tr key={index}>
+                                <td className="w-fit p-2 text-center border-2 border-gray-200">
+                                    {index + 1}
+                                </td>
+                                {tableColumnData.map((key, index) => (
+                                    <td
+                                        key={index}
+                                        className={`w-fit p-2 ${
+                                            key === "is_admin"
+                                                ? "text-center"
+                                                : "text-start"
+                                        } border-2 border-gray-200`}
+                                    >
+                                        {key === "is_admin"
+                                            ? user[key]
+                                                ? "Yes"
+                                                : "No"
+                                            : user[key]}
+                                    </td>
+                                ))}
+                                <td>
+                                    <DeleteUserModal
+                                        first={user.first}
+                                        last={user.last}
+                                        id={user._id}
+                                    />
+                                </td>
+                            </tr>
+                        ))}
+                    </table>
+                </div>
             )}
         </div>
     );
