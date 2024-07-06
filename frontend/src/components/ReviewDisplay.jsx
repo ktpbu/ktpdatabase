@@ -172,7 +172,6 @@ const ReviewDisplay = ({ reviews, view }) => {
                                     </span>
                                 </Card.Text>
                             </div>
-
                             <div className="w-96 max-w-full mx-2 flex flex-wrap justify-between text-xl">
                                 <Card.Text>
                                     Usefulness:{" "}
@@ -196,29 +195,33 @@ const ReviewDisplay = ({ reviews, view }) => {
                                     /5
                                 </Card.Text>
                             </div>
-
                             {review.review && (
                                 <Card.Text className="w-96 max-w-full mx-2 text-xl text-start">
                                     {review.review}
                                 </Card.Text>
                             )}
-
-                            {view === "account" && (
-                                <div className="w-24 max-w-full mx-auto flex justify-between">
+                            <div
+                                className={`w-24 max-w-full mx-auto flex ${
+                                    view === "account"
+                                        ? "justify-between"
+                                        : "justify-center"
+                                }`}
+                            >
+                                {view === "account" && (
                                     <Link
                                         className="text-black"
                                         to={`/account/reviews/edit-review/${review._id}`}
                                     >
                                         <EditIcon />
                                     </Link>
-                                    <DeleteReviewModal
-                                        courseId={review.course_id}
-                                        professor={review.professor}
-                                        id={review._id}
-                                        deleteItem="Review"
-                                    />
-                                </div>
-                            )}
+                                )}
+                                <DeleteReviewModal
+                                    courseId={review.course_id}
+                                    professor={review.professor}
+                                    id={review._id}
+                                    deleteItem="Review"
+                                />
+                            </div>
                         </Card.Body>
                     </Card>
                 ))}

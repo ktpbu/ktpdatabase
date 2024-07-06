@@ -75,6 +75,19 @@ router.get("/directory/get-members", async (req, res) => {
     }
 });
 
+// get all reviews
+router.get("/admin/get-reviews", async (req, res) => {
+    console.log(req);
+    try {
+        const review = await Reviews.find({}).sort({ first: 1 });
+        console.log(review);
+        return res.status(200).json(review);
+    } catch (error) {
+        console.error(error.message);
+        return res.status(500).send({ message: error.message });
+    }
+});
+
 // get all reviews by a user
 router.post("/reviews/get-user-reviews", async (req, res) => {
     console.log(req);
