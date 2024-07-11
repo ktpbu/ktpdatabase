@@ -95,7 +95,13 @@ const CourseList = () => {
             </p>
 
             <p>
-                <b>NOTE</b>: click <Link to="/academics/graduate/">here</Link>{" "}
+                <b>NOTE</b>: click{" "}
+                <Link
+                    to="/academics/graduate/"
+                    className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                >
+                    here
+                </Link>{" "}
                 for graduate courses
             </p>
 

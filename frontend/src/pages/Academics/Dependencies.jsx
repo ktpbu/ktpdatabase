@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom";
-import { Breadcrumb } from "react-bootstrap";
 import ReactFlow, { ReactFlowProvider } from "reactflow";
 import { useEffect, useState } from "react";
 import axios from "axios";
+
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 import "reactflow/dist/style.css";
 
@@ -46,16 +47,14 @@ const Dependencies = () => {
                 {subjectMap[subject]["title"]} Dependency Map
             </h2>
 
-            <Breadcrumb className="customBreadcrumb p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
-                <Breadcrumb.Item href="/academics/courses/">
-                    Courses
-                </Breadcrumb.Item>
-                <Breadcrumb.Item active>
-                    {subjectMap[subject]["title"]} Dependencies
-                </Breadcrumb.Item>
-            </Breadcrumb>
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Academics", path: "/academics" },
+                    { title: "Courses", path: "/academics/courses" },
+                ]}
+                current={`${subjectMap[subject]["title"]} Dependencies`}
+            />
 
             {!loading && nodes !== null && edges !== null ? (
                 <ReactFlowProvider>

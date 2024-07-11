@@ -1,17 +1,22 @@
 import PropTypes from "prop-types";
-import { Breadcrumb } from "react-bootstrap";
 
 const CustomBreadcrumb = ({ previous, current }) => {
     return (
-        <Breadcrumb className="p-3">
+        <div className="p-3 flex">
             {previous.map((page, index) => (
-                <Breadcrumb.Item key={index} href={page.path}>
-                    {page.title}
-                </Breadcrumb.Item>
+                <p key={index} className="mr-1">
+                    <a
+                        href={page.path}
+                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                    >
+                        {page.title}
+                    </a>
+                    {" /"}
+                </p>
             ))}
 
-            <Breadcrumb.Item active>{current}</Breadcrumb.Item>
-        </Breadcrumb>
+            <p>{current}</p>
+        </div>
     );
 };
 

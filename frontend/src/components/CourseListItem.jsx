@@ -49,7 +49,12 @@ const CourseListItem = ({ info }) => {
             <div className="flex flex-row-reverse justify-content-between p-3">
                 <p className="text-start p-3">
                     {" "}
-                    <a href={info.website} target="_blank" rel="noreferrer">
+                    <a
+                        href={info.website}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                    >
                         Complete List
                     </a>{" "}
                 </p>
