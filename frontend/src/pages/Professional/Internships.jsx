@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Breadcrumb, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const Internships = () => {
     const [internshipResources] = useState([
@@ -60,13 +62,14 @@ const Internships = () => {
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Internships</h2>
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/professional">
-                    Professional
-                </Breadcrumb.Item>
-                <Breadcrumb.Item active>Internships</Breadcrumb.Item>
-            </Breadcrumb>
+
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Professional", path: "/professional" },
+                ]}
+                current="Internships"
+            />
 
             <div className="flex flex-wrap justify-around p-3">
                 {internshipResources.map((section, idx) => (

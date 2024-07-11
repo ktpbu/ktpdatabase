@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Breadcrumb } from "react-bootstrap";
 import axios from "axios";
 
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 import ReviewDisplay from "../../components/ReviewDisplay";
 import Spinner from "../../components/Spinner";
 
@@ -30,11 +30,15 @@ const AdminReviews = () => {
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Manage Reviews</h2>
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/account/admin">Admin</Breadcrumb.Item>
-                <Breadcrumb.Item active>Manage Reviews</Breadcrumb.Item>
-            </Breadcrumb>{" "}
+
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Admin", path: "/account/admin" },
+                ]}
+                current="Manage Reviews"
+            />
+
             {loading ? (
                 <Spinner className="mt-16" />
             ) : reviews && reviews.length > 0 ? (

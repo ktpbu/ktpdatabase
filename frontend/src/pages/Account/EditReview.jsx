@@ -2,12 +2,12 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Breadcrumb } from "react-bootstrap";
 import Select from "react-select";
 import { useSnackbar } from "notistack";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../firebase";
 
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 import CustomCheckbox from "../../components/CustomCheckbox";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
@@ -181,13 +181,13 @@ const EditReview = () => {
                 Edit Review for {reviewResponse.course_id}
             </h2>
 
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/account/reviews">
-                    Reviews
-                </Breadcrumb.Item>
-                <Breadcrumb.Item active>Edit Review</Breadcrumb.Item>
-            </Breadcrumb>
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Reviews", path: "/account/reviews" },
+                ]}
+                current="Edit Review"
+            />
 
             {selectDropdowns.map((item) => (
                 <div

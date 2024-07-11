@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { Breadcrumb } from "react-bootstrap";
 
 import CourseListItem from "../../components/CourseListItem";
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const undergradSubjectInfo = {
     "biomedical-eng-ug": {
@@ -78,11 +78,14 @@ const CourseList = () => {
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Courses</h2>
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
-                <Breadcrumb.Item active>Courses</Breadcrumb.Item>
-            </Breadcrumb>
+
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Academics", path: "/academics" },
+                ]}
+                current="Courses"
+            />
 
             <p className="text-start p-3">
                 KTP brothers span many different majors, across several

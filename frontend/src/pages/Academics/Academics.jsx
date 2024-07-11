@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import { Card, Breadcrumb } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 import undergrad from "./../../assets/undergrad.png";
 import grad from "./../../assets/grad.png";
@@ -31,10 +33,10 @@ const Academics = () => {
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Academics</h2>
 
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item active>Academics</Breadcrumb.Item>
-            </Breadcrumb>
+            <CustomBreadcrumb
+                previous={[{ title: "Home", path: "/" }]}
+                current="Academics"
+            />
 
             <div className="mx-auto mb-20 flex flex-wrap justify-center">
                 {academicOptions.map((option) => (
@@ -43,7 +45,7 @@ const Academics = () => {
                         to={option.link}
                         className="m-4 no-underline"
                     >
-                        <Card className="w-96 flex flex-col text-start text-lg duration-200 hover:bg-purple-100 hover:scale-105">
+                        <Card className="w-96 flex flex-col text-start text-lg duration-200 hover:bg-[#baecba] hover:scale-105">
                             <Card.Header>
                                 <img
                                     className="w-auto h-8 mr-2.5"

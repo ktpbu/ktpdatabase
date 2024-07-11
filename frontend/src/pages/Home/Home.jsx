@@ -48,12 +48,14 @@ const Home = () => {
 
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h2 className="text-start p-3">Kappa Theta Pi</h2>
+            <h2 className="mt-24 p-3  text-4xl text-start text-[#234c8b]">
+                Welcome to the KTP Database!
+            </h2>
 
-            <div className="text-start p-3">
+            <div className="text-start text-xl p-3">
                 <p>
                     {
-                        "Welcome to Kappa Theta Pi Lambda Chapter's brother website."
+                        "One central location for all of your academic and professional needs."
                     }
                 </p>
             </div>

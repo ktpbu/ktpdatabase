@@ -1,5 +1,8 @@
-import { Breadcrumb, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
+
 import ktplogolandscape from "./../../assets/ktplogolandscape.png";
 import internship from "./../../assets/intern.png";
 
@@ -23,10 +26,10 @@ const Professional = () => {
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Professional</h2>
 
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item active>Professional</Breadcrumb.Item>
-            </Breadcrumb>
+            <CustomBreadcrumb
+                previous={[{ title: "Home", path: "/" }]}
+                current="Professional"
+            />
 
             <div className="mx-auto mb-20 flex flex-wrap justify-center">
                 {professionalOptions.map((option) => (

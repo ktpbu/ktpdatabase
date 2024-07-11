@@ -1,7 +1,8 @@
 import axios from "axios";
-import { Breadcrumb } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { useSnackbar } from "notistack";
+
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
@@ -65,14 +66,16 @@ const AddUser = () => {
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Add User</h2>
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/account/admin">Admin</Breadcrumb.Item>
-                <Breadcrumb.Item href="/account/admin/users">
-                    Manage Users
-                </Breadcrumb.Item>
-                <Breadcrumb.Item active>Add User</Breadcrumb.Item>
-            </Breadcrumb>{" "}
+
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Admin", path: "/account/admin" },
+                    { title: "Manage Users", path: "/account/admin/users" },
+                ]}
+                current="Add User"
+            />
+
             <form
                 className="w-fit m-auto px-12 py-4 border-2 border-black"
                 onSubmit={handleSubmit(onSubmit, onError)}

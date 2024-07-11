@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { Breadcrumb } from "react-bootstrap";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
+
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
@@ -32,13 +33,13 @@ const AcademicResources = () => {
         <div className="w-3/4 mx-auto py-20">
             <h2 className="p-3 text-start">Resources</h2>
 
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item style={{ textDecoration: "none" }} href="/">
-                    Home
-                </Breadcrumb.Item>
-                <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
-                <Breadcrumb.Item active>Resources</Breadcrumb.Item>
-            </Breadcrumb>
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Academics", path: "/academics" },
+                ]}
+                current="Resources"
+            />
 
             <h3>Useful Links</h3>
             <div className="flex flex-wrap justify-around">

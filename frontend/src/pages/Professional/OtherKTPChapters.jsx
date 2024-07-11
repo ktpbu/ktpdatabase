@@ -1,4 +1,4 @@
-import { Breadcrumb } from "react-bootstrap";
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const OtherKTPChapters = () => {
     const ktpChapters = [
@@ -88,13 +88,13 @@ const OtherKTPChapters = () => {
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">KTP Chapters</h2>
 
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/professional">
-                    Professional
-                </Breadcrumb.Item>
-                <Breadcrumb.Item active>KTP Chapters</Breadcrumb.Item>
-            </Breadcrumb>
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Professional", path: "/professional" },
+                ]}
+                current="KTP Chapters"
+            />
 
             <div className="p-3">
                 <table className="w-full border-collapse">

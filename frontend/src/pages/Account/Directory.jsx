@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Breadcrumb } from "react-bootstrap";
+
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
@@ -46,10 +47,11 @@ const Directory = () => {
             <h2 className="text-start p-3">
                 Kappa Theta Pi Lambda Chapter Directory
             </h2>
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item active>Directory</Breadcrumb.Item>
-            </Breadcrumb>
+
+            <CustomBreadcrumb
+                previous={[{ title: "Home", path: "/" }]}
+                current="Directory"
+            />
 
             {members.length > 0 && (
                 <div className="w-full overflow-x-scroll mx-auto">
