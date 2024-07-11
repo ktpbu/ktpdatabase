@@ -10,7 +10,7 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 const CourseIcon = ({ code, level, college }) => {
     return (
         <Link
-            className="w-20 mb-2.5 mx-2.5 py-1.5 text-black no-underline border-solid border-2 rounded-2xl hover:border-black duration-100 hover:scale-110 "
+            className="w-20 mb-2.5 mx-2.5 py-1.5 text-black no-underline border-solid border-2 rounded-2xl hover:border-[#234c8b] duration-100 hover:scale-110 "
             title={code}
             to={`/academics/courses/${level}/${college}${code}`}
         >
@@ -35,7 +35,7 @@ const CourseListItem = ({ info }) => {
 
     return (
         <div>
-            <h4 className="p-3 text-start">{info.name}</h4>
+            <h4 className="p-3 text-start text-[#234c8b]">{info.name}</h4>
             <div className="p-3 flex flex-row flex-wrap justify-content-evenly">
                 {courses.map((course, index) => (
                     <CourseIcon
@@ -49,7 +49,12 @@ const CourseListItem = ({ info }) => {
             <div className="flex flex-row-reverse justify-content-between p-3">
                 <p className="text-start p-3">
                     {" "}
-                    <a href={info.website} target="_blank" rel="noreferrer">
+                    <a
+                        href={info.website}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                    >
                         Complete List
                     </a>{" "}
                 </p>

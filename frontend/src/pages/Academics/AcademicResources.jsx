@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { Breadcrumb } from "react-bootstrap";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
+
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
@@ -32,26 +33,26 @@ const AcademicResources = () => {
         <div className="w-3/4 mx-auto py-20">
             <h2 className="p-3 text-start">Resources</h2>
 
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item style={{ textDecoration: "none" }} href="/">
-                    Home
-                </Breadcrumb.Item>
-                <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
-                <Breadcrumb.Item active>Resources</Breadcrumb.Item>
-            </Breadcrumb>
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Academics", path: "/academics" },
+                ]}
+                current="Resources"
+            />
 
-            <h3>Useful Links</h3>
+            <h3 className="text-[#234c8b]">Useful Links</h3>
             <div className="flex flex-wrap justify-around">
                 {usefulLinks.map((resource) => (
                     <div
                         key={resource.name}
-                        className="w-48 m-4 p-2 flex flex-col text-start border-1 hover:border-black rounded-md duration-200"
+                        className="w-64 m-4 p-2 flex flex-col text-start border-1 hover:border-[#234c8b] rounded-md duration-200"
                     >
                         <h5>{resource.name}</h5>
                         {resource.items.map((item) => (
                             <a
                                 key={item.link}
-                                className="mt-2 no-underline hover:underline"
+                                className="mt-2 text-[#458eff] hover:text-[#234c8b] no-underline hover:underline"
                                 href={item.link}
                                 target="_blank"
                                 rel="noreferrer"
@@ -65,7 +66,7 @@ const AcademicResources = () => {
 
             <hr className="p-3"></hr>
 
-            <h3>Joint Majors</h3>
+            <h3 className="text-[#234c8b]">Joint Majors</h3>
             <div className="flex flex-wrap justify-around">
                 {jointMajors.map((major) => (
                     <Link
@@ -73,7 +74,7 @@ const AcademicResources = () => {
                         to={major.link}
                         className="m-4 no-underline"
                     >
-                        <Card className="w-48 flex flex-col text-start text-lg duration-200 hover:bg-purple-200 hover:scale-105">
+                        <Card className="w-48 flex flex-col text-start text-lg duration-200 hover:bg-[#baecba] hover:scale-105">
                             <Card.Body className="m-auto h-32">
                                 {major.name}
                             </Card.Body>

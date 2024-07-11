@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Breadcrumb, Card } from "react-bootstrap";
+
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const Internships = () => {
     const [internshipResources] = useState([
@@ -60,36 +61,34 @@ const Internships = () => {
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Internships</h2>
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/professional">
-                    Professional
-                </Breadcrumb.Item>
-                <Breadcrumb.Item active>Internships</Breadcrumb.Item>
-            </Breadcrumb>
+
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Professional", path: "/professional" },
+                ]}
+                current="Internships"
+            />
 
             <div className="flex flex-wrap justify-around p-3">
-                {internshipResources.map((section, idx) => (
-                    <Card
-                        key={idx}
-                        className="m-4 w-96 text-start duration-200 hover:bg-purple-200 hover:scale-105"
+                {internshipResources.map((section, index) => (
+                    <div
+                        key={index}
+                        className="w-64 m-4 p-2 flex flex-col text-start border-1 hover:border-[#234c8b] rounded-md duration-200"
                     >
-                        <Card.Header as="h5">{section.header}</Card.Header>
-                        <Card.Body>
-                            {section.resources.map((resource, index) => (
-                                <Card.Text key={index}>
-                                    <a
-                                        href={resource.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-blue-500 hover:underline"
-                                    >
-                                        {resource.name}
-                                    </a>
-                                </Card.Text>
-                            ))}
-                        </Card.Body>
-                    </Card>
+                        <h5>{section.header}</h5>
+                        {section.resources.map((item, index) => (
+                            <a
+                                key={index}
+                                className="mt-2 text-[#458eff] hover:text-[#234c8b] no-underline hover:underline"
+                                href={item.url}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                {item.name}
+                            </a>
+                        ))}
+                    </div>
                 ))}
             </div>
         </div>

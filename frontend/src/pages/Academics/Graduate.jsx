@@ -1,6 +1,5 @@
-import { Breadcrumb } from "react-bootstrap";
-
 import CourseListItem from "../../components/CourseListItem";
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const gradSubjectInfo = {
     "biomedical-eng-g": {
@@ -78,16 +77,18 @@ const Graduate = () => {
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Graduate</h2>
 
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
-                <Breadcrumb.Item active>Graduate</Breadcrumb.Item>
-            </Breadcrumb>
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Academics", path: "/academics" },
+                ]}
+                current="Graduate"
+            />
 
             <CourseListItem info={gradSubjectInfo["computer-science-g"]} />
             <CourseListItem info={gradSubjectInfo["data-science-g"]} />
 
-            <h4 className="text-start p-3">Engineering</h4>
+            <h4 className="p-3 text-start text-[#234c8b]">Engineering</h4>
             <CourseListItem info={gradSubjectInfo["biomedical-eng-g"]} />
             <CourseListItem
                 info={gradSubjectInfo["electrical-computer-eng-g"]}

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { Breadcrumb } from "react-bootstrap";
+
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const Admin = () => {
     const navigate = useNavigate();
@@ -8,21 +9,21 @@ const Admin = () => {
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Admin</h2>
 
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item active>Admin</Breadcrumb.Item>
-            </Breadcrumb>
+            <CustomBreadcrumb
+                previous={[{ title: "Home", path: "/" }]}
+                current="Admin"
+            />
 
             <div className="w-48 mx-auto flex flex-col">
                 <button
-                    className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                    className="my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                     type="button"
                     onClick={() => navigate("/account/admin/users")}
                 >
                     Manage Users
                 </button>
                 <button
-                    className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                    className="my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                     type="button"
                     onClick={() => navigate("/account/admin/reviews")}
                 >

@@ -79,17 +79,24 @@ const Header = () => {
 
     return (
         <div className="w-full mx-auto">
-            <Navbar collapseOnSelect bg="light" expand="lg" fixed="top">
+            <Navbar
+                collapseOnSelect
+                className="bg-[#234c8b]"
+                expand="lg"
+                fixed="top"
+            >
                 <Container>
                     <Navbar.Brand href="/">
-                        <span className="text-2xl">KTP Database</span>
+                        <span className="text-2xl text-white">
+                            KTP Database
+                        </span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link eventKey="1">
                                 <Link
-                                    className="text-xl text-black no-underline hover:underline duration-200 ease-linear"
+                                    className="text-xl text-[#ffffff] no-underline hover:text-[#8bb9ff] duration-200 ease-linear"
                                     to="/"
                                 >
                                     Home
@@ -97,7 +104,7 @@ const Header = () => {
                             </Nav.Link>
                             <Nav.Link eventKey="2">
                                 <Link
-                                    className="text-xl text-black no-underline hover:underline duration-200 ease-linear"
+                                    className="text-xl text-[#ffffff] no-underline hover:text-[#8bb9ff] duration-200 ease-linear"
                                     to="/academics"
                                 >
                                     Academics
@@ -105,7 +112,7 @@ const Header = () => {
                             </Nav.Link>
                             <Nav.Link eventKey="3">
                                 <Link
-                                    className="text-xl text-black no-underline hover:underline duration-200 ease-linear"
+                                    className="text-xl text-[#ffffff] no-underline hover:text-[#8bb9ff] duration-200 ease-linear"
                                     to="/professional"
                                 >
                                     Professional
@@ -113,7 +120,7 @@ const Header = () => {
                             </Nav.Link>
                             <Nav.Link eventKey="4">
                                 <Link
-                                    className="text-xl text-black no-underline hover:underline duration-200 ease-linear"
+                                    className="text-xl text-[#ffffff] no-underline hover:text-[#8bb9ff] duration-200 ease-linear"
                                     to="/calendar"
                                 >
                                     Calendar
@@ -123,7 +130,7 @@ const Header = () => {
                             {user && (
                                 <button onClick={handleModalOpen}>
                                     <AccountCircleIcon
-                                        className="m-auto"
+                                        className="m-auto text-[#ffffff] no-underline hover:text-[#8bb9ff]"
                                         fontSize="large"
                                     />
                                 </button>
@@ -136,7 +143,7 @@ const Header = () => {
                             >
                                 <Fade in={modalOpen}>
                                     <Box sx={style}>
-                                        <h2 className="text-center">{`${first} ${last}`}</h2>
+                                        <h2 className="text-center text-[#234c8b]">{`${first} ${last}`}</h2>
                                         <div
                                             className={`${
                                                 isAdmin ? "h-56" : "h-40"
@@ -144,7 +151,7 @@ const Header = () => {
                                         >
                                             {isAdmin && (
                                                 <button
-                                                    className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                    className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                                                     type="button"
                                                     onClick={handleAdmin}
                                                 >
@@ -152,21 +159,21 @@ const Header = () => {
                                                 </button>
                                             )}
                                             <button
-                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                                                 type="button"
                                                 onClick={handleDirectory}
                                             >
                                                 Directory
                                             </button>
                                             <button
-                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                                                 type="button"
                                                 onClick={handleReviews}
                                             >
                                                 Reviews
                                             </button>
                                             <button
-                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                                                 type="button"
                                                 onClick={handleLogout}
                                             >

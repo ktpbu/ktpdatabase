@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Breadcrumb } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 import UserDisplay from "../../components/UserDisplay";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
@@ -30,14 +30,19 @@ const AdminUsers = () => {
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">Manage Users</h2>
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/account/admin">Admin</Breadcrumb.Item>
-                <Breadcrumb.Item active>Manage Users</Breadcrumb.Item>
-            </Breadcrumb>{" "}
+
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Admin", path: "/account/admin" },
+                ]}
+                current="Manage Users"
+            />
+
             <UserDisplay users={users} />
+
             <button
-                className="mt-8 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                className="mt-8 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                 type="button"
                 onClick={() => navigate("/account/admin/users/add")}
             >

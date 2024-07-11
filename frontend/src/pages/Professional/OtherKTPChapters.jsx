@@ -1,4 +1,4 @@
-import { Breadcrumb } from "react-bootstrap";
+import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const OtherKTPChapters = () => {
     const ktpChapters = [
@@ -84,42 +84,49 @@ const OtherKTPChapters = () => {
         },
     ];
 
+    const tableColumnHeaders = ["Chapter", "Institution", "Website"];
+
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3">KTP Chapters</h2>
 
-            <Breadcrumb className="p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/professional">
-                    Professional
-                </Breadcrumb.Item>
-                <Breadcrumb.Item active>KTP Chapters</Breadcrumb.Item>
-            </Breadcrumb>
+            <CustomBreadcrumb
+                previous={[
+                    { title: "Home", path: "/" },
+                    { title: "Professional", path: "/professional" },
+                ]}
+                current="KTP Chapters"
+            />
 
-            <div className="p-3">
-                <table className="w-full border-collapse">
+            <div className="w-full overflow-x-scroll mx-auto">
+                <table className="w-full mx-auto border-collapse">
                     <thead>
                         <tr>
-                            <th className="border p-2 text-left">Chapter</th>
-                            <th className="border p-2 text-left">
-                                Institution
-                            </th>
-                            <th className="border p-2 text-left">Website</th>
+                            {tableColumnHeaders.map((header, index) => (
+                                <th
+                                    key={index}
+                                    className="w-fit p-2 text-start border-2 border-gray-200"
+                                >
+                                    {header}
+                                </th>
+                            ))}
                         </tr>
                     </thead>
                     <tbody>
                         {ktpChapters.map((chapter, index) => (
                             <tr key={index}>
-                                <td className="border p-2">{chapter.name}</td>
-                                <td className="border p-2">
+                                <td className="w-fit p-2 text-start border-2 border-gray-200">
+                                    {chapter.name}
+                                </td>
+                                <td className="w-fit p-2 text-start border-2 border-gray-200">
                                     {chapter.institution}
                                 </td>
-                                <td className="border p-2">
+                                <td className="w-fit p-2 text-start border-2 border-gray-200">
                                     <a
                                         href={chapter.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-blue-500 hover:underline"
+                                        className="text-[#458eff] hover:text-[#234c8b]"
                                     >
                                         {chapter.url}
                                     </a>

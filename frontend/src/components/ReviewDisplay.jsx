@@ -151,7 +151,7 @@ const ReviewDisplay = ({ reviews, view }) => {
 
     return (
         <div>
-            {view !== "account" && <h2 className="">Reviews</h2>}
+            {view !== "account" && <h2 className="text-[#234c8b]">Reviews</h2>}
             <ReviewFilter
                 minUsefulness={minUsefulness}
                 setMinUsefulnessHelper={setMinUsefulnessHelper}
@@ -179,13 +179,13 @@ const ReviewDisplay = ({ reviews, view }) => {
                     }}
                 ></input>
             </div>
-            <div className="w-144 max-w-full h-96 overflow-x-hidden overflow-y-scroll mx-auto flex flex-col justify-around border-2 border-black">
+            <div className="w-144 max-w-full h-96 overflow-x-hidden overflow-y-scroll mx-auto flex flex-col justify-around border-2 border-[#234c8b]">
                 {filteredReviews.map((review, index) => (
                     <Card
                         key={index}
                         className={`w-72 sm:w-112 max-w-full h-fit mx-2 mt-4 ${
                             index === filteredReviews.length - 1 && "mb-4"
-                        } flex flex-col self-center flex-around border-1 border-gray-200 rounded-md bg-purple-100`}
+                        } flex flex-col self-center flex-around border-1 border-gray-200 rounded-md`}
                     >
                         <Card.Header>
                             <div className="w-full mx-auto flex justify-between">
@@ -197,7 +197,7 @@ const ReviewDisplay = ({ reviews, view }) => {
                                 </p>
                             </div>
                         </Card.Header>
-                        <Card.Body className="my-auto bg-purple-100">
+                        <Card.Body className="my-auto bg-[#baecba]">
                             <div className="w-full mx-auto sm:flex sm:justify-between">
                                 <p className="text-xl text-left">
                                     Professor{" "}

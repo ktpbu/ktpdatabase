@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
-import { Breadcrumb } from "react-bootstrap";
 
 import ReviewDisplay from "../../components/ReviewDisplay";
 
@@ -58,20 +57,48 @@ const Course = () => {
                 {courseInfo.code}: {courseInfo.name}
             </h2>
 
-            <Breadcrumb className="customBreadcrumb p-3">
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="/academics/">Academics</Breadcrumb.Item>
+            <div className="p-3 flex">
+                <p className="mr-1">
+                    <a
+                        href={"/"}
+                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                    >
+                        Home
+                    </a>
+                    {" /"}
+                </p>
+                <p className="mr-1">
+                    <a
+                        href={"/academics"}
+                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                    >
+                        Academics
+                    </a>
+                    {" /"}
+                </p>
                 {level === "undergrad" ? (
-                    <Breadcrumb.Item href="/academics/courses/">
-                        Courses
-                    </Breadcrumb.Item>
+                    <p className="mr-1">
+                        <a
+                            href={"/academics/courses"}
+                            className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                        >
+                            Courses
+                        </a>
+                        {" /"}
+                    </p>
                 ) : (
-                    <Breadcrumb.Item href="/academics/graduate/">
-                        Graduate
-                    </Breadcrumb.Item>
+                    <p className="mr-1">
+                        <a
+                            href={"/academics/graduate"}
+                            className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                        >
+                            Graduate
+                        </a>
+                        {" /"}
+                    </p>
                 )}
-                <Breadcrumb.Item active>{courseInfo.name}</Breadcrumb.Item>
-            </Breadcrumb>
+                <p className="mr-1">{courseInfo.name}</p>
+            </div>
 
             <h5 className="text-start p-3">
                 {courseInfo.prereqs !== ""
@@ -87,7 +114,7 @@ const Course = () => {
 
             <button
                 onClick={handleAddReviewButton}
-                className="m-4 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                className="m-4 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
             >
                 Add Review
             </button>
