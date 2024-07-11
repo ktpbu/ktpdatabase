@@ -1,7 +1,7 @@
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { auth, googleProvider } from "../../firebase";
-import { getAuth, signInWithPopup, onAuthStateChanged } from "firebase/auth";
-import { useState } from "react";
+import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
@@ -9,6 +9,15 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 const Home = () => {
     const navigate = useNavigate();
     const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged((currentUser) => {
+            setUser(currentUser);
+        });
+
+        return () => unsubscribe();
+    }, []);
+
     const handleGoogleAuth = async () => {
         try {
             const result = await signInWithPopup(auth, googleProvider);
@@ -30,7 +39,7 @@ const Home = () => {
                 localStorage.setItem("first", response.data.first);
                 localStorage.setItem("last", response.data.last);
 
-                window.location.reload();
+                navigate("/", { replace: true });
             } catch (error) {
                 console.log(error);
                 navigate("/error/authentication");
@@ -40,11 +49,6 @@ const Home = () => {
             console.log(error);
         }
     };
-
-    const authorization = getAuth();
-    onAuthStateChanged(authorization, (user) => {
-        setUser(user);
-    });
 
     return (
         <div className="w-3/4 mx-auto py-20">
