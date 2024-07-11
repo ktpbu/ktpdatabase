@@ -16,14 +16,14 @@ const Admin = () => {
 
             <div className="w-48 mx-auto flex flex-col">
                 <button
-                    className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                    className="my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                     type="button"
                     onClick={() => navigate("/account/admin/users")}
                 >
                     Manage Users
                 </button>
                 <button
-                    className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                    className="my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                     type="button"
                     onClick={() => navigate("/account/admin/reviews")}
                 >

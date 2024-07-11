@@ -42,7 +42,7 @@ const AdminUsers = () => {
             <UserDisplay users={users} />
 
             <button
-                className="mt-8 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                className="mt-8 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                 type="button"
                 onClick={() => navigate("/account/admin/users/add")}
             >

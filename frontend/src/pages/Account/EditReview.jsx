@@ -228,7 +228,7 @@ const EditReview = () => {
             <p className="my-4">* indicates required field</p>
 
             <button
-                className="my-2 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                className="my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                 type="button"
                 onClick={handleSaveReview}
             >

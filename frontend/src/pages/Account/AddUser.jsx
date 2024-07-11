@@ -77,7 +77,7 @@ const AddUser = () => {
             />
 
             <form
-                className="w-fit m-auto px-12 py-4 border-2 border-black"
+                className="w-fit m-auto px-12 py-4 border-2 border-[#234c8b]"
                 onSubmit={handleSubmit(onSubmit, onError)}
                 noValidate
             >
@@ -195,7 +195,7 @@ const AddUser = () => {
                         {errors.is_admin?.message}
                     </p>
                 </div>
-                <button className="my-2 p-2 text-xl border-2 border-solid ${ hover:border-black rounded-3xl">
+                <button className="my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl">
                     Add User
                 </button>
             </form>

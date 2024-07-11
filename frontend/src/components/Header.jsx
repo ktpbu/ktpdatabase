@@ -143,7 +143,7 @@ const Header = () => {
                             >
                                 <Fade in={modalOpen}>
                                     <Box sx={style}>
-                                        <h2 className="text-center">{`${first} ${last}`}</h2>
+                                        <h2 className="text-center text-[#234c8b]">{`${first} ${last}`}</h2>
                                         <div
                                             className={`${
                                                 isAdmin ? "h-56" : "h-40"
@@ -151,7 +151,7 @@ const Header = () => {
                                         >
                                             {isAdmin && (
                                                 <button
-                                                    className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                    className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                                                     type="button"
                                                     onClick={handleAdmin}
                                                 >
@@ -159,21 +159,21 @@ const Header = () => {
                                                 </button>
                                             )}
                                             <button
-                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                                                 type="button"
                                                 onClick={handleDirectory}
                                             >
                                                 Directory
                                             </button>
                                             <button
-                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                                                 type="button"
                                                 onClick={handleReviews}
                                             >
                                                 Reviews
                                             </button>
                                             <button
-                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-black rounded-3xl"
+                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                                                 type="button"
                                                 onClick={handleLogout}
                                             >
