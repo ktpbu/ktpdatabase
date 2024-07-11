@@ -58,9 +58,8 @@ const Home = () => {
 
             <div className="text-start text-xl p-3">
                 <p>
-                    {
-                        "One central location for all of your academic and professional needs."
-                    }
+                    The central location for all of your academic and
+                    professional needs.
                 </p>
             </div>
 

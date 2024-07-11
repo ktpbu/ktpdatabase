@@ -56,30 +56,34 @@ const Directory = () => {
             {members.length > 0 && (
                 <div className="w-full overflow-x-scroll mx-auto">
                     <table className="w-full mx-auto">
-                        <tr>
-                            {tableColumnHeaders.map((header, index) => (
-                                <th
-                                    key={index}
-                                    className="w-fit p-2 text-start border-2 border-gray-200"
-                                >
-                                    {header}
-                                </th>
-                            ))}
-                        </tr>
-                        {members.map((member, index) => (
-                            <tr key={index}>
-                                {tableColumnData.map((key, index) => (
-                                    <td
+                        <thead>
+                            <tr>
+                                {tableColumnHeaders.map((header, index) => (
+                                    <th
                                         key={index}
                                         className="w-fit p-2 text-start border-2 border-gray-200"
                                     >
-                                        {key === "Name"
-                                            ? `${member.FirstName} ${member.LastName}`
-                                            : member[key]}
-                                    </td>
+                                        {header}
+                                    </th>
                                 ))}
                             </tr>
-                        ))}
+                        </thead>
+                        <tbody>
+                            {members.map((member, index) => (
+                                <tr key={index}>
+                                    {tableColumnData.map((key, index) => (
+                                        <td
+                                            key={index}
+                                            className="w-fit p-2 text-start border-2 border-gray-200"
+                                        >
+                                            {key === "Name"
+                                                ? `${member.FirstName} ${member.LastName}`
+                                                : member[key]}
+                                        </td>
+                                    ))}
+                                </tr>
+                            ))}
+                        </tbody>
                     </table>
                 </div>
             )}
