@@ -119,7 +119,7 @@ const OtherKTPChapters = () => {
                                         href={chapter.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-blue-500 hover:underline"
+                                        className="text-[#458eff] hover:text-[#234c8b]"
                                     >
                                         {chapter.url}
                                     </a>

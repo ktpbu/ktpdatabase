@@ -46,7 +46,7 @@ const AcademicResources = () => {
                 {usefulLinks.map((resource) => (
                     <div
                         key={resource.name}
-                        className="w-48 m-4 p-2 flex flex-col text-start border-1 hover:border-[#234c8b] rounded-md duration-200"
+                        className="w-64 m-4 p-2 flex flex-col text-start border-1 hover:border-[#234c8b] rounded-md duration-200"
                     >
                         <h5>{resource.name}</h5>
                         {resource.items.map((item) => (
