@@ -114,7 +114,7 @@ const Course = () => {
 
             <button
                 onClick={handleAddReviewButton}
-                className="m-4 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                className="m-4 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
             >
                 Add Review
             </button>

@@ -112,7 +112,7 @@ const CourseList = () => {
 
             <CourseListItem info={undergradSubjectInfo["economics-ug"]} />
 
-            <h4 className="text-start p-3">Engineering</h4>
+            <h4 className="p-3 text-start text-[#234c8b]">Engineering</h4>
             <CourseListItem info={undergradSubjectInfo["biomedical-eng-ug"]} />
             <CourseListItem
                 info={undergradSubjectInfo["electrical-computer-eng-ug"]}
