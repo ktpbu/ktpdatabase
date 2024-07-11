@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <footer className="w-full mx-auto px-12 flex flex-wrap justify-around bg-[#234c8b]">
             <div className="w-fit my-3 text-white">
-                &#169; 2023, Kappa Theta Pi Lambda Chapter
+                &#169; 2023 Kappa Theta Pi Lambda Chapter
             </div>
             <div className="w-fit my-3">
                 <Link

@@ -35,9 +35,9 @@ const Home = () => {
                     }
                 );
 
-                localStorage.setItem("is_admin", response.data.is_admin);
-                localStorage.setItem("first", response.data.first);
-                localStorage.setItem("last", response.data.last);
+                sessionStorage.setItem("is_admin", response.data.is_admin);
+                sessionStorage.setItem("first", response.data.first);
+                sessionStorage.setItem("last", response.data.last);
 
                 navigate("/", { replace: true });
             } catch (error) {

@@ -16,22 +16,19 @@ const Header = () => {
 
     const [user, setUser] = useState(null);
     const [isAdmin, setIsAdmin] = useState(null);
-    const [first, setFirst] = useState("");
-    const [last, setLast] = useState("");
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, async (user) => {
             if (user) {
                 setUser(user);
-                setIsAdmin(localStorage.getItem("is_admin"));
-                setFirst(localStorage.getItem("first"));
-                setLast(localStorage.getItem("last"));
+                setIsAdmin(sessionStorage.getItem("is_admin"));
+
                 return;
             }
             setUser(null);
         });
         return () => unsubscribe();
-    }, []);
+    });
 
     const [modalOpen, setModalOpen] = useState(false);
 
@@ -59,9 +56,10 @@ const Header = () => {
 
     const handleLogout = () => {
         setModalOpen(false);
+        setUser(null);
         navigate("/");
         auth.signOut();
-        localStorage.clear();
+        sessionStorage.clear();
     };
 
     const style = {
@@ -143,7 +141,7 @@ const Header = () => {
                             >
                                 <Fade in={modalOpen}>
                                     <Box sx={style}>
-                                        <h2 className="text-center text-[#234c8b]">{`${first} ${last}`}</h2>
+                                        <h2 className="text-center text-[#234c8b]">{`${user?.displayName}`}</h2>
                                         <div
                                             className={`${
                                                 isAdmin ? "h-56" : "h-40"
