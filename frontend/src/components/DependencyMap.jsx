@@ -10,7 +10,7 @@ const DependencyMap = ({ subject }) => {
         "mathematics-statistics": "Mathematics & Statistics",
     };
     return (
-        <div className="text-start p-3">
+        <div className="p-3 text-start hidden md:block">
             <Link
                 to={"/academics/courses/dependencies/" + subject}
                 className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"

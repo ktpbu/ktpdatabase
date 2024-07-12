@@ -169,7 +169,7 @@ const AddReview = () => {
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3 my-auto">Add Review for {id}</h2>
 
-            <div className="p-3 flex">
+            <div className="p-3 flex flex-wrap">
                 <p className="mr-1">
                     <a
                         href={"/"}
