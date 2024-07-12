@@ -158,16 +158,19 @@ The professor scraper is located at the path `./backend/scrapers/ProfScraper.py`
             |_ ...all graduate courses by course code
                 |_ Add Course Review
     |_ Professional
-        |_ Other KTP Chapters
+        |_ KTP Chapters
+        |_ Internships and New Grad
     |_ Calendar
     |_ Account
         |_ Admin (requires admin privileges)
-          |_ Manage Users
-          |_ Manage Reviews
+            |_ Manage Users (requires admin privileges)
+                |_ Add User (requires admin privileges)
+            |_ Manage Reviews (requires admin privileges)
         |_ Profile
         |_ Reviews
+            |_ Edit Review
 ```
 
 
 ## To-Do List
-Look at this repository's `Issues` tab for the next steps. Feel free to open a new issue if you feel anything should be added or changed.
+Look at this repository's `Issues` tab for the next steps. Open a new issue if you feel anything should be added or changed.
