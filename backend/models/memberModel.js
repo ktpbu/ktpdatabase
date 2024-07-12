@@ -48,9 +48,11 @@ const memberSchema = mongoose.Schema(
     }
 );
 
-const db2 = mongoose.createConnection(process.env.MONGODBURI_MEMBERS);
+const membersMongoDB = mongoose.createConnection(
+    process.env.MONGODBURI_MEMBERS
+);
 
-export const Members = db2.model(
+export const Members = membersMongoDB.model(
     "Member Element",
     memberSchema,
     "user-collection"

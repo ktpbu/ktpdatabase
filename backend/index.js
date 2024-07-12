@@ -37,26 +37,26 @@ app.use("/professional", professionalRoutes);
 
 async function connectDatabasesAndStartServer() {
     try {
-        const db1 = await mongoose.createConnection(process.env.MONGODBURI);
+        const mongoDB = await mongoose.createConnection(process.env.MONGODBURI);
 
-        const db2 = await mongoose.createConnection(
+        const membersMongoDB = await mongoose.createConnection(
             process.env.MONGODBURI_MEMBERS
         );
 
-        db1.on("connected", () => {
-            console.log("Connected to database 1");
+        mongoDB.on("connected", () => {
+            console.log("Connected to MongoDB");
         });
 
-        db1.on("error", (error) => {
-            console.log("Error connecting to database 1:", error);
+        mongoDB.on("error", (error) => {
+            console.log("Error connecting to MongoDB:", error);
         });
 
-        db2.on("connected", () => {
-            console.log("Connected to database 2");
+        membersMongoDB.on("connected", () => {
+            console.log("Connected to Members MongoDB");
         });
 
-        db2.on("error", (error) => {
-            console.log("Error connecting to database 2:", error);
+        membersMongoDB.on("error", (error) => {
+            console.log("Error connecting to Members MongoDB:", error);
         });
 
         app.listen(port, () => {

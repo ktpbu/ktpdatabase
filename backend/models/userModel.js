@@ -26,6 +26,6 @@ const userSchema = mongoose.Schema(
     { versionKey: false }
 );
 
-const db1 = mongoose.createConnection(process.env.MONGODBURI);
+const mongoDB = mongoose.createConnection(process.env.MONGODBURI);
 
-export const Users = db1.model("user entry", userSchema, "user-collection");
+export const Users = mongoDB.model("user entry", userSchema, "user-collection");
