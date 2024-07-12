@@ -5,7 +5,7 @@
 - [Guide to Contributing](#guide-to-contributing)
   - [Important Concepts](#important-concepts)
   - [Some Guidelines](#some-guidelines)
-  - [How to Run the Project Locally](#how-to-run-project-locally)
+  - [How to Run the Project Locally](#how-to-run-the-project-locally)
   - [Making a Request to the Backend](#making-a-request-to-the-backend)
   - [Connecting to the Supabase Client](#connecting-to-the-supabase-client)
   - [Limiting Page Access to Authenticated Users](#limiting-page-access-to-authenticated-users)
