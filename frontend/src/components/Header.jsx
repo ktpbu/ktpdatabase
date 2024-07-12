@@ -70,7 +70,7 @@ const Header = () => {
         width: 400,
         height: isAdmin ? 350 : 300,
         bgcolor: "background.paper",
-        border: "2px solid #000",
+        border: "2px solid #234c8b",
         boxShadow: 24,
         p: 4,
     };
@@ -79,7 +79,7 @@ const Header = () => {
         <div className="w-full mx-auto">
             <Navbar
                 collapseOnSelect
-                className="bg-[#234c8b]"
+                className="bg-[#8bb9ff]"
                 expand="lg"
                 fixed="top"
             >
@@ -94,7 +94,7 @@ const Header = () => {
                         <Nav className="ms-auto">
                             <Nav.Link eventKey="1">
                                 <Link
-                                    className="text-xl text-[#ffffff] no-underline hover:text-[#8bb9ff] duration-200 ease-linear"
+                                    className="text-xl text-[#ffffff] no-underline hover:text-[#234c8b] duration-200 ease-linear"
                                     to="/"
                                 >
                                     Home
@@ -102,7 +102,7 @@ const Header = () => {
                             </Nav.Link>
                             <Nav.Link eventKey="2">
                                 <Link
-                                    className="text-xl text-[#ffffff] no-underline hover:text-[#8bb9ff] duration-200 ease-linear"
+                                    className="text-xl text-[#ffffff] no-underline hover:text-[#234c8b] duration-200 ease-linear"
                                     to="/academics"
                                 >
                                     Academics
@@ -110,7 +110,7 @@ const Header = () => {
                             </Nav.Link>
                             <Nav.Link eventKey="3">
                                 <Link
-                                    className="text-xl text-[#ffffff] no-underline hover:text-[#8bb9ff] duration-200 ease-linear"
+                                    className="text-xl text-[#ffffff] no-underline hover:text-[#234c8b] duration-200 ease-linear"
                                     to="/professional"
                                 >
                                     Professional
@@ -118,7 +118,7 @@ const Header = () => {
                             </Nav.Link>
                             <Nav.Link eventKey="4">
                                 <Link
-                                    className="text-xl text-[#ffffff] no-underline hover:text-[#8bb9ff] duration-200 ease-linear"
+                                    className="text-xl text-[#ffffff] no-underline hover:text-[#234c8b] duration-200 ease-linear"
                                     to="/calendar"
                                 >
                                     Calendar
@@ -128,7 +128,7 @@ const Header = () => {
                             {user && (
                                 <button onClick={handleModalOpen}>
                                     <AccountCircleIcon
-                                        className="m-auto text-[#ffffff] no-underline hover:text-[#8bb9ff]"
+                                        className="m-auto text-[#ffffff] no-underline hover:text-[#234c8b]"
                                         fontSize="large"
                                     />
                                 </button>

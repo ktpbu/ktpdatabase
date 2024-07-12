@@ -7,11 +7,11 @@ import Footer from "./components/Footer";
 function Layout() {
     return (
         <div className="flex flex-col min-h-screen">
-            <Header className="bg-red-200" />
-            <div className="grow">
+            <Header />
+            <div className="grow bg-gradient-to-b from-[#8bb9ff] to-[#ffffff]">
                 <Outlet />
             </div>
-            <Footer className="w-full bg-green-200" />
+            <Footer className="w-full" />
         </div>
     );
 }

@@ -13,7 +13,7 @@ const DependencyMap = ({ subject }) => {
         <div className="text-start p-3">
             <Link
                 to={"/academics/courses/dependencies/" + subject}
-                className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
             >
                 {subjectMap[subject]} Dependency Map
             </Link>

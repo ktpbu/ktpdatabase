@@ -4,11 +4,11 @@ const LoginError = () => {
     const navigate = useNavigate();
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h1 className="mt-16 text-3xl">
+            <h1 className="mt-16 text-3xl text-[#234c8b]">
                 User must be authenticated to access the KTP Database
             </h1>
             <button
-                className="my-16 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                className="my-16 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                 type="button"
                 onClick={() => navigate("/")}
             >

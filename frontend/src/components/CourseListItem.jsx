@@ -10,7 +10,7 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 const CourseIcon = ({ code, level, college }) => {
     return (
         <Link
-            className="w-20 mb-2.5 mx-2.5 py-1.5 text-black no-underline border-solid border-2 rounded-2xl hover:border-[#234c8b] duration-100 hover:scale-110 "
+            className="w-20 mb-2.5 mx-2.5 py-1.5 text-black no-underline border-1 border-solid border-black rounded-2xl duration-100 hover:scale-110 "
             title={code}
             to={`/academics/courses/${level}/${college}${code}`}
         >
@@ -53,7 +53,7 @@ const CourseListItem = ({ info }) => {
                         href={info.website}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                        className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                     >
                         Complete List
                     </a>{" "}

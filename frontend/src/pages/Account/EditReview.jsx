@@ -177,7 +177,7 @@ const EditReview = () => {
 
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h2 className="text-start p-3 my-auto">
+            <h2 className="my-auto p-3 text-start text-[#234c8b]">
                 Edit Review for {reviewResponse.course_id}
             </h2>
 

@@ -77,7 +77,7 @@ const undergradSubjectInfo = {
 const CourseList = () => {
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h2 className="text-start p-3">Courses</h2>
+            <h2 className="p-3 text-start text-[#234c8b]">Courses</h2>
 
             <CustomBreadcrumb
                 previous={[
@@ -98,7 +98,7 @@ const CourseList = () => {
                 <b>NOTE</b>: click{" "}
                 <Link
                     to="/academics/graduate/"
-                    className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                    className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                 >
                     here
                 </Link>{" "}

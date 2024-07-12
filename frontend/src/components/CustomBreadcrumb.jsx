@@ -7,7 +7,7 @@ const CustomBreadcrumb = ({ previous, current }) => {
                 <p key={index} className="mr-1">
                     <a
                         href={page.path}
-                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                        className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                     >
                         {page.title}
                     </a>

@@ -60,7 +60,7 @@ const Internships = () => {
 
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h2 className="text-start p-3">Internships</h2>
+            <h2 className="p-3 text-start text-[#234c8b]">Internships</h2>
 
             <CustomBreadcrumb
                 previous={[
@@ -80,7 +80,7 @@ const Internships = () => {
                         {section.resources.map((item, index) => (
                             <a
                                 key={index}
-                                className="mt-2 text-[#458eff] hover:text-[#234c8b] no-underline hover:underline"
+                                className="mt-2 text-[#234c8b] hover:text-[#458eff]"
                                 href={item.url}
                                 target="_blank"
                                 rel="noreferrer"
