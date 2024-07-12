@@ -4,7 +4,7 @@ import { useSnackbar } from "notistack";
 import axios from "axios";
 import Select from "react-select";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth } from "../../firebaseConfig";
 
 import CustomCheckbox from "../../components/CustomCheckbox";
 

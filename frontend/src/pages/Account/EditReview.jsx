@@ -5,7 +5,7 @@ import axios from "axios";
 import Select from "react-select";
 import { useSnackbar } from "notistack";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth } from "../../firebaseConfig";
 
 import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 import CustomCheckbox from "../../components/CustomCheckbox";
