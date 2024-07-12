@@ -30,7 +30,7 @@ const academicOptions = [
 
 const Academics = () => {
     return (
-        <div className="w-3/4 mx-auto py-20">
+        <div className="w-3/4 mx-auto pt-20">
             <h2 className=" p-3 text-start text-[#234c8b]">Academics</h2>
 
             <CustomBreadcrumb
