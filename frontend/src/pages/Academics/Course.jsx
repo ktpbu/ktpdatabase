@@ -53,7 +53,7 @@ const Course = () => {
 
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h2 className="text-start p-3 my-auto">
+            <h2 className="my-auto p-3 text-start text-[#234c8b]">
                 {courseInfo.code}: {courseInfo.name}
             </h2>
 
@@ -61,7 +61,7 @@ const Course = () => {
                 <p className="mr-1">
                     <a
                         href={"/"}
-                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                        className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                     >
                         Home
                     </a>
@@ -70,7 +70,7 @@ const Course = () => {
                 <p className="mr-1">
                     <a
                         href={"/academics"}
-                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                        className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                     >
                         Academics
                     </a>
@@ -80,7 +80,7 @@ const Course = () => {
                     <p className="mr-1">
                         <a
                             href={"/academics/courses"}
-                            className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                            className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                         >
                             Courses
                         </a>
@@ -90,7 +90,7 @@ const Course = () => {
                     <p className="mr-1">
                         <a
                             href={"/academics/graduate"}
-                            className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                            className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                         >
                             Graduate
                         </a>

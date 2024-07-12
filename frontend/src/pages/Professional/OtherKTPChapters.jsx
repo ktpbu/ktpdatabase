@@ -88,7 +88,7 @@ const OtherKTPChapters = () => {
 
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h2 className="text-start p-3">KTP Chapters</h2>
+            <h2 className="p-3 text-start text-[#234c8b]">KTP Chapters</h2>
 
             <CustomBreadcrumb
                 previous={[
@@ -126,7 +126,7 @@ const OtherKTPChapters = () => {
                                         href={chapter.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-[#458eff] hover:text-[#234c8b]"
+                                        className="text-[#234c8b] hover:text-[#458eff]"
                                     >
                                         {chapter.url}
                                     </a>

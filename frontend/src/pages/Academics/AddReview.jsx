@@ -168,7 +168,7 @@ const AddReview = () => {
                 <p className="mr-1">
                     <a
                         href={"/"}
-                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                        className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                     >
                         Home
                     </a>
@@ -177,7 +177,7 @@ const AddReview = () => {
                 <p className="mr-1">
                     <a
                         href={"/academics"}
-                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                        className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                     >
                         Academics
                     </a>
@@ -187,7 +187,7 @@ const AddReview = () => {
                     <p className="mr-1">
                         <a
                             href={"/academics/courses"}
-                            className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                            className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                         >
                             Courses
                         </a>
@@ -197,7 +197,7 @@ const AddReview = () => {
                     <p className="mr-1">
                         <a
                             href={"/academics/graduate"}
-                            className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                            className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                         >
                             Graduate
                         </a>
@@ -207,7 +207,7 @@ const AddReview = () => {
                 <p className="mr-1">
                     <a
                         href={`/academics/courses/${level}/${id}`}
-                        className="text-[#458eff] hover:text-[#234c8b] duration-200 ease-linear"
+                        className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                     >
                         {id}
                     </a>

@@ -75,7 +75,7 @@ const gradSubjectInfo = {
 const Graduate = () => {
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h2 className="text-start p-3">Graduate</h2>
+            <h2 className="p-3 text-start text-[#234c8b]">Graduate</h2>
 
             <CustomBreadcrumb
                 previous={[

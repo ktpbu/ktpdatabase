@@ -3,7 +3,7 @@ import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 const Calendar = () => {
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h2 className="text-start p-3">Calendar</h2>
+            <h2 className="p-3 text-start text-[#234c8b]">Calendar</h2>
 
             <CustomBreadcrumb
                 previous={[{ title: "Home", path: "/" }]}
