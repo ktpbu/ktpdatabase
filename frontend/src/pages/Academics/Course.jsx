@@ -57,7 +57,7 @@ const Course = () => {
                 {courseInfo.code}: {courseInfo.name}
             </h2>
 
-            <div className="p-3 flex">
+            <div className="p-3 flex flex-wrap">
                 <p className="mr-1">
                     <a
                         href={"/"}
