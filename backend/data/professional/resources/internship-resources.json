@@ -1,0 +1,59 @@
+[
+    {
+        "header": "Job Websites",
+        "resources": [
+            { "name": "BU Connects", "link": "https://buconnects.com/" },
+            { "name": "LinkedIn", "link": "https://www.linkedin.com/jobs/" },
+            {
+                "name": "Handshake",
+                "link": "https://app.joinhandshake.com/login"
+            },
+            { "name": "RippleMatch", "link": "https://ripplematch.com/" },
+            { "name": "Simplify", "link": "https://simplify.jobs/" },
+            {
+                "name": "UROP Opportunities",
+                "link": "https://www.bu.edu/urop/opportunities/on-campus-research/"
+            }
+        ]
+    },
+    {
+        "header": "GitHub Repos",
+        "resources": [
+            {
+                "name": "Public API Lists",
+                "link": "https://github.com/public-api-lists/public-api-lists"
+            },
+            {
+                "name": "Summer 2025 Internships",
+                "link": "https://github.com/SimplifyJobs/Summer2025-Internships"
+            },
+            {
+                "name": "Summer 2025 New Grad Roles",
+                "link": "https://github.com/SimplifyJobs/New-Grad-Positions"
+            },
+            {
+                "name": "Technical Challenge Solutions",
+                "link": "https://github.com/mission-peace/interview"
+            }
+        ]
+    },
+    {
+        "header": "Interview Prep",
+        "resources": [
+            { "name": "LeetCode", "link": "https://leetcode.com/" },
+            { "name": "DataLemur", "link": "https://datalemur.com/" },
+            {
+                "name": "GeeksForGeeks",
+                "link": "https://www.geeksforgeeks.org/"
+            },
+            {
+                "name": "Google Interview Warmup",
+                "link": "https://grow.google/certificates/interview-warmup/"
+            },
+            {
+                "name": "STAR Method",
+                "link": "https://resources.biginterview.com/behavioral-interviews/star-interview-method/"
+            }
+        ]
+    }
+]

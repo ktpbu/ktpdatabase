@@ -16,7 +16,7 @@ const professionalOptions = [
     {
         link: "/professional/Internships",
         image: internship,
-        header: "Internships",
+        header: "Internships and New Grad",
         text: "Useful resources for getting internships",
     },
 ];
