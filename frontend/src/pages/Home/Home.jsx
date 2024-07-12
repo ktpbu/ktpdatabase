@@ -58,7 +58,7 @@ const Home = () => {
 
             <div className="text-start text-xl p-3">
                 <p>
-                    The central location for all of your academic and
+                    One central location for all of your academic and
                     professional needs.
                 </p>
             </div>
