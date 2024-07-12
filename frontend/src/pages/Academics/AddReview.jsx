@@ -108,6 +108,11 @@ const AddReview = () => {
             });
     }, [subject]);
 
+    const adjustReviewAreaHeight = (textArea) => {
+        textArea.style.height = "auto";
+        textArea.style.height = `${textArea.scrollHeight + 2}px`;
+    };
+
     const resetReview = () => {
         setAnon(false);
         setProfessor({ value: "", label: "" });
@@ -235,13 +240,15 @@ const AddReview = () => {
             ))}
             <div className="w-96 mx-auto my-2 flex flex-wrap justify-between">
                 <label className="my-auto text-2xl">Review</label>
-                <input
+                <textarea
                     name="review"
                     value={review}
-                    className="w-48 h-8 p-2 border-1 border-gray-300 rounded-md"
+                    className="w-48 resize-none p-2 border-1 border-gray-300 rounded-md"
                     onChange={(e) => {
                         setReview(e.target.value);
+                        adjustReviewAreaHeight(e.target);
                     }}
+                    rows={1}
                 />
             </div>
 

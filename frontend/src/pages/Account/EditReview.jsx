@@ -55,7 +55,7 @@ const EditReview = () => {
     const [difficulty, setDifficulty] = useState({ value: "", label: "" });
     const [rating, setRating] = useState({ value: "", label: "" });
     const [anon, setAnon] = useState(false);
-    const [review, setReview] = useState(reviewResponse.review);
+    const [review, setReview] = useState("");
 
     useEffect(() => {
         setProfessor({
@@ -135,6 +135,11 @@ const EditReview = () => {
             });
     }, [reviewResponse.subject]);
 
+    const adjustReviewAreaHeight = (textArea) => {
+        textArea.style.height = "auto";
+        textArea.style.height = `${textArea.scrollHeight + 2}px`;
+    };
+
     const handleSaveReview = () => {
         if (
             professor.value === "" ||
@@ -208,12 +213,13 @@ const EditReview = () => {
             ))}
             <div className="w-96 mx-auto my-2 flex flex-wrap justify-between">
                 <label className="my-auto text-2xl">Review</label>
-                <input
+                <textarea
                     name="review"
                     value={review}
-                    className="w-48 h-8 p-2 border-1 border-gray-300 rounded-md"
+                    className="w-48 resize-none p-2 border-1 border-gray-300 rounded-md"
                     onChange={(e) => {
                         setReview(e.target.value);
+                        adjustReviewAreaHeight(e.target);
                     }}
                 />
             </div>
