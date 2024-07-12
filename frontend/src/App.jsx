@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "./firebase.js";
+import { auth } from "./firebaseConfig";
 
 import ProtectedRoute from "./components/ProtectedRoute";
 
