@@ -1,4 +1,4 @@
-import admin from "../firebase.js";
+import admin from "../firebaseConfig.js";
 import express from "express";
 import { Users } from "../models/userModel.js";
 

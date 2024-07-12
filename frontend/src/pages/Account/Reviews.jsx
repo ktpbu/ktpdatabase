@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth } from "../../firebaseConfig";
 
 import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 import ReviewDisplay from "../../components/ReviewDisplay";

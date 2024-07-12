@@ -40,7 +40,6 @@
     {
         "header": "Interview Prep",
         "resources": [
-            { "name": "LeetCode", "link": "https://leetcode.com/" },
             { "name": "DataLemur", "link": "https://datalemur.com/" },
             {
                 "name": "GeeksForGeeks",
@@ -49,6 +48,11 @@
             {
                 "name": "Google Interview Warmup",
                 "link": "https://grow.google/certificates/interview-warmup/"
+            },
+            { "name": "LeetCode", "link": "https://leetcode.com/" },
+            {
+                "name": "NeetCode",
+                "link": "https://neetcode.io/"
             },
             {
                 "name": "STAR Method",

@@ -5,7 +5,7 @@ import axios from "axios";
 import Select from "react-select";
 import { useSnackbar } from "notistack";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth } from "../../firebaseConfig";
 
 import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 import CustomCheckbox from "../../components/CustomCheckbox";
@@ -55,7 +55,7 @@ const EditReview = () => {
     const [difficulty, setDifficulty] = useState({ value: "", label: "" });
     const [rating, setRating] = useState({ value: "", label: "" });
     const [anon, setAnon] = useState(false);
-    const [review, setReview] = useState(reviewResponse.review);
+    const [review, setReview] = useState("");
 
     useEffect(() => {
         setProfessor({
@@ -135,6 +135,11 @@ const EditReview = () => {
             });
     }, [reviewResponse.subject]);
 
+    const adjustReviewAreaHeight = (textArea) => {
+        textArea.style.height = "auto";
+        textArea.style.height = `${textArea.scrollHeight + 2}px`;
+    };
+
     const handleSaveReview = () => {
         if (
             professor.value === "" ||
@@ -168,7 +173,7 @@ const EditReview = () => {
                 enqueueSnackbar("Successfully edited review", {
                     variant: "success",
                 });
-                navigate("/account/reviews");
+                navigate("/account/reviews", { replace: true });
             } catch (error) {
                 enqueueSnackbar("Failed to edit review", { variant: "error" });
             }
@@ -196,7 +201,7 @@ const EditReview = () => {
                 >
                     <label className="my-auto text-2xl">{item.label}</label>
                     <Select
-                        className="w-48"
+                        className="w-56"
                         options={item.options}
                         value={item.value}
                         onChange={(selectedOption) =>
@@ -208,12 +213,13 @@ const EditReview = () => {
             ))}
             <div className="w-96 mx-auto my-2 flex flex-wrap justify-between">
                 <label className="my-auto text-2xl">Review</label>
-                <input
+                <textarea
                     name="review"
                     value={review}
-                    className="w-48 h-8 p-2 border-1 border-gray-300 rounded-md"
+                    className="w-56 resize-none p-2 border-1 border-gray-300 rounded-md"
                     onChange={(e) => {
                         setReview(e.target.value);
+                        adjustReviewAreaHeight(e.target);
                     }}
                 />
             </div>

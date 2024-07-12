@@ -4,7 +4,7 @@ import { useSnackbar } from "notistack";
 import axios from "axios";
 import Select from "react-select";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../../firebase";
+import { auth } from "../../firebaseConfig";
 
 import CustomCheckbox from "../../components/CustomCheckbox";
 
@@ -107,6 +107,11 @@ const AddReview = () => {
                 console.log(error);
             });
     }, [subject]);
+
+    const adjustReviewAreaHeight = (textArea) => {
+        textArea.style.height = "auto";
+        textArea.style.height = `${textArea.scrollHeight + 2}px`;
+    };
 
     const resetReview = () => {
         setAnon(false);
@@ -223,7 +228,7 @@ const AddReview = () => {
                 >
                     <label className="my-auto text-2xl">{item.label}</label>
                     <Select
-                        className="w-48"
+                        className="w-56"
                         options={item.options}
                         value={item.value}
                         onChange={(selectedOption) =>
@@ -235,13 +240,15 @@ const AddReview = () => {
             ))}
             <div className="w-96 mx-auto my-2 flex flex-wrap justify-between">
                 <label className="my-auto text-2xl">Review</label>
-                <input
+                <textarea
                     name="review"
                     value={review}
-                    className="w-48 h-8 p-2 border-1 border-gray-300 rounded-md"
+                    className="w-56 resize-none p-2 border-1 border-gray-300 rounded-md"
                     onChange={(e) => {
                         setReview(e.target.value);
+                        adjustReviewAreaHeight(e.target);
                     }}
+                    rows={1}
                 />
             </div>
 
