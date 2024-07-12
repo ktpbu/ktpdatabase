@@ -173,7 +173,7 @@ const EditReview = () => {
                 enqueueSnackbar("Successfully edited review", {
                     variant: "success",
                 });
-                navigate("/account/reviews");
+                navigate("/account/reviews", { replace: true });
             } catch (error) {
                 enqueueSnackbar("Failed to edit review", { variant: "error" });
             }
