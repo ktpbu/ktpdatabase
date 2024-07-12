@@ -201,7 +201,7 @@ const EditReview = () => {
                 >
                     <label className="my-auto text-2xl">{item.label}</label>
                     <Select
-                        className="w-48"
+                        className="w-56"
                         options={item.options}
                         value={item.value}
                         onChange={(selectedOption) =>
@@ -216,7 +216,7 @@ const EditReview = () => {
                 <textarea
                     name="review"
                     value={review}
-                    className="w-48 resize-none p-2 border-1 border-gray-300 rounded-md"
+                    className="w-56 resize-none p-2 border-1 border-gray-300 rounded-md"
                     onChange={(e) => {
                         setReview(e.target.value);
                         adjustReviewAreaHeight(e.target);
