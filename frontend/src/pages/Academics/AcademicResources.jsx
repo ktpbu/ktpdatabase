@@ -43,21 +43,21 @@ const AcademicResources = () => {
 
             <h3 className="text-[#234c8b]">Useful Links</h3>
             <div className="flex flex-wrap justify-around">
-                {usefulLinks.map((resource) => (
+                {usefulLinks.map((section, index) => (
                     <div
-                        key={resource.name}
-                        className="w-64 m-4 p-2 flex flex-col text-start border-1 hover:border-[#234c8b] rounded-md duration-200"
+                        key={index}
+                        className="w-64 m-4 p-2 flex flex-col text-start border-1 hover:border-[#234c8b] rounded-md duration-200 ease-linear bg-white"
                     >
-                        <h5>{resource.name}</h5>
-                        {resource.items.map((item) => (
+                        <h5>{section.header}</h5>
+                        {section.resources.map((resource, index) => (
                             <a
-                                key={item.link}
-                                className="mt-2 text-[#234c8b] hover:text-[#458eff]"
-                                href={item.link}
+                                key={index}
+                                className="w-fit mt-2 text-[#234c8b] hover:text-[#458eff]"
+                                href={resource.link}
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                {item.text}
+                                {resource.name}
                             </a>
                         ))}
                     </div>

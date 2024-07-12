@@ -51,7 +51,7 @@ const Home = () => {
     };
 
     return (
-        <div className="w-3/4 mx-auto py-20">
+        <div className="w-3/4 mx-auto pt-20">
             <h2 className="mt-24 p-3  text-4xl text-start text-[#234c8b]">
                 Welcome to the KTP Database!
             </h2>

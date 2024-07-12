@@ -64,7 +64,7 @@ const Reviews = () => {
             ) : userReviews && userReviews.length > 0 ? (
                 <ReviewDisplay reviews={userReviews} view="account" />
             ) : (
-                <p className="text-2xl">User has not submitted any reviews.</p>
+                <p className="text-2xl">You have not added any reviews.</p>
             )}
         </div>
     );

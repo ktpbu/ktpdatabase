@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const LoginError = () => {
     const navigate = useNavigate();
     return (
-        <div className="w-3/4 mx-auto py-20">
+        <div className="w-3/4 mx-auto pt-20">
             <h1 className="mt-16 text-3xl text-[#234c8b]">
                 User must be authenticated to access the KTP Database
             </h1>
