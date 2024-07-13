@@ -15,6 +15,7 @@ const AddReview = () => {
     const { enqueueSnackbar } = useSnackbar();
     const navigate = useNavigate();
 
+    const { level, id } = useParams();
     const subjectMap = useMemo(
         () => ({
             ENGBE: "biomedical-eng",
@@ -43,7 +44,6 @@ const AddReview = () => {
         return () => unsubscribe();
     }, []);
 
-    const { level, id } = useParams();
     const [anon, setAnon] = useState(false);
 
     const [professors, setProfessors] = useState([]);
@@ -221,33 +221,33 @@ const AddReview = () => {
                 {selectDropdowns.map((item, index) => {
                     const fieldName = item.label.toLowerCase();
                     return (
-                        <div key={index} className="form-control">
-                            <div className="w-96 mx-auto my-2 flex flex-wrap justify-between">
-                                <label className="my-auto text-2xl">
-                                    {item.label}
-                                </label>
-                                <div>
-                                    <Select
-                                        className="w-56"
-                                        options={item.options}
-                                        id={fieldName}
-                                        {...register(fieldName, {
-                                            validate: {
-                                                notDefault: (fieldValue) => {
-                                                    return (
-                                                        fieldValue.value !==
-                                                            "" &&
-                                                        fieldValue.label !== ""
-                                                    );
-                                                },
+                        <div
+                            key={index}
+                            className="w-96 mx-auto my-2 flex flex-wrap justify-between"
+                        >
+                            <label className="my-auto text-2xl">
+                                {item.label}
+                            </label>
+                            <div>
+                                <Select
+                                    className="w-56"
+                                    options={item.options}
+                                    id={fieldName}
+                                    {...register(fieldName, {
+                                        validate: {
+                                            notDefault: (fieldValue) => {
+                                                return (
+                                                    fieldValue.value !== "" &&
+                                                    fieldValue.label !== ""
+                                                );
                                             },
-                                        })}
-                                        onChange={(selectedOption) => {
-                                            setValue(fieldName, selectedOption);
-                                        }}
-                                        isSearchable={true}
-                                    />
-                                </div>
+                                        },
+                                    })}
+                                    onChange={(selectedOption) => {
+                                        setValue(fieldName, selectedOption);
+                                    }}
+                                    isSearchable={true}
+                                />
                             </div>
                         </div>
                     );
