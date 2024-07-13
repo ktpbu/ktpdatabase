@@ -15,14 +15,11 @@ const Header = () => {
     const navigate = useNavigate();
 
     const [user, setUser] = useState(null);
-    const [isAdmin, setIsAdmin] = useState(null);
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, async (user) => {
             if (user) {
                 setUser(user);
-                setIsAdmin(sessionStorage.getItem("is_admin"));
-
                 return;
             }
             setUser(null);
@@ -68,7 +65,7 @@ const Header = () => {
         left: "50%",
         transform: "translate(-50%, -50%)",
         width: 400,
-        height: isAdmin ? 350 : 300,
+        height: 350,
         bgcolor: "background.paper",
         border: "2px solid #234c8b",
         boxShadow: 24,
@@ -142,20 +139,14 @@ const Header = () => {
                                 <Fade in={modalOpen}>
                                     <Box sx={style}>
                                         <h2 className="text-center text-[#234c8b]">{`${user?.displayName}`}</h2>
-                                        <div
-                                            className={`${
-                                                isAdmin ? "h-56" : "h-40"
-                                            } mt-4 flex flex-col justify-between`}
-                                        >
-                                            {isAdmin && (
-                                                <button
-                                                    className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
-                                                    type="button"
-                                                    onClick={handleAdmin}
-                                                >
-                                                    Admin
-                                                </button>
-                                            )}
+                                        <div className="h-56 mt-4 flex flex-col justify-between">
+                                            <button
+                                                className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
+                                                type="button"
+                                                onClick={handleAdmin}
+                                            >
+                                                Admin
+                                            </button>
                                             <button
                                                 className="w-28 mx-auto p-2 block text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
                                                 type="button"
