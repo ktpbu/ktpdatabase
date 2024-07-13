@@ -173,3 +173,14 @@ The professor scraper is located at the path `./backend/scrapers/ProfScraper.py`
 
 ## To-Do List
 Look at this repository's `Issues` tab for the next steps. Open a new issue if you feel anything should be added or changed.
+
+## Contributors
+
+### Developers
+- Victor Verma, Alpha Class, 2025
+- Rohan Kumar, Alpha Class, 2025
+- Nick David, Beta Class, 2026
+### Consultants
+- Carol Riady, Alpha Class, 2025
+- Jennifer Ji, Beta Class, 2026
+- Thomas Boles, Alpha Class, 2026
