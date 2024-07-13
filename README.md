@@ -12,7 +12,6 @@
   - [How to Run the Course Scraper](#how-to-run-the-course-scraper)
   - [How to Run the Professor Scraper](#how-to-run-the-professor-scraper) 
 - [Current Roadmap of Website](#current-roadmap-of-website)
-- [Current Open Questions](#current-open-questions)
 - [To-Do List](#to-do-list)
 
 ## Note
