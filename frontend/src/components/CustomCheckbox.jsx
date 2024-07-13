@@ -6,22 +6,24 @@ import PropTypes from "prop-types";
 
 const CustomCheckbox = ({ label, labelPlacement, checked, setChecked }) => {
     return (
-        <FormControl component="fieldset">
-            <FormGroup aria-label="position" row>
-                <FormControlLabel
-                    control={
-                        <Checkbox
-                            checked={checked}
-                            onChange={(e) => {
-                                setChecked(e.target.checked);
-                            }}
-                        />
-                    }
-                    label={label}
-                    labelPlacement={labelPlacement}
-                />
-            </FormGroup>
-        </FormControl>
+        <div className="m-auto">
+            <FormControl component="fieldset">
+                <FormGroup aria-label="position" row>
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                checked={checked}
+                                onChange={(e) => {
+                                    setChecked(e.target.checked);
+                                }}
+                            />
+                        }
+                        label={label}
+                        labelPlacement={labelPlacement}
+                    />
+                </FormGroup>
+            </FormControl>
+        </div>
     );
 };
 

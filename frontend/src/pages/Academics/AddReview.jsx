@@ -5,6 +5,7 @@ import axios from "axios";
 import Select from "react-select";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../firebaseConfig";
+import { useForm } from "react-hook-form";
 
 import CustomCheckbox from "../../components/CustomCheckbox";
 
@@ -13,67 +14,6 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 const AddReview = () => {
     const { enqueueSnackbar } = useSnackbar();
     const navigate = useNavigate();
-
-    const [user, setUser] = useState(null);
-
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, async (user) => {
-            if (user) {
-                setUser(user);
-                return;
-            }
-            setUser(null);
-        });
-        return () => unsubscribe();
-    }, []);
-
-    const { level, id } = useParams();
-    const [professors, setProfessors] = useState([]);
-    const [professor, setProfessor] = useState({ value: "", label: "" });
-    const values = [
-        { value: 5, label: "5" },
-        { value: 4, label: "4" },
-        { value: 3, label: "3" },
-        { value: 2, label: "2" },
-        { value: 1, label: "1" },
-    ];
-    const [usefulness, setUsefulness] = useState({ value: "", label: "" });
-    const [difficulty, setDifficulty] = useState({ value: "", label: "" });
-    const [rating, setRating] = useState({ value: "", label: "" });
-    const [anon, setAnon] = useState(false);
-
-    const selectDropdowns = [
-        {
-            label: "Professor*",
-            options: professors,
-            value: professor,
-            update: setProfessor,
-            searchable: true,
-        },
-        {
-            label: "Usefulness*",
-            options: values,
-            value: usefulness,
-            update: setUsefulness,
-            searchable: false,
-        },
-        {
-            label: "Difficulty*",
-            options: values,
-            value: difficulty,
-            update: setDifficulty,
-            searchable: false,
-        },
-        {
-            label: "Rating*",
-            options: values,
-            value: rating,
-            update: setRating,
-            searchable: false,
-        },
-    ];
-
-    const [review, setReview] = useState("");
 
     const subjectMap = useMemo(
         () => ({
@@ -90,6 +30,23 @@ const AddReview = () => {
     );
     const subject = subjectMap[id.slice(0, 5)];
 
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                setUser(user);
+                return;
+            }
+            setUser(null);
+        });
+        return () => unsubscribe();
+    }, []);
+
+    const { level, id } = useParams();
+    const [anon, setAnon] = useState(false);
+
+    const [professors, setProfessors] = useState([]);
     useEffect(() => {
         axios
             .post(`${backend}/academics/courses/professors`, {
@@ -108,52 +65,71 @@ const AddReview = () => {
             });
     }, [subject]);
 
-    const adjustReviewAreaHeight = (textArea) => {
-        textArea.style.height = "auto";
-        textArea.style.height = `${textArea.scrollHeight + 2}px`;
-    };
+    const values = [
+        { value: 5, label: "5" },
+        { value: 4, label: "4" },
+        { value: 3, label: "3" },
+        { value: 2, label: "2" },
+        { value: 1, label: "1" },
+    ];
 
-    const resetReview = () => {
-        setAnon(false);
-        setProfessor({ value: "", label: "" });
-        setUsefulness({ value: "", label: "" });
-        setDifficulty({ value: "", label: "" });
-        setRating({ value: "", label: "" });
-        setReview("");
-    };
+    const selectDropdowns = [
+        {
+            label: "Professor",
+            options: professors,
+            searchable: true,
+        },
+        {
+            label: "Usefulness",
+            options: values,
+            searchable: false,
+        },
+        {
+            label: "Difficulty",
+            options: values,
+            searchable: false,
+        },
+        {
+            label: "Rating",
+            options: values,
+            searchable: false,
+        },
+    ];
 
-    const handleAddReview = () => {
-        if (
-            professor.value === "" ||
-            usefulness.value === "" ||
-            difficulty.value === "" ||
-            rating.value === ""
-        ) {
-            enqueueSnackbar("Fill in all required fields", {
-                variant: "error",
-            });
-        } else {
-            const reviewObj = {
-                user: user.displayName,
-                bu_email: user.email,
-                anon,
-                id,
-                professor: professor.value,
-                subject,
-                usefulness: usefulness.value,
-                difficulty: difficulty.value,
-                rating: rating.value,
-                review,
-                date: new Date().toISOString().replace("Z", "+00:00"),
-            };
+    const reviewForm = useForm({
+        defaultValues: {
+            user: "",
+            bu_email: "",
+            anon: anon,
+            id: id,
+            professor: { value: "", label: "" },
+            subject: subject,
+            usefulness: { value: "", label: "" },
+            difficulty: { value: "", label: "" },
+            rating: { value: "", label: "" },
+            review: "",
+            date: new Date().toISOString().replace("Z", "+00:00"),
+        },
+    });
+
+    const { register, handleSubmit, setValue } = reviewForm;
+
+    const onSubmit = (data) => {
+        data = {
+            ...data,
+            user: user.displayName,
+            bu_email: user.email,
+            anon: anon,
+            date: new Date().toISOString().replace("Z", "+00:00"),
+        };
+        try {
             axios
-                .post(`${backend}/academics/courses/add-review`, reviewObj)
+                .post(`${backend}/academics/courses/add-review`, data)
                 .then(() => {
-                    console.log(reviewObj);
+                    console.log("Review submitted", data);
                     enqueueSnackbar("Added review successfully", {
                         variant: "success",
                     });
-                    resetReview();
                     navigate(`/academics/courses/${level}/${id}`);
                 })
                 .catch((error) => {
@@ -162,13 +138,29 @@ const AddReview = () => {
                     });
                     console.log(error);
                 });
+        } catch (error) {
+            console.log(error);
         }
+    };
+
+    const onError = (errors) => {
+        console.log("Form errors", errors);
+        enqueueSnackbar(
+            "Professor, Usefulness, Difficulty, and Rating are required",
+            {
+                variant: "error",
+            }
+        );
+    };
+
+    const adjustReviewAreaHeight = (textArea) => {
+        textArea.style.height = "auto";
+        textArea.style.height = `${textArea.scrollHeight + 2}px`;
     };
 
     return (
         <div className="w-3/4 mx-auto py-20">
             <h2 className="text-start p-3 my-auto">Add Review for {id}</h2>
-
             <div className="p-3 flex flex-wrap">
                 <p className="mr-1">
                     <a
@@ -221,53 +213,74 @@ const AddReview = () => {
                 <p>Add Review</p>
             </div>
 
-            {selectDropdowns.map((item) => (
-                <div
-                    key={item.label}
-                    className="w-96 mx-auto my-2 flex flex-wrap justify-between"
-                >
-                    <label className="my-auto text-2xl">{item.label}</label>
-                    <Select
-                        className="w-56"
-                        options={item.options}
-                        value={item.value}
-                        onChange={(selectedOption) =>
-                            selectedOption && item.update(selectedOption)
-                        }
-                        isSearchable={item.searchable}
+            <form
+                className="flex flex-col justify-center align-middle"
+                onSubmit={handleSubmit(onSubmit, onError)}
+                noValidate
+            >
+                {selectDropdowns.map((item, index) => {
+                    const fieldName = item.label.toLowerCase();
+                    return (
+                        <div key={index} className="form-control">
+                            <div className="w-96 mx-auto my-2 flex flex-wrap justify-between">
+                                <label className="my-auto text-2xl">
+                                    {item.label}
+                                </label>
+                                <div>
+                                    <Select
+                                        className="w-56"
+                                        options={item.options}
+                                        id={fieldName}
+                                        {...register(fieldName, {
+                                            validate: {
+                                                notDefault: (fieldValue) => {
+                                                    return (
+                                                        fieldValue.value !==
+                                                            "" &&
+                                                        fieldValue.label !== ""
+                                                    );
+                                                },
+                                            },
+                                        })}
+                                        onChange={(selectedOption) => {
+                                            setValue(fieldName, selectedOption);
+                                        }}
+                                        isSearchable={true}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
+
+                <div className="w-96 mx-auto my-2 flex flex-wrap justify-between">
+                    <label className="my-auto text-2xl">Review</label>
+                    <textarea
+                        name="review"
+                        {...register("review")}
+                        className="w-56 resize-none p-2 border-1 border-gray-300 rounded-md"
+                        onChange={(e) => {
+                            adjustReviewAreaHeight(e.target);
+                        }}
+                        rows={1}
                     />
                 </div>
-            ))}
-            <div className="w-96 mx-auto my-2 flex flex-wrap justify-between">
-                <label className="my-auto text-2xl">Review</label>
-                <textarea
-                    name="review"
-                    value={review}
-                    className="w-56 resize-none p-2 border-1 border-gray-300 rounded-md"
-                    onChange={(e) => {
-                        setReview(e.target.value);
-                        adjustReviewAreaHeight(e.target);
-                    }}
-                    rows={1}
+
+                <CustomCheckbox
+                    label="Keep review anonymous"
+                    labelPlacement="start"
+                    checked={anon}
+                    setChecked={setAnon}
                 />
-            </div>
 
-            <CustomCheckbox
-                label="Keep review anonymous"
-                labelPlacement="start"
-                checked={anon}
-                setChecked={setAnon}
-            />
-
-            <p className="my-4">* indicates required field</p>
-
-            <button
-                className="my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
-                type="button"
-                onClick={handleAddReview}
-            >
-                Add Review
-            </button>
+                <button
+                    className="w-fit block mx-auto my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
+                    type="submit"
+                    onClick={handleSubmit}
+                >
+                    Add Review
+                </button>
+            </form>
         </div>
     );
 };
