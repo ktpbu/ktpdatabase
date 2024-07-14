@@ -77,7 +77,7 @@ const AddUser = () => {
             />
 
             <form
-                className="w-fit m-auto px-12 py-4 border-2 border-[#234c8b]"
+                className="w-fit m-auto"
                 onSubmit={handleSubmit(onSubmit, onError)}
                 noValidate
             >
