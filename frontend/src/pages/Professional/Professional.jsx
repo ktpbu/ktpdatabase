@@ -38,7 +38,7 @@ const Professional = () => {
                         to={option.link}
                         className="m-4 no-underline"
                     >
-                        <Card className="w-96 flex flex-col text-start text-lg duration-200 hover:bg-[#baecba] hover:scale-105">
+                        <Card className="w-72 sm:w-96 flex flex-col text-start text-lg duration-200 hover:bg-[#baecba] hover:scale-105">
                             <Card.Header>
                                 <img
                                     className="w-auto h-8 mr-2.5"
