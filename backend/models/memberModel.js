@@ -48,11 +48,11 @@ const memberSchema = mongoose.Schema(
     }
 );
 
-mongoose
-    .connect(process.env.MONGODBURI_MEMBERS)
+const membersMongoDB = mongoose
+    .createConnection(process.env.MONGODBURI_MEMBERS)
     .catch((error) => console.log(error));
 
-export const Members = mongoose.model(
+export const Members = membersMongoDB.model(
     "Member Element",
     memberSchema,
     "user-collection"

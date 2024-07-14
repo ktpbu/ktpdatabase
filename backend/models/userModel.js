@@ -26,7 +26,7 @@ const userSchema = mongoose.Schema(
     { versionKey: false }
 );
 
-mongoose.connect(process.env.MONGODBURI).catch((err) => console.log(err));
+mongoose.connect(process.env.MONGODBURI).catch((error) => console.log(error));
 
 export const Users = mongoose.model(
     "user entry",
