@@ -117,21 +117,29 @@ router.get("/reviews/get-review/:id", async (req, res) => {
 });
 
 // update a review by id
-router.put("/reviews/edit-review/:id", async (request, response) => {
+router.put("/reviews/edit-review/:id", async (req, res) => {
     try {
-        const result = await Reviews.findByIdAndUpdate(
-            request.params.id,
-            request.body
-        );
+        const result = await Reviews.findByIdAndUpdate(req.params.id, {
+            user: req.body.user,
+            bu_email: req.body.bu_email,
+            anon: req.body.anon,
+            course_id: req.body.id,
+            professor: req.body.professor.value,
+            subject: req.body.subject,
+            usefulness: req.body.usefulness.value,
+            difficulty: req.body.difficulty.value,
+            rating: req.body.rating.value,
+            review: req.body.review,
+            date: req.body.date,
+        });
+
         if (!result) {
-            return response.status(404).json({ message: "Review not found" });
+            return res.status(404).json({ message: "Review not found" });
         }
-        return response
-            .status(200)
-            .send({ message: "Review updated successfully" });
+        return res.status(200).send({ message: "Review updated successfully" });
     } catch (error) {
         console.log(error.message);
-        response.status(500).send({ message: error.message });
+        res.status(500).send({ message: error.message });
     }
 });
 

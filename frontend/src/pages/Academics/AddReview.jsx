@@ -5,7 +5,7 @@ import axios from "axios";
 import Select from "react-select";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../firebaseConfig";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 
 import CustomCheckbox from "../../components/CustomCheckbox";
 
@@ -32,7 +32,6 @@ const AddReview = () => {
     const subject = subjectMap[id.slice(0, 5)];
 
     const [user, setUser] = useState(null);
-
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, async (user) => {
             if (user) {
@@ -101,7 +100,7 @@ const AddReview = () => {
             user: "",
             bu_email: "",
             anon: anon,
-            id: id,
+            course_id: id,
             professor: { value: "", label: "" },
             subject: subject,
             usefulness: { value: "", label: "" },
@@ -112,7 +111,7 @@ const AddReview = () => {
         },
     });
 
-    const { register, handleSubmit, setValue } = reviewForm;
+    const { register, handleSubmit, control } = reviewForm;
 
     const onSubmit = (data) => {
         data = {
@@ -122,29 +121,25 @@ const AddReview = () => {
             anon: anon,
             date: new Date().toISOString().replace("Z", "+00:00"),
         };
-        try {
-            axios
-                .post(`${backend}/academics/courses/add-review`, data)
-                .then(() => {
-                    console.log("Review submitted", data);
-                    enqueueSnackbar("Added review successfully", {
-                        variant: "success",
-                    });
-                    navigate(`/academics/courses/${level}/${id}`);
-                })
-                .catch((error) => {
-                    enqueueSnackbar("Failed to add review", {
-                        variant: "error",
-                    });
-                    console.log(error);
+        axios
+            .post(`${backend}/academics/courses/add-review`, data)
+            .then(() => {
+                console.log("Added new review", data);
+                enqueueSnackbar("Added review successfully", {
+                    variant: "success",
                 });
-        } catch (error) {
-            console.log(error);
-        }
+                navigate(`/academics/courses/${level}/${id}`);
+            })
+            .catch((error) => {
+                enqueueSnackbar("Failed to add review", {
+                    variant: "error",
+                });
+                console.log(error);
+            });
     };
 
     const onError = (errors) => {
-        console.log("Form errors", errors);
+        console.log("Review form errors", errors);
         enqueueSnackbar(
             "Professor, Usefulness, Difficulty, and Rating are required",
             {
@@ -229,24 +224,25 @@ const AddReview = () => {
                                 {item.label}
                             </label>
                             <div>
-                                <Select
-                                    className="w-56"
-                                    options={item.options}
-                                    id={fieldName}
-                                    {...register(fieldName, {
+                                <Controller
+                                    name={fieldName}
+                                    control={control}
+                                    rules={{
                                         validate: {
-                                            notDefault: (fieldValue) => {
-                                                return (
-                                                    fieldValue.value !== "" &&
-                                                    fieldValue.label !== ""
-                                                );
-                                            },
+                                            notDefault: (value) =>
+                                                value.value !== "" &&
+                                                value.label !== "",
                                         },
-                                    })}
-                                    onChange={(selectedOption) => {
-                                        setValue(fieldName, selectedOption);
                                     }}
-                                    isSearchable={true}
+                                    render={({ field }) => (
+                                        <Select
+                                            {...field}
+                                            className="w-56"
+                                            options={item.options}
+                                            id={fieldName}
+                                            isSearchable={true}
+                                        />
+                                    )}
                                 />
                             </div>
                         </div>

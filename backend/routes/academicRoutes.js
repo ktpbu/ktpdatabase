@@ -119,7 +119,7 @@ router.post("/courses/add-review", async (req, res) => {
             user: req.body.user,
             bu_email: req.body.bu_email,
             anon: req.body.anon,
-            course_id: req.body.id,
+            course_id: req.body.course_id,
             professor: req.body.professor.value,
             subject: req.body.subject,
             usefulness: req.body.usefulness.value,
