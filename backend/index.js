@@ -35,26 +35,25 @@ app.use("/auth", authRoutes);
 app.use("/calendar", calendarRoutes);
 app.use("/professional", professionalRoutes);
 
+const connectionOptions = {
+    serverSelectionTimeoutMS: 5000,
+    socketTimeoutMS: 45000,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+};
+
 async function connectDatabasesAndStartServer() {
     try {
-        const mongoDB = await mongoose.createConnection(process.env.MONGODBURI);
-
-        const membersMongoDB = await mongoose.createConnection(
-            process.env.MONGODBURI_MEMBERS
-        );
-
-        mongoDB.on("connected", () => {
-            console.log("Connected to MongoDB");
-        });
-
-        mongoDB.on("error", (error) => {
+        await mongoose.connect(process.env.MONGODBURI, connectionOptions);
+        console.log("Connected to MongoDB");
+        mongoose.connection.on("error", (error) => {
             console.log("Error connecting to MongoDB:", error);
         });
 
-        membersMongoDB.on("connected", () => {
-            console.log("Connected to Members MongoDB");
-        });
-
+        const membersMongoDB = await mongoose
+            .createConnection(process.env.MONGODBURI_MEMBERS, connectionOptions)
+            .asPromise();
+        console.log("Connected to Members MongoDB");
         membersMongoDB.on("error", (error) => {
             console.log("Error connecting to Members MongoDB:", error);
         });
@@ -64,6 +63,7 @@ async function connectDatabasesAndStartServer() {
         });
     } catch (error) {
         console.log("Error connecting to databases:", error);
+        process.exit(1);
     }
 }
 
