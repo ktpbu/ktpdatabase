@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import { Link, useNavigate } from "react-router-dom";
-import Nav from "react-bootstrap/nav";
-import Navbar from "react-bootstrap/navbar";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebaseConfig";
 
