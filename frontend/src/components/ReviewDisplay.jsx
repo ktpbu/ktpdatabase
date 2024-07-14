@@ -179,7 +179,7 @@ const ReviewDisplay = ({ reviews, view }) => {
                     }}
                 ></input>
             </div>
-            <div className="w-144 max-w-full h-96 overflow-x-hidden overflow-y-scroll mx-auto flex flex-col justify-around border-2 border-[#234c8b]">
+            <div className="w-144 min-w-80 max-w-full h-96 overflow-x-hidden overflow-y-scroll mx-auto flex flex-col justify-around border-2 border-[#234c8b]">
                 {filteredReviews.map((review, index) => (
                     <Card
                         key={index}
