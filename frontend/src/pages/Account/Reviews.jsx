@@ -30,7 +30,7 @@ const Reviews = () => {
 
     useEffect(() => {
         const getUserReviews = async () => {
-            if (!user.email) {
+            if (!user?.email) {
                 return;
             }
             try {
