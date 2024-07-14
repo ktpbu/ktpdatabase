@@ -50,7 +50,10 @@ const reviewSchema = mongoose.Schema(
     { versionKey: false }
 );
 
-mongoose.connect(process.env.MONGODBURI).catch((error) => console.log(error));
+mongoose.connect(process.env.MONGODBURI);
+mongoose.connection.on("error", (error) => {
+    console.log("Error connecting to MongoDB:", error);
+});
 
 export const Reviews = mongoose.model(
     "review entry",
