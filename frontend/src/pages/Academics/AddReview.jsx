@@ -209,7 +209,7 @@ const AddReview = () => {
             </div>
 
             <form
-                className="flex flex-col justify-center align-middle"
+                className="w-fit mx-auto sm:flex sm:flex-col sm:justify-center sm:align-middle"
                 onSubmit={handleSubmit(onSubmit, onError)}
                 noValidate
             >
@@ -218,9 +218,9 @@ const AddReview = () => {
                     return (
                         <div
                             key={index}
-                            className="w-96 mx-auto my-2 flex flex-wrap justify-between"
+                            className="w-fit mx-auto my-2 flex flex-col sm:w-96 sm:flex-row sm:flex-wrap sm:justify-between"
                         >
-                            <label className="my-auto text-2xl">
+                            <label className="w-fit text-left text-2xl">
                                 {item.label}
                             </label>
                             <div>
@@ -249,12 +249,14 @@ const AddReview = () => {
                     );
                 })}
 
-                <div className="w-96 mx-auto my-2 flex flex-wrap justify-between">
-                    <label className="my-auto text-2xl">Review</label>
+                <div className="w-fit mx-auto flex flex-col sm:w-96 sm:my-2 sm:flex-row sm:flex-wrap sm:justify-between">
+                    <label className="w-fit text-left text-2xl sm:my-auto">
+                        Review
+                    </label>
                     <textarea
                         name="review"
                         {...register("review")}
-                        className="w-56 resize-none p-2 border-1 border-gray-300 rounded-md"
+                        className="w-56 resize-none p-1 border-1 border-gray-300 rounded-md sm:my-auto"
                         onChange={(e) => {
                             adjustReviewAreaHeight(e.target);
                         }}
