@@ -51,10 +51,9 @@ const memberSchema = mongoose.Schema(
 const membersMongoDB = mongoose.createConnection(
     process.env.MONGODBURI_MEMBERS
 );
-membersMongoDB.on(
-    "error",
-    console.log("Error connecting to Members MongoDB:", error)
-);
+membersMongoDB.on("error", (error) => {
+    console.log("Error connecting to Members MongoDB:", error);
+});
 
 export const Members = membersMongoDB.model(
     "Member Element",
