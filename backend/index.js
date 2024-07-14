@@ -38,8 +38,6 @@ app.use("/professional", professionalRoutes);
 const connectionOptions = {
     serverSelectionTimeoutMS: 5000,
     socketTimeoutMS: 45000,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
 };
 
 async function connectDatabasesAndStartServer() {
