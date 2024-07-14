@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 const CustomCheckbox = ({ label, labelPlacement, checked, setChecked }) => {
     return (
-        <div className="m-auto">
+        <div className="mx-auto my-2">
             <FormControl component="fieldset">
                 <FormGroup aria-label="position" row>
                     <FormControlLabel
