@@ -64,7 +64,7 @@ const Header = () => {
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
-        width: 400,
+        width: 300,
         height: 350,
         bgcolor: "background.paper",
         border: "2px solid #234c8b",
