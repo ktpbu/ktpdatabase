@@ -11,7 +11,7 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Reviews = () => {
     const [user, setUser] = useState(null);
-    const first = sessionStorage.getItem("first");
+    const first = localStorage.getItem("first");
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, async (user) => {

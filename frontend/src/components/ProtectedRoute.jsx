@@ -2,7 +2,7 @@ import { Navigate } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const ProtectedRoute = ({ children, user, admin }) => {
-    const isAdmin = sessionStorage.getItem("is_admin");
+    const isAdmin = localStorage.getItem("is_admin");
     return user ? (
         admin ? (
             isAdmin === "true" ? (
