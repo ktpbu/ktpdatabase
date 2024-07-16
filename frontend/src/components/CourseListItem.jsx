@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import PropTypes from "prop-types";
+import { Accordion } from "@mui/material";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import DependencyMap from "./DependencyMap";
 
@@ -49,9 +53,8 @@ const CourseListItem = ({ info }) => {
         fetchCourses();
     }, [info.level, info.subject]);
 
-    return (
-        <div>
-            <h4 className="p-3 text-start text-[#234c8b]">{info.name}</h4>
+    const content = (
+        <>
             <div className="p-3 flex flex-row flex-wrap justify-content-evenly">
                 {loading
                     ? Array.from({ length: 20 }).map((_, index) => (
@@ -68,7 +71,6 @@ const CourseListItem = ({ info }) => {
             </div>
             <div className="flex flex-row-reverse justify-content-between p-3">
                 <p className="text-start p-3">
-                    {" "}
                     <a
                         href={info.website}
                         target="_blank"
@@ -76,11 +78,30 @@ const CourseListItem = ({ info }) => {
                         className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
                     >
                         Complete List
-                    </a>{" "}
+                    </a>
                 </p>
                 {info.map && <DependencyMap subject={info.subject} />}
             </div>
-            <hr className="p-3"></hr>
+        </>
+    );
+
+    return (
+        <div>
+            <div className="md:hidden my-8">
+                <Accordion>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                        <h4 className="mt-2 text-start text-[#234c8b]">
+                            {info.name}
+                        </h4>
+                    </AccordionSummary>
+                    <AccordionDetails>{content}</AccordionDetails>
+                </Accordion>
+            </div>
+            <h4 className="hidden md:block p-3 text-start text-[#234c8b]">
+                {info.name}
+            </h4>
+            <div className="hidden md:block">{content}</div>
+            <hr className="hidden md:block p-3"></hr>
         </div>
     );
 };
