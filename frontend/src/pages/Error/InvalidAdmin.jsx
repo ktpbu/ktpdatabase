@@ -10,7 +10,7 @@ const InvalidAdmin = () => {
                 }
             </h1>
             <button
-                className="my-16 p-2 text-xl border-2 border-solid hover:border-black rounded-3xl"
+                className="my-16 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl bg-white"
                 type="button"
                 onClick={() => navigate("/")}
             >
