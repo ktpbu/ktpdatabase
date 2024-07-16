@@ -7,11 +7,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
     return (
-        <footer className="w-full mx-auto px-24 flex flex-wrap justify-around sm:justify-between bg-[#ffffff]">
-            <div className="w-fit my-3 text-[#8bb9ff]">
+        <footer className="w-full mx-auto mb-2 px-24 flex flex-wrap justify-around sm:justify-between bg-[#ffffff]">
+            <div className="w-fit my-2 text-[#8bb9ff]">
                 &#169; 2023 Kappa Theta Pi Lambda Chapter
             </div>
-            <div className="w-fit my-3">
+            <div className="w-fit my-2">
                 <Link
                     className="mx-2 text-[#8bb9ff] hover:text-[#234c8b]"
                     to="https://ktpbostonu.com/"
