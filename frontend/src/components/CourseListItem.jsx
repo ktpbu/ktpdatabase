@@ -69,8 +69,8 @@ const CourseListItem = ({ info }) => {
                           />
                       ))}
             </div>
-            <div className="flex flex-row-reverse justify-content-between p-3">
-                <p className="text-start p-3">
+            <div className="flex md:flex-row-reverse justify-center md:justify-between">
+                <p className="text-start">
                     <a
                         href={info.website}
                         target="_blank"
