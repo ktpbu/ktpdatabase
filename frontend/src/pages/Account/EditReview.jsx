@@ -249,7 +249,7 @@ const EditReview = () => {
                     />
 
                     <button
-                        className="w-fit block mx-auto my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
+                        className="w-fit block mx-auto my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl bg-white"
                         type="submit"
                         onClick={handleSubmit}
                     >

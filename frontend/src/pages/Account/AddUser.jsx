@@ -195,7 +195,7 @@ const AddUser = () => {
                         {errors.is_admin?.message}
                     </p>
                 </div>
-                <button className="my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl">
+                <button className="my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl bg-white">
                     Add User
                 </button>
             </form>
