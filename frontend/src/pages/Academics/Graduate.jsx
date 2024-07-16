@@ -86,17 +86,20 @@ const Graduate = () => {
             />
 
             <CourseListItem info={gradSubjectInfo["computer-science-g"]} />
+
             <CourseListItem info={gradSubjectInfo["data-science-g"]} />
 
-            <h4 className="p-3 text-start text-[#234c8b]">Engineering</h4>
             <CourseListItem info={gradSubjectInfo["biomedical-eng-g"]} />
+
             <CourseListItem
                 info={gradSubjectInfo["electrical-computer-eng-g"]}
             />
             <CourseListItem info={gradSubjectInfo["eng-core-g"]} />
+
             <CourseListItem info={gradSubjectInfo["mechanical-eng-g"]} />
 
             <CourseListItem info={gradSubjectInfo["economics-g"]} />
+
             <CourseListItem
                 info={gradSubjectInfo["mathematics-statistics-g"]}
             />

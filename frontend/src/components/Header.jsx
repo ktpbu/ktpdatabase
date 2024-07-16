@@ -56,7 +56,7 @@ const Header = () => {
         setUser(null);
         navigate("/");
         auth.signOut();
-        sessionStorage.clear();
+        localStorage.clear();
     };
 
     const style = {
