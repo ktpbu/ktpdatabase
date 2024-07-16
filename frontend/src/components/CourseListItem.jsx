@@ -55,7 +55,7 @@ const CourseListItem = ({ info }) => {
 
     const content = (
         <>
-            <div className="p-3 flex flex-row flex-wrap justify-content-evenly">
+            <div className="flex flex-row flex-wrap justify-content-evenly">
                 {loading
                     ? Array.from({ length: 20 }).map((_, index) => (
                           <SkeletonCourseIcon key={index} />
@@ -69,7 +69,7 @@ const CourseListItem = ({ info }) => {
                           />
                       ))}
             </div>
-            <div className="flex md:flex-row-reverse justify-center md:justify-between">
+            <div className="mt-3 flex md:flex-row-reverse justify-center md:justify-between">
                 <p className="text-start">
                     <a
                         href={info.website}
