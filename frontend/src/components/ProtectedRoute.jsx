@@ -5,7 +5,7 @@ const ProtectedRoute = ({ children, user, admin }) => {
     const isAdmin = sessionStorage.getItem("is_admin");
     return user ? (
         admin ? (
-            isAdmin ? (
+            isAdmin === "true" ? (
                 children
             ) : (
                 <Navigate to="/error/admin" />
