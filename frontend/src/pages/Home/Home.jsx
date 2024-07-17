@@ -4,6 +4,8 @@ import { auth, googleProvider } from "../../firebaseConfig";
 import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
+import googlelogo from "../../assets/googlelogo.png";
+
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Home = () => {
@@ -65,11 +67,12 @@ const Home = () => {
 
             {!user && (
                 <button
-                    className="my-2 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl bg-white"
+                    className="w-60 mx-auto my-2 p-2 text-xl flex justify-around border-2 border-solid hover:border-[#234c8b] rounded-3xl bg-white"
                     type="button"
                     onClick={handleGoogleAuth}
                 >
-                    Sign in with Google
+                    <img className="w-8" src={googlelogo} />
+                    <span className="my-auto">Sign in with Google</span>
                 </button>
             )}
         </div>
