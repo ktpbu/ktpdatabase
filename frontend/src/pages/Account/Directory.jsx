@@ -2,21 +2,23 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 import CustomBreadcrumb from "../../components/CustomBreadcrumb";
+import Spinner from "../../components/Spinner";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Directory = () => {
     const [members, setMembers] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     const getMembers = async () => {
-        try {
-            const membersResponse = await axios.get(
-                `${backend}/account/directory/get-members`
-            );
-            setMembers(membersResponse.data);
-        } catch (error) {
-            console.log(error);
-        }
+        setLoading(true);
+        axios
+            .get(`${backend}/account/directory/get-members`)
+            .then((membersResponse) => {
+                setMembers(membersResponse.data);
+            })
+            .catch((error) => console.log(error));
+        setLoading(false);
     };
 
     useEffect(() => {
@@ -53,39 +55,43 @@ const Directory = () => {
                 current="Directory"
             />
 
-            {members.length > 0 && (
-                <div className="w-full overflow-x-scroll mx-auto">
-                    <table className="w-full mx-auto">
-                        <thead>
-                            <tr>
-                                {tableColumnHeaders.map((header, index) => (
-                                    <th
-                                        key={index}
-                                        className="w-fit p-2 text-start border-2 border-gray-200"
-                                    >
-                                        {header}
-                                    </th>
-                                ))}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {members.map((member, index) => (
-                                <tr key={index}>
-                                    {tableColumnData.map((key, index) => (
-                                        <td
+            {loading ? (
+                <Spinner />
+            ) : (
+                members.length > 0 && (
+                    <div className="w-full overflow-x-scroll mx-auto">
+                        <table className="w-full mx-auto">
+                            <thead>
+                                <tr>
+                                    {tableColumnHeaders.map((header, index) => (
+                                        <th
                                             key={index}
                                             className="w-fit p-2 text-start border-2 border-gray-200"
                                         >
-                                            {key === "Name"
-                                                ? `${member.FirstName} ${member.LastName}`
-                                                : member[key]}
-                                        </td>
+                                            {header}
+                                        </th>
                                     ))}
                                 </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
+                            </thead>
+                            <tbody>
+                                {members.map((member, index) => (
+                                    <tr key={index}>
+                                        {tableColumnData.map((key, index) => (
+                                            <td
+                                                key={index}
+                                                className="w-fit p-2 text-start border-2 border-gray-200"
+                                            >
+                                                {key === "Name"
+                                                    ? `${member.FirstName} ${member.LastName}`
+                                                    : member[key]}
+                                            </td>
+                                        ))}
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                )
             )}
         </div>
     );
