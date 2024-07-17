@@ -3,11 +3,13 @@ import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 
 import ReviewDisplay from "../../components/ReviewDisplay";
+import Spinner from "../../components/Spinner";
 
 const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Course = () => {
     const navigate = useNavigate();
+    const [loading, setLoading] = useState(false);
 
     const { level, id } = useParams();
     const [courseInfo, setCourseInfo] = useState("");
@@ -29,20 +31,30 @@ const Course = () => {
 
     useEffect(() => {
         const fetchCourseData = async () => {
+            setLoading(true);
             const subject = subjectMap[id.slice(0, 5)];
-            try {
-                const [courseRes, reviewsRes] = await Promise.all([
-                    axios.get(
+            await Promise.all([
+                axios
+                    .get(
                         `${backend}/academics/courses/${level}/${subject}/${id}`
-                    ),
-                    // not sure why the review request only works with post and not get
-                    axios.post(`${backend}/academics/courses/reviews/${id}`),
-                ]);
-                setCourseInfo(courseRes.data[0]);
-                setCourseReviews(reviewsRes.data);
-            } catch (error) {
-                console.error("Error fetching course data:", error);
-            }
+                    )
+                    .then((courseResponse) => {
+                        setCourseInfo(courseResponse.data[0]);
+                    })
+                    .catch((error) => {
+                        console.error("Error fetching course data:", error);
+                    }),
+                // not sure why the review request only works with post and not get
+                axios
+                    .post(`${backend}/academics/courses/reviews/${id}`)
+                    .then((reviewResponse) => {
+                        setCourseReviews(reviewResponse.data);
+                    })
+                    .catch((error) => {
+                        console.error("Error fetching review data:", error);
+                    }),
+            ]);
+            setLoading(false);
         };
         fetchCourseData();
     }, [id, level, subjectMap]);
@@ -53,71 +65,80 @@ const Course = () => {
 
     return (
         <div className="w-3/4 mx-auto py-20">
-            <h2 className="my-auto p-3 text-start text-[#234c8b]">
-                {courseInfo.code}: {courseInfo.name}
-            </h2>
+            {loading ? (
+                <Spinner />
+            ) : (
+                <>
+                    <h2 className="my-auto p-3 text-start text-[#234c8b]">
+                        {courseInfo.code}: {courseInfo.name}
+                    </h2>
 
-            <div className="p-3 flex flex-wrap">
-                <p className="mr-1">
-                    <a
-                        href={"/"}
-                        className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
-                    >
-                        Home
-                    </a>
-                    {" /"}
-                </p>
-                <p className="mr-1">
-                    <a
-                        href={"/academics"}
-                        className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
-                    >
-                        Academics
-                    </a>
-                    {" /"}
-                </p>
-                {level === "undergrad" ? (
-                    <p className="mr-1">
-                        <a
-                            href={"/academics/courses"}
-                            className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
-                        >
-                            Courses
-                        </a>
-                        {" /"}
+                    <div className="p-3 flex flex-wrap">
+                        <p className="mr-1">
+                            <a
+                                href={"/"}
+                                className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
+                            >
+                                Home
+                            </a>
+                            {" /"}
+                        </p>
+                        <p className="mr-1">
+                            <a
+                                href={"/academics"}
+                                className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
+                            >
+                                Academics
+                            </a>
+                            {" /"}
+                        </p>
+                        {level === "undergrad" ? (
+                            <p className="mr-1">
+                                <a
+                                    href={"/academics/courses"}
+                                    className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
+                                >
+                                    Courses
+                                </a>
+                                {" /"}
+                            </p>
+                        ) : (
+                            <p className="mr-1">
+                                <a
+                                    href={"/academics/graduate"}
+                                    className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
+                                >
+                                    Graduate
+                                </a>
+                                {" /"}
+                            </p>
+                        )}
+                        <p className="mr-1">{courseInfo.name}</p>
+                    </div>
+
+                    <h5 className="text-start p-3">
+                        {courseInfo.prereqs !== ""
+                            ? courseInfo.prereqs
+                            : "No Prerequisites"}
+                    </h5>
+
+                    <p className="p-3 text-start mx-auto">
+                        {" "}
+                        {courseInfo.content}
                     </p>
-                ) : (
-                    <p className="mr-1">
-                        <a
-                            href={"/academics/graduate"}
-                            className="text-[#234c8b] hover:text-[#458eff] duration-200 ease-linear"
-                        >
-                            Graduate
-                        </a>
-                        {" /"}
-                    </p>
-                )}
-                <p className="mr-1">{courseInfo.name}</p>
-            </div>
 
-            <h5 className="text-start p-3">
-                {courseInfo.prereqs !== ""
-                    ? courseInfo.prereqs
-                    : "No Prerequisites"}
-            </h5>
+                    {courseReviews && courseReviews.length > 0 && (
+                        <ReviewDisplay reviews={courseReviews} />
+                    )}
 
-            <p className="p-3 text-start mx-auto"> {courseInfo.content}</p>
-
-            {courseReviews && courseReviews.length > 0 && (
-                <ReviewDisplay reviews={courseReviews} />
+                    <button
+                        onClick={handleAddReviewButton}
+                        className="m-4 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
+                    >
+                        Add Review
+                    </button>
+                </>
             )}
-
-            <button
-                onClick={handleAddReviewButton}
-                className="m-4 p-2 text-xl border-2 border-solid hover:border-[#234c8b] rounded-3xl"
-            >
-                Add Review
-            </button>
         </div>
     );
 };

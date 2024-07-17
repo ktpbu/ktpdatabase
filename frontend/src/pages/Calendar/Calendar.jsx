@@ -13,7 +13,7 @@ const Calendar = () => {
             <iframe
                 src="https://calendar.google.com/calendar/embed?src=c_dc1c92fb37e77b2828d7126733c511c5bd842fd51fb5730824825cb9ffe617ba%40group.calendar.google.com&ctz=America%2FNew_York"
                 className="w-full h-128"
-            ></iframe>
+            />
         </div>
     );
 };
