@@ -13,6 +13,7 @@
   - [How to Run the Professor Scraper](#how-to-run-the-professor-scraper) 
 - [Current Roadmap of Website](#current-roadmap-of-website)
 - [To-Do List](#to-do-list)
+- [Contributors](#contributers)
 
 ## Note
 
@@ -180,6 +181,7 @@ Look at this repository's `Issues` tab for the next steps. Open a new issue if y
 - Victor Verma, Alpha Class, 2025
 - Rohan Kumar, Alpha Class, 2025
 - Nick David, Beta Class, 2026
+
 ### Consultants
 - Carol Riady, Alpha Class, 2025
 - Jennifer Ji, Beta Class, 2026
