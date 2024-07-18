@@ -13,7 +13,7 @@
   - [How to Run the Professor Scraper](#how-to-run-the-professor-scraper) 
 - [Current Roadmap of Website](#current-roadmap-of-website)
 - [To-Do List](#to-do-list)
-- [Contributors](#contributers)
+- [Contributors](#contributors)
 
 ## Note
 
