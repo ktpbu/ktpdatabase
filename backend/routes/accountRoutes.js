@@ -79,7 +79,9 @@ router.get("/directory/get-members", async (req, res) => {
 router.get("/admin/get-reviews", async (req, res) => {
     console.log(req);
     try {
-        const review = await Reviews.find({}).sort({ first: 1 });
+        const review = await Reviews.find({}).sort({ first: 1 }).sort({
+            date: -1,
+        });
         console.log(review);
         return res.status(200).json(review);
     } catch (error) {
