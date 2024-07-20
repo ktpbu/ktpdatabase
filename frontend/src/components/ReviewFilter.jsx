@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import Select from "react-select";
 
-import { ReviewFilterContext } from "../contexts/ReviewFilterContext";
+import { ReviewFilterContext } from "../contexts/ReviewFilterContext.jsx";
 
 const ReviewFilter = () => {
     const [state, dispatch] = useContext(ReviewFilterContext);

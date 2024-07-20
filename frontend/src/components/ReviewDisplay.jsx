@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 import DeleteReviewModal from "./DeleteReviewModal";
 import ReviewFilter from "./ReviewFilter";
-import { ReviewFilterContext } from "../contexts/ReviewFilterContext";
+import { ReviewFilterContext } from "../contexts/ReviewFilterContext.jsx";
 
 const ReviewDisplay = ({ reviews, view }) => {
     const [state] = useContext(ReviewFilterContext);
