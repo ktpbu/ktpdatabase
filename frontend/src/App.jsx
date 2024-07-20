@@ -46,6 +46,9 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
 
+// imports contexts
+import ReviewFilterProvider from "./contexts/ReviewFilterContext.jsx";
+
 // creates routings of app --> used for sending pages when requested
 const App = () => {
     const [user, setUser] = useState(null);
@@ -95,7 +98,9 @@ const App = () => {
                             path="/academics/courses/:level/:id"
                             element={
                                 <ProtectedRoute user={user} admin={false}>
-                                    <Course />
+                                    <ReviewFilterProvider>
+                                        <Course />
+                                    </ReviewFilterProvider>
                                 </ProtectedRoute>
                             }
                         />
@@ -181,7 +186,9 @@ const App = () => {
                             path="/account/admin/reviews"
                             element={
                                 <ProtectedRoute user={user} admin={true}>
-                                    <AdminReviews />
+                                    <ReviewFilterProvider>
+                                        <AdminReviews />
+                                    </ReviewFilterProvider>
                                 </ProtectedRoute>
                             }
                         />
@@ -213,7 +220,9 @@ const App = () => {
                             path="/account/reviews"
                             element={
                                 <ProtectedRoute user={user} admin={false}>
-                                    <Reviews />
+                                    <ReviewFilterProvider>
+                                        <Reviews />
+                                    </ReviewFilterProvider>
                                 </ProtectedRoute>
                             }
                         />
