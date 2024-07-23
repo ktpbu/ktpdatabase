@@ -120,7 +120,7 @@ def main():
 
     # checks if database should be updated
     update = input(
-        "\nVerify the information located at ./data/professors is accurate.\nEnter y to update database, or any other key to abort: "
+        "\nVerify the information located at ./data/professors is accurate.\nEnter y to update the database, or any other key to abort: "
     )
 
     if update.lower() == "y":
