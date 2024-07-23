@@ -19,7 +19,7 @@ prof_urls = {
 }
 
 
-def get_profs(subject, test=False):
+def get_profs(subject):
 
     session = HTMLSession()
     url = prof_urls[subject]
@@ -73,12 +73,11 @@ def get_profs(subject, test=False):
     # creates professor - subject objects
     subject_profs = [{"name": prof, "subject": subject} for prof in subject_profs]
 
-    if test:
-        # updates local data store with professor info
-        if not os.path.exists("data/professors"):
-            os.makedirs("data/professors")
-        with open(f"data/professors/{subject}_prof_info.json", "w") as f:
-            json.dump(subject_profs, f, indent=4, ensure_ascii=False)
+    # updates local data store with professor info
+    if not os.path.exists("data/professors"):
+        os.makedirs("data/professors")
+    with open(f"data/professors/{subject}_prof_info.json", "w") as f:
+        json.dump(subject_profs, f, indent=4, ensure_ascii=False)
 
     print(f"finished scraping {subject} professors")
 
