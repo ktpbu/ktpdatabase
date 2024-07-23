@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+import json
 import os
 from pathlib import Path
 from requests_html import HTMLSession
@@ -7,13 +8,6 @@ from supabase import create_client
 
 load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")
 
-try:
-    supabase_url = os.environ.get("SUPABASE_URL")
-    supabase_key = os.environ.get("SUPABASE_KEY")
-    supabase = create_client(supabase_url, supabase_key)
-    print("connected to Supabase")
-except:
-    print("failed to connect to Supabase")
 
 # defines the source urls to scrape for each subject
 prof_urls = {
@@ -25,7 +19,8 @@ prof_urls = {
 }
 
 
-def get_profs(subject):
+def get_profs(subject, test=False):
+
     session = HTMLSession()
     url = prof_urls[subject]
     page = session.get(url)
@@ -78,16 +73,21 @@ def get_profs(subject):
     # creates professor - subject objects
     subject_profs = [{"name": prof, "subject": subject} for prof in subject_profs]
 
+    if test:
+        # updates local data store with professor info
+        if not os.path.exists("data/professors"):
+            os.makedirs("data/professors")
+        with open(f"data/professors/{subject}_prof_info.json", "w") as f:
+            json.dump(subject_profs, f, indent=4, ensure_ascii=False)
+
     print(f"finished scraping {subject} professors")
+
     return subject_profs
 
 
-def scrape(subject):
-    subject_profs = get_profs(subject)
-    return subject_profs
+def delete_professors_in_database(supabase):
 
-
-def delete_professors_in_database():
+    # deletes existing professor info in database
     try:
         supabase.table("professors").delete().gt("id", -1).execute()
         print("successfully deleted professors in database")
@@ -95,7 +95,9 @@ def delete_professors_in_database():
         print("failed to delete professors in database", e)
 
 
-def insert_professors_in_database(profs):
+def insert_professors_in_database(profs, supabase):
+
+    # inserts professor info in database
     try:
         supabase.table("professors").insert(profs).execute()
         print("successfully inserted professors in database")
@@ -104,17 +106,39 @@ def insert_professors_in_database(profs):
 
 
 def main():
+
+    # scrapes professor info
     profs = []
     try:
         for subject in prof_urls.keys():
-            subject_profs = scrape(subject)
+            subject_profs = get_profs(subject)
             profs.extend(subject_profs)
     except Exception as e:
         raise Exception("error scraping professors", e)
+
     profs = [{**prof, "id": index} for index, prof in enumerate(profs)]
-    delete_professors_in_database()
-    insert_professors_in_database(profs)
+
+    # checks if database should be updated
+    update = input(
+        "\nVerify the information located at ./data/professors is accurate.\nEnter y to update database, or any other key to abort: "
+    )
+
+    if update.lower() == "y":
+        # updates professor info in database
+        try:
+            supabase_url = os.environ.get("SUPABASE_URL")
+            supabase_key = os.environ.get("SUPABASE_KEY")
+            supabase = create_client(supabase_url, supabase_key)
+            print("\nconnected to Supabase")
+        except:
+            print("\nfailed to connect to Supabase")
+
+        delete_professors_in_database(supabase)
+        insert_professors_in_database(profs, supabase)
+    else:
+        print("\naborted update to database")
 
 
 if __name__ == "__main__":
+
     main()
