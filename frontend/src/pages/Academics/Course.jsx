@@ -116,15 +116,35 @@ const Course = () => {
                         <p className="mr-1">{courseInfo.name}</p>
                     </div>
 
-                    <h5 className="text-start p-3">
-                        {courseInfo.prereqs !== ""
-                            ? courseInfo.prereqs
-                            : "No Prerequisites"}
-                    </h5>
+                    <div>
+                        {courseInfo.undergrad_prereqs && (
+                            <h5 className="text-start px-3">
+                                Undergraduate Prerequisites:{" "}
+                                {courseInfo.undergrad_prereqs}
+                            </h5>
+                        )}
+                        {courseInfo.undergrad_coreqs && (
+                            <h5 className="text-start px-3">
+                                Undergraduate Corequisites:{" "}
+                                {courseInfo.undergrad_coreqs}
+                            </h5>
+                        )}
+                        {courseInfo.grad_prereqs && (
+                            <h5 className="text-start px-3">
+                                Graduate Prerequisites:{" "}
+                                {courseInfo.grad_prereqs}
+                            </h5>
+                        )}
+                        {courseInfo.grad_coreqs && (
+                            <h5 className="text-start px-3">
+                                Graduate Corequisites: {courseInfo.grad_coreqs}
+                            </h5>
+                        )}
+                    </div>
 
                     <p className="p-3 text-start mx-auto">
                         {" "}
-                        {courseInfo.content}
+                        {courseInfo.description}
                     </p>
 
                     {courseReviews && courseReviews.length > 0 && (
