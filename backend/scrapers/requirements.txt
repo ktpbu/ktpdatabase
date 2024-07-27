@@ -1,4 +1,5 @@
 beautifulsoup4==4.11.2
 python-dotenv==1.0.1
 requests_html==0.10.0
-supabase==2.5.1
+supabase==2.5.3
+transformers[torch]==4.42.4
