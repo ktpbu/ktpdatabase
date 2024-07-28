@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 import json
 import os
+import pandas as pd
 from pathlib import Path
 import re
 from requests_html import HTMLSession
@@ -17,12 +18,6 @@ I PURPOSELY DID NOT IMPLEMENT ASYNCHRONOUS PROGRAMMING
 OR MULTITHREADING TO PRESERVE THE ORDER OF THE COURSES 
 """
 
-
-# NOTE
-"""
-THE FOLLOWING SPECIAL CASES COULD NOT BE RESOLVED
-- Requisite courses for ENGEC521
-"""
 
 # defines the source urls to scrape for each subject
 course_urls = {
@@ -199,28 +194,28 @@ def get_data(course, subject):
         }
 
         return course_info
-    except:
-        print(f"error scraping {course}")
-
-
-def delete_course_info_in_database(supabase):
-
-    # deletes course info in database
-    try:
-        supabase.table("course-info").delete().gt("id", -1).execute()
-        print("successfully deleted course info in database")
     except Exception as e:
-        print("failed to delete course info in database", e)
+        print(f"error scraping {course}: ", e)
 
 
-def insert_course_info_in_database(supabase, course_info):
+def delete_course_info_in_supabase(supabase):
 
-    # inserts course info in database
+    # deletes course info in supabase
     try:
-        supabase.table("course-info").insert(course_info).execute()
-        print("successfully inserted course info in database")
+        supabase.table("course_info").delete().gt("id", -1).execute()
+        print("successfully deleted course info in supabase")
     except Exception as e:
-        print("failed to insert course info in database: ", e)
+        print("failed to delete course info in supabase: ", e)
+
+
+def insert_course_info_in_supabase(supabase, course_info):
+
+    # inserts course info in supabase
+    try:
+        supabase.table("course_info").insert(course_info).execute()
+        print("successfully inserted course info in supabase")
+    except Exception as e:
+        print("failed to insert course info in supabase: ", e)
 
 
 def main():
@@ -232,36 +227,43 @@ def main():
             subject_course_info = get_course_info(subject)
             course_info.extend(subject_course_info)
     except Exception as e:
-        print("error scraping course info", e)
+        print("error scraping course info: ", e)
 
-    course_info = [{**course, "id": index} for index, course in enumerate(course_info)]
+    course_info = [{**course} for course in course_info]
 
-    # checks if database should be updated
-    update = input(
-        "\nVerify the information located at ./data/course_info is accurate.\nEnter y to update the database, or any other key to abort: "
-    )
+    # saves course info as a local csv file for testing and observation
+    try:
+        if not os.path.exists("./data"):
+            os.makedirs("./data")
+        df = pd.DataFrame(course_info)
+        df.to_csv("./data/course_info.csv")
+        print(f"course info saved at ./data/course_info.csv")
+    except Exception as e:
+        print(f"failed to saved course info as csv:", e)
 
+    # updates course info in supabase if necessary
+    update = input("\nenter y to update supabase, or any other key to abort: ")
     if update.lower() == "y":
-        # updates professor info in database
         try:
             supabase_url = os.environ.get("SUPABASE_URL")
             supabase_key = os.environ.get("SUPABASE_KEY")
             supabase = create_client(supabase_url, supabase_key)
-            print("connected to Supabase")
-        except:
-            print("failed to connect to Supabase")
+            print("connected to supabase")
+        except Exception as e:
+            print("failed to connect to supabase: ", e)
 
-        delete_course_info_in_database(supabase)
-        insert_course_info_in_database(supabase, course_info)
+        delete_course_info_in_supabase(supabase)
+        insert_course_info_in_supabase(supabase, course_info)
     else:
-        print("\naborted update to database")
+        print("\ndid not update course info in supabase")
 
 
-def test():
+def single_subject_test():
+
     try:
         get_course_info("eng-core")
     except Exception as e:
-        print("error scraping course info", e)
+        print("error scraping course info: ", e)
 
 
 if __name__ == "__main__":
