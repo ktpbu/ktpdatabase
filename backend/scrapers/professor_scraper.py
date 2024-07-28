@@ -100,11 +100,11 @@ def delete_professor_info_in_supabase(supabase):
         print("failed to delete professor info in supabase: ", e)
 
 
-def insert_professor_info_in_supabase(profs, supabase):
+def insert_professor_info_in_supabase(supabase, professors):
 
     # inserts professor info in supabase
     try:
-        supabase.table("professor_info").insert(profs).execute()
+        supabase.table("professor_info").insert(professors).execute()
         print("successfully inserted professor info in supabase")
     except Exception as e:
         print("failed to insert professor info in supabase: ", e)
