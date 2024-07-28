@@ -1,3 +1,4 @@
+import argparse
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 import json
@@ -218,7 +219,7 @@ def insert_course_info_in_supabase(supabase, course_info):
         print("failed to insert course info in supabase: ", e)
 
 
-def main():
+def main(update=False):
 
     # scrapes course info
     course_info = []
@@ -242,8 +243,7 @@ def main():
         print(f"failed to saved course info as csv:", e)
 
     # updates course info in supabase if necessary
-    update = input("\nenter y to update supabase, or any other key to abort: ")
-    if update.lower() == "y":
+    if update:
         try:
             supabase_url = os.environ.get("SUPABASE_URL")
             supabase_key = os.environ.get("SUPABASE_KEY")
@@ -267,4 +267,19 @@ def single_subject_test():
 
 
 if __name__ == "__main__":
-    main()
+
+    parser = argparse.ArgumentParser(description="course scraper script")
+    parser.add_argument(
+        "--update",
+        action="store_true",
+        help="Updates the course info in supabase",
+    )
+
+    args = parser.parse_args()
+
+    if args.update:
+        update = True
+    else:
+        update = False
+
+    main(update)

@@ -1,3 +1,4 @@
+import argparse
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 import json
@@ -20,7 +21,7 @@ professor_urls = {
 }
 
 
-def get_profs(subject):
+def get_professor_info(subject):
 
     session = HTMLSession()
     url = professor_urls[subject]
@@ -110,13 +111,13 @@ def insert_professor_info_in_supabase(supabase, professors):
         print("failed to insert professor info in supabase: ", e)
 
 
-def main():
+def main(update=False):
 
     # scrapes professor info
     professor_info = []
     try:
         for subject in professor_urls.keys():
-            subject_professor_info = get_profs(subject)
+            subject_professor_info = get_professor_info(subject)
             professor_info.extend(subject_professor_info)
     except Exception as e:
         raise Exception("error scraping professor info: ", e)
@@ -134,8 +135,7 @@ def main():
         print(f"failed to saved professor info as csv:", e)
 
     # updates course info in supabase if necessary
-    update = input("\nenter y to update supabase, or any other key to abort: ")
-    if update.lower() == "y":
+    if update:
         try:
             supabase_url = os.environ.get("SUPABASE_URL")
             supabase_key = os.environ.get("SUPABASE_KEY")
@@ -150,6 +150,28 @@ def main():
         print("\ndid not update professor info in supabase")
 
 
+def single_subject_test():
+
+    try:
+        get_professor_info("eng-core")
+    except Exception as e:
+        print("error scraping course info: ", e)
+
+
 if __name__ == "__main__":
 
-    main()
+    parser = argparse.ArgumentParser(description="course scraper script")
+    parser.add_argument(
+        "--update",
+        action="store_true",
+        help="Updates the course info in supabase",
+    )
+
+    args = parser.parse_args()
+
+    if args.update:
+        update = True
+    else:
+        update = False
+
+    main(update)
