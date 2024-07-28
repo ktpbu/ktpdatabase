@@ -66,7 +66,7 @@ router.get("/resources", async (req, res) => {
 router.get("/courses/:level/:subject", async (req, res) => {
     console.log(req);
     const { data, error } = await supabase
-        .from("course-info")
+        .from("course_info")
         .select("*")
         .eq("level", req.params.level)
         .eq("subject", req.params.subject);
@@ -77,7 +77,7 @@ router.get("/courses/:level/:subject", async (req, res) => {
 router.post("/courses/professors", async (req, res) => {
     console.log(req.body);
     const { data, error } = await supabase
-        .from("professors")
+        .from("professor_info")
         .select("name")
         .eq("subject", req.body.subject);
     return res.json(data);
@@ -87,7 +87,7 @@ router.post("/courses/professors", async (req, res) => {
 router.get("/courses/:level/:subject/:id", async (req, res) => {
     console.log(req);
     const { data, error } = await supabase
-        .from("course-info")
+        .from("course_info")
         .select("*")
         .eq("code", req.params.id.slice(3))
         .eq("subject", req.params.subject)
