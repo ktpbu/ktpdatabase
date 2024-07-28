@@ -1,0 +1,19 @@
+services:
+  course_scraper:
+    build:
+      context: .
+    working_dir: /scrapers
+    command: ["python", "course_scraper.py"]
+    volumes:
+      - ./:/scrapers
+    env_file:
+      - ../.env
+  professor_scraper:
+    build:
+      context: .
+    working_dir: /scrapers
+    command: ["python", "professor_scraper.py"]
+    volumes:
+      - ./:/scrapers
+    env_file:
+      - ../.env
