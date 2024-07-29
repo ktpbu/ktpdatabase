@@ -9,8 +9,8 @@ if ! command -v docker-compose &> /dev/null; then
     exit 1
 fi
 
-# builds the course scraper container
+# builds the professor scraper container
 docker-compose -f ./scrapers/docker-compose.yaml build professor_scraper
 
-# runs the course scraper with the update flag
+# runs the professor scraper with the update flag
 docker-compose -f ./scrapers/docker-compose.yaml run --rm professor_scraper python professor_scraper.py --update
