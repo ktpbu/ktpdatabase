@@ -41,7 +41,7 @@ const Internships = () => {
                 {internshipResources.map((section, index) => (
                     <div
                         key={index}
-                        className="w-64 m-4 p-2 flex flex-col text-start border-1 hover:border-[#234c8b] rounded-md duration-200 ease-linear bg-white"
+                        className="w-64 m-4 p-2 flex flex-col text-start rounded-md duration-200 ease-linear bg-white"
                     >
                         <h5>{section.header}</h5>
                         {section.resources.map((resource, index) => (

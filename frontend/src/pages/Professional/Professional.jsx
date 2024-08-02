@@ -37,7 +37,7 @@ const Professional = () => {
                         to={option.link}
                         className="m-4 no-underline"
                     >
-                        <Card className="w-72 sm:w-96 flex flex-col text-start text-lg duration-200 hover:bg-[#baecba] hover:scale-105">
+                        <Card className="w-72 sm:w-96 flex flex-col text-start text-lg duration-200 hover:bg-[#8bb9ff] hover:scale-105">
                             <Card.Header>
                                 <div className="flex">
                                     {option.image}
@@ -47,7 +47,7 @@ const Professional = () => {
                                 </div>
                             </Card.Header>
                             <Card.Body className="h-32">
-                                <Card.Text className="text-sm text-gray-500">
+                                <Card.Text className="text-sm">
                                     {option.text}
                                 </Card.Text>
                             </Card.Body>
