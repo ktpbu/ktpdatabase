@@ -9,8 +9,7 @@
   - [Making a Request to the Backend](#making-a-request-to-the-backend)
   - [Connecting to the Supabase Client](#connecting-to-the-supabase-client)
   - [Limiting Page Access to Authenticated Users](#limiting-page-access-to-authenticated-users)
-  - [How to Run the Course Scraper](#how-to-run-the-course-scraper)
-  - [How to Run the Professor Scraper](#how-to-run-the-professor-scraper) 
+  - [How to Run the Scrapers](#how-to-run-the-scrapers)
 - [Current Roadmap of Website](#current-roadmap-of-website)
 - [To-Do List](#to-do-list)
 - [Contributors](#contributors)
@@ -124,25 +123,30 @@ useEffect(() => {
 }, []);
 ```
 
-From the `user` state variable, it is possible to access Google account fields such `user.email` and `user.displayName`.
+From the `user` state variable, it is possible to access Google account fields such as `user.email` and `user.displayName`.
 
-### How to Run the Course Scraper
-IMPORTANT: PLEASE DO NOT RUN THIS FILE WITHOUT CONSULTING WITH VICTOR
+### How to Run the Scrapers
+IMPORTANT: PLEASE DO NOT RUN THE SCRAPERS UNLESS YOU ARE FAMILIAR WITH SCRAPING, SUPABASE, and DOCKER.
 
-The course scraper is located at the path `./backend/scrapers/CourseScraper.py`.
+Ensure that the Docker Desktop is installed and running before running the scrapers. The scrapers are located at the path `./backend/scrapers`, and can be directly running using virtual environments. To streamline the entire process, the scrapers were Dockerized and can be run using shell scripts located at the path `./backend/scrapers`.
+
+#### How to Run the Scrapers Locally
 1. Navigate to the `backend` folder.
-2. Run `pip install -r ./requirements.txt`.
-3. Update the `course_urls` variable in `CourseScraper.py` with the relevant subject-url pair if you want to scrape additional subjects.
-4. Run `CourseScraper.py` and the course information will be stored in Supabase in the `course-info` table.
+2. Run `chmod +x ./scripts/run_scrapers_locally.sh`.
+3. Run `./scripts/run_scrapers_locally.sh`.
+4. The course and professor information is saved locally at the path `./backend/scrapers/data`.
 
-### How to Run the Professor Scraper
-IMPORTANT: PLEASE DO NOT RUN THIS FILE WITHOUT CONSULTING WITH VICTOR
+#### How to Update the Course Info
+1. Run the scrapers locally and verify that the scraped information is correct.
+2. Navigate to the `backend` folder.
+3. Run `chmod +x ./scripts/update_course_info.sh`.
+4. Run `./scripts/update_course_info.sh` to update the course info in the Supabase table.
 
-The professor scraper is located at the path `./backend/scrapers/ProfScraper.py`.
-1. Navigate to the `backend` folder.
-2. Run `pip install -r ./requirements.txt`.
-3. Update the `prof_urls` variable in `ProfScraper.py` with the relevant prof-url pair if you want to scrape professors from additional subjects.
-4. Run `ProfScraper.py` and the list of professors will be stored in Supabase in the `professors` table.
+#### How to Update the Professor Info
+1. Run the scrapers locally and verify that the scraped information is correct.
+2. Navigate to the `backend` folder.
+3. Run `chmod +x ./scripts/update_professor_info.sh`.
+4. Run `./scripts/update_professor_info.sh` to update the professor info in the Supabase table.
 
 ## Current Roadmap of Website
 
