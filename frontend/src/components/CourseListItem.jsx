@@ -25,7 +25,7 @@ const CourseIcon = ({ code, level, college }) => {
 
 const SkeletonCourseIcon = () => {
     return (
-        <Link className="w-20 mb-2.5 mx-2.5 py-1.5 text-black no-underline border-black rounded-2xl duration-100 hover:scale-110 animate-pulse">
+        <Link className="w-20 mb-2.5 mx-2.5 py-1.5 text-black no-underline border-1 border-black rounded-2xl duration-100 hover:scale-110 animate-pulse">
             <span className="invisible">loader</span>
         </Link>
     );
