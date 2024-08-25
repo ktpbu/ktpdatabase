@@ -94,7 +94,7 @@ const ReviewDisplay = ({ reviews, view }) => {
                                 </p>
                             </div>
                         </Card.Header>
-                        <Card.Body className="my-auto bg-[#baecba]">
+                        <Card.Body className="my-auto bg-[#8bb9ff]">
                             <div className="w-full mx-auto sm:flex sm:justify-between">
                                 <p className="text-xl text-left">
                                     Professor{" "}
