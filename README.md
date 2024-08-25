@@ -131,22 +131,22 @@ IMPORTANT: PLEASE DO NOT RUN THE SCRAPERS UNLESS YOU ARE FAMILIAR WITH SCRAPING,
 Ensure that the Docker Desktop is installed and running before running the scrapers. The scrapers are located at the path `./backend/scrapers`, and can be directly running using virtual environments. To streamline the entire process, the scrapers were Dockerized and can be run using shell scripts located at the path `./backend/scrapers`.
 
 #### How to Run the Scrapers Locally
-1. Navigate to the `backend` folder.
-2. Run `chmod +x ./scripts/run_scrapers_locally.sh`.
-3. Run `./scripts/run_scrapers_locally.sh`.
+1. Navigate to the `backend/scripts` folder.
+2. Run `chmod +x ./run_scrapers_locally.sh`.
+3. Run `./run_scrapers_locally.sh`.
 4. The course and professor information is saved locally at the path `./backend/scrapers/data`.
 
 #### How to Update the Course Info
 1. Run the scrapers locally and verify that the scraped information is correct.
-2. Navigate to the `backend` folder.
-3. Run `chmod +x ./scripts/update_course_info.sh`.
-4. Run `./scripts/update_course_info.sh` to update the course info in the Supabase table.
+2. Navigate to the `backend/scripts` folder.
+3. Run `chmod +x ./update_course_info.sh`.
+4. Run `./update_course_info.sh` to update the course info in the Supabase table.
 
 #### How to Update the Professor Info
 1. Run the scrapers locally and verify that the scraped information is correct.
-2. Navigate to the `backend` folder.
-3. Run `chmod +x ./scripts/update_professor_info.sh`.
-4. Run `./scripts/update_professor_info.sh` to update the professor info in the Supabase table.
+2. Navigate to the `backend/scripts` folder.
+3. Run `chmod +x ./update_professor_info.sh`.
+4. Run `./update_professor_info.sh` to update the professor info in the Supabase table.
 
 ## Current Roadmap of Website
 
