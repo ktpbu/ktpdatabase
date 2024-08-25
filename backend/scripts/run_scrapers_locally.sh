@@ -10,7 +10,7 @@ if ! command -v docker-compose &> /dev/null; then
 fi
 
 # runs the scrapers in containers
-docker-compose -f ./scrapers/docker-compose.yaml up --build
+docker-compose -f ../scrapers/docker-compose.yaml up --build
 
 # stops and removes the containers
-docker-compose -f ./scrapers/docker-compose.yaml down
+docker-compose -f ../scrapers/docker-compose.yaml down

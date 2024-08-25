@@ -10,7 +10,7 @@ if ! command -v docker-compose &> /dev/null; then
 fi
 
 # builds the course scraper container
-docker-compose -f ./scrapers/docker-compose.yaml build course_scraper
+docker-compose -f ../scrapers/docker-compose.yaml build course_scraper
 
 # runs the course scraper with the update flag
-docker-compose -f ./scrapers/docker-compose.yaml run --rm course_scraper python course_scraper.py --update
+docker-compose -f ../scrapers/docker-compose.yaml run --rm course_scraper python course_scraper.py --update
