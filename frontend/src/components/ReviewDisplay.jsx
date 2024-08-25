@@ -61,7 +61,45 @@ const ReviewDisplay = ({ reviews, view }) => {
 
     return (
         <div>
-            {view !== "account" && <h2 className="text-[#234c8b]">Reviews</h2>}
+            <div className="my-4 flex justify-between">
+                <div className="mx-3">
+                    <div className="text-2xl sm:text-4xl text-[#234c8b]">
+                        {(
+                            reviews
+                                .map((review) => review.usefulness)
+                                .reduce((acc, curr) => acc + curr, 0) /
+                            reviews.length
+                        ).toFixed(1)}
+                    </div>
+                    <h4 className="text-sm sm:text-2xl">Average Usefulness</h4>
+                </div>
+                <div className="mx-3">
+                    <div className="text-2xl sm:text-4xl text-[#234c8b]">
+                        {(
+                            reviews
+                                .map((review) => review.difficulty)
+                                .reduce((acc, curr) => acc + curr, 0) /
+                            reviews.length
+                        ).toFixed()}
+                    </div>
+                    <h4 className="text-sm sm:text-2xl">Average Difficulty</h4>
+                </div>
+                <div className="mx-3">
+                    <div className="text-2xl sm:text-4xl text-[#234c8b]">
+                        {(
+                            reviews
+                                .map((review) => review.rating)
+                                .reduce((acc, curr) => acc + curr, 0) /
+                            reviews.length
+                        ).toFixed(1)}
+                    </div>
+                    <h4 className="text-sm sm:text-2xl">Average Rating</h4>
+                </div>
+            </div>
+
+            {view !== "account" && (
+                <h2 className="text-[#234c8b]">Reviews ({reviews.length})</h2>
+            )}
             <ReviewFilter />
             <div className="my-4">
                 <input
