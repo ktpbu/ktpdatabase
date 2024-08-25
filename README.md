@@ -128,7 +128,7 @@ From the `user` state variable, it is possible to access Google account fields s
 ### How to Run the Scrapers
 IMPORTANT: PLEASE DO NOT RUN THE SCRAPERS UNLESS YOU ARE FAMILIAR WITH SCRAPING, SUPABASE, and DOCKER.
 
-Ensure that the Docker Desktop is installed and running before running the scrapers. The scrapers are located at the path `./backend/scrapers`, and can be directly running using virtual environments. To streamline the entire process, the scrapers were Dockerized and can be run using shell scripts located at the path `./backend/scrapers`.
+The scrapers are located at the path `./backend/scrapers`, and can be directly running using virtual environments. To streamline the entire process, the scrapers were Dockerized and can be run using shell scripts located at the path `./backend/scrapers`. Ensure that the Docker Desktop is installed and running before running the scraper scripts.
 
 #### How to Run the Scrapers Locally
 1. Navigate to the `backend/scripts` folder.
