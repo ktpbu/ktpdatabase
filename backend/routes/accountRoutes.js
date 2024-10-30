@@ -65,7 +65,7 @@ router.delete("/admin/delete-user/:id", async (request, response) => {
 router.get("/directory/get-members", async (req, res) => {
     console.log(req);
     try {
-        const members = await Members.find({ Position: { $gte: 2 } }).sort({
+        const members = await Members.find({ Position: { $gte: 1 } }).sort({
             FirstName: 1,
         });
         return res.status(200).json(members);
