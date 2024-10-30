@@ -159,11 +159,13 @@ const AddUser = () => {
                             },
                         })}
                     >
+                        {/* add more pledge classes as necessary */}
                         <option value="">Select...</option>
                         <option value={"Founder"}>Founder</option>
                         <option value={"Alpha"}>Alpha</option>
                         <option value={"Beta"}>Beta</option>
                         <option value={"Gamma"}>Gamma</option>
+                        <option value={"Delta"}>Delta</option>
                     </select>
                     <p className="error text-red-500">
                         {errors.class?.message}
