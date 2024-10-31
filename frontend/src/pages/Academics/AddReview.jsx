@@ -47,21 +47,44 @@ const AddReview = () => {
 
     const [professors, setProfessors] = useState([]);
     useEffect(() => {
-        axios
-            .post(`${backend}/academics/courses/professors`, {
-                subject: subject,
-            })
-            .then((res) => {
-                setProfessors(
-                    res.data.map((professor) => ({
-                        value: professor.name,
-                        label: professor.name,
-                    }))
-                );
-            })
-            .catch((error) => {
-                console.log(error);
-            });
+        if (
+            subject == "biomedical-eng" ||
+            subject == "electrical-computer-eng" ||
+            subject == "eng-core" ||
+            subject == "mechanical-eng"
+        ) {
+            axios
+                .post(`${backend}/academics/courses/professors`, {
+                    subject: "engineering",
+                })
+                .then((res) => {
+                    setProfessors(
+                        res.data.map((professor) => ({
+                            value: professor.name,
+                            label: professor.name,
+                        }))
+                    );
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        } else {
+            axios
+                .post(`${backend}/academics/courses/professors`, {
+                    subject: subject,
+                })
+                .then((res) => {
+                    setProfessors(
+                        res.data.map((professor) => ({
+                            value: professor.name,
+                            label: professor.name,
+                        }))
+                    );
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        }
     }, [subject]);
 
     const values = [
