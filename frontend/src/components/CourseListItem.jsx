@@ -60,16 +60,18 @@ const CourseListItem = ({ info }) => {
                     ? Array.from({ length: 20 }).map((_, index) => (
                           <SkeletonCourseIcon key={index} />
                       ))
-                    : courses.map((course, index) => (
+                    : courses
+                    ? courses.map((course, index) => (
                           <CourseIcon
                               key={index}
                               code={course.code}
                               level={info.level}
                               college={info.college}
                           />
-                      ))}
+                      ))
+                    : "Unable to load courses. Verify that the project is not paused on Supabase."}
             </div>
-            <div className="mt-3 flex md:flex-row-reverse justify-center md:justify-between">
+            <div className="mt-3 mx-3 flex md:flex-row-reverse justify-center md:justify-between">
                 <p className="text-start">
                     <a
                         href={info.website}
