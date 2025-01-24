@@ -1,0 +1,118 @@
+[
+    {
+        "name": "Alpha",
+        "institution": "University of Michigan",
+        "url": "https://ktpmichigan.com/"
+    },
+    {
+        "name": "Beta",
+        "institution": "University of Pittsburgh",
+        "url": "https://experience.pitt.edu/ktp/home/"
+    },
+    {
+        "name": "Gamma",
+        "institution": "Rose–Hulman Institute of Technology",
+        "url": "https://www.facebook.com/profile.php?id=100079908335826"
+    },
+    {
+        "name": "Delta",
+        "institution": "Syracuse University",
+        "url": "https://www.ktpcuse.com/"
+    },
+    {
+        "name": "Epsilon",
+        "institution": "University of Maryland",
+        "url": "https://ktpumd.com/"
+    },
+    {
+        "name": "Zeta",
+        "institution": "The College of New Jersey",
+        "url": "https://tcnjktp.com/"
+    },
+    {
+        "name": "Eta",
+        "institution": "University of North Carolina at Chapel Hill",
+        "url": "https://www.instagram.com/ktpunc/"
+    },
+    {
+        "name": "Theta",
+        "institution": "University of Chicago",
+        "url": "https://uchicagoktp.com/"
+    },
+    {
+        "name": "Iota",
+        "institution": "University of Texas at Austin",
+        "url": "https://texasktp.com/"
+    },
+    {
+        "name": "Kappa",
+        "institution": "Northwestern University",
+        "url": "https://www.ktpnu.com/"
+    },
+    {
+        "name": "Lambda",
+        "institution": "Boston University",
+        "url": "https://ktpbostonu.com/"
+    },
+    {
+        "name": "Mu",
+        "institution": "University of Texas at Dallas",
+        "url": "https://www.ktputd.org/"
+    },
+    {
+        "name": "Nu",
+        "institution": "University of Colorado Boulder",
+        "url": "https://www.ktpboulder.com/"
+    },
+    {
+        "name": "Rho",
+        "institution": "Vanderbilt University",
+        "url": "https://owusunp.github.io/ktp_pledge_project/index.html"
+    },
+    {
+        "name": "Sigma",
+        "institution": "University of Miami",
+        "url": "https://www.ktpmiami.com/"
+    },
+    {
+        "name": "Tau",
+        "institution": "University of Southern California",
+        "url": "https://www.instagram.com/ktp.usc/"
+    },
+    { "name": "Upsilon", "institution": "Lewis University", "url": "" },
+    {
+        "name": "Phi",
+        "institution": "University of Georgia",
+        "url": "https://ktpgeorgia.com/"
+    },
+    {
+        "name": "Chi",
+        "institution": "Nova Southeastern University",
+        "url": "https://www.instagram.com/ktp.nsu/"
+    },
+    {
+        "name": "Psi",
+        "institution": "Cameron University",
+        "url": "https://www.ktp-uc.org/"
+    },
+    {
+        "name": "Omega",
+        "institution": "Northeastern University",
+        "url": "https://www.instagram.com/ktpneu/"
+    },
+    {
+        "name": "Alpha Alpha",
+        "institution": "University of Central Arkansas",
+        "url": "https://www.instagram.com/ucaktp/"
+    },
+    {
+        "name": "Alpha Beta",
+        "institution": "Rutgers - New Brunswick",
+        "url": "https://www.linkedin.com/company/kappa-theta-pi-new-brunswick/"
+    },
+    {
+        "name": "Alpha Gamma",
+        "institution": "Virginia Tech University",
+        "url": "https://www.instagram.com/vtktp/"
+    }
+]
