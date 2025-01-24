@@ -36,7 +36,7 @@ const ReviewDisplay = ({ reviews, view }) => {
     const [search, setSearch] = useState("");
 
     const handleReviewSearch = ({ searchText }) => {
-        const searchLower = searchText.trim().toLowerCase();
+        const searchLower = searchText.toLowerCase();
         setSearch(searchLower);
 
         if (searchLower === "") {
