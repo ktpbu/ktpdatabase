@@ -7,7 +7,7 @@ const backend = import.meta.env.VITE_BACKEND_URL;
 
 const tableColumnHeaders = ["Chapter", "Institution", "Website"];
 
-const OtherKTPChapters = () => {
+const KTPChapters = () => {
     const [chapters, setChapters] = useState([]);
 
     useEffect(() => {
@@ -79,4 +79,4 @@ const OtherKTPChapters = () => {
     );
 };
 
-export default OtherKTPChapters;
+export default KTPChapters;

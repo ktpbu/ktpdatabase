@@ -7,7 +7,7 @@ import CustomBreadcrumb from "../../components/CustomBreadcrumb";
 
 const professionalOptions = [
     {
-        link: "/professional/other-ktp-chapters",
+        link: "/professional/ktp-chapters",
         image: <GroupIcon className="my-auto" />,
         header: "KTP Chapters",
         text: "Links to websites of other KTP chapters",
