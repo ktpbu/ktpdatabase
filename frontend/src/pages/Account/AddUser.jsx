@@ -166,6 +166,7 @@ const AddUser = () => {
                         <option value={"Beta"}>Beta</option>
                         <option value={"Gamma"}>Gamma</option>
                         <option value={"Delta"}>Delta</option>
+                        <option value={"Epsilon"}>Epsilon</option>
                     </select>
                     <p className="error text-red-500">
                         {errors.class?.message}
