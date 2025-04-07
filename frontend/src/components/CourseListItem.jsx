@@ -43,7 +43,7 @@ const CourseListItem = ({ info }) => {
                     `${backend}/academics/courses/${info.level}/${info.subject}`
                 )
                 .then((res) => {
-                    setCourses(res.data);
+                    setCourses(res.data.sort((a, b) => a["id"] - b["id"]));
                 })
                 .catch((error) => {
                     console.log(error);
