@@ -86,7 +86,7 @@ def get_professor_info(subject):
     with open(f"data/professors/{subject}_prof_info.json", "w") as f:
         json.dump(subject_professor_info, f, indent=4, ensure_ascii=False)
 
-    print(f"finished scraping {subject} professors")
+    print(f"Finished scraping {subject} professors")
 
     return subject_professor_info
 
@@ -96,9 +96,9 @@ def delete_professor_info_in_supabase(supabase):
     # deletes existing professor info in database
     try:
         supabase.table("professor_info").delete().gt("id", -1).execute()
-        print("successfully deleted professor info in supabase")
+        print("Successfully deleted professor info in supabase")
     except Exception as e:
-        print("failed to delete professor info in supabase: ", e)
+        print("Failed to delete professor info in supabase: ", e)
 
 
 def insert_professor_info_in_supabase(supabase, professors):
@@ -106,9 +106,9 @@ def insert_professor_info_in_supabase(supabase, professors):
     # inserts professor info in supabase
     try:
         supabase.table("professor_info").insert(professors).execute()
-        print("successfully inserted professor info in supabase")
+        print("Successfully inserted professor info in supabase")
     except Exception as e:
-        print("failed to insert professor info in supabase: ", e)
+        print("Failed to insert professor info in supabase: ", e)
 
 
 def main(update=False):
@@ -120,9 +120,11 @@ def main(update=False):
             subject_professor_info = get_professor_info(subject)
             professor_info.extend(subject_professor_info)
     except Exception as e:
-        raise Exception("error scraping professor info: ", e)
+        raise Exception("Error scraping professor info: ", e)
 
     professor_info = [{**professor} for professor in professor_info]
+    for index, professor in enumerate(professor_info):
+        professor["id"] = index
 
     # saves course info as a local csv file for testing and observation
     try:
@@ -130,9 +132,10 @@ def main(update=False):
             os.makedirs("./data")
         df = pd.DataFrame(professor_info)
         df.to_csv("./data/professor_info.csv")
-        print(f"professor info saved at ./data/professor_info.csv")
+        print(f"Professor info saved at ./data/professor_info.csv")
     except Exception as e:
-        print(f"failed to saved professor info as csv:", e)
+        print(f"Failed to saved professor info as csv:", e)
+        raise e
 
     # updates course info in supabase if necessary
     if update:
@@ -140,14 +143,14 @@ def main(update=False):
             supabase_url = os.environ.get("SUPABASE_URL")
             supabase_key = os.environ.get("SUPABASE_KEY")
             supabase = create_client(supabase_url, supabase_key)
-            print("connected to supabase")
+            print("Connected to supabase")
         except Exception as e:
-            print("failed to connect to supabase: ", e)
+            print("Failed to connect to supabase: ", e)
 
         delete_professor_info_in_supabase(supabase)
         insert_professor_info_in_supabase(supabase, professor_info)
     else:
-        print("\ndid not update professor info in supabase")
+        print("Did not update professor info in supabase")
 
 
 def single_subject_test():
@@ -155,7 +158,7 @@ def single_subject_test():
     try:
         get_professor_info("eng-core")
     except Exception as e:
-        print("error scraping course info: ", e)
+        print("Error scraping course info: ", e)
 
 
 if __name__ == "__main__":
