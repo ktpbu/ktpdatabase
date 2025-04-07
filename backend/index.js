@@ -17,7 +17,14 @@ const port = 3000;
 const app = express();
 app.use(express.json());
 
-app.use(cors());
+app.use(
+    cors({
+        origin: [
+            "https://www.database.ktpbostonu.com",
+            "http://localhost:5173",
+        ],
+    })
+);
 
 app.get("/", (req, res) => {
     console.log(req);
