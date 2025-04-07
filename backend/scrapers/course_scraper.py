@@ -64,7 +64,7 @@ def get_course_info(subject):
         page_number += 1
 
     if not subject_course_info:
-        raise Exception(f"failed to scrape {url}")
+        raise Exception(f"Failed to scrape {url}")
 
     # updates local data store with course info
     if not os.path.exists("data/courses"):
@@ -72,7 +72,7 @@ def get_course_info(subject):
     with open(f"data/courses/{subject}_course_info.json", "w") as f:
         json.dump(subject_course_info, f, indent=4, ensure_ascii=False)
 
-    print(f"finished scraping {subject} course info")
+    print(f"Finished scraping {subject} course info")
 
     return subject_course_info
 
@@ -196,7 +196,7 @@ def get_data(course, subject):
 
         return course_info
     except Exception as e:
-        print(f"error scraping {course}: ", e)
+        print(f"Error scraping {course}: ", e)
 
 
 def delete_course_info_in_supabase(supabase):
@@ -204,9 +204,9 @@ def delete_course_info_in_supabase(supabase):
     # deletes course info in supabase
     try:
         supabase.table("course_info").delete().gt("id", -1).execute()
-        print("successfully deleted course info in supabase")
+        print("Successfully deleted course info in supabase")
     except Exception as e:
-        print("failed to delete course info in supabase: ", e)
+        print("Failed to delete course info in supabase: ", e)
 
 
 def insert_course_info_in_supabase(supabase, course_info):
@@ -214,9 +214,9 @@ def insert_course_info_in_supabase(supabase, course_info):
     # inserts course info in supabase
     try:
         supabase.table("course_info").insert(course_info).execute()
-        print("successfully inserted course info in supabase")
+        print("Successfully inserted course info in supabase")
     except Exception as e:
-        print("failed to insert course info in supabase: ", e)
+        print("Failed to insert course info in supabase: ", e)
 
 
 def main(update=False):
@@ -228,9 +228,11 @@ def main(update=False):
             subject_course_info = get_course_info(subject)
             course_info.extend(subject_course_info)
     except Exception as e:
-        print("error scraping course info: ", e)
+        print("Error scraping course info: ", e)
 
     course_info = [{**course} for course in course_info]
+    for index, course in enumerate(course_info):
+        course["id"] = index
 
     # saves course info as a local csv file for testing and observation
     try:
@@ -238,9 +240,9 @@ def main(update=False):
             os.makedirs("./data")
         df = pd.DataFrame(course_info)
         df.to_csv("./data/course_info.csv")
-        print(f"course info saved at ./data/course_info.csv")
+        print(f"Course info saved at ./data/course_info.csv")
     except Exception as e:
-        print(f"failed to saved course info as csv:", e)
+        print(f"Failed to saved course info as csv:", e)
 
     # updates course info in supabase if necessary
     if update:
@@ -248,14 +250,14 @@ def main(update=False):
             supabase_url = os.environ.get("SUPABASE_URL")
             supabase_key = os.environ.get("SUPABASE_KEY")
             supabase = create_client(supabase_url, supabase_key)
-            print("connected to supabase")
+            print("Connected to supabase")
         except Exception as e:
-            print("failed to connect to supabase: ", e)
+            print("Failed to connect to supabase: ", e)
 
         delete_course_info_in_supabase(supabase)
         insert_course_info_in_supabase(supabase, course_info)
     else:
-        print("\ndid not update course info in supabase")
+        print("Did not update course info in supabase")
 
 
 def single_subject_test():
@@ -263,7 +265,7 @@ def single_subject_test():
     try:
         get_course_info("eng-core")
     except Exception as e:
-        print("error scraping course info: ", e)
+        print("Error scraping course info: ", e)
 
 
 if __name__ == "__main__":
