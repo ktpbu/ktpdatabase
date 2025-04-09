@@ -4,8 +4,6 @@ import mongoose from "mongoose";
 
 import "./config.js";
 
-import supabase from "./supabaseClient.js";
-
 import academicRoutes from "./routes/academicRoutes.js";
 import accountRoutes from "./routes/accountRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
@@ -17,11 +15,7 @@ const port = 3000;
 const app = express();
 app.use(express.json());
 
-app.use(
-    cors({
-        origin: ["https://database.ktpbostonu.com", "http://localhost:5173"],
-    })
-);
+app.use(cors());
 
 app.get("/", (req, res) => {
     console.log(req);
