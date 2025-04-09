@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
-import json
 import os
+import pandas as pd
 from pathlib import Path
 from pymongo import MongoClient
 
@@ -21,8 +21,7 @@ if __name__ == "__main__":
 
     # Loads users
     try:
-        with open("./users.json") as f:
-            users = json.load(f)
+        users = pd.read_csv("./users.csv")
     except Exception as e:
         print("Failed to load users")
         raise e
@@ -37,7 +36,8 @@ if __name__ == "__main__":
 
     # Inserts users in MongoDB
     try:
-        if isinstance(users, list):
+        users = users.to_dict("records")
+        if len(users) > 1:
             user_collection.insert_many(users)
         else:
             user_collection.insert_one(users)
