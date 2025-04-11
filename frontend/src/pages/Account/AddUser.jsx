@@ -166,7 +166,21 @@ const AddUser = () => {
                         <option value={"Beta"}>Beta</option>
                         <option value={"Gamma"}>Gamma</option>
                         <option value={"Delta"}>Delta</option>
-                        <option value={"Epsilon"}>Epsilon</option>
+                        <option value={"Zeta"}>Zeta</option>
+                        <option value={"Eta"}>Eta</option>
+                        <option value={"Theta"}>Theta</option>
+                        <option value={"Iota"}>Iota</option>
+                        <option value={"Kappa"}>Kappa</option>
+                        <option value={"Lambda"}>Lambda</option>
+                        <option value={"Mu"}>Mu</option>
+                        <option value={"Nu"}>Nu</option>
+                        <option value={"Xi"}>Xi</option>
+                        <option value={"Omicron"}>Omicron</option>
+                        <option value={"Pi"}>Pi</option>
+                        <option value={"Rho"}>Rho</option>
+                        <option value={"Sigma"}>Sigma</option>
+                        <option value={"Tau"}>Tau</option>
+                        <option value={"Upsilon"}>Upsilon</option>
                     </select>
                     <p className="error text-red-500">
                         {errors.class?.message}
