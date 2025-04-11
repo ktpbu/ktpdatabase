@@ -22,6 +22,7 @@ if __name__ == "__main__":
     # Loads users
     try:
         users = pd.read_csv("./users.csv")
+        users["is_admin"] = users["is_admin"].astype(bool)
     except Exception as e:
         print("Failed to load users")
         raise e
