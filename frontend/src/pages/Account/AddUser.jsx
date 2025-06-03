@@ -165,6 +165,7 @@ const AddUser = () => {
                         <option value={"Alpha"}>Alpha</option>
                         <option value={"Beta"}>Beta</option>
                         <option value={"Gamma"}>Gamma</option>
+                        <option value={"Epsilon"}>Epsilon</option>
                         <option value={"Delta"}>Delta</option>
                         <option value={"Zeta"}>Zeta</option>
                         <option value={"Eta"}>Eta</option>
